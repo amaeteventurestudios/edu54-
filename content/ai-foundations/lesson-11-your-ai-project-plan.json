@@ -1,0 +1,126 @@
+{
+ "id": "ai-foundations-l11",
+ "course_id": "ai-foundations",
+ "title": "Your AI project plan",
+ "module": "Module 4",
+ "lesson_number": 11,
+ "objective": "By the end of this lesson, you will be able to plan a small AI project by naming the problem, the data, the test, and the people who could be affected.",
+ "xp_on_complete": 50,
+ "sections": [
+  {
+   "id": "problem",
+   "title": "Start with a problem",
+   "text": "A good project starts with a real, clear problem, not with \"let's use AI\". For example: how many lunches will the canteen need each day? Can we sort rubbish into recycling or not? Sometimes a simple rule works better than AI, and that is fine."
+  },
+  {
+   "id": "data",
+   "title": "Find the data",
+   "text": "Decide what examples you need, where they come from, and how they will be labelled. You need enough examples, and a mix that matches real life. Only use data you have permission to use, and leave out personal details."
+  },
+  {
+   "id": "test",
+   "title": "Plan the test",
+   "text": "Before you build, decide how you will know it works. Keep some data back for testing, choose how you will measure success, such as accuracy, and decide what score is good enough."
+  },
+  {
+   "id": "affected",
+   "title": "Think about who is affected",
+   "text": "Ask who will use it, who could be helped, and who could be harmed if it is wrong. Check it works fairly for different groups. Keep a person in charge of decisions that matter."
+  }
+ ],
+ "examples": [
+  {
+   "id": "ex-plan",
+   "title": "Example 1: A project plan",
+   "code": "plan = {\n    \"problem\": \"Sort rubbish into recycling or not\",\n    \"data\": \"200 labelled photos of school rubbish\",\n    \"test\": \"Keep 40 photos back and measure accuracy\",\n    \"affected\": \"Students, cleaners and the school garden\",\n}\nfor part in plan:\n    print(part + \":\", plan[part])",
+   "output": "problem: Sort rubbish into recycling or not\ndata: 200 labelled photos of school rubbish\ntest: Keep 40 photos back and measure accuracy\naffected: Students, cleaners and the school garden"
+  },
+  {
+   "id": "ex-split",
+   "title": "Example 2: Splitting the data",
+   "code": "photos = 200\ntest = 40\ntrain = photos - test\nprint(\"train:\", train, \"test:\", test)\nprint(\"test share:\", test / photos)",
+   "output": "train: 160 test: 40\ntest share: 0.2"
+  }
+ ],
+ "diagram": {
+  "title": "Planning an AI project",
+  "steps": [
+   "Name the problem",
+   "Find data you may use",
+   "Plan the test",
+   "Think about who is affected",
+   "Build, test and improve"
+  ],
+  "loop_label": "Improve the plan"
+ },
+ "check_questions": [
+  {
+   "id": "cq1",
+   "prompt": "Which is the best problem for a class AI project?",
+   "code": null,
+   "options": [
+    "Make the AI do something cool",
+    "Guess how many lunches the canteen needs each day, using past lunch counts",
+    "Collect everything about every student",
+    "Replace all the teachers"
+   ],
+   "answer_index": 1,
+   "explanation": "It is a clear problem with data the school already has and a result you can check.",
+   "misconception": {
+    "0": "This is too vague. A project needs a clear problem.",
+    "2": "That would collect personal data without a good reason.",
+    "3": "AI cannot replace teachers, and that is not a fair or safe goal."
+   }
+  },
+  {
+   "id": "cq2",
+   "prompt": "What does this print?",
+   "code": "photos = 50\ntest = 10\nprint(photos - test)",
+   "options": [
+    "50",
+    "10",
+    "40",
+    "60"
+   ],
+   "answer_index": 2,
+   "explanation": "50 photos minus the 10 kept back for testing leaves 40 for training.",
+   "misconception": {
+    "0": "50 is all the photos. Some are kept back for testing.",
+    "1": "10 is the test set, not the training set.",
+    "3": "The code takes 10 away. It does not add."
+   }
+  },
+  {
+   "id": "cq3",
+   "prompt": "Your project picks library books for each student by reading level. Who should you think about before using it?",
+   "code": null,
+   "options": [
+    "Students who might get books that are too hard or too easy, and the librarian who checks the choices",
+    "Nobody, because it is only a computer",
+    "Only the person who wrote the code",
+    "Only people who never use the library"
+   ],
+   "answer_index": 0,
+   "explanation": "Students are affected by its mistakes, and a librarian can check and correct them.",
+   "misconception": {
+    "1": "Computers can affect real people when they are wrong.",
+    "2": "The users matter at least as much as the builder.",
+    "3": "People who do not use the library are not affected."
+   }
+  }
+ ],
+ "try_it": {
+  "id": "try1",
+  "title": "Try It Yourself",
+  "instructions": "Change the plan to your own project idea: write your problem, data, test and who could be affected. Run it to print your plan.",
+  "starter": "plan = {\n    \"problem\": \"Write your problem here\",\n    \"data\": \"What examples will you use?\",\n    \"test\": \"How will you check it works?\",\n    \"affected\": \"Who could be helped or harmed?\",\n}\nfor part in plan:\n    print(part + \":\", plan[part])",
+  "counts_when": "ran_ok"
+ },
+ "activities": [
+  "read",
+  "cq1",
+  "cq2",
+  "cq3",
+  "try1"
+ ]
+}

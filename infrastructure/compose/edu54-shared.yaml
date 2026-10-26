@@ -1,0 +1,32 @@
+# EDU54 shared services (docs/edu54/INSTALL-RUNBOOK.md Phase 4), used by both demo instances. Every port is
+# localhost only. Profiles: library (Kiwix, always), channels (Kolibri), models (Ollama; started only when the RAM guard allows).
+#   docker --context ai-data compose -p edu54-shared --env-file <EDU54_ROOT>/config/edu54-shared.env -f infrastructure/compose/edu54-shared.yaml --profile library up -d
+name: edu54-shared
+
+services:
+  kiwix:
+    profiles: [library]
+    image: ghcr.io/kiwix/kiwix-serve:latest
+    restart: unless-stopped
+    command: ["--library", "/data/library.xml"]
+    ports: ["127.0.0.1:8312:8080"]
+    volumes: ["${EDU54_ROOT:?}/knowledge/zim:/data:ro"]
+    mem_limit: 512m
+
+  kolibri:
+    profiles: [channels]
+    image: learningequality/kolibri:latest
+    restart: unless-stopped
+    ports: ["127.0.0.1:8311:8080"]
+    environment: { KOLIBRI_HOME: /kolibri, KOLIBRI_LANG: en }
+    volumes: ["${EDU54_ROOT}/docker-volumes/kolibri:/kolibri"]
+    mem_limit: 512m
+
+  ollama:
+    profiles: [models]
+    image: ollama/ollama:0.34.4
+    restart: unless-stopped
+    ports: ["127.0.0.1:8320:11434"]
+    environment: { OLLAMA_KEEP_ALIVE: "5m", OLLAMA_NUM_PARALLEL: "2", OLLAMA_MAX_LOADED_MODELS: "3" }
+    volumes: ["${EDU54_ROOT}/models:/root/.ollama"]
+    mem_limit: 7g

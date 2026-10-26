@@ -1,0 +1,6 @@
+# Web image from an already-built apps/web/dist (npm run build on the host). Used on ai-node-01, where building inside Docker
+# (npm ci + vite) needs more memory than the box can spare while the AI Lab is live. Same result as apps/web/Dockerfile.
+#   (cd apps/web && VITE_PRODUCT_NAME="EDU54" npm run build) && docker build -f apps/web/Dockerfile.prebuilt -t edu54/web:0.1.0 .
+FROM caddy:2.11.4-alpine
+COPY apps/web/dist /srv/web
+COPY infrastructure/compose/Caddyfile /etc/caddy/Caddyfile

@@ -1,0 +1,125 @@
+{
+ "id": "science-engineering-l1",
+ "course_id": "science-engineering",
+ "title": "Measuring things",
+ "module": "Module 1",
+ "lesson_number": 1,
+ "objective": "By the end of this lesson, you will be able to choose the right metric unit for a measurement, change between simple units, and explain why scientists repeat measurements and take an average.",
+ "xp_on_complete": 50,
+ "sections": [
+  {
+   "id": "why-measure",
+   "title": "Why we measure",
+   "text": "Measuring means comparing something with a standard amount called a unit. A tailor in Accra measures cloth so a shirt fits, and a cook measures rice so there is enough for everyone. A number on its own is not enough: 5 what? 5 metres and 5 centimetres are very different."
+  },
+  {
+   "id": "metric",
+   "title": "The metric system",
+   "text": "Scientists in every country, and most people around the world, use the metric system. Length is measured in metres (m), mass in kilograms (kg), time in seconds (s) and volume in litres (L). 1 kilometre (km) is 1000 metres, and 1 metre is 100 centimetres (cm)."
+  },
+  {
+   "id": "converting",
+   "title": "Changing units",
+   "text": "Metric units go up in steps of ten, a hundred and a thousand, so changing units is easy. To change kilometres into metres, multiply by 1000. A 3 km walk to school is 3000 m."
+  },
+  {
+   "id": "repeat",
+   "title": "Why we repeat measurements",
+   "text": "Every measurement has small errors: the ruler slips, your eye is at an angle, or you press the stopwatch a little late. Measuring three times and taking the average makes these small errors matter less. If one reading is very different from the others, measure again."
+  }
+ ],
+ "examples": [
+  {
+   "id": "ex-average",
+   "title": "Example 1: Averaging three measurements",
+   "code": "readings = [12.1, 12.3, 12.2]\naverage = sum(readings) / len(readings)\nprint(round(average, 1), \"cm\")",
+   "output": "12.2 cm"
+  },
+  {
+   "id": "ex-convert",
+   "title": "Example 2: Kilometres to metres",
+   "code": "km = 3\nmetres = km * 1000\nprint(metres, \"m\")",
+   "output": "3000 m"
+  }
+ ],
+ "diagram": {
+  "title": "Taking a good measurement",
+  "steps": [
+   "Choose the right tool and unit",
+   "Measure carefully",
+   "Write the number with its unit",
+   "Repeat and take the average"
+  ],
+  "loop_label": "Measure again"
+ },
+ "check_questions": [
+  {
+   "id": "cq1",
+   "prompt": "Which unit would you use to measure the mass of a bag of maize?",
+   "code": null,
+   "options": [
+    "Metres",
+    "Kilograms",
+    "Litres",
+    "Seconds"
+   ],
+   "answer_index": 1,
+   "explanation": "Mass is measured in kilograms (kg).",
+   "misconception": {
+    "0": "Metres measure length, not mass.",
+    "2": "Litres measure volume, such as how much water fits in a bottle.",
+    "3": "Seconds measure time."
+   }
+  },
+  {
+   "id": "cq2",
+   "prompt": "How many metres are in 2 kilometres?",
+   "code": null,
+   "options": [
+    "20",
+    "200",
+    "2000",
+    "0.002"
+   ],
+   "answer_index": 2,
+   "explanation": "1 km is 1000 m, so 2 km is 2 x 1000 = 2000 m.",
+   "misconception": {
+    "0": "There are 1000 metres in a kilometre, not 10.",
+    "1": "There are 1000 metres in a kilometre, not 100.",
+    "3": "Going from km to m you multiply by 1000, not divide."
+   }
+  },
+  {
+   "id": "cq3",
+   "prompt": "Amina measured her desk three times and got 80 cm, 81 cm and 79 cm. Why should she report the average?",
+   "code": null,
+   "options": [
+    "Averages make the desk longer",
+    "The average is always the first reading",
+    "One of the readings must be wrong",
+    "Averaging makes the small errors in each reading matter less"
+   ],
+   "answer_index": 3,
+   "explanation": "Every reading has small errors. The average of several readings is usually closer to the true value.",
+   "misconception": {
+    "0": "Averaging does not change the desk. It only summarises the readings.",
+    "1": "The average is found by adding the readings and dividing by how many there are.",
+    "2": "Small differences are normal. None of these readings is clearly wrong."
+   }
+  }
+ ],
+ "try_it": {
+  "id": "try1",
+  "title": "Try It Yourself",
+  "instructions": "Measure a pencil three times in centimetres. Put your three readings in the list and run the code to find the average.",
+  "starter": "readings = [12.1, 12.3, 12.2]\naverage = sum(readings) / len(readings)\nprint(round(average, 1), \"cm\")",
+  "counts_when": "ran_ok"
+ },
+ "activities": [
+  "read",
+  "cq1",
+  "cq2",
+  "cq3",
+  "try1"
+ ]
+}

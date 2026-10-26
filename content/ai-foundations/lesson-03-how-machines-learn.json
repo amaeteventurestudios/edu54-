@@ -1,0 +1,125 @@
+{
+ "id": "ai-foundations-l3",
+ "course_id": "ai-foundations",
+ "title": "How machines learn",
+ "module": "Module 1",
+ "lesson_number": 3,
+ "objective": "By the end of this lesson, you will be able to explain how a machine learns from labelled examples, make a guess by finding the closest example, and say why learning depends on good examples.",
+ "xp_on_complete": 50,
+ "sections": [
+  {
+   "id": "labelled-examples",
+   "title": "Learning from labelled examples",
+   "text": "Many AI systems learn from labelled examples. A labelled example comes with the right answer, like a photo marked \"cat\" or a fruit marked \"apple\". The more good examples the machine sees, the better its guesses usually become."
+  },
+  {
+   "id": "closest-example",
+   "title": "Guessing from the closest example",
+   "text": "One simple way to learn is to remember the examples and, for something new, find the example that is most similar. This is called a nearest neighbour guess. If a new fruit weighs about the same as the melons, the guess is melon."
+  },
+  {
+   "id": "learning-from-mistakes",
+   "title": "Learning from mistakes",
+   "text": "Many machines learn by making a guess, comparing it with the right answer, and changing a little to make a smaller mistake next time. They repeat this thousands or millions of times. Each change is small, but together they add up."
+  },
+  {
+   "id": "not-understanding",
+   "title": "Learning is not understanding",
+   "text": "A machine only learns what its examples show. If every cat photo it saw was of an orange cat, it may struggle with a black cat. It finds patterns in numbers. It does not understand the world the way you do."
+  }
+ ],
+ "examples": [
+  {
+   "id": "ex-nearest",
+   "title": "Example 1: A nearest neighbour guess",
+   "code": "examples = [(120, \"apple\"), (150, \"apple\"), (300, \"melon\"), (350, \"melon\")]\nnew = 280\nbest = examples[0]\nfor e in examples:\n    if abs(e[0] - new) < abs(best[0] - new):\n        best = e\nprint(best[1])",
+   "output": "melon"
+  },
+  {
+   "id": "ex-adjust",
+   "title": "Example 2: Getting closer by fixing mistakes",
+   "code": "guess = 0\ntarget = 10\nfor step in range(5):\n    mistake = target - guess\n    guess = guess + mistake / 2\nprint(guess)",
+   "output": "9.6875"
+  }
+ ],
+ "diagram": {
+  "title": "How a machine learns",
+  "steps": [
+   "Look at a labelled example",
+   "Make a guess",
+   "Compare it with the right answer",
+   "Change a little to make a smaller mistake"
+  ],
+  "loop_label": "Repeat many times"
+ },
+ "check_questions": [
+  {
+   "id": "cq1",
+   "prompt": "What is a labelled example?",
+   "code": null,
+   "options": [
+    "A sticker on the side of a computer",
+    "An example with no answer given",
+    "An example that comes with the right answer, like a photo marked \"cat\"",
+    "A random number"
+   ],
+   "answer_index": 2,
+   "explanation": "A labelled example has the right answer attached, so the machine can learn what goes with what.",
+   "misconception": {
+    "0": "A label here means the right answer, not a sticker.",
+    "1": "Labelled examples come with the answer.",
+    "3": "A random number does not teach the machine anything."
+   }
+  },
+  {
+   "id": "cq2",
+   "prompt": "What does this print?",
+   "code": "examples = [(120, \"apple\"), (150, \"apple\"), (300, \"melon\"), (350, \"melon\")]\nnew = 140\nbest = examples[0]\nfor e in examples:\n    if abs(e[0] - new) < abs(best[0] - new):\n        best = e\nprint(best[1])",
+   "options": [
+    "apple",
+    "melon",
+    "140",
+    "Nothing"
+   ],
+   "answer_index": 0,
+   "explanation": "140 is closest to 150, which is labelled apple, so the guess is apple.",
+   "misconception": {
+    "1": "300 and 350 are much further from 140 than 150 is.",
+    "2": "The program prints the label of the closest example, not the weight.",
+    "3": "The last line prints the label of the closest example."
+   }
+  },
+  {
+   "id": "cq3",
+   "prompt": "A program learned to spot cats only from photos of orange cats. What is most likely?",
+   "code": null,
+   "options": [
+    "It will spot every cat perfectly",
+    "It understands cats the way a person does",
+    "It will never make a mistake",
+    "It may struggle with cats of other colours"
+   ],
+   "answer_index": 3,
+   "explanation": "A machine only learns what its examples show, so cats that look different may confuse it.",
+   "misconception": {
+    "0": "It only saw orange cats, so other cats may confuse it.",
+    "1": "It finds patterns in numbers. It does not understand like a person.",
+    "2": "Every AI system can make mistakes."
+   }
+  }
+ ],
+ "try_it": {
+  "id": "try1",
+  "title": "Try It Yourself",
+  "instructions": "Change new to 140, then to 320. Run the code each time and see how the guess changes.",
+  "starter": "examples = [(120, \"apple\"), (150, \"apple\"), (300, \"melon\"), (350, \"melon\")]\nnew = 280\nbest = examples[0]\nfor e in examples:\n    if abs(e[0] - new) < abs(best[0] - new):\n        best = e\nprint(best[1])",
+  "counts_when": "ran_ok"
+ },
+ "activities": [
+  "read",
+  "cq1",
+  "cq2",
+  "cq3",
+  "try1"
+ ]
+}

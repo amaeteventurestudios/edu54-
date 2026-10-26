@@ -1,0 +1,125 @@
+{
+ "id": "python-foundations-l9",
+ "course_id": "python-foundations",
+ "title": "Putting it together",
+ "module": "Module 4",
+ "lesson_number": 9,
+ "objective": "By the end of this lesson, you will be able to plan and build a small program that uses variables, lists, loops, if and a function together.",
+ "xp_on_complete": 50,
+ "sections": [
+  {
+   "id": "plan",
+   "title": "Plan first",
+   "text": "Before you code, say what goes in, what should come out, and the steps in between. For a grade averager: a list of marks goes in, the average comes out, and the steps are add them up and divide by how many there are."
+  },
+  {
+   "id": "pieces",
+   "title": "The pieces you know",
+   "text": "Variables store values. Lists hold many values. Loops repeat for each item. if makes decisions. Functions wrap a job in a name. Most small programs use all of them."
+  },
+  {
+   "id": "small-steps",
+   "title": "Build in small steps",
+   "text": "Write a few lines, run them, and check the output before you add more. If something breaks, you know it was in the lines you just added. This is how programmers work too."
+  },
+  {
+   "id": "test",
+   "title": "Test with answers you know",
+   "text": "Check your program with data you can work out by hand. The average of 80, 90 and 70 is 80, so your program should print 80.0. If it prints anything else, there is a bug to find."
+  }
+ ],
+ "examples": [
+  {
+   "id": "ex-average",
+   "title": "Example 1: A grade averager",
+   "code": "def average(scores):\n    total = 0\n    for s in scores:\n        total = total + s\n    return total / len(scores)\n\nprint(average([80, 90, 70]))",
+   "output": "80.0"
+  },
+  {
+   "id": "ex-quiz",
+   "title": "Example 2: A quiz scorer",
+   "code": "answers = [\"b\", \"a\", \"c\", \"a\"]\nkey = [\"b\", \"c\", \"c\", \"a\"]\nscore = 0\nfor i in range(len(key)):\n    if answers[i] == key[i]:\n        score = score + 1\nprint(f\"You scored {score} out of {len(key)}\")",
+   "output": "You scored 3 out of 4"
+  }
+ ],
+ "diagram": {
+  "title": "How to build a program",
+  "steps": [
+   "Plan what goes in and what comes out",
+   "Write a small piece",
+   "Run it and check the output",
+   "Fix anything that is wrong"
+  ],
+  "loop_label": "Add the next piece"
+ },
+ "check_questions": [
+  {
+   "id": "cq1",
+   "prompt": "What does this program print?",
+   "code": "nums = [4, 7, 2, 9]\nbig = 0\nfor n in nums:\n    if n > 5:\n        big = big + 1\nprint(big)",
+   "options": [
+    "4",
+    "2",
+    "16",
+    "7"
+   ],
+   "answer_index": 1,
+   "explanation": "Only 7 and 9 are more than 5. big goes up by 1 for each of them, so it ends at 2.",
+   "misconception": {
+    "0": "4 is how many items there are. Only items more than 5 are counted.",
+    "2": "16 is 7 + 9. The code adds 1 each time, not the number itself.",
+    "3": "7 is one of the items, not the count."
+   }
+  },
+  {
+   "id": "cq2",
+   "prompt": "You wrote a function that works out the average of a list. Which is the best way to test it?",
+   "code": null,
+   "options": [
+    "Run it once with any list and trust the answer",
+    "Make the function longer",
+    "Run it with [10, 20, 30] and check that you get 20.0",
+    "Print the word average"
+   ],
+   "answer_index": 2,
+   "explanation": "You can work out the average of 10, 20 and 30 by hand, so you know what the right output looks like.",
+   "misconception": {
+    "0": "If you do not know the right answer, you cannot tell when the output is wrong.",
+    "1": "Longer code is not more correct.",
+    "3": "That does not check the maths at all."
+   }
+  },
+  {
+   "id": "cq3",
+   "prompt": "What does this program print?",
+   "code": "def grade(score):\n    if score >= 70:\n        return \"Pass\"\n    return \"Retry\"\n\nfor s in [85, 40]:\n    print(grade(s))",
+   "options": [
+    "Pass, then Retry",
+    "Pass, then Pass",
+    "Retry, then Pass",
+    "Pass"
+   ],
+   "answer_index": 0,
+   "explanation": "The loop calls grade twice. 85 is 70 or more, so it returns Pass. 40 is not, so it returns Retry.",
+   "misconception": {
+    "1": "40 is less than 70, so the second call returns Retry.",
+    "2": "The loop goes through the list in order, so 85 comes first.",
+    "3": "The loop runs once for each item, so grade is called twice."
+   }
+  }
+ ],
+ "try_it": {
+  "id": "try1",
+  "title": "Try It Yourself",
+  "instructions": "Put your own marks in the list and run the code. Then add an if so that it also prints \"Great work!\" when the average is 75 or more.",
+  "starter": "def average(scores):\n    total = 0\n    for s in scores:\n        total = total + s\n    return total / len(scores)\n\nmarks = [60, 80, 70]\nresult = average(marks)\nprint(f\"Your average is {result}\")",
+  "counts_when": "ran_ok"
+ },
+ "activities": [
+  "read",
+  "cq1",
+  "cq2",
+  "cq3",
+  "try1"
+ ]
+}

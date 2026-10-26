@@ -1,0 +1,70 @@
+# Secrets / environment
+.env
+.env.*
+!.env.example
+secrets/
+credentials/
+*.pem
+*.key
+
+# Dependencies/build outputs
+node_modules/
+.next/
+dist/
+build/
+!content/build/
+coverage/
+.venv/
+venv/
+__pycache__/
+.pytest_cache/
+
+# Runtime databases and state
+*.db
+*.sqlite
+*.sqlite3
+runtime/
+logs/
+backups/
+uploads/
+data/
+
+# AI model weights / indexes
+*.gguf
+*.safetensors
+*.onnx
+*.pt
+*.pth
+*.bin
+models/
+vector-index/
+
+# Private/local curriculum and knowledge
+curriculum/private/
+knowledge/private/
+knowledge/uploads/
+
+# Media - never commit HUNGREE Goat library
+*.mp3
+*.wav
+*.flac
+*.m4a
+*.aac
+*.mp4
+*.mov
+
+# Local IDE/OS
+.DS_Store
+.idea/
+.vscode/
+
+# Temporary files
+*.tmp
+*.swp
+*.log
+apps/web/test-results/
+
+# Sponsor video build outputs (regenerate with tools/sponsor-video/)
+docs/media/raw-sponsor/
+docs/media/raw-sponsor-audio/
+docs/media/sponsor-video.webm

@@ -1,0 +1,22 @@
+{
+  "_note": "Configurable content policy (docs/15). XP events are idempotent; nothing here rewards AI usage.",
+  "xp": { "lesson_complete": 50, "quiz_pass": 100, "quiz_90_bonus": 50, "module_complete": 250, "project_complete": 500, "assignment_graded_pass": 100, "streak_7": 200, "hint_to_solution": 25 },
+  "levels": [
+    { "level": 1, "name": "Starter",   "min_xp": 0 },
+    { "level": 2, "name": "Explorer",  "min_xp": 250 },
+    { "level": 3, "name": "Learner",   "min_xp": 600 },
+    { "level": 4, "name": "Builder",   "min_xp": 1000 },
+    { "level": 5, "name": "Creator",   "min_xp": 2000 },
+    { "level": 6, "name": "Innovator", "min_xp": 3500 }
+  ],
+  "badges": [
+    { "id": "python-starter", "name": "Python Starter", "description": "Finished your first Python lessons." },
+    { "id": "loop-master", "name": "Loop Master", "description": "Completed Lesson 6 and earned a passing grade on Loops Practice." },
+    { "id": "hint-to-solution", "name": "Solved after one hint", "description": "Solved a problem after using just one hint." },
+    { "id": "bug-fixer", "name": "Bug Fixer", "description": "Fixed a program that had an error." },
+    { "id": "first-builder", "name": "First Builder", "description": "Saved your first project." },
+    { "id": "streak-5", "name": "5-Day Streak", "description": "Learned on 5 school days in a row." }
+  ],
+  "pass_percent": 70,
+  "school_days": [1, 2, 3, 4, 5]
+}

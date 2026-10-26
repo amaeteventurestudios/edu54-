@@ -1,0 +1,11 @@
+[Unit]
+Description=Umanah engine agent (starts and stops optional services on request from Admin)
+After=default.target
+
+[Service]
+ExecStart=%h/projects/umanah-ai-lab/tools/umanah-lab/engine-agent.sh
+Environment=PATH=%h/.local/bin:/usr/local/bin:/usr/bin:/bin
+Restart=on-failure
+
+[Install]
+WantedBy=default.target

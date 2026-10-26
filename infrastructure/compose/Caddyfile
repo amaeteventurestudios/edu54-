@@ -1,0 +1,40 @@
+# Serves the built web app on :8100 and proxies /api to the API (api:8101, or UMANAH_API_UPSTREAM for an EDU54 instance). Replies stream (tutor answers), so buffering is off.
+{
+	admin off
+	auto_https off
+	servers {
+		# the public host (nginx on the VPS, reached over Tailscale) puts the visitor's address in X-Forwarded-For: keep it, so the
+		# public demo can rate-limit per visitor (docs/46). Anyone else's X-Forwarded-For is still replaced.
+		trusted_proxies static 100.64.0.0/10
+	}
+}
+
+:{$UMANAH_WEB_PORT:8100} {
+	encode gzip
+	root * /srv/web
+
+	handle /api/* {
+		reverse_proxy {$UMANAH_API_UPSTREAM:api:8101} {
+			flush_interval -1
+			transport http {
+				response_header_timeout 120s
+			}
+		}
+	}
+	# Offline coding games (Snap!, Music Blocks, Reeborg's World, Blockly Games): static open-source apps from the content
+	# drive. They may not reach the internet: everything they load comes from this box.
+	handle_path /play/* {
+		root * /srv/games
+		header Content-Security-Policy "default-src 'self' data: blob:; script-src 'self' 'unsafe-inline' 'unsafe-eval' blob:; style-src 'self' 'unsafe-inline'; media-src 'self' data: blob:; worker-src 'self' blob:; frame-ancestors 'self'"
+		file_server
+	}
+	handle {
+		try_files {path} /index.html
+		file_server
+	}
+	header {
+		X-Content-Type-Options nosniff
+		Referrer-Policy same-origin
+		-Server
+	}
+}

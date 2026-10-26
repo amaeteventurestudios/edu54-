@@ -1,0 +1,43 @@
+{
+  "at": "2026-09-24 20:27:24",
+  "results": [
+    {
+      "students": 5,
+      "asks_each": 2,
+      "requests": 10,
+      "ok": 10,
+      "errors": 0,
+      "error_kinds": [],
+      "ttfw_p50_s": 13.05,
+      "ttfw_p95_s": 22.0,
+      "wps_p50": 6.72,
+      "queue_wait_p50_s": 7.14,
+      "queue_wait_p95_s": 18.13,
+      "max_queue_pos": 3,
+      "reply_words_p50": 82,
+      "wall_s": 78.1,
+      "min_avail_gb": 2.28,
+      "peak_swap_gb": 0.07,
+      "accounts_reused": false
+    },
+    {
+      "students": 10,
+      "asks_each": 2,
+      "requests": 20,
+      "ok": 20,
+      "errors": 0,
+      "error_kinds": [],
+      "ttfw_p50_s": 43.85,
+      "ttfw_p95_s": 54.83,
+      "wps_p50": 7.03,
+      "queue_wait_p50_s": 41.8,
+      "queue_wait_p95_s": 44.32,
+      "max_queue_pos": 8,
+      "reply_words_p50": 78,
+      "wall_s": 144.1,
+      "min_avail_gb": 2.22,
+      "peak_swap_gb": 0.21,
+      "accounts_reused": false
+    }
+  ]
+}

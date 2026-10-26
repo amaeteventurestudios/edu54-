@@ -1,0 +1,42 @@
+# LABOS_EDITION values. Anything not listed falls back to the LabOS defaults.
+k12:
+  label: "K-12"
+  terms:
+    teacher: "Teacher"
+    teacherCenter: "Teacher Center"
+    group: "Class"
+    admin: "School Admin"
+    level: "Class level"
+  levels: [Kindergarten, Primary 1, Primary 2, Primary 3, Primary 4, Primary 5, Primary 6, JSS 1, JSS 2, JSS 3, SSS 1, SSS 2, SSS 3]
+  # School stage shown under the level ("JSS 2 · Junior Secondary"), matched by the start of the level's name.
+  stages: {Kindergarten: Early Years, Primary: Primary School, JSS: Junior Secondary, SSS: Senior Secondary}
+  # Four learner experiences from one platform: Discover -> Explore -> Build -> Launch (owner, 2026-09-30).
+  # Grades in brackets are the US-style equivalents, for readers outside Nigeria.
+  bands:
+    discover: {name: Discover, grades: "K–2", age_band: under13, levels: [Kindergarten, Primary 1, Primary 2]}
+    explore:  {name: Explore,  grades: "3–5", age_band: under13, levels: [Primary 3, Primary 4, Primary 5]}
+    build:    {name: Build,    grades: "6–8", age_band: "13-15", levels: [Primary 6, JSS 1, JSS 2]}
+    launch:   {name: Launch,   grades: "9–12", age_band: 16plus, levels: [JSS 3, SSS 1, SSS 2, SSS 3]}
+  youngChildLogin: true        # class code + picture/PIN for under-13 classes
+  buildTools: [pyodide, blockly-games, snap, music-blocks, reeborg, p5js, typing]
+  catalog: k12                 # CONTENT-CATALOG.md, K-12 section
+  demoSchool: "EDU54 Demo School"      # was "EDU54 Demo Secondary School"; renamed when K-12 grew to Kindergarten-SSS 3
+  safetyPipeline: required     # LabOS docs/41, unchanged
+  tutorPolicy: required        # LabOS docs/42, unchanged
+
+university:
+  label: "University"
+  terms:
+    teacher: "Lecturer"
+    teacherCenter: "Lecturer Center"
+    group: "Course"
+    admin: "Institution Admin"
+    level: "Year"
+  levels: [Year 1, Year 2, Year 3, Year 4, Postgraduate]
+  stages: {Year: Undergraduate, Postgraduate: Postgraduate}
+  youngChildLogin: false
+  buildTools: [pyodide, jupyterlite, jupyterhub-optional, glowscript, falstad, jsmol, molstar, netlogo-web]
+  catalog: university
+  demoSchool: "EDU54 Demo University"
+  safetyPipeline: required     # same pipeline; an adult-tuned policy is an owner decision, not a default
+  tutorPolicy: required

@@ -1,0 +1,125 @@
+{
+ "id": "python-foundations-l4",
+ "course_id": "python-foundations",
+ "title": "Making decisions with if",
+ "module": "Module 2",
+ "lesson_number": 4,
+ "objective": "By the end of this lesson, you will be able to compare values and use if, elif and else to choose what your program does.",
+ "xp_on_complete": 50,
+ "sections": [
+  {
+   "id": "compare",
+   "title": "Comparing values",
+   "text": "A comparison asks a question that is True or False. Python uses == (equal), != (not equal), < and > (less and more), and <= and >= (or equal). Remember that = stores a value, while == checks if two values are the same."
+  },
+  {
+   "id": "if",
+   "title": "if and indentation",
+   "text": "if runs some lines only when a condition is True. The if line ends with a colon, and the lines that belong to it are indented by 4 spaces. When the indentation ends, the program carries on as normal."
+  },
+  {
+   "id": "elif-else",
+   "title": "elif and else",
+   "text": "elif means \"else if\" and adds another check. else catches everything that did not match. Python checks from the top and runs only the first block whose condition is True."
+  },
+  {
+   "id": "and-or",
+   "title": "and, or",
+   "text": "and is True only when both sides are True: age >= 11 and age <= 15. or is True when at least one side is True: day == \"Sat\" or day == \"Sun\"."
+  }
+ ],
+ "examples": [
+  {
+   "id": "ex-pass",
+   "title": "Example 1: Pass or try again",
+   "code": "score = 72\nif score >= 50:\n    print(\"You passed!\")\nelse:\n    print(\"Try again.\")\nprint(\"Done\")",
+   "output": "You passed!\nDone"
+  },
+  {
+   "id": "ex-weather",
+   "title": "Example 2: Choosing from three",
+   "code": "temp = 18\nif temp > 25:\n    print(\"Hot\")\nelif temp > 15:\n    print(\"Warm\")\nelse:\n    print(\"Cold\")",
+   "output": "Warm"
+  }
+ ],
+ "diagram": {
+  "title": "How if, elif and else choose",
+  "steps": [
+   "Check the first condition",
+   "If True, run its block and skip the rest",
+   "If False, check the next elif",
+   "If nothing is True, run else"
+  ],
+  "loop_label": "Check the next condition"
+ },
+ "check_questions": [
+  {
+   "id": "cq1",
+   "prompt": "What does this program print?",
+   "code": "age = 12\nif age >= 13:\n    print(\"Teen\")\nelse:\n    print(\"Not a teen yet\")",
+   "options": [
+    "Teen",
+    "Not a teen yet",
+    "Teen, then Not a teen yet",
+    "Nothing"
+   ],
+   "answer_index": 1,
+   "explanation": "12 >= 13 is False, so Python skips the if block and runs the else block.",
+   "misconception": {
+    "0": "12 is not 13 or more, so the condition is False.",
+    "2": "Only one of the if block or the else block runs, never both.",
+    "3": "When the if is False, the else block runs."
+   }
+  },
+  {
+   "id": "cq2",
+   "prompt": "What does this program print?",
+   "code": "x = 7\nif x > 5 and x < 10:\n    print(\"A\")\nelif x > 5:\n    print(\"B\")\nelse:\n    print(\"C\")",
+   "options": [
+    "B",
+    "A, then B",
+    "A",
+    "C"
+   ],
+   "answer_index": 2,
+   "explanation": "7 is more than 5 and less than 10, so the first condition is True. Python runs that block and skips the rest.",
+   "misconception": {
+    "0": "The elif is only checked when the first condition is False.",
+    "1": "Python stops after the first True condition.",
+    "3": "else only runs when nothing above it is True."
+   }
+  },
+  {
+   "id": "cq3",
+   "prompt": "Which symbol checks whether two values are the same?",
+   "code": null,
+   "options": [
+    "=",
+    "!=",
+    "=>",
+    "=="
+   ],
+   "answer_index": 3,
+   "explanation": "== compares two values and gives True or False.",
+   "misconception": {
+    "0": "= stores a value in a variable. It does not compare.",
+    "1": "!= checks that two values are different.",
+    "2": "=> is not a Python operator. Greater than or equal is written >=."
+   }
+  }
+ ],
+ "try_it": {
+  "id": "try1",
+  "title": "Try It Yourself",
+  "instructions": "Run the code with different scores, such as 90, 65 and 30. Then add another elif so that a score from 40 to 49 prints \"So close!\".",
+  "starter": "score = 65\nif score >= 80:\n    print(\"Excellent!\")\nelif score >= 50:\n    print(\"You passed!\")\nelse:\n    print(\"Keep practising.\")",
+  "counts_when": "ran_ok"
+ },
+ "activities": [
+  "read",
+  "cq1",
+  "cq2",
+  "cq3",
+  "try1"
+ ]
+}

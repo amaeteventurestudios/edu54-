@@ -1,0 +1,56 @@
+{
+  "_comment": "Placeholder brand. Owner has not chosen colors or logo; change here only. Check every text/background pair against WCAG AA.",
+  "id": "edu54",
+  "productName": "EDU54",
+  "shortName": "EDU54",
+  "platformCredit": "Built on Umanah Institute LabOS",
+  "tagline": "Your school's own AI learning lab",
+  "logo": {
+    "type": "wordmark",
+    "text": "EDU54",
+    "font": "Libre Baskerville"
+  },
+  "favicon": {
+    "type": "letter",
+    "letter": "E",
+    "background": "#0F4D3A",
+    "foreground": "#FFFFFF"
+  },
+  "colors": {
+    "primary": "#0F4D3A",
+    "primaryHover": "#0B3B2C",
+    "primaryTint": "#EAF3EE",
+    "accent": "#D9A520",
+    "background": "#F7F5F0",
+    "outerBackground": "#E8E5DE",
+    "text": "#1B1B1B",
+    "sidebar": "#0F4D3A",
+    "sidebarText": "#FFFFFF"
+  },
+  "fonts": {
+    "display": "Libre Baskerville",
+    "body": "Inter"
+  },
+  "supportContact": "",
+  "hideStrings": [
+    "Umanah",
+    "Umanah Institute",
+    "Umanah AI Lab",
+    "ai.umanah.org",
+    "umanah.org"
+  ],
+  "loginBackgrounds": [
+    {
+      "left": "/brand/edu54/login-green-left.webp",
+      "right": "/brand/edu54/login-green-right.webp"
+    },
+    {
+      "left": "/brand/edu54/login-red-left.webp",
+      "right": "/brand/edu54/login-red-right.webp"
+    },
+    {
+      "left": "/brand/edu54/login-blue-left.webp",
+      "right": "/brand/edu54/login-blue-right.webp"
+    }
+  ]
+}

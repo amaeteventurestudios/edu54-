@@ -1,0 +1,125 @@
+{
+ "id": "python-foundations-l7",
+ "course_id": "python-foundations",
+ "title": "While loops",
+ "module": "Module 3",
+ "lesson_number": 7,
+ "objective": "By the end of this lesson, you will be able to repeat instructions with a while loop and stop it safely.",
+ "xp_on_complete": 50,
+ "sections": [
+  {
+   "id": "what-while",
+   "title": "What is a while loop?",
+   "text": "A while loop repeats as long as a condition is True. Python checks the condition before every turn, and stops as soon as it is False."
+  },
+  {
+   "id": "counting",
+   "title": "Counting with while",
+   "text": "count = 1, then while count <= 3: print(count) and count = count + 1. The line count = count + 1 changes the variable, so the condition can become False and the loop can end."
+  },
+  {
+   "id": "infinite",
+   "title": "Infinite loops",
+   "text": "If nothing inside the loop ever makes the condition False, the loop never stops. This is called an infinite loop. In Build, a program is always stopped after 5 seconds."
+  },
+  {
+   "id": "for-vs-while",
+   "title": "for or while?",
+   "text": "Use for when you know how many times to repeat, or which items to go through. Use while when you repeat until something happens."
+  }
+ ],
+ "examples": [
+  {
+   "id": "ex-countdown",
+   "title": "Example 1: A countdown",
+   "code": "count = 3\nwhile count > 0:\n    print(count)\n    count = count - 1\nprint(\"Go!\")",
+   "output": "3\n2\n1\nGo!"
+  },
+  {
+   "id": "ex-total",
+   "title": "Example 2: Add up 1 to 4",
+   "code": "total = 0\nn = 1\nwhile n <= 4:\n    total = total + n\n    n = n + 1\nprint(total)",
+   "output": "10"
+  }
+ ],
+ "diagram": {
+  "title": "How a while loop works",
+  "steps": [
+   "Start",
+   "Is the condition True?",
+   "Run the loop body",
+   "Change something, then check again"
+  ],
+  "loop_label": "Repeat while True"
+ },
+ "check_questions": [
+  {
+   "id": "cq1",
+   "prompt": "What does this program print?",
+   "code": "n = 1\nwhile n < 4:\n    print(n)\n    n = n + 1",
+   "options": [
+    "1 2 3",
+    "1 2 3 4",
+    "2 3 4",
+    "1 2"
+   ],
+   "answer_index": 0,
+   "explanation": "n is 1, 2 and 3 while n < 4. When n becomes 4 the condition is False, so 4 is not printed.",
+   "misconception": {
+    "1": "4 is not less than 4, so the loop stops before printing it.",
+    "2": "n starts at 1, so 1 is printed first.",
+    "3": "n = 3 still passes n < 4, so 3 is printed too."
+   }
+  },
+  {
+   "id": "cq2",
+   "prompt": "Why does this loop never stop?",
+   "code": "n = 1\nwhile n < 4:\n    print(n)",
+   "options": [
+    "n never changes, so n < 4 is always True",
+    "print is not allowed in a while loop",
+    "4 is too small",
+    "while needs a for"
+   ],
+   "answer_index": 0,
+   "explanation": "Nothing changes n, so the condition stays True forever. Adding n = n + 1 fixes it.",
+   "misconception": {
+    "1": "print works fine inside a while loop.",
+    "2": "The number 4 is not the problem.",
+    "3": "while loops do not need a for."
+   }
+  },
+  {
+   "id": "cq3",
+   "prompt": "What does this program print?",
+   "code": "count = 3\nwhile count > 0:\n    count = count - 1\nprint(count)",
+   "options": [
+    "3",
+    "2",
+    "0",
+    "1"
+   ],
+   "answer_index": 2,
+   "explanation": "The loop runs until count is 0, and then print(count) shows 0.",
+   "misconception": {
+    "0": "count changes inside the loop.",
+    "1": "The loop keeps going until count > 0 is False.",
+    "3": "1 is a value during the loop, not the last value."
+   }
+  }
+ ],
+ "try_it": {
+  "id": "try1",
+  "title": "Try It Yourself",
+  "instructions": "Change the code so it counts down from 5.",
+  "starter": "count = 3\nwhile count > 0:\n    print(count)\n    count = count - 1",
+  "counts_when": "ran_ok"
+ },
+ "activities": [
+  "read",
+  "cq1",
+  "cq2",
+  "cq3",
+  "try1"
+ ]
+}

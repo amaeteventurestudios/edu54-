@@ -1,0 +1,83 @@
+{
+ "id": "asg-ai-practice",
+ "title": "What is AI? Practice",
+ "subject": "Computer Science · Introduction to AI",
+ "lesson_id": "ai-foundations-l1",
+ "instructions": "Answer the three questions about how AI systems use rules and patterns. Use the hints if you get stuck. Your teacher will review your work.",
+ "ai_help_policy": "hints_only",
+ "max_score": 3,
+ "questions": [
+  {
+   "id": "q1",
+   "index": 1,
+   "prompt": "How many emails contain the word \"win\"? Type the number.",
+   "code": "emails = [\"win money now\", \"lunch at noon\", \"win a prize now\"]\ncount = 0\nfor e in emails:\n    if \"win\" in e:\n        count = count + 1\nprint(count)",
+   "kind": "number",
+   "key": {
+    "kind": "number",
+    "value": 2,
+    "tolerance": 0
+   },
+   "misconceptions": [
+    {
+     "tag": "counts-all",
+     "match": [
+      3
+     ],
+     "note": "count only goes up when \"win\" is in the email."
+    }
+   ],
+   "hints": [
+    "Read each email. Which ones contain \"win\"?",
+    "The loop adds 1 to count for each email that has the word. Check them one at a time.",
+    "A similar problem: in [\"a b\", \"b c\"], the word \"b\" appears in 2 emails. Now check \"win\"."
+   ]
+  },
+  {
+   "id": "q2",
+   "index": 2,
+   "prompt": "Does this program print the word hat or the word coat? Type the word.",
+   "code": "temperature = 20\nif temperature > 25:\n    print(\"Wear a hat\")\nelse:\n    print(\"Wear a coat\")",
+   "kind": "text",
+   "key": {
+    "kind": "text",
+    "value": [
+     "coat",
+     "wear a coat"
+    ]
+   },
+   "misconceptions": [],
+   "hints": [
+    "Which line runs when the condition is True, and which when it is False?",
+    "Is 20 greater than 25? That tells you which branch runs.",
+    "A similar problem: if temperature were 30, the condition would be True. Compare 20 in the same way."
+   ]
+  },
+  {
+   "id": "q3",
+   "index": 3,
+   "prompt": "What number does this program print?",
+   "code": "scores = [3, 5, 4]\ntotal = 0\nfor s in scores:\n    total = total + s\nprint(total / 3)",
+   "kind": "number",
+   "key": {
+    "kind": "number",
+    "value": 4,
+    "tolerance": 0
+   },
+   "misconceptions": [
+    {
+     "tag": "prints-total",
+     "match": [
+      12
+     ],
+     "note": "That is the total. The last line divides it by 3."
+    }
+   ],
+   "hints": [
+    "First work out what total is after the loop.",
+    "Add the scores one at a time. Then divide by 3.",
+    "A similar problem: [2, 4] gives total 6, and 6 / 2 is 3. Do the same steps with three scores."
+   ]
+  }
+ ]
+}

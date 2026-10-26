@@ -1,0 +1,125 @@
+{
+ "id": "ai-foundations-l4",
+ "course_id": "ai-foundations",
+ "title": "Training and testing",
+ "module": "Module 2",
+ "lesson_number": 4,
+ "objective": "By the end of this lesson, you will be able to explain why data is split into a training set and a test set, work out accuracy, and spot when a model has memorised instead of learned.",
+ "xp_on_complete": 50,
+ "sections": [
+  {
+   "id": "training-data",
+   "title": "Training data",
+   "text": "Training data is the set of examples a model learns from. It is like the practice questions you work through before a test. The model looks at these examples again and again to find patterns."
+  },
+  {
+   "id": "test-data",
+   "title": "Test data is kept apart",
+   "text": "Test data is a set of examples the model never sees while it learns. We use it at the end to check how well the model does on something new. If the model had seen the test answers, a good score would not mean much."
+  },
+  {
+   "id": "accuracy",
+   "title": "Measuring accuracy",
+   "text": "Accuracy is how many test examples the model got right, divided by how many there were. 4 right out of 5 is 0.8, or 80%. A score is only as good as the test, so the test examples should be like the real ones the model will meet."
+  },
+  {
+   "id": "memorising",
+   "title": "Memorising is not learning",
+   "text": "A model can remember its training examples without learning a pattern that works on new ones. Then it scores very well on training data and badly on test data. This is like learning answers by heart without understanding the method."
+  }
+ ],
+ "examples": [
+  {
+   "id": "ex-accuracy",
+   "title": "Example 1: Accuracy on a test set",
+   "code": "answers = [\"cat\", \"dog\", \"cat\", \"dog\", \"cat\"]\nguesses = [\"cat\", \"dog\", \"dog\", \"dog\", \"cat\"]\ncorrect = 0\nfor i in range(len(answers)):\n    if answers[i] == guesses[i]:\n        correct = correct + 1\nprint(correct, \"out of\", len(answers))\nprint(correct / len(answers))",
+   "output": "4 out of 5\n0.8"
+  },
+  {
+   "id": "ex-memorise",
+   "title": "Example 2: Memorising is not learning",
+   "code": "memory = {\"2+2\": \"4\", \"3+3\": \"6\"}\ntests = [\"2+2\", \"5+5\"]\nfor q in tests:\n    print(q, memory.get(q, \"no idea\"))",
+   "output": "2+2 4\n5+5 no idea"
+  }
+ ],
+ "diagram": {
+  "title": "Training and testing",
+  "steps": [
+   "Split the data into two parts",
+   "Train on the training part",
+   "Test on the part kept back",
+   "Work out the accuracy"
+  ],
+  "loop_label": "Improve and test again"
+ },
+ "check_questions": [
+  {
+   "id": "cq1",
+   "prompt": "Why do we keep some data back for testing?",
+   "code": null,
+   "options": [
+    "To save space on the computer",
+    "To check how well the model does on examples it has not seen",
+    "Because test data is not needed",
+    "To make training faster"
+   ],
+   "answer_index": 1,
+   "explanation": "Test data shows whether the model works on new examples, not just the ones it learned from.",
+   "misconception": {
+    "0": "Space is not the reason. The test checks the model on new examples.",
+    "2": "Test data is how we find out if the model really works.",
+    "3": "Speed is not the reason. The test checks the model on new examples."
+   }
+  },
+  {
+   "id": "cq2",
+   "prompt": "What does this print?",
+   "code": "answers = [1, 0, 1, 1]\nguesses = [1, 1, 1, 0]\ncorrect = 0\nfor i in range(4):\n    if answers[i] == guesses[i]:\n        correct = correct + 1\nprint(correct / 4)",
+   "options": [
+    "0.5",
+    "2",
+    "0.75",
+    "4"
+   ],
+   "answer_index": 0,
+   "explanation": "2 of the 4 guesses match the answers, and 2 divided by 4 is 0.5.",
+   "misconception": {
+    "1": "2 is the number correct, but the code divides it by 4.",
+    "2": "0.75 would mean 3 out of 4 were correct.",
+    "3": "4 is how many examples there are."
+   }
+  },
+  {
+   "id": "cq3",
+   "prompt": "A model scores 100% on its training data but only 40% on new test data. What is the most likely reason?",
+   "code": null,
+   "options": [
+    "The test data must be wrong",
+    "40% is a better score than 100%",
+    "The computer was too slow",
+    "It memorised the training examples instead of learning a pattern that works on new ones"
+   ],
+   "answer_index": 3,
+   "explanation": "A big gap between training and test scores usually means the model memorised instead of learning a general pattern.",
+   "misconception": {
+    "0": "The test data is how we find the problem. It is the model that struggles.",
+    "1": "100% is higher than 40%.",
+    "2": "Speed does not change which answers are right."
+   }
+  }
+ ],
+ "try_it": {
+  "id": "try1",
+  "title": "Try It Yourself",
+  "instructions": "Change one guess in the guesses list so the accuracy becomes 1.0. Run the code to check.",
+  "starter": "answers = [\"cat\", \"dog\", \"cat\", \"dog\", \"cat\"]\nguesses = [\"cat\", \"dog\", \"dog\", \"dog\", \"cat\"]\ncorrect = 0\nfor i in range(len(answers)):\n    if answers[i] == guesses[i]:\n        correct = correct + 1\nprint(correct, \"out of\", len(answers))\nprint(correct / len(answers))",
+  "counts_when": "ran_ok"
+ },
+ "activities": [
+  "read",
+  "cq1",
+  "cq2",
+  "cq3",
+  "try1"
+ ]
+}

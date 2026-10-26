@@ -1,0 +1,26 @@
+# One file per customer order: schools/<school-id>.yaml. No passwords here.
+school_id: kings-college-lagos          # example only
+institution_name: "Kings College Lagos"
+short_name: "KCL"
+country: NG
+edition: k12                            # k12 | university (one per box)
+languages: [en]
+expected_students: 600
+hardware_tier: school-box               # school-box | university-box (HARDWARE.md)
+branding:
+  logo: assets/kcl-logo.svg
+  accent_color: null                    # optional; defaults to the EDU54 palette
+  display: "EDU54 · Kings College Lagos"
+admin:
+  name: ""
+  email: ""
+safety_contacts:
+  - name: ""
+    email: ""
+content:
+  levels: [JSS 1, JSS 2, JSS 3, SSS 1, SSS 2, SSS 3]
+  subjects: all                         # or a list
+  storage_cap_gb: 800
+network:
+  hostname: edu54-kcl
+  lan_ip: null                          # agreed with the school's IT

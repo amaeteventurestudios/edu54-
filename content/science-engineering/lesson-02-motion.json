@@ -1,0 +1,125 @@
+{
+ "id": "science-engineering-l2",
+ "course_id": "science-engineering",
+ "title": "Motion",
+ "module": "Module 1",
+ "lesson_number": 2,
+ "objective": "By the end of this lesson, you will be able to describe motion using distance and time, calculate speed with speed = distance / time, and give the answer with the right units.",
+ "xp_on_complete": 50,
+ "sections": [
+  {
+   "id": "distance",
+   "title": "Distance",
+   "text": "Distance is how far something travels. It is measured in metres (m) or, for longer journeys, kilometres (km). A runner who goes once around a 400 m track has travelled 400 m."
+  },
+  {
+   "id": "time",
+   "title": "Time",
+   "text": "Time is how long the journey takes. It is measured in seconds (s), minutes or hours (h). In a race, a stopwatch measures the time from the start to the finish line."
+  },
+  {
+   "id": "speed",
+   "title": "Speed = distance / time",
+   "text": "Speed tells you how fast something moves. To find it, divide the distance by the time. A runner who covers 100 m in 20 s has a speed of 100 / 20 = 5 metres per second (m/s). The units of speed come from both units, so speed can be in m/s or km/h."
+  },
+  {
+   "id": "compare",
+   "title": "Comparing speeds",
+   "text": "To compare speeds, use the same units. A bus in Nairobi travelling at 60 km/h would cover 60 km in one hour. A cheetah can sprint at about 100 km/h, but only for a short time. If two people walk the same distance, the one who takes less time is faster."
+  }
+ ],
+ "examples": [
+  {
+   "id": "ex-speed",
+   "title": "Example 1: The speed of a runner",
+   "code": "distance = 100\ntime = 20\nspeed = distance / time\nprint(speed, \"m/s\")",
+   "output": "5.0 m/s"
+  },
+  {
+   "id": "ex-distance",
+   "title": "Example 2: How far does a bus go?",
+   "code": "speed = 60\nhours = 2\ndistance = speed * hours\nprint(distance, \"km\")",
+   "output": "120 km"
+  }
+ ],
+ "diagram": {
+  "title": "Finding speed",
+  "steps": [
+   "Measure the distance",
+   "Time the journey",
+   "Divide distance by time",
+   "Write the answer with units such as m/s"
+  ],
+  "loop_label": "Try another journey"
+ },
+ "check_questions": [
+  {
+   "id": "cq1",
+   "prompt": "A cyclist rides 30 km in 2 hours. What is the cyclist's average speed?",
+   "code": null,
+   "options": [
+    "60 km/h",
+    "32 km/h",
+    "15 km/h",
+    "28 km/h"
+   ],
+   "answer_index": 2,
+   "explanation": "Speed = distance / time = 30 / 2 = 15 km/h.",
+   "misconception": {
+    "0": "That multiplies distance by time. Speed is distance divided by time.",
+    "1": "That adds the numbers. Speed is distance divided by time.",
+    "3": "That subtracts the numbers. Speed is distance divided by time."
+   }
+  },
+  {
+   "id": "cq2",
+   "prompt": "Which of these is a unit of speed?",
+   "code": null,
+   "options": [
+    "Metres",
+    "Seconds",
+    "Kilograms",
+    "Metres per second"
+   ],
+   "answer_index": 3,
+   "explanation": "Speed is distance divided by time, so its unit is a distance unit per time unit, such as m/s.",
+   "misconception": {
+    "0": "Metres measure distance only.",
+    "1": "Seconds measure time only.",
+    "2": "Kilograms measure mass."
+   }
+  },
+  {
+   "id": "cq3",
+   "prompt": "Kofi and Ada walk the same route to the market. Kofi takes 10 minutes and Ada takes 15 minutes. Who walked faster?",
+   "code": null,
+   "options": [
+    "Ada, because she walked for longer",
+    "Kofi",
+    "They walked at the same speed",
+    "You cannot compare them"
+   ],
+   "answer_index": 1,
+   "explanation": "They covered the same distance, and Kofi took less time, so Kofi was faster.",
+   "misconception": {
+    "0": "Taking longer for the same distance means a slower speed.",
+    "2": "Same distance in different times means different speeds.",
+    "3": "You can compare them because the distance is the same."
+   }
+  }
+ ],
+ "try_it": {
+  "id": "try1",
+  "title": "Try It Yourself",
+  "instructions": "Time how long it takes you to walk 10 metres. Change distance and time to your numbers and run the code to find your speed in m/s.",
+  "starter": "distance = 100\ntime = 20\nspeed = distance / time\nprint(speed, \"m/s\")",
+  "counts_when": "ran_ok"
+ },
+ "activities": [
+  "read",
+  "cq1",
+  "cq2",
+  "cq3",
+  "try1"
+ ]
+}

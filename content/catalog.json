@@ -1,0 +1,178 @@
+{
+  "courses": [
+    {
+      "id": "python-foundations",
+      "title": "Python Foundations",
+      "icon": "python",
+      "accent": "green",
+      "position": 1,
+      "description": "Learn to think in code: variables, decisions, loops and functions.",
+      "seed_completed": 5,
+      "lessons": [
+        {
+          "module": "Module 1",
+          "title": "Hello, Python",
+          "available": true
+        },
+        {
+          "module": "Module 1",
+          "title": "Variables and types",
+          "available": true
+        },
+        {
+          "module": "Module 2",
+          "title": "Numbers and strings",
+          "available": true
+        },
+        {
+          "module": "Module 2",
+          "title": "Making decisions with if",
+          "available": true
+        },
+        {
+          "module": "Module 2",
+          "title": "Lists",
+          "available": true
+        },
+        {
+          "module": "Module 3",
+          "title": "Loops",
+          "id": "py-l6",
+          "available": true
+        },
+        {
+          "module": "Module 3",
+          "title": "While loops",
+          "available": true
+        },
+        {
+          "module": "Module 4",
+          "title": "Functions",
+          "available": true
+        },
+        {
+          "module": "Module 4",
+          "title": "Putting it together",
+          "available": true
+        }
+      ]
+    },
+    {
+      "id": "ai-foundations",
+      "title": "AI Foundations",
+      "icon": "sparkles",
+      "accent": "blue",
+      "position": 2,
+      "description": "How AI systems learn, where they help, and how to use them responsibly.",
+      "seed_completed": 9,
+      "lessons": [
+        {
+          "module": "Module 1",
+          "title": "What is AI?",
+          "available": true
+        },
+        {
+          "module": "Module 1",
+          "title": "Data and patterns",
+          "available": true
+        },
+        {
+          "module": "Module 1",
+          "title": "How machines learn",
+          "available": true
+        },
+        {
+          "module": "Module 2",
+          "title": "Training and testing",
+          "available": true
+        },
+        {
+          "module": "Module 2",
+          "title": "Classification",
+          "available": true
+        },
+        {
+          "module": "Module 2",
+          "title": "Prediction",
+          "available": true
+        },
+        {
+          "module": "Module 3",
+          "title": "Language models",
+          "available": true
+        },
+        {
+          "module": "Module 3",
+          "title": "Images and sound",
+          "available": true
+        },
+        {
+          "module": "Module 3",
+          "title": "Bias and fairness",
+          "available": true
+        },
+        {
+          "module": "Module 4",
+          "title": "Responsible AI",
+          "available": true
+        },
+        {
+          "module": "Module 4",
+          "title": "Your AI project plan",
+          "available": true
+        }
+      ]
+    },
+    {
+      "id": "science-engineering",
+      "title": "Science & Engineering",
+      "icon": "flask",
+      "accent": "amber",
+      "position": 3,
+      "description": "Explore forces, energy and design — build and test ideas like an engineer.",
+      "seed_completed": 2,
+      "lessons": [
+        {
+          "module": "Module 1",
+          "title": "Measuring things",
+          "available": true
+        },
+        {
+          "module": "Module 1",
+          "title": "Motion",
+          "available": true
+        },
+        {
+          "module": "Module 2",
+          "title": "Forces and Motion",
+          "available": true
+        },
+        {
+          "module": "Module 2",
+          "title": "Energy",
+          "available": true
+        },
+        {
+          "module": "Module 3",
+          "title": "Simple machines",
+          "available": true
+        },
+        {
+          "module": "Module 3",
+          "title": "Materials",
+          "available": true
+        },
+        {
+          "module": "Module 4",
+          "title": "Design challenges",
+          "available": true
+        },
+        {
+          "module": "Module 4",
+          "title": "Testing your design",
+          "available": true
+        }
+      ]
+    }
+  ]
+}

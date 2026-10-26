@@ -1,0 +1,189 @@
+#!/usr/bin/env bash
+# umanah-lab — one command for the whole platform (docs/53, ops/AI-NODE-01.md).
+#   umanah-lab init                       create the data layout, secrets, and build the images
+#   umanah-lab start [core|content|lms|code|admin|all ...]   (default: core)
+#   umanah-lab stop | restart | status | logs <service> | models pull | profile start|stop <name> | demo-reset | demo-clean-chats
+# Always talks to the rootless daemon (docker context "ai-data") — never to the system Docker.
+set -euo pipefail
+REPO="${UMANAH_REPO:-$HOME/projects/umanah-ai-lab}"
+ROOT="${UMANAH_ROOT:-/srv/ai-node/storage/ssd/umanah-ai-lab}"
+CTX="${UMANAH_DOCKER_CONTEXT:-ai-data}"
+COMPOSE="$REPO/infrastructure/compose/compose.yaml"
+export UMANAH_ROOT="$ROOT"
+# Per-host overrides (e.g. UMANAH_WEB_PORT=8130 on the dev node, where HUNGREE Goat already holds 127.0.0.1:8100).
+[ -f "$ROOT/.env.local" ] && { set -a; . "$ROOT/.env.local"; set +a; }
+WEB_PORT="${UMANAH_WEB_PORT:-8100}"
+dc() { docker --context "$CTX" compose -p umanah -f "$COMPOSE" "$@"; }
+say() { printf '%s\n' "$*"; }
+
+# Approximate RAM per profile (docs/53), GB.
+declare -A NEED=([core]=5.5 [content]=0.5 [lms]=1.3 [code]=0.5 [admin]=0.7)
+avail_gb() { awk '/MemAvailable/ {printf "%.1f", $2/1048576}' /proc/meminfo; }
+
+profiles_of() { local p=(); for a in "$@"; do if [ "$a" = all ]; then p+=(core content lms code admin); else p+=("$a"); fi; done; printf '%s\n' "${p[@]}" | sort -u | tr '\n' ' '; }
+
+check_ctx() {
+  docker context inspect "$CTX" >/dev/null 2>&1 || { say "Docker context '$CTX' not found. Run: scripts/ai-node-01-rootless-docker.sh"; exit 2; }
+  mountpoint -q "$(dirname "$ROOT")" 2>/dev/null || [ -d "$ROOT" ] || { say "$ROOT is not available — is the data drive mounted?"; exit 2; }
+}
+
+secret() { [ -f "$1" ] || { umask 077; printf '%s\n' "$2" > "$1"; }; }
+rand() { head -c 24 /dev/urandom | base64 | tr -d '/+=' ; }
+
+cmd_init() {
+  check_ctx
+  mkdir -p "$ROOT"/control/{requests,results}; chmod 1777 "$ROOT"/control "$ROOT"/control/requests "$ROOT"/control/results   # the API (a sub-uid) drops requests here
+  mkdir -p "$ROOT"/{apps,services,models,curriculum,knowledge/kiwix,projects/jupyter,database,docker-volumes/{kolibri,moodle,moodledata,open-webui},exports,backups,logs,tmp,.secrets}
+  chmod 700 "$ROOT/.secrets"
+  local s="$ROOT/.secrets"
+  local dbpw; dbpw=$(rand)
+  secret "$s/mariadb.env" "MARIADB_ROOT_PASSWORD=$(rand)
+MARIADB_DATABASE=moodle
+MARIADB_USER=moodle
+MARIADB_PASSWORD=$dbpw"
+  secret "$s/moodle.env" "MOODLE_DATABASE_TYPE=mariadb
+MOODLE_DATABASE_NAME=moodle
+MOODLE_DATABASE_USER=moodle
+MOODLE_DATABASE_PASSWORD=$(grep '^MARIADB_PASSWORD=' "$s/mariadb.env" | cut -d= -f2)
+MOODLE_USERNAME=admin
+MOODLE_PASSWORD=$(rand)
+MOODLE_EMAIL=admin@amaete.com"
+  secret "$s/jupyterhub.env" "JUPYTERHUB_SHARED_PASSWORD=$(rand)
+JUPYTERHUB_ALLOWED_USERS=admin,mswilliams"
+  secret "$s/openwebui.env" "WEBUI_SECRET_KEY=$(rand)"
+  # Kiwix refuses to start on an empty library: there is no placeholder. Add a ZIM with `umanah-lab kiwix-add <file.zim>`.
+  say "Layout and secrets ready under $ROOT (secrets are mode 600, never in Git)."
+  dc --profile core --profile code build
+  # Rootless Docker maps the API image's non-root user to a sub-uid; give it the database dir (root in the container = us).
+  if docker --context "$CTX" image inspect "umanah/api:${UMANAH_VERSION:-0.1.0}" >/dev/null 2>&1; then
+    docker --context "$CTX" run --rm --user 0 --entrypoint sh -v "$ROOT/database:/data" "umanah/api:${UMANAH_VERSION:-0.1.0}" -c 'chown -R umanah:umanah /data'
+  fi
+  say "Images built. Next: umanah-lab models pull && umanah-lab start"
+}
+
+cmd_start() {
+  check_ctx
+  local want; want=$(profiles_of "${@:-core}")
+  local need=0; for p in $want; do need=$(awk -v a="$need" -v b="${NEED[$p]:-1}" 'BEGIN{print a+b}'); done
+  local av; av=$(avail_gb); local left; left=$(awk -v a="$av" -v n="$need" 'BEGIN{printf "%.1f", a-n}')
+  if awk -v l="$left" 'BEGIN{exit !(l < 2)}'; then
+    say "WARNING: starting [$want] needs about ${need} GB and only ${av} GB is free — that would leave ${left} GB (< 2 GB)."
+    [ "${UMANAH_FORCE:-0}" = 1 ] || { say "Refusing. Stop something first, or set UMANAH_FORCE=1."; exit 3; }
+  fi
+  local args=(); for p in $want; do args+=(--profile "$p"); done
+  local svc=()
+  if [[ " $want " == *" content "* ]] && [ ! -s "$ROOT/knowledge/kiwix/library.xml" ]; then
+    say "Note: no Kiwix library yet (umanah-lab kiwix-add <file.zim>) — starting Kolibri only."
+    svc=(kolibri); [[ " $want " == *" core "* ]] && svc+=(web api ollama)
+    for p in $want; do case $p in core|content) ;; *) svc=(); break;; esac; done   # mixed profiles: start everything else normally
+  fi
+  dc "${args[@]}" up -d "${svc[@]}"
+  say "Started: $want"
+}
+
+# Start or stop ONE optional service group (what the Admin > Services page does). Stopping never touches the always-on core.
+declare -A PROFILE_SERVICES=([content]="kolibri" [lms]="moodle mariadb" [code]="jupyterhub" [admin]="open-webui")
+cmd_profile() {
+  check_ctx; local act="${1:?usage: umanah-lab profile start|stop <content|lms|code|admin>}" p="${2:?profile}"
+  [ -n "${PROFILE_SERVICES[$p]:-}" ] || { say "Unknown profile: $p"; exit 2; }
+  case "$act" in
+    start) if [ "$p" = content ] && [ ! -s "$ROOT/knowledge/kiwix/library.xml" ]; then dc --profile content up -d kolibri; else cmd_start "$p"; fi ;;
+    stop) dc --profile "$p" stop ${PROFILE_SERVICES[$p]}; say "Stopped $p." ;;
+    *) say "usage: umanah-lab profile start|stop <profile>"; exit 2 ;;
+  esac
+}
+
+cmd_stop()    { check_ctx; dc --profile core --profile content --profile lms --profile code --profile admin stop; say "Stopped. State is kept in $ROOT."; }
+cmd_restart() { cmd_stop; cmd_start "$@"; }
+
+# Register a ZIM file (already downloaded into <data>/knowledge/kiwix/) with the Kiwix library.
+cmd_kiwix_add() {
+  check_ctx; local z; z=$(basename "${1:?usage: umanah-lab kiwix-add <file.zim in $ROOT/knowledge/kiwix>}")
+  docker --context "$CTX" run --rm --user 0 --entrypoint kiwix-manage -v "$ROOT/knowledge/kiwix:/data" ghcr.io/kiwix/kiwix-serve:latest /data/library.xml add "/data/$z"
+}
+
+# Reset every demo account's password on the RUNNING database and rewrite demo-credentials.txt (owned by the host user, mode 600).
+# Use after tests/evals reseed, or whenever the file and the database disagree. Also clears login lockouts.
+# The admin password is KEPT (so the owner is never locked out); pass --rotate-admin to change it on purpose.
+cmd_demo_reset() {
+  check_ctx
+  local db="$ROOT/database" img="umanah/api:${UMANAH_VERSION:-0.1.0}" rot=0
+  [ "${1:-}" = "--rotate-admin" ] && rot=1
+  docker --context "$CTX" exec -i -e ROTATE_ADMIN=$rot umanah-api-1 python - <<'PY'
+import os, secrets
+from sqlalchemy import select
+from umanah_api.config import get_settings
+from umanah_api.db import init_engine, session_scope
+from umanah_api.models import User
+from umanah_api.security import hash_password
+init_engine(f"sqlite:///{get_settings().db_path}")
+lines = ["# Demo accounts (fictional). Passwords reset on the running database. Not in Git."]
+with session_scope() as db:
+    order = ["admin", "mswilliams", "msrivera", "jordan"] + [f"student{i:02d}" for i in range(1, 28)]
+    users = {u.username: u for u in db.scalars(select(User))}
+    old = {}
+    try:
+        for ln in open("/data/demo-credentials.txt"):
+            if ": " in ln and not ln.startswith("#"):
+                k, v = ln.rstrip("\n").split(": ", 1); old[k] = v
+    except OSError:
+        pass
+    from umanah_api.security import verify_password
+    for name in order + sorted(set(users) - set(order)):
+        if name in users:
+            keep = name == "admin" and os.environ.get("ROTATE_ADMIN") != "1" and name in old and verify_password(old[name], users[name].password_hash)
+            pw = old[name] if keep else secrets.token_urlsafe(9)
+            if not keep:
+                users[name].password_hash = hash_password(pw)
+            lines.append(f"{name}: {pw}")
+open("/data/demo-credentials.txt.new", "w").write("\n".join(lines) + "\n")
+import sqlite3
+c = sqlite3.connect(str(get_settings().db_path), timeout=30); c.execute("delete from login_attempts"); c.commit()
+PY
+  # the API runs as a sub-uid; container root is this host user, so hand the file to us
+  docker --context "$CTX" run --rm --user 0 --entrypoint sh -v "$db:/data" "$img" -c 'mv /data/demo-credentials.txt.new /data/demo-credentials.txt && chown 0:0 /data/demo-credentials.txt && chmod 600 /data/demo-credentials.txt'
+  say "Demo logins reset. Read them with: cat $db/demo-credentials.txt"
+}
+
+probe() { curl -s -o /dev/null -m 3 -w '%{http_code}' "$1" 2>/dev/null || true; }
+cmd_status() {
+  check_ctx
+  printf '%-12s %-9s %-10s %s\n' SERVICE PROFILE STATE PORT
+  row() { # name profile port url
+    local st; st=$(docker --context "$CTX" ps --filter "label=com.docker.compose.project=umanah" --filter "label=com.docker.compose.service=$1" --format '{{.Status}}' | head -1)
+    if [ -z "$st" ]; then printf '%-12s %-9s %-10s %s\n' "$1" "$2" "Off (on demand)" "$3"
+    else local c; c=$(probe "$4"); printf '%-12s %-9s %-10s %s  (%s, http %s)\n' "$1" "$2" "running" "$3" "${st%% (*}" "${c:-?}"; fi; }
+  row web core "$WEB_PORT" "http://127.0.0.1:$WEB_PORT/api/health"
+  row api core 8101 http://127.0.0.1:8101/api/health
+  row ollama core 8120 http://127.0.0.1:8120/api/version
+  row kolibri content 8111 http://127.0.0.1:8111/
+  row kiwix content 8112 http://127.0.0.1:8112/
+  row moodle lms 8110 http://127.0.0.1:8110/login/index.php
+  row jupyterhub code 8113 http://127.0.0.1:8113/hub/health
+  row open-webui admin 8114 http://127.0.0.1:8114/health
+  say; say "RAM available: $(avail_gb) GB   data drive: $(df -h --output=avail "$ROOT" 2>/dev/null | tail -1 | tr -d ' ') free"
+}
+
+cmd_models() {
+  check_ctx
+  [ "${1:-}" = pull ] || { say "usage: umanah-lab models pull"; exit 1; }
+  for m in "${UMANAH_TUTOR_MODEL:-qwen3:4b-instruct}" "${UMANAH_SAFETY_MODEL:-llama-guard3:1b}" "${UMANAH_EMBED_MODEL:-nomic-embed-text}"; do
+    docker --context "$CTX" exec umanah-ollama-1 ollama pull "$m"
+  done
+  docker --context "$CTX" exec umanah-ollama-1 ollama list | tee "$ROOT/models/registry-$(date +%Y%m%d).txt"
+}
+
+case "${1:-status}" in
+  init) cmd_init ;;
+  profile) shift; cmd_profile "$@" ;;
+  demo-reset) shift; cmd_demo_reset "$@" ;;
+  demo-clean-chats) check_ctx; docker --context "$CTX" exec -i umanah-api-1 python -m umanah_api.demo reset-chats ;;
+  kiwix-add) shift; cmd_kiwix_add "$@" ;;
+  start) shift; cmd_start "$@" ;;
+  stop) cmd_stop ;;
+  restart) shift; cmd_restart "$@" ;;
+  status) cmd_status ;;
+  logs) shift; check_ctx; dc logs --tail 100 -f "$@" ;;
+  models) shift; cmd_models "$@" ;;
+  *) sed -n '2,7p' "$0"; exit 1 ;;
+esac

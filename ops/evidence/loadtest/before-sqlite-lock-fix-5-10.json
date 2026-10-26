@@ -1,0 +1,47 @@
+{
+  "at": "2026-09-24 20:21:04",
+  "results": [
+    {
+      "students": 5,
+      "asks_each": 2,
+      "requests": 10,
+      "ok": 6,
+      "errors": 4,
+      "error_kinds": [
+        "timeout/RemoteProtocolError"
+      ],
+      "ttfw_p50_s": 8.57,
+      "ttfw_p95_s": 28.9,
+      "wps_p50": 6.77,
+      "queue_wait_p50_s": 5.14,
+      "queue_wait_p95_s": 23.31,
+      "max_queue_pos": 1,
+      "reply_words_p50": 81,
+      "wall_s": 72.1,
+      "min_avail_gb": 2.86,
+      "peak_swap_gb": 0.04,
+      "accounts_reused": false
+    },
+    {
+      "students": 10,
+      "asks_each": 2,
+      "requests": 20,
+      "ok": 2,
+      "errors": 18,
+      "error_kinds": [
+        "timeout/RemoteProtocolError"
+      ],
+      "ttfw_p50_s": 16.09,
+      "ttfw_p95_s": 33.05,
+      "wps_p50": 7.85,
+      "queue_wait_p50_s": 0.0,
+      "queue_wait_p95_s": 0.0,
+      "max_queue_pos": 0,
+      "reply_words_p50": 56,
+      "wall_s": 112.1,
+      "min_avail_gb": 2.47,
+      "peak_swap_gb": 0.13,
+      "accounts_reused": false
+    }
+  ]
+}

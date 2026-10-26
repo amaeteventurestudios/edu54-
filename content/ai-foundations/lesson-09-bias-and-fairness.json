@@ -1,0 +1,125 @@
+{
+ "id": "ai-foundations-l9",
+ "course_id": "ai-foundations",
+ "title": "Bias and fairness",
+ "module": "Module 3",
+ "lesson_number": 9,
+ "objective": "By the end of this lesson, you will be able to explain what bias in an AI system is, where it comes from, and how to test whether a system is fair to different groups.",
+ "xp_on_complete": 50,
+ "sections": [
+  {
+   "id": "what-is-bias",
+   "title": "What is bias?",
+   "text": "An AI system is biased when it works better for some groups of people than others, or treats some people unfairly. The computer is not being mean on purpose. It is repeating patterns from its data and from choices people made when building it."
+  },
+  {
+   "id": "where-from",
+   "title": "Where bias comes from",
+   "text": "Bias often starts with the data. If a voice helper learned mostly from adults, it may understand children less well. If the data records unfair decisions from the past, the AI can learn to repeat them."
+  },
+  {
+   "id": "hidden",
+   "title": "A good total can hide a problem",
+   "text": "A system can be right 80% of the time overall and still be wrong much more often for one group. That is why we test each group separately and compare the results, instead of looking only at the total."
+  },
+  {
+   "id": "fixing",
+   "title": "Making AI fairer",
+   "text": "Use data that includes everyone the system will be used for. Test it with each group. Ask who could be harmed by a mistake, and keep a person in charge of important decisions."
+  }
+ ],
+ "examples": [
+  {
+   "id": "ex-who",
+   "title": "Example 1: Who is in the data?",
+   "code": "recordings = [\"north\", \"north\", \"north\", \"north\", \"south\"]\ncounts = {}\nfor r in recordings:\n    counts[r] = counts.get(r, 0) + 1\nprint(counts)",
+   "output": "{'north': 4, 'south': 1}"
+  },
+  {
+   "id": "ex-groups",
+   "title": "Example 2: Testing each group",
+   "code": "results = [(\"north\", True), (\"north\", True), (\"north\", True), (\"south\", False), (\"south\", True)]\nfor group in [\"north\", \"south\"]:\n    mine = [ok for g, ok in results if g == group]\n    print(group, sum(mine), \"of\", len(mine), \"correct\")",
+   "output": "north 3 of 3 correct\nsouth 1 of 2 correct"
+  }
+ ],
+ "diagram": {
+  "title": "Checking for fairness",
+  "steps": [
+   "Check who is in the data",
+   "Test the AI for each group",
+   "Compare the results",
+   "Fix the data or the system"
+  ],
+  "loop_label": "Keep checking"
+ },
+ "check_questions": [
+  {
+   "id": "cq1",
+   "prompt": "A voice helper was trained mostly on recordings of adults. What is most likely?",
+   "code": null,
+   "options": [
+    "It will work equally well for everyone",
+    "It will understand children better than adults",
+    "It cannot be tested at all",
+    "It may understand children's voices less well"
+   ],
+   "answer_index": 3,
+   "explanation": "Children were missing from most of its data, so it may make more mistakes with their voices.",
+   "misconception": {
+    "0": "It learned mostly from adults, so it may not work as well for others.",
+    "1": "It heard far fewer children, so it is unlikely to be better with them.",
+    "2": "You can test it by trying it with different groups."
+   }
+  },
+  {
+   "id": "cq2",
+   "prompt": "Each True is a correct answer from an AI. What do the results show?",
+   "code": "north = [True, True, True, True]\nsouth = [False, True]\nprint(sum(north), \"of\", len(north))\nprint(sum(south), \"of\", len(south))",
+   "options": [
+    "It works equally well for both groups",
+    "It works less well for the south group",
+    "The south group did something wrong",
+    "The test is too small to show anything at all"
+   ],
+   "answer_index": 1,
+   "explanation": "It was right 4 out of 4 times for north but only 1 out of 2 for south, so it works less well for south.",
+   "misconception": {
+    "0": "4 of 4 and 1 of 2 are not the same rate.",
+    "2": "The problem is in the AI or its data, not in the people.",
+    "3": "It is a small test, but it already shows a gap worth checking with more data."
+   }
+  },
+  {
+   "id": "cq3",
+   "prompt": "Which is the best way to make an AI system fairer?",
+   "code": null,
+   "options": [
+    "Add more varied data and test it with every group it will be used for",
+    "Hide the results that look bad",
+    "Use less data",
+    "Only test it with the people who built it"
+   ],
+   "answer_index": 0,
+   "explanation": "Varied data and testing each group help find and fix unfair gaps.",
+   "misconception": {
+    "1": "Hiding results does not fix the problem.",
+    "2": "Less data usually means more groups are missing.",
+    "3": "The builders may not be like everyone who will use it."
+   }
+  }
+ ],
+ "try_it": {
+  "id": "try1",
+  "title": "Try It Yourself",
+  "instructions": "Add more \"south\" recordings until both groups have the same count. Run the code to check.",
+  "starter": "recordings = [\"north\", \"north\", \"north\", \"north\", \"south\"]\ncounts = {}\nfor r in recordings:\n    counts[r] = counts.get(r, 0) + 1\nprint(counts)",
+  "counts_when": "ran_ok"
+ },
+ "activities": [
+  "read",
+  "cq1",
+  "cq2",
+  "cq3",
+  "try1"
+ ]
+}

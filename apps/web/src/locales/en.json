@@ -1,0 +1,101 @@
+{
+  "_about": "English UI strings for the K-12 grade-band screens. Another language is a file with the same keys (for example fr.json); missing keys fall back to English. {name}-style words are filled in by the app.",
+  "bands": {
+    "discover": { "name": "Discover", "grades": "K-2", "stage": "Early Years" },
+    "explore": { "name": "Explore", "grades": "3-5", "stage": "Elementary" },
+    "build": { "name": "Build", "grades": "6-8", "stage": "Middle School" },
+    "launch": { "name": "Launch", "grades": "9-12", "stage": "High School" }
+  },
+  "verbs": {
+    "ask": "Your AI tutor: ask questions, get explanations, practice",
+    "learn": "Courses, lessons and assignments",
+    "build": "Code, experiment, design and build",
+    "explore": "Books, simulations, datasets and science",
+    "progress": "XP, skills, badges and projects"
+  },
+  "skills": {
+    "discover": ["Listening", "Patterns", "Counting", "Stories", "Being kind online"],
+    "explore": ["AI Literacy", "Computational Thinking", "Block Coding", "Problem Solving", "Digital Citizenship"],
+    "build": ["AI Literacy", "Python", "Problem Solving", "Data", "Digital Citizenship"],
+    "launch": ["Python", "Machine Learning", "Data Science", "Research", "Engineering Design"]
+  },
+  "paths": {
+    "explore": ["Digital Citizenship", "AI Literacy", "Block Coding", "First Project"],
+    "build": ["AI Foundations", "Python", "Data", "First AI Project"],
+    "launch": ["Python", "Machine Learning", "Data Science", "Portfolio Project"]
+  },
+  "recommended": {
+    "discover": { "title": "Music Coding", "text": "Make a song by snapping blocks together." },
+    "explore": { "title": "Block Puzzles: Maze", "text": "Guide the character to the goal with blocks." },
+    "build": { "title": "Data and Patterns", "text": "AI Foundations, Lesson 2: how AI finds patterns in data." },
+    "launch": { "title": "While Loops", "text": "Python Foundations, Lesson 7: loops that run until a condition changes." }
+  },
+  "k2": {
+    "read": { "label": "Read", "say": "Read. Picture books and stories." },
+    "play": { "label": "Play", "say": "Play. Games where you make things with blocks." },
+    "ask": { "label": "Ask", "say": "Ask. Ask your helper a question." },
+    "stars": { "label": "My Stars", "say": "My Stars. See the stars you have earned." }
+  },
+  "login": {
+    "schoolEntry": "School entry",
+    "student": "Student",
+    "staff": "Teacher or staff",
+    "studentTitle": "Welcome back",
+    "studentText": "Sign in with the username and password or PIN from your teacher.",
+    "staffTitle": "Staff sign-in",
+    "staffText": "Teachers, counselors and administrators sign in with their school account.",
+    "username": "Username",
+    "passwordOrPin": "Password or PIN",
+    "password": "Password",
+    "signIn": "Sign in",
+    "signingIn": "Signing in…",
+    "studentForgot": "Forgot your password? Ask your teacher. They can make you a new one.",
+    "staffForgot": "Forgot your password? Ask your school's administrator to reset it.",
+    "chooseWho": "Who is signing in?"
+  },
+  "school": {
+    "title": "School",
+    "subtitle": "Your school by grade, then class, then student. Open a student to see their progress.",
+    "students": "{n} students",
+    "student": "1 student",
+    "classes": "{n} classes",
+    "class": "1 class",
+    "noStudents": "No students in your classes yet.",
+    "gradeNotSet": "Grade not set",
+    "inactive": "Inactive"
+  },
+  "widen": {
+    "title": "Content",
+    "text": "{name} sees the courses, games and library shelves for {band}. You can open up other bands too. The tutor's rules and safety checks stay the same.",
+    "own": "own band",
+    "save": "Save",
+    "saved": "Saved",
+    "error": "Couldn't save. Please try again."
+  },
+  "projects": {
+    "title": "Projects",
+    "none": "No saved projects yet.",
+    "handedIn": "Handed in",
+    "draft": "Draft",
+    "handIn": "Hand in to my teacher",
+    "handingIn": "Handing in…",
+    "handedInNote": "Handed in. Your teacher can read it now.",
+    "saveFirst": "Save your work first, then hand it in.",
+    "changedNote": "You changed it after handing it in. Hand it in again when you are ready.",
+    "helper": "Project helper",
+    "helperText": "Stuck? Ask the helper. It gives hints and questions, not the answers.",
+    "helperPlaceholder": "Ask about your experiment…"
+  },
+  "practice": {
+    "gradeTitle": "Practice for {grade}",
+    "gradeText": "Practice sets from your grade's courses. Answers are checked right away, with hints when you need them.",
+    "keepGoing": "Keep going",
+    "mastered": "Mastered",
+    "practising": "Practising",
+    "right": "{correct} of {attempts} right",
+    "open": "Open",
+    "pythonTitle": "Coding practice",
+    "pythonText": "Questions, flashcards and a sprint on the Python you have learned.",
+    "none": "Nothing to practise here yet."
+  }
+}

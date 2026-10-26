@@ -1,0 +1,55 @@
+# Import gate for LABOS_BRAND=edu54. No override flag.
+allowed_licenses:
+  - CC-BY-3.0
+  - CC-BY-4.0
+  - CC-BY-SA-3.0      # ShareAlike: keep in separate SA packs
+  - CC-BY-SA-4.0
+  - CC0-1.0
+  - public-domain
+  - MIT
+  - MIT-0
+  - BSD-2-Clause
+  - BSD-3-Clause
+  - Apache-2.0
+  - MPL-2.0
+  - LGPL-2.1
+  - LGPL-3.0
+  - GPL-2.0
+  - GPL-3.0
+  - AGPL-3.0
+rejected_always:
+  - any license containing NC or ND
+  - unknown / unverified
+required_metadata: [license, source_url, attribution, checked_on]
+denylist_sources:        # rejected even if metadata claims an allowed license
+  - mit.edu               # except the MIT Press SICP open edition, checked by hand
+  - ocw.mit.edu
+  - dayofai.org
+  - raise.mit.edu
+  - blossoms.mit.edu
+  - missing.csail.mit.edu
+  - scratch.mit.edu
+  - cs50.harvard.edu
+  - harvard.edu
+  - khanacademy.org
+  - code.org
+  - fast.ai
+  - course.fast.ai
+  - geogebra.org
+  - desmos.com
+  - wolframalpha.com
+  - mathworks.com
+  - ck12.org
+  - ted.com
+  - oyc.yale.edu
+  - elementsofai.com
+  - kaggle.com/learn
+  - iep.utm.edu
+  - youtube.com
+  - openwebui.com
+denylist_titles:
+  - "U.S. History"
+  - "American Government"
+  - "Business Law I Essentials"
+  - "Principles of Accounting"
+phet_cutoff_date: "2026-03-29"   # only sims published before this are CC BY

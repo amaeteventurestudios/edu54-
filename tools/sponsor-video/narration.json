@@ -1,0 +1,27 @@
+{
+  "voice": "af_heart",
+  "speed": 1.0,
+  "pronounce": { "Umanah": "uːmˈɑːnɑː" },
+  "lines": [
+    { "id": "problem1", "text": "Schools are being asked to pay for AI, one student at a time." },
+    { "id": "problem2", "text": "And student conversations leave the building." },
+    { "id": "another", "text": "There is another way." },
+    { "id": "box", "text": "Umanah AI Lab: a school-owned AI learning lab. One box at school serves the whole class, even with the internet unplugged." },
+    { "id": "signin", "text": "A student signs in from any browser at school." },
+    { "id": "verbs", "text": "Ask. Learn. Build. Explore. Progress." },
+    { "id": "ask", "text": "Ask: a tutor that runs on the box. Nothing leaves the school." },
+    { "id": "learn", "text": "Learn: courses, lessons and homework from the teacher." },
+    { "id": "lesson", "text": "Lessons have practice questions checked by the software, with the tutor beside them." },
+    { "id": "build", "text": "Build: write and run Python right in the browser." },
+    { "id": "error", "text": "When code goes wrong, a helper explains the error and gives hints." },
+    { "id": "homework", "text": "In homework the tutor gives hints, not answers. The software enforces it." },
+    { "id": "teacher", "text": "Teachers see the whole class at a glance, and who may need help." },
+    { "id": "assignments", "text": "Assignments, with the tutor's help level set by the teacher for each one." },
+    { "id": "grading", "text": "Work is reviewed and graded with a comment, and the student is notified." },
+    { "id": "safety", "text": "Safety: every message is screened. Alerts go to the school's own trusted adults, never to Umanah." },
+    { "id": "status", "text": "The school runs it, and can see how it is doing, in plain language." },
+    { "id": "title", "text": "Umanah AI Lab" },
+    { "id": "ask100k", "text": "We are seeking about $100,000 to build and pilot the first classroom boxes.", "say": "We are seeking about one hundred thousand dollars to build and pilot the first classroom boxes." },
+    { "id": "close", "text": "Local AI for every classroom." }
+  ]
+}

@@ -1,0 +1,61 @@
+# EDU54 instance (docs/edu54/INSTALL-RUNBOOK.md Phase 4): web + API for ONE edition, from the LabOS code with
+# LABOS_BRAND=edu54. Run once per instance with its own env file and compose project name:
+#   docker --context ai-data compose -p edu54-k12 --env-file <EDU54_ROOT>/config/edu54-k12.env -f infrastructure/compose/edu54.yaml up -d
+# Isolation from the Umanah AI Lab: own images (edu54/*, never umanah/*), own project, database, ports (8300-8399) and folders.
+#
+# Networking: on this rootless daemon "host" networking is the machine's own network. Both containers use it: the API listens
+# on 127.0.0.1:API_PORT only, and reaches the shared services (and, in the RAM-guard fallback, the AI Lab's model runtime as
+# a read-only client) at their 127.0.0.1 ports; the web server listens on WEB_PORT (LAN + Tailscale; the box has no public
+# interface) and proxies /api to the API on loopback.
+name: ${COMPOSE_PROJECT_NAME:?set COMPOSE_PROJECT_NAME}
+
+services:
+  web:
+    image: edu54/web:${EDU54_VERSION:-0.1.0}
+    build: { context: ../.., dockerfile: apps/web/Dockerfile, args: { VITE_PRODUCT_NAME: "EDU54" } }
+    restart: unless-stopped
+    environment:
+      UMANAH_WEB_PORT: "${WEB_PORT:?}"
+      UMANAH_API_UPSTREAM: "127.0.0.1:${API_PORT:?}"
+    network_mode: host
+    volumes: ["${EDU54_ROOT:?}/apps/games:/srv/games:ro"]
+    mem_limit: 128m
+
+  api:
+    image: edu54/api:${EDU54_VERSION:-0.1.0}
+    build: { context: ../.., dockerfile: services/api/Dockerfile }
+    restart: unless-stopped
+    network_mode: host
+    environment:
+      LABOS_BRAND: ${LABOS_BRAND:-edu54}
+      LABOS_EDITION: ${LABOS_EDITION:?}
+      UMANAH_HOST: 127.0.0.1
+      UMANAH_PORT: "${API_PORT}"
+      UMANAH_INSTANCE: ${LABOS_INSTANCE:?}
+      UMANAH_DATA_DIR: /data
+      UMANAH_CREDENTIALS_FILE: /secrets/demo-accounts-${LABOS_INSTANCE}.txt
+      UMANAH_KNOWLEDGE_CATALOG: /knowledge/catalog.json
+      UMANAH_KIWIX_BOOKS: ${KIWIX_BOOKS:-}
+      UMANAH_OLLAMA_URL: ${INFERENCE_URL:?}
+      UMANAH_TUTOR_MODEL: ${TUTOR_MODEL:?}
+      UMANAH_SAFETY_MODEL: ${SAFETY_MODEL:?}
+      UMANAH_EMBED_MODEL: ${EMBED_MODEL:?}
+      UMANAH_KEEP_ALIVE: ${KEEP_ALIVE:-5m}
+      UMANAH_TUTOR_NUM_CTX: ${TUTOR_NUM_CTX:-2560}
+      UMANAH_MAX_PARALLEL_INFERENCE: ${SLOTS:-2}
+      UMANAH_WARM_ON_START: ${WARM_ON_START:-0}
+      UMANAH_DEMO_SEED: "${DEMO_SEED:-1}"
+      UMANAH_DEMO_MODE: "${DEMO_MODE:-0}"               # "Try as a student / teacher" on the sign-in page (demo boxes only)
+      UMANAH_DEMO_ALL_LOGINS: "${DEMO_ALL_LOGINS:-0}"
+      UMANAH_SCHOOL_DISPLAY: ${SCHOOL_DISPLAY:-}
+      UMANAH_SAFETY_COUNTRY: ${SAFETY_COUNTRY:-NG}
+      UMANAH_STATUS_NOTE: ${STATUS_NOTE:-}
+      UMANAH_ENGINES: "kiwix=${KIWIX_URL:-http://127.0.0.1:8312}/,kolibri=${KOLIBRI_URL:-http://127.0.0.1:8311}/"
+      UMANAH_CONTROL_DIR: /control
+    volumes:
+      - ${EDU54_ROOT}/database/${LABOS_INSTANCE}:/data
+      - ${EDU54_ROOT}/secrets/instances/${LABOS_INSTANCE}:/secrets
+      - ${EDU54_ROOT}/knowledge:/knowledge:ro
+      - ${EDU54_ROOT}/services/control/${LABOS_INSTANCE}:/control
+    healthcheck: { test: ["CMD", "sh", "-c", "python -c \"import urllib.request as u; u.urlopen('http://127.0.0.1:${API_PORT}/api/health', timeout=3)\""], interval: 15s, timeout: 5s, retries: 5 }
+    mem_limit: 512m

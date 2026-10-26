@@ -1,0 +1,409 @@
+{
+ "_about": "Build projects (K-12). Science and engineering projects open a simulation from the School Library (PhET, CC BY 4.0) by its content id; robotics opens Reeborg's World; AI projects open Python Lab with starter code. Written by Umanah (AI agent, 2026-09-30). Bands: discover K-2, explore 3-5, build 6-8, launch 9-12.",
+ "science": [
+  {
+   "id": "sci-make-ten",
+   "title": "Make Ten",
+   "bands": [
+    "discover"
+   ],
+   "sim": "42747a1f03745adea224ee1b77df5067",
+   "question": "How many different ways can you make 10?",
+   "steps": [
+    "Open the game and choose the first level.",
+    "Make 10 by moving the blocks together.",
+    "Try to find a new way each time."
+   ],
+   "record": "Write or draw two ways you made 10."
+  },
+  {
+   "id": "sci-color-vision",
+   "title": "Mixing Light",
+   "bands": [
+    "discover",
+    "explore"
+   ],
+   "sim": "b8349013ddde512a9fa07cbb37e30de4",
+   "question": "What color do you see when red and green light mix?",
+   "steps": [
+    "Turn on the red light and the green light.",
+    "Move the sliders and watch the person's thought bubble.",
+    "Try red and blue, then green and blue."
+   ],
+   "record": "Which two lights made yellow? Which made purple?"
+  },
+  {
+   "id": "sci-states-of-matter",
+   "title": "Solids, Liquids and Gases",
+   "bands": [
+    "explore",
+    "build"
+   ],
+   "sim": "ac7c85c99d9957dcb5c4638e132f00cf",
+   "question": "What happens to the tiny particles when you heat ice?",
+   "steps": [
+    "Choose water and start as a solid.",
+    "Add heat slowly and watch the particles.",
+    "Stop when it boils and compare how fast the particles move."
+   ],
+   "record": "Describe the particles in a solid, a liquid and a gas in one sentence each."
+  },
+  {
+   "id": "sci-density",
+   "title": "Will It Float?",
+   "bands": [
+    "explore",
+    "build"
+   ],
+   "sim": "9907b06141d256d49bbc496eaff8fc10",
+   "question": "Why do some blocks float and others sink?",
+   "steps": [
+    "Predict which blocks will float before you drop them.",
+    "Drop each block in the water.",
+    "Check the mass and volume of each block."
+   ],
+   "record": "Make a table: block, prediction, result. What do the floating blocks have in common?"
+  },
+  {
+   "id": "sci-forces-basics",
+   "title": "Pushes and Pulls",
+   "bands": [
+    "explore",
+    "build"
+   ],
+   "sim": "0db183789ae850e1ae3e24d42f12f701",
+   "question": "What happens when two teams pull with the same force?",
+   "steps": [
+    "Open Net Force.",
+    "Add pullers to each side and press Go.",
+    "Change one side and watch which way the cart moves."
+   ],
+   "record": "Explain balanced and unbalanced forces with your own example."
+  },
+  {
+   "id": "sci-energy-skate",
+   "title": "Skate Park Energy",
+   "bands": [
+    "build",
+    "launch"
+   ],
+   "sim": "94c86ae055ea5cd49e357f7ebf48f649",
+   "question": "Where is the skater fastest, and why?",
+   "steps": [
+    "Turn on the energy bar graph.",
+    "Drop the skater from different heights.",
+    "Watch kinetic and potential energy as the skater moves."
+   ],
+   "record": "Sketch the track and mark where kinetic energy is highest and lowest."
+  },
+  {
+   "id": "sci-natural-selection",
+   "title": "Natural Selection",
+   "bands": [
+    "build",
+    "launch"
+   ],
+   "sim": "18fc28a39fe050fca06aed09f8a7f36a",
+   "question": "How does the environment change which bunnies survive?",
+   "steps": [
+    "Add a mutation such as brown fur.",
+    "Add wolves, then change the environment.",
+    "Watch the population graph over several generations."
+   ],
+   "record": "Write a claim, the evidence from the graph, and your reasoning."
+  },
+  {
+   "id": "sci-build-atom",
+   "title": "Build an Atom",
+   "bands": [
+    "build",
+    "launch"
+   ],
+   "sim": "3a2be105084a5e4dae05dadd2de3c0b4",
+   "question": "What decides which element an atom is?",
+   "steps": [
+    "Add protons, neutrons and electrons.",
+    "Watch the element name and charge change.",
+    "Make a neutral carbon atom, then an ion."
+   ],
+   "record": "What changes the element? What changes the charge? What changes the mass?"
+  },
+  {
+   "id": "sci-gravity-orbits",
+   "title": "Gravity and Orbits",
+   "bands": [
+    "build",
+    "launch"
+   ],
+   "sim": "3a40e56499ac5b7b9b6abc61950b3a82",
+   "question": "What would happen to Earth's orbit if the Sun were heavier?",
+   "steps": [
+    "Start with the Sun and Earth.",
+    "Turn on the path and the gravity arrows.",
+    "Change the Sun's mass and compare the orbit."
+   ],
+   "record": "Describe how mass changes the pull of gravity."
+  },
+  {
+   "id": "sci-greenhouse",
+   "title": "The Greenhouse Effect",
+   "bands": [
+    "build",
+    "launch"
+   ],
+   "sim": "6b46ccee892c58f38e5605651683b665",
+   "question": "How do greenhouse gases change a planet's temperature?",
+   "steps": [
+    "Start with no greenhouse gases and read the temperature.",
+    "Add greenhouse gases in steps.",
+    "Record the temperature at each step."
+   ],
+   "record": "Make a table of gas level and temperature. What pattern do you see?"
+  },
+  {
+   "id": "sci-gene-expression",
+   "title": "Gene Expression",
+   "bands": [
+    "launch"
+   ],
+   "sim": "def8e04400695f80a82c6b1490163b47",
+   "question": "How does a cell make a protein from a gene?",
+   "steps": [
+    "Place the positive regulator and RNA polymerase.",
+    "Watch messenger RNA form.",
+    "Bring the mRNA to the ribosome and collect proteins."
+   ],
+   "record": "Explain transcription and translation in your own words."
+  },
+  {
+   "id": "sci-projectile",
+   "title": "Projectile Motion",
+   "bands": [
+    "launch"
+   ],
+   "sim": "e1eacd24c7e25b60867b067be2329ac2",
+   "question": "Which launch angle sends a projectile farthest?",
+   "steps": [
+    "Keep the speed the same.",
+    "Launch at 15, 30, 45, 60 and 75 degrees.",
+    "Measure each distance with the tape."
+   ],
+   "record": "Graph angle against distance. Which angle wins, and why do pairs of angles match?"
+  }
+ ],
+ "engineering": [
+  {
+   "id": "eng-balance",
+   "title": "Balance the Plank",
+   "bands": [
+    "explore",
+    "build"
+   ],
+   "sim": "00e2a390a6bd5ef68953e6dbd45c3216",
+   "goal": "Balance two different masses on a plank.",
+   "constraints": [
+    "Use at least two different objects.",
+    "The plank must stay level when the supports are removed."
+   ],
+   "test": "Remove the supports. Does it stay level?",
+   "improve": "Find a rule that predicts where to put each mass."
+  },
+  {
+   "id": "eng-circuit",
+   "title": "Light the House",
+   "bands": [
+    "build",
+    "launch"
+   ],
+   "sim": "78fe3a8c61875c809853005a2aaafe78",
+   "goal": "Build a circuit that lights two bulbs with one switch.",
+   "constraints": [
+    "Use one battery.",
+    "Both bulbs must turn on and off with the same switch."
+   ],
+   "test": "Close the switch: do both bulbs light? Open it: do both go out?",
+   "improve": "Rebuild it so one bulb keeps working if the other breaks. What did you change?"
+  },
+  {
+   "id": "eng-spring-scale",
+   "title": "Design a Spring Scale",
+   "bands": [
+    "build",
+    "launch"
+   ],
+   "sim": "9bde9cd35c125736adb9397bc7f809d3",
+   "goal": "Use a spring to find the mass of an unknown object.",
+   "constraints": [
+    "Use only the spring, the ruler and the known masses."
+   ],
+   "test": "Measure the stretch for known masses, then predict the unknown mass.",
+   "improve": "How could you make the scale more accurate?"
+  },
+  {
+   "id": "eng-boat",
+   "title": "Build a Boat That Floats",
+   "bands": [
+    "explore",
+    "build"
+   ],
+   "sim": "34566fb55c7550d4b7acf6e146fd5862",
+   "goal": "Find which blocks can make a boat that carries the most weight.",
+   "constraints": [
+    "The boat must float, not sink."
+   ],
+   "test": "Compare how much each material floats in the water.",
+   "improve": "Which material would you choose for a real boat, and why?"
+  },
+  {
+   "id": "eng-roller",
+   "title": "Safe Roller Coaster",
+   "bands": [
+    "build",
+    "launch"
+   ],
+   "sim": "94c86ae055ea5cd49e357f7ebf48f649",
+   "goal": "Design a track where the skater makes it over a hill and stops safely.",
+   "constraints": [
+    "The skater must not fly off the track.",
+    "Use the track playground."
+   ],
+   "test": "Run the skater five times. Does it work every time?",
+   "improve": "Add friction. What changes, and how do you fix it?"
+  },
+  {
+   "id": "eng-launcher",
+   "title": "Hit the Target",
+   "bands": [
+    "launch"
+   ],
+   "sim": "e1eacd24c7e25b60867b067be2329ac2",
+   "goal": "Hit the target at 15 m on your first try.",
+   "constraints": [
+    "Plan with the numbers before you launch."
+   ],
+   "test": "Launch once. How close did you get?",
+   "improve": "Change one thing at a time until you hit it, then explain your method."
+  }
+ ],
+ "robotics": [
+  {
+   "id": "rob-maze",
+   "title": "Guide the Explorer",
+   "bands": [
+    "discover",
+    "explore"
+   ],
+   "href": "/play/blockly-games/maze/index.html?lang=en",
+   "goal": "Use blocks to guide the explorer through the maze.",
+   "skills": "Sequences and loops with blocks"
+  },
+  {
+   "id": "rob-first-steps",
+   "title": "Robot's First Steps",
+   "bands": [
+    "explore",
+    "build"
+   ],
+   "href": "/play/reeborg/reeborg_offline.html?lang=en&mode=python&menu=worlds%2Fmenus%2Freeborg_intro_en.json&name=Home%201",
+   "goal": "Program the robot to walk home with move() and turn_left().",
+   "skills": "Commands in order"
+  },
+  {
+   "id": "rob-around",
+   "title": "Around the World",
+   "bands": [
+    "build"
+   ],
+   "href": "/play/reeborg/reeborg_offline.html?lang=en&mode=python&menu=worlds%2Fmenus%2Freeborg_intro_en.json&name=Around%201",
+   "goal": "Make the robot walk around the world and come back.",
+   "skills": "Repeat and functions"
+  },
+  {
+   "id": "rob-hurdles",
+   "title": "Robot Hurdles",
+   "bands": [
+    "build",
+    "launch"
+   ],
+   "href": "/play/reeborg/reeborg_offline.html?lang=en&mode=python&menu=worlds%2Fmenus%2Freeborg_intro_en.json&name=Hurdle%201",
+   "goal": "Jump the hurdles and reach the finish.",
+   "skills": "Defining your own functions"
+  },
+  {
+   "id": "rob-sensors",
+   "title": "Robot Sensors",
+   "bands": [
+    "build",
+    "launch"
+   ],
+   "href": "/play/reeborg/reeborg_offline.html?lang=en&mode=python&menu=worlds%2Fmenus%2Freeborg_intro_en.json&name=Hurdle%203",
+   "goal": "Hurdles move each time: make the robot sense them with front_is_clear().",
+   "skills": "if, while and sensors"
+  },
+  {
+   "id": "rob-maze-solver",
+   "title": "Maze Solver",
+   "bands": [
+    "launch"
+   ],
+   "href": "/play/reeborg/reeborg_offline.html?lang=en&mode=python&menu=worlds%2Fmenus%2Freeborg_intro_en.json&name=Maze",
+   "goal": "Write one program that solves any maze by following the right-hand wall.",
+   "skills": "Algorithms"
+  }
+ ],
+ "ai": [
+  {
+   "id": "ai-fruit",
+   "title": "Teach a Computer to Sort Fruit",
+   "bands": [
+    "explore",
+    "build",
+    "launch"
+   ],
+   "file": "ai/fruit-sorter.py",
+   "goal": "See how an AI labels something new by finding the most similar example (nearest neighbour)."
+  },
+  {
+   "id": "ai-spam",
+   "title": "Build a Spam Filter",
+   "bands": [
+    "build",
+    "launch"
+   ],
+   "file": "ai/spam-filter.py",
+   "goal": "Train a filter from word counts, then try to fool it."
+  },
+  {
+   "id": "ai-temperature",
+   "title": "Predict Tomorrow's Temperature",
+   "bands": [
+    "build",
+    "launch"
+   ],
+   "file": "ai/predict-temperature.py",
+   "goal": "Fit a line to data and see where predictions stop being trustworthy."
+  },
+  {
+   "id": "ai-chatbot",
+   "title": "Make a Rule-Based Chatbot",
+   "bands": [
+    "explore",
+    "build",
+    "launch"
+   ],
+   "file": "ai/rule-chatbot.py",
+   "goal": "Build a chatbot from rules and compare it with a modern AI tutor."
+  },
+  {
+   "id": "ai-pixels",
+   "title": "Pictures Are Numbers",
+   "bands": [
+    "explore",
+    "build",
+    "launch"
+   ],
+   "file": "ai/image-as-numbers.py",
+   "goal": "See how a computer stores a picture, the first step of image recognition."
+  }
+ ]
+}

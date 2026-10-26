@@ -1,0 +1,126 @@
+{
+ "id": "science-engineering-l7",
+ "course_id": "science-engineering",
+ "title": "Design challenges",
+ "module": "Module 4",
+ "lesson_number": 7,
+ "objective": "By the end of this lesson, you will be able to follow the engineering design process: define a problem, list its constraints, compare ideas and build a first prototype.",
+ "xp_on_complete": 50,
+ "sections": [
+  {
+   "id": "engineers",
+   "title": "What engineers do",
+   "text": "Engineers solve problems by designing things, such as bridges, water filters, phones and roads. They follow a design process: a set of steps they can repeat until the solution works well."
+  },
+  {
+   "id": "define",
+   "title": "Define the problem",
+   "text": "Start by saying clearly what the problem is and who it is for. \"Water bottles keep falling off our desks\" is clearer than \"make something cool\". Then write the criteria: what a good solution must do, for example hold a 1 litre bottle without tipping over."
+  },
+  {
+   "id": "constraints",
+   "title": "Constraints",
+   "text": "Constraints are the limits you must work within, such as materials, money, time and size. In a class challenge you might only get 20 straws, some tape and 30 minutes. Real engineers have constraints too, like a solar lamp that must be cheap enough for families to buy."
+  },
+  {
+   "id": "ideas-build",
+   "title": "Ideas, then build",
+   "text": "Brainstorm many ideas and sketch them before choosing one. Pick the idea that best meets the criteria within the constraints. Then build a prototype, which is an early model you can test and improve."
+  }
+ ],
+ "examples": [
+  {
+   "id": "ex-constraint",
+   "title": "Example 1: Checking a constraint",
+   "code": "straws_used = 18\nstraw_limit = 20\nprint(\"Within the limit:\", straws_used <= straw_limit)",
+   "output": "Within the limit: True"
+  },
+  {
+   "id": "ex-budget",
+   "title": "Example 2: Staying within a budget",
+   "code": "budget = 300\ncosts = [150, 80, 45]\nleft = budget - sum(costs)\nprint(\"Left to spend:\", left)",
+   "output": "Left to spend: 25"
+  }
+ ],
+ "diagram": {
+  "title": "The engineering design process",
+  "steps": [
+   "Define the problem and criteria",
+   "List the constraints",
+   "Brainstorm and choose an idea",
+   "Build a prototype",
+   "Test it"
+  ],
+  "loop_label": "Improve and try again"
+ },
+ "check_questions": [
+  {
+   "id": "cq1",
+   "prompt": "In a design challenge you may use only 20 straws and 1 metre of tape. What are these called?",
+   "code": null,
+   "options": [
+    "Criteria",
+    "Constraints",
+    "Prototypes",
+    "Results"
+   ],
+   "answer_index": 1,
+   "explanation": "Limits on materials, money, time or size are constraints.",
+   "misconception": {
+    "0": "Criteria describe what the solution must do, not the limits you work within.",
+    "2": "A prototype is an early model you build, not a limit.",
+    "3": "Results come from testing, not from the rules of the challenge."
+   }
+  },
+  {
+   "id": "cq2",
+   "prompt": "What is the best first step in the engineering design process?",
+   "code": null,
+   "options": [
+    "Start building straight away",
+    "Buy the most expensive materials",
+    "Clearly define the problem",
+    "Test the finished product"
+   ],
+   "answer_index": 2,
+   "explanation": "You need to know exactly what problem you are solving before you plan or build anything.",
+   "misconception": {
+    "0": "Building before you understand the problem often wastes time and materials.",
+    "1": "Expensive materials are not always better, and you may break a cost constraint.",
+    "3": "You cannot test something you have not designed and built yet."
+   }
+  },
+  {
+   "id": "cq3",
+   "prompt": "Why do engineers come up with many ideas before choosing one?",
+   "code": null,
+   "options": [
+    "More ideas give a better chance of finding one that meets the criteria",
+    "It fills up the time",
+    "The first idea is always wrong",
+    "Having many ideas means you never need to test"
+   ],
+   "answer_index": 0,
+   "explanation": "Comparing several ideas makes it more likely you find one that fits the criteria and the constraints.",
+   "misconception": {
+    "1": "Brainstorming is useful work, not a way to pass time.",
+    "2": "The first idea can be good. Comparing ideas helps you check.",
+    "3": "Every design still needs testing, however many ideas you had."
+   }
+  }
+ ],
+ "try_it": {
+  "id": "try1",
+  "title": "Try It Yourself",
+  "instructions": "Change straws_used to 25 and run the code. Does the design still meet the constraint?",
+  "starter": "straws_used = 18\nstraw_limit = 20\nprint(\"Within the limit:\", straws_used <= straw_limit)",
+  "counts_when": "ran_ok"
+ },
+ "activities": [
+  "read",
+  "cq1",
+  "cq2",
+  "cq3",
+  "try1"
+ ]
+}

@@ -1,0 +1,125 @@
+{
+ "id": "python-foundations-l1",
+ "course_id": "python-foundations",
+ "title": "Hello, Python",
+ "module": "Module 1",
+ "lesson_number": 1,
+ "objective": "By the end of this lesson, you will be able to write and run a program that prints messages, and add comments to explain your code.",
+ "xp_on_complete": 50,
+ "sections": [
+  {
+   "id": "print",
+   "title": "Your first instruction: print",
+   "text": "A program is a list of instructions for the computer. print() is an instruction that shows something on the screen. print(\"Hello\") shows the word Hello."
+  },
+  {
+   "id": "strings",
+   "title": "Text goes in quotes",
+   "text": "Text in Python is called a string. A string must go inside quotes, like \"Hello\" or 'Hello'. Without the quotes, Python thinks the word is a name it should already know, and you get an error."
+  },
+  {
+   "id": "running",
+   "title": "Running a program",
+   "text": "When you press Run, Python reads your program from the top line to the bottom line, one line at a time. Each print() shows its text on a new line. If a line has a mistake, Python stops and shows an error message that tells you which line to check."
+  },
+  {
+   "id": "comments",
+   "title": "Comments are notes for people",
+   "text": "A line that starts with # is a comment. Python skips comments completely. Use them to explain what your code does, or to switch a line off for a moment."
+  }
+ ],
+ "examples": [
+  {
+   "id": "ex-hello",
+   "title": "Example 1: Say hello",
+   "code": "print(\"Hello, Python!\")\nprint(\"I am learning to code.\")",
+   "output": "Hello, Python!\nI am learning to code."
+  },
+  {
+   "id": "ex-comments",
+   "title": "Example 2: Comments are skipped",
+   "code": "# This program prints two lines\nprint(\"Line one\")\n# print(\"This line is switched off\")\nprint(\"Line two\")",
+   "output": "Line one\nLine two"
+  }
+ ],
+ "diagram": {
+  "title": "How a program runs",
+  "steps": [
+   "Write your code",
+   "Press Run",
+   "Python reads each line from top to bottom",
+   "The output appears"
+  ],
+  "loop_label": "Fix and run again"
+ },
+ "check_questions": [
+  {
+   "id": "cq1",
+   "prompt": "What does this program print?",
+   "code": "print(\"Good morning\")\nprint(\"Class\")",
+   "options": [
+    "Good morning, then Class on the next line",
+    "Good morning Class on one line",
+    "print(\"Good morning\")",
+    "Nothing"
+   ],
+   "answer_index": 0,
+   "explanation": "Each print() shows its text on a new line, so you see Good morning and then Class below it.",
+   "misconception": {
+    "1": "Every print() starts a new line.",
+    "2": "print shows the text inside the quotes, not the code itself.",
+    "3": "print() shows text on the screen, so something is printed."
+   }
+  },
+  {
+   "id": "cq2",
+   "prompt": "Which line correctly prints the word Hello?",
+   "code": null,
+   "options": [
+    "print(Hello)",
+    "Print(\"Hello\")",
+    "print(\"Hello\")",
+    "print \"Hello\""
+   ],
+   "answer_index": 2,
+   "explanation": "Text needs quotes, print is written in small letters, and the text goes inside round brackets.",
+   "misconception": {
+    "0": "Without quotes, Python thinks Hello is a name and shows an error.",
+    "1": "Python cares about capital letters. Print is not the same as print.",
+    "3": "In Python 3, print needs round brackets around what you want to show."
+   }
+  },
+  {
+   "id": "cq3",
+   "prompt": "What does this program print?",
+   "code": "# print(\"A\")\nprint(\"B\")\n# print(\"C\")",
+   "options": [
+    "A, B and C",
+    "B",
+    "A and C",
+    "Nothing"
+   ],
+   "answer_index": 1,
+   "explanation": "The lines that start with # are comments, so Python skips them. Only print(\"B\") runs.",
+   "misconception": {
+    "0": "Lines that start with # are skipped.",
+    "2": "The first and last lines are comments, so they do not run.",
+    "3": "The middle line is not a comment, so it runs."
+   }
+  }
+ ],
+ "try_it": {
+  "id": "try1",
+  "title": "Try It Yourself",
+  "instructions": "Change the message so it says hello to your class. Then add a second print() line that shows your favourite food, and a comment that explains your program.",
+  "starter": "# My first program\nprint(\"Hello, world!\")",
+  "counts_when": "ran_ok"
+ },
+ "activities": [
+  "read",
+  "cq1",
+  "cq2",
+  "cq3",
+  "try1"
+ ]
+}

@@ -1,0 +1,93 @@
+{
+ "id": "asg-while-practice",
+ "title": "While Loops Practice",
+ "subject": "Computer Science · Introduction to AI",
+ "lesson_id": "python-foundations-l7",
+ "instructions": "Answer the three questions about while loops. Use the hints if you get stuck. Your teacher will review your work.",
+ "ai_help_policy": "hints_only",
+ "max_score": 3,
+ "questions": [
+  {
+   "id": "q1",
+   "index": 1,
+   "prompt": "What does this program print? Type the numbers separated by spaces.",
+   "code": "n = 1\nwhile n <= 3:\n    print(n)\n    n = n + 1",
+   "kind": "sequence",
+   "key": {
+    "kind": "sequence",
+    "value": [
+     "1",
+     "2",
+     "3"
+    ]
+   },
+   "misconceptions": [
+    {
+     "tag": "stops-early",
+     "match": [
+      "1",
+      "2"
+     ],
+     "note": "Is 3 <= 3 True? Check the condition again."
+    }
+   ],
+   "hints": [
+    "Start with n = 1. Is n <= 3 True?",
+    "Write n after each turn of the loop. Stop when the condition is False.",
+    "A similar problem: with n <= 2 it prints 1 and 2. Now try n <= 3."
+   ]
+  },
+  {
+   "id": "q2",
+   "index": 2,
+   "prompt": "What number does this program print?",
+   "code": "count = 5\nwhile count > 2:\n    count = count - 1\nprint(count)",
+   "kind": "number",
+   "key": {
+    "kind": "number",
+    "value": 2,
+    "tolerance": 0
+   },
+   "misconceptions": [
+    {
+     "tag": "off-by-one",
+     "match": [
+      3
+     ],
+     "note": "The loop keeps going while count > 2. What is count when that becomes False?"
+    }
+   ],
+   "hints": [
+    "Follow count step by step. What is it at the start?",
+    "Write down count after each turn, and check count > 2 each time.",
+    "A similar problem: start at 3 with count > 1 and you stop when count is 1. Try the same for this one."
+   ]
+  },
+  {
+   "id": "q3",
+   "index": 3,
+   "prompt": "How many times does the loop body run?",
+   "code": "n = 0\nwhile n < 4:\n    n = n + 2",
+   "kind": "number",
+   "key": {
+    "kind": "number",
+    "value": 2,
+    "tolerance": 0
+   },
+   "misconceptions": [
+    {
+     "tag": "uses-limit",
+     "match": [
+      4
+     ],
+     "note": "4 is the limit, not the number of turns. n goes up by 2 each turn."
+    }
+   ],
+   "hints": [
+    "What does n start at, and how much does it grow each turn?",
+    "List the values of n at the start of each turn: 0, then the next one, and so on.",
+    "A similar problem: n = 0 and n = n + 1 with n < 3 runs 3 times. Count the turns for this one."
+   ]
+  }
+ ]
+}

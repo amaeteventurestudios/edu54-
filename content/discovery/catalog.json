@@ -1,0 +1,629 @@
+{
+  "_comment": "Discovery Lab catalog (docs/discovery-lab): labs, collections, topics, experiences and journeys. One file for the API (GET /api/discovery/catalog, AI Guide checks) and the web app. status: working = a real, tested experiment; planned = listed only. Never mark an experience working unless its module exists and its tests pass (tests check this).",
+  "version": 1,
+  "labs": [
+    {
+      "id": "math", "name": "Mathematics", "icon": "sigma", "color": "#1D4E89",
+      "blurb": "Numbers, shapes, graphs and change, from counting to calculus.",
+      "collections": [
+        { "id": "number", "name": "Number", "topics": [
+          { "id": "counting", "name": "Counting", "keywords": ["numbers", "count", "place value"] },
+          { "id": "fractions", "name": "Fractions", "keywords": ["fraction", "half", "quarter", "decimals"] },
+          { "id": "ratios", "name": "Ratios and proportion", "keywords": ["ratio", "proportion", "percent", "percentage"] } ] },
+        { "id": "algebra", "name": "Algebra and functions", "topics": [
+          { "id": "algebra", "name": "Algebra", "keywords": ["equation", "variable", "solve", "expression"] },
+          { "id": "functions", "name": "Functions", "keywords": ["function", "input", "output"] },
+          { "id": "graphing", "name": "Graphing", "keywords": ["graph", "graphs", "plot", "line", "parabola", "slope", "gradient", "coordinates"] },
+          { "id": "logarithms", "name": "Logarithms", "keywords": ["log", "logs", "exponential", "powers"] } ] },
+        { "id": "geometry", "name": "Geometry and trigonometry", "topics": [
+          { "id": "geometry", "name": "Geometry", "keywords": ["shape", "angle", "triangle", "circle", "area", "perimeter"] },
+          { "id": "solid-geometry", "name": "Solid geometry", "keywords": ["3d", "solid", "volume", "surface area", "cube", "cylinder", "cone", "sphere", "prism"] },
+          { "id": "trigonometry", "name": "Trigonometry", "keywords": ["trig", "sine", "cosine", "tangent", "sin", "cos", "tan"] },
+          { "id": "vectors", "name": "Vectors and matrices", "keywords": ["vector", "matrix", "matrices", "linear algebra"] } ] },
+        { "id": "data", "name": "Data and chance", "topics": [
+          { "id": "probability", "name": "Probability", "keywords": ["chance", "dice", "coin", "likely", "random"] },
+          { "id": "statistics", "name": "Statistics", "keywords": ["mean", "median", "average", "data", "chart"] } ] },
+        { "id": "calculus", "name": "Calculus and beyond", "topics": [
+          { "id": "limits", "name": "Limits", "keywords": ["limit", "approach"] },
+          { "id": "derivatives", "name": "Derivatives", "keywords": ["derivative", "rate of change", "differentiation", "tangent line"] },
+          { "id": "integrals", "name": "Integrals", "keywords": ["integral", "area under curve", "integration"] },
+          { "id": "differential-equations", "name": "Differential equations", "keywords": ["ode", "growth", "decay"] },
+          { "id": "fourier", "name": "Fourier series", "keywords": ["fourier", "waves", "frequency"] } ] }
+      ]
+    },
+    {
+      "id": "physics", "name": "Physics", "icon": "atom", "color": "#A8321F",
+      "blurb": "Forces, motion, energy, waves and light.",
+      "collections": [
+        { "id": "mechanics", "name": "Motion and forces", "topics": [
+          { "id": "motion", "name": "Motion", "keywords": ["speed", "velocity", "acceleration", "distance", "time"] },
+          { "id": "projectiles", "name": "Projectiles", "keywords": ["projectile", "throw", "launch", "trajectory", "cannon", "ball"] },
+          { "id": "newtons-laws", "name": "Newton's laws", "keywords": ["newton", "force", "mass", "inertia"] },
+          { "id": "gravity", "name": "Gravity", "keywords": ["gravity", "gravitation", "weight", "falling", "free fall"] },
+          { "id": "energy", "name": "Energy and momentum", "keywords": ["energy", "kinetic", "potential", "momentum", "work", "power"] } ] },
+        { "id": "matter", "name": "Matter and heat", "topics": [
+          { "id": "fluids", "name": "Fluids", "keywords": ["pressure", "float", "buoyancy", "density"] },
+          { "id": "heat", "name": "Heat and thermodynamics", "keywords": ["heat", "temperature", "thermodynamics", "conduction"] } ] },
+        { "id": "waves", "name": "Waves, sound and light", "topics": [
+          { "id": "waves", "name": "Waves", "keywords": ["wave", "frequency", "wavelength", "amplitude"] },
+          { "id": "sound", "name": "Sound", "keywords": ["sound", "pitch", "loudness", "echo"] },
+          { "id": "optics", "name": "Optics", "keywords": ["light", "lens", "mirror", "reflection", "refraction"] } ] },
+        { "id": "fields", "name": "Fields and modern physics", "topics": [
+          { "id": "electric-fields", "name": "Electric and magnetic fields", "keywords": ["electric", "magnet", "magnetism", "field", "charge"] },
+          { "id": "modern-physics", "name": "Modern physics", "keywords": ["atom", "quantum", "relativity", "radioactivity"] } ] }
+      ]
+    },
+    {
+      "id": "chemistry", "name": "Chemistry", "icon": "flask-conical", "color": "#0F4D3A",
+      "blurb": "Atoms, molecules and the reactions that change them.",
+      "collections": [
+        { "id": "atoms", "name": "Atoms and elements", "topics": [
+          { "id": "atoms", "name": "Atoms", "keywords": ["atom", "proton", "neutron", "electron"] },
+          { "id": "periodic-table", "name": "The periodic table", "keywords": ["element", "elements", "periodic", "table"] },
+          { "id": "bonds", "name": "Bonds and molecules", "keywords": ["bond", "molecule", "covalent", "ionic", "3d molecules"] } ] },
+        { "id": "reactions", "name": "Reactions", "topics": [
+          { "id": "reactions", "name": "Chemical reactions", "keywords": ["reaction", "reactant", "product", "equation"] },
+          { "id": "stoichiometry", "name": "Stoichiometry", "keywords": ["mole", "moles", "mass", "balancing"] },
+          { "id": "acids-bases", "name": "Acids and bases", "keywords": ["acid", "base", "ph", "alkali", "neutral"] },
+          { "id": "equilibrium", "name": "Equilibrium", "keywords": ["equilibrium", "reversible"] } ] },
+        { "id": "states", "name": "States of matter", "topics": [
+          { "id": "gas-laws", "name": "Gas laws", "keywords": ["gas", "gases", "pressure", "boyle", "charles", "ideal gas", "pv=nrt"] },
+          { "id": "solutions", "name": "Solutions", "keywords": ["solution", "dissolve", "concentration", "solvent"] } ] },
+        { "id": "organic", "name": "Organic chemistry", "topics": [
+          { "id": "organic", "name": "Carbon compounds", "keywords": ["carbon", "organic", "hydrocarbon"] } ] }
+      ]
+    },
+    {
+      "id": "biology", "name": "Biology", "icon": "leaf", "color": "#4FB287",
+      "blurb": "Living things, from single cells to whole ecosystems.",
+      "collections": [
+        { "id": "cells", "name": "Cells and life", "topics": [
+          { "id": "cells", "name": "Cells", "keywords": ["cell", "nucleus", "membrane", "organelle"] },
+          { "id": "microscopy", "name": "Microscopy", "keywords": ["microscope", "magnify"] },
+          { "id": "microbiology", "name": "Microbiology", "keywords": ["bacteria", "virus", "germs", "microbe"] } ] },
+        { "id": "body", "name": "The human body", "topics": [
+          { "id": "anatomy", "name": "Anatomy", "keywords": ["body", "organ", "skeleton", "heart", "lungs"] },
+          { "id": "physiology", "name": "Physiology", "keywords": ["breathing", "blood", "digestion"] } ] },
+        { "id": "inheritance", "name": "Genetics and evolution", "topics": [
+          { "id": "genetics", "name": "Genetics", "keywords": ["gene", "dna", "inherit", "heredity"] },
+          { "id": "evolution", "name": "Evolution", "keywords": ["evolution", "natural selection", "adaptation"] } ] },
+        { "id": "ecology", "name": "Ecology", "topics": [
+          { "id": "populations", "name": "Populations and food webs", "keywords": ["predator", "prey", "population", "food chain", "food web", "ecology"] },
+          { "id": "plants", "name": "Plants", "keywords": ["plant", "photosynthesis", "leaf", "flower"] } ] }
+      ]
+    },
+    {
+      "id": "electronics", "name": "Electronics", "icon": "zap", "color": "#D9A520",
+      "blurb": "Voltage, current and the circuits inside every device.",
+      "collections": [
+        { "id": "basics", "name": "Circuit basics", "topics": [
+          { "id": "ohms-law", "name": "Voltage, current and resistance", "keywords": ["voltage", "current", "resistance", "ohm", "ohms law", "resistor", "battery", "amps", "volts"] },
+          { "id": "analog", "name": "Analog circuits", "keywords": ["series", "parallel", "capacitor", "circuit"] },
+          { "id": "breadboards", "name": "Breadboards", "keywords": ["breadboard", "wiring", "prototype"] } ] },
+        { "id": "digital", "name": "Digital electronics", "topics": [
+          { "id": "logic-gates", "name": "Logic gates", "keywords": ["and", "or", "not", "gate", "binary", "logic"] },
+          { "id": "microcontrollers", "name": "Sensors and microcontrollers", "keywords": ["sensor", "microcontroller", "arduino", "led"] },
+          { "id": "signals", "name": "Signals", "keywords": ["signal", "oscilloscope", "wave"] },
+          { "id": "troubleshooting", "name": "Troubleshooting", "keywords": ["fault", "fix", "multimeter"] } ] }
+      ]
+    },
+    {
+      "id": "music", "name": "Music", "icon": "music", "color": "#7A3E9D",
+      "blurb": "Rhythm, notes, chords and the science of sound.",
+      "collections": [
+        { "id": "notes", "name": "Notes and the keyboard", "topics": [
+          { "id": "piano", "name": "Piano", "keywords": ["piano", "keyboard", "keys"] },
+          { "id": "intervals", "name": "Intervals", "keywords": ["interval", "octave", "fifth", "third", "pitch", "notes"] },
+          { "id": "scales", "name": "Scales", "keywords": ["scale", "major", "minor"] } ] },
+        { "id": "harmony", "name": "Harmony and rhythm", "topics": [
+          { "id": "rhythm", "name": "Rhythm", "keywords": ["beat", "tempo", "drum", "rhythm"] },
+          { "id": "chords", "name": "Chords and harmony", "keywords": ["chord", "harmony", "triad"] },
+          { "id": "ear-training", "name": "Ear training", "keywords": ["ear", "listening", "aural"] } ] },
+        { "id": "sound", "name": "Sound and synthesis", "topics": [
+          { "id": "sound-waves", "name": "Sound waves", "keywords": ["sound", "frequency", "hertz", "wave"] },
+          { "id": "synthesis", "name": "Synthesis and composition", "keywords": ["synth", "synthesizer", "compose", "composition"] } ] }
+      ]
+    },
+    {
+      "id": "space", "name": "Astronomy & Space", "icon": "orbit", "color": "#1B2A55",
+      "blurb": "The Moon, planets, stars and how we explore them.",
+      "collections": [
+        { "id": "solar-system", "name": "Our solar system", "topics": [
+          { "id": "solar-system", "name": "The solar system", "keywords": ["planet", "planets", "sun", "solar system"] },
+          { "id": "orbits", "name": "Orbits", "keywords": ["orbit", "kepler", "satellite"] },
+          { "id": "moon", "name": "Moon phases", "keywords": ["moon", "phase", "phases", "lunar", "full moon", "crescent", "eclipse"] },
+          { "id": "seasons", "name": "Seasons", "keywords": ["season", "tilt", "summer", "winter"] } ] },
+        { "id": "universe", "name": "Stars and galaxies", "topics": [
+          { "id": "stars", "name": "Stars", "keywords": ["star", "stars", "constellation"] },
+          { "id": "telescopes", "name": "Telescopes", "keywords": ["telescope", "observe"] },
+          { "id": "galaxies", "name": "Galaxies", "keywords": ["galaxy", "milky way"] },
+          { "id": "spacecraft", "name": "Spacecraft", "keywords": ["rocket", "spacecraft", "astronaut"] } ] }
+      ]
+    },
+    {
+      "id": "earth", "name": "Earth Science & Geology", "icon": "mountain", "color": "#8A5A2B",
+      "blurb": "Rocks, plates, volcanoes, oceans and weather.",
+      "collections": [
+        { "id": "rocks", "name": "Rocks and time", "topics": [
+          { "id": "rock-cycle", "name": "The rock cycle", "keywords": ["rock", "rocks", "granite", "basalt", "sandstone", "igneous", "sedimentary", "metamorphic"] },
+          { "id": "geological-time", "name": "Geological time", "keywords": ["fossil", "era", "age of earth"] } ] },
+        { "id": "plates", "name": "Plates and hazards", "topics": [
+          { "id": "plates", "name": "Plate tectonics", "keywords": ["plate", "tectonic", "continent"] },
+          { "id": "earthquakes", "name": "Earthquakes", "keywords": ["earthquake", "seismic", "seismograph", "p wave", "s wave", "epicentre", "epicenter"] },
+          { "id": "volcanoes", "name": "Volcanoes", "keywords": ["volcano", "lava", "magma", "eruption"] } ] },
+        { "id": "surface", "name": "Surface, oceans and weather", "topics": [
+          { "id": "erosion", "name": "Erosion", "keywords": ["erosion", "weathering", "river"] },
+          { "id": "oceans", "name": "Oceans", "keywords": ["ocean", "tide", "current"] },
+          { "id": "weather", "name": "Weather", "keywords": ["weather", "rain", "cloud", "wind"] } ] }
+      ]
+    },
+    {
+      "id": "robotics", "name": "Robotics & Automation", "icon": "bot", "color": "#2F6F8F",
+      "blurb": "Joints, sensors, feedback and machines that move themselves.",
+      "collections": [
+        { "id": "mechanisms", "name": "Robot bodies", "topics": [
+          { "id": "joints", "name": "Joints and mechanisms", "keywords": ["joint", "mechanism", "servo", "motor"] },
+          { "id": "robot-arms", "name": "Robot arms", "keywords": ["robot arm", "arm", "kinematics", "reach", "gripper"] } ] },
+        { "id": "control", "name": "Sensing and control", "topics": [
+          { "id": "sensors", "name": "Sensors", "keywords": ["sensor", "distance", "light sensor"] },
+          { "id": "feedback", "name": "Feedback", "keywords": ["feedback", "control", "pid"] },
+          { "id": "navigation", "name": "Autonomy and navigation", "keywords": ["autonomous", "navigate", "path", "self-driving"] },
+          { "id": "automation", "name": "Industrial automation", "keywords": ["factory", "conveyor", "automation"] } ] }
+      ]
+    },
+    {
+      "id": "mechanical", "name": "Mechanical Engineering & Design", "icon": "cog", "color": "#5A6472",
+      "blurb": "Gears, levers, structures and the design of real things.",
+      "collections": [
+        { "id": "machines", "name": "Simple machines", "topics": [
+          { "id": "gears", "name": "Gears", "keywords": ["gear", "gears", "teeth", "ratio", "rpm", "torque"] },
+          { "id": "levers", "name": "Levers and pulleys", "keywords": ["lever", "pulley", "fulcrum", "linkage"] } ] },
+        { "id": "design", "name": "Structures and design", "topics": [
+          { "id": "structures", "name": "Structural forces", "keywords": ["bridge", "structure", "tension", "compression"] },
+          { "id": "materials", "name": "Materials", "keywords": ["material", "strength", "steel", "wood"] },
+          { "id": "cad", "name": "CAD principles", "keywords": ["cad", "drawing", "design", "model"] } ] }
+      ]
+    },
+    {
+      "id": "computing", "name": "Computer Science", "icon": "binary", "color": "#0B3B2C",
+      "blurb": "Algorithms, data, logic and how computers talk.",
+      "collections": [
+        { "id": "algorithms", "name": "Algorithms", "topics": [
+          { "id": "sorting", "name": "Sorting", "keywords": ["sort", "sorting", "bubble sort", "insertion sort", "selection sort", "algorithm"] },
+          { "id": "searching", "name": "Searching", "keywords": ["search", "binary search"] } ] },
+        { "id": "programming", "name": "Programming and logic", "topics": [
+          { "id": "programming", "name": "Programming", "keywords": ["code", "coding", "program", "python"] },
+          { "id": "logic", "name": "Logic", "keywords": ["boolean", "true", "false", "logic"] },
+          { "id": "data-structures", "name": "Data structures", "keywords": ["list", "array", "tree", "stack", "queue"] } ] },
+        { "id": "systems", "name": "Networks and security", "topics": [
+          { "id": "networks", "name": "Networks", "keywords": ["network", "internet", "router", "packet"] },
+          { "id": "cryptography", "name": "Cryptography", "keywords": ["code", "cipher", "encryption", "secret"] } ] }
+      ]
+    },
+    {
+      "id": "geography", "name": "Geography", "icon": "globe", "color": "#3B7A57",
+      "blurb": "Maps, places, landforms and finding your way.",
+      "collections": [
+        { "id": "maps", "name": "Maps and position", "topics": [
+          { "id": "coordinates", "name": "Latitude and longitude", "keywords": ["latitude", "longitude", "coordinates", "globe", "equator", "map", "distance", "time zone"] },
+          { "id": "navigation", "name": "Navigation", "keywords": ["compass", "bearing", "direction"] },
+          { "id": "gis", "name": "GIS concepts", "keywords": ["gis", "layers", "map data"] } ] },
+        { "id": "places", "name": "Places and land", "topics": [
+          { "id": "landforms", "name": "Landforms", "keywords": ["mountain", "valley", "plateau", "river"] },
+          { "id": "regions", "name": "Regions", "keywords": ["region", "country", "continent", "africa"] } ] }
+      ]
+    },
+    {
+      "id": "environment", "name": "Environmental Science", "icon": "sprout", "color": "#5E8C31",
+      "blurb": "Ecosystems, water, carbon, energy and climate.",
+      "collections": [
+        { "id": "climate", "name": "Energy and climate", "topics": [
+          { "id": "energy-balance", "name": "Earth's energy balance", "keywords": ["climate", "greenhouse", "global warming", "albedo", "temperature", "sunlight"] },
+          { "id": "carbon", "name": "The carbon cycle", "keywords": ["carbon", "co2", "carbon dioxide"] },
+          { "id": "renewables", "name": "Renewable energy", "keywords": ["solar", "wind", "renewable", "energy"] } ] },
+        { "id": "ecosystems", "name": "Ecosystems and resources", "topics": [
+          { "id": "ecosystems", "name": "Ecosystems", "keywords": ["ecosystem", "habitat", "biodiversity"] },
+          { "id": "water", "name": "Water", "keywords": ["water cycle", "rain", "river", "evaporation"] },
+          { "id": "pollution", "name": "Pollution and conservation", "keywords": ["pollution", "waste", "recycle", "conservation"] } ] }
+      ]
+    }
+  ],
+  "experiences": [
+    {
+      "id": "graphing-functions", "labId": "math", "collectionId": "algebra", "topicId": "graphing", "status": "working", "module": "graphing",
+      "title": "Graphing functions", "modality": "2d", "ages": "11+", "depths": ["explore", "learn", "experiment", "advanced"],
+      "summary": "Change a, b and c and watch a line, a parabola or a wave move.",
+      "keywords": ["graph", "line", "parabola", "sine wave", "slope", "intercept", "roots"],
+      "model": "calculation", "assumptions": "Values are computed exactly; the graph shows x from -10 to 10.",
+      "params": [
+        { "key": "family", "label": "Function", "type": "choice", "default": "quadratic", "options": [
+          { "value": "linear", "label": "Line: y = a·x + b" }, { "value": "quadratic", "label": "Parabola: y = a·x² + b·x + c" }, { "value": "sine", "label": "Wave: y = a·sin(b·x) + c" } ] },
+        { "key": "a", "label": "a", "unit": "", "min": -5, "max": 5, "step": 0.1, "default": 1 },
+        { "key": "b", "label": "b", "unit": "", "min": -5, "max": 5, "step": 0.1, "default": 0 },
+        { "key": "c", "label": "c", "unit": "", "min": -5, "max": 5, "step": 0.1, "default": -2, "for": { "family": ["quadratic", "sine"] } }
+      ],
+      "observations": [
+        { "key": "equation", "label": "Equation" }, { "key": "y_intercept", "label": "Crosses the y-axis at", "digits": 2 },
+        { "key": "roots", "label": "Crosses the x-axis at" }, { "key": "turning", "label": "Turning point" }
+      ],
+      "guide": {
+        "explore": "Drag the sliders and watch the curve. What does each letter do?",
+        "learn": "A function turns each x into one y. In y = a·x + b, a is the slope (how steep) and b is where the line crosses the y-axis. In a parabola, the sign of a decides whether it opens up or down.",
+        "steps": ["Pick the line. Set b to 0 and change a. What happens when a is negative?", "Pick the parabola. Find values where it never crosses the x-axis.", "Pick the wave. Change b and count how many waves fit between -10 and 10."],
+        "advanced": "For a parabola the turning point is at x = -b / (2a), and the roots come from the quadratic formula x = (-b ± √(b² - 4ac)) / (2a). The wave's period is 2π / |b|."
+      },
+      "suggestions": ["What does a do to the graph?", "Why does the parabola have no roots sometimes?"],
+      "source": { "kind": "original", "license": "EDU54 original" }, "offline": true,
+      "review": "Formulas checked by automated tests. Not yet reviewed by a subject teacher."
+    },
+    {
+      "id": "solids-3d", "labId": "math", "collectionId": "geometry", "topicId": "solid-geometry", "status": "working", "module": "solids",
+      "title": "3D solids: volume and surface area", "modality": "3d", "ages": "10+", "depths": ["explore", "learn", "experiment", "advanced"],
+      "summary": "Turn a cube, cylinder, cone or sphere in 3D and see its volume and surface area change.",
+      "keywords": ["volume", "surface area", "cube", "cuboid", "cylinder", "cone", "sphere", "3d shapes"],
+      "model": "calculation", "assumptions": "Exact formulas. The 3D view is a drawing to help you see the shape.",
+      "params": [
+        { "key": "shape", "label": "Shape", "type": "choice", "default": "cylinder", "options": [
+          { "value": "cuboid", "label": "Cuboid" }, { "value": "cylinder", "label": "Cylinder" }, { "value": "cone", "label": "Cone" }, { "value": "sphere", "label": "Sphere" } ] },
+        { "key": "length", "label": "Length", "unit": "cm", "min": 1, "max": 10, "step": 0.5, "default": 6, "for": { "shape": ["cuboid"] } },
+        { "key": "width", "label": "Width", "unit": "cm", "min": 1, "max": 10, "step": 0.5, "default": 4, "for": { "shape": ["cuboid"] } },
+        { "key": "radius", "label": "Radius", "unit": "cm", "min": 1, "max": 6, "step": 0.5, "default": 3, "for": { "shape": ["cylinder", "cone", "sphere"] } },
+        { "key": "height", "label": "Height", "unit": "cm", "min": 1, "max": 10, "step": 0.5, "default": 6, "for": { "shape": ["cuboid", "cylinder", "cone"] } }
+      ],
+      "observations": [
+        { "key": "volume", "label": "Volume", "unit": "cm³", "digits": 1 }, { "key": "surface_area", "label": "Surface area", "unit": "cm²", "digits": 1 },
+        { "key": "formula", "label": "Volume formula" }
+      ],
+      "guide": {
+        "explore": "Drag the shape to turn it. Make it taller, then wider. Which change makes the volume grow faster?",
+        "learn": "Volume is how much space a solid fills, in cubic centimetres. Surface area is the total area of its outside, in square centimetres. A cone holds exactly one third of a cylinder with the same base and height.",
+        "steps": ["Make a cylinder with radius 3 and height 6. Note its volume.", "Switch to a cone with the same numbers. Compare the volumes.", "Double the radius of a sphere. How many times bigger is the volume?"],
+        "advanced": "Cuboid V = lwh. Cylinder V = πr²h, A = 2πr² + 2πrh. Cone V = πr²h/3, A = πr² + πr√(r² + h²). Sphere V = 4πr³/3, A = 4πr²."
+      },
+      "suggestions": ["Why is a cone one third of a cylinder?", "What happens to volume when I double the radius?"],
+      "source": { "kind": "original", "license": "EDU54 original" }, "offline": true,
+      "review": "Formulas checked by automated tests. Not yet reviewed by a subject teacher."
+    },
+    {
+      "id": "projectile-motion", "labId": "physics", "collectionId": "mechanics", "topicId": "projectiles", "status": "working", "module": "projectile",
+      "title": "Projectile motion", "modality": "2d", "ages": "11+", "depths": ["explore", "learn", "experiment", "advanced"],
+      "summary": "Launch a ball at any speed and angle, on Earth, the Moon or Mars, and measure how far it goes.",
+      "keywords": ["projectile", "gravity", "launch", "angle", "range", "trajectory", "moon", "mars", "free fall"],
+      "model": "calculation", "assumptions": "No air resistance, flat ground, constant gravity. Real balls fall short of these numbers.",
+      "params": [
+        { "key": "speed", "label": "Launch speed", "unit": "m/s", "min": 1, "max": 40, "step": 0.5, "default": 15 },
+        { "key": "angle", "label": "Launch angle", "unit": "°", "min": 0, "max": 90, "step": 1, "default": 45 },
+        { "key": "height", "label": "Launch height", "unit": "m", "min": 0, "max": 30, "step": 0.5, "default": 0 },
+        { "key": "gravity", "label": "Gravity", "type": "choice", "default": "earth", "options": [
+          { "value": "earth", "label": "Earth (9.81 m/s²)" }, { "value": "moon", "label": "Moon (1.62 m/s²)" }, { "value": "mars", "label": "Mars (3.71 m/s²)" } ] }
+      ],
+      "observations": [
+        { "key": "flight_time", "label": "Time in the air", "unit": "s", "digits": 2 }, { "key": "range", "label": "Distance travelled", "unit": "m", "digits": 1 },
+        { "key": "max_height", "label": "Highest point", "unit": "m", "digits": 1 }, { "key": "t", "label": "Time now", "unit": "s", "digits": 2 }
+      ],
+      "playable": true,
+      "guide": {
+        "explore": "Press Play. Then change the angle and play again. Which angle sends the ball furthest?",
+        "learn": "Once the ball leaves, gravity is the only force (we ignore air). It pulls the ball down at a steady rate, while the sideways speed stays the same. That is why the path is a curve called a parabola.",
+        "steps": ["Keep the speed at 15 m/s. Try 30°, 45° and 60°. Which goes furthest?", "Try 30° and 60°. What do you notice about the distance?", "Switch to the Moon. How much further does the same throw go?"],
+        "advanced": "With launch height h: x(t) = v·cosθ·t, y(t) = h + v·sinθ·t − g·t²/2. Time of flight t = (v·sinθ + √((v·sinθ)² + 2gh)) / g. On flat ground (h = 0) the range is v²·sin2θ / g, largest at 45°."
+      },
+      "suggestions": ["Why does 45° go furthest?", "Why do 30° and 60° land in the same place?"],
+      "source": { "kind": "original", "license": "EDU54 original" }, "offline": true,
+      "review": "Formulas checked by automated tests. Not yet reviewed by a subject teacher."
+    },
+    {
+      "id": "gas-laws", "labId": "chemistry", "collectionId": "states", "topicId": "gas-laws", "status": "working", "module": "gas",
+      "title": "Gas in a box", "modality": "2d", "ages": "12+", "depths": ["explore", "learn", "experiment", "advanced"],
+      "summary": "Heat, squeeze or add gas to a box and watch the pressure change.",
+      "keywords": ["gas", "pressure", "temperature", "volume", "ideal gas law", "boyle", "charles", "particles", "kelvin"],
+      "model": "calculation", "assumptions": "Ideal gas law. The moving particles are an illustration: their speed follows the temperature, but they are not counted to get the pressure.",
+      "params": [
+        { "key": "amount", "label": "Amount of gas", "unit": "mol", "min": 0.1, "max": 2, "step": 0.1, "default": 1 },
+        { "key": "temperature", "label": "Temperature", "unit": "K", "min": 100, "max": 600, "step": 5, "default": 300 },
+        { "key": "volume", "label": "Volume", "unit": "L", "min": 5, "max": 50, "step": 1, "default": 25 }
+      ],
+      "observations": [
+        { "key": "pressure", "label": "Pressure", "unit": "kPa", "digits": 1 }, { "key": "pressure_atm", "label": "Pressure", "unit": "atm", "digits": 2 },
+        { "key": "celsius", "label": "Temperature", "unit": "°C", "digits": 0 }
+      ],
+      "playable": true,
+      "guide": {
+        "explore": "Make the box smaller. Then make the gas hotter. What happens to the pressure each time?",
+        "learn": "Gas particles fly around and hit the walls. Pressure is how hard and how often they hit. Hotter particles move faster, and a smaller box means more hits, so both raise the pressure.",
+        "steps": ["Halve the volume from 40 L to 20 L. What happens to the pressure?", "Put the volume back. Double the temperature from 200 K to 400 K.", "Double the amount of gas. Which other change had the same effect?"],
+        "advanced": "PV = nRT with R = 8.314 J/(mol·K). With P in kPa and V in litres, P = nRT / V. Temperature must be in kelvin: K = °C + 273.15."
+      },
+      "suggestions": ["Why does a smaller box raise the pressure?", "Why must temperature be in kelvin?"],
+      "safety": "Never heat a sealed container in real life: the pressure can make it burst.",
+      "source": { "kind": "original", "license": "EDU54 original" }, "offline": true,
+      "review": "Formulas checked by automated tests. Not yet reviewed by a subject teacher."
+    },
+    {
+      "id": "predator-prey", "labId": "biology", "collectionId": "ecology", "topicId": "populations", "status": "working", "module": "ecosystem",
+      "title": "Predators and prey", "modality": "2d", "ages": "12+", "depths": ["explore", "learn", "experiment", "advanced"],
+      "summary": "Rabbits and foxes rise and fall together. Change how fast they breed and hunt.",
+      "keywords": ["predator", "prey", "population", "foxes", "rabbits", "ecosystem", "food chain", "lotka volterra"],
+      "model": "simulation", "assumptions": "A simple model (Lotka-Volterra): prey have unlimited food, predators eat only this prey. Real populations are messier.",
+      "params": [
+        { "key": "prey_birth", "label": "Rabbit birth rate", "unit": "per year", "min": 0.2, "max": 2, "step": 0.05, "default": 1 },
+        { "key": "predation", "label": "Hunting success", "unit": "", "min": 0.02, "max": 0.2, "step": 0.005, "default": 0.1 },
+        { "key": "predator_gain", "label": "Fox growth from food", "unit": "", "min": 0.02, "max": 0.2, "step": 0.005, "default": 0.075 },
+        { "key": "predator_death", "label": "Fox death rate", "unit": "per year", "min": 0.2, "max": 2, "step": 0.05, "default": 1.5 },
+        { "key": "start_prey", "label": "Rabbits at the start", "unit": "", "min": 1, "max": 60, "step": 1, "default": 10 },
+        { "key": "start_predators", "label": "Foxes at the start", "unit": "", "min": 1, "max": 30, "step": 1, "default": 5 }
+      ],
+      "observations": [
+        { "key": "year", "label": "Year", "digits": 1 }, { "key": "prey", "label": "Rabbits", "digits": 1 }, { "key": "predators", "label": "Foxes", "digits": 1 },
+        { "key": "balance_prey", "label": "Balance point: rabbits", "digits": 1 }, { "key": "balance_predators", "label": "Balance point: foxes", "digits": 1 }
+      ],
+      "playable": true,
+      "guide": {
+        "explore": "Press Play and watch both lines. Which one peaks first, rabbits or foxes?",
+        "learn": "More rabbits feed more foxes, so foxes increase. More foxes eat more rabbits, so rabbits fall. Then foxes starve and fall too, and the cycle starts again.",
+        "steps": ["Press Play. Does the fox peak come before or after the rabbit peak?", "Raise the fox death rate. What happens to the cycles?", "Set the start values to the balance point. What do the lines do?"],
+        "advanced": "dR/dt = αR − βRF and dF/dt = δRF − γF. The balance point is R = γ/δ, F = α/β. The model is solved step by step with the fourth-order Runge-Kutta method."
+      },
+      "suggestions": ["Why do the fox numbers peak after the rabbits?", "What would happen with no foxes at all?"],
+      "source": { "kind": "original", "license": "EDU54 original" }, "offline": true,
+      "review": "Model checked by automated tests. Not yet reviewed by a subject teacher."
+    },
+    {
+      "id": "ohms-law", "labId": "electronics", "collectionId": "basics", "topicId": "ohms-law", "status": "working", "module": "circuit",
+      "title": "Ohm's law circuit", "modality": "2d", "ages": "11+", "depths": ["explore", "learn", "experiment", "advanced"],
+      "summary": "A battery and two resistors in series or parallel. Watch the current and the power change.",
+      "keywords": ["voltage", "current", "resistance", "ohm", "resistor", "series", "parallel", "battery", "circuit", "amps"],
+      "model": "calculation", "assumptions": "Ideal battery and wires with no resistance. The moving dots show the direction of conventional current; their speed is illustrative.",
+      "params": [
+        { "key": "voltage", "label": "Battery", "unit": "V", "min": 1, "max": 12, "step": 0.5, "default": 9 },
+        { "key": "layout", "label": "Resistors", "type": "choice", "default": "series", "options": [
+          { "value": "single", "label": "One resistor" }, { "value": "series", "label": "Two in series" }, { "value": "parallel", "label": "Two in parallel" } ] },
+        { "key": "r1", "label": "Resistor 1", "unit": "Ω", "min": 10, "max": 1000, "step": 10, "default": 100 },
+        { "key": "r2", "label": "Resistor 2", "unit": "Ω", "min": 10, "max": 1000, "step": 10, "default": 220, "for": { "layout": ["series", "parallel"] } }
+      ],
+      "observations": [
+        { "key": "total_resistance", "label": "Total resistance", "unit": "Ω", "digits": 1 }, { "key": "current", "label": "Current from the battery", "unit": "mA", "digits": 1 },
+        { "key": "power", "label": "Power used", "unit": "mW", "digits": 1 }, { "key": "v_r1", "label": "Voltage across resistor 1", "unit": "V", "digits": 2 }
+      ],
+      "playable": true,
+      "guide": {
+        "explore": "Raise the battery voltage, then raise a resistor. What happens to the current?",
+        "learn": "Voltage pushes charge around the circuit. Resistance slows it. Ohm's law links them: current = voltage ÷ resistance. In series the resistances add up; in parallel the current has two paths, so the total resistance goes down.",
+        "steps": ["With one resistor of 100 Ω, double the voltage. What happens to the current?", "Switch to series. Is the total resistance bigger or smaller than each resistor?", "Switch to parallel with two equal resistors. What is the total resistance now?"],
+        "advanced": "I = V / R. Series: R = R1 + R2. Parallel: 1/R = 1/R1 + 1/R2. Power P = V·I = I²R."
+      },
+      "suggestions": ["Why does parallel lower the total resistance?", "What does a resistor do in a real circuit?"],
+      "safety": "Mains electricity is dangerous. Only build real circuits with small batteries and an adult's help.",
+      "source": { "kind": "original", "license": "EDU54 original" }, "offline": true,
+      "review": "Formulas checked by automated tests. Not yet reviewed by a subject teacher."
+    },
+    {
+      "id": "piano-intervals", "labId": "music", "collectionId": "notes", "topicId": "intervals", "status": "working", "module": "piano",
+      "title": "Piano and intervals", "modality": "2d", "ages": "6+", "depths": ["explore", "learn", "experiment", "advanced"],
+      "summary": "Play a piano with your mouse or keyboard. See each note's name and frequency, and the interval between two notes.",
+      "keywords": ["piano", "notes", "keyboard", "interval", "octave", "pitch", "frequency", "hertz", "sound"],
+      "model": "calculation", "assumptions": "Equal temperament tuning with A4 = 440 Hz. The sound is made by your browser, not recorded.",
+      "params": [
+        { "key": "octave", "label": "Octave", "unit": "", "min": 2, "max": 6, "step": 1, "default": 4 },
+        { "key": "waveform", "label": "Sound", "type": "choice", "default": "triangle", "options": [
+          { "value": "sine", "label": "Smooth (sine)" }, { "value": "triangle", "label": "Soft (triangle)" }, { "value": "square", "label": "Buzzy (square)" } ] }
+      ],
+      "observations": [
+        { "key": "note", "label": "Last note" }, { "key": "frequency", "label": "Frequency", "unit": "Hz", "digits": 1 }, { "key": "interval", "label": "Interval from the note before" }
+      ],
+      "actions": [ { "type": "note", "min": 24, "max": 96 } ],
+      "guide": {
+        "explore": "Play some keys. Use the letters A S D F G H J K on a computer keyboard too.",
+        "learn": "Each key is a note. Going up one key is a semitone. Going up 12 keys is an octave, and the frequency doubles. An interval is the distance between two notes.",
+        "steps": ["Play A, then the A one octave up. Compare their frequencies.", "Play C then G. Which interval is it?", "Change the sound. Does the frequency change, or only how it sounds?"],
+        "advanced": "f = 440 × 2^((n − 69) / 12), where n is the MIDI note number (A4 = 69). A perfect fifth is 7 semitones, a ratio close to 3:2."
+      },
+      "suggestions": ["Why does an octave sound like the same note?", "What makes a fifth sound good?"],
+      "source": { "kind": "original", "license": "EDU54 original" }, "offline": true,
+      "review": "Formulas checked by automated tests. Not yet reviewed by a music teacher."
+    },
+    {
+      "id": "moon-phases", "labId": "space", "collectionId": "solar-system", "topicId": "moon", "status": "working", "module": "moon",
+      "title": "Moon phases", "modality": "2d", "ages": "8+", "depths": ["explore", "learn", "experiment", "advanced"],
+      "summary": "Move the Moon around the Earth and see why it looks like a crescent, a half or a full circle.",
+      "keywords": ["moon", "phases", "crescent", "gibbous", "full moon", "new moon", "lunar", "orbit"],
+      "model": "illustration", "assumptions": "A simplified model: a circular orbit seen from above the North Pole, sizes and distances not to scale. The cycle is 29.5 days.",
+      "params": [ { "key": "day", "label": "Day of the cycle", "unit": "days", "min": 0, "max": 29.5, "step": 0.5, "default": 0 } ],
+      "observations": [ { "key": "phase", "label": "Phase" }, { "key": "illuminated", "label": "Lit part we can see", "unit": "%", "digits": 0 }, { "key": "day", "label": "Day", "digits": 1 } ],
+      "playable": true,
+      "guide": {
+        "explore": "Press Play and watch the Moon go round. Look at the small picture: that is what we see from Earth.",
+        "learn": "The Sun always lights half of the Moon. As the Moon goes round the Earth, we see different amounts of that lit half. That is a phase.",
+        "steps": ["Find the new moon. Where is the Moon compared with the Sun?", "Move to day 7 or 8. Why is it called a quarter moon when we see half?", "How many days from one full moon to the next?"],
+        "advanced": "The lit fraction we see is (1 − cos φ) / 2, where φ is the Moon's angle from new moon. The 29.5-day cycle (synodic month) is longer than one orbit (27.3 days) because the Earth also moves round the Sun."
+      },
+      "suggestions": ["Why do we always see the same side of the Moon?", "Why is a half moon called a quarter?"],
+      "source": { "kind": "original", "license": "EDU54 original" }, "offline": true,
+      "review": "Geometry checked by automated tests. Not yet reviewed by a subject teacher."
+    },
+    {
+      "id": "earthquake-waves", "labId": "earth", "collectionId": "plates", "topicId": "earthquakes", "status": "working", "module": "seismic",
+      "title": "Earthquake waves: how far away?", "modality": "2d", "ages": "11+", "depths": ["explore", "learn", "experiment", "advanced"],
+      "summary": "P waves arrive first, S waves later. Use the gap between them to find how far away an earthquake was.",
+      "keywords": ["earthquake", "seismograph", "p wave", "s wave", "epicentre", "seismic", "distance"],
+      "model": "calculation", "assumptions": "Constant wave speeds through rock (real speeds change with depth). The seismogram shape is an illustration; the arrival times are calculated.",
+      "params": [
+        { "key": "distance", "label": "Distance to the earthquake", "unit": "km", "min": 10, "max": 1000, "step": 10, "default": 300 },
+        { "key": "p_speed", "label": "P-wave speed", "unit": "km/s", "min": 5, "max": 8, "step": 0.1, "default": 6 },
+        { "key": "s_speed", "label": "S-wave speed", "unit": "km/s", "min": 3, "max": 4.5, "step": 0.1, "default": 3.5 }
+      ],
+      "observations": [
+        { "key": "p_arrival", "label": "P wave arrives after", "unit": "s", "digits": 1 }, { "key": "s_arrival", "label": "S wave arrives after", "unit": "s", "digits": 1 },
+        { "key": "lag", "label": "Gap between them", "unit": "s", "digits": 1 }
+      ],
+      "playable": true,
+      "guide": {
+        "explore": "Press Play and watch the seismograph. Then move the earthquake further away. What happens to the gap?",
+        "learn": "An earthquake sends out two main waves. P waves are faster and arrive first. S waves are slower. The further away the earthquake, the bigger the gap between them.",
+        "steps": ["Note the gap at 100 km and at 200 km. How are they related?", "If the gap is 40 seconds, about how far away was the earthquake?", "Why do scientists need three stations to find the exact place?"],
+        "advanced": "gap = d/vS − d/vP, so d = gap ÷ (1/vS − 1/vP). With 6 and 3.5 km/s, each second of gap is about 8.4 km."
+      },
+      "suggestions": ["Why are P waves faster than S waves?", "How do three stations find an earthquake?"],
+      "source": { "kind": "original", "license": "EDU54 original" }, "offline": true,
+      "review": "Formulas checked by automated tests. Not yet reviewed by a subject teacher."
+    },
+    {
+      "id": "robot-arm", "labId": "robotics", "collectionId": "mechanisms", "topicId": "robot-arms", "status": "working", "module": "robotarm",
+      "title": "Two-joint robot arm", "modality": "2d", "ages": "11+", "depths": ["explore", "learn", "experiment", "advanced"],
+      "summary": "Turn the shoulder and elbow of a robot arm and see where its hand ends up.",
+      "keywords": ["robot", "arm", "joint", "angle", "kinematics", "reach", "servo"],
+      "model": "calculation", "assumptions": "A flat two-joint arm with rigid links and no weight.",
+      "params": [
+        { "key": "shoulder", "label": "Shoulder angle", "unit": "°", "min": 0, "max": 180, "step": 1, "default": 45 },
+        { "key": "elbow", "label": "Elbow angle", "unit": "°", "min": -150, "max": 150, "step": 1, "default": 60 },
+        { "key": "upper", "label": "Upper arm length", "unit": "cm", "min": 5, "max": 20, "step": 0.5, "default": 12 },
+        { "key": "fore", "label": "Forearm length", "unit": "cm", "min": 5, "max": 20, "step": 0.5, "default": 10 }
+      ],
+      "observations": [
+        { "key": "hand_x", "label": "Hand across", "unit": "cm", "digits": 1 }, { "key": "hand_y", "label": "Hand up", "unit": "cm", "digits": 1 },
+        { "key": "reach", "label": "Distance from shoulder", "unit": "cm", "digits": 1 }, { "key": "max_reach", "label": "Longest reach", "unit": "cm", "digits": 1 }
+      ],
+      "guide": {
+        "explore": "Move the two angles. Can you touch the ground on the far right?",
+        "learn": "A robot works out where its hand is from its joint angles and the length of each part. This is called forward kinematics.",
+        "steps": ["Set the elbow to 0. What is the reach?", "Keep the shoulder still and move the elbow. What shape does the hand draw?", "Find two different pairs of angles that put the hand in the same place."],
+        "advanced": "x = L1·cos θ1 + L2·cos(θ1 + θ2), y = L1·sin θ1 + L2·sin(θ1 + θ2). Working backwards from a target (inverse kinematics) usually has two answers: elbow up and elbow down."
+      },
+      "suggestions": ["Why can two different angle pairs reach the same point?", "How does a real robot know its joint angles?"],
+      "source": { "kind": "original", "license": "EDU54 original" }, "offline": true,
+      "review": "Formulas checked by automated tests. Not yet reviewed by a subject teacher."
+    },
+    {
+      "id": "gear-train", "labId": "mechanical", "collectionId": "machines", "topicId": "gears", "status": "working", "module": "gears",
+      "title": "Gear trains", "modality": "2d", "ages": "10+", "depths": ["explore", "learn", "experiment", "advanced"],
+      "summary": "Change the teeth on two gears and see how speed, turning force and direction change.",
+      "keywords": ["gear", "gears", "teeth", "ratio", "speed", "torque", "rpm", "bicycle"],
+      "model": "calculation", "assumptions": "Ideal gears with no friction or slipping.",
+      "params": [
+        { "key": "driver_teeth", "label": "Driving gear teeth", "unit": "", "min": 8, "max": 60, "step": 1, "default": 12 },
+        { "key": "driven_teeth", "label": "Driven gear teeth", "unit": "", "min": 8, "max": 60, "step": 1, "default": 36 },
+        { "key": "input_rpm", "label": "Driving gear speed", "unit": "rpm", "min": 5, "max": 120, "step": 1, "default": 30 }
+      ],
+      "observations": [
+        { "key": "ratio", "label": "Gear ratio" }, { "key": "output_rpm", "label": "Driven gear speed", "unit": "rpm", "digits": 1 },
+        { "key": "torque_factor", "label": "Turning force", "unit": "× input", "digits": 2 }, { "key": "direction", "label": "Driven gear turns" }
+      ],
+      "playable": true,
+      "guide": {
+        "explore": "Press Play. Make the driven gear bigger. Does it turn faster or slower?",
+        "learn": "Meshed gears share the same teeth per second. A big gear driven by a small one turns slower but with more force. Two meshed gears always turn in opposite directions.",
+        "steps": ["Set 12 and 36 teeth. How many times does the small gear turn for one turn of the big one?", "Swap the numbers. What happens to the speed?", "Which setting would help a bicycle climb a hill?"],
+        "advanced": "Ratio = driven teeth : driving teeth. Output speed = input speed × driving teeth ÷ driven teeth. Ideal torque is multiplied by the same ratio, so power stays the same."
+      },
+      "suggestions": ["Why do bicycles have different gears?", "Why do meshed gears turn opposite ways?"],
+      "source": { "kind": "original", "license": "EDU54 original" }, "offline": true,
+      "review": "Formulas checked by automated tests. Not yet reviewed by a subject teacher."
+    },
+    {
+      "id": "sorting-algorithms", "labId": "computing", "collectionId": "algorithms", "topicId": "sorting", "status": "working", "module": "sorting",
+      "title": "Sorting algorithms", "modality": "2d", "ages": "10+", "depths": ["explore", "learn", "experiment", "advanced"],
+      "summary": "Watch bubble, insertion and selection sort put bars in order, and count every comparison and swap.",
+      "keywords": ["sorting", "algorithm", "bubble sort", "insertion sort", "selection sort", "comparisons", "swaps", "computer science"],
+      "model": "simulation", "assumptions": "Each step is one comparison. The counts are exact for this list.",
+      "params": [
+        { "key": "algorithm", "label": "Algorithm", "type": "choice", "default": "bubble", "options": [
+          { "value": "bubble", "label": "Bubble sort" }, { "value": "insertion", "label": "Insertion sort" }, { "value": "selection", "label": "Selection sort" } ] },
+        { "key": "size", "label": "Number of bars", "unit": "", "min": 5, "max": 30, "step": 1, "default": 12 },
+        { "key": "speed", "label": "Steps per second", "unit": "", "min": 1, "max": 30, "step": 1, "default": 6 }
+      ],
+      "observations": [
+        { "key": "comparisons", "label": "Comparisons" }, { "key": "swaps", "label": "Swaps" }, { "key": "sorted", "label": "Sorted?" }
+      ],
+      "actions": [ { "type": "shuffle" }, { "type": "step" } ],
+      "playable": true,
+      "guide": {
+        "explore": "Press Play and watch the bars. Then try another algorithm on the same number of bars.",
+        "learn": "An algorithm is a set of exact steps. Sorting algorithms compare two items at a time and decide whether to swap them. Some need far more comparisons than others.",
+        "steps": ["Sort 10 bars with each algorithm. Which needs the fewest swaps?", "Double the number of bars. Roughly how many more comparisons does bubble sort need?", "Use Step to go one comparison at a time. Explain what insertion sort is doing."],
+        "advanced": "All three take about n²/2 comparisons in the worst case (O(n²)). Selection sort makes at most n − 1 swaps. Faster algorithms such as merge sort need about n·log₂n comparisons."
+      },
+      "suggestions": ["Why is bubble sort called bubble sort?", "Which algorithm would you use for a big list?"],
+      "source": { "kind": "original", "license": "EDU54 original" }, "offline": true,
+      "review": "Algorithms checked by automated tests. Not yet reviewed by a subject teacher."
+    },
+    {
+      "id": "globe-coordinates", "labId": "geography", "collectionId": "maps", "topicId": "coordinates", "status": "working", "module": "globe",
+      "title": "Latitude, longitude and distance", "modality": "3d", "ages": "10+", "depths": ["explore", "learn", "experiment", "advanced"],
+      "summary": "Place two points on a globe. See the shortest distance between them and the difference in sun time.",
+      "keywords": ["latitude", "longitude", "globe", "distance", "great circle", "kumasi", "coordinates", "time zone", "equator"],
+      "model": "calculation", "assumptions": "Earth treated as a sphere with radius 6,371 km. Sun time differs from clock time zones, which follow borders.",
+      "params": [
+        { "key": "lat1", "label": "Point A latitude", "unit": "°", "min": -90, "max": 90, "step": 0.5, "default": 6.5 },
+        { "key": "lon1", "label": "Point A longitude", "unit": "°", "min": -180, "max": 180, "step": 0.5, "default": -1.5 },
+        { "key": "lat2", "label": "Point B latitude", "unit": "°", "min": -90, "max": 90, "step": 0.5, "default": 51.5 },
+        { "key": "lon2", "label": "Point B longitude", "unit": "°", "min": -180, "max": 180, "step": 0.5, "default": 0 }
+      ],
+      "observations": [
+        { "key": "distance", "label": "Shortest distance", "unit": "km", "digits": 0 }, { "key": "bearing", "label": "Direction from A", "unit": "°", "digits": 0 },
+        { "key": "sun_time", "label": "Sun time difference", "unit": "h", "digits": 1 }
+      ],
+      "guide": {
+        "explore": "Point A starts near Kumasi, Ghana and point B near London. Drag the globe to turn it, then move the points.",
+        "learn": "Latitude says how far north or south of the equator a place is. Longitude says how far east or west of the prime meridian it is. Together they give every place an address.",
+        "steps": ["Move both points onto the equator, 90° of longitude apart. How far apart are they?", "Move point B to the North Pole. What happens to the distance as you change B's longitude?", "Every 15° of longitude is how many hours of sun time?"],
+        "advanced": "Great-circle distance uses the haversine formula: a = sin²(Δφ/2) + cos φ1 · cos φ2 · sin²(Δλ/2), d = 2R · atan2(√a, √(1 − a)). Sun time difference = Δλ / 15 hours."
+      },
+      "suggestions": ["Why is the shortest route on a globe curved on a flat map?", "Why are time zones not straight lines?"],
+      "source": { "kind": "original", "license": "EDU54 original" }, "offline": true,
+      "review": "Formulas checked by automated tests. Not yet reviewed by a subject teacher."
+    },
+    {
+      "id": "energy-balance", "labId": "environment", "collectionId": "climate", "topicId": "energy-balance", "status": "working", "module": "climate",
+      "title": "Earth's energy balance", "modality": "2d", "ages": "12+", "depths": ["explore", "learn", "experiment", "advanced"],
+      "summary": "Change sunlight, ice cover and greenhouse gases, and see the planet's average temperature respond.",
+      "keywords": ["climate", "greenhouse effect", "global warming", "albedo", "temperature", "carbon dioxide", "energy"],
+      "model": "calculation", "assumptions": "A one-number climate model: the whole planet has one average temperature and reaches balance instantly. Real climate has oceans, clouds and feedbacks.",
+      "params": [
+        { "key": "solar", "label": "Sunlight reaching Earth", "unit": "W/m²", "min": 1000, "max": 1700, "step": 1, "default": 1361 },
+        { "key": "albedo", "label": "Sunlight reflected (albedo)", "unit": "", "min": 0.1, "max": 0.7, "step": 0.01, "default": 0.3 },
+        { "key": "emissivity", "label": "Heat escaping to space", "unit": "", "min": 0.5, "max": 1, "step": 0.005, "default": 0.612 }
+      ],
+      "observations": [
+        { "key": "temperature", "label": "Average surface temperature", "unit": "°C", "digits": 1 }, { "key": "absorbed", "label": "Sunlight absorbed", "unit": "W/m²", "digits": 0 },
+        { "key": "no_greenhouse", "label": "Without any greenhouse effect", "unit": "°C", "digits": 1 }
+      ],
+      "guide": {
+        "explore": "Lower the 'heat escaping' slider, like adding greenhouse gases. What happens to the temperature?",
+        "learn": "Earth warms by absorbing sunlight and cools by sending heat back to space. Greenhouse gases trap some of that heat, so less escapes and the surface gets warmer. Ice and clouds reflect sunlight, which cools the planet.",
+        "steps": ["Set 'heat escaping' to 1 (no greenhouse effect). How cold is Earth?", "Put it back to 0.612. How many degrees does the greenhouse effect add?", "Raise the albedo, as if more of the planet were covered in ice. What happens?"],
+        "advanced": "Balance: S(1 − α)/4 = εσT⁴, so T = (S(1 − α) / (4εσ))^(1/4) with σ = 5.67×10⁻⁸ W/(m²·K⁴). The default ε = 0.612 is chosen so today's Earth comes out near 15 °C."
+      },
+      "suggestions": ["How do greenhouse gases trap heat?", "Why does melting ice speed up warming?"],
+      "source": { "kind": "original", "license": "EDU54 original" }, "offline": true,
+      "review": "Formulas checked by automated tests. Not yet reviewed by a subject teacher."
+    },
+    { "id": "fractions-wall", "labId": "math", "collectionId": "number", "topicId": "fractions", "status": "planned", "title": "Fraction wall", "modality": "2d", "ages": "7+", "summary": "Compare fractions by building them from blocks.", "keywords": ["fractions", "equivalent"] },
+    { "id": "probability-dice", "labId": "math", "collectionId": "data", "topicId": "probability", "status": "planned", "title": "Dice and chance", "modality": "2d", "ages": "9+", "summary": "Roll thousands of dice and watch the results settle.", "keywords": ["probability", "dice", "random"] },
+    { "id": "derivative-slope", "labId": "math", "collectionId": "calculus", "topicId": "derivatives", "status": "planned", "title": "Slope of a curve", "modality": "2d", "ages": "15+", "summary": "Slide a tangent line along a curve to see the derivative.", "keywords": ["derivative", "tangent"] },
+    { "id": "pendulum", "labId": "physics", "collectionId": "mechanics", "topicId": "energy", "status": "planned", "title": "Pendulum and energy", "modality": "2d", "ages": "11+", "summary": "Swap kinetic and potential energy in a swinging pendulum.", "keywords": ["pendulum", "energy"] },
+    { "id": "lenses", "labId": "physics", "collectionId": "waves", "topicId": "optics", "status": "planned", "title": "Lenses and light rays", "modality": "2d", "ages": "12+", "summary": "Trace rays through lenses and mirrors.", "keywords": ["lens", "ray", "light"] },
+    { "id": "atom-builder", "labId": "chemistry", "collectionId": "atoms", "topicId": "atoms", "status": "planned", "title": "Build an atom", "modality": "2d", "ages": "10+", "summary": "Add protons, neutrons and electrons and see which element you made.", "keywords": ["atom", "element"] },
+    { "id": "ph-scale", "labId": "chemistry", "collectionId": "reactions", "topicId": "acids-bases", "status": "planned", "title": "The pH scale", "modality": "2d", "ages": "11+", "summary": "Mix acids and bases and track the pH.", "keywords": ["ph", "acid", "base"] },
+    { "id": "cell-explorer", "labId": "biology", "collectionId": "cells", "topicId": "cells", "status": "planned", "title": "Inside a cell", "modality": "3d", "ages": "10+", "summary": "Explore the parts of plant and animal cells.", "keywords": ["cell", "organelle"] },
+    { "id": "punnett", "labId": "biology", "collectionId": "inheritance", "topicId": "genetics", "status": "planned", "title": "Inheritance squares", "modality": "2d", "ages": "13+", "summary": "Predict traits with Punnett squares.", "keywords": ["genetics", "punnett"] },
+    { "id": "logic-gates-lab", "labId": "electronics", "collectionId": "digital", "topicId": "logic-gates", "status": "planned", "title": "Logic gates", "modality": "2d", "ages": "11+", "summary": "Wire AND, OR and NOT gates and test every input.", "keywords": ["logic", "gate", "binary"] },
+    { "id": "rhythm-grid", "labId": "music", "collectionId": "harmony", "topicId": "rhythm", "status": "planned", "title": "Rhythm grid", "modality": "2d", "ages": "6+", "summary": "Build drum patterns on a grid.", "keywords": ["rhythm", "drum", "beat"] },
+    { "id": "solar-orbits", "labId": "space", "collectionId": "solar-system", "topicId": "orbits", "status": "planned", "title": "Planet orbits", "modality": "3d", "ages": "10+", "summary": "Watch planets follow Kepler's laws.", "keywords": ["orbit", "planet", "kepler"] },
+    { "id": "seasons-tilt", "labId": "space", "collectionId": "solar-system", "topicId": "seasons", "status": "planned", "title": "Why we have seasons", "modality": "3d", "ages": "9+", "summary": "Tilt the Earth and see sunlight change through the year.", "keywords": ["season", "tilt"] },
+    { "id": "rock-cycle-lab", "labId": "earth", "collectionId": "rocks", "topicId": "rock-cycle", "status": "planned", "title": "The rock cycle", "modality": "2d", "ages": "9+", "summary": "Follow granite, sandstone and marble through the rock cycle.", "keywords": ["rock", "granite", "cycle"] },
+    { "id": "volcano-lab", "labId": "earth", "collectionId": "plates", "topicId": "volcanoes", "status": "planned", "title": "Inside a volcano", "modality": "2d", "ages": "9+", "summary": "See how magma rises and erupts.", "keywords": ["volcano", "magma"] },
+    { "id": "line-follower", "labId": "robotics", "collectionId": "control", "topicId": "feedback", "status": "planned", "title": "Line-following robot", "modality": "2d", "ages": "11+", "summary": "Tune a robot's sensors and feedback to follow a track.", "keywords": ["feedback", "sensor", "robot"] },
+    { "id": "levers-lab", "labId": "mechanical", "collectionId": "machines", "topicId": "levers", "status": "planned", "title": "Levers and balance", "modality": "2d", "ages": "8+", "summary": "Balance loads on a lever by moving the pivot.", "keywords": ["lever", "fulcrum"] },
+    { "id": "bridge-forces", "labId": "mechanical", "collectionId": "design", "topicId": "structures", "status": "planned", "title": "Bridge forces", "modality": "2d", "ages": "12+", "summary": "See tension and compression in a truss bridge.", "keywords": ["bridge", "tension", "compression"] },
+    { "id": "binary-search-lab", "labId": "computing", "collectionId": "algorithms", "topicId": "searching", "status": "planned", "title": "Binary search", "modality": "2d", "ages": "11+", "summary": "Find a number in a sorted list in as few guesses as possible.", "keywords": ["search", "binary"] },
+    { "id": "caesar-cipher", "labId": "computing", "collectionId": "systems", "topicId": "cryptography", "status": "planned", "title": "Secret codes", "modality": "2d", "ages": "9+", "summary": "Encrypt and crack messages with a shift cipher.", "keywords": ["cipher", "code", "secret"] },
+    { "id": "contour-lines", "labId": "geography", "collectionId": "places", "topicId": "landforms", "status": "planned", "title": "Reading contour lines", "modality": "3d", "ages": "11+", "summary": "Match contour maps to hills and valleys.", "keywords": ["contour", "map", "hill"] },
+    { "id": "water-cycle", "labId": "environment", "collectionId": "ecosystems", "topicId": "water", "status": "planned", "title": "The water cycle", "modality": "2d", "ages": "8+", "summary": "Follow water through evaporation, clouds and rain.", "keywords": ["water", "rain", "evaporation"] },
+    { "id": "solar-panel", "labId": "environment", "collectionId": "climate", "topicId": "renewables", "status": "planned", "title": "Solar panel angle", "modality": "2d", "ages": "11+", "summary": "Tilt a solar panel to catch the most sunlight.", "keywords": ["solar", "renewable"] }
+  ],
+  "journeys": [
+    { "id": "how-sound-works", "title": "How sound works", "summary": "From vibrations and frequency to notes and intervals.", "steps": ["piano-intervals", "graphing-functions", "earthquake-waves"] },
+    { "id": "build-a-robot", "title": "Build a robot", "summary": "Power it, gear it, then make its arm reach.", "steps": ["ohms-law", "gear-train", "robot-arm"] },
+    { "id": "earth-and-climate", "title": "Earth and climate", "summary": "Our place on the globe, the energy that warms it, and the ground that shakes.", "steps": ["globe-coordinates", "energy-balance", "earthquake-waves"] }
+  ]
+}

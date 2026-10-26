@@ -1,0 +1,125 @@
+{
+ "id": "python-foundations-l8",
+ "course_id": "python-foundations",
+ "title": "Functions",
+ "module": "Module 4",
+ "lesson_number": 8,
+ "objective": "By the end of this lesson, you will be able to write your own functions with def, give them parameters, and use return to send back a result.",
+ "xp_on_complete": 50,
+ "sections": [
+  {
+   "id": "why",
+   "title": "Why use functions?",
+   "text": "A function is a named block of code you can run whenever you need it. You already use some, like print() and len(). Writing your own means you write a job once, use it many times, and fix it in one place."
+  },
+  {
+   "id": "def",
+   "title": "Writing and calling a function",
+   "text": "def say_hi(): starts a function called say_hi. The indented lines below it are its body. Writing def does not run the body. It only runs when you call the function by writing say_hi()."
+  },
+  {
+   "id": "parameters",
+   "title": "Parameters",
+   "text": "A parameter is a name in the brackets that receives a value when you call the function. With def greet(name):, the call greet(\"Ada\") sets name to \"Ada\" inside the function. You can have more than one: def area(width, height):."
+  },
+  {
+   "id": "return",
+   "title": "return or print?",
+   "text": "print() only shows a value on the screen. return sends a value back to the line that called the function, so you can store it or use it in a sum. If a function has no return, it gives back None."
+  }
+ ],
+ "examples": [
+  {
+   "id": "ex-greet",
+   "title": "Example 1: A function with a parameter",
+   "code": "def greet(name):\n    print(f\"Hello, {name}!\")\n\ngreet(\"Ada\")\ngreet(\"Kofi\")",
+   "output": "Hello, Ada!\nHello, Kofi!"
+  },
+  {
+   "id": "ex-area",
+   "title": "Example 2: Returning a result",
+   "code": "def area(width, height):\n    return width * height\n\nroom = area(4, 3)\nprint(room)\nprint(area(2, 5) + 1)",
+   "output": "12\n11"
+  }
+ ],
+ "diagram": {
+  "title": "How a function call works",
+  "steps": [
+   "Define the function with def",
+   "Call it by name, with values in the brackets",
+   "Python runs the body with those values",
+   "return sends a value back"
+  ],
+  "loop_label": "Call it again"
+ },
+ "check_questions": [
+  {
+   "id": "cq1",
+   "prompt": "What does this program print?",
+   "code": "def double(n):\n    return n * 2\n\nprint(double(5))",
+   "options": [
+    "5",
+    "n * 2",
+    "10",
+    "25"
+   ],
+   "answer_index": 2,
+   "explanation": "double(5) sets n to 5 and returns 5 * 2, which is 10.",
+   "misconception": {
+    "0": "The function changes the value before returning it.",
+    "1": "Python works out n * 2. It does not print the code.",
+    "3": "* 2 doubles the number. 25 would be 5 * 5."
+   }
+  },
+  {
+   "id": "cq2",
+   "prompt": "What does this program print?",
+   "code": "def say_hi():\n    print(\"Hi\")\n\nprint(\"Start\")",
+   "options": [
+    "Hi, then Start",
+    "Start",
+    "Start, then Hi",
+    "Nothing"
+   ],
+   "answer_index": 1,
+   "explanation": "The function is defined but never called, so only print(\"Start\") runs.",
+   "misconception": {
+    "0": "Writing def does not run the function.",
+    "2": "say_hi() is never called, so Hi is never printed.",
+    "3": "print(\"Start\") is outside the function, so it does run."
+   }
+  },
+  {
+   "id": "cq3",
+   "prompt": "What does this program print?",
+   "code": "def add(a, b):\n    print(a + b)\n\nresult = add(2, 3)\nprint(result)",
+   "options": [
+    "5",
+    "5, then 5",
+    "None",
+    "5, then None"
+   ],
+   "answer_index": 3,
+   "explanation": "add prints 5, but it has no return, so it gives back None. result is None, and print(result) shows None.",
+   "misconception": {
+    "0": "print(result) also prints something.",
+    "1": "add prints the answer but does not return it, so result is None.",
+    "2": "The print inside add runs first and shows 5."
+   }
+  }
+ ],
+ "try_it": {
+  "id": "try1",
+  "title": "Try It Yourself",
+  "instructions": "Write a function called triple that returns a number times 3. Then print triple(4) to test it.",
+  "starter": "def double(n):\n    return n * 2\n\nprint(double(4))\n# Write your triple function below",
+  "counts_when": "ran_ok"
+ },
+ "activities": [
+  "read",
+  "cq1",
+  "cq2",
+  "cq3",
+  "try1"
+ ]
+}

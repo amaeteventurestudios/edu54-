@@ -1,0 +1,92 @@
+{
+  "id": "py-l6",
+  "course_id": "python-foundations",
+  "title": "Loops",
+  "module": "Module 3",
+  "lesson_number": 6,
+  "objective": "By the end of this lesson, you will understand how to repeat instructions using for loops.",
+  "xp_on_complete": 50,
+  "sections": [
+    {
+      "id": "what-are-loops",
+      "title": "What are loops?",
+      "text": "A loop lets you run the same set of instructions multiple times. In Python, the for loop is one of the most commonly used loops. It lets you repeat code for each item in a sequence, such as a list or a range of numbers."
+    },
+    {
+      "id": "range",
+      "title": "Counting with range()",
+      "text": "The range() function makes a sequence of numbers. range(5) gives 0, 1, 2, 3 and 4: it starts at 0 and stops before 5. So a loop over range(5) runs 5 times. range(2, 6) starts at 2 and stops before 6, giving 2, 3, 4 and 5."
+    },
+    {
+      "id": "loop-variable",
+      "title": "The loop variable",
+      "text": "In for i in range(5), the name i is the loop variable. Each time around the loop, i takes the next value from the sequence. The indented lines under the for line are the loop body: they run once for every value."
+    },
+    {
+      "id": "lists",
+      "title": "Looping over a list",
+      "text": "A for loop can also go through the items of a list, one at a time: for name in names. Each time around, name holds the next item. This is useful for adding up numbers, counting, or printing every item."
+    },
+    {
+      "id": "how-it-works",
+      "title": "Step by step",
+      "text": "A loop starts, takes the next item from the sequence, runs the code inside the loop, and then goes back to take the next item. When there are no items left, the loop is done and the program continues after it."
+    }
+  ],
+  "examples": [
+    {
+      "id": "ex-hello",
+      "title": "Example 1: Say hello five times",
+      "code": "for i in range(5):\n    print(f\"Hello, {i}!\")",
+      "output": "Hello, 0!\nHello, 1!\nHello, 2!\nHello, 3!\nHello, 4!"
+    },
+    {
+      "id": "ex-total",
+      "title": "Example 2: Add up a list",
+      "code": "total = 0\nfor n in [3, 4, 5]:\n    total = total + n\nprint(total)",
+      "output": "12"
+    }
+  ],
+  "diagram": {
+    "title": "How a loop works",
+    "steps": ["Start", "Repeat for each item in the sequence", "Run the code inside the loop", "Continue"],
+    "loop_label": "Repeat until done"
+  },
+  "check_questions": [
+    {
+      "id": "cq1",
+      "prompt": "How many times will this loop run?",
+      "code": "for i in range(3):\n    print(i)",
+      "options": ["2 times", "3 times", "4 times", "5 times"],
+      "answer_index": 1,
+      "explanation": "range(3) gives 0, 1 and 2, so the loop body runs 3 times.",
+      "misconception": {"0": "range(3) has three values, not two.", "2": "range stops before 3, so there is no fourth value.", "3": "range(3) does not have five values."}
+    },
+    {
+      "id": "cq2",
+      "prompt": "What is the first number that range(5) gives?",
+      "code": "for i in range(5):\n    print(i)",
+      "options": ["0", "1", "5", "It depends on the loop"],
+      "answer_index": 0,
+      "explanation": "range starts at 0 unless you tell it a different start.",
+      "misconception": {"1": "Counting from 1 is common in everyday life, but Python's range starts at 0.", "2": "5 is where range(5) stops; it is not included.", "3": "range(5) always starts at 0."}
+    },
+    {
+      "id": "cq3",
+      "prompt": "What does this program print?",
+      "code": "total = 0\nfor n in [1, 2, 3]:\n    total = total + n\nprint(total)",
+      "options": ["3", "6", "123", "Nothing"],
+      "answer_index": 1,
+      "explanation": "The loop adds 1, then 2, then 3 to total: 1 + 2 + 3 = 6.",
+      "misconception": {"0": "That is the number of items; the loop adds the items up.", "2": "The numbers are added, not joined together.", "3": "print(total) is after the loop, so it does print."}
+    }
+  ],
+  "try_it": {
+    "id": "try1",
+    "title": "Try It Yourself",
+    "instructions": "Change the code to print your name 3 times.",
+    "starter": "# Write your code here...\nfor i in range(3):\n    print(\"Your name here\")",
+    "counts_when": "ran_ok"
+  },
+  "activities": ["read", "cq1", "cq2", "cq3", "try1"]
+}

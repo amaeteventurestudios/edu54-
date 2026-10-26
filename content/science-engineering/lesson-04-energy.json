@@ -1,0 +1,125 @@
+{
+ "id": "science-engineering-l4",
+ "course_id": "science-engineering",
+ "title": "Energy",
+ "module": "Module 2",
+ "lesson_number": 4,
+ "objective": "By the end of this lesson, you will be able to tell kinetic energy from potential energy, calculate simple amounts of each, and explain that energy changes form but is never used up or destroyed.",
+ "xp_on_complete": 50,
+ "sections": [
+  {
+   "id": "what-is-energy",
+   "title": "What is energy?",
+   "text": "Energy is what makes things happen: it lets things move, heat up, light up or make sound. Energy is measured in joules (J). Food gives your body energy, and fuel gives a motorbike energy."
+  },
+  {
+   "id": "kinetic",
+   "title": "Kinetic energy",
+   "text": "Anything that is moving has kinetic energy. The faster it moves and the more mass it has, the more kinetic energy it has. A loaded lorry and a bicycle at the same speed are very different: the lorry has far more. Kinetic energy = 0.5 × mass × speed × speed."
+  },
+  {
+   "id": "potential",
+   "title": "Potential energy",
+   "text": "Potential energy is stored energy. A rock at the top of a hill, a stretched catapult and a charged battery all store energy. The higher an object is lifted, the more gravitational potential energy it has: mass × g × height, with g about 9.8 m/s^2."
+  },
+  {
+   "id": "changes",
+   "title": "Energy changes form",
+   "text": "Energy is never made from nothing and never destroyed: it only changes from one form to another. When a coconut falls, its potential energy turns into kinetic energy. A solar panel on a roof changes light energy into electrical energy. Some energy usually turns into heat and sound, so it is not lost, just spread out."
+  }
+ ],
+ "examples": [
+  {
+   "id": "ex-potential",
+   "title": "Example 1: Potential energy of a lifted bag",
+   "code": "mass = 2\ng = 9.8\nheight = 5\nenergy = mass * g * height\nprint(round(energy, 1), \"J\")",
+   "output": "98.0 J"
+  },
+  {
+   "id": "ex-kinetic",
+   "title": "Example 2: Kinetic energy of a runner",
+   "code": "mass = 50\nspeed = 4\nenergy = 0.5 * mass * speed * speed\nprint(energy, \"J\")",
+   "output": "400.0 J"
+  }
+ ],
+ "diagram": {
+  "title": "A falling ball",
+  "steps": [
+   "The ball is held high: it has potential energy",
+   "It falls: potential energy becomes kinetic energy",
+   "It hits the ground: energy turns into sound and heat",
+   "The total amount of energy stays the same"
+  ],
+  "loop_label": "Lift the ball again"
+ },
+ "check_questions": [
+  {
+   "id": "cq1",
+   "prompt": "Which of these has the most kinetic energy?",
+   "code": null,
+   "options": [
+    "A parked bus",
+    "A bus moving fast on the highway",
+    "A bicycle moving slowly",
+    "A book on a shelf"
+   ],
+   "answer_index": 1,
+   "explanation": "Kinetic energy depends on mass and speed. A big, fast bus has the most.",
+   "misconception": {
+    "0": "A parked bus is not moving, so it has no kinetic energy.",
+    "2": "A slow bicycle has much less mass and speed than a fast bus.",
+    "3": "A book on a shelf is not moving. It has potential energy, not kinetic energy."
+   }
+  },
+  {
+   "id": "cq2",
+   "prompt": "A mango hangs high up on its tree. What kind of energy does it store because of where it is?",
+   "code": null,
+   "options": [
+    "Kinetic energy",
+    "Sound energy",
+    "Light energy",
+    "Potential energy"
+   ],
+   "answer_index": 3,
+   "explanation": "Being high up gives the mango stored, gravitational potential energy. It turns into kinetic energy if the mango falls.",
+   "misconception": {
+    "0": "The mango is not moving yet, so it has no kinetic energy.",
+    "1": "A hanging mango is not making sound.",
+    "2": "A mango does not give out light."
+   }
+  },
+  {
+   "id": "cq3",
+   "prompt": "A ball falls, hits the floor with a thud and stops. What happened to its energy?",
+   "code": null,
+   "options": [
+    "It changed into other forms, such as sound and heat",
+    "It was destroyed",
+    "It turned into extra mass in the ball",
+    "It disappeared because the ball stopped"
+   ],
+   "answer_index": 0,
+   "explanation": "Energy is never destroyed. The ball's kinetic energy changed into sound and heat.",
+   "misconception": {
+    "1": "Energy cannot be destroyed. It only changes form.",
+    "2": "The ball does not get heavier. The energy went into sound and heat.",
+    "3": "When the ball stops, its energy has gone somewhere else, mostly heat and sound."
+   }
+  }
+ ],
+ "try_it": {
+  "id": "try1",
+  "title": "Try It Yourself",
+  "instructions": "Change the height to 10 m and run the code. What happens to the potential energy when the height doubles?",
+  "starter": "mass = 2\ng = 9.8\nheight = 5\nenergy = mass * g * height\nprint(round(energy, 1), \"J\")",
+  "counts_when": "ran_ok"
+ },
+ "activities": [
+  "read",
+  "cq1",
+  "cq2",
+  "cq3",
+  "try1"
+ ]
+}

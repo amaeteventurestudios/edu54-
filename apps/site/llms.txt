@@ -1,0 +1,30 @@
+# EDU54
+
+> EDU54 is a school-owned AI learning lab in one box. It puts an AI tutor, a coding lab and an offline learning library on a single computer at the school. Students and teachers use it from the browsers on devices they already have. It keeps working with the internet unplugged, has no monthly subscription, and keeps student conversations on the school's own box.
+
+## Problems it addresses
+- Unreliable or expensive internet: the tutor, lessons and library run on the box, so core learning continues offline.
+- Subscription costs: there is no monthly subscription and no per-student fee.
+- Student privacy: conversations stay at the school and are not sent to EDU54.
+- Homework integrity: in homework the tutor gives hints, not answers; in assessments it gives no help. These limits are enforced by the software, not only by a prompt.
+- Child safety: every message is screened before and after the tutor answers; messages suggesting a student may be in danger go to the school's designated safety contacts.
+
+## Editions
+- K-12: Kindergarten to SSS 3 (Nigerian level names by default), with four learner experiences chosen by class level: Discover (Kindergarten to Primary 2), Explore (Primary 3 to 5), Build (Primary 6 to JSS 2), Launch (JSS 3 to SSS 3).
+- University: universities, polytechnics and colleges, Year 1 to Postgraduate, with a Lecturer Center and in-browser science and code tools (Python notebooks, circuit simulator, molecule viewer, 3D physics).
+- Discovery Lab (included with both editions): a science lab to explore on your own, with no class, teacher or grades. Thirteen labs; 14 experiments ready and 23 planned. Experiments run in the browser from the box and work offline; an AI Guide reads the experiment's numbers and goes through the same safety checks as the tutor. Students sign in with their K-12 or University account.
+
+## What students do
+Ask (AI tutor), Learn (courses, lessons, assignments, practice), Build (Python and coding projects), Explore (offline library and open textbooks), Progress (XP, levels, badges, projects).
+
+## How it is delivered
+Each box runs one edition and is configured for the ordering institution before it ships: its name, admin account, classes and content.
+
+## Links
+- Homepage: https://edu54.com/
+- K-12 demo (sample data): https://k12.edu54.com/
+- University demo (sample data): https://uni.edu54.com/
+- Discovery Lab: https://edu54.com/discover/
+
+## Notes
+- The online demos use made-up students and sample data.

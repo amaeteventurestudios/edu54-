@@ -1,0 +1,63 @@
+{
+  "id": "asg-loops-practice",
+  "title": "Loops Practice",
+  "subject": "Computer Science · Introduction to AI",
+  "lesson_id": "py-l6",
+  "instructions": "Answer the three questions about for loops. Use the hints if you get stuck. Your teacher will review your work.",
+  "ai_help_policy": "hints_only",
+  "max_score": 3,
+  "due_in_days_to_friday": true,
+  "questions": [
+    {
+      "id": "q1",
+      "index": 1,
+      "prompt": "What does this program print? Type the numbers separated by spaces.",
+      "code": "for i in range(4):\n    print(i)",
+      "kind": "sequence",
+      "key": {"kind": "sequence", "value": ["0", "1", "2", "3"]},
+      "misconceptions": [
+        {"tag": "off-by-one-start", "match": ["1", "2", "3", "4"], "note": "Your loop counted from 1. Remember where range starts."},
+        {"tag": "off-by-one-end", "match": ["0", "1", "2", "3", "4"], "note": "You included the stop number. Does range include it?"}
+      ],
+      "hints": [
+        "Look at range(4). What is the first number it gives you? (Hint: the number inside range is where it stops.)",
+        "range(4) starts at 0 and stops before 4. Write down each value that i takes, one per turn around the loop.",
+        "A similar problem: for i in range(2): print(i) prints 0 and then 1 — two turns, and it never reaches 2. Now try range(4)."
+      ]
+    },
+    {
+      "id": "q2",
+      "index": 2,
+      "prompt": "How many times does the loop body run?",
+      "code": "for i in range(2, 7):\n    print(i)",
+      "kind": "number",
+      "key": {"kind": "number", "value": 5, "tolerance": 0},
+      "misconceptions": [
+        {"tag": "counts-stop-number", "match": [6], "note": "range(2, 7) does not include 7, but it does include 2."},
+        {"tag": "uses-stop-as-count", "match": [7], "note": "The stop number is not the number of turns."}
+      ],
+      "hints": [
+        "range(2, 7) has a start and a stop. Where does it start, and where does it stop?",
+        "List the values one by one: it starts at 2 and stops before 7. Count how many values you wrote.",
+        "A similar problem: range(1, 4) gives 1, 2, 3 — that is 3 values. Try counting the values in range(2, 7) the same way."
+      ]
+    },
+    {
+      "id": "q3",
+      "index": 3,
+      "prompt": "What number does this program print?",
+      "code": "total = 0\nfor n in [3, 4, 5]:\n    total = total + n\nprint(total)",
+      "kind": "number",
+      "key": {"kind": "number", "value": 12, "tolerance": 0},
+      "misconceptions": [
+        {"tag": "counts-items", "match": [3], "note": "That is how many items there are. What does total = total + n do each time?"},
+        {"tag": "uses-last-item", "match": [5], "note": "The loop adds every item, not just the last one."}
+      ],
+      "hints": [
+        "Follow total step by step. What is total at the start, before the loop?",
+        "Turn 1 adds 3 to total. Turn 2 adds the next item. Write down total after each turn.",
+        "A similar problem: adding [1, 2] gives total 1 after the first turn and 3 after the second. Do the same steps for [3, 4, 5]."
+      ]
+    }
+  ]
+}

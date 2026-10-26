@@ -1,0 +1,391 @@
+{
+ "_about": "K-12 curriculum map: for each grade (0 = Kindergarten), the School Library folders that make up the year's courses. Nodes are content ids in the offline course channels (Khan Academy, African Storybook, PhET, MIT BLOSSOMS). Umanah's own courses (AI Foundations, Python Foundations, Science & Engineering) are added by band. Mapped by the AI agent, 2026-09-30.",
+ "grades": {
+  "0": [
+   {
+    "subject": "Math",
+    "title": "Kindergarten math",
+    "node": "37dcbd273d995183930588f94b10f1a2",
+    "source": "Khan Academy"
+   },
+   {
+    "subject": "Reading",
+    "title": "Picture books, level 1",
+    "node": "bbe88dd5e4345587804e6ec8425ca51d",
+    "source": "African Storybook"
+   }
+  ],
+  "1": [
+   {
+    "subject": "Math",
+    "title": "1st grade math",
+    "node": "d71d67f759165bfb96b1a57f33567272",
+    "source": "Khan Academy"
+   },
+   {
+    "subject": "Reading",
+    "title": "Picture books, level 2",
+    "node": "e34a3bdb2ef0527e835aee8cbc17d386",
+    "source": "African Storybook"
+   }
+  ],
+  "2": [
+   {
+    "subject": "Math",
+    "title": "2nd grade math",
+    "node": "18ebda47a56e5d98be6d182ee5eaff03",
+    "source": "Khan Academy"
+   },
+   {
+    "subject": "Reading",
+    "title": "Storybooks, level 3",
+    "node": "47b0dc07cc7f5b7e97b8c9533314e659",
+    "source": "African Storybook"
+   },
+   {
+    "subject": "Reading",
+    "title": "2nd grade reading and vocabulary",
+    "node": "d4be7909d7925d9798b8d40948fd62e4",
+    "source": "Khan Academy"
+   }
+  ],
+  "3": [
+   {
+    "subject": "Math",
+    "title": "3rd grade math",
+    "node": "7908edd155835737a661c3b4c934c51b",
+    "source": "Khan Academy"
+   },
+   {
+    "subject": "Reading",
+    "title": "Storybooks, level 4",
+    "node": "650719c548da5b509820950fbb60709c",
+    "source": "African Storybook"
+   },
+   {
+    "subject": "Reading",
+    "title": "3rd grade reading and vocabulary",
+    "node": "bb09b25a592f5a99b2aa8f6b082dbcb0",
+    "source": "Khan Academy"
+   },
+   {
+    "subject": "Science",
+    "title": "Science simulations, elementary",
+    "node": "3d4347dd17a45aea8ac66394068ac723",
+    "source": "PhET"
+   },
+   {
+    "subject": "Life skills",
+    "title": "Internet safety",
+    "node": "b155bcbc69f25fa19320bcbc67c56153",
+    "source": "Khan Academy"
+   }
+  ],
+  "4": [
+   {
+    "subject": "Math",
+    "title": "4th grade math",
+    "node": "41528d82d59d555684ae4565512cf1c4",
+    "source": "Khan Academy"
+   },
+   {
+    "subject": "Reading",
+    "title": "Storybooks, level 5",
+    "node": "b680ad4a6db55bdbaae327d181126709",
+    "source": "African Storybook"
+   },
+   {
+    "subject": "English",
+    "title": "Grammar",
+    "node": "270c4c4ca22a5e92a8dba9e3fd20635a",
+    "source": "Khan Academy"
+   },
+   {
+    "subject": "Science",
+    "title": "Science simulations, elementary",
+    "node": "3d4347dd17a45aea8ac66394068ac723",
+    "source": "PhET"
+   },
+   {
+    "subject": "Life skills",
+    "title": "Internet safety",
+    "node": "b155bcbc69f25fa19320bcbc67c56153",
+    "source": "Khan Academy"
+   }
+  ],
+  "5": [
+   {
+    "subject": "Math",
+    "title": "5th grade math",
+    "node": "2bde7e38139f5021bb5093645132ebb3",
+    "source": "Khan Academy"
+   },
+   {
+    "subject": "English",
+    "title": "Grammar",
+    "node": "270c4c4ca22a5e92a8dba9e3fd20635a",
+    "source": "Khan Academy"
+   },
+   {
+    "subject": "Science",
+    "title": "Science simulations, elementary",
+    "node": "3d4347dd17a45aea8ac66394068ac723",
+    "source": "PhET"
+   },
+   {
+    "subject": "Life skills",
+    "title": "Internet safety",
+    "node": "b155bcbc69f25fa19320bcbc67c56153",
+    "source": "Khan Academy"
+   }
+  ],
+  "6": [
+   {
+    "subject": "Math",
+    "title": "6th grade math",
+    "node": "94ac0cb6087c546db21a91173eceb1d2",
+    "source": "Khan Academy"
+   },
+   {
+    "subject": "English",
+    "title": "Grammar",
+    "node": "270c4c4ca22a5e92a8dba9e3fd20635a",
+    "source": "Khan Academy"
+   },
+   {
+    "subject": "Science",
+    "title": "Middle school physics",
+    "node": "55d5ffdd963750dc88cd47caa1ef7d39",
+    "source": "Khan Academy"
+   },
+   {
+    "subject": "Science",
+    "title": "Science simulations, middle school",
+    "node": "f762c4575b5151449c857268c678befe",
+    "source": "PhET"
+   },
+   {
+    "subject": "Life skills",
+    "title": "Internet safety",
+    "node": "b155bcbc69f25fa19320bcbc67c56153",
+    "source": "Khan Academy"
+   }
+  ],
+  "7": [
+   {
+    "subject": "Math",
+    "title": "7th grade math",
+    "node": "63e27af7b2ce5f9793a7ea22f6933017",
+    "source": "Khan Academy"
+   },
+   {
+    "subject": "English",
+    "title": "Grammar",
+    "node": "270c4c4ca22a5e92a8dba9e3fd20635a",
+    "source": "Khan Academy"
+   },
+   {
+    "subject": "Science",
+    "title": "Middle school biology",
+    "node": "2089b7201014571bba4c4ed6d2e46f8d",
+    "source": "Khan Academy"
+   },
+   {
+    "subject": "History",
+    "title": "World history",
+    "node": "adeff4c0bc1c54b99c965d0361884235",
+    "source": "Khan Academy"
+   },
+   {
+    "subject": "Life skills",
+    "title": "Internet safety",
+    "node": "b155bcbc69f25fa19320bcbc67c56153",
+    "source": "Khan Academy"
+   }
+  ],
+  "8": [
+   {
+    "subject": "Math",
+    "title": "8th grade math",
+    "node": "925b426cd8e35eaabe44eb1b3957179c",
+    "source": "Khan Academy"
+   },
+   {
+    "subject": "English",
+    "title": "Grammar",
+    "node": "270c4c4ca22a5e92a8dba9e3fd20635a",
+    "source": "Khan Academy"
+   },
+   {
+    "subject": "Science",
+    "title": "Middle school Earth and space science",
+    "node": "78b07a0148975a88b46ab082b9f1685c",
+    "source": "Khan Academy"
+   },
+   {
+    "subject": "History",
+    "title": "US history",
+    "node": "619a2a6c050551d997f4077301272bd7",
+    "source": "Khan Academy"
+   },
+   {
+    "subject": "Life skills",
+    "title": "Financial literacy",
+    "node": "9003b933f4815012aa00800438892363",
+    "source": "Khan Academy"
+   },
+   {
+    "subject": "Life skills",
+    "title": "Internet safety",
+    "node": "b155bcbc69f25fa19320bcbc67c56153",
+    "source": "Khan Academy"
+   }
+  ],
+  "9": [
+   {
+    "subject": "Math",
+    "title": "Algebra 1",
+    "node": "cb4a011ac01f5dee8f46c16652681769",
+    "source": "Khan Academy"
+   },
+   {
+    "subject": "Science",
+    "title": "Biology",
+    "node": "6a347d8f87915306abf3b89e47a49c0b",
+    "source": "Khan Academy"
+   },
+   {
+    "subject": "History",
+    "title": "World history",
+    "node": "adeff4c0bc1c54b99c965d0361884235",
+    "source": "Khan Academy"
+   },
+   {
+    "subject": "Science",
+    "title": "Science simulations, high school",
+    "node": "cf3179ea098e58cc8577902e227ba3ea",
+    "source": "PhET"
+   },
+   {
+    "subject": "Science",
+    "title": "Science and math video lessons",
+    "node": "913efe9f14c65cb1b23402f21f056e99",
+    "source": "MIT BLOSSOMS"
+   }
+  ],
+  "10": [
+   {
+    "subject": "Math",
+    "title": "Geometry",
+    "node": "0f36fc3e9e4c5f8db14de60a9b52e57d",
+    "source": "Khan Academy"
+   },
+   {
+    "subject": "Science",
+    "title": "Chemistry",
+    "node": "8c23f663a6365140b6c8c448f3b4ef68",
+    "source": "Khan Academy"
+   },
+   {
+    "subject": "Civics",
+    "title": "US government and civics",
+    "node": "b9e0bfec26a6549588889080e7e91662",
+    "source": "Khan Academy"
+   },
+   {
+    "subject": "Life skills",
+    "title": "Personal finance",
+    "node": "e3bf824f90285467bef113b08b0558ef",
+    "source": "Khan Academy"
+   },
+   {
+    "subject": "Science",
+    "title": "Science and math video lessons",
+    "node": "913efe9f14c65cb1b23402f21f056e99",
+    "source": "MIT BLOSSOMS"
+   }
+  ],
+  "11": [
+   {
+    "subject": "Math",
+    "title": "Algebra 2",
+    "node": "fc2a4b05a30e5006934b9133ad77a89f",
+    "source": "Khan Academy"
+   },
+   {
+    "subject": "Science",
+    "title": "Physics",
+    "node": "17d86ace01375570b5e782594d6af4f4",
+    "source": "Khan Academy"
+   },
+   {
+    "subject": "History",
+    "title": "US history",
+    "node": "619a2a6c050551d997f4077301272bd7",
+    "source": "Khan Academy"
+   },
+   {
+    "subject": "Math",
+    "title": "Statistics and probability",
+    "node": "9120612640c95eb8a3797c8b1ef5dd75",
+    "source": "Khan Academy"
+   },
+   {
+    "subject": "Economics",
+    "title": "Macroeconomics",
+    "node": "3d10f24545695caab1cae82c8a1f1ba6",
+    "source": "Khan Academy"
+   },
+   {
+    "subject": "Science",
+    "title": "Science and math video lessons",
+    "node": "913efe9f14c65cb1b23402f21f056e99",
+    "source": "MIT BLOSSOMS"
+   }
+  ],
+  "12": [
+   {
+    "subject": "Math",
+    "title": "Precalculus",
+    "node": "8d959400a6ca503990ea9ded452136ee",
+    "source": "Khan Academy"
+   },
+   {
+    "subject": "Math",
+    "title": "AP Calculus AB",
+    "node": "eea3ea7f74d55d08bedc6d1d4778e4c8",
+    "source": "Khan Academy"
+   },
+   {
+    "subject": "Science",
+    "title": "AP Biology",
+    "node": "771a1466918952b7a7a7ce3fc7c21954",
+    "source": "Khan Academy"
+   },
+   {
+    "subject": "Economics",
+    "title": "Microeconomics",
+    "node": "c0dedb69ddc85f8791c180dbc719286e",
+    "source": "Khan Academy"
+   },
+   {
+    "subject": "Life skills",
+    "title": "College admissions",
+    "node": "3af6ceb412b256aab241f6a301985918",
+    "source": "Khan Academy"
+   },
+   {
+    "subject": "Life skills",
+    "title": "Careers",
+    "node": "0809a5808f9b5ca7b4bac62e77570456",
+    "source": "Khan Academy"
+   },
+   {
+    "subject": "Science",
+    "title": "Science and math video lessons",
+    "node": "913efe9f14c65cb1b23402f21f056e99",
+    "source": "MIT BLOSSOMS"
+   }
+  ]
+ }
+}

@@ -1,0 +1,125 @@
+{
+ "id": "ai-foundations-l8",
+ "course_id": "ai-foundations",
+ "title": "Images and sound",
+ "module": "Module 3",
+ "lesson_number": 8,
+ "objective": "By the end of this lesson, you will be able to explain how a picture and a sound are stored as numbers, and why AI can make mistakes when those numbers change.",
+ "xp_on_complete": 50,
+ "sections": [
+  {
+   "id": "pixels",
+   "title": "Pictures are made of pixels",
+   "text": "A digital picture is a grid of tiny squares called pixels. In a black and white picture, each pixel is one number, often from 0 for black to 255 for white. A photo from a phone has millions of pixels."
+  },
+  {
+   "id": "colour",
+   "title": "Colour is three numbers",
+   "text": "A colour pixel is usually stored as three numbers: how much red, green and blue light it has. (255, 0, 0) is bright red and (0, 0, 0) is black. Mixing different amounts makes every other colour."
+  },
+  {
+   "id": "sound",
+   "title": "Sound is numbers too",
+   "text": "Sound is a wave moving through the air. A microphone measures the wave thousands of times every second, and each measurement is a number called a sample. Bigger numbers mean a louder part of the sound."
+  },
+  {
+   "id": "ai-and-numbers",
+   "title": "What AI sees",
+   "text": "An AI system that \"sees\" or \"hears\" only gets these numbers. It learns patterns in them, like edges and shapes in pictures or the sounds of words. If the light, the angle or the background noise is very different from its training examples, it can make mistakes."
+  }
+ ],
+ "examples": [
+  {
+   "id": "ex-pixels",
+   "title": "Example 1: A tiny picture made of numbers",
+   "code": "image = [[0, 0, 255], [0, 255, 0], [255, 0, 0]]\nfor row in image:\n    line = \"\"\n    for p in row:\n        if p > 128:\n            line = line + \"#\"\n        else:\n            line = line + \".\"\n    print(line)",
+   "output": "..#\n.#.\n#.."
+  },
+  {
+   "id": "ex-sound",
+   "title": "Example 2: A short sound made of numbers",
+   "code": "sound = [0, 3, 6, 3, 0, -3, -6, -3, 0]\nloudest = max(abs(s) for s in sound)\nprint(\"samples:\", len(sound))\nprint(\"loudest:\", loudest)",
+   "output": "samples: 9\nloudest: 6"
+  }
+ ],
+ "diagram": {
+  "title": "How a computer sees and hears",
+  "steps": [
+   "A camera or microphone measures the world",
+   "The measurements become numbers",
+   "AI looks for patterns in the numbers",
+   "It gives a guess, like cat or hello"
+  ],
+  "loop_label": "Check and learn from mistakes"
+ },
+ "check_questions": [
+  {
+   "id": "cq1",
+   "prompt": "What does this print?",
+   "code": "pixels = [10, 200, 30]\nprint(max(pixels))",
+   "options": [
+    "10",
+    "30",
+    "200",
+    "240"
+   ],
+   "answer_index": 2,
+   "explanation": "max finds the biggest number in the list, which is 200, the brightest pixel.",
+   "misconception": {
+    "0": "10 is the smallest number, the darkest pixel.",
+    "1": "30 is not the biggest number in the list.",
+    "3": "max picks one number from the list. It does not add them up."
+   }
+  },
+  {
+   "id": "cq2",
+   "prompt": "How does a computer store a sound?",
+   "code": null,
+   "options": [
+    "As many numbers measured very quickly, one after another",
+    "As a tiny bit of real air inside the chip",
+    "As a picture of the person speaking",
+    "As a list of words only"
+   ],
+   "answer_index": 0,
+   "explanation": "A microphone measures the sound wave many times a second and stores each measurement as a number.",
+   "misconception": {
+    "1": "Computers store numbers, not air.",
+    "2": "A sound recording does not need a picture.",
+    "3": "Many sounds, like music or a bird, are not words. The computer stores numbers."
+   }
+  },
+  {
+   "id": "cq3",
+   "prompt": "A face-finding camera works well in daylight but makes mistakes in a dark room. What is the most likely reason?",
+   "code": null,
+   "options": [
+    "The camera is tired",
+    "The camera does not like the dark",
+    "The AI has forgotten what faces look like",
+    "In the dark the pixel numbers are different from the examples it learned from"
+   ],
+   "answer_index": 3,
+   "explanation": "Dark pictures have very different pixel numbers, so the patterns it learned may not fit.",
+   "misconception": {
+    "0": "Machines do not get tired.",
+    "1": "AI does not have likes or feelings.",
+    "2": "Nothing was forgotten. The new numbers just do not match its examples well."
+   }
+  }
+ ],
+ "try_it": {
+  "id": "try1",
+  "title": "Try It Yourself",
+  "instructions": "Change the numbers in the image so it draws a different shape. Use 255 for bright and 0 for dark.",
+  "starter": "image = [[0, 0, 255], [0, 255, 0], [255, 0, 0]]\nfor row in image:\n    line = \"\"\n    for p in row:\n        if p > 128:\n            line = line + \"#\"\n        else:\n            line = line + \".\"\n    print(line)",
+  "counts_when": "ran_ok"
+ },
+ "activities": [
+  "read",
+  "cq1",
+  "cq2",
+  "cq3",
+  "try1"
+ ]
+}

@@ -1,0 +1,125 @@
+{
+ "id": "ai-foundations-l10",
+ "course_id": "ai-foundations",
+ "title": "Responsible AI",
+ "module": "Module 4",
+ "lesson_number": 10,
+ "objective": "By the end of this lesson, you will be able to keep personal information safe when using AI, be honest about AI help in your work, and know when to ask a trusted adult instead.",
+ "xp_on_complete": 50,
+ "sections": [
+  {
+   "id": "privacy",
+   "title": "Keep personal details private",
+   "text": "Some AI tools store what you type. Keep personal details out of your messages: your full name, address, phone number, passwords, and photos or details of other people. Ask your question without them."
+  },
+  {
+   "id": "honesty",
+   "title": "Be honest about AI help",
+   "text": "If AI helped with your work, say how, for example \"I used AI to check my spelling\". Follow your teacher's rules for when AI help is allowed. The learning happens when you do the thinking yourself."
+  },
+  {
+   "id": "safety",
+   "title": "Stay safe",
+   "text": "AI can be wrong, and it can sometimes say something unhelpful or upsetting. If that happens, stop and tell a teacher or another trusted adult. You have not done anything wrong by telling."
+  },
+  {
+   "id": "ask-a-human",
+   "title": "When to ask a person",
+   "text": "AI is not the right helper for everything. If you are worried, sad, feel unsafe, or have a question about your health, talk to a trusted adult. For big decisions about people, a person should decide, not a machine."
+  }
+ ],
+ "examples": [
+  {
+   "id": "ex-hide",
+   "title": "Example 1: Hiding personal details",
+   "code": "message = \"My name is Sam and my phone is 555 0101\"\nprivate = [\"Sam\"]\nsafe = []\nfor w in message.split():\n    if w in private or w.isdigit():\n        safe.append(\"[hidden]\")\n    else:\n        safe.append(w)\nprint(\" \".join(safe))",
+   "output": "My name is [hidden] and my phone is [hidden] [hidden]"
+  },
+  {
+   "id": "ex-honest",
+   "title": "Example 2: Saying how AI helped",
+   "code": "work = \"My poem about rain\"\nused_ai = True\nif used_ai:\n    work = work + \" (I used AI to check my spelling)\"\nprint(work)",
+   "output": "My poem about rain (I used AI to check my spelling)"
+  }
+ ],
+ "diagram": {
+  "title": "Using AI responsibly",
+  "steps": [
+   "Keep personal details out",
+   "Check what the AI says",
+   "Say how AI helped your work",
+   "Tell a trusted adult if something feels wrong"
+  ],
+  "loop_label": "Every time you use AI"
+ },
+ "check_questions": [
+  {
+   "id": "cq1",
+   "prompt": "Which of these is the safest to type into an AI tool?",
+   "code": null,
+   "options": [
+    "Your home address",
+    "Your password",
+    "A question about how volcanoes work",
+    "A photo of your friend, without asking them"
+   ],
+   "answer_index": 2,
+   "explanation": "A question about volcanoes has no personal details in it.",
+   "misconception": {
+    "0": "Your address is personal information. Keep it private.",
+    "1": "Never share a password with any tool or person online.",
+    "3": "Other people's photos are their personal details. They need to agree, and it is best to keep them out."
+   }
+  },
+  {
+   "id": "cq2",
+   "prompt": "You used AI to get ideas for your story. What is the honest thing to do?",
+   "code": null,
+   "options": [
+    "Say all the ideas were your own",
+    "Hide that you used AI",
+    "Let AI write the whole story and hand it in",
+    "Tell your teacher how you used AI and follow the class rules"
+   ],
+   "answer_index": 3,
+   "explanation": "Being honest about AI help is part of doing your own work.",
+   "misconception": {
+    "0": "That would not be true, because some ideas came from AI.",
+    "1": "Hiding it is not honest.",
+    "2": "Then it would not be your work, and you would miss the learning."
+   }
+  },
+  {
+   "id": "cq3",
+   "prompt": "Something an AI says makes you feel upset or unsafe. What should you do?",
+   "code": null,
+   "options": [
+    "Stop and tell a trusted adult, like a teacher or parent",
+    "Keep asking the AI until you feel better",
+    "Keep it a secret",
+    "Argue with the AI"
+   ],
+   "answer_index": 0,
+   "explanation": "A trusted adult can help. Telling them is always the right choice.",
+   "misconception": {
+    "1": "The AI is not a replacement for a person who cares about you.",
+    "2": "You do not have to keep it secret. Telling someone helps.",
+    "3": "Arguing will not help. Stop and tell an adult."
+   }
+  }
+ ],
+ "try_it": {
+  "id": "try1",
+  "title": "Try It Yourself",
+  "instructions": "Add another word to the private list, such as a town name in the message, and run the code to see it hidden.",
+  "starter": "message = \"My name is Sam and my phone is 555 0101\"\nprivate = [\"Sam\"]\nsafe = []\nfor w in message.split():\n    if w in private or w.isdigit():\n        safe.append(\"[hidden]\")\n    else:\n        safe.append(w)\nprint(\" \".join(safe))",
+  "counts_when": "ran_ok"
+ },
+ "activities": [
+  "read",
+  "cq1",
+  "cq2",
+  "cq3",
+  "try1"
+ ]
+}

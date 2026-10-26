@@ -1,0 +1,488 @@
+# data drive AFTER — 2026-09-24T15:47:08-07:00
+TARGET                    SOURCE    FSTYPE LABEL        OPTIONS
+/srv/ai-node/storage/data /dev/sdb1 ext4   AI_NODE_DATA rw,relatime
+UUID=7d12ed26-3a1f-45c6-a1ce-37c5097c3d11 /srv/ai-node/storage/data ext4 defaults,nofail 0 2
+# sha256
+1b7e3ac70b58101923f4a9dc8645af3a9638994440677d022d88bd168b11bc49  6320246  ./animation/hungree-goat-loop-720p.mp4
+e6449f6228f8a9710ebb1d632bb512d473aa6413597f9557816627d5716032cc  4516744  ./animation/hungree-goat-loop.mp4
+9cba832a85e2cb1bb8d387f14c97bd615db757f0e3dc3657e8a6ae06f411a291  580807  ./artwork/Abamani  Wrapping oneself in the comfort of peace.jpg
+01bf834474f8db3dc215a1765632900f693c7f2e370e2c1f12ccd7717e47a8c7  571344  ./artwork/Abase  Wearing authority with grace.jpg
+edac80396db24e0931a712ff1bc9f2c18476cbe1ae87bb25e561c3adb3e5e1d4  618375  ./artwork/Abelesa  Grounded movements in nature's rhythm.jpg
+754c8a635b583c1084b40bfda30982a93be211dc944163cbfe8272442b749244  577859  ./artwork/Akode - The essence of new discoveries.jpg
+9262070b64fdeda991f92a0892555a3fd6d972d24747289fc407aa69756136dd  688033  ./artwork/Arah  Voices echoing the soul's desires.jpg
+15915e791b8581ba20a303e82ecdc0e8110af7892348c20e05fd306de674aab9  703341  ./artwork/Banu - Timeless essence of beats.jpg
+a85c72b43e6b93b4ddf980eeaaf8bf3779978952fa75b6d2c91e6daea564636d  615888  ./artwork/Baraka  Blessings woven into sound.jpg
+6b073396e7e5555b70369e737fd34ef0cba9c4dbb748397205633fb65e89f071  780444  ./artwork/Barife  Gratitude for the love that's given.jpg
+688ae7c7f402834b926532f5a3fa2917028f6f063504f16eed2dec459e85de9d  975545  ./artwork/Binase  Life's rhythmic command.jpg
+e9518b3e284068a3ac8a614b9a9ac01bcdff0447c911fbdadd6014e0ffd4d444  585085  ./artwork/Bonjaro - Melodic brightness.jpg
+f46c795919f0c5af19f99c88601fa7c2bb249603a076d00e4b575702d4f15c48  889764  ./artwork/Boras - The strong roots of melody.jpg
+ce936d33aad2c13538ac5d8e13bfb93c797ed05cb96ba5d5838bb4e13802554f  903982  ./artwork/Bureso - Comforting hug of melodies.jpg
+518fe465a54f65e94f451e5173f5ca06c5c15989f771fa2df81943d8ba71e220  773417  ./artwork/Bursa  Opportunities in sound.jpg
+666a24a40e764ba9e18cd3eaa8186a4ff788c965baf3100c2c2946e1a2a06c43  123737  ./artwork/.cache/abamaniwrappingoneselfinthecomfortofpeace.jpg
+4fad291fb431e17d8d0f2230296eed9dbb676012463369b8545146f13644f73c  116680  ./artwork/.cache/abasewearingauthoritywithgrace.jpg
+897d8d6496c75ddfa5ded28323cfd6899eb1613b47119a6ed89583764f14605c  121442  ./artwork/.cache/abelesagroundedmovementsinnaturesrhythm.jpg
+d572c44ce95b5dc6ad431bf0fcf4f66223f1df451d866bda34808d790d101244  123799  ./artwork/.cache/akodetheessenceofnewdiscoveries.jpg
+f64809e3797dbaf413709aba1cfc3f69b1d42ab45f6371f2347ed9445e7936c0  138450  ./artwork/.cache/arahvoicesechoingthesoulsdesires.jpg
+124021703a8bdedd27057cffb344e3a3a33816b9497602f82f4442db9620cdcf  138392  ./artwork/.cache/banutimelessessenceofbeats.jpg
+3f9bcb7df57bd36175780a438248920f73c503181af54aba14d47908eb52adae  112661  ./artwork/.cache/barakablessingswovenintosound.jpg
+8eefbaa246577e477968954005fd800b84fd36a37c7b0b637ede77fa8763dd5f  147209  ./artwork/.cache/barifegratitudeforthelovethatsgiven.jpg
+2c71fb5f8dacfef4a941d111429ab0bef97fe036b1b2e20d2a9aafff4bfac7be  170271  ./artwork/.cache/binasedanceemergesatlifesrhythmiccommand.jpg
+8df85c04cf88b8e1ee84fb03a0241a7c43cd84d66a27efb5c6457239fbd09792  115613  ./artwork/.cache/bonjaromelodicbrightness.jpg
+cd907ea246926a8475f26b5426f821c1434bfd9469f6e0ce710470938fed04ce  161493  ./artwork/.cache/borasthestrongrootsofmelody.jpg
+a004fa7486de87283de9175bb4bef5679e4481f95619d585c420b68d808fc632  182051  ./artwork/.cache/buresocomfortinghugofmelodies.jpg
+63ec20463e66b0c32fedf63d56d36511d2b9e9202c46813c757d8aecb64458c8  141161  ./artwork/.cache/bursaopportunitiesinsound.jpg
+ea9b04a1fc74691855623ee7e5fd46a1b3069d5a6a1b84d2477980955afbe3b7  154794  ./artwork/.cache/chombonavigatingthewildterrainsofsound.jpg
+aead389fdc464877fc87abaf3b70d33d55d672a92491fd8ddff2cd0903cc18fb  139675  ./artwork/.cache/dakothegentleriseofharmony.jpg
+fc020a2af20d2d5f4f966fecebb4f38ae77d97255b201af6511525640f8bf2b8  149642  ./artwork/.cache/danuendlessdanceofharmony.jpg
+f98a0019cbd345259fbd81a7c2d4c9c6adea100141340c8a868d3b65732de649  145787  ./artwork/.cache/demkasaconversationsofthesoulexpressedinmovement.jpg
+7ce5e8506032e90f8d24d2c1414dc36f9071988ca77d2529e83a77954f6f58e9  123667  ./artwork/.cache/duniaworldlysounds.jpg
+80d47666f6021073f9b04a6092b0766317cb6a8008015a88b32612335b570720  140607  ./artwork/.cache/ekoezithevibrantgoodnessofurbanrhythms.jpg
+13e20b30e7046d73086d97420ed439d41db87f967c729e83b42b135e34ffb320  178469  ./artwork/.cache/elawewhispersofancestraltales.jpg
+e3178a9b6344d03f4047f52180bb9c8d1fc036fff60d4456f703cb133239bfa8  145499  ./artwork/.cache/fachemelodicwhisperofnight.jpg
+e55f7cad1bb2bc21f87782a0d86914b45449d10500b407908320d2b11bfad724  138863  ./artwork/.cache/farajacoolsoothingtones.jpg
+2a7f3400ea123f2f62d1429111655ea54bce9530a985e31785c30bb339be1bf5  182194  ./artwork/.cache/fenureradiantglowofharmony.jpg
+a1168051a669c17a4c79702044b8fdb1a96e5144094abaa9cbda8c3426c7a016  121084  ./artwork/.cache/fonuthetranquilwavesofsound.jpg
+dc2ef823bca7a01c0290fc280234c9dc5922d0819295004c706f685fa4387c88  120542  ./artwork/.cache/forithegentlecaressofsound.jpg
+1fa4bb64b76f233bf5b7d2e8bdf53d48443aebc1ab7c088d3df671e942cf41b6  127089  ./artwork/.cache/furahajoyfulheartbeatsinsound.jpg
+adf301c3711a74acc44ea3f15d83776702fc3de1539a078e63474ab0a78f5252  120734  ./artwork/.cache/gamajelithefullstoryapoettells.jpg
+ada7bc1683b3ec6b7a19c95dbdbbfe27fc70ce30c3f33f80915c32254a3ee265  158416  ./artwork/.cache/ganiamaseekingthefullnessineverytune.jpg
+b69af29ecaeaeb97c0a39af5fe24fac63fc4bbce1d8d4f82187272e1543a1fc6  138015  ./artwork/.cache/gokivibrantshoutoftunes.jpg
+3eef7ae43e83c61222f49c2ffced10d63d407ba7c4e2eeb6a20f11bb21314769  160873  ./artwork/.cache/gokwamelodieswelcomingnewbeginnings.jpg
+8adffef3f034518a7549676edb610dd69034e13d458f0dc59bd425bd8977b05b  93050  ./artwork/.cache/hakimabreathinglifeintojusticethroughsound.jpg
+81de08aa978f77a5e4d25f031afd2587a9108a8ec8c8fb850ce64937d324c958  154806  ./artwork/.cache/ikobelethevillagewhereeverysteptellsastory.jpg
+62b5356aa2b8df15709fc41b29b63931441454fe470cd8aa893cb03ba3fa9598  123299  ./artwork/.cache/isonuaupliftingvisionsthroughsound.jpg
+280c8808086244a830e54d38e43512f12b12fdec0f91451b1ee84d46e9bc2e47  89821  ./artwork/.cache/itairiacallthatresonatesintheopenair.jpg
+ac35d12603a80cb071aa6c0c4eee4ff46d68e3bf41a75dedf19f7d518a2c74dc  162682  ./artwork/.cache/iyoterhythmicswayofunity.jpg
+29bc7f4785b1f5a0f5f88c7dda2eb389591770172c47f0ebcec39a8f5cb9de3d  164980  ./artwork/.cache/januthejoyfulleapofmelodies.jpg
+4caa9a7e68bea47e1cff7a33be16dde1b07c0685a89c2d028886f37f55ee94d5  124628  ./artwork/.cache/jarietojourneysthatecho.jpg
+3286b1c0f742e8d942ae65f0588af6f3e467a7daf63c721787c803ff249e05a5  175755  ./artwork/.cache/jarijourneytothemoon.jpg
+01ff98df9c4c013e2fdecf6d142b31680f8c7da07755c0c8a1b35bea16c04451  151808  ./artwork/.cache/jengacleanpurenotes.jpg
+36c77cb42896acf8d71e7bd018a799162265268a268da3d64e69ec2f19bd81c3  143532  ./artwork/.cache/jinaanamethatechoes.jpg
+49299a1394a2636645dc1ae29a6199631d3219d5819aff49d7cf4cdbe43525bd  115602  ./artwork/.cache/jiwerocksolidrhythms.jpg
+674db96dae192c2669b3dfed0062b0b18f75de378fb155027228262ce4a974e3  158133  ./artwork/.cache/juajamagatheringunderthesunsradiantbeats.jpg
+a0476d0302fc3914b21b78d1ad02c06c6ecd225d10c2f46ab650d79a5ff3436a  157120  ./artwork/.cache/juasunlittunes.jpg
+a1f91a1dc8808df9d5166086a6ae4ae49c5c5e89cd109886bf4180853acb3ca4  198210  ./artwork/.cache/kalatheeffortthatflowslikeariver.jpg
+60fa15b25054f64437be57b2c56c5fc2e5803825d97d3795315d901c541c21e4  159484  ./artwork/.cache/kazitheworkofcraftingsound.jpg
+5a0a3a0080a481a37607909346a00ed2dd52940cd45c63cab54032a986ead852  145733  ./artwork/.cache/kekotheendlessflowofinspiration.jpg
+9ac44fb5c5a0046fc1cce8a9f5d86de1b1807090f89cff5e182a9c10157d3278  134299  ./artwork/.cache/kelacascadingnotesofjoy.jpg
+5b038f33a3a9852c6a50893b98e131dd1bc971199fb164bea02aa8167c67a274  156464  ./artwork/.cache/kianaecreativeblendreflectingafricansounds.jpg
+250a3723e486c362f03f2853272815303bb11c89e834649b6f1c8b34cd6be473  162732  ./artwork/.cache/kijanayouthfulenergyinmusic.jpg
+72498723c1391e3fac44fd22fd8e65b3efacd8a128299ccabd72710afd0ce6d5  143122  ./artwork/.cache/kimawisdominthemelody.jpg
+58f934f985b74970bd063495af2cba644a66b2b44beab02e7720fae34d64d0d8  162550  ./artwork/.cache/kiooreflectivetones.jpg
+4f4c7eb22974af718d1b934e2ffa60f70e673082b0661b92a4339c4611664034  124384  ./artwork/.cache/kipandeapieceofmelody.jpg
+09bba0a8691e9da219a1711cd3329979ac70d53cf7334e56a16089f3e480bf01  140484  ./artwork/.cache/kirizimalifesjourneyflowinglikeariver.jpg
+3b4e9140aa8bc37ae537feef8cfa9132df3c4ead40853421f39be0e19396a4cd  157498  ./artwork/.cache/kofehpulseoflife.jpg
+e5d87ddee55b0463d2773e9e2600851c1d2294191b89f489c35780bd29016152  122764  ./artwork/.cache/korosasoulfulechooftradition.jpg
+477c8cb4365c4ffa0a1e3886a4e9f59cd4cf41fdfcc74f8016bcae1ba78ed697  252050  ./artwork/.cache/kosoroahomewherewallsechostories.jpg
+0bb44e597bd083319d0821b7ec5db1397f91aa18b0fe84677f5fbc9f785c702e  126197  ./artwork/.cache/kujatheanticipationofrhythm.jpg
+b74a0a518a706af5c6ee62159f8fda2d282af9cde5b45a7af994b48075b656ea  147813  ./artwork/.cache/kwaniembracingloveintherhythm.jpg
+ace363022405e99621913796df7f2ae6007287502bca45ff0bcaf53554aac0a5  114168  ./artwork/.cache/lalalidriftingtosleepwithalullaby.jpg
+f68448a2867c0127dda0630fd35f818ce90fa4577c5ea8ea600fa31e4156be57  139779  ./artwork/.cache/lamateflowingstreamofsound.jpg
+7d92f9a0c4819c186785bef24d7baa79623318768563aecb7ce02d1bdb1f0578  127423  ./artwork/.cache/lekotheradiantshineoftunes.jpg
+9973321f3a83eb14f4673a18f760923a7849d7c5dbb2da4554543d281b66dd5e  159524  ./artwork/.cache/lemurabrightsparkofrhythm.jpg
+adf7f11329725b07335ea06b84fbd3fc648ab103f9e37b980951468d066f4f27  97630  ./artwork/.cache/loboaafricannamingconventions.jpg
+a4adcdb5b4657a401ed63b5543743366d64ee2f5093e9980e0b2e8e8da818573  149684  ./artwork/.cache/lomatekoheartfeltembrace.jpg
+caa1c3c45877a9ca0aefa4996dfd35db35e40b7531cf5124fc1bc54f30527bb9  136673  ./artwork/.cache/lugemipurposefulmelody.jpg
+39d09f66522486c718b7b6699964d82c0a73398f2c92b3cf4cd6580659457f49  137804  ./artwork/.cache/mabothenurturingspiritintunes.jpg
+892f62bf4ea852cab4d606c33c4f19b3291f5232f59af2ceb044ffde5cc409c0  132766  ./artwork/.cache/majiilluminatingtunes.jpg
+6c705f811c855a150c49c76bcc1023c0652f447da6a7387805c9cb48466376d6  192121  ./artwork/.cache/maziwamilkysmoothmelodies.jpg
+69a85f5be838daa6a344c7aeb54c8a0ca83e972a96926b477cc3234ac1e4b7ab  125543  ./artwork/.cache/mbalireachingdistanthorizons.jpg
+24e2c92bf8f869bf15a9912d7c70d7e3e7e646b7a3fd4b57c585fee1486b1e00  112515  ./artwork/.cache/molosoftanddeepharmonies.jpg
+27306a48ec9f29cec68c97c58369d5df72c8e0597d6f511c746c39f51c131118  148541  ./artwork/.cache/moyoheartfelttunes.jpg
+d3c372b21ad816eb280be180f2f9ea5f1de590cade47bdfc1108f9125086d225  149595  ./artwork/.cache/msingifoundationalsounds.jpg
+bd296681bdeae4e533b4f1fc4267444023e555ba75ddb48e6095260adc11bf42  150932  ./artwork/.cache/mtaastreetbeats.jpg
+2c784a2c8fc1729b20921ed3839eb3043a2f17fc294cfd3523ef27b3e7a31272  132134  ./artwork/.cache/murasofthumofserenity.jpg
+d4b9abcd8696f425ae7e8ff7739ce8db6b95c59b5ae00a6dbf35bb9688504609  156126  ./artwork/.cache/mvuarhythmslikerain.jpg
+2553bfbe195ae784aefcf09a46d296edab6090215d22ffc626521d0add422742  137444  ./artwork/.cache/mwendomovementinmusic.jpg
+5dc23124eba418daa3559e180b9506e3e4fe9164895621d4b140dda044d81d6b  175447  ./artwork/.cache/mzimasoulfuljoyinthemusic.jpg
+39c453c68b033c8fe74121711106759785e1b0da80c7ac5c88db3cc65c7d3a7e  149476  ./artwork/.cache/najozigazingintoarealmofdreams.jpg
+971ab43aa8f876ff811d95b5c5fcdd5da508bf843a610ba32c082861e6c6a533  147050  ./artwork/.cache/namuthemelodicjourneyofdreams.jpg
+72e779685dcd1ed948ceeed17bf261f52cb5f8665de93fa36a0d024c9910b78c  158711  ./artwork/.cache/ndanybuildingamelody.jpg
+d42608cb339b3e3e1b14f219b62939f3bd0b95c1105c7f76cb6457ce3fa36271  148221  ./artwork/.cache/nemitolajoyousbeats.jpg
+03e83dd0efbd4159dcd44b769c91d69f39742454cb3d36fe555c78c849d936b3  146271  ./artwork/.cache/nenekemafreespiritclaimingitsspace.jpg
+70c64c209fbc985319f027f84444124743e5cabd8e5e5d1535e7bff9e7101d67  117584  ./artwork/.cache/ngunithepeaceofacalmheart.jpg
+c28ef75066147ef3a1837f3327f27855a9cbc70463bc5a0eae9d6ce228a0311a  146014  ./artwork/.cache/niaintentionalbeats.jpg
+5c88ec00959724e6ee7ad541ffc0fe2d0914cd94bae465e25b1d2d67dc9f2b58  131554  ./artwork/.cache/niruinnerrhythm.jpg
+b285d9c5035ae3cbf317af391629991a4b51c8ae1332aae6423fd2bbfe7e1c5a  138867  ./artwork/.cache/nokotehpeacefuldriftofsound.jpg
+44a7b3c2bade17f0af634e72c057861d091e297868941c30952f3e27ef30f73e  172238  ./artwork/.cache/nokuthesteadfastbeatofunity.jpg
+6ffb2011e3efb906af5d86b87ddbc69fefeb4a621a2c60330b1f561b52f514ae  136385  ./artwork/.cache/nuruguthepowerfullightineverytrack.jpg
+53279fd6556490682a4fbe4e93983ecb6a3780edf125fd4829e15a08e011f8e7  146965  ./artwork/.cache/nyotastarsguidingthemelody.jpg
+a73adedf01aeba527147bee0bfb65b43c56cdd777276878c6b8d827dec462181  120658  ./artwork/.cache/odobaroyallovethatreignssupreme.jpg
+4bec4c70d0976bfb2f75dfbdeb97c67832ef5560d2b9fe266d09965bb773c172  110205  ./artwork/.cache/pambabrightnessineverynote.jpg
+f01a46fd8f57f2ca454859f5299a8bd70fa49130636beecfc02dce0266ed3418  177897  ./artwork/.cache/peluthesoftembraceofsound.jpg
+888d2ea8a6da2b242dc2e5ca8dfec7e8d1ea43957b9ea794f8bcaf8da738aa8d  160996  ./artwork/.cache/pendolovingrhythms.jpg
+caf13f95bb06bbd75ac53fffa82f54c17bb8e90600c0fd9a953dd94a861ac393  144508  ./artwork/.cache/porusesteadymarchoftunes.jpg
+ed2c2215ed3a1d3ca0aa09cbe375e89dfc21a7c3e31685d6f63f0867f1499ff3  132940  ./artwork/.cache/quemdancingunderthespotlightoflife.jpg
+4b469064ababf086cf6e10012a9336759e9a560fda28d8553a027c4cb0117a17  179912  ./artwork/.cache/rakofumistrengthandanenduringpower.jpg
+fa618afd52ad5c0544e4c925bc85908dae625b318830705b64942cd7b8f76426  117673  ./artwork/.cache/ridhapeacefulcontentmentinmelody.jpg
+bca026ce2d86b70434c0169447718180d5e7ac064fb1d9f46fd183d87bd8e89b  92084  ./artwork/.cache/rohfathesoulfindsitstranquilplace.jpg
+b7d281ae1bfccf1c1ba54aa2f6302ff3f86a1f35e0e01476c0bdfb087acc3fcf  172263  ./artwork/.cache/safijourneyingtowardsinnerpeace.jpg
+020efb3704c62dc39fbc180843b03654dfeeeb573ba09c10512fb7bf80f11cec  163155  ./artwork/.cache/samuserenewhispers.jpg
+bb4bc08e30f9fc71f757b9fbca0167f3536ff4cf0854b94b5e43722fb396283c  156357  ./artwork/.cache/sanaatheartofsoundcreation.jpg
+b21176b1589e229b73452cd369ea68db908dad209f26c2d49ea4ca15da9ef1d3  170862  ./artwork/.cache/saraethewhisperingwindsoftunes.jpg
+1820a10cb7b733c645838e8cde4b5c34391c1a4bd49f511e96967701033346fe  122006  ./artwork/.cache/sautibreathofsound.jpg
+63db08d7bb7095c7f0b9ba29a17f51d756cfe442c322843f1f9242be8e9fb642  142361  ./artwork/.cache/semautisoothingbalmofsound.jpg
+a46bf653c0f841a66432ac035070b354fbbd0d7f4e039234f8e8d33a593eb541  135200  ./artwork/.cache/shangalightthatshinesthroughmusic.jpg
+34268c81c13225a9eeaeb54f7f2bdb4d0c019956222c8ff3a639c0a339708387  130690  ./artwork/.cache/shuranigratitudeinthemusic.jpg
+9219892ab9ff35070ab04a4efb8988d4671bfac1521bdff924cf0933b378a605  136777  ./artwork/.cache/simbepowerfulroaringrhythms.jpg
+c8b12175248ac5052c51fb419f3c8904e51de52e6b9a425524441a3d4adf8f59  142687  ./artwork/.cache/susuangailluminatingtalesfromthepast.jpg
+1e5f6dd934acda76f2206694a03b8f13e10d5a724ec102131fe1a922765f08d5  161433  ./artwork/.cache/tamufiridivinerhythmsguidingeverystep.jpg
+2441c4033210d256add82e795621e66e73ca0ae4684bdb958821879c9fdfceca  211929  ./artwork/.cache/tanzadancingintherhythmofjoy.jpg
+6668f9e9d3617ee73e75ae1b0c881b05f4122c11558a599c52014868f217d65d  168155  ./artwork/.cache/tekebagentlebreathofmelody.jpg
+981bda9f61ff95f73d1a65ed4eae52ed05b53cf5ed32107129e4e5bdeb328b7e  149663  ./artwork/.cache/toroaembracingthenightsserenade.jpg
+47cc50ed0f237e4f750c07d0192ce76948b8d8343bf7a30e64002240a3bf43a8  138048  ./artwork/.cache/tukuthesoulfuljourneyofbeats.jpg
+604b2e4a60600bcc1aa82dad8f86eb2f587de74c8d7df189e86eb291612687ed  160991  ./artwork/.cache/tuliamafindingstillnessamidstthebeats.jpg
+e33136d0f160fa7b8e0643e75837a0b007c087e731b063da81a8b921656fb34e  123665  ./artwork/.cache/tumainihopefultunesforthesoul.jpg
+86b10e2546a35e6fe910434ed4efcee3b1a6b6d870f334167224cbea0bcc1570  134432  ./artwork/.cache/tumasendingamessage.jpg
+de7f03e812515a7e454f55ca04c5909ef3ed54a2b61e0bfa3adbe66fb21543b3  136209  ./artwork/.cache/tumbodeepresonanttones.jpg
+206649a8b28888f6e2d82addfe823e1e44a5bbbe21326486936e8b1d5d55517f  118561  ./artwork/.cache/tumeshiningtogetherinharmony.jpg
+e69065b4c5ea794a5a4e38ac3138d79fc7b100f59b133ee7a023b09d90cb7217  156522  ./artwork/.cache/tumithegoldentouchofrhythm.jpg
+090d7c41d2cbb593cde4dc2963e61f03ac03c404c39174bc3ac91ce20a22f8d7  155401  ./artwork/.cache/ujumaamessagecarriedinmelody.jpg
+63571b05e43bdf4cc083e276f16dadf0dea0998b88e7b3d26a3581ac91dbf527  123316  ./artwork/.cache/upendounconditionalloveineverybeat.jpg
+70205d34a8b01d43bb57d59440bee39c813147bbf116b3698e283d3f3e8b6012  175761  ./artwork/.cache/upepothefreshnessofagentlebreeze.jpg
+833a6118fe81201caf5d256a217220add5a488694222df21a4a0634e2fe07187  138282  ./artwork/.cache/usaficomfortingbeats.jpg
+3069875f431663904a68529242147fff151665293c53b3d9afa5b69a2dab2f8d  136863  ./artwork/.cache/usebamudaylightdreamsandsunlitfantasies.jpg
+936de06bbafe7b25d548012db3b304998888183cacdb068990fec7af009904cf  147767  ./artwork/.cache/vestivibrantenergyandenthusiasm.jpg
+3dfc8fdb4d0a7570016d6ca3ab14a167e5b5b77bc27aa58da46cee860a7c9e0d  107078  ./artwork/.cache/wakaweyourjourneyyouruniquepath.jpg
+7e37dae35d251ae541e6efcb8ae7ba3d0b252cb3acf4a3aef6ab8d78e546df56  105627  ./artwork/.cache/wanovibrantpulseoflife.jpg
+c3aa3fdf13df4a4181a9f75e4e9d683a741b53168baa081d7e513080c1d3fbe0  148912  ./artwork/.cache/whispersofeuphoriaapanafricanodyssey.jpg
+9c4cb53c6302e96c3e64b6f0242f8b17407e10e6430288d49a773bf33e65fde2  113556  ./artwork/.cache/wimboasongsessence.jpg
+8a0b103be3f22e7a70753b6eddbaf65970269253265d4e5123aede16c4c75619  135751  ./artwork/.cache/zalalaknowledgethatbringsdeeprest.jpg
+5677d1adfdfdb5fa859bcd3e9bcc3e2422aa4ed9c91b0d12b7c000368abc74fe  159176  ./artwork/.cache/zanutherhythmicdanceofharmony.jpg
+7e97165bf06c5dd151e1ac602258bd85d0e72018a7c1f633acc95ccf3567a343  152923  ./artwork/.cache/zawandiagiftofmelody.jpg
+d1a2e42adb753de5c861b18c6e1d4958934170832233d7b5865d397ecc61e364  127317  ./artwork/.cache/zikizamadivingdeepintomusicalrealms.jpg
+f5b8e8cb28ecf11f4d8c83034559808373b4b46a9e650ac4a013e99a9052c264  146805  ./artwork/.cache/zimotauniversallanguageoflove.jpg
+3ab6d0324ebaf8c78eba28f0b3e642714270392ca6bb526ef7a4f47cf3c9b6bb  158489  ./artwork/.cache/ziramanisongsthatbringserenity.jpg
+ad60141bc4577c5bb7cfb9995ddf51c335b39a942191e21e728745bbbea1796a  794368  ./artwork/Chombo  Navigating the wild terrains of sound (2).jpg
+c8b0a414f196893c6f3ebc4609d0c5ed88e34ed62f61bfd22300b64cc1f4a71b  825393  ./artwork/Chombo  Navigating the wild terrains of sound.jpg
+63c1e69ad6fb4a283f21db70b9a1c076ef257ce20fc63550e1e4d9465bebde52  767356  ./artwork/Dako - The gentle rise of harmony.jpg
+9d3514a0e730efd90c8727e12f6f601f277bbc1465ae3cebd1b94c94fa1009ab  791759  ./artwork/Danu - Endless dance of harmony.jpg
+e735050dbb6c8a594fa4466efc03bd8421ee58bc2954a749b971642e9c52d48d  156787  ./artwork/default.jpg
+0b995f7682f453da2e260b56af513609a106f6ab552f47ca6dd031edd1dcea12  254523  ./artwork/default-legacy.jpg
+ec4ee86e053027fc94831fe8fe126723492b8cb39f531cc013d9b6f96209d42a  763252  ./artwork/Demkasa  Conversations of the soul.jpg
+6398721853c814979c956ffdbbe233019024b4e676b5643fd7b6909ad9f2de00  605282  ./artwork/Dunia  Worldly sounds.jpg
+d2fdb9dd7660108dc6026be9d44fa333c9553865beceb21a15b4f8c21f935def  724470  ./artwork/Ekoezi Vibrant goodness of urban rhythms.jpg
+df06071dd7b30dfe1750b0c4627c96dc66b94f7b52669cec362502aef9b058b3  957259  ./artwork/Elawe  Whispers of ancestral tales.jpg
+41f04b7546d906ededb91c0ba5d3ad92b690f0de7d7ef27b429e4d94018821e0  741928  ./artwork/Fache - Melodic whisper of night.jpg
+9a2c1b2b80bfc73ac1c276edfcbdcd6a0447f822ee5ead703090a92a7849f1e2  719294  ./artwork/Faraja  Cool, soothing tones.jpg
+5f847bd5a4d6f3ba9f309911326b68448d89011fb7863c908ee0de334582fa70  965891  ./artwork/Fenure - Radiant glow of harmony.jpg
+6063f4e4364f8a9d22530aac6f4c1aad15c5ef54a6875879da6d76017c67ea2d  667817  ./artwork/Fonu - The tranquil waves of sound.jpg
+aaaede7d2b30ca57033d23dfa09af9df07f52b4b21a0a9fdb6f0b055974e780f  593014  ./artwork/Fori - The gentle caress of sound.jpg
+d78d8001bc897e7506d25c75933ba6d668433156c53a5f827955761988af1ecb  630145  ./artwork/Furaha  Joyful heartbeats in sound.jpg
+df1cd7a7916a55552723161ee8f5f18abd9e806baf8205b0b1e0098e310c3c9c  660273  ./artwork/Gamajeli  The full story a poet tells.jpg
+f869e14f14ee5f8949386796ca3cc3ec0c8bc1312d33f88a319129845098ba91  825333  ./artwork/Ganiama  Seeking the fullness in every tune.jpg
+5510012628d2c98a4bb146978ababa955b96f2c18a80f7665e331b7c1d345598  712015  ./artwork/Goki - Vibrant shout of tunes.jpg
+50737643821112b36184308776093cfa69a6d26d95a0c8de297e793d0148e962  841975  ./artwork/Gokwa  Melodies welcoming new beginnings.jpg
+ea7889571ee3020c93da3014a5f265f0ff9c62a8eb4d5767a29e551e813dd7f2  465883  ./artwork/Hakima  Breathing life into justice through sound.jpg
+ef19a9879ed1f4333d00fb449253a94e0d1d941c5e18228372d1dde4ebaa5a35  803788  ./artwork/Ikobèlè  The village where every step tells a story.jpg
+9c1de63decdf892365bb49895c88a2e9391ea16c9ce21f89ea2a4703a8ff0c67  672200  ./artwork/Isonua  Uplifting visions through sound.jpg
+0f9d7d07c3cae22f9bd19eb037b86697ac5f0bf476d000d8104302940b4dc425  445273  ./artwork/Itairi  A call that resonates in the open air.jpg
+79decfea01e2661ccfcb68faa4e648f3a4ca9e62937cbfcd4d16ae357f7e523e  843207  ./artwork/Iyote - Sway of unity.jpg
+44badca8430bab0787a27dcf02533fa08c7ecd6dbb4617999d2cdaf11587b616  857360  ./artwork/Janu - The joyful leap of melodies.jpg
+456698d2718e844fba7ca970a645d1991e594d25f80acae9b018b4f3eae7512e  662902  ./artwork/Jarieto - Journeys that echo.jpg
+7a553d61c2acdfec2f56c42489d6898131f0e00fc964bf26be9e559e1b157b3c  1005067  ./artwork/Jari - Journey to the moon.jpg
+003a1d2d57542baa28212017354a467e4717b8136f1ac51bc12f98d9b0d8c44f  717977  ./artwork/Jenga  Clean, pure notes.jpg
+286330471dad5a12679e51fb46e670da3200d196ba6d24d13f7eb3dbe2d926fc  770601  ./artwork/Jina  A name that echoes.jpg
+7ce1e1f22c3d8397943c88639d86f6cf9927bfb65928e3c41bbbc1886dc63ac0  568989  ./artwork/Jiwe - Rock-solid rhythms.jpg
+efa2ff4c9b44062e875a95fe613ff785929fbaf1fe7959d5e0f1258cb6931751  913499  ./artwork/Juajama  - Gathering under the sun's radiant beats.jpg
+8e06c6cdbb145b619476380939e3e3592a4b0f235bce8c6341c3eb4fa6673ec9  869537  ./artwork/Jua - Sunlit tunes.jpg
+d069c276be610dd7317ecb463208c278212b23cdcb1028e964f9c94f45741c4b  1068560  ./artwork/Kala - The effort that flows like a river.jpg
+eb607f5a63fbe0fb988b91ec9b60032c9d982726b9bb7a0c56e4360ac2bd5034  869161  ./artwork/Kazi - The work of crafting sound.jpg
+cee3559335386352bad3d42cf8667b5b438bb81896e7219ee34910b2a3a77306  725224  ./artwork/Keko - The endless flow of inspiration.jpg
+2cfa8e07abe01d124c9dc737778abc4c03d0f575cc5e85402740f516ce4e0b5e  781839  ./artwork/Kela - Cascading notes of joy.jpg
+faf4f8b8182ec8c13ad1b8bf0dad76bebb4c12bb1bfee86ac88fc6dcd889ddc4  827920  ./artwork/Kianae - Creative blend reflecting African sounds.jpg
+89a79981567d382c147d4c313d2be2796839aee3cf2c31b62e6701960d9eedb7  770670  ./artwork/Kijana - Youthful energy in music.jpg
+29e8d56964aa6c69079ec6f5bd7cd7eca955b55225a4ba0ff42c64703fc32147  755644  ./artwork/Kima - Wisdom in the melody.jpg
+4621064110ab2c536688f7f01b9c9acc2deffe4df0f7e39d786fc9304dd2ffe4  834194  ./artwork/Kioo - Reflective tones.jpg
+9481c06bb9cddaedeb54d17a1d15604fcac4c0fe9b32195dae10d9a2582f37b5  554889  ./artwork/Kipande - A piece of melody.jpg
+b19fc6b1ada0ba8fdce2141f5b5fd2ce65f258dd83076d73fd055740b83f2082  746595  ./artwork/Kirizima - Life's journey flowing like a river.jpg
+0935ef714cba9ed6ef5062b9ded9cdbaf12fe6d9ac427f0382354870ba3ac2a1  892146  ./artwork/kofeh - Pulse of life.jpg
+2cc72df4d71eddcbcb2314733eb6f1bf8062efc982e00eb5855b60d3d0bbc5e4  587567  ./artwork/Korosa - Soulful echo of tradition.jpg
+041f450424df44e3e5d2f1807fbebc80c44bc287bd95889432a7d3d3014f7504  1352257  ./artwork/Kosoro - A home where walls echo stories.jpg
+2f9543e22cd072c9a3e46fa57b6a5b370360677c837477908c65518b42b2f8f4  654458  ./artwork/Kuja - The anticipation of rhythm.jpg
+75fa64edbd4b777e837cde8a742614ad6ca6ae1a74b73400c0ffa44e7b003f89  747979  ./artwork/Kwani - Embracing love in the rhythm.jpg
+d59a90fc49b828d0d85b8c8495ce4afede5c37cf57e0f9bf4e1d035db290b965  522439  ./artwork/Lalali - Drifting to sleep with a lullaby.jpg
+c698cf1bf9c8530626890cad6f5f2a8519fb302c3c5df64b2e16443bb4cd90a1  796736  ./artwork/Lamate - Flowing stream of sound.jpg
+12e7d9dbff56e2da822e3860ef987c5db688e8ab8640a1e7d096e00e6e87661e  714914  ./artwork/Leko - The radiant shine of tunes.jpg
+523550e172b2490468409fc39ccceca3d54eb67cb1c7165953e162d7270d993a  792069  ./artwork/Lemura - Bright spark.jpg
+ddd4a257c8ba0ec060ef206bda3153cda9d20f80678319b992aebf94d7061f23  479780  ./artwork/Loboa - African naming conventions.jpg
+2cf7272ad4ed2f693cc18bc4dde3814e508e34d767802b62b9ec16899c84fff6  747108  ./artwork/Lomateko - Heartfelt embrace.jpg
+6af3501f1248b62b8d9b79acb83147e78fbd6a9eff1a177c8899dcf354ec6355  675951  ./artwork/Lugemi  Purposeful Melody.jpg
+b569b3e82e436a0c2598b74d3e83e3a1a98bd920b6a5edcb64349c6e5fe3d1c7  708229  ./artwork/Mabo - Nurturing spirit in tunes.jpg
+f11bf3c5dd118e96ae038cc37bfb1310f2dd4362f6d410b1f4c4a9a30dc0813a  735831  ./artwork/Maji - Illuminating tunes.jpg
+95c75c0ddd225d6fada2b8995470ba5483fc235e10e7d78089afc228275fe920  1083379  ./artwork/Maziwa - Milky smooth melodies.jpg
+bda9ebb4eec99a69e09cbee3c90fb875cd21220d45ead3e78e220e9f1a2da27b  683920  ./artwork/Mbali - Reaching distant horizons.jpg
+07f81132bc5c23baac790b6165ed41e77a7cce68f1d8f65027e54986f44941a3  545213  ./artwork/Molo - Soft and deep harmonies.jpg
+dc2d2175b642e866057ade7afba94a798df861166b7af29b761ef695f5c308d8  630487  ./artwork/Motome - The dance of opposites, water meets fire.jpg
+7dca46cbcceb5c56a23ebc8d7de3955e4d531efc9c88199b48f89ead9af6dfa4  793813  ./artwork/Moyo - Heartfelt tunes.jpg
+a6367bb0faa1e244dc07c540dad2e7b65731ba18303ad0111b2ec6ef81570dce  791105  ./artwork/Msingi - Foundational sounds.jpg
+8e38a576d3b85f6864f85dd7c86261bbfb850a537ad774d03b5782b9d5958756  769054  ./artwork/Mtaa - Street beats.jpg
+079c34228d8655f44a67df93d82b4ac444f0daeefc9aaf215654a93b0009512d  687423  ./artwork/Mura - Soft hum of serenity.jpg
+69a794c588049ff2f842fbcc8a27e089d81cf289609138ac851655566d6d5d90  828556  ./artwork/Mvua - Rhythms like rain.jpg
+506d9c28c07fcddc374cecd755e6e218094b65b389f729363982034260a10ec6  703620  ./artwork/Mwendo - Movement in music.jpg
+259c389c0268de78a86045bbaf447113014585376f9d888fdec9ca9cb3e0ce23  940931  ./artwork/Mzima - Soulful joy in the music.jpg
+d60583334ddc5b8741290c57166824efee0f383e7ef30b7d9f0bb024675e7200  699291  ./artwork/Najozi - Gazing into a realm of dreams.jpg
+3f182056b8b45ad3ac4dd86e0acc42e1c4b5c5fcd8cae53be7575144469a1947  818151  ./artwork/Namu - The melodic journey of dreams.jpg
+4edf2e90aa5500117dc92cf83b78044b7831e7ba98b4b550e704fd6ff643437f  846389  ./artwork/Ndany - Building a melody.jpg
+f173b544b4d4641396411f2367dd67b96b1f2b4e378eb521528319fafd5b4045  794551  ./artwork/Nemitola - Joyous beats.jpg
+890d6d2eb633da8844f1cc854a3d750db1884aba1287409e203fadd09b416b03  778985  ./artwork/Nenekem - A free spirit claiming its space.jpg
+07725da541cb9f2c327a17775bd8411226ba2c3d7015afc4fc4589646951dc33  536353  ./artwork/Nguni - The peace of a calm heart.jpg
+e32529b70031a17c7a823cd6b19c084e12b0deb6507c1bfe48008e27bed6d753  833955  ./artwork/Nia - Intentional beats.jpg
+a46d6daa4e570ca9809f85dfc7987b7b34a64106f034cc362345c23c13307b34  608071  ./artwork/Nimia - African linguistic patterns.jpg
+1b60a22a7ba02fcde83771243523153f1f6d81a2172e76dff074ea7ebfc438a8  672447  ./artwork/Niru - Inner rhythm.jpg
+6425b5c5fa9ed4a5e306c5ef13313e24d3218d756666009b286a548636ca9fc2  704618  ./artwork/Nokoteh - Peaceful drift of sound.jpg
+fc872cf9dbd85f45653a3aadb45d880a2c16fbf9114e4b46682b6bbd422bbd1e  912908  ./artwork/Noku - The steadfast beat of unity.jpg
+418772a057cd8c92ce5ab8da6f41fbc7254e18a8095112bde2b6abae280eb556  697329  ./artwork/Nurugu - The powerful light in every track.jpg
+5fedb67d6d23b91166e051ad5b8aec82fc0e134244d927ec2f5b9717a71edab8  845968  ./artwork/Nyota - Stars guiding the melody.jpg
+3f0aeb1f601b9e29205308f29744b3f6fc47c1d5da7c507f6772eafe9672a706  660641  ./artwork/Odoba - Royal love that reigns supreme.jpg
+90745b1c2847dbe553699bf3e7e7657d1d4d3b0397d4e3664528cd72e436e7c1  502530  ./artwork/Pamba - Brightness in every note.jpg
+0ed7626cdf13732f983bc5566a3e564bc994ac9df80751815789c7e718e5cd7b  993971  ./artwork/Pelu - Soft embrace of sound.jpg
+706f1750c68fe1f81156b363edd653144ea3da438048f1201caba67859a619df  838842  ./artwork/Pendo - Loving rhythms.jpg
+c569dc196a43742ecca52012473a66c725109bcaacd61fcdfe8758d81ac7b9af  751044  ./artwork/Poruse - Steady march of tunes.jpg
+fac6af4f4ea1716d6af01234becfa4ac2fa13f9d95b5da52f29e2ba48b5ca046  671238  ./artwork/Quem - Dancing under the spotlight of life.jpg
+c02655f941304c8abe87661711c7c40b3b71fe4b444be59a2740690dff4e1d21  904209  ./artwork/Rakofumi - Strength and an enduring power.jpg
+3287f063ab70b8d053eec1450b90367ea83900863c2b6e53c30638925799c72b  585611  ./artwork/Ridha - Peaceful contentment in melody.jpg
+dd52fafc13a42c40224d585254f38f89e06d34733ce012ee63e4d696575cff0d  632970  ./artwork/Rohfa - The soul finds it’s tranquil place.jpg
+cbd8c15d49bdef3fc26cf64d7a30084397b2d6c5aa975ad5dfe6b594de30699c  947960  ./artwork/Safi - Journeying towards inner peace.jpg
+ec7c28ab983be1456c777d177683a227096887aebea56731633d53cf7201200f  802543  ./artwork/Samu - Serene whispers.jpg
+6af10185c2daa64a61284da57b7f1a97c0046bfcb9e379f31b81eb2d801258ad  780146  ./artwork/Sanaa - The art of sound creation.jpg
+000260e02f8b17eb18e6540ba525e323ea6f9c4dce7169ecb339ad3c8807f10a  971948  ./artwork/Sarae - Whispering winds of tunes.jpg
+d25e3956f4cc4a32ac12ff37302ead681d0848e9eae2cebc1e13ee128217dfe8  544457  ./artwork/Sauti - Breath of sound.jpg
+7994bfcc42195906e2e5d607ad3189ff676dbbe08ffd76d1afe6b1c4a12bc81b  712263  ./artwork/Semauti - Soothing balm of sound.jpg
+4cf5616415d31c99557277d02c4e28287883b07fcd0097eb1c664f218fa2314d  748585  ./artwork/Shanga - Light that shines through music.jpg
+7913dfeafd6b420ee1e1359c367f2bb468abb2686617265be8294f19b3c35a16  718381  ./artwork/Shurani - Gratitude in the music.jpg
+483a6a4725c20e6fc3abe5c56bc24a551392e42f383d252123c6b231974e5c42  673193  ./artwork/Simbe - Powerful, roaring rhythms.jpg
+2e0f1fc99569d071ffb4a64dac658cd677ac36224d64b81783389737cac9e396  838168  ./artwork/Susuanga - Illuminating tales from the past.jpg
+6ce8f0bb41ef6d8326158a351801ecc1ce2735149773e16f49634dfa5135b5e3  829840  ./artwork/Tamufiri - Divine rhythms guiding every step.jpg
+b2763a855ab133029334f9353b9eff7de74b3fa765a2ed5970bc05d6cca307fe  1159458  ./artwork/Tanza - Dancing in the rhythm of joy.jpg
+469bfbb841228b348a194fccca2607f3d33afab3c82ae115f822ddea9bb2b1ff  901078  ./artwork/Tekeba - Gentle breath of melody.jpg
+ce69b2e6d5102899b29a11ae57e962b21d053e38b996f868a4e00dce808b6326  781384  ./artwork/Toroa - Embracing the night’s serenade.jpg
+dedf16710a8a89bb91a39e0889eedeb08e1c4b883d9903a263665bdb33a0532e  740634  ./artwork/Tuku - Soulful journey of beats.jpg
+e8ff61566177dc04abf0fcbce56a854c8f5147be542c52ba28c7249a012fdebc  868439  ./artwork/Tuliama - Finding stillness amidst the beats.jpg
+fcdbb4cb0e661aeb8cc63437c784ecbe67465958cedd9b414e5d1952fbe247b2  681590  ./artwork/Tumaini - Hopeful tunes for the soul.jpg
+194df6f04e844e82c0c6b114ea1b8d9e5b8bca6ea220aadcbed342945cb52b2e  719267  ./artwork/Tuma - Sending a message.jpg
+9141808e140ebcea317c635d4cdc8f6e40466b8198b3191ef9349d80e3709949  762862  ./artwork/Tumbo - Deep, resonant tones.jpg
+6893fa560c369cf5ee97eca38bc864e296bafa6eb88e0c6f1787d1d827ae853a  570281  ./artwork/Tume - Shining together in harmony.jpg
+15c7c8017e574d1d62d530c4f42fc8b35aa27a0e1ad6df298555fb1cef71b712  795952  ./artwork/Tumi - The golden touch of rhythm.jpg
+9209917ad1258e4b7067f2f089e3798ce0c8822f50653ddb13f424102c86eba0  834800  ./artwork/Ujuma - A message carried in melody.jpg
+07ee7ad0463ece842252a6d00d6a0a4a27c0a9e305267721c5d2e566643e20ec  715708  ./artwork/Upendo - Unconditional love in every beat.jpg
+68e5ca576a63096159c43e3b56632fb1b30a660bd21d5db463e0a08f448e7a43  982195  ./artwork/Upepo - The freshness of a gentle breeze.jpg
+10abb9a91777d8ae1dce591478a07ebd3e1a1f9e07cde43c7bcb04bf19fb1d3e  657903  ./artwork/Usafi - Comforting beats.jpg
+3d2cde010b4bca68ef3ebd57440d2acda606d57efb8fa4c0af7962dd71d63cdd  753945  ./artwork/Usebamu - Daylight dreams and sunlit fantasies.jpg
+fd3e8b2bc20ee35dae52b682cc9ba282a4645c59ce5a395bf94ef15ca51dc2d4  710815  ./artwork/Vesti - Vibrant energy and enthusiasm.jpg
+e187b3e797a2a7e2f5e137d98341c043320b7145c3902bf4b27994a0fcfa6abb  620384  ./artwork/Wakawe - Your journey, your unique path.jpg
+72e79165badfab4a57cc7c19fc326d1ce3c42d777c706d4f0b5096cced40cf00  526080  ./artwork/Wano - Vibrant pulse of life.jpg
+9261c2e0607dc1f3b7ffa6867d528994eb12167b30edb66ec82889a6595a414f  775428  ./artwork/Whispers of Euphoria -A Pan-African Odyssey.jpg
+71320e6b071f4d23b10dd1cff959014c12d293184d1a832b62a8e498cddfa8b0  570606  ./artwork/Wimbo - A song's essence.jpg
+57e5c2e02894ce54b4347403f78cd343754b136d4ea3754ed3d16d434ee0cfcf  664104  ./artwork/Zalala - Knowledge that brings deep rest.jpg
+ecec6c1bcd4f2ccdd2acd63f108622572d8a2ee61b3a1478fb7520f67735f1ab  857419  ./artwork/Zanu - Rhythmic dance of harmony.jpg
+89588183d35a11f2e526f25f7972b1f1d8d42504fcd1e1a6d813c89a0d39ad1f  777590  ./artwork/Zawandi - A gift of melody.jpg
+27609d3a4bda74cb7a105355ba732f43c14f6468df954e6798942f407373a795  640237  ./artwork/Zikizama - Diving deep into musical realms.jpg
+1ee882046244fe42794cb850ce96933fb611ada658adedca82df87399a1a6d31  801755  ./artwork/Zimota - Universal language of love.jpg
+08efb04257d00332042396bf073791a17a963535c2c30d48cc0c227220f6a015  880761  ./artwork/Ziramani - Songs that bring serenity.jpg
+1523f6a46ac27764f645dcc7ffd1edcfe46e04d597224149405585623aa731f7  44262366  ./mixes/mix-1.wav
+a622d6c29469dcbae3edcfeab1adfb751083e7f5923eb923726b55e5d29a900d  45479526  ./mixes/mix-2.wav
+574de519a846e9a79df4665bb3b415cf1c532fa5d986bd2ad0519bb134a8c883  42526590  ./mixes/mix-3.wav
+8810f0b739664d47c076747ce41c27d27a8c3d3a1d0d12d2fde095f424f281bd  53089422  ./mixes/mix-4.wav
+0a30d96a8a38684afcfbcc6f71fbe8f5c582b50e51959eac9c7b0ca5316c0211  48176684  ./mixes/.raw/mix-1-dsp.wav
+d193b5e90ed91fb7f8bcd1430417d531eb096d810ede2c951503145a57789625  44262366  ./mixes/.raw/mix-1-raw.wav
+645afa1d8079d3b992afbfbd1a4a38eb1169c1be9393c4d26d73b28da7df11c0  4044568  ./mixes/.raw/mix-1-raw.webm
+a6e07e764a727d5b085d774313f221ebb403b97aadd7fe505719a53455c51486  49501484  ./mixes/.raw/mix-2-dsp.wav
+a65270606f006492a9b11d3b8ad9f9fd8621c343ab571eab443b4b2ce7e5c10b  45479526  ./mixes/.raw/mix-2-raw.wav
+8cb955543def55659683d0505f1f0462c3f06046b7a48f22647310576bfe6ee8  4155709  ./mixes/.raw/mix-2-raw.webm
+2c5f9bf73bd39f99ada57803c27b656460d08750179e17770edea9324663683d  46287404  ./mixes/.raw/mix-3-dsp.wav
+920ff8986ee13b79c605d17bb527b163871c74d56f3c7952c2d9c6efe65626cf  42526590  ./mixes/.raw/mix-3-raw.wav
+2e91239fcbca8f9a8264d76323d7aa257871e32974c5a31a9ecec9a1abc0a0bd  3886145  ./mixes/.raw/mix-3-raw.webm
+612eacaf40c2e63abce2f165856868933b96eebaa64930604e709b1acabb2cc3  5032096  ./mixes/.raw/mix-5-raw.webm
+13d50d4da35aea24647efd35ff1bcf7fcc8ecb02b20b88d3eb9f443ed1e47037  57600044  ./mixes/.raw/mix-6-dsp.wav
+6da7cf9c601a269c566dd1a93aff3f518800deb1cd573c49eb77b761679a854b  5218584  ./mixes/.raw/mix-6-raw.webm
+0b8df766a24de31bfebb00aa435365875db7ae85779fa20b24511d2aed89d2a5  42554054  ./music/lofi-afrobeats/Abamani - Wrapping oneself in the comfort of peace.wav
+275bbd177d1e382bf43bc07acdd72b835bdf4f4e3f2b062834962d7230f45ad5  44473616  ./music/lofi-afrobeats/Abase - Wearing authority with grace.wav
+3b51b9fa3d60ddb286fa1515df3fafe0425b2af304d94513525c56e85b2f5b5c  30526424  ./music/lofi-afrobeats/Abelesa - Grounded movements in nature's rhythm.wav
+db712c765f76674ff7ebe51623c68c6703ffbe56b74b8831994377feef93e707  48449186  ./music/lofi-afrobeats/Akode - The essence of new discoveries.wav
+58f8ca3ae72e24bb5a553b068c13403d93bdf44c578acb6188a65572dc32b233  45792482  ./music/lofi-afrobeats/Arah - Voices echoing the soul's desires.wav
+316c968606faa088e3bfa29de41bca29260021d8156ff976cc9cdc30a43cd13b  45877010  ./music/lofi-afrobeats/Banu - Timeless essence of beats.wav
+2c813bcc81d1476ad3b8e1e704d6e826cfd35aee40357e33e5c36ccaa3f470eb  38846732  ./music/lofi-afrobeats/Baraka - Blessings woven into sound.wav
+0a23a0639e69e188e5e75fdf7c2f11b878542218d83100626649d0fc8b116f30  33801560  ./music/lofi-afrobeats/Barife - Gratitude for the love that's given.wav
+498962161ca49dd8916726ab4229fa95afa6c74227be03e5c9a416c49dcda0b3  43815722  ./music/lofi-afrobeats/Binase - Dance emerges at life's rhythmic command.wav
+25de0be44c805be62efd96ad414abc119345740b473c718a94036814728f8fee  42626036  ./music/lofi-afrobeats/Bonjaro - Melodic brightness.wav
+44e938b460ef0465b2f4afb5d364b534f79f103de24cd898381fd8781e0174c0  45255014  ./music/lofi-afrobeats/Boras - The strong roots of melody.wav
+4e902ffeb11e2b83d8ee09a78e6a97de572618dcae8f51f81074d6a6bc8f25bd  45867818  ./music/lofi-afrobeats/Bureso - Comforting hug of melodies.wav
+fe81957c27bb84488357d7a7fbde2cf4cac051e5b45d7ef8cc8fcb0c57d4b7c7  37045622  ./music/lofi-afrobeats/Bursa - Opportunities in sound.wav
+fdfaa1cbc736b4d5835bbabd3a84a171f15093b6daf5ef6013043754d73f57a3  34532282  ./music/lofi-afrobeats/Chombo - Navigating the wild terrains of sound.wav
+8545a9f3de69d5d40ac50833ba6397b6e6d140616e8cb77ef1382699192a8738  51663296  ./music/lofi-afrobeats/Dako - The gentle rise of harmony.wav
+49f96682839e5e43ac2c0cd8848823e5adc283ef73d6c46465ef6ee1aaa4e325  45728174  ./music/lofi-afrobeats/Danu - Endless dance of harmony.wav
+a5f1a60830cbd87e40eb3f22364959f3a5d6a57666513860351000c46a4b8a6a  42390620  ./music/lofi-afrobeats/Demkasa - Conversations of the soul, expressed in movement.wav
+c971066f59e2bf583d4bdcaa0c2c1fbdf7018f32cd3092d9a54479d3af740b43  10508810  ./music/lofi-afrobeats/Dunia - Worldly sounds.wav
+17bc288691795956b674a87c9795f8d9b52a06b81ed1f77f1de849f02e8c98f6  38170472  ./music/lofi-afrobeats/Ekoezi- The vibrant goodness of urban rhythms.wav
+00d9e1a3b10988a687045689feb15c2e18833dae93d0df10e14350c356a030ca  45799832  ./music/lofi-afrobeats/Elawe - Whispers of ancestral tales.wav
+4429515af4a1ece94c6c266d4792ecf85d80115a81bf1b6597ec5d9791169ac6  45650996  ./music/lofi-afrobeats/Fache - Melodic whisper of night.wav
+22e3a7bee0a205f39a5377756a166eb377c193530f669bbe174fd0e9e40d0a82  48560734  ./music/lofi-afrobeats/Faraja - Cool, soothing tones.wav
+4bb4500be8990a45896c82531db2a85ded7ee3fc59b4febf255de65217a73c81  48688490  ./music/lofi-afrobeats/Fenure - Radiant glow of harmony.wav
+b8dcb0fbc8e00d70021dbeff96125f04f2d99abe912a7f5b78611ce0ec6f6891  40228532  ./music/lofi-afrobeats/Fonu - The tranquil waves of sound.wav
+a558be7af742d89377450c4f540f376859fb09676ca65344cef4b3ad0100e9e7  36721178  ./music/lofi-afrobeats/Fori - The gentle caress of sound.wav
+ba98403667d7080fc21442b4a164fe4aec9ee7e2f77b3a27fc4ecb0d89cf59cc  36425450  ./music/lofi-afrobeats/Furaha - Joyful heartbeats in sound.wav
+df89e944afe24f9e5606a82a8117b818ef5491e6f937185f6f861f892ebbdf90  34019618  ./music/lofi-afrobeats/Gamajeli - The full story a poet tells.wav
+c71fa3d14dd91402b6bb36b32a3ae194ef9273f841ec7d384a11bc7e836d7d65  34467974  ./music/lofi-afrobeats/Ganiama - Seeking the fullness in every tune.wav
+8207cb2ccb3ea094a1146bf07d8aa474c2ddc7d540a3443d270c59a2967291e0  42594908  ./music/lofi-afrobeats/Goki - Vibrant shout of tunes.wav
+8e5bfcb3544d94713f034d55f8895188151bfa8cda5adef91d078a5f7f5254c2  47375018  ./music/lofi-afrobeats/Gokwa - Melodies welcoming new beginnings.wav
+772decd78a7c1a4de9f149ace78de7ff5e8f70657e4336ae1901f87c6f256dce  45128954  ./music/lofi-afrobeats/Hakima - Breathing life into justice through sound.wav
+cdd349100615e15428a0bce1e02a273611cdab643272cd7b07018b7aa85bd40d  57592772  ./music/lofi-afrobeats/Ikobèlè - The village where every step tells a story.wav
+3a15d713a20eaf524b3c0f521c21b94413024e362bd74b0f2f207f1fc98dd24d  37209518  ./music/lofi-afrobeats/Isonua - Uplifting visions through sound.wav
+c9c1a9d95331ee8fa19069e79d14b802088350adc0ac2d7385242b3e2a0cb878  32735690  ./music/lofi-afrobeats/Itairi - A call that resonates in the open air.wav
+b76ff9a20abb9d8e575efedf6ea05c8f7b60cbaca51653ef9159c83bedae7a55  48567866  ./music/lofi-afrobeats/Iyote - Rhythmic sway of unity.wav
+37d281a3f37c998a7918fa64443eca0d25cd8c2f1fd019a8e8309b7eac6e2cfc  38991434  ./music/lofi-afrobeats/Janu - The joyful leap of melodies.wav
+0620df12c0317c613ac310b3e872093d0f6ed9af70ba28f36261e4379e723b0d  40228532  ./music/lofi-afrobeats/Jarieto - Journeys that echo.wav
+c21e49587611030c8c22d8299e50cae01b976ce33213ad5aa3d2b480fcadd680  36618062  ./music/lofi-afrobeats/Jari - Journey to the moon.wav
+a7a2c994b47ec4067536a293a3be0f63a7be289b7a1dc737b6816e4427817724  51112030  ./music/lofi-afrobeats/Jenga - Clean, pure notes.wav
+a41b5001c121cbad3021c2b2ce49bdd25977b3e40d2eac82d984e3086cba2a55  36532454  ./music/lofi-afrobeats/Jina - A name that echoes.wav
+4f6422d0c5b18da9ac4465b42be96c410a81a5dec0f73d270d02f0fd606b2208  44065544  ./music/lofi-afrobeats/Jiwe - Rock-solid rhythms.wav
+b47b168276b76ed82e5bc9e8f55b09f977249df0ebe3e88d78d56c2aebbdbe54  30571172  ./music/lofi-afrobeats/Juajama - Gathering under the sun's radiant beats.wav
+e295f9bd3487842f2b2419fa06f370a6d7b6133b87dd33328061068fe83a3f5c  28937096  ./music/lofi-afrobeats/Jua - Sunlit tunes.wav
+ffffeec22ab5546939b8a1640d7cdaf86ed33fe4b592aa590c12f8b48324328c  42916832  ./music/lofi-afrobeats/Kala - The effort that flows like a river.wav
+17d1dd241bd767b756b82ffc156a1aaa3853d6850055182a3d3491f712e5c9dc  38689628  ./music/lofi-afrobeats/Kazi - The work of crafting sound.wav
+d71b24308937212c3500f1dd82b29f56cc7b2c2c3a7bfad88df7e37ec8d45be6  40417796  ./music/lofi-afrobeats/Keko - The endless flow of inspiration.wav
+d0193aad3a24366c1c628ee0c9a2503c3e8745e0e108103fcd6f4eb53289174f  34589246  ./music/lofi-afrobeats/Kela - Cascading notes of joy.wav
+2cc71aa151d1a8c671e434f7a603dcf979e7e14c3c1bf56c386cc6d4a8ebdbca  48758534  ./music/lofi-afrobeats/Kianae - Creative blend reflecting African sounds.wav
+d7ac117c3d62a2f41b5acffeb6ac1bb55c8754a00849a77d31eca526bef3a183  32460158  ./music/lofi-afrobeats/Kijana - Youthful energy in music.wav
+03b1d6006582a7253efefe86357abc28d458479f2a2877f699eebbb09f977788  41153714  ./music/lofi-afrobeats/Kima - Wisdom in the melody.wav
+2a115d7477d6a87bbfb74f639f7eef8885bee935b1ee36ddb33b3c754d2316d7  39706502  ./music/lofi-afrobeats/Kioo - Reflective tones.wav
+03f38e8ca8fbc68a030c1648dbe4efc7d875b76b94721ca82eb9964fad64b44b  40415960  ./music/lofi-afrobeats/Kipande - A piece of melody.wav
+dbcb951739e1d604d1dae65cd7ff4c2e65597d76d15b160d1a0c266bd9661960  43375400  ./music/lofi-afrobeats/Kirizima - Life's journey flowing like a river.wav
+8f1421620e24af4e3060422b2a554f2f779527bdab18ed4321c886c2a35897cf  43465916  ./music/lofi-afrobeats/kofeh - Pulse of life.wav
+fd80cafef2fa823485ad9588f08e0ea88b3954965020704412b91902104be46d  38679290  ./music/lofi-afrobeats/Korosa - Soulful echo of tradition.wav
+c535957aee337a52d582c0cfdbe541e2f6d794b3766f77016dc0ea816c07d0b4  42042518  ./music/lofi-afrobeats/Kosoro - A home where walls echo stories.wav
+55b0f793b5c6f7d8404ad7ca941f0ead695e5fd4f97d7ea9bf4c1f47b7e454d6  39010670  ./music/lofi-afrobeats/Kuja - The anticipation of rhythm.wav
+ac86111c8c0bf0d0a2c7d021506bd5166b238aa826fd370fe18e860e993da020  40061318  ./music/lofi-afrobeats/Kwani - Embracing love in the rhythm.wav
+2699d68f7b2c6446846b2fedfdd6bb9decd4fb234899981aba3130a82730d9e1  48346070  ./music/lofi-afrobeats/Lalali - Drifting to sleep with a lullaby.wav
+f0f8225bffd5f6f1e2f71bcdab479686b2de8411c1142514b2dc3a5cfec739b9  48207932  ./music/lofi-afrobeats/Lamate - Flowing stream of sound.wav
+5fbd4a48a7ba62a05333d9d4357ef1a36a88b66ae6d2b49ee52f12dc2cba1bec  46991078  ./music/lofi-afrobeats/Leko - The radiant shine of tunes.wav
+21a4006e88deb91f0ed1676c633dc23062e258ded64996317330532b242c9c6b  40241396  ./music/lofi-afrobeats/Lemura - Bright spark of rhythm.wav
+a2a191c0780a9ee794d406b04b064fa9d3c8cf8ed5340505cd864a3d49ec9ca2  41970374  ./music/lofi-afrobeats/Lobata - Deep connection of melodies.wav
+303952d56a3bcbc131253cd121d8e6ae01a5dacd03b16e5e61cab44731e765a1  48826628  ./music/lofi-afrobeats/Loboa - African naming conventions.wav
+6fddb8e0fdaa759225c114a304c6b2718536c9c8d76f69fbfe0ca6a365bb5015  46654274  ./music/lofi-afrobeats/Lomateko - Heartfelt embrace.wav
+7c52e48956218d946af8e5c9cec095ebec8b706501cfa7bd2f2820ab4ed93eb4  48777310  ./music/lofi-afrobeats/Lugemi - Purposeful melody.wav
+d47436598427a8f0850034db9da579fa834ebb9f42151e9c236903fc44a670dd  36732854  ./music/lofi-afrobeats/Mabo - The nurturing spirit in tunes.wav
+30b9f62ccde72fb1f44edddbff06835bcb711dcd27b6225fe7883e62e19d8bd0  49215070  ./music/lofi-afrobeats/Maji - Illuminating tunes.wav
+c3b458f0694afe1ce523cfed11eccbe8c4ede7cd5f6ccf7f31f68d80ea57f19c  1349534  ./music/lofi-afrobeats/Maziwa - Milky smooth melodies.wav
+3757a4f1a23458cd837332dfadb8f21d8a5a7d8515c79acf6e3eb33b6b7803eb  35522696  ./music/lofi-afrobeats/Mbali - Reaching distant horizons.wav
+2c045cd7c8c9549892b23d9643f8b5f1cdee4835ad61043bdd8900c3441961e5  40186268  ./music/lofi-afrobeats/Mme Moto- The dance of opposites, water meets fire.wav
+df68f925c885289acce64bedc57a95cdf65c5064a598084f835512a5aa8b18ea  36618062  ./music/lofi-afrobeats/Molo - Soft and deep harmonies.wav
+a16112a66d305348754b34e528a69e5b48ea3a5b68520568fba469b878c54d0d  32735690  ./music/lofi-afrobeats/Motome - The fiery passion in fluid melodies.wav
+24eb0647ce5c89d9b09a1b23027ca41744a87515e87bac12f854066e5ab9c254  43519880  ./music/lofi-afrobeats/Moyo - Heartfelt tunes.wav
+058b4ef6391b732e0f5a9774d8213c261be069b4c92eed1eeeecfd94ea017dd2  45863518  ./music/lofi-afrobeats/Msingi - Foundational sounds.wav
+b234d9e884fc5772311f496b16cbcbbaa2b14300bf9f87d6ac0e984b665a331c  38620484  ./music/lofi-afrobeats/Mtaa - Street beats.wav
+9d71c0091022c434dd97579a91d40384964ea4ec8f371e574c38e8796d74dc41  46933574  ./music/lofi-afrobeats/Mura - Soft hum of serenity.wav
+8cf43cee8c87cf18eb48cca52a79222cabac68d84c94ed07ea22e4c38472141a  38107792  ./music/lofi-afrobeats/Mvua - Rhythms like rain.wav
+7627efc3ed73a9fa38c6dcf2e7ae9bdb0c233ff750790457dae4999d8ea937b4  46184542  ./music/lofi-afrobeats/Mwendo - Movement in music.wav
+91bd184f7f80e153f452caaad1d65f6ef72059b84370d83a8101e4b683522bda  30684056  ./music/lofi-afrobeats/Mzima - Soulful joy in the music.wav
+9be8a5942131d890551a67c04d670ec05013f64583d45238708f984099d7552e  36978332  ./music/lofi-afrobeats/Najozi - Gazing into a realm of dreams.wav
+c03e17391a29202f1569c1ce52a60eb9a1272cc016332da0acd1fd922efa5ea1  29080418  ./music/lofi-afrobeats/Namu - The melodic journey of dreams.wav
+1b125b056e55efac9c9bb10d0f11dd565521517282a0b9e1bdca8c4e98fc110c  50307166  ./music/lofi-afrobeats/Ndany - Building a melody.wav
+8d6210432f310894aabe967e043747f7dfb3d628f65fa9644aa714eb97e6f88c  47927768  ./music/lofi-afrobeats/Nemitola - Joyous beats.wav
+0faec479fc3ba540d7b16426e81c628a76d13311a17843bae669bc09bd5b0733  39009926  ./music/lofi-afrobeats/Nenekem - A free spirit claiming its space.wav
+9593eef65da7fba4082ed212abb28f6c54c6b373e2747780097b34b98af5fb9a  49449218  ./music/lofi-afrobeats/Nguni - The peace of a calm heart.wav
+e505794aaa646c5157589ae26b3a06155024c27ac872595c170854b1c1c2c5c4  40114022  ./music/lofi-afrobeats/Nia - Intentional beats.wav
+098bb3c9b7aec5687fb6fa36481e002d841caf16c2cd0dcac0810f913f25950a  45294290  ./music/lofi-afrobeats/Nimi - The peaceful glow of melodies.wav
+72773b1111a8eafb3253191da6eae2bd4d00d8299cb38202358a94233c2e5345  43040350  ./music/lofi-afrobeats/Niru - Inner rhythm.wav
+15285de2906f174171760acebed2df29ce0f44c4d65bda7942d33e1a39b9ffb3  46069946  ./music/lofi-afrobeats/Nokoteh - Peaceful drift of sound.wav
+bef5300e22e182e998c69ea19222b75c4e0288b04ac9366f6aaf5eba735bbe27  44983946  ./music/lofi-afrobeats/Noku - The steadfast beat of unity.wav
+11478d4801e46157f3f542fad40f84f28581a2352223c4e87bda0889a08be98c  42552104  ./music/lofi-afrobeats/Nurugu - The powerful light in every track.wav
+ad0602606d270877bdc98a812614c6c6260ba3b240aea47f0e8d1903330deb0c  36493544  ./music/lofi-afrobeats/Nyota - Stars guiding the melody.wav
+ff211663ecebd3e115d2045153d303e07d55181c39552498c8d983d468ae0225  33686312  ./music/lofi-afrobeats/Odoba - Royal love that reigns supreme.wav
+f8fb4a201f1c53de41e598576876e7d21052180def56154c86eb83ab747e1cd5  36464360  ./music/lofi-afrobeats/Pamba - Brightness in every note.wav
+cb3ed19840420d29ff12bb6a0c1c6afb251a5544a103f037df28f46b3d7d760e  36787328  ./music/lofi-afrobeats/Pelu - The soft embrace of sound.wav
+5ac273c1f4ff0b4d39c069c5abc1eeaad11ec62e58229ef6421cd6e8cdea6dcb  37224710  ./music/lofi-afrobeats/Pendo - Loving rhythms.wav
+3cf4487e8f7abea05844fe150da0cb4003e374261d37a1ba35f480a257b37b76  45878846  ./music/lofi-afrobeats/Poruse - Steady march of tunes.wav
+e96869371ac940dcac6c737d731e2a91258912cdb940cd717a27c58b68d4ffd6  64280540  ./music/lofi-afrobeats/Quem - Dancing under the spotlight of life.wav
+9a5902ddea663879248d123eeac9b9ca77c40e62aec256dc8a61249ab50e1e0b  48571754  ./music/lofi-afrobeats/Rakofumi - Strength and an enduring power.wav
+79c8078bc11f25cbc23fba8a798804019c1389b1cf7fc7689ae9bdacb2a174ff  38671022  ./music/lofi-afrobeats/Ridha - Peaceful contentment in melody.wav
+62d66954a2cb25bef72c4e885b47690293326c11f68ac32d8d3f408138e780a8  32035160  ./music/lofi-afrobeats/Rohfa - The soul finds it’s tranquil place.wav
+6082030168d0353009afd29214bf04571b3e86d7d0665f15cddbe50f3b74af72  50492090  ./music/lofi-afrobeats/Safi - Journeying towards inner peace.wav
+aecc6c7b1dedc8fce90d68dce0def943dfdeb8547c7bf19ea4a965f1fffc9eb1  47923874  ./music/lofi-afrobeats/Samu - Serene whispers.wav
+36908b094aad1c88c1f9ab365b7c87bb27fabb5e932268d0e46bce97c02d10ed  43267466  ./music/lofi-afrobeats/Sanaa - The art of sound creation.wav
+7e933bbd718bc117ef72f3d04abd6990dcb347ab6006353e236ada37e0718668  39016244  ./music/lofi-afrobeats/Sarae - The whispering winds of tunes.wav
+940228fdd413be1a02376477c94c24b9e71aa7cb91c124d01efecb83696a23b2  47239774  ./music/lofi-afrobeats/Sauti - Breath of sound.wav
+30cda9d9e79826f27714cf6c38c7a76802664808ff2a548303c919f9e1eb36e6  45797996  ./music/lofi-afrobeats/Semauti - Soothing balm of sound.wav
+2f744cb9762f9cdc8c42a8ece6f255a3e631a8694b4bd892d01c46db7277721d  38733038  ./music/lofi-afrobeats/Shanga - Light that shines through music.wav
+ef801989ad04f3396d6dcfb3ed81a8f132627bc046f98b0499e2d04951abd4ac  36759584  ./music/lofi-afrobeats/Shurani - Gratitude in the music.wav
+8d91d2df0901152006d04225884fd8cf25f235ea5f15f5667e038605e3a9c529  40146134  ./music/lofi-afrobeats/Simbe - Powerful, roaring rhythms.wav
+825dcbadde5a563baa4b8b9431f0bc3d39acb6e9d08a390d1f035c8ac9decf50  35593064  ./music/lofi-afrobeats/Susuanga - Illuminating tales from the past.wav
+a0274bce91ab36072a1adfcc3125803f742ea821a8b6caf1286a3156121ad180  48324098  ./music/lofi-afrobeats/Tamufiri - Divine rhythms guiding every step.wav
+a49c317a447af79f0f85976af703fbe14aa38d42b61b3f7f71f5534e550c8f95  42501524  ./music/lofi-afrobeats/Tanza - Dancing in the rhythm of joy.wav
+8f708ba61034ed77623ef7bc8b85edea935c9922a958bc2b43b540a42018082a  48338288  ./music/lofi-afrobeats/Tekeba - Gentle breath of melody.wav
+e327899edb70f7812558915f5ecc3819f5d74ad0ea8fe79ec12d14fc8dc231e7  32552150  ./music/lofi-afrobeats/Toko - Uncharted musical territories.wav
+3c312f78ea5a1efaa0d2406bb8153acb4c5cc70cf2f960775776f9540dd920ac  54700358  ./music/lofi-afrobeats/Toroa - Embracing the night’s serenade.wav
+4c898bafaec5a2ca849905e4c6b98731d89cde82ec8b0ab96813a2e290a02463  51247790  ./music/lofi-afrobeats/Tuku - The soulful journey of beats.wav
+61d92ecf22e4a122ce901423c7b6600f780e779685faf953ce485414bd570765  32428118  ./music/lofi-afrobeats/Tuliama - Finding stillness amidst the beats.wav
+048afd6cc020ee4eca1d0380a8e82596a3907b6d19383ae8f4cc29239219fec7  51444176  ./music/lofi-afrobeats/Tumaini - Hopeful tunes for the soul.wav
+b1211ac982c7cf8f32e6d640e299fc104e37142725375c00016506083ad894d0  57795166  ./music/lofi-afrobeats/Tuma - Sending a message.wav
+0436b4c5897a0162bf5599cd628d5cb513d0083e72ab03fd0c59cc0c55980964  32880590  ./music/lofi-afrobeats/Tumbo - Deep, resonant tones.wav
+cf6bea6a058307577fb96ed0fd023c20dcf9d2f01f736786dffe82f85e2f170d  42015734  ./music/lofi-afrobeats/Tume - Shining together in harmony.wav
+3f161c6557172bfdc2802143d4cb49d6ee0ee9d49664f8d00da8fad9e4dea386  45325760  ./music/lofi-afrobeats/Tumi - The golden touch of rhythm.wav
+f1ef70b113419d7190939627e1c3f987fc56874a658f72a25c57eb3e56b6c08c  51603350  ./music/lofi-afrobeats/Ujuma - A message carried in melody.wav
+e8b6ef7c7b99ac6c800e7e07744102f39eee95cd9db9861cad266549b865c443  40256858  ./music/lofi-afrobeats/Upendo - Unconditional love in every beat.wav
+8ba87ed202aca10d420c037ad883240924ea432629eabd953e82c52fce9ee714  38228642  ./music/lofi-afrobeats/Upepo - The freshness of a gentle breeze.wav
+0a0e6cc0be9f6a24fef1a1fff02704ee02347776278657fad543c2ba969ce7c6  45863518  ./music/lofi-afrobeats/Usafi - Comforting beats.wav
+33377306e6b82d95037470dab023db9e2bcf0a56004d5e4baf013807bea6c671  38805548  ./music/lofi-afrobeats/Usebamu - Daylight dreams and sunlit fantasies.wav
+a9c0557ccd3287c529b83d87e97e91f330eb91ac51a48d25ca316d6592f0d859  40268960  ./music/lofi-afrobeats/Vesti - Vibrant energy and enthusiasm.wav
+0b4c60f5c526a46d9df1c3660f5d0513a5833c4e86f5f4a39a88cd4982f67dda  37959218  ./music/lofi-afrobeats/Wakawe - Your journey, your unique path.wav
+35bd64425bcf625fd2f5df13a4d2aaed1da2fa0a102a571e286bf3c5588d1ef9  48940118  ./music/lofi-afrobeats/Wano - Vibrant pulse of life.wav
+7eed910c99cea5294ebcb317f7ce8a77d7967ce0f5f2beae63905821dba2ac53  38700986  ./music/lofi-afrobeats/Whispers of Euphoria -A Pan-African Odyssey.wav
+8d59e96ee5bb1cb3843ae53c6c853967cbfcb4e539800980c952dcaf3c2b680f  36939518  ./music/lofi-afrobeats/Wimbo - A song's essence.wav
+df194dbe681fd0ade13ce9b2c7aad83df0cd9fb61524a5bc09e919b29007f81a  41294282  ./music/lofi-afrobeats/Zalala - Knowledge that brings deep rest.wav
+236499af5282145f1acde87e63e720bf696e4626b978f5e8abc3607012b57aeb  45273620  ./music/lofi-afrobeats/Zanu - The rhythmic dance of harmony.wav
+d9bbfe30c971f14ec29b32bfff307a87006d9812a76ddd823222c1247099f9b6  42009290  ./music/lofi-afrobeats/Zawandi - A gift of melody.wav
+c0c62de68eb0605557f8820a02c037eb86d1520a91b6dc41dbaac1a5090d33bb  37973726  ./music/lofi-afrobeats/Zikizama - Diving deep into musical realms.wav
+6060558d85c32541bfaf9869ed697fbbdb62efc593c697f9a851b4fd8865c42f  45877010  ./music/lofi-afrobeats/Zimota - Universal language of love.wav
+749bbaf5b1d3583076e03c9e3c12048fbbf441a55f803425635677ea9fa48110  43467662  ./music/lofi-afrobeats/Ziramani - Songs that bring serenity.wav
+e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855  0  ./playlists/afrobeats-fallback.m3u
+a6dcd517f58c8c92c4723e32fc499b58d092b2e79f4eb1b67be7d3c64aff2e6c  12105  ./playlists/lofi-fallback.m3u
+4e956264bf6ae57a697b197d55b62acd03116fd0b945a8e475871850624d9635  18822  ./skins/camping-van-thumbnail-1789680028.webp
+f6d68e7e7dc3e4e3040315b20e17f82ece2933df5f9b1f0da8d5d6e2cc0f1c24  46752  ./skins/draft-2-thumbnail-1789705916.webp
+bba13b58041bc45e58b0b89f7a67dd283b2d3225f61453f142d93891ba49d084  48722  ./skins/draft-2-thumbnail-1789706011.webp
+9209a89f7221ac416de046f64143a3dfb6ff4955351ecfb73749326f02efe482  35170  ./skins/draft-2-thumbnail-1789706094.webp
+10b23bf75824e5026b73c721e3028a4e2c2214afd83ac140ac8d829f825f29ed  56072  ./skins/draft-2-thumbnail-1789706478.webp
+46c74a799fd0e91600d5c2d30e08b9681478949608afff9b7b3b5b78fcb80bc7  58148  ./skins/draft-2-thumbnail-1789706566.webp
+9b4dc4eaa25e78f5cd5f4a754da76ddcf6dac784ec148f6eed78c2e509088e70  7054356  ./skins/draft-2-video-1789705893.mp4
+0bc6b1060a552203c7e9a0e268fa82f9a2a813cbdf062ca1d6169d372fc231d0  9214629  ./skins/draft-2-video-1789706024.mp4
+b5962dfa6c2468f625f470517acf2d77d3dd1a373d2ab659bb389563daeccc8a  5083525  ./skins/draft-2-video-1789706123.mp4
+15f76d44b941e9e4797294ad937285bdd78f576847560486d6a4c56421f865ce  8723434  ./skins/draft-2-video-1789706236.mp4
+a088b1e481e480c66d28d81ef25f38082c83e55d6db5eb3cb823f9201b63e1b7  15265265  ./skins/draft-2-video-1789706601.mp4
+6894a40cb4dd72a2103d4fd292b8e8ffdc8a0a3db9ac4852af4c5151fe83ef40  36402  ./skins/draft-thumbnail-1789680938.webp
+6894a40cb4dd72a2103d4fd292b8e8ffdc8a0a3db9ac4852af4c5151fe83ef40  36402  ./skins/draft-thumbnail-1789680942.webp
+6894a40cb4dd72a2103d4fd292b8e8ffdc8a0a3db9ac4852af4c5151fe83ef40  36402  ./skins/draft-thumbnail-1789681042.webp
+6894a40cb4dd72a2103d4fd292b8e8ffdc8a0a3db9ac4852af4c5151fe83ef40  36402  ./skins/draft-thumbnail-1789681047.webp
+6894a40cb4dd72a2103d4fd292b8e8ffdc8a0a3db9ac4852af4c5151fe83ef40  36402  ./skins/draft-thumbnail-1789681143.webp
+6894a40cb4dd72a2103d4fd292b8e8ffdc8a0a3db9ac4852af4c5151fe83ef40  36402  ./skins/draft-thumbnail-1789681149.webp
+6894a40cb4dd72a2103d4fd292b8e8ffdc8a0a3db9ac4852af4c5151fe83ef40  36402  ./skins/draft-thumbnail-1789681278.webp
+6894a40cb4dd72a2103d4fd292b8e8ffdc8a0a3db9ac4852af4c5151fe83ef40  36402  ./skins/draft-thumbnail-1789681283.webp
+d315362d37448670277c25e96a766240f41aaa39a84709327684676dfd715df1  79174  ./skins/draft-thumbnail-1789703810.webp
+db283ff7fe6e06c3ea47fcf06436fc945098bb8d5f24e7bc4ff6d973e392c6bf  51804  ./skins/draft-thumbnail-1789703944.webp
+092645128e2e71106171b2d729ebef0d2aac2a3ba70e26b32490bd4e68951a04  79400  ./skins/draft-thumbnail-1789703989.webp
+ee729a28fb2236053fb54797fa468c101dab5deaa63beac7a2dbce73ecada06a  44474  ./skins/draft-thumbnail-1789704248.webp
+f5b005dafaa88fb817659875c201779b23dfbacb327d2022e391e1d5094f27b6  52946  ./skins/draft-thumbnail-1789705000.webp
+b5e019b91daeb8154c4eb278f3ffc2a695fc0c42937ae68939505e0d917520e4  68652  ./skins/draft-thumbnail-1789705098.webp
+fc1213e31d16ade2be911b4e9f7c909ea2118bed3e318e95b3eacbfc49a39970  49366  ./skins/draft-thumbnail-1789705214.webp
+d7ceb5a0bdc290ab45ee78f815dc261e2b962bb07c5ca6f3e342e7714a2b06b2  67916  ./skins/draft-thumbnail-1789705303.webp
+6e4b1fb2e2072b59777e76a9a2d048615d062d7e52729321588d4f18a2c09fe5  64924  ./skins/draft-thumbnail-1789705454.webp
+4bfea891a9b90d034240bc7daf76d2dccf2e987b85b56d9b3dab956830f0f35e  50048  ./skins/draft-thumbnail-1789705561.webp
+cd0184d40a961a0fe820ba30bf5bf4c04f1df0c95cf7ab4f506ddd5080af7522  61258  ./skins/draft-thumbnail-1789705683.webp
+3f72eab00d76b6f0d8d40a08053f2dbba740e597f9858ed6dcb39dafed45fab5  37472  ./skins/draft-thumbnail-1789771030.webp
+1fd547bbe1120022b5a5eaf4210a2315b253af060d50a1dd096fade5c2076444  16635926  ./skins/draft-video-1789703939.mp4
+1f152cc57f2493fb286b0ef9f3cc7dae194dc15a75f8d7adb59538f119fcce96  15796879  ./skins/draft-video-1789704171.mp4
+dc1d3e8881a4f3ebffb346798f6274c0f8df2dd103716519a9aec49bd16cc5ac  7268312  ./skins/draft-video-1789704243.mp4
+c367d53b6e3300258838af1ffff62fc8c2b76b75e10b19320b08711620fdfca0  10601875  ./skins/draft-video-1789704996.mp4
+9c9da6396dfef197352831ca7be5030337cd755a8ca6c7c0fdb313f61843d9e7  11287299  ./skins/draft-video-1789705102.mp4
+35d02196396c5568a629c6e604a5ad1ed8e6b02513e045e5974619176676189d  10987586  ./skins/draft-video-1789705216.mp4
+08088c16c82689bebc30380d11d53346de321cb501cb66587eeba42aa41c627a  6030985  ./skins/draft-video-1789705312.mp4
+d8fce104e96a83c853e7a5f69c22a6bd393e17a3bfbaf53c8b935993a2e2dcfe  8082991  ./skins/draft-video-1789705410.mp4
+ebee1567ea3d49cf6d0350a326ad3290363d3dc0e8b2bdfd87cdfa34b8385c69  12166048  ./skins/draft-video-1789705531.mp4
+aca4bf32d6ac467a2009e6f172897b9688988aee1e1cfc92923730f7606d9b79  11756329  ./skins/draft-video-1789705621.mp4
+378dbffb0eb79a88cbbfb337db3d94cea44c57114614ab9d5973f01ef30135fb  4187807  ./skins/draft-video-1789771033.mp4
+e2d45dbdb708a0746fb77b5d469384d8c7ad5261963de1a2fa6278c4c717f076  2784059  ./skins/dreams-above-los-angeles-image-1789751561.png
+1b7e3ac70b58101923f4a9dc8645af3a9638994440677d022d88bd168b11bc49  6320246  ./skins/hungree-goat-loop-hungree-goat-loop-720p.mp4
+1724c4fd8e51dde5a72ac427783126984d76977350014f524381c7ade884a09b  40220  ./skins/hungree-goat-loop-thumbnail-1789680032.webp
+ee729a28fb2236053fb54797fa468c101dab5deaa63beac7a2dbce73ecada06a  44474  ./skins/nairobi-laundromat-nights-thumbnail-1789656979.webp
+6e4b1fb2e2072b59777e76a9a2d048615d062d7e52729321588d4f18a2c09fe5  64924  ./skins/nairobi-laundromat-nights-thumbnail-1789659259.webp
+948fc63c36f91f740a2d3d4127b9e2c34433a79182f5386c3c6bedad05127283  32564  ./skins/study-room-thumbnail-1789680025.webp

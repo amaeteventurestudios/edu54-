@@ -1,0 +1,125 @@
+{
+ "id": "science-engineering-l3",
+ "course_id": "science-engineering",
+ "title": "Forces and Motion",
+ "module": "Module 2",
+ "lesson_number": 3,
+ "objective": "By the end of this lesson, you will be able to describe forces as pushes and pulls, tell balanced from unbalanced forces, and explain how friction and gravity affect motion.",
+ "xp_on_complete": 50,
+ "sections": [
+  {
+   "id": "push-pull",
+   "title": "Forces are pushes and pulls",
+   "text": "A force is a push or a pull. Forces can start something moving, stop it, speed it up, slow it down or change its direction. Forces are measured in newtons (N)."
+  },
+  {
+   "id": "balanced",
+   "title": "Balanced and unbalanced forces",
+   "text": "In a tug of war, if both teams pull equally hard, the forces are balanced and the rope does not move. If one team pulls harder, the forces are unbalanced and the rope moves towards that team. Only unbalanced forces change how something moves."
+  },
+  {
+   "id": "friction",
+   "title": "Friction",
+   "text": "Friction is a force that acts when two surfaces rub together, and it slows things down. A football rolling on grass stops sooner than one rolling on a smooth floor, because grass gives more friction. Friction is also useful: it stops your shoes slipping and lets bicycle brakes work."
+  },
+  {
+   "id": "gravity",
+   "title": "Gravity",
+   "text": "Gravity pulls objects towards the Earth, which is why a mango falls from its tree. The pull of gravity on an object is called its weight. Near the Earth's surface, weight in newtons is about mass in kilograms times 9.8, because g is about 9.8 m/s^2."
+  }
+ ],
+ "examples": [
+  {
+   "id": "ex-net",
+   "title": "Example 1: Finding the net force",
+   "code": "left = 50\nright = 30\nnet = left - right\nprint(\"Net force:\", net, \"N\")",
+   "output": "Net force: 20 N"
+  },
+  {
+   "id": "ex-weight",
+   "title": "Example 2: Weight from mass",
+   "code": "mass = 2\ng = 9.8\nweight = mass * g\nprint(round(weight, 1), \"N\")",
+   "output": "19.6 N"
+  }
+ ],
+ "diagram": {
+  "title": "How forces change motion",
+  "steps": [
+   "Find all the forces on the object",
+   "Compare their sizes and directions",
+   "Balanced: the motion stays the same",
+   "Unbalanced: the object speeds up, slows down or turns"
+  ],
+  "loop_label": "Check again when a force changes"
+ },
+ "check_questions": [
+  {
+   "id": "cq1",
+   "prompt": "In a tug of war, Team A pulls with 300 N and Team B pulls with 300 N in the opposite direction. What happens to the rope?",
+   "code": null,
+   "options": [
+    "It moves towards Team A",
+    "It moves towards Team B",
+    "It stays still",
+    "It moves upwards"
+   ],
+   "answer_index": 2,
+   "explanation": "The two forces are equal and opposite, so they are balanced and the rope does not move.",
+   "misconception": {
+    "0": "Team A is not pulling harder, so the rope has no reason to move their way.",
+    "1": "Team B is not pulling harder, so the rope has no reason to move their way.",
+    "3": "Both teams pull sideways, not up, and the forces are balanced."
+   }
+  },
+  {
+   "id": "cq2",
+   "prompt": "Why does a ball rolling on grass stop sooner than a ball rolling on a smooth floor?",
+   "code": null,
+   "options": [
+    "Grass gives more friction",
+    "Gravity is stronger on grass",
+    "The ball gets lighter on grass",
+    "A smooth floor pushes the ball forwards"
+   ],
+   "answer_index": 0,
+   "explanation": "Rough surfaces like grass create more friction, which slows the ball down faster.",
+   "misconception": {
+    "1": "Gravity is the same on grass and on the floor.",
+    "2": "The ball's mass does not change when it rolls on grass.",
+    "3": "A floor does not push a ball forwards. It just gives less friction."
+   }
+  },
+  {
+   "id": "cq3",
+   "prompt": "A bag of rice has a mass of 5 kg. About how much does it weigh on Earth? Use g = 9.8 m/s^2.",
+   "code": null,
+   "options": [
+    "5 N",
+    "14.8 N",
+    "0.5 N",
+    "49 N"
+   ],
+   "answer_index": 3,
+   "explanation": "Weight = mass x g = 5 x 9.8 = 49 N.",
+   "misconception": {
+    "0": "5 is the mass in kilograms. Weight in newtons is mass times 9.8.",
+    "1": "That adds 5 and 9.8. You need to multiply them.",
+    "2": "Weight is found by multiplying mass by g, not by making it smaller."
+   }
+  }
+ ],
+ "try_it": {
+  "id": "try1",
+  "title": "Try It Yourself",
+  "instructions": "Change the two forces so the net force is 0 N, which means the forces are balanced. Then make the right side stronger and see what happens to the answer.",
+  "starter": "left = 50\nright = 30\nnet = left - right\nprint(\"Net force:\", net, \"N\")",
+  "counts_when": "ran_ok"
+ },
+ "activities": [
+  "read",
+  "cq1",
+  "cq2",
+  "cq3",
+  "try1"
+ ]
+}

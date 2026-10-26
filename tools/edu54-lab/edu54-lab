@@ -1,0 +1,108 @@
+#!/usr/bin/env bash
+# EDU54 control (docs/edu54/INSTALL-RUNBOOK.md Phases 4 and 9), modelled on umanah-lab. Rootless Docker (context ai-data)
+# only; never touches the Umanah AI Lab's containers, images, ports or folders.
+#
+#   edu54-lab build                          build the edu54/api and edu54/web images from this checkout
+#   edu54-lab start|stop|status [shared|k12|uni|all|<instance>]
+#   edu54-lab creds                          gather the demo logins into <ROOT>/secrets/demo-accounts.txt (0600)
+#   edu54-lab ram-guard                      say whether EDU54's own model runtime may start (leaves >= 2 GB available)
+#   edu54-lab provision <school.yaml> [--port N] [--dry-run]   configure one customer instance from an order file
+#   edu54-lab remove <instance>              stop and delete a provisioned instance (its folder goes to backups/, never rm -rf)
+set -euo pipefail
+ROOT="${EDU54_ROOT:-/srv/ai-node/storage/ssd/edu54}"
+REPO="${EDU54_REPO:-$ROOT/apps/labos}"
+CTX="${DOCKER_CONTEXT:-ai-data}"
+dc() { docker --context "$CTX" compose "$@"; }
+inst_env() { echo "$ROOT/config/$1.env"; }
+up_instance() {
+  local name=$1 env; env=$(inst_env "$name")
+  [ -f "$env" ] || { echo "no config for $name ($env)" >&2; return 1; }
+  mkdir -p "$ROOT/database/$name" "$ROOT/services/control/$name" "$ROOT/logs/$name" "$ROOT/secrets/instances/$name"
+  # the API runs as its own user inside the rootless daemon (a sub-uid on the host): give it its folders, like umanah-lab does
+  docker --context "$CTX" run --rm --user 0 --entrypoint sh -v "$ROOT/database/$name:/data" -v "$ROOT/secrets/instances/$name:/secrets" \
+    -v "$ROOT/services/control/$name:/control" edu54/api:0.1.0 -c 'chown -R umanah:umanah /data /secrets /control'
+  dc -p "$name" --env-file "$env" -f "$REPO/infrastructure/compose/edu54.yaml" up -d
+}
+# The seed writes the demo logins inside the container (sub-uid owner); hand them to the host user, 0600, and gather them in
+# <ROOT>/secrets/demo-accounts.txt (never committed).
+publish_creds() {
+  local out="$ROOT/secrets/demo-accounts.txt" tmp; tmp=$(mktemp); chmod 600 "$tmp"
+  for n in edu54-k12 edu54-uni; do
+    f="$ROOT/secrets/instances/$n/demo-accounts-$n.txt"
+    docker --context "$CTX" exec -u 0 "$n-api-1" sh -c "[ -f /secrets/demo-accounts-$n.txt ] && chown 0:0 /secrets/demo-accounts-$n.txt && chmod 600 /secrets/demo-accounts-$n.txt" 2>/dev/null || true
+    port=$(awk -F= '/^WEB_PORT=/{print $2}' "$(inst_env "$n")" 2>/dev/null)
+    [ -r "$f" ] && { echo "## $n  http://192.168.4.41:$port"; cat "$f"; echo; } >> "$tmp"
+  done
+  mv "$tmp" "$out"; chmod 600 "$out"; echo "demo logins: $out"
+}
+down_instance() { local env; env=$(inst_env "$1"); [ -f "$env" ] && dc -p "$1" --env-file "$env" -f "$REPO/infrastructure/compose/edu54.yaml" stop || true; }
+shared() { dc -p edu54-shared --env-file "$ROOT/config/edu54-shared.env" -f "$REPO/infrastructure/compose/edu54-shared.yaml" "$@"; }
+avail_mb() { free -m | awk '/^Mem:/ {print $7}'; }
+ram_guard() {  # EDU54's runtime with the 4B tutor + guard + embeddings needs about 4.5 GB resident
+  local a; a=$(avail_mb)
+  if [ $((a - 4500)) -ge 2048 ]; then echo "ok: $a MB available"; return 0; fi
+  echo "fallback: $a MB available; starting EDU54's own model runtime would leave under 2 GB. Using the AI Lab runtime read-only."; return 1
+}
+targets() { case "${1:-all}" in all) echo "k12 uni";; shared) echo "";; k12) echo k12;; uni) echo uni;; *) echo "$1";; esac; }
+iname() { case $1 in k12) echo edu54-k12;; uni) echo edu54-uni;; *) echo "$1";; esac; }
+
+cmd="${1:-status}"; shift || true
+case "$cmd" in
+  build)
+    cd "$REPO"
+    docker --context "$CTX" build -f services/api/Dockerfile -t edu54/api:0.1.0 .
+    docker --context "$CTX" build -f apps/web/Dockerfile --build-arg VITE_PRODUCT_NAME="EDU54" -t edu54/web:0.1.0 . ;;
+  start)
+    what="${1:-all}"
+    if [ "$what" = all ] || [ "$what" = shared ]; then
+      shared --profile library up -d
+      if ram_guard >/dev/null; then shared --profile models up -d; else ram_guard || true; fi
+    fi
+    for t in $(targets "$what"); do up_instance "$(iname "$t")"; done ;;
+  stop)
+    what="${1:-all}"
+    for t in $(targets "$what"); do down_instance "$(iname "$t")"; done
+    if [ "$what" = all ] || [ "$what" = shared ]; then shared --profile library --profile channels --profile models stop; fi ;;
+  status)
+    docker --context "$CTX" ps -a --filter name=edu54 --format '{{.Names}}\t{{.Status}}\t{{.Ports}}'
+    echo "RAM available: $(avail_mb) MB"; ram_guard || true ;;
+  ram-guard) ram_guard ;;
+  creds) publish_creds ;;
+  provision)
+    file="${1:?usage: edu54-lab provision <school.yaml> [--port N] [--dry-run]}"; shift
+    port=""; dry=0
+    while [ $# -gt 0 ]; do case $1 in --port) port=$2; shift 2;; --dry-run) dry=1; shift;; *) echo "unknown option $1" >&2; exit 2;; esac; done
+    sid=$(python3 -c "import sys,yaml;print(yaml.safe_load(open(sys.argv[1]))['school_id'])" "$file")
+    ed=$(python3 -c "import sys,yaml;print(yaml.safe_load(open(sys.argv[1]))['edition'])" "$file")
+    disp=$(python3 -c "import sys,yaml;d=yaml.safe_load(open(sys.argv[1]));print((d.get('branding') or {}).get('display') or 'EDU54 · '+d['institution_name'])" "$file")
+    name="edu54-$sid"
+    if [ -z "$port" ]; then   # first free even port pair in 8300-8399 that no instance claims
+      for p in $(seq 8380 2 8398); do
+        ss -ltn | grep -q ":$p " || ss -ltn | grep -q ":$((p+1)) " || grep -qs "WEB_PORT=$p$" "$ROOT"/config/*.env || { port=$p; break; }
+      done
+    fi
+    [ -n "$port" ] || { echo "no free port pair in 8380-8398" >&2; exit 1; }
+    env="$(inst_env "$name")"
+    echo "instance $name: edition $ed, web $port, api $((port+1)), config $env"
+    [ $dry -eq 1 ] && { echo "(dry run: nothing written)"; exit 0; }
+    mkdir -p "$ROOT/schools"; cp "$file" "$ROOT/schools/$sid.yaml"
+    sed -e "s/^LABOS_EDITION=.*/LABOS_EDITION=$ed/" -e "s/^LABOS_INSTANCE=.*/LABOS_INSTANCE=$name/" -e "s/^COMPOSE_PROJECT_NAME=.*/COMPOSE_PROJECT_NAME=$name/" \
+        -e "s/^WEB_PORT=.*/WEB_PORT=$port/" -e "s/^API_PORT=.*/API_PORT=$((port+1))/" -e "/^DEMO_SEED=/d" -e "/^SCHOOL_DISPLAY=/d" \
+        "$ROOT/config/edu54-$( [ "$ed" = university ] && echo uni || echo k12 ).env" > "$env"
+    printf 'DEMO_SEED=0\nSCHOOL_DISPLAY=%s\n' "$disp" >> "$env"; chmod 600 "$env"
+    up_instance "$name"
+    for i in $(seq 1 40); do docker --context "$CTX" exec "$name-api-1" true 2>/dev/null && break; sleep 2; done
+    docker --context "$CTX" cp "$file" "$name-api-1:/tmp/school.yaml"
+    docker --context "$CTX" exec "$name-api-1" python -m umanah_api.provision /tmp/school.yaml --secrets-dir /secrets | tee "$ROOT/schools/$sid.report.json" ;;
+  remove)
+    name="${1:?usage: edu54-lab remove <instance>}"
+    case $name in edu54-k12|edu54-uni|edu54-shared) echo "refusing to remove a demo instance" >&2; exit 1;; esac
+    env="$(inst_env "$name")"
+    dc -p "$name" --env-file "$env" -f "$REPO/infrastructure/compose/edu54.yaml" down
+    stamp=$(date +%Y%m%d-%H%M%S); b="$ROOT/backups/removed-$name-$stamp"; mkdir -p "$b"
+    # the instance's folders belong to the container user (a sub-uid): move them from inside a container, keep them readable to us
+    docker --context "$CTX" run --rm --user 0 --entrypoint sh -v "$ROOT:/root-edu54" edu54/api:0.1.0 -c \
+      "for d in database/$name secrets/instances/$name services/control/$name; do [ -d /root-edu54/\$d ] && mkdir -p /root-edu54/backups/removed-$name-$stamp/\$(dirname \$d) && mv /root-edu54/\$d /root-edu54/backups/removed-$name-$stamp/\$d; done; chown -R 0:0 /root-edu54/backups/removed-$name-$stamp; chmod -R go-rwx /root-edu54/backups/removed-$name-$stamp"
+    mv "$env" "$b/"; echo "removed $name; data kept in backups/removed-$name-$stamp" ;;
+  *) sed -n 2,12p "$0"; exit 2 ;;
+esac

@@ -1,0 +1,125 @@
+{
+ "id": "python-foundations-l5",
+ "course_id": "python-foundations",
+ "title": "Lists",
+ "module": "Module 2",
+ "lesson_number": 5,
+ "objective": "By the end of this lesson, you will be able to store several values in a list, read and add items, and loop over them.",
+ "xp_on_complete": 50,
+ "sections": [
+  {
+   "id": "what-is-list",
+   "title": "What is a list?",
+   "text": "A list holds many values in one variable, in order. You write it with square brackets and commas: fruits = [\"apple\", \"banana\", \"cherry\"]."
+  },
+  {
+   "id": "index",
+   "title": "Indexes start at 0",
+   "text": "Each item has a position number called an index. The first item is at index 0. fruits[0] is \"apple\" and fruits[2] is \"cherry\". Asking for an index that is too big causes an IndexError."
+  },
+  {
+   "id": "changing",
+   "title": "Adding and changing items",
+   "text": "fruits.append(\"mango\") adds an item to the end. fruits[1] = \"grape\" replaces the item at index 1. len(fruits) tells you how many items the list has."
+  },
+  {
+   "id": "looping",
+   "title": "Lists and loops",
+   "text": "You can loop over a list: for f in fruits: print(f). The loop body runs once for every item, so you never have to count the items yourself."
+  }
+ ],
+ "examples": [
+  {
+   "id": "ex-first",
+   "title": "Example 1: Read an item",
+   "code": "fruits = [\"apple\", \"banana\", \"cherry\"]\nprint(fruits[0])\nprint(len(fruits))",
+   "output": "apple\n3"
+  },
+  {
+   "id": "ex-append",
+   "title": "Example 2: Add to a list",
+   "code": "nums = [2, 4]\nnums.append(6)\nprint(nums)",
+   "output": "[2, 4, 6]"
+  }
+ ],
+ "diagram": {
+  "title": "How a list is stored",
+  "steps": [
+   "Make the list",
+   "Each item gets an index: 0, 1, 2 …",
+   "Read an item with list[index]",
+   "Add or change items"
+  ],
+  "loop_label": "Add more items"
+ },
+ "check_questions": [
+  {
+   "id": "cq1",
+   "prompt": "What does this print?",
+   "code": "colors = [\"red\", \"green\", \"blue\"]\nprint(colors[1])",
+   "options": [
+    "red",
+    "green",
+    "blue",
+    "1"
+   ],
+   "answer_index": 1,
+   "explanation": "Index 1 is the second item, so it prints green.",
+   "misconception": {
+    "0": "Index 0 is red. Index 1 is the second item.",
+    "2": "blue is at index 2.",
+    "3": "1 is the index, not the item."
+   }
+  },
+  {
+   "id": "cq2",
+   "prompt": "How many items are in the list after this code runs?",
+   "code": "nums = [5, 6]\nnums.append(7)\nprint(len(nums))",
+   "options": [
+    "2",
+    "3",
+    "7",
+    "18"
+   ],
+   "answer_index": 1,
+   "explanation": "The list starts with 2 items and append adds a third, so len(nums) is 3.",
+   "misconception": {
+    "0": "append adds an item, so the list grows.",
+    "2": "7 is the value added, not the number of items.",
+    "3": "len counts items. It does not add the values."
+   }
+  },
+  {
+   "id": "cq3",
+   "prompt": "What does this program print?",
+   "code": "words = [\"a\", \"b\", \"c\"]\nfor w in words:\n    print(w)",
+   "options": [
+    "a, then b, then c, on separate lines",
+    "abc on one line",
+    "words",
+    "Nothing"
+   ],
+   "answer_index": 0,
+   "explanation": "The loop runs once for each item, printing each letter on its own line.",
+   "misconception": {
+    "1": "print starts a new line each time.",
+    "2": "w holds each item, not the list name.",
+    "3": "The loop body runs three times."
+   }
+  }
+ ],
+ "try_it": {
+  "id": "try1",
+  "title": "Try It Yourself",
+  "instructions": "Add one more fruit to the list with append, then run the code.",
+  "starter": "fruits = [\"apple\", \"banana\"]\n# Add a fruit here\nprint(fruits)",
+  "counts_when": "ran_ok"
+ },
+ "activities": [
+  "read",
+  "cq1",
+  "cq2",
+  "cq3",
+  "try1"
+ ]
+}

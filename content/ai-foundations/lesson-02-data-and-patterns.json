@@ -1,0 +1,125 @@
+{
+ "id": "ai-foundations-l2",
+ "course_id": "ai-foundations",
+ "title": "Data and patterns",
+ "module": "Module 1",
+ "lesson_number": 2,
+ "objective": "By the end of this lesson, you will be able to explain what data is, find a simple pattern in it, and say why a pattern from too little data can mislead.",
+ "xp_on_complete": 50,
+ "sections": [
+  {
+   "id": "what-is-data",
+   "title": "What is data?",
+   "text": "Data is information that has been collected and written down, such as test scores, temperatures, or the words in a message. AI systems learn from data, so the data they see shapes what they learn."
+  },
+  {
+   "id": "finding-patterns",
+   "title": "Finding a pattern",
+   "text": "A pattern is something that repeats or changes in a regular way. In 2, 4, 6, 8 each number is 2 more than the one before. Once you see the pattern you can guess the next number. AI systems look for patterns like this, but in much larger and messier data."
+  },
+  {
+   "id": "summaries",
+   "title": "Summarising with an average",
+   "text": "An average (or mean) is one number that describes a whole list. Add the numbers up, then divide by how many there are. It is a simple way to see what is typical in a set of data."
+  },
+  {
+   "id": "too-little",
+   "title": "Too little data can mislead",
+   "text": "A pattern from only a few examples may be a coincidence. If it rained on your two birthdays, that does not mean it always rains on your birthday. More examples, and a wider mix of examples, give patterns you can trust more."
+  }
+ ],
+ "examples": [
+  {
+   "id": "ex-average",
+   "title": "Example 1: The average of some scores",
+   "code": "scores = [3, 5, 4, 5, 5, 2]\ntotal = 0\nfor s in scores:\n    total = total + s\nprint(total / len(scores))",
+   "output": "4.0"
+  },
+  {
+   "id": "ex-next",
+   "title": "Example 2: Predicting the next number",
+   "code": "numbers = [2, 4, 6, 8]\nstep = numbers[1] - numbers[0]\nprint(numbers[-1] + step)",
+   "output": "10"
+  }
+ ],
+ "diagram": {
+  "title": "From data to a pattern",
+  "steps": [
+   "Collect data",
+   "Look for a repeating pattern",
+   "Use the pattern to guess something new",
+   "Check the guess against new data"
+  ],
+  "loop_label": "Get more data"
+ },
+ "check_questions": [
+  {
+   "id": "cq1",
+   "prompt": "Which of these is data?",
+   "code": null,
+   "options": [
+    "A list of the temperature at noon each day for a week",
+    "A feeling that it might be warm",
+    "A rule that says wear a hat",
+    "A cloud"
+   ],
+   "answer_index": 0,
+   "explanation": "Data is information that has been collected and written down, like a week of temperatures.",
+   "misconception": {
+    "1": "A feeling is not written-down information.",
+    "2": "A rule is an instruction, not collected information.",
+    "3": "A cloud is a thing in the sky. Data would be a record about it."
+   }
+  },
+  {
+   "id": "cq2",
+   "prompt": "What number comes next: 5, 10, 15, 20, ?",
+   "code": null,
+   "options": [
+    "22",
+    "25",
+    "30",
+    "21"
+   ],
+   "answer_index": 1,
+   "explanation": "Each number is 5 more than the one before, so the next is 25.",
+   "misconception": {
+    "0": "The step is 5 each time, not 2.",
+    "2": "That would be adding 10. The step is 5.",
+    "3": "The step is 5 each time, not 1."
+   }
+  },
+  {
+   "id": "cq3",
+   "prompt": "You see that the bus was late on two days in a row. What is the best thing to say?",
+   "code": null,
+   "options": [
+    "The bus is always late",
+    "Two days is too few to be sure, so keep collecting data",
+    "The bus will be on time from now on",
+    "Data cannot tell us anything"
+   ],
+   "answer_index": 1,
+   "explanation": "A pattern from two examples may be a coincidence. Collect more data before trusting it.",
+   "misconception": {
+    "0": "Two examples are not enough to say always.",
+    "2": "Two examples cannot promise what happens next.",
+    "3": "Data can help, but only when there is enough of it."
+   }
+  }
+ ],
+ "try_it": {
+  "id": "try1",
+  "title": "Try It Yourself",
+  "instructions": "Change the list so the average is 10.0. Run the code to check.",
+  "starter": "scores = [3, 5, 4, 5, 5, 2]\ntotal = 0\nfor s in scores:\n    total = total + s\nprint(total / len(scores))",
+  "counts_when": "ran_ok"
+ },
+ "activities": [
+  "read",
+  "cq1",
+  "cq2",
+  "cq3",
+  "try1"
+ ]
+}

@@ -1,0 +1,125 @@
+{
+ "id": "science-engineering-l6",
+ "course_id": "science-engineering",
+ "title": "Materials",
+ "module": "Module 3",
+ "lesson_number": 6,
+ "objective": "By the end of this lesson, you will be able to describe materials by their properties, such as strength, flexibility and conductivity, and choose a suitable material for a job.",
+ "xp_on_complete": 50,
+ "sections": [
+  {
+   "id": "properties",
+   "title": "Properties of materials",
+   "text": "A property describes how a material behaves. Is it strong or weak? Does it bend or snap? Does it let heat and electricity through? Engineers match the properties of a material to the job it must do."
+  },
+  {
+   "id": "strength-flex",
+   "title": "Strength and flexibility",
+   "text": "A strong material can hold a big load without breaking, like the steel in a bridge. A flexible material bends without breaking, like a rubber band. Bamboo is both strong and flexible, which is why builders in places such as Hong Kong use it for scaffolding."
+  },
+  {
+   "id": "conduct",
+   "title": "Conductivity",
+   "text": "A conductor lets heat or electricity pass through easily. Metals such as copper and aluminium are good conductors. An insulator, such as plastic, wood or rubber, does not. That is why an electric wire is copper inside and plastic outside, and why many cooking pots have wooden or plastic handles."
+  },
+  {
+   "id": "choosing",
+   "title": "Choosing the right material",
+   "text": "First ask what the object must do, then pick a material whose properties fit. Also think about cost, weight and what is available nearby. In Mali, builders have used mud brick for centuries, including for the Great Mosque of Djenné, because it is local and helps keep rooms cooler in the heat."
+  }
+ ],
+ "examples": [
+  {
+   "id": "ex-strongest",
+   "title": "Example 1: Which strip is strongest?",
+   "code": "loads = {\"paper\": 2, \"card\": 5, \"plastic\": 9}\nstrongest = max(loads, key=loads.get)\nprint(strongest, loads[strongest], \"kg\")",
+   "output": "plastic 9 kg"
+  },
+  {
+   "id": "ex-conductors",
+   "title": "Example 2: Finding the conductors",
+   "code": "conducts = {\"copper\": True, \"plastic\": False, \"wood\": False, \"aluminium\": True}\nfor name in conducts:\n    if conducts[name]:\n        print(name, \"conducts electricity\")",
+   "output": "copper conducts electricity\naluminium conducts electricity"
+  }
+ ],
+ "diagram": {
+  "title": "Choosing a material",
+  "steps": [
+   "Decide what the object must do",
+   "List the properties it needs",
+   "Compare and test some materials",
+   "Choose the best fit for cost and availability"
+  ],
+  "loop_label": "Test another material"
+ },
+ "check_questions": [
+  {
+   "id": "cq1",
+   "prompt": "Which material is best for the inside of an electric wire?",
+   "code": null,
+   "options": [
+    "Plastic",
+    "Wood",
+    "Copper",
+    "Rubber"
+   ],
+   "answer_index": 2,
+   "explanation": "Copper is a metal and a very good conductor of electricity.",
+   "misconception": {
+    "0": "Plastic is an insulator. It is used for the outside cover of a wire.",
+    "1": "Wood is an insulator, so electricity cannot flow through it easily.",
+    "3": "Rubber is an insulator. It would stop the electricity."
+   }
+  },
+  {
+   "id": "cq2",
+   "prompt": "A pot handle should be safe to hold while the pot is on the fire. Which material is the best choice?",
+   "code": null,
+   "options": [
+    "Wood",
+    "Aluminium",
+    "Copper",
+    "Iron"
+   ],
+   "answer_index": 0,
+   "explanation": "Wood is a poor conductor of heat (an insulator), so the handle stays safe to hold.",
+   "misconception": {
+    "1": "Aluminium is a metal and conducts heat well, so it would get hot.",
+    "2": "Copper conducts heat very well, so it would burn your hand.",
+    "3": "Iron is a metal and conducts heat, so it would get hot."
+   }
+  },
+  {
+   "id": "cq3",
+   "prompt": "Which property describes a material that bends without breaking?",
+   "code": null,
+   "options": [
+    "Conductivity",
+    "Hardness",
+    "Being waterproof",
+    "Flexibility"
+   ],
+   "answer_index": 3,
+   "explanation": "Flexibility is the property of bending without breaking, like a rubber band or bamboo.",
+   "misconception": {
+    "0": "Conductivity is about letting heat or electricity pass through.",
+    "1": "Hardness is about resisting scratches and dents, not bending.",
+    "2": "Being waterproof is about keeping water out."
+   }
+  }
+ ],
+ "try_it": {
+  "id": "try1",
+  "title": "Try It Yourself",
+  "instructions": "Add another strip, such as \"wood\", with the load it held in kg. Run the code to see which strip is strongest now.",
+  "starter": "loads = {\"paper\": 2, \"card\": 5, \"plastic\": 9}\nstrongest = max(loads, key=loads.get)\nprint(strongest, loads[strongest], \"kg\")",
+  "counts_when": "ran_ok"
+ },
+ "activities": [
+  "read",
+  "cq1",
+  "cq2",
+  "cq3",
+  "try1"
+ ]
+}

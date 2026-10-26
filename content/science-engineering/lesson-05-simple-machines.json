@@ -1,0 +1,125 @@
+{
+ "id": "science-engineering-l5",
+ "course_id": "science-engineering",
+ "title": "Simple machines",
+ "module": "Module 3",
+ "lesson_number": 5,
+ "objective": "By the end of this lesson, you will be able to name four simple machines, explain how they let a small force move a big load, and calculate the mechanical advantage of a lever.",
+ "xp_on_complete": 50,
+ "sections": [
+  {
+   "id": "what",
+   "title": "What is a simple machine?",
+   "text": "A simple machine helps you move a load with less force. Four common ones are the lever, the pulley, the ramp and the wheel and axle. People have used them for thousands of years: ramps and levers probably helped workers move huge stones to build the pyramids of ancient Egypt."
+  },
+  {
+   "id": "lever",
+   "title": "Levers",
+   "text": "A lever is a bar that turns on a point called the fulcrum. A see-saw, a bottle opener and a wheelbarrow are all levers. Pushing far from the fulcrum lets a small force lift a big load. Mechanical advantage = effort arm length / load arm length."
+  },
+  {
+   "id": "pulley-ramp",
+   "title": "Pulleys and ramps",
+   "text": "A pulley is a wheel with a rope over it. A single pulley at the top of a well changes the direction of the pull: you pull down to lift the bucket up, and your body weight helps. Using two or more pulleys together can also cut the force you need. A ramp lets you push a heavy load up gently along a long slope, like rolling a drum of water up a plank onto a lorry."
+  },
+  {
+   "id": "trade",
+   "title": "Wheel and axle, and the big trade",
+   "text": "A wheel and axle is a big wheel fixed to a thin rod. Turning the big wheel or handle a long way turns the axle with more force, like the handle on a well winch. Every simple machine makes a trade: you use less force, but you have to move it over a longer distance. No machine gives you free energy."
+  }
+ ],
+ "examples": [
+  {
+   "id": "ex-lever",
+   "title": "Example 1: Mechanical advantage of a lever",
+   "code": "effort_arm = 2.0\nload_arm = 0.5\nadvantage = effort_arm / load_arm\nprint(\"Mechanical advantage:\", advantage)",
+   "output": "Mechanical advantage: 4.0"
+  },
+  {
+   "id": "ex-ramp",
+   "title": "Example 2: Force needed on a ramp",
+   "code": "ramp_length = 5\nheight = 1\nload = 500\neffort = load * height / ramp_length\nprint(effort, \"N\")",
+   "output": "100.0 N"
+  }
+ ],
+ "diagram": {
+  "title": "Trading force for distance",
+  "steps": [
+   "Choose a machine",
+   "Push or pull with a small force",
+   "Move that force over a long distance",
+   "The load moves a short distance with a big force"
+  ],
+  "loop_label": "Try a longer lever or ramp"
+ },
+ "check_questions": [
+  {
+   "id": "cq1",
+   "prompt": "On a see-saw, where should a small child sit to lift a bigger child on the other side?",
+   "code": null,
+   "options": [
+    "Right next to the middle",
+    "Far from the middle",
+    "Exactly on the middle",
+    "It makes no difference"
+   ],
+   "answer_index": 1,
+   "explanation": "Sitting far from the fulcrum (the middle) gives a longer effort arm, so a small force can lift a bigger load.",
+   "misconception": {
+    "0": "Close to the middle gives a short effort arm, so the small child cannot lift much.",
+    "2": "On the fulcrum the child's weight cannot turn the see-saw at all.",
+    "3": "Distance from the fulcrum matters a lot for a lever."
+   }
+  },
+  {
+   "id": "cq2",
+   "prompt": "Why do workers use a long ramp to move a heavy drum onto a lorry instead of lifting it straight up?",
+   "code": null,
+   "options": [
+    "The ramp makes the drum lighter",
+    "The ramp switches off gravity",
+    "They push with less force, but over a longer distance",
+    "The ramp makes the lorry lower"
+   ],
+   "answer_index": 2,
+   "explanation": "A ramp trades force for distance: a smaller push over a longer path raises the same load.",
+   "misconception": {
+    "0": "The drum's mass and weight do not change on a ramp.",
+    "1": "Gravity still acts. The ramp just spreads the lift over a longer path.",
+    "3": "The lorry stays the same height. The ramp changes how you raise the load."
+   }
+  },
+  {
+   "id": "cq3",
+   "prompt": "A lever has an effort arm of 3 m and a load arm of 1 m. What is its mechanical advantage?",
+   "code": null,
+   "options": [
+    "3",
+    "4",
+    "2",
+    "1/3"
+   ],
+   "answer_index": 0,
+   "explanation": "Mechanical advantage = effort arm / load arm = 3 / 1 = 3.",
+   "misconception": {
+    "1": "That adds the lengths. Divide the effort arm by the load arm.",
+    "2": "That subtracts the lengths. Divide the effort arm by the load arm.",
+    "3": "That divides the wrong way round. Put the effort arm on top."
+   }
+  }
+ ],
+ "try_it": {
+  "id": "try1",
+  "title": "Try It Yourself",
+  "instructions": "Change the effort arm and the load arm. Can you make the mechanical advantage 10.0?",
+  "starter": "effort_arm = 2.0\nload_arm = 0.5\nadvantage = effort_arm / load_arm\nprint(\"Mechanical advantage:\", advantage)",
+  "counts_when": "ran_ok"
+ },
+ "activities": [
+  "read",
+  "cq1",
+  "cq2",
+  "cq3",
+  "try1"
+ ]
+}

@@ -1,0 +1,125 @@
+{
+ "id": "ai-foundations-l6",
+ "course_id": "ai-foundations",
+ "title": "Prediction",
+ "module": "Module 2",
+ "lesson_number": 6,
+ "objective": "By the end of this lesson, you will be able to make a simple prediction from past data, check it against what really happened, and explain why every prediction is uncertain.",
+ "xp_on_complete": 50,
+ "sections": [
+  {
+   "id": "what-is-prediction",
+   "title": "What is a prediction?",
+   "text": "A prediction is a guess about something we do not know yet, based on data we already have. How many students will want lunch tomorrow? How tall will the class plant be next week? AI systems make predictions like these from patterns in past data."
+  },
+  {
+   "id": "trends",
+   "title": "Following a trend",
+   "text": "A trend is a steady change over time. If a plant grows about 2 cm each week, a good guess for next week is 2 cm more. An average of past values is another simple way to predict."
+  },
+  {
+   "id": "uncertain",
+   "title": "Predictions are uncertain",
+   "text": "A prediction is a best guess, not a promise. Weather apps say things like \"70% chance of rain\" because they cannot be sure. When you compare a prediction with what really happened, the difference shows how far off it was."
+  },
+  {
+   "id": "change",
+   "title": "When the past stops matching",
+   "text": "Predictions assume the future will look like the past. A new bus timetable, a holiday, or a hot week can change things. Good systems keep collecting new data and update their predictions."
+  }
+ ],
+ "examples": [
+  {
+   "id": "ex-average",
+   "title": "Example 1: Predict lunches from an average",
+   "code": "lunches = [52, 48, 50, 54, 46]\nprediction = sum(lunches) / len(lunches)\nprint(prediction)",
+   "output": "50.0"
+  },
+  {
+   "id": "ex-trend",
+   "title": "Example 2: Follow a trend, then check it",
+   "code": "plant = [2, 4, 6, 8]\ngrowth = (plant[-1] - plant[0]) / (len(plant) - 1)\nnext_week = plant[-1] + growth\nactual = 9\nprint(next_week)\nprint(\"off by\", next_week - actual)",
+   "output": "10.0\noff by 1.0"
+  }
+ ],
+ "diagram": {
+  "title": "Making a prediction",
+  "steps": [
+   "Collect past data",
+   "Find the trend",
+   "Predict the next value",
+   "Compare with what really happens"
+  ],
+  "loop_label": "Update with new data"
+ },
+ "check_questions": [
+  {
+   "id": "cq1",
+   "prompt": "What does this print?",
+   "code": "temps = [20, 22, 24]\nstep = temps[-1] - temps[-2]\nprint(temps[-1] + step)",
+   "options": [
+    "24",
+    "25",
+    "26",
+    "28"
+   ],
+   "answer_index": 2,
+   "explanation": "The temperature goes up by 2 each day, so the prediction is 24 + 2 = 26.",
+   "misconception": {
+    "0": "24 is the last value. The program adds the step to it.",
+    "1": "The step is 2, not 1.",
+    "3": "That would be adding 4. The step is 2."
+   }
+  },
+  {
+   "id": "cq2",
+   "prompt": "A weather app says there is a 70% chance of rain tomorrow. What does this mean?",
+   "code": null,
+   "options": [
+    "It will definitely rain",
+    "It will rain for 70% of the day",
+    "The app is broken",
+    "Rain is likely, but it might stay dry"
+   ],
+   "answer_index": 3,
+   "explanation": "70% means rain is more likely than not, but it is not certain.",
+   "misconception": {
+    "0": "70% is not 100%, so it is not certain.",
+    "1": "The number is about how likely rain is, not how long it lasts.",
+    "2": "Giving a chance is normal and honest, because no one can be sure."
+   }
+  },
+  {
+   "id": "cq3",
+   "prompt": "Why might a prediction made from last year's data be wrong this year?",
+   "code": null,
+   "options": [
+    "Things can change, like a new timetable or a new road",
+    "Computers forget data after a year",
+    "Past data is always useless",
+    "Predictions are never wrong"
+   ],
+   "answer_index": 0,
+   "explanation": "Predictions assume the future is like the past. When things change, the old pattern may not fit.",
+   "misconception": {
+    "1": "Stored data does not fade away after a year.",
+    "2": "Past data is often useful. It just cannot see every change.",
+    "3": "Every prediction can be wrong."
+   }
+  }
+ ],
+ "try_it": {
+  "id": "try1",
+  "title": "Try It Yourself",
+  "instructions": "Change actual to a different number and run the code. How far off was the prediction?",
+  "starter": "plant = [2, 4, 6, 8]\ngrowth = (plant[-1] - plant[0]) / (len(plant) - 1)\nnext_week = plant[-1] + growth\nactual = 9\nprint(next_week)\nprint(\"off by\", next_week - actual)",
+  "counts_when": "ran_ok"
+ },
+ "activities": [
+  "read",
+  "cq1",
+  "cq2",
+  "cq3",
+  "try1"
+ ]
+}

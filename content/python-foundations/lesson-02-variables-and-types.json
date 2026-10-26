@@ -1,0 +1,125 @@
+{
+ "id": "python-foundations-l2",
+ "course_id": "python-foundations",
+ "title": "Variables and types",
+ "module": "Module 1",
+ "lesson_number": 2,
+ "objective": "By the end of this lesson, you will be able to store values in variables, choose good names, and tell the difference between int, float, str and bool.",
+ "xp_on_complete": 50,
+ "sections": [
+  {
+   "id": "what-variable",
+   "title": "What is a variable?",
+   "text": "A variable is a name that holds a value, like a labelled box. age = 12 puts the value 12 into a box called age. In Python, = means \"store this value\", not \"is equal to\" like in maths."
+  },
+  {
+   "id": "changing",
+   "title": "Using and changing a variable",
+   "text": "Once a variable has a value, you can use its name instead of the value: print(age) shows 12. If you write age = 13 later, the old value is replaced by the new one."
+  },
+  {
+   "id": "names",
+   "title": "Good names",
+   "text": "Names can use letters, numbers and the underscore _, but they cannot start with a number or contain spaces. Capital letters matter, so Score and score are two different names. Pick names that say what the value is, like total_points instead of x."
+  },
+  {
+   "id": "types",
+   "title": "Four basic types",
+   "text": "Every value has a type. Whole numbers like 12 are int. Numbers with a decimal point like 1.5 are float. Text in quotes like \"Ada\" is str (a string). True and False are bool, and they always start with a capital letter. type(value) tells you the type."
+  }
+ ],
+ "examples": [
+  {
+   "id": "ex-store",
+   "title": "Example 1: Store and change a value",
+   "code": "name = \"Ada\"\nage = 12\nprint(name)\nprint(age)\nage = 13\nprint(age)",
+   "output": "Ada\n12\n13"
+  },
+  {
+   "id": "ex-types",
+   "title": "Example 2: Check the type",
+   "code": "print(type(12))\nprint(type(1.5))\nprint(type(\"Ada\"))\nprint(type(True))",
+   "output": "<class 'int'>\n<class 'float'>\n<class 'str'>\n<class 'bool'>"
+  }
+ ],
+ "diagram": {
+  "title": "How a variable works",
+  "steps": [
+   "Pick a clear name",
+   "Use = to store a value",
+   "Python remembers the value",
+   "Use the name to get the value back"
+  ],
+  "loop_label": "Store a new value"
+ },
+ "check_questions": [
+  {
+   "id": "cq1",
+   "prompt": "What does this program print?",
+   "code": "x = 5\nx = 8\nprint(x)",
+   "options": [
+    "5",
+    "13",
+    "x",
+    "8"
+   ],
+   "answer_index": 3,
+   "explanation": "The second line replaces 5 with 8, so print(x) shows 8.",
+   "misconception": {
+    "0": "x = 8 replaces the old value.",
+    "1": "= stores a new value. It does not add to the old one.",
+    "2": "x has no quotes, so Python prints the value inside it, not its name."
+   }
+  },
+  {
+   "id": "cq2",
+   "prompt": "Which of these is NOT allowed as a variable name?",
+   "code": null,
+   "options": [
+    "my_score",
+    "score2",
+    "2score",
+    "Score"
+   ],
+   "answer_index": 2,
+   "explanation": "A variable name cannot start with a number.",
+   "misconception": {
+    "0": "Letters and underscores are allowed.",
+    "1": "Numbers are allowed as long as they are not first.",
+    "3": "Capital letters are allowed. Score is just a different name from score."
+   }
+  },
+  {
+   "id": "cq3",
+   "prompt": "What does this program print?",
+   "code": "print(type(\"7\"))",
+   "options": [
+    "<class 'int'>",
+    "<class 'str'>",
+    "<class 'float'>",
+    "7"
+   ],
+   "answer_index": 1,
+   "explanation": "\"7\" is in quotes, so it is a string, even though it looks like a number.",
+   "misconception": {
+    "0": "The quotes make it text, not a whole number.",
+    "2": "A float has a decimal point and no quotes.",
+    "3": "type() tells you the type, not the value."
+   }
+  }
+ ],
+ "try_it": {
+  "id": "try1",
+  "title": "Try It Yourself",
+  "instructions": "Change the values so they describe you, then run the code. Add a line that prints the type of likes_python.",
+  "starter": "name = \"Sam\"\nage = 12\nheight = 1.5\nlikes_python = True\nprint(name, age, height, likes_python)\nprint(type(height))",
+  "counts_when": "ran_ok"
+ },
+ "activities": [
+  "read",
+  "cq1",
+  "cq2",
+  "cq3",
+  "try1"
+ ]
+}

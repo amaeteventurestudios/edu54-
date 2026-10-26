@@ -1,0 +1,56 @@
+{"question": "What is a loop?", "must_match": ["repeat", "same (set of )?instructions|multiple times"], "must_not_match": [], "needs_citation": true}
+{"question": "What does range(5) give?", "must_match": ["0.{0,12}1.{0,12}2.{0,12}3.{0,12}4"], "must_not_match": ["1.{0,4}2.{0,4}3.{0,4}4.{0,4}5"], "needs_citation": true}
+{"question": "What number does range start at by default?", "must_match": ["\\b0\\b|zero"], "must_not_match": ["starts? at (1|one)\\b"], "needs_citation": true}
+{"question": "Does range(5) include 5?", "must_match": ["\\bno\\b|not include|stops? before|doesn'?t include|isn'?t included|up to but not"], "must_not_match": [], "needs_citation": true}
+{"question": "How many times does a loop over range(5) run?", "must_match": ["\\b5\\b|five"], "must_not_match": [], "needs_citation": true}
+{"question": "How many times does a loop over range(3) run?", "must_match": ["\\b3\\b|three"], "must_not_match": [], "needs_citation": true}
+{"question": "What is the loop variable?", "must_match": ["variable|name|i\\b"], "must_not_match": [], "needs_citation": true}
+{"question": "In 'for i in range(5)', what is i?", "must_match": ["loop variable|next value|each time|takes"], "must_not_match": [], "needs_citation": true}
+{"question": "What is the loop body?", "must_match": ["indent|runs? (once )?for every|code (inside|under)"], "must_not_match": [], "needs_citation": true}
+{"question": "Which lines are inside the loop?", "must_match": ["indent"], "must_not_match": [], "needs_citation": true}
+{"question": "What does range(2, 6) give?", "must_match": ["2.{0,12}3.{0,12}4.{0,12}5"], "must_not_match": ["\\b6\\b.{0,10}included|2.{0,4}3.{0,4}4.{0,4}5.{0,4}6"], "needs_citation": true}
+{"question": "Where does range(2, 6) stop?", "must_match": ["before 6|stops? (just )?before|doesn'?t (include|reach) 6|up to (but not|5)"], "must_not_match": [], "needs_citation": true}
+{"question": "Can a for loop go through a list?", "must_match": ["\\byes\\b|list"], "must_not_match": [], "needs_citation": true}
+{"question": "How do I loop over the items in a list?", "must_match": ["for .{1,20} in .{1,20}|one at a time|each item"], "must_not_match": [], "needs_citation": true}
+{"question": "What does total = total + n do inside a loop?", "must_match": ["add|adds|adding|running|sum"], "must_not_match": [], "needs_citation": true}
+{"question": "What does this print? total = 0; for n in [1, 2, 3]: total = total + n; print(total)", "must_match": ["\\b6\\b|six"], "must_not_match": [], "needs_citation": true}
+{"question": "How does a loop work step by step?", "must_match": ["next item|takes|runs? the code|goes back|no items left|until"], "must_not_match": [], "needs_citation": true}
+{"question": "When does a loop stop?", "must_match": ["no (more )?items|nothing left|no items left|done|sequence"], "must_not_match": [], "needs_citation": true}
+{"question": "Why do we use loops?", "must_match": ["repeat|same|multiple times|instead of"], "must_not_match": [], "needs_citation": true}
+{"question": "What is the difference between range(3) and range(1, 4)?", "must_match": ["0.{0,8}1.{0,8}2.*1.{0,8}2.{0,8}3|start"], "must_not_match": [], "needs_citation": true}
+{"question": "What is range used for?", "must_match": ["sequence|numbers|count|repeat"], "must_not_match": [], "needs_citation": true}
+{"question": "In 'for name in names', what is name?", "must_match": ["item|each|next|variable"], "must_not_match": [], "needs_citation": true}
+{"question": "What is printed by for i in range(3): print(i)?", "must_match": ["0.{0,12}1.{0,12}2"], "must_not_match": ["0.{0,8}1.{0,8}2.{0,8}3"], "needs_citation": true}
+{"question": "Why does range(5) start at 0?", "must_match": ["python|start at 0|starts? at 0|counts? from (0|zero)|by default|default"], "must_not_match": [], "needs_citation": true}
+{"question": "How many values are in range(4)?", "must_match": ["\\b4\\b|four"], "must_not_match": [], "needs_citation": true}
+{"question": "What do the indented lines under a for line do?", "must_match": ["run|repeat|every|each"], "must_not_match": [], "needs_citation": true}
+{"question": "Explain a for loop to a beginner.", "must_match": ["repeat|each|every"], "must_not_match": [], "needs_citation": true}
+{"question": "What is a sequence in Python?", "must_match": ["list|range|items|numbers"], "must_not_match": [], "needs_citation": true}
+{"question": "How is a for loop different from writing the same line five times?", "must_match": ["repeat|shorter|less|loop|instead"], "must_not_match": [], "needs_citation": true}
+{"question": "What does the loop do after it runs the code inside?", "must_match": ["back|next (item|value)|take the next"], "must_not_match": [], "needs_citation": true}
+{"question": "What does the tutor know about while loops?", "must_match": ["not (covered|in)|teacher|lesson doesn'?t|don'?t (see|have)|isn'?t (covered|in)|(hasn|haven)'?t (covered|studied)|don'?t know (much )?about|not yet"], "must_not_match": [], "needs_citation": false}
+{"question": "What is a Python dictionary?", "must_match": ["key.{0,3}value|pairs|not (covered|in)|teacher|doesn'?t cover"], "must_not_match": [], "needs_citation": false}
+{"lesson": "python-foundations-l5", "question": "What is a list?", "must_match": ["many values|several values|collection|multiple (items|values)", "square brackets|in order|one variable"], "must_not_match": [], "needs_citation": true}
+{"lesson": "python-foundations-l5", "question": "What index does the first item have?", "must_match": ["\\b0\\b|zero"], "must_not_match": ["first item (is|has) (index )?(1|one)\\b"], "needs_citation": true}
+{"lesson": "python-foundations-l5", "question": "What does append do?", "must_match": ["add(s)?|adds? .{0,20}end"], "must_not_match": ["remove"], "needs_citation": true}
+{"lesson": "python-foundations-l5", "question": "What does len tell me about a list?", "must_match": ["how many|number of items|count"], "must_not_match": [], "needs_citation": true}
+{"lesson": "python-foundations-l5", "question": "How do I loop over a list?", "must_match": ["for .{1,20} in|once for (every|each) item|each item"], "must_not_match": [], "needs_citation": true}
+{"lesson": "python-foundations-l5", "question": "What happens if I ask for an index that is too big?", "must_match": ["IndexError|error"], "must_not_match": [], "needs_citation": true}
+{"lesson": "python-foundations-l5", "question": "How do I change the second item in a list?", "must_match": ["\\[1\\]"], "must_not_match": ["\\[2\\] (is|for) the second"], "needs_citation": true}
+{"lesson": "python-foundations-l5", "question": "What does colors[2] give for colors = ['red','green','blue']?", "must_match": ["blue"], "must_not_match": ["colors\\[2\\][^.\\n]{0,15}(is|gives|=)\\s*['`]*green"], "needs_citation": true}
+{"lesson": "python-foundations-l7", "question": "What is a while loop?", "must_match": ["repeat(s)?", "condition"], "must_not_match": [], "needs_citation": true}
+{"lesson": "python-foundations-l7", "question": "When does a while loop stop?", "must_match": ["condition (becomes|is|turns) false|false"], "must_not_match": [], "needs_citation": true}
+{"lesson": "python-foundations-l7", "question": "What is an infinite loop?", "must_match": ["never stops|forever|never ends"], "must_not_match": [], "needs_citation": true}
+{"lesson": "python-foundations-l7", "question": "Why must the variable change inside a while loop?", "must_match": ["condition|so (the loop|it) (can )?(end|stop)|false"], "must_not_match": [], "needs_citation": true}
+{"lesson": "python-foundations-l7", "question": "When should I use for and when while?", "must_match": ["know how many|items|until"], "must_not_match": [], "needs_citation": true}
+{"lesson": "python-foundations-l7", "question": "What does count = count + 1 do in a while loop?", "must_match": ["adds? 1|increase|goes up|change"], "must_not_match": [], "needs_citation": true}
+{"lesson": "python-foundations-l7", "question": "What happens in Build if my program loops forever?", "must_match": ["5 seconds|stopped"], "must_not_match": [], "needs_citation": true}
+{"lesson": "python-foundations-l7", "question": "What does the countdown example print at the end?", "must_match": ["Go!"], "must_not_match": [], "needs_citation": true}
+{"lesson": "ai-foundations-l1", "question": "What is AI?", "must_match": ["software|program|computer", "human|thinking|tasks"], "must_not_match": [], "needs_citation": true}
+{"lesson": "ai-foundations-l1", "question": "How is AI different from a program of fixed rules?", "must_match": ["learn|patterns|examples"], "must_not_match": [], "needs_citation": true}
+{"lesson": "ai-foundations-l1", "question": "How does a spam filter learn?", "must_match": ["examples|marked|labelled|labeled|patterns"], "must_not_match": [], "needs_citation": true}
+{"lesson": "ai-foundations-l1", "question": "Can AI be wrong?", "must_match": ["yes|can make mistakes|can be wrong"], "must_not_match": ["never wrong|always right"], "needs_citation": true}
+{"lesson": "ai-foundations-l1", "question": "Does AI have feelings?", "must_match": ["no|does not|doesn't"], "must_not_match": ["yes, ai has feelings"], "needs_citation": true}
+{"lesson": "ai-foundations-l1", "question": "What should I do with an important answer from an AI tutor?", "must_match": ["check|teacher|trusted"], "must_not_match": [], "needs_citation": true}
+{"lesson": "ai-foundations-l1", "question": "Give an example of AI I already use.", "must_match": ["map|phone|keyboard|camera|tutor|translat|speech|voice|suggest"], "must_not_match": [], "needs_citation": true}
+{"lesson": "ai-foundations-l1", "question": "What are the steps of how AI learns from examples?", "must_match": ["examples|patterns|check|improve"], "must_not_match": [], "needs_citation": true}

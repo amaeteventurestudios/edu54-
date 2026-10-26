@@ -1,0 +1,125 @@
+{
+ "id": "ai-foundations-l1",
+ "course_id": "ai-foundations",
+ "title": "What is AI?",
+ "module": "Module 1",
+ "lesson_number": 1,
+ "objective": "By the end of this lesson, you will be able to say what AI is, how it differs from a program of fixed rules, and why it can be wrong.",
+ "xp_on_complete": 50,
+ "sections": [
+  {
+   "id": "what-is-ai",
+   "title": "What is AI?",
+   "text": "Artificial intelligence (AI) is software that does tasks that usually need human thinking, such as recognising speech, translating languages, or suggesting the next word you might type."
+  },
+  {
+   "id": "rules-vs-learning",
+   "title": "Rules and learning",
+   "text": "Some programs follow rules that a person wrote. Many AI systems instead learn patterns from a lot of examples. A spam filter learns from thousands of emails that people marked as spam or not spam."
+  },
+  {
+   "id": "everyday-ai",
+   "title": "AI you already meet",
+   "text": "You already meet AI in maps that find quick routes, cameras that find faces, phone keyboards that suggest words, and tutors like the one in this lab."
+  },
+  {
+   "id": "limits",
+   "title": "AI can be wrong",
+   "text": "AI can make mistakes. It does not have feelings, and it does not understand the world the way a person does. Check important answers with your teacher or a trusted source."
+  }
+ ],
+ "examples": [
+  {
+   "id": "ex-rule",
+   "title": "Example 1: A rule written by a person",
+   "code": "temperature = 30\nif temperature > 25:\n    print(\"Wear a hat\")\nelse:\n    print(\"Wear a coat\")",
+   "output": "Wear a hat"
+  },
+  {
+   "id": "ex-pattern",
+   "title": "Example 2: Counting a pattern",
+   "code": "emails = [\"win money now\", \"lunch at noon\", \"win a prize now\"]\ncount = 0\nfor e in emails:\n    if \"win\" in e:\n        count = count + 1\nprint(count)",
+   "output": "2"
+  }
+ ],
+ "diagram": {
+  "title": "How AI learns from examples",
+  "steps": [
+   "Gather examples",
+   "Find patterns in them",
+   "Use the patterns on something new",
+   "Check the result and improve"
+  ],
+  "loop_label": "Learn from mistakes"
+ },
+ "check_questions": [
+  {
+   "id": "cq1",
+   "prompt": "Which of these is an example of AI?",
+   "code": null,
+   "options": [
+    "A calculator adding two numbers",
+    "A phone suggesting the next word as you type",
+    "A light switch",
+    "A paper map"
+   ],
+   "answer_index": 1,
+   "explanation": "Suggesting the next word uses patterns learned from lots of examples of text.",
+   "misconception": {
+    "0": "A calculator follows fixed rules.",
+    "2": "A switch has no software.",
+    "3": "A paper map does not learn or change."
+   }
+  },
+  {
+   "id": "cq2",
+   "prompt": "How does a spam filter usually learn?",
+   "code": null,
+   "options": [
+    "From thousands of emails marked spam or not spam",
+    "By asking each person what they like",
+    "By being told every spam email in advance",
+    "By guessing at random"
+   ],
+   "answer_index": 0,
+   "explanation": "It finds patterns in many examples that people already labelled.",
+   "misconception": {
+    "1": "It learns from labelled examples, not by asking each person.",
+    "2": "New spam appears all the time, so it must learn patterns.",
+    "3": "Random guessing would not learn anything."
+   }
+  },
+  {
+   "id": "cq3",
+   "prompt": "An AI tutor tells you something important. What should you do?",
+   "code": null,
+   "options": [
+    "Trust it completely",
+    "Check it with a teacher or a trusted source",
+    "Ignore it",
+    "Delete it"
+   ],
+   "answer_index": 1,
+   "explanation": "AI can be wrong, so check important things with a teacher or a trusted source.",
+   "misconception": {
+    "0": "AI can make mistakes, so do not trust it completely.",
+    "2": "Answers are often useful. Just check the important ones.",
+    "3": "Deleting it does not help you learn."
+   }
+  }
+ ],
+ "try_it": {
+  "id": "try1",
+  "title": "Try It Yourself",
+  "instructions": "Change the temperature so the program tells you to wear a coat.",
+  "starter": "temperature = 30\nif temperature > 25:\n    print(\"Wear a hat\")\nelse:\n    print(\"Wear a coat\")",
+  "counts_when": "ran_ok"
+ },
+ "activities": [
+  "read",
+  "cq1",
+  "cq2",
+  "cq3",
+  "try1"
+ ]
+}

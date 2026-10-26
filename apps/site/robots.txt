@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://edu54.com/sitemap.xml

@@ -1,0 +1,125 @@
+{
+ "id": "ai-foundations-l5",
+ "course_id": "ai-foundations",
+ "title": "Classification",
+ "module": "Module 2",
+ "lesson_number": 5,
+ "objective": "By the end of this lesson, you will be able to say what a classification task is, name the features a classifier uses, and explain why a classifier can give the wrong label.",
+ "xp_on_complete": 50,
+ "sections": [
+  {
+   "id": "what-is-classification",
+   "title": "Sorting into groups",
+   "text": "Classification means putting something into one of a few groups, called labels or classes. Is this photo a cat or a dog? Is this rubbish recyclable or not? Is this message kind or unkind? A program that does this is called a classifier."
+  },
+  {
+   "id": "features",
+   "title": "Features",
+   "text": "A feature is a measurable detail that helps decide the label, such as a leaf's length, a fruit's weight, or which words are in a message. A classifier only looks at its features. If an important detail is missing, it cannot use it."
+  },
+  {
+   "id": "deciding",
+   "title": "Making the decision",
+   "text": "Some classifiers use a rule a person wrote, like \"longer than 6 cm means big leaf\". Others learn where to draw the line from labelled examples. Either way, the classifier gives each new item the label that fits its features best."
+  },
+  {
+   "id": "mistakes",
+   "title": "Classifiers make mistakes",
+   "text": "Some items are hard to sort, and a classifier can give the wrong label. A word counter does not understand that \"not fun\" means the opposite of \"fun\". Check important results, and let a person decide when it really matters."
+  }
+ ],
+ "examples": [
+  {
+   "id": "ex-leaves",
+   "title": "Example 1: Sorting leaves by one feature",
+   "code": "leaves = [3, 9, 4, 11]\nfor length in leaves:\n    if length > 6:\n        print(length, \"big leaf\")\n    else:\n        print(length, \"small leaf\")",
+   "output": "3 small leaf\n9 big leaf\n4 small leaf\n11 big leaf"
+  },
+  {
+   "id": "ex-mood",
+   "title": "Example 2: Sorting messages by their words",
+   "code": "scores = {\"fun\": 1, \"great\": 1, \"love\": 1, \"boring\": -1, \"tired\": -1, \"lost\": -1}\nmessage = \"the trip was fun and great\"\nscore = 0\nfor word in message.split():\n    score = score + scores.get(word, 0)\nprint(\"happy\" if score > 0 else \"not happy\")",
+   "output": "happy"
+  }
+ ],
+ "diagram": {
+  "title": "How a classifier works",
+  "steps": [
+   "Choose the labels",
+   "Measure the features",
+   "Compare with what it learned",
+   "Give the best label"
+  ],
+  "loop_label": "Check mistakes and improve"
+ },
+ "check_questions": [
+  {
+   "id": "cq1",
+   "prompt": "Which of these is a classification task?",
+   "code": null,
+   "options": [
+    "Adding two numbers",
+    "Printing a list",
+    "Sorting photos into cat or dog",
+    "Turning off a screen"
+   ],
+   "answer_index": 2,
+   "explanation": "Sorting photos into cat or dog puts each item into one of a few groups.",
+   "misconception": {
+    "0": "Adding gives a number, not a group.",
+    "1": "Printing shows data. It does not sort it into groups.",
+    "3": "Turning off a screen does not sort anything."
+   }
+  },
+  {
+   "id": "cq2",
+   "prompt": "What does this print?",
+   "code": "length = 6\nif length > 6:\n    print(\"big leaf\")\nelse:\n    print(\"small leaf\")",
+   "options": [
+    "small leaf",
+    "big leaf",
+    "6",
+    "Nothing"
+   ],
+   "answer_index": 0,
+   "explanation": "6 is not more than 6, so the else part runs and it prints small leaf.",
+   "misconception": {
+    "1": "> means more than, and 6 is not more than 6.",
+    "2": "The program prints a label, not the length.",
+    "3": "One of the two print lines always runs."
+   }
+  },
+  {
+   "id": "cq3",
+   "prompt": "The program from Example 2 is given the message \"this was not fun\". What will it say?",
+   "code": null,
+   "options": [
+    "not happy, because it understands the word not",
+    "happy, because it only scores fun and ignores not",
+    "It will crash",
+    "It will ask a teacher"
+   ],
+   "answer_index": 1,
+   "explanation": "\"not\" has no score, so only \"fun\" counts and the score is 1. The program does not understand meaning.",
+   "misconception": {
+    "0": "The program only adds up word scores. It does not understand not.",
+    "2": "The code runs fine. It just gives the wrong label.",
+    "3": "The program has no way to ask anyone. It only counts words."
+   }
+  }
+ ],
+ "try_it": {
+  "id": "try1",
+  "title": "Try It Yourself",
+  "instructions": "Change the message so the program says not happy. Try using words with a score of -1.",
+  "starter": "scores = {\"fun\": 1, \"great\": 1, \"love\": 1, \"boring\": -1, \"tired\": -1, \"lost\": -1}\nmessage = \"the trip was fun and great\"\nscore = 0\nfor word in message.split():\n    score = score + scores.get(word, 0)\nprint(\"happy\" if score > 0 else \"not happy\")",
+  "counts_when": "ran_ok"
+ },
+ "activities": [
+  "read",
+  "cq1",
+  "cq2",
+  "cq3",
+  "try1"
+ ]
+}

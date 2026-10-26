@@ -1,0 +1,18 @@
+{
+ "_about": "EDU54' K-12 curriculum map (same format as k12.json: for each grade, School Library folders that make up the year's courses). Empty on purpose: the AI Lab's map is Khan Academy, MIT BLOSSOMS, African Storybook and PhET, and none of those ships in EDU54 today (Khan and BLOSSOMS are NonCommercial or denylisted; African Storybook and PhET need a per-item license and date check before import). EDU54's own courses (AI Foundations, Python Foundations, Science & Engineering) are still added by band. Add a grade's entries only from items that pass the license gate (config/content-allowlist.yaml), with a 'source' EDU54 may name. AI agent, 2026-10-10.",
+ "grades": {
+  "0": [],
+  "1": [],
+  "2": [],
+  "3": [],
+  "4": [],
+  "5": [],
+  "6": [],
+  "7": [],
+  "8": [],
+  "9": [],
+  "10": [],
+  "11": [],
+  "12": []
+ }
+}

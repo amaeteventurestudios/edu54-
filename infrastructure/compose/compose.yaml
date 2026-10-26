@@ -1,0 +1,125 @@
+# Umanah AI Lab platform (docs/53). Installed != running: every service is in a profile and started on demand with
+#   umanah-lab start [core|content|lms|code|admin|all]
+# Runs on the ROOTLESS Docker daemon whose data-root is on the data drive (docker context "ai-data").
+# It never touches the system Docker or its containers. Ports: ops/AI-NODE-01.md (Umanah range 8100-8199).
+name: umanah
+
+
+services:
+  # ---- core: web, API, Ollama with tutor + safety + embeddings ------------------------------------------------------
+  web:
+    profiles: [core]
+    image: umanah/web:${UMANAH_VERSION:-0.1.0}
+    build: { context: ../.., dockerfile: apps/web/Dockerfile }
+    restart: unless-stopped
+    depends_on: [api]
+    environment: { UMANAH_WEB_PORT: "${UMANAH_WEB_PORT:-8100}" }   # Caddy listens on this port (container side too)
+    # One mapping, not separate LAN + Tailscale ones: rootless Docker also claims 127.0.0.1:<port> for every mapping, so two
+    # mappings of the same port collide. The box has no public interface (LAN, Tailscale and loopback only), so the wildcard
+    # bind is reachable from exactly those. Never port-forward this on the router.
+    ports:
+      - "${UMANAH_BIND:-0.0.0.0}:${UMANAH_WEB_PORT:-8100}:${UMANAH_WEB_PORT:-8100}"
+    volumes: ["${UMANAH_ROOT:-/srv/ai-node/storage/ssd/umanah-ai-lab}/apps/games:/srv/games:ro"]   # offline coding games, served at /play/ (docs/47)
+    mem_limit: 128m
+
+  api:
+    profiles: [core]
+    image: umanah/api:${UMANAH_VERSION:-0.1.0}
+    build: { context: ../.., dockerfile: services/api/Dockerfile }
+    restart: unless-stopped
+    depends_on: [ollama]
+    ports: ["127.0.0.1:8101:8101"]           # the web container proxies to it
+    environment:
+      UMANAH_OLLAMA_URL: http://ollama:11434
+      UMANAH_TUTOR_MODEL: ${UMANAH_TUTOR_MODEL:-qwen3:4b-instruct}
+      UMANAH_SAFETY_MODEL: ${UMANAH_SAFETY_MODEL:-llama-guard3:1b}
+      UMANAH_EMBED_MODEL: ${UMANAH_EMBED_MODEL:-nomic-embed-text}
+      UMANAH_KEEP_ALIVE: ${UMANAH_KEEP_ALIVE:--1}
+      UMANAH_MAX_PARALLEL_INFERENCE: ${UMANAH_SLOTS:-3}
+      UMANAH_TUTOR_NUM_CTX: ${UMANAH_TUTOR_NUM_CTX:-3072}
+      UMANAH_DEMO_SEED: ${UMANAH_DEMO_SEED:-1}
+      UMANAH_CONTROL_DIR: /control
+      UMANAH_LIBRARY_CONTENT_DIR: /library
+      UMANAH_DEMO_MODE: ${UMANAH_DEMO_MODE:-0}       # 1 on the public demo host: "Try as a student / teacher", one private copy per visitor (docs/46)
+      UMANAH_INSTANCE: ${UMANAH_INSTANCE:-demo}   # this appliance holds the demo data; load tests refuse it (docs/46)
+      UMANAH_ENGINES: "moodle=http://moodle:8080/login/index.php,kolibri=http://kolibri:8080/,kiwix=http://kiwix:8080/,jupyterhub=http://jupyterhub:8000/hub/health,openwebui=http://open-webui:8080/health"
+    volumes:
+      - ${UMANAH_ROOT:-/srv/ai-node/storage/ssd/umanah-ai-lab}/database:/data
+      - ${UMANAH_ROOT:-/srv/ai-node/storage/ssd/umanah-ai-lab}/control:/control     # Admin > Services requests for the host-side helper (tools/umanah-lab/engine-agent.sh)
+      - ${UMANAH_ROOT:-/srv/ai-node/storage/ssd/umanah-ai-lab}/docker-volumes/kolibri/content:/library:ro   # School Library files (videos, apps, books)
+    healthcheck: { test: ["CMD", "python", "-c", "import urllib.request as u; u.urlopen('http://127.0.0.1:8101/api/health', timeout=3)"], interval: 15s, timeout: 5s, retries: 5 }
+    mem_limit: 512m
+
+  ollama:
+    profiles: [core]
+    image: ollama/ollama:0.34.4
+    restart: unless-stopped
+    ports: ["127.0.0.1:8120:11434"]          # localhost only
+    environment: { OLLAMA_KEEP_ALIVE: "-1", OLLAMA_NUM_PARALLEL: "${UMANAH_SLOTS:-3}", OLLAMA_MAX_LOADED_MODELS: "3" }   # tutor + safety + embeddings stay resident: a cold load costs 30-100 s
+    volumes: ["${UMANAH_ROOT:-/srv/ai-node/storage/ssd/umanah-ai-lab}/models:/root/.ollama"]
+    mem_limit: 7g
+
+  # ---- content: offline library and channels ------------------------------------------------------------------------
+  kolibri:
+    profiles: [content]
+    image: learningequality/kolibri:latest
+    restart: unless-stopped
+    ports: ["${UMANAH_BIND:-0.0.0.0}:8111:8080"]   # one mapping: rootless Docker collides on repeated host ports (see web)
+    environment: { KOLIBRI_HOME: /kolibri, KOLIBRI_LANG: en }
+    volumes: ["${UMANAH_ROOT:-/srv/ai-node/storage/ssd/umanah-ai-lab}/docker-volumes/kolibri:/kolibri"]
+    mem_limit: 512m
+
+  kiwix:
+    profiles: [core, content]     # Explore reads the offline library, so it is part of the always-on core
+    image: ghcr.io/kiwix/kiwix-serve:latest
+    restart: unless-stopped
+    command: ["--library", "/data/library.xml"]
+    ports: ["127.0.0.1:8112:8080"]
+    volumes: ["${UMANAH_ROOT:-/srv/ai-node/storage/ssd/umanah-ai-lab}/knowledge/kiwix:/data:ro"]
+    mem_limit: 1g                 # 25+ books: search across all of them needs the index pages cached (256 MB gave 5-20 s searches)
+
+  # ---- lms: Moodle + MariaDB ---------------------------------------------------------------------------------------
+  mariadb:
+    profiles: [lms]
+    image: mariadb:11.4
+    restart: unless-stopped
+    command: ["--character-set-server=utf8mb4", "--collation-server=utf8mb4_unicode_ci"]   # Moodle refuses a non-UTF-8 default
+    env_file: ${UMANAH_ROOT:-/srv/ai-node/storage/ssd/umanah-ai-lab}/.secrets/mariadb.env
+    volumes: ["${UMANAH_ROOT:-/srv/ai-node/storage/ssd/umanah-ai-lab}/database/moodle-mariadb:/var/lib/mysql"]
+    mem_limit: 512m
+
+  moodle:
+    profiles: [lms]
+    image: ${MOODLE_IMAGE:-bitnamilegacy/moodle:5.0.2}     # Bitnami's catalog moved to bitnamilegacy; see docs/40 for the follow-up
+    restart: unless-stopped
+    depends_on: [mariadb]
+    env_file: ${UMANAH_ROOT:-/srv/ai-node/storage/ssd/umanah-ai-lab}/.secrets/moodle.env
+    environment: { MOODLE_DATABASE_HOST: mariadb, MOODLE_DATABASE_PORT_NUMBER: "3306", MOODLE_SITE_NAME: "Demo Academy — course engine" }
+    ports: ["${UMANAH_BIND:-0.0.0.0}:8110:8080"]   # one mapping: rootless Docker collides on repeated host ports (see web)
+    volumes:
+      - ${UMANAH_ROOT:-/srv/ai-node/storage/ssd/umanah-ai-lab}/docker-volumes/moodle:/bitnami/moodle
+      - ${UMANAH_ROOT:-/srv/ai-node/storage/ssd/umanah-ai-lab}/docker-volumes/moodledata:/bitnami/moodledata
+    mem_limit: 1g
+
+  # ---- code: JupyterHub --------------------------------------------------------------------------------------------
+  jupyterhub:
+    profiles: [code]
+    image: umanah/jupyterhub:5.3.0
+    build: { context: ., dockerfile: jupyterhub.Dockerfile }
+    restart: unless-stopped
+    env_file: ${UMANAH_ROOT:-/srv/ai-node/storage/ssd/umanah-ai-lab}/.secrets/jupyterhub.env
+    ports: ["${UMANAH_BIND:-0.0.0.0}:8113:8000"]   # one mapping: rootless Docker collides on repeated host ports (see web)
+    volumes: ["${UMANAH_ROOT:-/srv/ai-node/storage/ssd/umanah-ai-lab}/projects/jupyter:/home/jupyter"]
+    mem_limit: 768m
+
+  # ---- admin: Open WebUI for staff (never students) ---------------------------------------------------------------
+  open-webui:
+    profiles: [admin]
+    image: ghcr.io/open-webui/open-webui:main
+    restart: unless-stopped
+    env_file: ${UMANAH_ROOT:-/srv/ai-node/storage/ssd/umanah-ai-lab}/.secrets/openwebui.env
+    environment: { OLLAMA_BASE_URL: "http://ollama:11434", ENABLE_SIGNUP: "false", WEBUI_AUTH: "true", ANONYMIZED_TELEMETRY: "false", DO_NOT_TRACK: "true", SCARF_NO_ANALYTICS: "true" }
+    # no depends_on: ollama lives in the core profile, so requiring it makes this profile invalid on its own; the console reconnects when it is up
+    ports: ["${UMANAH_BIND:-0.0.0.0}:8114:8080"]   # one mapping: rootless Docker collides on repeated host ports (see web)
+    volumes: ["${UMANAH_ROOT:-/srv/ai-node/storage/ssd/umanah-ai-lab}/docker-volumes/open-webui:/app/backend/data"]
+    mem_limit: 1g

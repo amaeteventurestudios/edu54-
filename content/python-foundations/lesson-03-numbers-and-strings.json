@@ -1,0 +1,125 @@
+{
+ "id": "python-foundations-l3",
+ "course_id": "python-foundations",
+ "title": "Numbers and strings",
+ "module": "Module 2",
+ "lesson_number": 3,
+ "objective": "By the end of this lesson, you will be able to do maths in Python, join and measure strings, and convert between numbers and text.",
+ "xp_on_complete": 50,
+ "sections": [
+  {
+   "id": "maths",
+   "title": "Doing maths",
+   "text": "Python uses + to add, - to subtract, * to multiply and / to divide. Dividing with / always gives a float, so 6 / 2 is 3.0 and 7 / 2 is 3.5."
+  },
+  {
+   "id": "floor-mod",
+   "title": "Whole division and remainders",
+   "text": "// divides and keeps only the whole number part, so 7 // 2 is 3. % gives the remainder, so 7 % 2 is 1. A number is even when number % 2 is 0."
+  },
+  {
+   "id": "strings",
+   "title": "Joining and measuring strings",
+   "text": "+ joins two strings together: \"Hi \" + \"Sam\" makes \"Hi Sam\". len(\"Sam\") counts the characters, so it gives 3. An f-string puts values straight into text: f\"I am {age}\" puts the value of age where {age} is."
+  },
+  {
+   "id": "converting",
+   "title": "Changing types",
+   "text": "Python will not join a string and a number with +. \"Age: \" + 12 gives a TypeError. str(12) turns a number into the text \"12\", and int(\"12\") turns text into the number 12."
+  }
+ ],
+ "examples": [
+  {
+   "id": "ex-maths",
+   "title": "Example 1: Four ways to divide and add",
+   "code": "print(7 + 3)\nprint(7 / 2)\nprint(7 // 2)\nprint(7 % 2)",
+   "output": "10\n3.5\n3\n1"
+  },
+  {
+   "id": "ex-strings",
+   "title": "Example 2: Working with text",
+   "code": "name = \"Zara\"\nage = 13\nprint(\"Hi \" + name)\nprint(len(name))\nprint(f\"{name} is {age} years old.\")\nprint(int(\"5\") + 1)",
+   "output": "Hi Zara\n4\nZara is 13 years old.\n6"
+  }
+ ],
+ "diagram": {
+  "title": "Putting a number into text",
+  "steps": [
+   "Start with a number",
+   "Turn it into text with str() or an f-string",
+   "Join it to the rest of the text",
+   "Print the result"
+  ],
+  "loop_label": "Add more pieces"
+ },
+ "check_questions": [
+  {
+   "id": "cq1",
+   "prompt": "What does this program print?",
+   "code": "print(17 % 5)",
+   "options": [
+    "2",
+    "3",
+    "3.4",
+    "12"
+   ],
+   "answer_index": 0,
+   "explanation": "5 goes into 17 three whole times (15), and 2 is left over. % gives what is left over.",
+   "misconception": {
+    "1": "3 is how many whole times 5 fits, which is 17 // 5.",
+    "2": "3.4 is 17 / 5.",
+    "3": "% is not subtraction. It gives the remainder."
+   }
+  },
+  {
+   "id": "cq2",
+   "prompt": "What does this program print?",
+   "code": "print(\"3\" + \"4\")",
+   "options": [
+    "7",
+    "3 4",
+    "An error",
+    "34"
+   ],
+   "answer_index": 3,
+   "explanation": "Both values are in quotes, so they are strings. + joins strings together.",
+   "misconception": {
+    "0": "The quotes make these text, so + joins them instead of adding.",
+    "1": "+ joins strings with no space between them.",
+    "2": "Joining two strings is fine. The error only happens when you mix a string and a number."
+   }
+  },
+  {
+   "id": "cq3",
+   "prompt": "This code gives an error. Which line prints Points: 10 without an error?",
+   "code": "points = 10\nprint(\"Points: \" + points)",
+   "options": [
+    "print(\"Points: \" + int(points))",
+    "print(\"Points: \" + \"points\")",
+    "print(f\"Points: {points}\")",
+    "print(Points: + points)"
+   ],
+   "answer_index": 2,
+   "explanation": "An f-string puts the value of points into the text, so it prints Points: 10.",
+   "misconception": {
+    "0": "points is already an int. You need to turn it into text, not into a number.",
+    "1": "This prints the word points, not the number 10.",
+    "3": "Text must go inside quotes, so this is a syntax error."
+   }
+  }
+ ],
+ "try_it": {
+  "id": "try1",
+  "title": "Try It Yourself",
+  "instructions": "Change the values of a and b and see what //, % and / give. Then change the last line so it prints a sentence about you.",
+  "starter": "a = 20\nb = 6\nprint(a // b)\nprint(a % b)\nprint(a / b)\nprint(f\"{a} sweets shared by {b} people is {a // b} each, with {a % b} left over.\")",
+  "counts_when": "ran_ok"
+ },
+ "activities": [
+  "read",
+  "cq1",
+  "cq2",
+  "cq3",
+  "try1"
+ ]
+}

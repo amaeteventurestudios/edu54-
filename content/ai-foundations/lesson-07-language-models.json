@@ -1,0 +1,125 @@
+{
+ "id": "ai-foundations-l7",
+ "course_id": "ai-foundations",
+ "title": "Language models",
+ "module": "Module 3",
+ "lesson_number": 7,
+ "objective": "By the end of this lesson, you will be able to explain how a language model predicts the next word, say why it can sound sure and still be wrong, and check an AI answer.",
+ "xp_on_complete": 50,
+ "sections": [
+  {
+   "id": "next-word",
+   "title": "Predicting the next word",
+   "text": "A language model is an AI system that writes text by predicting what comes next. It learned from a very large amount of text which words, or parts of words, tend to follow others. After \"I like\", it might predict \"cats\" because that often came next."
+  },
+  {
+   "id": "one-at-a-time",
+   "title": "One word at a time",
+   "text": "To write an answer, the model picks a likely next word, adds it, and repeats. Real models look at all the words so far, not just the last one, and that is why their answers can sound smooth and natural."
+  },
+  {
+   "id": "confidently-wrong",
+   "title": "Sure-sounding but wrong",
+   "text": "The model picks words that are likely, not words that have been checked. So it can write something that sounds certain and is still false. It can even make up facts, numbers, or book titles that do not exist. It may also not know about recent events."
+  },
+  {
+   "id": "checking",
+   "title": "Checking an answer",
+   "text": "Treat an AI answer as a helpful draft, not the final word. Check important facts in a trusted book or website, or ask your teacher. If an answer names a source, check that the source is real and really says that."
+  }
+ ],
+ "examples": [
+  {
+   "id": "ex-count",
+   "title": "Example 1: Counting which word comes next",
+   "code": "text = \"i like cats i like dogs i like cats\"\nwords = text.split()\ncounts = {}\nfor i in range(len(words) - 1):\n    if words[i] == \"like\":\n        nxt = words[i + 1]\n        counts[nxt] = counts.get(nxt, 0) + 1\nprint(counts)",
+   "output": "{'cats': 2, 'dogs': 1}"
+  },
+  {
+   "id": "ex-wrong",
+   "title": "Example 2: Likely is not the same as true",
+   "code": "text = \"the snow is cold the ice is cold the sun is hot\"\nwords = text.split()\nafter_is = []\nfor i in range(len(words) - 1):\n    if words[i] == \"is\":\n        after_is.append(words[i + 1])\nbest = max(after_is, key=after_is.count)\nprint(\"the sun is\", best)",
+   "output": "the sun is cold"
+  }
+ ],
+ "diagram": {
+  "title": "How a language model writes",
+  "steps": [
+   "Read the words so far",
+   "Score which word is likely next",
+   "Pick a word and add it",
+   "Repeat until the answer is done"
+  ],
+  "loop_label": "One word at a time"
+ },
+ "check_questions": [
+  {
+   "id": "cq1",
+   "prompt": "What does a language model mainly do?",
+   "code": null,
+   "options": [
+    "Looks up every answer in a checked encyclopedia",
+    "Predicts a likely next word, again and again",
+    "Feels and understands things the way a person does",
+    "Always knows what happened today"
+   ],
+   "answer_index": 1,
+   "explanation": "It builds its answer by predicting one likely word after another.",
+   "misconception": {
+    "0": "It does not check each answer against a trusted source.",
+    "2": "It finds patterns in text. It does not have feelings or understand like a person.",
+    "3": "It learned from text collected up to a certain time, so it may not know recent events."
+   }
+  },
+  {
+   "id": "cq2",
+   "prompt": "What does this print?",
+   "code": "words = \"we like maths we like art we like maths\".split()\nafter = []\nfor i in range(len(words) - 1):\n    if words[i] == \"like\":\n        after.append(words[i + 1])\nprint(max(after, key=after.count))",
+   "options": [
+    "art",
+    "we",
+    "like",
+    "maths"
+   ],
+   "answer_index": 3,
+   "explanation": "After \"like\" the words are maths, art and maths. maths appears most often, so it is picked.",
+   "misconception": {
+    "0": "art comes after like only once.",
+    "1": "The program only looks at words that come after like.",
+    "2": "The program prints a word that comes after like, not like itself."
+   }
+  },
+  {
+   "id": "cq3",
+   "prompt": "An AI gives you a fact for your project and says it comes from a book. What is the best thing to do?",
+   "code": null,
+   "options": [
+    "Check that the book is real and says that, or ask your teacher",
+    "Copy it, because it named a source",
+    "Ask the AI if it is sure, and trust it if it says yes",
+    "Never use books again"
+   ],
+   "answer_index": 0,
+   "explanation": "A language model can make up sources, so check the book or ask your teacher.",
+   "misconception": {
+    "1": "A model can make up book titles, so naming a source is not proof.",
+    "2": "The AI can say it is sure and still be wrong.",
+    "3": "Books are a good way to check facts."
+   }
+  }
+ ],
+ "try_it": {
+  "id": "try1",
+  "title": "Try It Yourself",
+  "instructions": "Change the text in Example 2 so the program predicts a true sentence about the sun. Run it to check.",
+  "starter": "text = \"the snow is cold the ice is cold the sun is hot\"\nwords = text.split()\nafter_is = []\nfor i in range(len(words) - 1):\n    if words[i] == \"is\":\n        after_is.append(words[i + 1])\nbest = max(after_is, key=after_is.count)\nprint(\"the sun is\", best)",
+  "counts_when": "ran_ok"
+ },
+ "activities": [
+  "read",
+  "cq1",
+  "cq2",
+  "cq3",
+  "try1"
+ ]
+}

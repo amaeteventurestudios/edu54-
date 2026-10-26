@@ -1,0 +1,95 @@
+{
+ "id": "asg-lists-practice",
+ "title": "Lists Practice",
+ "subject": "Computer Science · Introduction to AI",
+ "lesson_id": "python-foundations-l5",
+ "instructions": "Answer the three questions about lists. Use the hints if you get stuck. Your teacher will review your work.",
+ "ai_help_policy": "hints_only",
+ "max_score": 3,
+ "questions": [
+  {
+   "id": "q1",
+   "index": 1,
+   "prompt": "What number does this program print?",
+   "code": "pets = [\"cat\", \"dog\", \"fish\", \"bird\"]\nprint(len(pets))",
+   "kind": "number",
+   "key": {
+    "kind": "number",
+    "value": 4,
+    "tolerance": 0
+   },
+   "misconceptions": [
+    {
+     "tag": "uses-last-index",
+     "match": [
+      3
+     ],
+     "note": "3 is the index of the last item. len counts the items."
+    }
+   ],
+   "hints": [
+    "What does len() count? Read the list and think about what it measures.",
+    "Count the items between the square brackets, one at a time.",
+    "A similar problem: len([\"a\", \"b\"]) is 2, because there are two items. Now count the pets."
+   ]
+  },
+  {
+   "id": "q2",
+   "index": 2,
+   "prompt": "What does this program print? Type the numbers separated by spaces.",
+   "code": "nums = [10, 20, 30]\nnums.append(40)\nfor n in nums:\n    print(n)",
+   "kind": "sequence",
+   "key": {
+    "kind": "sequence",
+    "value": [
+     "10",
+     "20",
+     "30",
+     "40"
+    ]
+   },
+   "misconceptions": [
+    {
+     "tag": "missed-append",
+     "match": [
+      "10",
+      "20",
+      "30"
+     ],
+     "note": "Look again at nums.append(40). What happens to the list?"
+    }
+   ],
+   "hints": [
+    "Check the list before the loop runs. What does append do to it?",
+    "append adds an item to the end. Write out the list after that line, then follow the loop.",
+    "A similar problem: [1, 2] with append(3) becomes [1, 2, 3], and the loop prints 1, 2, 3. Try the same steps."
+   ]
+  },
+  {
+   "id": "q3",
+   "index": 3,
+   "prompt": "What index does the first item of a list have?",
+   "code": null,
+   "kind": "number",
+   "key": {
+    "kind": "number",
+    "value": 0,
+    "tolerance": 0
+   },
+   "misconceptions": [
+    {
+     "tag": "counts-from-one",
+     "match": [
+      1
+     ],
+     "note": "Everyday counting starts at 1, but Python starts at 0."
+    }
+   ],
+   "hints": [
+    "Look back at the lesson section about indexes.",
+    "In everyday counting we start at 1. Does Python do the same?",
+    "A similar problem: in [\"x\", \"y\"], which index gives \"x\"? Think about how the lesson numbers items."
+   ]
+  }
+ ]
+}
