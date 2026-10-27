@@ -57,7 +57,7 @@
   --s-small: 14px;
   --s-body: clamp(17px, 1rem + 0.25vw, 19px);
   --s-lead: clamp(20px, 1.1rem + 0.7vw, 28px);
-  --s-head: clamp(34px, 1rem + 4vw, 84px);
+  --s-head: clamp(32px, 0.9rem + 3.3vw, 80px);
   --s-hero: clamp(40px, 5.6vw, 104px);
 }
 *, *::before, *::after { box-sizing: border-box; }
@@ -81,8 +81,11 @@ p { margin: 0; text-wrap: pretty; }
 .f-forest { background: var(--forest); color: #fff; }
 .f-night { background: var(--night); color: var(--paper); }
 .f-paper { background: var(--paper); color: var(--char); }
-.h2 { font-size: var(--s-head); max-width: 24ch; }
-.lead { font-size: var(--s-lead); line-height: 1.35; max-width: 46ch; margin-top: 28px; letter-spacing: -0.015em; }
+.h2 { font-size: var(--s-head); text-wrap: balance; }
+.center { text-align: center; }
+.center .h2, .center .lead { margin-inline: auto; }
+.center .h2 { max-width: 30ch; }
+.lead { font-size: var(--s-lead); line-height: 1.35; max-width: 62ch; margin-top: 28px; letter-spacing: -0.015em; text-wrap: balance; }
 
 /* buttons: square, one fill */
 .btn { display: inline-flex; align-items: center; justify-content: center; gap: 12px; min-height: 58px; padding: 0 28px; font: 600 17px var(--font); text-decoration: none; white-space: nowrap; border: 0; cursor: pointer;
@@ -161,8 +164,10 @@ p { margin: 0; text-wrap: pretty; }
 
 /* ---------------------------------------------------------------- the access gap (gold) */
 .gap { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: clamp(28px, 3vw, 56px); margin-top: clamp(64px, 8vw, 120px); }
+.gap { text-align: center; }
+.gap p { max-width: 34ch; margin-inline: auto; }
 .gap h3 { font-size: clamp(26px, 2.4vw, 36px); line-height: 1.02; margin-bottom: 16px; }
-.answer { margin-top: clamp(72px, 9vw, 140px); font-size: clamp(26px, 2.6vw, 36px); line-height: 1.2; font-weight: 600; letter-spacing: -0.025em; max-width: 30ch; background: var(--char); color: var(--gold); padding: 28px 32px; }
+.answer { margin-top: clamp(72px, 9vw, 140px); font-size: clamp(26px, 2.6vw, 36px); line-height: 1.2; font-weight: 600; letter-spacing: -0.025em; max-width: 34ch; background: var(--char); color: var(--gold); padding: 32px 40px; margin-inline: auto; text-align: center; text-wrap: balance; }
 @media (max-width: 1000px) { .gap { grid-template-columns: 1fr 1fr; } }
 @media (max-width: 600px) { .gap { grid-template-columns: 1fr; } .answer { font-size: 24px; padding: 22px; } }
 
@@ -174,16 +179,18 @@ p { margin: 0; text-wrap: pretty; }
 .sheet h3 { font-size: clamp(30px, 3vw, 46px); line-height: 1; height: 46px; }
 .sheet .big { font-size: clamp(64px, 9vw, 150px); letter-spacing: -0.05em; line-height: .9; font-weight: 600; }
 .sheet p { max-width: 36ch; font-size: clamp(18px, 1.3vw, 22px); margin-top: 20px; }
-.sheet .pic { overflow: hidden; margin-top: 72px; background: rgb(0 0 0 / .12); }
-.sheet .pic img { width: 100%; height: 100%; object-fit: cover; object-position: top left; scale: 1.08; transition: scale 1.4s var(--ease); }
+.sheet .pic { margin-top: 72px; display: flex; align-items: center; justify-content: center; padding: clamp(16px, 2.4vw, 48px) var(--pad) clamp(24px, 3vw, 56px) 0; overflow: hidden; }
+.sheet .pic img { width: auto; height: auto; max-width: 100%; max-height: calc(86svh - 72px - clamp(40px, 5.4vw, 104px)); aspect-ratio: 16 / 10; object-fit: contain; background: var(--char); padding: clamp(6px, .6vw, 10px); scale: 1.06; opacity: .4; transition: scale 1.4s var(--ease), opacity 1s var(--ease); }
+.sheet.in .pic img { opacity: 1; }
 .sheet.in .pic img { scale: 1; }
 @media (max-width: 900px) {
-  .sheet { position: relative; top: auto; grid-template-columns: 1fr; min-height: 0; }
-  .sheet h3 { font-size: 15vw; height: auto; line-height: .95; margin-top: 12px; }
-  .sheet .big { display: none; }
-  .sheet .txt { padding: 14px 20px 28px; }
-  .sheet .pic { margin-top: 0; order: 2; aspect-ratio: 16 / 10; }
-  .sheet .big { font-size: 15vw; margin-top: 20px; }
+  .sheet { top: calc(var(--k) * 48px); grid-template-columns: 1fr; min-height: 0; }
+  .sheet h3 { font-size: 22px; height: 48px; line-height: 1; padding-top: 2px; }
+  .sheet .txt { padding: 12px var(--pad) 8px; }
+  .sheet .big { font-size: 15vw; margin-top: 8px; }
+  .sheet p { margin-top: 12px; }
+  .sheet .pic { margin-top: 0; order: 2; padding: 16px var(--pad) 28px; }
+  .sheet .pic img { max-height: none; width: 100%; }
 }
 
 /* ---------------------------------------------------------------- real screens */
@@ -231,14 +238,21 @@ p { margin: 0; text-wrap: pretty; }
 .tools { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 6px; }
 .tools span { padding: 12px 16px; font-size: 16px; font-weight: 500; background: var(--char); color: var(--blue); }
 /* Discovery Lab: the thirteen labs run as one paragraph */
+.ed .labs { display: block; }
 .labs { list-style: none; padding: 0; font-size: clamp(30px, 3.8vw, 62px); line-height: 1.08; font-weight: 600; letter-spacing: -0.035em; margin-top: clamp(40px, 5vw, 72px); }
-.labs li { display: inline; color: rgb(255 255 255 / .62); transition: color .25s var(--ease); }
+.labs li { display: inline-block; margin-right: .28em; color: rgb(255 255 255 / .62); cursor: default;
+  background: linear-gradient(var(--gold), var(--gold)) 0 92% / 0 .14em no-repeat;
+  transition: color .25s var(--ease), translate .35s var(--snap), rotate .35s var(--snap), background-size .45s var(--ease), opacity .6s var(--ease); }
+.rv .labs li { opacity: 0; translate: 0 .4em; transition-delay: calc(var(--j, 0) * 45ms); }
+.rv.in .labs li { opacity: 1; translate: 0 0; }
+.labs li.lit, .ed.disc .labs li:hover { color: #fff; translate: 0 -.12em; rotate: -1.5deg; background-size: 100% .14em; transition-delay: 0s; }
 .labs li::after { content: ", "; color: rgb(255 255 255 / .62); }
 .labs li:last-child::after { content: "."; }
-@media (hover: hover) and (pointer: fine) { .ed.disc:hover .labs li:hover { color: #fff; } }
+
 .labs-note { margin-top: 24px; font-size: var(--s-lead); font-weight: 500; letter-spacing: -0.015em; }
 @media (max-width: 1000px) { .ed .in-grid { grid-template-columns: 1fr; } .bands { grid-template-columns: 1fr 1fr; } }
-@media (max-width: 560px) { .ed .open { width: 100%; } .labs { list-style: none; padding: 0; font-size: 9vw; } }
+@media (max-width: 560px) { .ed .open { width: 100%; } .ed .labs { display: block; }
+.labs { list-style: none; padding: 0; font-size: 9vw; } }
 
 /* ---------------------------------------------------------------- how it works: one bar */
 .bar { display: flex; gap: 6px; margin-top: 64px; }
@@ -322,10 +336,12 @@ p { margin: 0; text-wrap: pretty; }
 }
 
 /* ---------------------------------------------------------------- close: the page inverted */
-.closing { background: var(--paper); color: var(--char); min-height: 90svh; display: flex; flex-direction: column; justify-content: space-between; padding-block: clamp(96px, 12vw, 160px) 56px; }
-.closing h2 { font-size: clamp(56px, 9vw, 160px); line-height: .9; letter-spacing: -0.055em; max-width: 14ch; }
-.closing .row { display: flex; flex-wrap: wrap; justify-content: space-between; align-items: flex-end; gap: 32px; margin-top: 72px; }
-.closing .row p { max-width: 40ch; font-size: clamp(18px, 1.4vw, 22px); }
+.closing { background: var(--paper); color: var(--char); min-height: 90svh; display: flex; flex-direction: column; justify-content: center; padding-block: clamp(96px, 12vw, 160px) 56px; }
+.closing { text-align: center; position: relative; isolation: isolate; overflow: hidden; }
+.closing h2 { font-size: clamp(48px, 8vw, 150px); line-height: .9; letter-spacing: -0.055em; max-width: 16ch; margin-inline: auto; text-wrap: balance; }
+.closing .row { display: flex; flex-direction: column; align-items: center; gap: 28px; margin-top: 48px; padding-bottom: clamp(110px, 14vw, 220px); }
+.closing .row p { max-width: 56ch; font-size: clamp(18px, 1.4vw, 22px); text-wrap: balance; }
+.closing .ctas { justify-content: center; }
 .closing .ctas { margin-top: 0; }
 .closing .btn.ghost { background: var(--char); color: var(--paper); }
 
@@ -358,7 +374,8 @@ footer { background: var(--night); padding: 8px; }
 .no-js .rv > * { opacity: 1; translate: none; }
 .no-js .frame { clip-path: none; } .no-js .frame img.on { opacity: 1; scale: 1; }
 
-@media (min-width: 2000px) { :root { --pad: 80px; } .wrap { width: min(1680px, 100% - 2 * var(--pad)); } }
+@media (min-width: 1800px) { :root { --s-hero: clamp(104px, 5.4vw, 140px); --s-head: clamp(80px, 3.6vw, 104px); --s-lead: clamp(26px, 1.25vw, 32px); --s-body: clamp(19px, .95vw, 22px); } .atlas { width: min(100vh, 1400px); } }
+@media (min-width: 2000px) { :root { --pad: 80px; } .wrap { width: min(1800px, 100% - 2 * var(--pad)); } }
 
 @media (prefers-reduced-motion: reduce) {
   html { scroll-behavior: auto; }
@@ -369,9 +386,31 @@ footer { background: var(--night); padding: 8px; }
   .hub i::before { animation: none; }
   .btn, .part, .ed .shot img, .ft .go svg { transition-property: background-color, color; }
 }
+
+/* ---------------------------------------------------------------- patterns and silhouettes
+   A mudcloth-style weave of zigzags, dots, crosses and diamonds drifts slowly behind the plain fields,
+   and savanna silhouettes (baobab, elephant, ostrich, gorilla, palm) stand in a few of them. */
+.pat { position: relative; isolation: isolate; overflow: hidden; }
+.pat::before { content: ""; position: absolute; inset: -96px; z-index: -2; background-size: 96px 96px; animation: weave 90s linear infinite; pointer-events: none; }
+.pat-gold::before { background-image: url("data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 width=%2296%22 height=%2296%22 viewBox=%220 0 96 96%22%3E%3Cg fill=%22none%22 stroke=%22%23F4B323%22 stroke-opacity=%220.09%22 stroke-width=%222.4%22 stroke-linecap=%22round%22 stroke-linejoin=%22round%22%3E%3Cpolyline points=%220,6 12,18 24,6 36,18 48,6 60,18 72,6 84,18 96,6%22/%3E%3Cpath d=%22M7 55l10 10M17 55l-10 10%22/%3E%3Cpath d=%22M31 55l10 10M41 55l-10 10%22/%3E%3Cpath d=%22M55 55l10 10M65 55l-10 10%22/%3E%3Cpath d=%22M79 55l10 10M89 55l-10 10%22/%3E%3C/g%3E%3Cg fill=%22%23F4B323%22 fill-opacity=%220.09%22%3E%3Ccircle cx=%228%22 cy=%2236%22 r=%222.6%22/%3E%3Ccircle cx=%2224%22 cy=%2236%22 r=%222.6%22/%3E%3Ccircle cx=%2240%22 cy=%2236%22 r=%222.6%22/%3E%3Ccircle cx=%2256%22 cy=%2236%22 r=%222.6%22/%3E%3Ccircle cx=%2272%22 cy=%2236%22 r=%222.6%22/%3E%3Ccircle cx=%2288%22 cy=%2236%22 r=%222.6%22/%3E%3Cpath d=%22M24 78l6 6-6 6-6-6z%22/%3E%3Cpath d=%22M48 78l6 6-6 6-6-6z%22/%3E%3Cpath d=%22M72 78l6 6-6 6-6-6z%22/%3E%3C/g%3E%3C/svg%3E"); }
+.pat-char::before { background-image: url("data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 width=%2296%22 height=%2296%22 viewBox=%220 0 96 96%22%3E%3Cg fill=%22none%22 stroke=%22%23141210%22 stroke-opacity=%220.09%22 stroke-width=%222.4%22 stroke-linecap=%22round%22 stroke-linejoin=%22round%22%3E%3Cpolyline points=%220,6 12,18 24,6 36,18 48,6 60,18 72,6 84,18 96,6%22/%3E%3Cpath d=%22M7 55l10 10M17 55l-10 10%22/%3E%3Cpath d=%22M31 55l10 10M41 55l-10 10%22/%3E%3Cpath d=%22M55 55l10 10M65 55l-10 10%22/%3E%3Cpath d=%22M79 55l10 10M89 55l-10 10%22/%3E%3C/g%3E%3Cg fill=%22%23141210%22 fill-opacity=%220.09%22%3E%3Ccircle cx=%228%22 cy=%2236%22 r=%222.6%22/%3E%3Ccircle cx=%2224%22 cy=%2236%22 r=%222.6%22/%3E%3Ccircle cx=%2240%22 cy=%2236%22 r=%222.6%22/%3E%3Ccircle cx=%2256%22 cy=%2236%22 r=%222.6%22/%3E%3Ccircle cx=%2272%22 cy=%2236%22 r=%222.6%22/%3E%3Ccircle cx=%2288%22 cy=%2236%22 r=%222.6%22/%3E%3Cpath d=%22M24 78l6 6-6 6-6-6z%22/%3E%3Cpath d=%22M48 78l6 6-6 6-6-6z%22/%3E%3Cpath d=%22M72 78l6 6-6 6-6-6z%22/%3E%3C/g%3E%3C/svg%3E"); }
+.pat-white::before { background-image: url("data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 width=%2296%22 height=%2296%22 viewBox=%220 0 96 96%22%3E%3Cg fill=%22none%22 stroke=%22%23FFFFFF%22 stroke-opacity=%220.08%22 stroke-width=%222.4%22 stroke-linecap=%22round%22 stroke-linejoin=%22round%22%3E%3Cpolyline points=%220,6 12,18 24,6 36,18 48,6 60,18 72,6 84,18 96,6%22/%3E%3Cpath d=%22M7 55l10 10M17 55l-10 10%22/%3E%3Cpath d=%22M31 55l10 10M41 55l-10 10%22/%3E%3Cpath d=%22M55 55l10 10M65 55l-10 10%22/%3E%3Cpath d=%22M79 55l10 10M89 55l-10 10%22/%3E%3C/g%3E%3Cg fill=%22%23FFFFFF%22 fill-opacity=%220.08%22%3E%3Ccircle cx=%228%22 cy=%2236%22 r=%222.6%22/%3E%3Ccircle cx=%2224%22 cy=%2236%22 r=%222.6%22/%3E%3Ccircle cx=%2240%22 cy=%2236%22 r=%222.6%22/%3E%3Ccircle cx=%2256%22 cy=%2236%22 r=%222.6%22/%3E%3Ccircle cx=%2272%22 cy=%2236%22 r=%222.6%22/%3E%3Ccircle cx=%2288%22 cy=%2236%22 r=%222.6%22/%3E%3Cpath d=%22M24 78l6 6-6 6-6-6z%22/%3E%3Cpath d=%22M48 78l6 6-6 6-6-6z%22/%3E%3Cpath d=%22M72 78l6 6-6 6-6-6z%22/%3E%3C/g%3E%3C/svg%3E"); }
+@keyframes weave { to { transform: translate(96px, 96px); } }
+.sil { position: absolute; z-index: -1; pointer-events: none; fill: currentColor; }
+.sil.baobab { right: -2%; bottom: -6%; width: min(46vw, 640px); height: auto; aspect-ratio: 1; color: rgb(244 179 35 / .12); transform-origin: 50% 100%; animation: sway 9s ease-in-out infinite; }
+@keyframes sway { 0%, 100% { rotate: -1.2deg; } 50% { rotate: 1.2deg; } }
+.sil.elephant { right: 3%; bottom: -3%; width: min(34vw, 460px); aspect-ratio: 1; color: rgb(20 18 16 / .10); }
+.savanna { position: absolute; z-index: -1; left: 0; right: 0; bottom: 0; height: clamp(110px, 16vw, 240px); pointer-events: none; overflow: hidden; color: rgb(20 18 16 / .09); }
+.savanna .herd { position: absolute; inset: 0 auto 0 0; width: 200%; display: flex; align-items: flex-end; justify-content: space-around; animation: trek 70s linear infinite; }
+.savanna svg { height: 92%; width: auto; aspect-ratio: 1; fill: currentColor; flex: none; }
+.savanna svg.s { height: 58%; }
+.savanna svg.flip { scale: -1 1; }
+@keyframes trek { to { transform: translateX(-50%); } }
+@media (prefers-reduced-motion: reduce) { .pat::before, .sil.baobab, .savanna .herd { animation: none; } }
 </style>
 </head>
 <body class="no-js">
+<svg width="0" height="0" style="position:absolute" aria-hidden="true"><symbol id="sil-baobab" viewBox="0 0 512 512"><path  d="M174.1 25.24c-1.5.02-3 .07-4.4.14c-23.7 1.24-46.2 10.36-67.9 22.99c-4.17 2.43-11.67 13.73-16.3 24.44c-4.63 10.72-7.35 20.36-7.35 20.36l-1.35 4.77l-4.74 1.42C55.37 104.3 42.02 110 33.67 116.5s-11.96 12.8-11.83 22.6c.03 1.9 1.68 4.9 5.67 7.7c3.99 2.9 9.77 5.1 13.77 5.6c21.86 2.8 43.22-5.2 65.02-17.9c21.9-12.6 43.6-29.6 65.9-42.82l4.7-2.75l4.6 2.81C218 113.9 251.3 108.9 290.3 108c8.7-.2 23.6-3.1 35.9-6c12.2-2.97 22-5.84 22-5.84l4.4-1.32l3.7 2.91c18.6 14.85 34 30.55 48.1 40.65s25.2 14.4 39.3 9.9c6-1.9 11.7-8 15.6-16.6c3.9-8.5 5.7-19.1 4.9-27c-1.8-18.64-18.4-40.46-35.8-46.63c-3.6-1.25-15.4.37-25.3 3.85c-9.8 3.48-17.8 7.66-17.8 7.66l-4.6 2.38l-4.4-2.73s-9.1-5.71-20.9-11.84c-11.7-6.13-26.5-12.48-34.8-13.77c-9.2-1.45-26.7.29-41 2.76c-14.2 2.47-25.7 5.37-25.7 5.37l-4 1.03l-3.4-2.4c-24.6-17.39-46.9-24.43-68-25.09l.1-.01c-1.5-.05-3-.06-4.5-.04m2.4 85.06c-5.7 3.5-11.4 7.3-17.2 11.2c9.1 11.5 16.9 23.7 33.1 31.9c-22.5 1-42.4-4.3-59.8-14c-5.4 3.6-10.9 7-16.5 10.3c5.6 2.7 11.9 4.8 19.8 5.7c-3.7 5.2-12.4 9.3-22.5 13c-.4 6.7-7.9 19.4 20.9 11c8.8-2.6 15.2-10.1 17.9-17.1c32.8 10.3 48.9 8.1 44.6 34.7c-16.3 99.9-23.5 216.9-15.6 286.4c2.4 20.8 130.2 19.2 131.2 0c5.6-116.5-14.5-212.7-26-312.6l24.5-9.2c10.1 11.3 3.9 9.9-6.8 21.1l10.5 12.4c10.6-16.4 23.6-22.7 13.5-39l30.7-10.7c15.9 19.2 19.3 17 40 11c-1.6-1-3.3-2.1-4.9-3.3c-12.7-9.1-24.9-20.8-38.1-32.2c-15.1 9.3-47.4 24.5-70 26.8c3.4-7.4 7.5-14.7 10.6-22c-2 .1-3.9.3-5.7.3c-6 .1-12 .4-18 .6c-1.8 6.5-4.5 12.9-11.4 18.8c-15.9 3.3-39.3 5.5-49-7.5c5-3.4 11.9-7.3 17.5-11.9c-8.2-.8-16.5-2.3-24.9-4.6c-3.3 2.6-6.8 4.5-10.1 4.4c-6.8-.1-14.1-9.3-18.3-15.5"/></symbol><symbol id="sil-elephant" viewBox="0 0 512 512"><path  d="M236.422 98.393c-126.642-1.276-206.07 46.77-212.058 83.93c-2.977 41.18-4.165 83.628-4.016 124.617l4.31 3.796c3.963-15.315 6.47-31.843 14.122-44.085c1.3 27.18 5.068 58.562 11.369 82.067c-2.477 24.988-2.118 47.99-3.436 72.978c21.158 12.726 60.485 10.65 67.541 1.986c2.936-20.695 4.981-42.58 3.973-68.535l7.592-35.355c6.418-14.587 25.29-17.243 23.406-31.799l17.828-2.467c.355 25.196-14.375 27.1-24.713 41.653c12.994 5.357 14.676 3.886 24.059 5.124c23.848 2.742 45.234 3.774 67.802-8.175l-3.101-17.541l17.723-3.135l3.064 17.328c4.22 14.097 11.996 104.392 18.559 108.361c13.411 6.417 53.823 6.417 55.472-5.312c1.647-45.786 3.861-90.1-5.07-133.242c3.702-4.1 7.34-8.112 10.928-12.096c-20.178-10.157-44.214-25.838-57.62-41.797c-9.037-17.21-13.75-38.688-17.304-56.256c-2.546-12.943-4.3-26.074-3.81-37.486c.244-5.706 1.003-11.018 2.982-15.938c19.848-20.186 56.606-35.68 79.58-46.503c-33.273-7.269-71.55 7.386-99.182 17.882m128.934-9.931c-29.757 10.977-72.215 22.174-92.633 45.267c-.807 2.008-1.51 5.563-1.7 9.994c-.38 8.863 1.097 21.093 3.487 33.243s5.644 24.32 8.53 33.642c1.442 4.662 2.797 8.624 3.865 11.44c15.216 22.215 45.646 39.625 67.966 44.959l14.495-28.713c-11.574-15.04-13.779-35.226-4.59-50.352c4.932-6.143 9.727-10.553 16.982-10.416c4.545.109 9.194 1.996 12.856 5.045c25.905 21.572 49.481 48.69 83.37 70.66c-.136-6.626-.26-12.94-.243-18.761c.026-9.03-18.924-97.759-50.614-139.553c-22.918-5.83-40.343-9.14-61.771-6.455m68.883 76.232c4.327-.07 8.421.563 11.857 2.319c.061 4.922-.298 10.035-10.887 16.152c-4.501-4.72-11.239-10.838-17.908-15.627c5.427-1.506 11.374-2.754 16.938-2.844m-54.233 32.838c-2.263 3.593-3.912 11.657-2.703 17.531c1.402 6.812 9.062 16.901 21.55 26.47c12.49 9.567 29.242 18.77 46.753 26.087c15.609 6.522 31.748 11.435 46.058 14.19c-49.78-25.118-79.482-61.19-108.566-85.409c-1.548-1.595-2.387.034-3.092 1.131m58.914 86.797c.526 23.427-2.416 50.265-17.086 59.894c-11.128 7.306-33.235 1.34-38.41-10.925c-3.657-8.667 15.567-15.677 13.408-24.832c-1.718-7.287-11.033-14.374-18.375-12.912c-17.881 3.558-34.905 28.836-29.3 46.185c10.14 31.387 62.177 51.105 91.875 36.75c27.49-13.288 35.058-46.714 36.808-81.19c-12.704-3.13-25.983-7.579-38.92-12.97m-200.681 52.52a129 129 0 0 1-9.993 4.34l-8.67 77.603c1.22 8.802 15.819 12.647 30.385 12.81zm-100.65 4.519c-1.341 10.733-2.367 21.785-3.073 30.953c-1.545 20.225-2.483 41.562-2.496 51.49c18.869 11.927 54.798 4.533 53.105-2.005c-.656-27.278-6.002-49.806-12.58-73.717c-11.983-1.258-23.524-3.864-34.957-6.721z"/></symbol><symbol id="sil-ostrich" viewBox="0 0 512 512"><path  d="M412.5 22.17c-.6 0-1.2.1-1.7.1c-9 .72-15.4 5.89-16.2 8.96c-2.1 7.02-3.6 16.36-2.2 22.82s3.4 10.34 14.2 12.22c16.6 2.88 35.4-.64 51.8-6.43c13-4.61 24.2-10.62 31.3-15.14c-.4-.67-.8-1.27-1.4-1.78c-1.5-1.26-4.3-2.53-8.6-3.31c-8.7-1.57-22.2-.88-36-1.57l-4.3-.22l-2.5-3.5c-6.2-8.57-14.6-11.93-22.7-12.14h-1.7zm-14 60.61c-3.9 10.17-4.5 20.22-2.8 29.52c2.2 12.2 9.5 22.1 13.6 32.9c14 36.6.8 45.4-20.8 51.1c22.3 20 33.3 44.4 35 68.3c30-45.7 35.3-86.2 1.3-128.6c-6.7-8.3-9.9-18.2-11.4-26.8c-1.5-7.9-.8-15.35 3.7-23.91c-4.5-.11-9-.51-13.5-1.29c-1.8-.31-3.4-.72-5.1-1.22M108.4 126.9c-29.04-.2-53.3 25.3-56.66 60c10.56-10.7 25.02-17.7 46.11-17.2c-20.2 13.7-33.69 29.2-44.34 45.3c1.77 8.2 4.64 16.5 8.8 24.9c38.09-52.5 60.99-29.6 72.69.1c10.8-20 27.4-36 47-48.1c-21.4-46.4-49.2-64.8-73.6-65m180.2 55c-3.4 0-6.9 0-10.4.2c-12.4.5-25 2.2-37.3 5.1c-46.3 11-86.3 38-97.9 81.1c22.2 7.6 40.7 16.4 56.7 25.4c31.6 4.7 63.8 3.2 91.4-2.5c38.5-8 67-25.4 73.3-39.7l16.4 7.2c-11 25.4-44.7 41.6-86 50.1c-19 4-39.9 6-61.3 5.7c4.3 2.8 8.4 5.5 12.4 8.1c27.1 17.6 48.4 29.7 82.6 28c35.6-2.9 62.6-25.9 72.9-54.6c10.2-28.7 4.4-62.5-28.7-89.5c-19.2-15.8-50.6-24.4-84.1-24.6m-92.5 130.4c-4.4 8.8-8.1 18-10.6 26.2c-18.6 8.8-25 12.1-34.8 33.2c-35.5 15.3-50.4 38.2-61.34 71.5c-22.48 6.1-40.85 5-63.06-9.9c-12.14 16.1 6.05 30.4 22.64 36.9c21.16 8.3 50.31 2.8 55.46-7.2c16.5-32.5 31.1-54.7 61.7-77c13.1-1.4 22.4-2.4 34.3-18c21.6 2.2 39.3-8 55-18.1c7.8 17.9 23.5 41.8 20.7 58.9c-11.8 9.5-8 21.3-8.3 24.1c6 17.9 66.2-5.8 108 18c22.4 12.8 27.9 44.9 69.4 37.9c6.8-1.1 5.3-7.2.6-8.9c-37.4-13.7-27.6-21-44.8-48.1c-32-.8-59.3-5.2-95.4-16.1c-10.4-3 3.2-24.8 13.3-47c-33.4-.9-57.8-14.7-82.9-31c-12.4-8.1-25.2-16.8-39.9-25.4"/></symbol><symbol id="sil-palm-tree" viewBox="0 0 512 512"><path  d="M179.125 20.625c-28.052.12-54.046 5.813-66.72 9.78c0 0 114.968 19.51 124.532 98.876C149.573 3.32 54.28 155.657 54.28 155.657c19.868-5.212 76.76-20.682 114.75-14.156c25.992 4.465 51.33 28.03 50.236 27.733c-61.943 15.24-160.35 290.92-143.64 313.308c14.9 17.12 29.816 11.28 44.718 2.595c7.376-58.425 64.938-314.765 135.375-294.072c.01.003.02-.003.03 0c5.93 2.03 11.54 5.59 11.844 11.03c.58 10.363-6.11 27.3-4.53 39.063c3.662 27.296 9.007 36.79 16.78 46.313c18.564-10.435 36.326-48.057 40-67.564c16.634 7.284 43.373 24.155 65.187 86.813c11.404-58.716-5.042-105.03-59.03-125.595c23.38-10.105 125.142 41.03 137.563 69.53C475.648 199.264 390.167 136.378 319 139.72c13.644-3.56 28.638.6 42.906-9.907c19.146-14.098 41.474-26.24 62.28-39.282c-69.972-30.435-134.545-15.407-139.092 16.095c-3.573-69.916-57.83-86.204-105.97-86z"/></symbol><symbol id="sil-gorilla" viewBox="0 0 512 512"><path  d="M426.353 45.894c-8.969.095-19.91 4.567-31.41 9.43c-25.134 10.628-30.824 23.015-37.95 37.133c8.482 4.036 15.74 10.27 21.727 17.762c8.672 10.848 15.098 24.363 20.451 39.345c9.563 26.764 15.67 58.434 21.848 88.18l28.812 3.615s38.02-28.257 40.22-47.99c.65-5.84-9.27-14.992-9.27-14.992s5.937-6.614 4.83-11.323c-1.252-5.326-10.38-14.755-10.38-14.755s2.699-6.325.099-10.178c-3.468-5.14-18.98-8.572-18.98-8.572c-1.734-1.69-1.576-8.596-.006-10.287c0 0 14.776-12.887 10.903-17.684c-7.036-8.714-18.633-19.625-18.633-19.625c-.26-30.99-9.153-40.198-22.261-40.059m-102.4 58.86c-47.7.281-69.23 71.742-94.848 86.466c-43.488 23.83-109.511-11.463-145.203 22.045c-36.712 34.467-47.593 68.766-32.047 135.63L32.918 405.23c-7.483 37.268-14.09 30.759-9.463 60.877c38.011-.97 75.93-1.63 113.888 0l2.664-16.361l-26.021-16.215c2.142-13.369 6.033-31.024 20.459-51.959c14.426-20.934 21.727-36.387 21.836-48.713l17.998.158c-.155 17.545-8.409 34.347-18.783 50.23c47.235 15.354 119.223 7.67 173.01-47c-9.46-29.17-21.687-58.052-37.315-79.72l14.598-10.53c35.673 51.447 55.01 132.403 65.963 186.274c-6.292 2.041-11.578 3.946-17.47 6.602c.338 9.09 1.043 18.16 1.65 27.234c31.173-2.124 62.215-.722 93.612 0c17.246-68.035-10.26-117.857-38.76-187.59c-20.847-73.492-18.395-161.324-74.122-172.496c-4.437-.89-8.667-1.291-12.71-1.267zm10.12 249.748c-5.42 5.297-12.046 10.358-19.609 15.297c-5.077 3.315-10.599 6.528-16.472 9.584L284.37 442.32l-10.905 4.906l-1.091 18.881h65.113l-1.73-38.625l14.767-6.658c-4.007-18.973-9.748-42.998-16.451-66.322m-186.929 42.72l15.645 68.885h92.91l-1.543-18.615l-24.672-5.783l-4.56-38.51c-26.065 3.93-53.18 3.051-77.78-5.977"/></symbol></svg>
 <header class="top">
   <div class="wrap">
     <a class="brand" href="/" aria-label="EDU54 home">
@@ -406,9 +445,10 @@ footer { background: var(--night); padding: 8px; }
     </div>
   </section>
 
-  <section id="problem" class="field f-gold" aria-labelledby="gap-h">
+  <section id="problem" class="field f-gold pat pat-char" aria-labelledby="gap-h">
+    <svg class="sil elephant" viewBox="0 0 512 512" aria-hidden="true"><use href="#sil-elephant"/></svg>
     <div class="wrap">
-      <div class="rv">
+      <div class="rv center">
         <h2 id="gap-h" class="h2">AI for learning shouldn't depend on a connection, a vendor, or a monthly bill.</h2>
         <p class="lead">Most AI learning tools assume fast internet, a card on file and data that leaves the school. For many schools and campuses, none of that holds.</p>
       </div>
@@ -423,10 +463,10 @@ footer { background: var(--night); padding: 8px; }
   </section>
 
   <section class="f-night" aria-labelledby="verbs-h">
-    <div class="wrap verbs-head rv">
+    <div class="pat pat-gold"><svg class="sil baobab" viewBox="0 0 512 512" aria-hidden="true"><use href="#sil-baobab"/></svg><div class="wrap verbs-head rv center">
       <h2 id="verbs-h" class="h2">AI, curriculum, coding and exploration in one place.</h2>
       <p class="lead">Students open a browser and sign in. Everything runs on one box at the school. Five actions cover the whole experience.</p>
-    </div>
+    </div></div>
     <div class="sheets">
       <article class="sheet f-green" style="--k:0"><div class="txt"><h3>Ask</h3><div><p class="big" aria-hidden="true">Ask</p><p>A tutor that gives help grounded in the student's lessons, and hints (not answers) in homework.</p></div></div><div class="pic"><img src="shots/ask.jpg" width="2880" height="1800" alt="The AI tutor answering a student with a hint" loading="lazy"></div></article>
       <article class="sheet f-red" style="--k:1"><div class="txt"><h3>Learn</h3><div><p class="big" aria-hidden="true">Learn</p><p>Courses, lessons, assignments, and practice with weak topics, questions and flashcards.</p></div></div><div class="pic"><img src="shots/learn.jpg" width="2880" height="1800" alt="Courses, assignments and practice in the Learn screen" loading="lazy"></div></article>
@@ -436,9 +476,9 @@ footer { background: var(--night); padding: 8px; }
     </div>
   </section>
 
-  <section id="product" class="field f-night" aria-labelledby="product-h">
+  <section id="product" class="field f-night pat pat-gold" aria-labelledby="product-h">
     <div class="wrap">
-      <div class="rv">
+      <div class="rv center">
         <h2 id="product-h" class="h2">Real screens from the running product.</h2>
         <p class="lead">No mock-ups. These are screenshots of the demo you can open right now. All names, chats and numbers are sample data.</p>
       </div>
@@ -464,7 +504,7 @@ footer { background: var(--night); padding: 8px; }
   </section>
 
   <section id="editions" aria-labelledby="ed-h">
-    <div class="f-night"><div class="wrap ed-head rv">
+    <div class="f-night pat pat-gold"><div class="wrap ed-head rv center">
       <h2 id="ed-h" class="h2">Built for the classroom and the lecture hall.</h2>
       <p class="lead">Each box runs one edition, set up for the institution that orders it: its name, its classes and its people.</p>
     </div></div>
@@ -538,9 +578,9 @@ footer { background: var(--night); padding: 8px; }
     </a>
   </section>
 
-  <section class="field f-night" aria-labelledby="how-h">
+  <section class="field f-night pat pat-gold" aria-labelledby="how-h">
     <div class="wrap">
-      <div class="rv"><h2 id="how-h" class="h2">One box. Many devices. No cloud in the loop.</h2></div>
+      <div class="rv center"><h2 id="how-h" class="h2">One box. Many devices. No cloud in the loop.</h2></div>
       <ol class="bar rv" style="list-style:none;padding:0">
         <li style="--g:2"><div class="seg" style="--c:var(--gold)"><h3>Plug it in at school</h3></div><p>The box joins the school network and serves the whole class.</p></li>
         <li style="--g:3"><div class="seg" style="--c:var(--blue)"><h3>Open a browser</h3></div><p>Students and teachers use the laptops, tablets and phones they already have.</p></li>
@@ -592,7 +632,7 @@ footer { background: var(--night); padding: 8px; }
     </div>
   </section>
 
-  <section class="field f-night" aria-label="What every box promises" style="padding-block:clamp(64px,8vw,120px)">
+  <section class="field f-night pat pat-gold" aria-label="What every box promises" style="padding-block:clamp(64px,8vw,120px)">
     <div class="wrap promises rv">
       <div><strong>Runs locally</strong><span>Your data stays on your premises.</span></div>
       <div><strong>Shared by many students</strong><span>Designed for classrooms and campuses.</span></div>
@@ -618,7 +658,7 @@ footer { background: var(--night); padding: 8px; }
   </section>
 
   <section id="faq" aria-labelledby="faq-h">
-    <div class="faq-head"><div class="wrap rv">
+    <div class="faq-head pat pat-char"><div class="wrap rv">
       <h2 id="faq-h">Questions schools ask.</h2>
       <p>What heads, owners and bursars ask before they buy.</p>
     </div></div>
@@ -640,7 +680,8 @@ footer { background: var(--night); padding: 8px; }
     </div>
   </section>
 
-  <section class="closing" aria-labelledby="close-h">
+  <section class="closing pat pat-char" aria-labelledby="close-h">
+    <div class="savanna" aria-hidden="true"><div class="herd"><svg class="" viewBox="0 0 512 512" aria-hidden="true"><use href="#sil-baobab"/></svg><svg class="flip" viewBox="0 0 512 512" aria-hidden="true"><use href="#sil-elephant"/></svg><svg class="s flip" viewBox="0 0 512 512" aria-hidden="true"><use href="#sil-ostrich"/></svg><svg class="" viewBox="0 0 512 512" aria-hidden="true"><use href="#sil-palm-tree"/></svg><svg class="s flip" viewBox="0 0 512 512" aria-hidden="true"><use href="#sil-gorilla"/></svg><svg class="s flip" viewBox="0 0 512 512" aria-hidden="true"><use href="#sil-elephant"/></svg><svg class="" viewBox="0 0 512 512" aria-hidden="true"><use href="#sil-baobab"/></svg><svg class="flip" viewBox="0 0 512 512" aria-hidden="true"><use href="#sil-elephant"/></svg><svg class="s flip" viewBox="0 0 512 512" aria-hidden="true"><use href="#sil-ostrich"/></svg><svg class="" viewBox="0 0 512 512" aria-hidden="true"><use href="#sil-palm-tree"/></svg><svg class="s flip" viewBox="0 0 512 512" aria-hidden="true"><use href="#sil-gorilla"/></svg><svg class="s flip" viewBox="0 0 512 512" aria-hidden="true"><use href="#sil-elephant"/></svg></div></div>
     <div class="wrap rv"><h2 id="close-h">Bring local AI to the places that need it.</h2></div>
     <div class="wrap row rv">
       <p>One box at the school. Many devices. No cloud in the loop. See it working with sample data.</p>
@@ -654,7 +695,7 @@ footer { background: var(--night); padding: 8px; }
 
 <footer>
   <div class="ft">
-    <div class="st"><p>One box at the school. Many devices. No cloud in the loop.</p><p>© 2026 EDU54. Built on Umanah Institute LabOS. Screens show sample data.</p></div>
+    <div class="st"><p>One box at the school. Many devices. No cloud in the loop.</p><p>© 2026 EDU54. Built on Umanah Institute LabOS. Screens show sample data. Animal and tree silhouettes by <a href="https://game-icons.net/" style="color:inherit">Game Icons</a>, CC BY 3.0.</p></div>
     <nav aria-label="Footer"><a href="#problem">Why</a><a href="#product">Product</a><a href="#editions">Editions</a><a href="#safety">Safety</a><a href="#faq">Questions</a><a data-edition="k12" href="https://k12.edu54.com/">K-12 demo</a><a data-edition="university" href="https://uni.edu54.com/">University demo</a><a href="/discover/">Discovery Lab</a></nav>
     <nav class="legal" aria-label="Legal"><a href="/privacy/">Privacy</a><a href="/terms/">Terms</a><a href="/data-protection/">Data protection</a></nav>
     <div class="word" aria-hidden="true">EDU54</div>
@@ -693,6 +734,18 @@ document.getElementById("atlas").addEventListener("pointerleave", () => show(nul
 if (!matchMedia("(prefers-reduced-motion: reduce)").matches) {
   setTimeout(() => { if (cur === null && !tour) { let n = 0; const order = countries.slice().sort(() => Math.random() - 0.5);
     tour = setInterval(() => { show(order[n++ % order.length]); }, 1800); } }, 3200);
+}
+
+// Discovery Lab subjects: rise in turn, lift under the pointer, and on touch screens light up one after another.
+const labs = [...document.querySelectorAll(".labs li")];
+labs.forEach((li, j) => li.style.setProperty("--j", j));
+if (!matchMedia("(hover: hover)").matches && !matchMedia("(prefers-reduced-motion: reduce)").matches && labs.length) {
+  let n = 0, timer = null;
+  const lab = document.querySelector(".labs");
+  new IntersectionObserver(([e]) => {
+    clearInterval(timer);
+    if (e.isIntersecting) timer = setInterval(() => { labs.forEach((l) => l.classList.remove("lit")); labs[n++ % labs.length].classList.add("lit"); }, 1100);
+  }).observe(lab);
 }
 
 // Screens gallery: tabs swap the screenshot with a short cross-fade (arrow keys move between tabs).
