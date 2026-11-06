@@ -255,18 +255,28 @@ p { margin: 0; text-wrap: pretty; }
 @media (max-width: 560px) { .ed .open { width: 100%; } .ed .labs { display: block; }
 .labs { list-style: none; padding: 0; font-size: 9vw; } }
 
-/* EDU54 Build: gold field, the twelve tracks as chips */
-.ed.build .count { margin: 0 0 18px; font-size: clamp(18px, 1.3vw, 21px); font-weight: 500; }
+/* EDU54 Workbench: gold field, the headline of the lessons' own site, the cube, the twelve tracks as chips */
+.ed.build .build-head { text-align: center; }
+.ed.build .build-h { font-size: clamp(40px, 7.6vw, 132px); line-height: .92; letter-spacing: -0.055em; margin: 22px 0 26px; }
+.ed.build .build-h span { display: block; white-space: nowrap; }
+.ed.build .build-h span + span { color: #fff; text-shadow: 0 2px 0 rgb(20 18 16 / .12); }
+.ed.build .build-lede { max-width: 46ch; margin: 0 auto; font-size: clamp(18px, 1.5vw, 24px); font-weight: 500; text-wrap: balance; }
+.ed.build .in-grid { margin-top: clamp(32px, 4vw, 64px); }
+.ed.build .cube { display: block; width: 100%; max-width: 640px; height: auto; margin-inline: auto; transition: scale 1.2s var(--ease), rotate 1.2s var(--ease); }
+@media (hover: hover) and (pointer: fine) { .ed.build:hover .cube { scale: 1.03; rotate: -1deg; } }
+.ed.build .count { margin: 0 0 8px; font-size: clamp(18px, 1.3vw, 21px); font-weight: 500; }
 .ed.build .count strong { display: block; font-size: clamp(72px, 9vw, 150px); line-height: .9; font-weight: 600; letter-spacing: -0.05em; margin-bottom: 6px; }
-.ed.build h3 { margin-bottom: 18px; }
+.ed.build ul { margin-top: 20px; }
 .ed.build li::before { background: var(--char); }
 .ed.build .shot { background: var(--char); }
-.tracks { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 6px; }
-.tracks span { display: inline-flex; align-items: center; gap: 10px; padding: 12px 16px; font-size: 16px; font-weight: 500; background: var(--char); color: #fff; }
+.tracks { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 28px; }
+.tracks span { display: inline-flex; align-items: center; gap: 10px; padding: 10px 14px; font-size: 15px; font-weight: 500; background: var(--char); color: #fff; }
 .tracks span::before { content: ""; width: 10px; height: 10px; border-radius: 50%; background: var(--c); }
-.tracks-note { margin-top: 14px; font-size: 16px; font-weight: 500; }
+.build-lesson { margin: clamp(48px, 6vw, 96px) auto 0; max-width: 1080px; }
+.tracks-note { margin-top: 14px; font-size: 16px; font-weight: 500; text-align: center; }
 .sil.ed-sil.build-sil { color: rgb(20 18 16 / .08); }
-@media (max-width: 900px) { .tracks { justify-content: center; } .tracks-note { text-align: center; } }
+@media (max-width: 900px) { .tracks { justify-content: center; } .ed.build .cube { max-width: 420px; } }
+@media (max-width: 560px) { .ed.build .build-h { font-size: calc((100vw - 2 * var(--pad)) * 0.105); } }
 
 /* ---------------------------------------------------------------- how it works: one bar */
 .bar { display: flex; gap: 6px; margin-top: 64px; }
@@ -503,7 +513,7 @@ footer { background: var(--night); padding: 8px; }
       EDU54
     </a>
     <nav class="links" aria-label="Main">
-      <a href="#problem">Why</a><a href="#product">Product</a><a href="#editions">Editions</a><a href="#discovery">Discovery Lab</a><a href="#build">Build</a><a href="#safety">Safety</a><a href="#faq">Questions</a>
+      <a href="#problem">Why</a><a href="#product">Product</a><a href="#editions">Editions</a><a href="#discovery">Discovery Lab</a><a href="#workbench">Workbench</a><a href="#safety">Safety</a><a href="#faq">Questions</a>
       <a class="demo" href="#editions">Try the demo</a>
     </nav>
   </div>
@@ -662,24 +672,32 @@ footer { background: var(--night); padding: 8px; }
         </div>
       </div>
     </div>
-    <div class="ed build f-gold pat pat-char" id="build"><svg class="sil ed-sil build-sil" viewBox="0 0 512 512" aria-hidden="true"><use href="#sil-chameleon"/></svg>
-      <div class="wrap in-grid">
-        <div class="rv">
-          <span class="kicker">Coming soon to every EDU54 box</span>
-          <h3>EDU54 Build</h3>
-          <p class="count"><strong>650+</strong>hands-on AI lessons</p>
-          <p class="who">Learn how AI works by building it: from numbers that learn to neural networks, language models and agents, in interactive 3D. About ten minutes a lesson, on a phone or a laptop, with nothing to install.</p>
-          <ul>
-            <li>Turn it, break it, fix it: every lesson is hands-on</li>
-            <li>Narrated lessons, and certificates anyone can check</li>
-            <li>Told from Africa: one lesson translates English into Swahili</li>
-          </ul>
+    <a class="ed build f-gold pat pat-char" id="workbench" href="/workbench/"><svg class="sil ed-sil build-sil" viewBox="0 0 512 512" aria-hidden="true"><use href="#sil-chameleon"/></svg>
+      <div class="wrap">
+        <div class="build-head rv">
+          <span class="kicker">EDU54 Workbench. Now on every EDU54 box.</span>
+          <h3 class="build-h"><span>Build AI from scratch.</span><span>In 3D.</span></h3>
+          <p class="build-lede" data-lessons="667">667 hands-on lessons that open up how AI really works, from a single neuron to agents that use tools. Turn it, break it, fix it. Told from Africa, for everyone.</p>
         </div>
-        <div class="rv">
-          <div class="shot"><img src="shots/ai-build.jpg" width="2880" height="1800" alt="An EDU54 Build lesson: attention shown as a field of 3D towers while translating English into Swahili" loading="lazy"></div>
-          <div class="tracks" aria-label="Twelve tracks"><span style="--c:#F4B323">Numbers that learn</span><span style="--c:#E8A33D">Machine learning basics</span><span style="--c:#D62839">Neural networks</span><span style="--c:#8DB8F2">Seeing</span><span style="--c:#7FD3A4">Language</span><span style="--c:#B07CD0">Transformers</span><span style="--c:#E0644B">Making an LLM</span><span style="--c:#4FB287">Using LLMs</span><span style="--c:#7F95D6">Agents</span><span style="--c:#9CC95E">Running it safely</span><span style="--c:#C08A55">Build it yourself</span><span style="--c:#F4F4F4">Exam prep</span></div>
-          <p class="tracks-note">Twelve tracks, from your first neuron to exam prep.</p>
+        <div class="in-grid">
+          <div class="rv"><img class="cube" src="shots/build-cube.webp" width="1480" height="1398" alt="The twelve EDU54 Workbench tracks stacked as a 3D cube, from Numbers that learn to Exam prep" loading="lazy"></div>
+          <div class="rv">
+            <p class="count" data-lessons="667"><strong>667</strong>hands-on AI lessons in twelve tracks</p>
+            <ul>
+              <li>A 3D machine in every lesson: turn it, break it on purpose, then fix it</li>
+              <li>Narrated, about ten minutes a lesson, on a phone or a laptop</li>
+              <li>In K-12 and University, saved to each learner's account, with a certificate for every track</li>
+            </ul>
+            <div class="tracks" aria-label="Twelve tracks"><span style="--c:#F4B323">Numbers that learn</span><span style="--c:#E8A33D">Machine learning basics</span><span style="--c:#D62839">Neural networks</span><span style="--c:#8DB8F2">Seeing</span><span style="--c:#7FD3A4">Language</span><span style="--c:#B07CD0">Transformers</span><span style="--c:#E0644B">Making an LLM</span><span style="--c:#4FB287">Using LLMs</span><span style="--c:#7F95D6">Agents</span><span style="--c:#9CC95E">Running it safely</span><span style="--c:#C08A55">Build it yourself</span><span style="--c:#F4F4F4">Exam prep</span></div>
+            <span class="btn dark open">Start building <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+          </div>
         </div>
+        <div class="build-lesson rv">
+          <div class="shot"><img src="shots/ai-build.jpg" width="2880" height="1800" alt="An EDU54 Workbench lesson: attention shown as a field of 3D towers while translating English into Swahili" loading="lazy"></div>
+          <p class="tracks-note">Attention, translating English into Swahili. One of 667 lessons.</p>
+        </div>
+      </div>
+    </a>
       </div>
     </div>
   </section>
@@ -803,7 +821,7 @@ footer { background: var(--night); padding: 8px; }
 <footer>
   <div class="ft">
     <div class="st"><p>One box at the school. Many devices. No cloud in the loop.</p><p>© 2026 EDU54. Built on Umanah Institute LabOS. Screens show sample data. Animal and tree silhouettes by <a href="https://game-icons.net/" style="color:inherit">Game Icons</a>, CC BY 3.0.</p></div>
-    <nav aria-label="Footer"><a href="#problem">Why</a><a href="#product">Product</a><a href="#editions">Editions</a><a href="#safety">Safety</a><a href="#faq">Questions</a><a data-edition="k12" href="https://k12.edu54.com/">K-12 demo</a><a data-edition="university" href="https://uni.edu54.com/">University demo</a><a href="/discover/">Discovery Lab</a></nav>
+    <nav aria-label="Footer"><a href="#problem">Why</a><a href="#product">Product</a><a href="#editions">Editions</a><a href="#safety">Safety</a><a href="#faq">Questions</a><a data-edition="k12" href="https://k12.edu54.com/">K-12 demo</a><a data-edition="university" href="https://uni.edu54.com/">University demo</a><a href="/discover/">Discovery Lab</a><a href="/workbench/">EDU54 Workbench</a></nav>
     <nav class="legal" aria-label="Legal"><a href="/privacy/">Privacy</a><a href="/terms/">Terms</a><a href="/data-protection/">Data protection</a></nav>
     <div class="word" aria-hidden="true">EDU54</div>
     <a class="go" data-edition="k12" href="https://k12.edu54.com/">Try the K-12 demo<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" aria-hidden="true"><path d="M7 17L17 7M8 7h9v9"/></svg></a>

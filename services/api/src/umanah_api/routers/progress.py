@@ -31,7 +31,9 @@ def progress_me(ctx: Ctx = Depends(current), db: Session = Depends(get_db)):
     from ..models import ExerciseProgress
     practice = [{"node_id": e.node_id, "title": e.title, "mastered": bool(e.mastered_at), "correct": e.correct, "attempts": e.attempts, "updated_at": e.updated_at.isoformat()}
                 for e in db.scalars(select(ExerciseProgress).where(ExerciseProgress.user_id == ctx.user.id).order_by(ExerciseProgress.updated_at.desc()).limit(50))]
+    from .. import ai_build
     return {"level": level_info(xp), "streak": streak_days(db, ctx.user.id), "courses": courses, "projects": projects, "practice": practice,
+            "ai_build": {**ai_build.summary(db, ctx.user.id), "name": ctx.user.display_name},
             "badges": [{**b, "earned": b["id"] in earned, "awarded_at": earned[b["id"]].isoformat() if b["id"] in earned else None} for b in gamification()["badges"]]}
 
 

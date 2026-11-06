@@ -361,3 +361,12 @@ class ExerciseProgress(Base):
     correct: Mapped[int] = mapped_column(Integer, default=0)
     mastered_at: Mapped[datetime | None] = mapped_column(DateTime(timezone=True), nullable=True)
     updated_at: Mapped[datetime] = mapped_column(DateTime(timezone=True), default=now)
+
+
+class AiBuildProgress(Base):
+    """EDU54 Workbench (docs/edu54-build): one row per 3D AI lesson a learner has finished. Lessons are static pages; their
+    slugs come from content/edu54-build/catalog.json."""
+    __tablename__ = "ai_build_progress"
+    user_id: Mapped[int] = mapped_column(ForeignKey("users.id"), primary_key=True)
+    lesson: Mapped[str] = mapped_column(String(80), primary_key=True)
+    done_at: Mapped[datetime] = mapped_column(DateTime(timezone=True), default=now)

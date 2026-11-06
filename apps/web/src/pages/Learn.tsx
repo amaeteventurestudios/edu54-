@@ -15,6 +15,7 @@ import { bandOf, contentBands, courseFits, sayAloud } from "@/lib/bands";
 import { useUser } from "@/lib/session";
 import { ownCourses, productName } from "@/lib/brand";
 import { GradeSubjects, useK12 } from "@/features/GradeCourses";
+import { AiBuildCard } from "@/features/AiBuildCard";
 import { BookOpenText, Calculator, Sparkles, Volume2 } from "lucide-react";
 
 const Practice = lazy(() => import("@/pages/Revision"));
@@ -84,6 +85,7 @@ export default function Learn() {
   return (
     <div className="mx-auto w-full max-w-[1440px]">
       <PageHeader title="Learn" subtitle="Your courses, assignments, homework and practice, all in one place." />
+      <AiBuildCard band={band} className="mb-6" />
       <Tabs value={tab} onValueChange={setTab}>
         <TabsList className="mb-6 h-auto w-full justify-start gap-0 overflow-x-auto rounded-none border-b border-border bg-transparent p-0">
           {TABS.map(({ v, label, icon: I }) => (

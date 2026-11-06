@@ -11,6 +11,7 @@ import { useContinue } from "@/lib/queries";
 import { useUser } from "@/lib/session";
 import { cn } from "@/lib/utils";
 import { stagger, useFirstVisit, useHoverSay } from "@/lib/motion";
+import { AiBuildCard } from "@/features/AiBuildCard";
 
 // Grade-aware Student Home (owner, 2026-09-30): one platform, four learner experiences chosen by the class level:
 // Discover (K-2), Explore (3-5), Build (6-8), Launch (9-12). Staff see the same screens through "View as" (preview).
@@ -180,6 +181,7 @@ function BuildHome({ l, first, uni }: { l: Learner; first: string; uni: boolean 
       <div className="mb-6"><h1 className="text-[36px] leading-tight md:text-[44px]">Welcome back, {l.preview ? "learner" : first}</h1><LearnerLine l={l} /><Stats l={l} /></div>
       <div className="mb-5"><PathCard l={l} /></div>
       <Cards uni={uni} />
+      <AiBuildCard band={l.band?.id ?? null} className="mt-4" />
       <hr className="my-6 border-border" />
       <LowerHalf l={l} forGroup={l.level || "you"} />
       <div className="mt-4"><Skills l={l} /></div>
@@ -195,6 +197,7 @@ function LaunchHome({ l, first }: { l: Learner; first: string }) {
       <div className="mb-6"><h1 className="text-[36px] leading-tight md:text-[44px]">Welcome back, {l.preview ? "learner" : first}</h1><LearnerLine l={l} /><Stats l={l} /></div>
       <div className="mb-5"><PathCard l={l} title="Your Pathway" /></div>
       <Cards />
+      <AiBuildCard band={l.band?.id ?? null} className="mt-4" />
       <hr className="my-6 border-border" />
       <LowerHalf l={l} forGroup={l.level} projectsLabel="Portfolio" />
       <div className="mt-4 grid gap-4 lg:grid-cols-[2fr_1fr]">

@@ -60,6 +60,7 @@ interface StudentDetail {
   practice?: { title: string; mastered: boolean; correct: number; attempts: number }[];
   extra_bands?: Band[]; content_bands?: Band[];
   projects?: { id: number; title: string; category: string; status: string; updated_at: string; submitted_at: string | null; notes: string | null }[];
+  ai_build?: { done: number; total: number; tracks: { n: number; title: string; size: number; live: number; done: number; certified: boolean }[] };
 }
 
 export function TeacherStudent() {
@@ -105,6 +106,12 @@ export function TeacherStudent() {
         <h2 className="mb-2 text-[20px]">Library practice</h2>
         {!(s.practice ?? []).length ? <p className="text-sm text-muted-foreground">No School Library practice yet.</p> : (
           <ul className="divide-y divide-border">{s.practice!.map((x) => <li key={x.title} className="flex items-center gap-3 py-2.5 text-[15px]"><span className="flex-1 text-primary">{x.title}</span><span className="text-sm text-muted-foreground">{x.correct} of {x.attempts} right</span><Pill tone={x.mastered ? "green" : "blue"}>{x.mastered ? "Mastered" : "Practising"}</Pill></li>)}</ul>)}
+      </section>}
+      {useBrand().brand.id === "edu54" && s.ai_build && s.ai_build.total > 0 && <section aria-label="EDU54 Workbench" className="mt-5 rounded-xl border border-border bg-white p-5 card-soft">
+        <h2 className="text-[20px]">EDU54 Workbench</h2>
+        <p className="mb-3 text-sm text-muted-foreground">{s.ai_build.done} of {s.ai_build.total} 3D AI lessons finished. Read only: learners choose these lessons themselves.</p>
+        {s.ai_build.done > 0 && <ul className="grid gap-x-6 gap-y-2 sm:grid-cols-2">{s.ai_build.tracks.filter((x) => x.done > 0).map((x) => (
+          <li key={x.n} className="flex items-center gap-3 text-[14.5px]"><span className="min-w-0 flex-1 truncate text-primary">{x.title}</span><span className="shrink-0 text-sm text-muted-foreground">{x.done} of {x.live}</span>{x.certified && <Pill tone="green">Certificate</Pill>}</li>))}</ul>}
       </section>}
       {s.badges.length > 0 && <p className="mt-4 flex items-center gap-2 text-sm text-muted-foreground"><CheckCircle2 className="h-4 w-4 text-okay" />{s.badges.length} badges earned</p>}
     </div>

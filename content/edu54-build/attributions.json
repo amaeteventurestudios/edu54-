@@ -1,0 +1,675 @@
+{
+ "note": "Credits for EDU54 Workbench (the 3D AI lessons). Every license was checked at its source on checked_on. Shown on the Attributions page.",
+ "items": [
+  {
+   "id": "edu54-build-course",
+   "title": "AI Engineering from Scratch",
+   "kind": "EDU54 Workbench",
+   "edition": "both",
+   "license": "MIT License",
+   "attribution": "Rohit Ghumare and contributors. The AI tracks and Exam prep of EDU54 Workbench follow this course, rewritten in our own words; code on lesson pages is adapted from it.",
+   "source_url": "https://github.com/rohitg00/ai-engineering-from-scratch",
+   "checked_on": "2026-11-06"
+  },
+  {
+   "id": "edu54-build-threejs",
+   "title": "Three.js r160",
+   "kind": "EDU54 Workbench",
+   "edition": "both",
+   "license": "MIT License",
+   "attribution": "three.js authors. Draws the 3D machines in every EDU54 Workbench lesson, served from this device.",
+   "source_url": "https://github.com/mrdoob/three.js",
+   "checked_on": "2026-11-06"
+  },
+  {
+   "id": "edu54-build-kokoro",
+   "title": "Kokoro-82M (voice Heart)",
+   "kind": "EDU54 Workbench",
+   "edition": "both",
+   "license": "Apache License 2.0",
+   "attribution": "hexgrad. The lesson narration was recorded once with this open voice model; the recordings are stored on this device.",
+   "source_url": "https://huggingface.co/hexgrad/Kokoro-82M",
+   "checked_on": "2026-11-06"
+  },
+  {
+   "id": "edu54-build-font-bricolage",
+   "title": "Bricolage Grotesque",
+   "kind": "EDU54 Workbench",
+   "edition": "both",
+   "license": "SIL Open Font License 1.1",
+   "attribution": "The Bricolage Grotesque Project Authors. Lesson headings.",
+   "source_url": "https://github.com/ateliertriay/bricolage",
+   "checked_on": "2026-11-06"
+  },
+  {
+   "id": "edu54-build-font-instrument",
+   "title": "Instrument Sans",
+   "kind": "EDU54 Workbench",
+   "edition": "both",
+   "license": "SIL Open Font License 1.1",
+   "attribution": "The Instrument Sans Project Authors. Lesson text.",
+   "source_url": "https://github.com/Instrument/instrument-sans",
+   "checked_on": "2026-11-06"
+  },
+  {
+   "id": "edu54-build-font-jetbrains",
+   "title": "JetBrains Mono",
+   "kind": "EDU54 Workbench",
+   "edition": "both",
+   "license": "SIL Open Font License 1.1",
+   "attribution": "The JetBrains Mono Project Authors. Code on lesson pages.",
+   "source_url": "https://github.com/JetBrains/JetBrainsMono",
+   "checked_on": "2026-11-06"
+  },
+  {
+   "id": "edu54-build-src-building-your-own-kafka-like-system-from-scratch",
+   "title": "Building Your Own Kafka-like System From Scratch",
+   "kind": "EDU54 Workbench",
+   "edition": "both",
+   "license": "MIT License",
+   "attribution": "buildthingsuseful. Used by the EDU54 Workbench lesson build-a-message-log, written in our own words.",
+   "source_url": "https://github.com/buildthingsuseful/build-your-own-kafka",
+   "checked_on": "2026-11-06"
+  },
+  {
+   "id": "edu54-build-src-how-opengl-works-software-rendering-in-500-lines-of-code",
+   "title": "How OpenGL works: software rendering in 500 lines of code",
+   "kind": "EDU54 Workbench",
+   "edition": "both",
+   "license": "zlib-style permissive license (LICENSE.txt in the repository)",
+   "attribution": "Dmitry V. Sokolov. Used by the EDU54 Workbench lesson build-a-software-renderer, written in our own words.",
+   "source_url": "https://github.com/ssloy/tinyrenderer/wiki",
+   "checked_on": "2026-11-06"
+  },
+  {
+   "id": "edu54-build-src-ray-tracing-in-one-weekend",
+   "title": "Ray Tracing in One Weekend",
+   "kind": "EDU54 Workbench",
+   "edition": "both",
+   "license": "CC0 1.0",
+   "attribution": "Peter Shirley, Trevor David Black and Steve Hollasch. Used by the EDU54 Workbench lesson build-a-ray-tracer, written in our own words.",
+   "source_url": "https://raytracing.github.io/books/RayTracingInOneWeekend.html",
+   "checked_on": "2026-11-06"
+  },
+  {
+   "id": "edu54-build-src-a-3d-modeller",
+   "title": "A 3D Modeller (in 500 Lines or Less)",
+   "kind": "EDU54 Workbench",
+   "edition": "both",
+   "license": "Text CC BY 3.0, code MIT License",
+   "attribution": "Copyright (c) Erick Dransch, 500 Lines or Less (aosabook.org). Used by the EDU54 Workbench lesson build-a-3d-modeller, written in our own words.",
+   "source_url": "https://aosabook.org/en/500L/a-3d-modeller.html",
+   "checked_on": "2026-11-06"
+  },
+  {
+   "id": "edu54-build-src-naivecoin",
+   "title": "naivecoin",
+   "kind": "EDU54 Workbench",
+   "edition": "both",
+   "license": "Apache License 2.0",
+   "attribution": "conradoqg. Used by the EDU54 Workbench lesson build-a-blockchain, written in our own words.",
+   "source_url": "https://github.com/conradoqg/naivecoin",
+   "checked_on": "2026-11-06"
+  },
+  {
+   "id": "edu54-build-src-savjeecoin",
+   "title": "SavjeeCoin",
+   "kind": "EDU54 Workbench",
+   "edition": "both",
+   "license": "MIT License",
+   "attribution": "SavjeeTutorials. Used by the EDU54 Workbench lessons build-a-blockchain, build-a-signed-ledger, written in our own words.",
+   "source_url": "https://github.com/SavjeeTutorials/SavjeeCoin",
+   "checked_on": "2026-11-06"
+  },
+  {
+   "id": "edu54-build-src-programming-blockchains-step-by-step",
+   "title": "Programming Blockchains Step-by-Step",
+   "kind": "EDU54 Workbench",
+   "edition": "both",
+   "license": "CC0 1.0",
+   "attribution": "yukimotopress. Used by the EDU54 Workbench lessons build-a-blockchain, build-a-proof-of-work, written in our own words.",
+   "source_url": "https://github.com/yukimotopress/programming-blockchains-step-by-step",
+   "checked_on": "2026-11-06"
+  },
+  {
+   "id": "edu54-build-src-naivecoinstake",
+   "title": "NaivecoinStake",
+   "kind": "EDU54 Workbench",
+   "edition": "both",
+   "license": "Apache License 2.0",
+   "attribution": "Its authors. Used by the EDU54 Workbench lessons build-a-blockchain, build-a-proof-of-stake, written in our own words.",
+   "source_url": "https://naivecoinstake.learn.uno/",
+   "checked_on": "2026-11-06"
+  },
+  {
+   "id": "edu54-build-src-command-line-apps-in-rust",
+   "title": "Command line apps in Rust",
+   "kind": "EDU54 Workbench",
+   "edition": "both",
+   "license": "MIT License",
+   "attribution": "Its authors. Used by the EDU54 Workbench lesson build-a-cli-tool, written in our own words.",
+   "source_url": "https://rust-cli.github.io/book/index.html",
+   "checked_on": "2026-11-06"
+  },
+  {
+   "id": "edu54-build-src-build-your-own-cli-app-in-zig-from-scratch",
+   "title": "Build Your Own CLI App in Zig from Scratch",
+   "kind": "EDU54 Workbench",
+   "edition": "both",
+   "license": "MIT License",
+   "attribution": "Its authors. Used by the EDU54 Workbench lessons build-a-cli-tool, build-a-flag-parser, written in our own words.",
+   "source_url": "https://rebuild-x.github.io/docs/#/./zig/terminal/cli",
+   "checked_on": "2026-11-06"
+  },
+  {
+   "id": "edu54-build-src-let-s-build-a-simple-database",
+   "title": "Let's Build a Simple Database",
+   "kind": "EDU54 Workbench",
+   "edition": "both",
+   "license": "MIT License",
+   "attribution": "Connor Stack. Used by the EDU54 Workbench lesson build-a-btree-database, written in our own words.",
+   "source_url": "https://cstack.github.io/db_tutorial/",
+   "checked_on": "2026-11-06"
+  },
+  {
+   "id": "edu54-build-src-an-archaeology-inspired-database",
+   "title": "An Archaeology-Inspired Database (in 500 Lines or Less)",
+   "kind": "EDU54 Workbench",
+   "edition": "both",
+   "license": "Text CC BY 3.0, code MIT License",
+   "attribution": "Copyright (c) Yoav Rubin, 500 Lines or Less (aosabook.org). Used by the EDU54 Workbench lesson build-a-time-travel-database, written in our own words.",
+   "source_url": "https://aosabook.org/en/500L/an-archaeology-inspired-database.html",
+   "checked_on": "2026-11-06"
+  },
+  {
+   "id": "edu54-build-src-dagoba-an-in-memory-graph-database",
+   "title": "Dagoba: an in-memory graph database (in 500 Lines or Less)",
+   "kind": "EDU54 Workbench",
+   "edition": "both",
+   "license": "Text CC BY 3.0, code MIT License",
+   "attribution": "Copyright (c) Dann Toliver, 500 Lines or Less (aosabook.org). Used by the EDU54 Workbench lesson build-a-graph-database, written in our own words.",
+   "source_url": "https://aosabook.org/en/500L/dagoba-an-in-memory-graph-database.html",
+   "checked_on": "2026-11-06"
+  },
+  {
+   "id": "edu54-build-src-rubber-docker",
+   "title": "rubber-docker",
+   "kind": "EDU54 Workbench",
+   "edition": "both",
+   "license": "MIT License",
+   "attribution": "Fewbytes. Used by the EDU54 Workbench lesson build-a-container, written in our own words.",
+   "source_url": "https://github.com/Fewbytes/rubber-docker",
+   "checked_on": "2026-11-06"
+  },
+  {
+   "id": "edu54-build-src-mocker",
+   "title": "mocker",
+   "kind": "EDU54 Workbench",
+   "edition": "both",
+   "license": "Apache License 2.0",
+   "attribution": "tonybaloney. Used by the EDU54 Workbench lessons build-a-container, build-a-layered-image, written in our own words.",
+   "source_url": "https://github.com/tonybaloney/mocker",
+   "checked_on": "2026-11-06"
+  },
+  {
+   "id": "edu54-build-src-0dmg-learning-rust-by-building-a-partial-game-boy-emulator",
+   "title": "0dmg: Learning Rust by building a partial Game Boy emulator",
+   "kind": "EDU54 Workbench",
+   "edition": "both",
+   "license": "MIT License",
+   "attribution": "Its authors. Used by the EDU54 Workbench lesson build-an-emulator, written in our own words.",
+   "source_url": "https://jeremybanks.github.io/0dmg/",
+   "checked_on": "2026-11-06"
+  },
+  {
+   "id": "edu54-build-src-write-your-own-virtual-machine",
+   "title": "Write your Own Virtual Machine",
+   "kind": "EDU54 Workbench",
+   "edition": "both",
+   "license": "Code MIT License (article CC BY-NC-SA 4.0, not reused)",
+   "attribution": "Its authors. Used by the EDU54 Workbench lessons build-an-emulator, build-a-register-vm, written in our own words.",
+   "source_url": "https://justinmeiners.github.io/lc3-vm/",
+   "checked_on": "2026-11-06"
+  },
+  {
+   "id": "edu54-build-src-didact-a-diy-guide-to-build-your-own-react",
+   "title": "Didact: a DIY guide to build your own React",
+   "kind": "EDU54 Workbench",
+   "edition": "both",
+   "license": "MIT License (package.json)",
+   "attribution": "hexacta. Used by the EDU54 Workbench lesson build-a-ui-framework, written in our own words.",
+   "source_url": "https://github.com/hexacta/didact",
+   "checked_on": "2026-11-06"
+  },
+  {
+   "id": "edu54-build-src-building-a-frontend-framework-from-scratch",
+   "title": "Building a frontend framework, from scratch",
+   "kind": "EDU54 Workbench",
+   "edition": "both",
+   "license": "MIT License",
+   "attribution": "Its authors. Used by the EDU54 Workbench lessons build-a-ui-framework, build-a-virtual-dom, written in our own words.",
+   "source_url": "https://mfrachet.github.io/create-frontend-framework/",
+   "checked_on": "2026-11-06"
+  },
+  {
+   "id": "edu54-build-src-build-your-own-vpn-virtual-switch",
+   "title": "Build your own VPN/Virtual Switch",
+   "kind": "EDU54 Workbench",
+   "edition": "both",
+   "license": "MIT License",
+   "attribution": "peiyuanix. Used by the EDU54 Workbench lesson build-a-virtual-switch, written in our own words.",
+   "source_url": "https://github.com/peiyuanix/build-your-own-zerotier",
+   "checked_on": "2026-11-06"
+  },
+  {
+   "id": "edu54-build-src-mini-arm-os-build-a-minimal-multi-tasking-kernel-for-arm-fro",
+   "title": "mini-arm-os: Build a minimal multi-tasking kernel for ARM from scratch",
+   "kind": "EDU54 Workbench",
+   "edition": "both",
+   "license": "BSD 2-Clause License",
+   "attribution": "jserv. Used by the EDU54 Workbench lesson build-a-multitasking-kernel, written in our own words.",
+   "source_url": "https://github.com/jserv/mini-arm-os",
+   "checked_on": "2026-11-06"
+  },
+  {
+   "id": "edu54-build-src-how-to-create-an-os-from-scratch",
+   "title": "How to create an OS from scratch",
+   "kind": "EDU54 Workbench",
+   "edition": "both",
+   "license": "BSD 3-Clause License",
+   "attribution": "cfenollosa. Used by the EDU54 Workbench lesson build-an-os-boot-paging, written in our own words.",
+   "source_url": "https://github.com/cfenollosa/os-tutorial",
+   "checked_on": "2026-11-06"
+  },
+  {
+   "id": "edu54-build-src-learning-operating-system-development-using-linux-kernel-and",
+   "title": "Learning operating system development using Linux kernel and Raspberry Pi",
+   "kind": "EDU54 Workbench",
+   "edition": "both",
+   "license": "MIT License",
+   "attribution": "s-matyukevich. Used by the EDU54 Workbench lessons build-an-os-boot-paging, build-a-pi-kernel, written in our own words.",
+   "source_url": "https://github.com/s-matyukevich/raspberry-pi-os",
+   "checked_on": "2026-11-06"
+  },
+  {
+   "id": "edu54-build-src-the-little-book-about-os-development",
+   "title": "The little book about OS development",
+   "kind": "EDU54 Workbench",
+   "edition": "both",
+   "license": "Code samples public domain (book text CC BY-NC-SA 3.0, not reused)",
+   "attribution": "Its authors. Used by the EDU54 Workbench lessons build-an-os-boot-paging, build-an-interrupt-table, written in our own words.",
+   "source_url": "https://littleosbook.github.io/",
+   "checked_on": "2026-11-06"
+  },
+  {
+   "id": "edu54-build-src-from-blinker-to-risc-v",
+   "title": "From Blinker to RISC-V",
+   "kind": "EDU54 Workbench",
+   "edition": "both",
+   "license": "BSD 3-Clause License",
+   "attribution": "Bruno Levy. Used by the EDU54 Workbench lesson build-a-riscv-cpu, written in our own words.",
+   "source_url": "https://github.com/BrunoLevy/learn-fpga/tree/master/FemtoRV/TUTORIALS/FROM_BLINKER_TO_RISCV",
+   "checked_on": "2026-11-06"
+  },
+  {
+   "id": "edu54-build-src-the-super-tiny-compiler",
+   "title": "The Super Tiny Compiler",
+   "kind": "EDU54 Workbench",
+   "edition": "both",
+   "license": "CC BY 4.0",
+   "attribution": "jamiebuilds. Used by the EDU54 Workbench lessons build-a-compiler, build-a-lisp-to-c-compiler, written in our own words.",
+   "source_url": "https://github.com/jamiebuilds/the-super-tiny-compiler",
+   "checked_on": "2026-11-06"
+  },
+  {
+   "id": "edu54-build-src-go-port",
+   "title": "Go port",
+   "kind": "EDU54 Workbench",
+   "edition": "both",
+   "license": "CC BY 4.0",
+   "attribution": "hazbo. Used by the EDU54 Workbench lesson build-a-compiler, written in our own words.",
+   "source_url": "https://github.com/hazbo/the-super-tiny-compiler",
+   "checked_on": "2026-11-06"
+  },
+  {
+   "id": "edu54-build-src-let-s-build-a-compiler",
+   "title": "Let's Build a Compiler",
+   "kind": "EDU54 Workbench",
+   "edition": "both",
+   "license": "MIT License (named in the repository LICENSE file)",
+   "attribution": "Its authors. Used by the EDU54 Workbench lessons build-a-compiler, build-a-stack-compiler, written in our own words.",
+   "source_url": "https://g-ford.github.io/cradle/",
+   "checked_on": "2026-11-06"
+  },
+  {
+   "id": "edu54-build-src-crafting-interpreters",
+   "title": "Crafting Interpreters",
+   "kind": "EDU54 Workbench",
+   "edition": "both",
+   "license": "Code MIT License (prose CC BY-NC-ND 4.0, not reused)",
+   "attribution": "Robert Nystrom. Used by the EDU54 Workbench lesson build-an-interpreter, written in our own words.",
+   "source_url": "http://www.craftinginterpreters.com/",
+   "checked_on": "2026-11-06"
+  },
+  {
+   "id": "edu54-build-src-the-super-tiny-interpreter",
+   "title": "The Super Tiny Interpreter",
+   "kind": "EDU54 Workbench",
+   "edition": "both",
+   "license": "MIT License",
+   "attribution": "keyanzhang. Used by the EDU54 Workbench lessons build-an-interpreter, build-a-closure-interpreter, written in our own words.",
+   "source_url": "https://github.com/keyanzhang/the-super-tiny-interpreter",
+   "checked_on": "2026-11-06"
+  },
+  {
+   "id": "edu54-build-src-a-python-interpreter-written-in-python",
+   "title": "A Python Interpreter Written in Python",
+   "kind": "EDU54 Workbench",
+   "edition": "both",
+   "license": "Text CC BY 3.0, code MIT License",
+   "attribution": "Copyright (c) Its authors, 500 Lines or Less (aosabook.org). Used by the EDU54 Workbench lesson build-an-interpreter, written in our own words.",
+   "source_url": "https://aosabook.org/en/500L/a-python-interpreter-written-in-python.html",
+   "checked_on": "2026-11-06"
+  },
+  {
+   "id": "edu54-build-src-jonesforth",
+   "title": "Jonesforth",
+   "kind": "EDU54 Workbench",
+   "edition": "both",
+   "license": "Public domain (release statement in the source)",
+   "attribution": "nornagon. Used by the EDU54 Workbench lessons build-an-interpreter, build-a-forth, written in our own words.",
+   "source_url": "https://github.com/nornagon/jonesforth/blob/master/jonesforth.S",
+   "checked_on": "2026-11-06"
+  },
+  {
+   "id": "edu54-build-src-writing-a-unix-shell",
+   "title": "Writing a UNIX Shell",
+   "kind": "EDU54 Workbench",
+   "edition": "both",
+   "license": "MIT License",
+   "attribution": "Indradhanush Gupta. Used by the EDU54 Workbench lesson build-a-shell, written in our own words.",
+   "source_url": "https://indradhanush.github.io/blog/writing-a-unix-shell-part-1/",
+   "checked_on": "2026-11-06"
+  },
+  {
+   "id": "edu54-build-src-a-template-engine",
+   "title": "A Template Engine (in 500 Lines or Less)",
+   "kind": "EDU54 Workbench",
+   "edition": "both",
+   "license": "Text CC BY 3.0, code MIT License",
+   "attribution": "Copyright (c) Ned Batchelder, 500 Lines or Less (aosabook.org). Used by the EDU54 Workbench lesson build-a-template-engine, written in our own words.",
+   "source_url": "https://aosabook.org/en/500L/a-template-engine.html",
+   "checked_on": "2026-11-06"
+  },
+  {
+   "id": "edu54-build-src-lets-build-express",
+   "title": "lets-build-express",
+   "kind": "EDU54 Workbench",
+   "edition": "both",
+   "license": "MIT License",
+   "attribution": "antoaravinth. Used by the EDU54 Workbench lesson build-a-web-server, written in our own words.",
+   "source_url": "https://github.com/antoaravinth/lets-build-express",
+   "checked_on": "2026-11-06"
+  },
+  {
+   "id": "edu54-build-src-a-simple-web-server",
+   "title": "A Simple Web Server",
+   "kind": "EDU54 Workbench",
+   "edition": "both",
+   "license": "Text CC BY 3.0, code MIT License",
+   "attribution": "Copyright (c) Greg Wilson, in 500 Lines or Less, 500 Lines or Less (aosabook.org). Used by the EDU54 Workbench lesson build-a-web-server, written in our own words.",
+   "source_url": "https://aosabook.org/en/500L/a-simple-web-server.html",
+   "checked_on": "2026-11-06"
+  },
+  {
+   "id": "edu54-build-src-the-same-origin-policy",
+   "title": "The Same-Origin Policy (in 500 Lines or Less)",
+   "kind": "EDU54 Workbench",
+   "edition": "both",
+   "license": "Text CC BY 3.0, code MIT License",
+   "attribution": "Copyright (c) Eunsuk Kang, Santiago Perez De Rosso and Daniel Jackson, 500 Lines or Less (aosabook.org). Used by the EDU54 Workbench lesson same-origin-policy, written in our own words.",
+   "source_url": "https://aosabook.org/en/500L/the-same-origin-policy.html",
+   "checked_on": "2026-11-06"
+  },
+  {
+   "id": "edu54-build-src-learn-how-to-write-a-hash-table-in-c",
+   "title": "Learn how to write a hash table in C",
+   "kind": "EDU54 Workbench",
+   "edition": "both",
+   "license": "MIT License",
+   "attribution": "James Routley. Used by the EDU54 Workbench lesson build-a-hash-table, written in our own words.",
+   "source_url": "https://github.com/jamesroutley/write-a-hash-table",
+   "checked_on": "2026-11-06"
+  },
+  {
+   "id": "edu54-build-src-video-encoding-from-scratch",
+   "title": "Video Encoding from Scratch",
+   "kind": "EDU54 Workbench",
+   "edition": "both",
+   "license": "Apache License 2.0",
+   "attribution": "Kevin Wang. Used by the EDU54 Workbench lesson build-a-video-codec, written in our own words.",
+   "source_url": "https://github.com/kevmo314/codec-from-scratch",
+   "checked_on": "2026-11-06"
+  },
+  {
+   "id": "edu54-build-src-minipack",
+   "title": "Minipack",
+   "kind": "EDU54 Workbench",
+   "edition": "both",
+   "license": "MIT License",
+   "attribution": "Ronen Amiel. Used by the EDU54 Workbench lesson build-a-module-bundler, written in our own words.",
+   "source_url": "https://github.com/ronami/minipack",
+   "checked_on": "2026-11-06"
+  },
+  {
+   "id": "edu54-build-src-build-your-own-cache",
+   "title": "Build Your Own Cache",
+   "kind": "EDU54 Workbench",
+   "edition": "both",
+   "license": "Apache License 2.0",
+   "attribution": "kezhenxu94. Used by the EDU54 Workbench lessons build-a-cache-cdn, build-a-cache-policies, written in our own words.",
+   "source_url": "https://github.com/kezhenxu94/cache-lite",
+   "checked_on": "2026-11-06"
+  },
+  {
+   "id": "edu54-build-src-building-a-cdn-from-scratch-to-learn-about-cdn",
+   "title": "Building a CDN from Scratch to Learn about CDN",
+   "kind": "EDU54 Workbench",
+   "edition": "both",
+   "license": "BSD 3-Clause License",
+   "attribution": "leandromoreira. Used by the EDU54 Workbench lesson build-a-cache-cdn, written in our own words.",
+   "source_url": "https://github.com/leandromoreira/cdn-up-and-running",
+   "checked_on": "2026-11-06"
+  },
+  {
+   "id": "edu54-build-src-a-continuous-integration-system",
+   "title": "A Continuous Integration System (in 500 Lines or Less)",
+   "kind": "EDU54 Workbench",
+   "edition": "both",
+   "license": "Text CC BY 3.0, code MIT License",
+   "attribution": "Copyright (c) Malini Das, 500 Lines or Less (aosabook.org). Used by the EDU54 Workbench lesson build-a-ci-system, written in our own words.",
+   "source_url": "https://aosabook.org/en/500L/a-continuous-integration-system.html",
+   "checked_on": "2026-11-06"
+  },
+  {
+   "id": "edu54-build-src-a-pedometer-in-the-real-world",
+   "title": "A Pedometer in the Real World (in 500 Lines or Less)",
+   "kind": "EDU54 Workbench",
+   "edition": "both",
+   "license": "Text CC BY 3.0, code MIT License",
+   "attribution": "Copyright (c) Dessy Daskalov, 500 Lines or Less (aosabook.org). Used by the EDU54 Workbench lesson build-a-pedometer, written in our own words.",
+   "source_url": "https://aosabook.org/en/500L/a-pedometer-in-the-real-world.html",
+   "checked_on": "2026-11-06"
+  },
+  {
+   "id": "edu54-build-src-building-a-dns-server-in-rust",
+   "title": "Building a DNS server in Rust",
+   "kind": "EDU54 Workbench",
+   "edition": "both",
+   "license": "MIT License",
+   "attribution": "Emil Hernvall. Used by the EDU54 Workbench lesson build-a-dns-resolver, written in our own words.",
+   "source_url": "https://github.com/EmilHernvall/dnsguide/blob/master/README.md",
+   "checked_on": "2026-11-06"
+  },
+  {
+   "id": "edu54-build-src-tiny-package-manager",
+   "title": "Tiny Package Manager",
+   "kind": "EDU54 Workbench",
+   "edition": "both",
+   "license": "MIT License",
+   "attribution": "Pig Fang. Used by the EDU54 Workbench lesson build-a-package-manager, written in our own words.",
+   "source_url": "https://github.com/g-plane/tiny-package-manager",
+   "checked_on": "2026-11-06"
+  },
+  {
+   "id": "edu54-build-src-how-to-implement-regular-expressions-in-functional-javascrip",
+   "title": "How to implement regular expressions in functional JavaScript using derivatives",
+   "kind": "EDU54 Workbench",
+   "edition": "both",
+   "license": "Code CC0 1.0",
+   "attribution": "David Kendal. Used by the EDU54 Workbench lesson build-a-regex-engine, written in our own words.",
+   "source_url": "http://dpk.io/dregs/toydregs",
+   "checked_on": "2026-11-06"
+  },
+  {
+   "id": "edu54-build-src-c-networking-create-a-tcp-chat-server-tcp-games-udp-pong-and",
+   "title": "C# Networking: Create a TCP chat server, TCP games, UDP Pong and more",
+   "kind": "EDU54 Workbench",
+   "edition": "both",
+   "license": "Code Unlicense",
+   "attribution": "Benjamin N. Summerton. Used by the EDU54 Workbench lesson build-a-network-game, written in our own words.",
+   "source_url": "https://16bpp.net/tutorials/csharp-networking",
+   "checked_on": "2026-11-06"
+  },
+  {
+   "id": "edu54-build-src-dbdb-dog-bed-database",
+   "title": "DBDB: Dog Bed Database (in 500 Lines or Less)",
+   "kind": "EDU54 Workbench",
+   "edition": "both",
+   "license": "Text CC BY 3.0, code MIT License",
+   "attribution": "Copyright (c) Taavi Burns, 500 Lines or Less (aosabook.org). Used by the EDU54 Workbench lesson build-a-database, written in our own words.",
+   "source_url": "https://aosabook.org/en/500L/dbdb-dog-bed-database.html",
+   "checked_on": "2026-11-06"
+  },
+  {
+   "id": "edu54-build-src-a-python-interpreter-written-in-python-2",
+   "title": "A Python Interpreter Written in Python",
+   "kind": "EDU54 Workbench",
+   "edition": "both",
+   "license": "Text CC BY 3.0, code MIT License",
+   "attribution": "Copyright (c) Allison Kaptur, 500 Lines or Less (aosabook.org). Used by the EDU54 Workbench lesson build-a-bytecode-vm, written in our own words.",
+   "source_url": "https://aosabook.org/en/500L/a-python-interpreter-written-in-python.html",
+   "checked_on": "2026-11-06"
+  },
+  {
+   "id": "edu54-build-src-a-simple-web-server-2",
+   "title": "A Simple Web Server",
+   "kind": "EDU54 Workbench",
+   "edition": "both",
+   "license": "Text CC BY 3.0, code MIT License",
+   "attribution": "Copyright (c) Greg Wilson, 500 Lines or Less (aosabook.org). Used by the EDU54 Workbench lesson build-a-python-web-server, written in our own words.",
+   "source_url": "https://aosabook.org/en/500L/a-simple-web-server.html",
+   "checked_on": "2026-11-06"
+  },
+  {
+   "id": "edu54-build-src-llms-from-scratch",
+   "title": "LLMs-from-scratch",
+   "kind": "EDU54 Workbench",
+   "edition": "both",
+   "license": "Apache License 2.0",
+   "attribution": "Sebastian Raschka. Used by the EDU54 Workbench lesson build-an-llm, written in our own words.",
+   "source_url": "https://github.com/rasbt/LLMs-from-scratch",
+   "checked_on": "2026-11-06"
+  },
+  {
+   "id": "edu54-build-src-slowtorch",
+   "title": "SlowTorch",
+   "kind": "EDU54 Workbench",
+   "edition": "both",
+   "license": "MIT License",
+   "attribution": "xames3. Used by the EDU54 Workbench lesson build-a-tiny-torch, written in our own words.",
+   "source_url": "https://github.com/xames3/slowtorch",
+   "checked_on": "2026-11-06"
+  },
+  {
+   "id": "edu54-build-src-build-deep-learning-from-scratch",
+   "title": "Build Deep Learning From Scratch",
+   "kind": "EDU54 Workbench",
+   "edition": "both",
+   "license": "Unlicense",
+   "attribution": "roiamiel1. Used by the EDU54 Workbench lesson build-a-tensor-library, written in our own words.",
+   "source_url": "https://github.com/roiamiel1/Build-Deep-Learning-From-Scratch",
+   "checked_on": "2026-11-06"
+  },
+  {
+   "id": "edu54-build-src-optical-character-recognition-ocr",
+   "title": "Optical Character Recognition (OCR)",
+   "kind": "EDU54 Workbench",
+   "edition": "both",
+   "license": "Text CC BY 3.0, code MIT License",
+   "attribution": "Copyright (c) Marina Samuel, 500 Lines or Less (aosabook.org). Used by the EDU54 Workbench lesson build-an-ocr, written in our own words.",
+   "source_url": "https://aosabook.org/en/500L/optical-character-recognition-ocr.html",
+   "checked_on": "2026-11-06"
+  },
+  {
+   "id": "edu54-build-src-finding-important-words-in-text-using-tf-idf",
+   "title": "Finding Important Words in Text Using TF-IDF",
+   "kind": "EDU54 Workbench",
+   "edition": "both",
+   "license": "CC BY 4.0",
+   "attribution": "Steven Loria. Used by the EDU54 Workbench lesson build-a-tf-idf-search, written in our own words.",
+   "source_url": "https://stevenloria.com/tf-idf/",
+   "checked_on": "2026-11-06"
+  },
+  {
+   "id": "edu54-build-src-javascript-algorithms-and-data-structures",
+   "title": "JavaScript Algorithms and Data Structures",
+   "kind": "EDU54 Workbench",
+   "edition": "both",
+   "license": "MIT License",
+   "attribution": "Oleksii Trekhleb. Used by the EDU54 Workbench lesson build-an-algorithm-race, written in our own words.",
+   "source_url": "https://github.com/trekhleb/javascript-algorithms",
+   "checked_on": "2026-11-06"
+  },
+  {
+   "id": "edu54-build-src-write-your-own-mvc-from-scratch-in-php",
+   "title": "Write your own MVC from scratch in PHP",
+   "kind": "EDU54 Workbench",
+   "edition": "both",
+   "license": "CC0 1.0",
+   "attribution": "Its authors. Used by the EDU54 Workbench lesson build-an-mvc-framework, written in our own words.",
+   "source_url": "https://chaitya62.github.io/2018/04/29/Writing-your-own-MVC-from-Scratch-in-PHP.html",
+   "checked_on": "2026-11-06"
+  },
+  {
+   "id": "edu54-build-src-json-decoding-algorithm",
+   "title": "JSON Decoding Algorithm",
+   "kind": "EDU54 Workbench",
+   "edition": "both",
+   "license": "MIT License",
+   "attribution": "Henri Tuhola. Used by the EDU54 Workbench lesson build-a-json-decoder, written in our own words.",
+   "source_url": "https://github.com/cheery/json-algorithm",
+   "checked_on": "2026-11-06"
+  },
+  {
+   "id": "edu54-build-src-how-to-build-your-first-slack-bot-with-python",
+   "title": "How to Build Your First Slack Bot with Python",
+   "kind": "EDU54 Workbench",
+   "edition": "both",
+   "license": "Code MIT License",
+   "attribution": "Matt Makai. Used by the EDU54 Workbench lesson build-a-chat-bot, written in our own words.",
+   "source_url": "https://www.fullstackpython.com/blog/build-first-slack-bot-python.html",
+   "checked_on": "2026-11-06"
+  },
+  {
+   "id": "edu54-build-src-3d-game-development-with-lwjgl-3",
+   "title": "3D Game Development with LWJGL 3",
+   "kind": "EDU54 Workbench",
+   "edition": "both",
+   "license": "Code Apache License 2.0 (book text CC BY-SA 4.0, not reused)",
+   "attribution": "Antonio Hernández Bejarano. Used by the EDU54 Workbench lesson build-a-game-loop, written in our own words.",
+   "source_url": "https://lwjglgamedev.gitbooks.io/3d-game-development-with-lwjgl/content/",
+   "checked_on": "2026-11-06"
+  }
+ ]
+}

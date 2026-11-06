@@ -68,3 +68,10 @@ apps/web/test-results/
 docs/media/raw-sponsor/
 docs/media/raw-sponsor-audio/
 docs/media/sponsor-video.webm
+
+# EDU54 Workbench lessons, copied in by tools/content/sync-edu54-build.sh (about 300 MB)
+content/edu54-build/site/
+content/edu54-build/site.old/
+content/edu54-build/site.new/
+# The public EDU54 Workbench page (edu54.com/workbench/), made by tools/content/build-edu54-workbench-page.sh (about 300 MB)
+apps/site/workbench/
