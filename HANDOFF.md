@@ -1,5 +1,11 @@
 # HANDOFF — Umanah AI Lab (ai-node-01)
 
+## 2026-11-06 evening state (EDU54 Workbench: apps + public page; AI agent, cloud session)
+- Ported ashanti-labs PRs #4/#5 (Ashanti Build) as EDU54 Workbench. Docs: `docs/edu54-build/README.md`.
+- Generated, git-ignored: `content/edu54-build/site/` (in-app lessons, `tools/content/sync-edu54-build.sh`) and `apps/site/workbench/` (public page, `tools/content/build-edu54-workbench-page.sh`). Both need `BUILD_SRC` = a clone of amaeteventurestudios/build at 7a47c2a.
+- Deploy (Contabo): copy the in-app lessons to `${EDU54_ROOT}/apps/ai-build`, rebuild/restart the EDU54 api and web (migration 0011), copy `apps/site` incl. `workbench/` to `/srv/edu54/site/`. Back up DBs and site first.
+- Exact next action: deploy on Contabo.
+
 ## 2026-11-06 state (EDU54 site: Discovery Lab screenshot + EDU54 Build section; AI agent, cloud session)
 - Changed: `apps/site/index.html`, new `apps/site/shots/discover.jpg` and `apps/site/shots/ai-build.jpg`. See `docs/founder-review-log.md` 2026-11-06.
 - Deploy: copy `apps/site/index.html` and the two new shots into `/srv/edu54/site/` on Contabo (back up first). No restart needed.

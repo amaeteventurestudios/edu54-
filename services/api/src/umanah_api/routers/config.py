@@ -24,6 +24,10 @@ def attributions():
     reg = f.parent / "models.json" if f else None           # the model registry sits beside the catalog (models are not content)
     if reg and reg.exists():
         items += [{**m, "kind": "model"} for m in json.loads(reg.read_text(encoding="utf-8"))]
+    # EDU54 Workbench's credits ship with the code (content/edu54-build/attributions.json), checked at their sources
+    extra = get_settings().content_dir / "edu54-build" / "attributions.json"
+    if branding.brand().get("id") == "edu54" and extra.exists():
+        items += json.loads(extra.read_text(encoding="utf-8")).get("items", [])
     keep = ("id", "title", "kind", "edition", "license", "attribution", "source_url", "checked_on", "share_alike_pack")
     return {"product": branding.product_name(), "platformCredit": branding.brand().get("platformCredit", ""),
             "items": [{k: i.get(k) for k in keep if k in i} for i in items]}

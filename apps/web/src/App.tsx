@@ -81,6 +81,10 @@ const DiscoverySearch = lazy(() => import("@/pages/Discovery").then((m) => ({ de
 const DiscoveryLabPage = lazy(() => import("@/pages/Discovery").then((m) => ({ default: m.DiscoveryLabPage })));
 const DiscoveryJourney = lazy(() => import("@/pages/Discovery").then((m) => ({ default: m.DiscoveryJourney })));
 const DiscoveryExperiment = lazy(() => import("@/pages/DiscoveryExperiment"));
+// EDU54 Workbench: the 3D AI lessons, in their own frame like Discovery Lab (the lessons are static pages under /ai-build/lessons/)
+const AiBuildShell = lazy(() => import("@/pages/AiBuild").then((m) => ({ default: m.AiBuildShell })));
+const AiBuildHome = lazy(() => import("@/pages/AiBuild").then((m) => ({ default: m.AiBuildHome })));
+const AiBuildCertificate = lazy(() => import("@/pages/AiBuild").then((m) => ({ default: m.AiBuildCertificate })));
 
 export default function App() {
   const qc = useQueryClient();
@@ -99,6 +103,10 @@ export default function App() {
           <Route path="journey/:id" element={<DiscoveryJourney />} />
           <Route path=":labId" element={<DiscoveryLabPage />} />
           <Route path=":labId/:expId" element={<DiscoveryExperiment />} />
+        </Route>
+        <Route path="ai-build" element={<AiBuildShell />}>
+          <Route index element={<AiBuildHome />} />
+          <Route path="certificate/:track" element={<AiBuildCertificate />} />
         </Route>
         <Route element={<AppShell />}>
           <Route index element={<Landing />} />

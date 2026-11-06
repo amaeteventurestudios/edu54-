@@ -1,10 +1,11 @@
-import { Award, BookOpen, CheckCircle2, Code2, Flame, Hexagon, Loader2, Sprout, Trophy, Wrench, Lightbulb, Bug } from "lucide-react";
+import { Link } from "react-router-dom";
+import { ArrowRight, Box, Award, BookOpen, CheckCircle2, Code2, Flame, Hexagon, Loader2, Sprout, Trophy, Wrench, Lightbulb, Bug } from "lucide-react";
 import { Bar, PageHeader, Pill, Empty } from "@/components/common";
 import { Skeleton } from "@/components/ui/skeleton";
 import { nf } from "@/lib/format";
 import { useProgress } from "@/lib/queries";
 import { cn } from "@/lib/utils";
-import { productName } from "@/lib/brand";
+import { productName, useBrand } from "@/lib/brand";
 
 const BADGE_ICON: Record<string, React.ReactNode> = {
   "python-starter": <Code2 className="h-9 w-9 text-[#2b6cb0]" strokeWidth={1.4} />, "loop-master": <Code2 className="h-9 w-9 text-[#b8860b]" strokeWidth={1.4} />,
@@ -15,6 +16,7 @@ const BADGE_TINT = ["bg-[#eaf1fb]", "bg-[#f1eefc]", "bg-[#fcf4e2]", "bg-[#eaf5ee
 
 export default function Progress() {
   const p = useProgress();
+  const edu54 = useBrand().brand.id === "edu54";
   if (!p.data) return <Skeleton className="h-[500px] w-full" />;
   const d = p.data;
   const l = d.level;
@@ -59,6 +61,20 @@ export default function Progress() {
               <li key={x.node_id} className="flex items-center gap-3 py-3"><span className="flex-1 font-serif text-primary">{x.title}</span>
                 <span className="text-xs text-muted-foreground">{x.correct} of {x.attempts} right</span>
                 <Pill tone={x.mastered ? "green" : "blue"}>{x.mastered ? <><CheckCircle2 className="h-3.5 w-3.5" />Mastered</> : "Practising"}</Pill></li>))}</ul>)}
+        </section>}
+
+        {edu54 && d.ai_build && d.ai_build.total > 0 && <section className="rounded-xl border border-border bg-white p-5 card-soft lg:col-span-2" aria-label="EDU54 Workbench">
+          <div className="mb-3 flex flex-wrap items-center gap-3">
+            <span className="grid h-11 w-11 place-items-center rounded-lg text-white" style={{ background: "linear-gradient(135deg,#A4462A,#E3A72F)" }}><Box className="h-5 w-5" strokeWidth={1.6} /></span>
+            <div className="min-w-0 flex-1"><h2 className="text-[20px]">EDU54 Workbench</h2><p className="text-sm text-muted-foreground">{d.ai_build.done} of {d.ai_build.total} 3D AI lessons finished. Finish every lesson in a track to earn its certificate.</p></div>
+            <Link to="/ai-build" className="inline-flex items-center gap-1.5 text-sm font-medium text-primary hover:underline">Open EDU54 Workbench<ArrowRight className="h-4 w-4" /></Link>
+          </div>
+          <ul className="grid gap-x-8 gap-y-3 md:grid-cols-2">{d.ai_build.tracks.map((t) => (
+            <li key={t.n} className="flex items-center gap-3">
+              <div className="min-w-0 flex-1"><p className="truncate text-[15px] font-medium text-primary">{t.n}. {t.title}</p><Bar value={(100 * t.done) / Math.max(1, t.size)} className="mt-1.5" label={`${t.title} lessons finished`} /></div>
+              <span className="w-16 shrink-0 text-right text-sm text-muted-foreground">{t.done} of {t.size}</span>
+              {t.certified ? <Link to={`/ai-build/certificate/${t.slug}`} className="shrink-0"><Pill tone="green"><Award className="h-3.5 w-3.5" />Certificate</Pill></Link> : <span className="w-[92px] shrink-0" />}
+            </li>))}</ul>
         </section>}
 
         <section className="rounded-xl border border-border bg-white p-5 card-soft" aria-label="Projects">

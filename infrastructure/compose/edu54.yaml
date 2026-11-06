@@ -18,7 +18,8 @@ services:
       UMANAH_WEB_PORT: "${WEB_PORT:?}"
       UMANAH_API_UPSTREAM: "127.0.0.1:${API_PORT:?}"
     network_mode: host
-    volumes: ["${EDU54_ROOT:?}/apps/games:/srv/games:ro"]
+    # games: the offline coding games; ai-build: EDU54 Workbench's lessons (tools/content/sync-edu54-build.sh, about 300 MB)
+    volumes: ["${EDU54_ROOT:?}/apps/games:/srv/games:ro", "${EDU54_ROOT}/apps/ai-build:/srv/ai-build:ro"]
     mem_limit: 128m
 
   api:

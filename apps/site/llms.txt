@@ -13,6 +13,7 @@
 - K-12: Kindergarten to SSS 3 (Nigerian level names by default), with four learner experiences chosen by class level: Discover (Kindergarten to Primary 2), Explore (Primary 3 to 5), Build (Primary 6 to JSS 2), Launch (JSS 3 to SSS 3).
 - University: universities, polytechnics and colleges, Year 1 to Postgraduate, with a Lecturer Center and in-browser science and code tools (Python notebooks, circuit simulator, molecule viewer, 3D physics).
 - Discovery Lab (included with both editions): a science lab to explore on your own, with no class, teacher or grades. Thirteen labs; 14 experiments ready and 23 planned. Experiments run in the browser from the box and work offline; an AI Guide reads the experiment's numbers and goes through the same safety checks as the tutor. Students sign in with their K-12 or University account.
+- EDU54 Workbench (on every EDU54 box): build AI from scratch, in 3D. 667 hands-on lessons in twelve tracks, from a single neuron to agents that use tools, plus Build it yourself and Exam prep. Each lesson has a 3D machine to turn, break and fix, a narrated walkthrough, code and three check questions. Inside K-12 and University, progress is saved to the learner's account, with a certificate for each finished track. Public lessons: https://edu54.com/workbench/
 
 ## What students do
 Ask (AI tutor), Learn (courses, lessons, assignments, practice), Build (Python and coding projects), Explore (offline library and open textbooks), Progress (XP, levels, badges, projects).
@@ -25,6 +26,7 @@ Each box runs one edition and is configured for the ordering institution before 
 - K-12 demo (sample data): https://k12.edu54.com/
 - University demo (sample data): https://uni.edu54.com/
 - Discovery Lab: https://edu54.com/discover/
+- EDU54 Workbench: https://edu54.com/workbench/
 
 ## Notes
 - The online demos use made-up students and sample data.

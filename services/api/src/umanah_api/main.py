@@ -17,7 +17,7 @@ from . import __version__
 from .config import get_settings
 from .db import Base, engine, init_engine, session_scope
 from .models import Conversation, Message, now
-from .routers import admin, ai, build, discovery as discovery_router, config as config_router, curriculum, learner, lesson_builder, teacher_work, demo as demo_router, documents, assignments, auth, explore, learn, library, notifications, progress, revision, safety, system, teacher
+from .routers import admin, ai, ai_build as ai_build_router, build, discovery as discovery_router, config as config_router, curriculum, learner, lesson_builder, teacher_work, demo as demo_router, documents, assignments, auth, explore, learn, library, notifications, progress, revision, safety, system, teacher
 from .seed import seed
 
 
@@ -115,12 +115,18 @@ def create_app() -> FastAPI:
 
     from .demosite import DemoMiddleware
     app.add_middleware(DemoMiddleware)
-    for r in (config_router, learner, auth, learn, assignments, ai, safety, teacher, progress, system, explore, library, build, curriculum, documents, teacher_work, lesson_builder, admin, revision, notifications, demo_router, discovery_router):
+    for r in (config_router, learner, auth, learn, assignments, ai, safety, teacher, progress, system, explore, library, build, curriculum, documents, teacher_work, lesson_builder, admin, revision, notifications, demo_router, discovery_router, ai_build_router):
         app.include_router(r.router)
 
     @app.get("/api/health")
     def health():
         return {"status": "ok", "version": __version__, "instance": get_settings().instance}
+
+    # EDU54 Workbench's lesson pages, when this API also serves the web app (development, tests, a single-process box). On the
+    # EDU54 boxes Caddy serves them instead (infrastructure/compose/Caddyfile), with a policy that keeps every request local.
+    lessons = get_settings().ai_build_dir
+    if lessons and (lessons / "index.html").exists():
+        app.mount("/ai-build/lessons", StaticFiles(directory=lessons, html=True), name="ai-build-lessons")
 
     dist = get_settings().web_dist
     if dist and (dist / "index.html").exists():

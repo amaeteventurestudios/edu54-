@@ -1,0 +1,5 @@
+source: https://github.com/amaeteventurestudios/build.git
+branch: claude/project-thread-x0m7do
+commit: 7a47c2a3d786a4c290933b6baec4c8c839c9c2de
+synced: 2026-11-06T23:14:11Z
+lessons: 667

@@ -22,7 +22,7 @@ from .. import engines as engines_mod
 from ..config import get_settings
 from ..db import engine, get_db
 from ..deps import Ctx, err
-from ..models import (ActivityDay, AuditLog, AuthSession, ClassMember, ClassRoom, Conversation, LessonProgress, Message, Notification, Project,
+from ..models import (ActivityDay, AiBuildProgress, AuditLog, ExerciseProgress, AuthSession, ClassMember, ClassRoom, Conversation, LessonProgress, Message, Notification, Project,
                       QuestionAttempt, RevisionAttempt, SafetyAlert, SafetyContact, SafetyEvent, School, Submission, User, UserBadge, XpEvent, now)
 from ..people import audit, create_user, reset_credential
 from ..permissions import ASSIGNABLE, RANK, ROLE_LABEL, active_owner_count, can_assign, can_manage, has, may_grant, perms_for, require_perm
@@ -221,7 +221,8 @@ def reset_password(uid: int, body: ResetIn, ctx: Ctx = Depends(require_perm("adm
 
 _USER_TABLES = [(ActivityDay, "user_id"), (LessonProgress, "user_id"), (QuestionAttempt, "user_id"), (RevisionAttempt, "user_id"), (UserBadge, "user_id"),
                 (XpEvent, "user_id"), (Project, "user_id"), (Notification, "user_id"), (AuthSession, "user_id"), (SafetyEvent, "user_id"),
-                (SafetyAlert, "student_id"), (Submission, "user_id"), (ClassMember, "user_id")]
+                (SafetyAlert, "student_id"), (Submission, "user_id"), (ClassMember, "user_id"),
+                (ExerciseProgress, "user_id"), (AiBuildProgress, "user_id")]
 
 
 def _export(db: Session, u: User) -> dict:

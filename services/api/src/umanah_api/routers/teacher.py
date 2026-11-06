@@ -8,6 +8,7 @@ from pydantic import BaseModel, ConfigDict, Field
 from sqlalchemy import func, select
 from sqlalchemy.orm import Session
 
+from .. import ai_build
 from .. import hints as hints_mod
 from ..content import gamification
 from ..db import get_db
@@ -194,7 +195,8 @@ def student(uid: int, ctx: Ctx = Depends(teacher), db: Session = Depends(get_db)
             "badges": [b.badge_id for b in db.scalars(select(UserBadge).where(UserBadge.user_id == uid))],
             "strengths": strengths[:5], "struggling": struggling[:5], "assignments": history, "next_step": nxt,
             "practice": [{"title": e.title, "mastered": bool(e.mastered_at), "correct": e.correct, "attempts": e.attempts}
-                         for e in db.scalars(select(ExerciseProgress).where(ExerciseProgress.user_id == uid).order_by(ExerciseProgress.updated_at.desc()).limit(20))]}
+                         for e in db.scalars(select(ExerciseProgress).where(ExerciseProgress.user_id == uid).order_by(ExerciseProgress.updated_at.desc()).limit(20))],
+            "ai_build": ai_build.summary(db, uid)}   # EDU54 Workbench: finished 3D AI lessons, read-only
 
 
 # ------------------------------------------------------------------------------------------------ class tools (docs/17, 19, 45)

@@ -9,5 +9,5 @@ export default defineConfig({
     // the page title before the app loads: the brand's product name (docs/edu54), the AI Lab's by default
     { name: "product-name", transformIndexHtml: (html) => html.replace("%PRODUCT_NAME%", process.env.VITE_PRODUCT_NAME || "Umanah AI Lab") }],
   resolve: { alias: { "@": path.resolve(__dirname, "./src") } },
-  server: { port: 5173, proxy: { "/api": { target: "http://127.0.0.1:8101", changeOrigin: false } } },
+  server: { port: 5173, proxy: { "/api": { target: "http://127.0.0.1:8101", changeOrigin: false }, "/ai-build/lessons": { target: "http://127.0.0.1:8101", changeOrigin: false } } },
 });

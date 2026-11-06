@@ -30,8 +30,9 @@ class Settings(BaseSettings):
     safety_country: str = "US"                       # which help resources the safety responses show (docs/41; safety/responses.py)
     status_note: str = ""                            # shown on Lab Status to staff, e.g. "This demo node runs the small model"
     web_dist: Path | None = REPO_ROOT / "apps" / "web" / "dist"
+    ai_build_dir: Path | None = REPO_ROOT / "content" / "edu54-build" / "site"   # EDU54 Workbench lessons (docs/edu54-build)
 
-    @field_validator("web_dist", mode="before")
+    @field_validator("web_dist", "ai_build_dir", mode="before")
     @classmethod
     def _empty_is_none(cls, v):
         return None if v in ("", None) else v
