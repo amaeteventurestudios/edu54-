@@ -1,0 +1,8 @@
+{
+ "A cluster in Nairobi trains a small language model across four ranks, with every piece from this series.": "69be4b0e7c.mp3",
+ "Sharing out optimiser state brings each rank under its limit.": "4f7e5473b8.mp3",
+ "At step twelve, a rank dies.": "20ff06a108.mp3",
+ "The manifest says which save is whole. The run picks up from there.": "e7abf55cd3.mp3",
+ "Save less often, and more steps repeat.": "dcd87fc745.mp3",
+ "A loss table, a memory profile and a manifest prove that it worked.": "795bf7a3cc.mp3"
+}

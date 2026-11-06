@@ -1,0 +1,8 @@
+{
+ "A drone carries blood from a hub in Muhanga to a hill clinic over eight waypoints. Wind makes every leg uncertain.": "ff994c0ebe.mp3",
+ "The actor chooses how to fly. The critic estimates how good each waypoint is. The difference scores each decision.": "9204aafe7b.mp3",
+ "One-step estimates are calm but trust the critic. Whole-flight estimates trust only real rewards but are noisy. λ blends them.": "2ae2fa5c46.mp3",
+ "With a poor critic and one-step estimates, every score is biased by the critic's mistakes.": "814143cce7.mp3",
+ "Remove the critic, and each decision is credited with the whole flight's reward. Bias and noise both soar.": "7d1134e1aa.mp3",
+ "Drop the entropy bonus, and the actor becomes certain too early and stops trying the other way.": "3aebe28f58.mp3"
+}

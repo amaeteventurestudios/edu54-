@@ -1,0 +1,8 @@
+{
+ "Two models answer the same two thousand test questions. Model A gets eighty percent right, model B eighty-three. Is B really better, or was it luck?": "bf396159e2.mp3",
+ "Here are their first hundred answers, green for right and red for wrong. Both models find the same questions hard, but not always.": "dd2b669951.mp3",
+ "The bootstrap: draw a new test set from this one, picking questions at random, some twice and some not at all. Measure B minus A. Do it four hundred times and pile up the answers.": "4aa8ae102f.mp3",
+ "The middle ninety-five percent of the pile is the gold band. It stays clear of zero, so B is really better: by between one and five points.": "6e45c41410.mp3",
+ "Test on only fifty questions, and the pile spreads wide. The band crosses zero. Now you cannot tell the two models apart.": "d6758e90c3.mp3",
+ "Try twenty identical models and keep the best, and the winner looks better by pure luck. Choose on validation data, then test the winner once, on fresh data.": "8b7e65a1bc.mp3"
+}

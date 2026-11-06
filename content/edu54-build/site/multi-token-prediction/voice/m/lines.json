@@ -1,0 +1,8 @@
+{
+ "A language model learns one thing at each position: the next word. After \"the trader in Kano sells\", it learns groundnut, and nothing about the word after.": "e84532117a.mp3",
+ "DeepSeek-V3 adds a small module that also predicts the word after next. It takes the main model's state and the real next word, so every position gets two targets.": "8161964783.mp3",
+ "Change the next word to leather, and the module's guess changes to bags and sandals. It follows the same chain a decoder does.": "1a9bbdfcea.mp3",
+ "Parallel heads guess the word after next from the same state, without knowing the next word. They can only guess an average, so they are right far less often.": "de982d5b13.mp3",
+ "When serving, the module drafts a word and the main model checks it. Most drafts pass, so each pass yields almost two words.": "639fc94a20.mp3",
+ "The module shares the embedding table and output head with the main model, so it adds under two percent to the size of DeepSeek-V3.": "ebe16d0d72.mp3"
+}

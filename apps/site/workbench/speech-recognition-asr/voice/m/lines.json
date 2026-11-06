@@ -1,0 +1,8 @@
+{
+ "Someone in Kumasi says: meet at Kejetia. The model hears twenty-eight short frames and scores every letter, plus a blank, for each one.": "33d7740a4a.mp3",
+ "Take a token per frame, merge repeats, then drop blanks. The blank between the two e's keeps \"meet\" spelled right.": "0ebbeacf74.mp3",
+ "Drop the blanks first, and the two e's merge into one. \"Meet\" becomes \"met\".": "5c1abe4a7c.mp3",
+ "At one frame the model can't decide between a and e. Greedy decoding picks a, and writes \"meat at Kejetia\".": "169cfbfdea.mp3",
+ "A beam keeps both spellings, and a language model knows \"meet at\" is far likelier. Word error rate falls to zero.": "54d8e270bd.mp3",
+ "Without a voice activity gate, market noise at the end turns into extra letters, and an extra word.": "7aafb39af1.mp3"
+}

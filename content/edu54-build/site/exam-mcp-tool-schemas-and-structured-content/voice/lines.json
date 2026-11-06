@@ -1,0 +1,8 @@
+{
+ "A catalogue tool needs a sku, accepts four regions and forbids extra fields.": "2a0d14318b.mp3",
+ "The result matches the output schema, and the same value is mirrored in text.": "8762739c17.mp3",
+ "A call without the sku fails the schema. It comes back as a result the model can fix.": "88d4fa1be5.mp3",
+ "A region outside the list is the same channel: an execution error, not a protocol error.": "f3655b6e42.mp3",
+ "A misspelt tool name is a protocol error: invalid params, minus three two six oh two.": "cf78e48904.mp3",
+ "Never follow a schema reference to a network address. Keep references local.": "880308fa6f.mp3"
+}

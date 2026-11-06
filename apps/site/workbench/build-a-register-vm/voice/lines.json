@@ -1,0 +1,8 @@
+{
+ "A tide gauge in Accra has a small computer. Each instruction is one word of sixteen bits.": "b7a4e8d231.mp3",
+ "Read the word at the counter, then step the counter.": "6d29279d6e.mp3",
+ "The top four bits name the operation. The rest name registers, or hold a small number.": "a80ae68f90.mp3",
+ "A small number must be sign-extended, or minus one looks like thirty-one.": "68392b6b4e.mp3",
+ "Each result sets a flag, and a branch reads it.": "d4bfe7de50.mp3",
+ "A counter, a flag and a branch make a loop. That's nearly everything.": "53e2c29202.mp3"
+}

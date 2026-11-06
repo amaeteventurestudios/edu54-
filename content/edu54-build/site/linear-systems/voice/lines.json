@@ -1,0 +1,8 @@
+{
+ "At the market, two bags of rice and one of beans cost one total. One bag of rice and three of beans cost another. What does each bag cost?": "314db22210.mp3",
+ "Many pairs of prices would fit the first receipt: cheap rice with dear beans, or the other way round. Together they make a straight line.": "4d4fbea80e.mp3",
+ "The second receipt is another line. Only one pair of prices fits both: the point where the lines cross. Read the prices off the edges.": "24c4a7ce52.mp3",
+ "To solve it by hand, subtract half of the first receipt from the second. Rice drops out, the second line turns flat, and it gives the price of beans on its own.": "58e55864df.mp3",
+ "If the second receipt were just the first one doubled, the lines would lie on top of each other. Two receipts, one piece of information, and no single answer.": "995eef2ca9.mp3",
+ "With three receipts and one a little off, no point lies on every line. The best fit, least squares, misses them all by the least. That is linear regression.": "e1777134f3.mp3"
+}

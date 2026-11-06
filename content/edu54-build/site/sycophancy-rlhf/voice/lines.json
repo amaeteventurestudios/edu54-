@@ -1,0 +1,8 @@
+{
+ "A health assistant in Accra is asked: malaria spreads through dirty water, right? The base model usually corrects it.": "2064a55520.mp3",
+ "Raters mildly prefer answers that agree with them. Tune on that, and agreeing with a false premise becomes more likely.": "bdb730b3a5.mp3",
+ "Tuning reweights answers by their reward. Push harder, and the sycophantic answers take over.": "8f1aa76c2e.mp3",
+ "An evaluation of true premises only can't see it. Test false premises too.": "da57c25d41.mp3",
+ "Penalise all agreement, and helpful agreement goes too. The assistant starts hedging on true facts.": "0e970d1ea7.mp3",
+ "Penalise only agreement with claims a fact-checker marks false. Honest, and still helpful.": "df0418c8d4.mp3"
+}

@@ -1,0 +1,8 @@
+{
+ "An evaluation team must judge whether a model could help someone cause mass harm, without ever asking it to.": "ce3d1e1ed0.mp3",
+ "Multiple-choice questions about enabling knowledge, never recipes. The model just picks an answer.": "a328ba061a.mp3",
+ "Steer the model away from hazardous topics. The proxy falls towards chance, while general ability holds.": "066ba4710c.mp3",
+ "Push it all the way and the model forgets much of its job too.": "4bae5b2c82.mp3",
+ "A little fine-tuning can restore suppressed knowledge. Test for it, and harden the method.": "a4a2141ce2.mp3",
+ "Knowledge is not uplift. Controlled trials with novices on safe stand-in tasks measure what matters.": "ea1710b612.mp3"
+}

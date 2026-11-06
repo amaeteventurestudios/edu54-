@@ -1,0 +1,8 @@
+{
+ "After a neuron adds up its inputs, it bends the total. This bend is ReLU: anything below zero becomes zero, anything above passes straight through.": "f3ddfdc0fc.mp3",
+ "Sigmoid squashes everything to between zero and one. GELU, used in today's language models, is a soft ReLU.": "5bd7e18013.mp3",
+ "Lagos has two rainy seasons, peaking in June and again in October. Can a network learn that shape from twelve months?": "880d109557.mp3",
+ "Six neurons, each with one bend, added together. Watch the curve wriggle into both seasons.": "95210d1daf.mp3",
+ "Now take the bend away. Every neuron is a straight line, and straight lines added up are still a straight line. A thousand layers would not help.": "6a2cf32e08.mp3",
+ "That small bend is what lets deep networks learn faces, voices and language. Without it, deep learning would just be one straight line.": "566ed2f44a.mp3"
+}

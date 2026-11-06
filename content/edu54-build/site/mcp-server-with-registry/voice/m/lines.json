@@ -1,0 +1,8 @@
+{
+ "A health ministry in Kigali wants one clinic-stock tool for every district. Three replicas sit behind a balancer.": "0b6d22ef4f.mp3",
+ "A replica restarts. With state in a shared store, nobody notices.": "d90cc81a8b.mp3",
+ "Keep sessions in server memory, and that same restart ends them all.": "0a67d473bf.mp3",
+ "Publish one signed version. Clients find it there, and pin it.": "dbcc956d1e.mp3",
+ "A district reader shouldn't be able to write stock levels. Scope each token.": "7365d88508.mp3",
+ "A timeout causes a retry. With a key, the order counts once. That is a service.": "18a55b0722.mp3"
+}

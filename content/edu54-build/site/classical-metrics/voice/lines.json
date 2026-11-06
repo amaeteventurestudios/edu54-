@@ -1,0 +1,8 @@
+{
+ "A news summariser in Dakar writes one line. How close is it to a reference? Three old counters answer.": "fce01a516f.mp3",
+ "F1 counts shared words, ignoring order.": "9348ed045e.mp3",
+ "BLEU counts runs of up to four words, so that order matters.": "fece12c37b.mp3",
+ "A short, safe output scores high precision. The brevity penalty pulls it down.": "f9cc76c8dc.mp3",
+ "ROUGE-L uses the longest shared run in order, with gaps allowed.": "3aea45070b.mp3",
+ "A good paraphrase can score poorly on all three. Use them with care.": "8558086451.mp3"
+}

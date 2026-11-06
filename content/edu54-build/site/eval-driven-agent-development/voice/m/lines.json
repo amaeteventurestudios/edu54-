@@ -1,0 +1,8 @@
+{
+ "An agent team keeps a test case for every lesson of this phase, from the loop's budget guard to the dead-letter queue, and runs them all on every change.": "8e957e0de3.mp3",
+ "Each pull request is compared with the main branch's stored baseline. A drop of more than five points, or any critical case breaking, blocks the merge.": "1291600260.mp3",
+ "A harmless refactor gets blocked because three cases depend on chance. Pin the seeds.": "0f768605fd.mp3",
+ "A model judge passes a wrong answer, so a real regression slips through. Ground the judge in a tool check.": "75b210a3e6.mp3",
+ "A change tuned to the public cases passes them all. Held-out cases show it got worse.": "486a41d171.mp3",
+ "Every guardrail and every learned rule should map to a case in the suite.": "23e3c4840f.mp3"
+}

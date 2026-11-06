@@ -1,0 +1,8 @@
+{
+ "This adire pattern is a picture made of numbers. Each pillar is one pixel. Tall and pale means bright, short and dark means dark.": "541e1c1de9.mp3",
+ "The kernel is nine weights. This one is negative on the left and positive on the right. It looks for places where the picture gets brighter from left to right.": "ce92fb24cb.mp3",
+ "The window sits on nine pixels. Multiply each by its weight, add the nine answers, and you get one pixel of the new picture. Then slide one step and do it again.": "22fcb10401.mp3",
+ "Where the picture is flat, the left and right cancel out to zero. At an edge they don't, and the new picture lights up. That is an edge detector.": "ba15526fbf.mp3",
+ "Change the nine weights and you get a new tool. All ones divided by nine blurs. A big middle with negative neighbours finds outlines.": "18c0d3f771.mp3",
+ "A vision network stacks hundreds of these, and learns the weights itself. Early kernels find edges, later ones find shapes, and the last ones find faces, cassava leaves or road signs.": "ba24581872.mp3"
+}

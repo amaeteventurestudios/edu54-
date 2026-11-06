@@ -1,0 +1,8 @@
+{
+ "A Swahili homework helper in Dar es Salaam is tuned from teachers' choices: which of two answers is better?": "395b8c5ee9.mp3",
+ "A reward model learns a score so that the chosen answer scores higher than the other.": "4591590099.mp3",
+ "The helper is tuned to score well, minus a penalty for straying from where it started. Real quality rises.": "344c49c92e.mp3",
+ "If the raters tended to prefer longer answers, and the leash is loose, the helper learns to pad. The score rises; quality falls.": "facdeba914.mp3",
+ "With careful raters and answers of every length, the reward model learns that padding does not help. Even a loose leash is safe.": "2a59f29bba.mp3",
+ "Hold the leash too tight, and nothing changes at all.": "8439c68e79.mp3"
+}

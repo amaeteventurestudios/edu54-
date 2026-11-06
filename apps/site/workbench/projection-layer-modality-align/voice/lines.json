@@ -1,0 +1,8 @@
+{
+ "A market-photo model in Dodoma has image vectors and text vectors, in different spaces. Blocks don't sit near their discs.": "2f8bc358ef.mp3",
+ "A small projection maps images into text space. Only it will train.": "8db5d89c37.mp3",
+ "A cosine loss pulls each block towards its caption.": "7d341bc713.mp3",
+ "Blocks now sit on their discs.": "8b2d26cedf.mp3",
+ "Shuffle the pairs, and it aligns images to the wrong captions, just as well.": "2f5877f665.mp3",
+ "Train the projection first. Unfreeze the encoders later, if you need to.": "d535a08779.mp3"
+}

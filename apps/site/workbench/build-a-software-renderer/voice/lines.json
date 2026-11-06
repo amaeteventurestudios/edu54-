@@ -1,0 +1,8 @@
+{
+ "A cube and a pyramid are just lists of corners and the triangles between them.": "cb8772c627.mp3",
+ "Divide each corner's position by its depth, so far things shrink. That is perspective.": "e09b7d2d11.mp3",
+ "For each pixel near a triangle, three weights say whether its centre is inside.": "21032d1aad.mp3",
+ "Without a depth buffer, whatever is drawn last wins, even from behind.": "2c2a2ecb6e.mp3",
+ "Each face is lit by its angle to the light, and the shapes come alive.": "7fea7882d2.mp3",
+ "Faces turned away are skipped before filling. Corner order tells which way a face points.": "2f3bc4f3f0.mp3"
+}

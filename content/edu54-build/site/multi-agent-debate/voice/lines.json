@@ -1,0 +1,8 @@
+{
+ "Five agents answer the same word problem. Each is right a little more than half the time.": "276b4c2ae5.mp3",
+ "A plain majority vote of five already beats one agent, as long as their mistakes differ.": "1bcb4a4385.mp3",
+ "Now they read each other's answers and revise. A wrong agent that sees a correct argument can check it and switch.": "105f88e712.mp3",
+ "Five copies of the same model make the same mistake. Debate turns it into a confident wrong consensus.": "9391d6c0bc.mp3",
+ "If agents simply follow the majority, a correct minority is talked out of its answer.": "ee3cd3860f.mp3",
+ "Reading only two neighbours keeps most of the gain, for a fraction of the messages.": "682244afea.mp3"
+}

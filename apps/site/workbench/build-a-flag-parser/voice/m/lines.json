@@ -1,0 +1,8 @@
+{
+ "A weather tool in Tamale receives a flat list of words, and nothing more.": "98775b8576.mp3",
+ "A table says which flags exist, and which take a value.": "301f9b5c36.mp3",
+ "A double dash means that everything after it is plain text.": "aab31ed6e2.mp3",
+ "A flag at the end with no value gets a clear error.": "973cc6f497.mp3",
+ "Refuse unknown flags, or a typo silently changes what runs.": "6e2877b3eb.mp3",
+ "A non-zero exit tells a script that something went wrong.": "9f79176690.mp3"
+}

@@ -1,0 +1,8 @@
+{
+ "A utility's assistant uses tools to check and pay bills. Every tool call is a proposal.": "71b6273044.mp3",
+ "Validate the input, then check policy for this member, then run it. Another member's bill is refused.": "4135f9a14a.mp3",
+ "A timed-out payment may have gone through. An idempotency key makes the retry harmless.": "0a0e9fea80.mp3",
+ "Tell Claude what failed and whether retrying can help, and it explains instead of guessing.": "9a21404aa8.mp3",
+ "The same search, again and again: stop on repeats and budgets, and hand over to a person.": "61d9ea799c.mp3",
+ "Claude proposes; the application validates, authorises, runs once and stops in time.": "855aa1d9c3.mp3"
+}

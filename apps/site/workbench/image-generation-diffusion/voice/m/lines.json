@@ -1,0 +1,8 @@
+{
+ "The top row adds a little noise to a giraffe at dusk at every step. By the last frame, nothing is left but noise.": "4c03a33e20.mp3",
+ "A denoiser, usually a U-Net, is shown pictures with random amounts of noise and the timestep that says how much. It learns to predict the noise.": "f0a54af7bb.mp3",
+ "To generate, start from pure noise, the bottom left frame, and run the denoiser again and again, each time removing a little of the noise it predicts.": "a4e51aeb52.mp3",
+ "Rush it in four steps, and each step must remove a huge slice of noise. The best guess for that is a blurry average.": "c2e9981202.mp3",
+ "Hide the timestep from the denoiser, and it cannot tell how much to remove. Grain is left behind at the end.": "345df5d6f1.mp3",
+ "Guidance pushes each step towards what was asked for. A little sharpens the picture; too much burns the colours.": "933fa1009d.mp3"
+}

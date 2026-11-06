@@ -1,0 +1,8 @@
+{
+ "A newsroom in Kisumu has three hours of county council recording and asks: when was the vote on the market roof?": "66cf346a0a.mp3",
+ "An agent asks a retriever for clips about the market roof, reads only those five, and finds the vote in seconds.": "378e1a637d.mp3",
+ "Or read everything at once. Three hours is about seven hundred thousand tokens; a ring of eight GPUs holds it, but the work grows fast.": "4ef0078cf4.mp3",
+ "On one GPU the context holds only about the first half hour. The vote is never read.": "fb0040491c.mp3",
+ "Squeeze each clip into one summary token, and the model knows roughly what happened but not the minute.": "85752eb75d.mp3",
+ "Give the agent a weak retriever, and it reads five clips about other items.": "78042a5863.mp3"
+}

@@ -1,0 +1,8 @@
+{
+ "A weeding robot in a maize field in Tanzania wants to know: if I drive, turn left, and drive on, what will my camera see?": "65a2e811f6.mp3",
+ "The top row is what the camera really sees. The bottom row is the world model's imagined video, generated from the first frame and the plan.": "06133148c5.mp3",
+ "Told the actions, the model turns at step three, drives towards the water tank, and stops, just as the real robot does.": "b11fabff28.mp3",
+ "Drop the action input, and the model imagines the most likely future: keep driving straight. A believable video, of the wrong future.": "9dda2d4381.mp3",
+ "A model that never saw a collision imagines the robot rolling straight through the tank. A planner would happily choose that route.": "cbd79fe8da.mp3",
+ "Roll out forty steps, each built on the last imagined frame, and the errors pile up until the field melts. Plan a short way, then look again.": "64a44bf03d.mp3"
+}

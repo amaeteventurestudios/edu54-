@@ -1,0 +1,8 @@
+{
+ "We want to predict how long a boda boda or okada trip will take, in Kampala, Lagos or Kigali, from the hour, the distance, the city and the weather.": "2f853648f4.mp3",
+ "With only the distance and the raw hour, a straight-line model does poorly. The dots spread far from the purple line, where prediction equals reality.": "eced9fcb16.mp3",
+ "Traffic peaks twice a day. A straight line through the hour can't show that, but a yes-or-no column, is it rush hour, can. The dots move in.": "7f3c47c573.mp3",
+ "Each city has its own traffic. Give each city its own yes-or-no column, and add one for rain. Same model, much better columns.": "6842956d08.mp3",
+ "Number the cities one, two, three instead, and the model thinks they come in an order with equal steps. They don't, and the error grows.": "ef729791c3.mp3",
+ "Worst of all, add the arrival time. In training the model looks perfect. But for a new trip the arrival time doesn't exist yet, and the predictions collapse.": "9092c1f208.mp3"
+}

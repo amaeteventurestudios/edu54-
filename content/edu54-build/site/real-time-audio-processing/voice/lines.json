@@ -1,0 +1,8 @@
+{
+ "A health clinic in Kigali answers calls with a voice system. Audio moves in twenty-millisecond frames, through every stage in turn.": "40910ced13.mp3",
+ "Add up every stage. Under about eight hundred milliseconds to the first word, a conversation feels natural.": "ca50960d1c.mp3",
+ "Packets arrive late and out of order. Without a jitter buffer, late frames play as gaps, and words are misheard.": "49d958c26d.mp3",
+ "Set a half-second ring buffer to be safe, and every reply arrives too late. The buffer is the floor on latency.": "80dc2d25d1.mp3",
+ "Without echo cancellation, the system hears its own voice, thinks the caller has interrupted, and cuts itself off.": "d8b41bd576.mp3",
+ "With the echo removed, a real interruption stops the reply within about a tenth of a second.": "b8a86ab619.mp3"
+}

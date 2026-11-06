@@ -1,0 +1,8 @@
+{
+ "A lab in Nairobi trains a mixture-of-experts model split across eight GPUs in a pipeline. Each GPU holds a slice of the layers and passes its work on. Even with no network traffic, the start and end of each step leave gaps.": "50ca4709e3.mp3",
+ "The experts sit on other machines, so every layer sends tokens out and gathers them back. With plain scheduling, each GPU waits for that traffic about as long as it computes.": "60affd2ebe.mp3",
+ "Splitting the backward pass in two fills most of the start and end gaps. The network wait is still there.": "8a374cff72.mp3",
+ "DualPipe feeds micro-batches in from both ends. Each GPU runs one batch forward beside another backward, so the traffic of one hides under the computing of the other.": "2d9699a83b.mp3",
+ "The price is two copies of each GPU's layers, affordable when the experts are already spread thin across many machines.": "c74603b973.mp3",
+ "The gaps no longer grow with the number of micro-batches. But send too few, and the gaps are still a large share of every step.": "a9f60da623.mp3"
+}

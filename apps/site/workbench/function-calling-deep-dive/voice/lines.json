@@ -1,0 +1,8 @@
+{
+ "A weather and alert assistant for fishers on Lake Victoria declares its tools once, in its own code. A fisher asks if it's safe to go out near Rusinga Island.": "7b10e962f5.mp3",
+ "Each provider wants the declaration in its own shape and replies in its own shape. One returns arguments as a string; the others as an object. A small translator handles both directions.": "eab211b8e1.mp3",
+ "Asked about two zones, the model makes two calls in one turn. Each has an ID, so the results go back to the right call.": "60a1522dc7.mp3",
+ "Tool choice \"required\" makes the model call something. On a simple greeting, it invents a weather check nobody asked for.": "5e3ba74132.mp3",
+ "Tool choice \"none\" forbids tools. Asked whether it's safe right now, the model answers from memory. That is how fishers get hurt.": "80841bf2bc.mp3",
+ "For conversation, leave tool choice on auto and let the model decide. Force a tool only for steps that always need one.": "e32380f5d1.mp3"
+}

@@ -1,0 +1,8 @@
+{
+ "The student lifts their own compiled functions back to C, stage by stage: instructions, a small intermediate language, one name per value, simplification, types, structure.": "3fa904b058.mp3",
+ "Two ints arrive in two registers and one int leaves in another. That, not the decompiler's first guess, gives the function's true signature.": "6c0c382a7c.mp3",
+ "The decompiler's first answer has a sixteen-byte return and a third parameter. Consistent with the bytes; wrong about the source.": "aa9eb53ed5.mp3",
+ "A register holds different values at different moments. Give each its own name before simplifying, or the expression comes out as nonsense.": "2c023540b7.mp3",
+ "In grade, there is no divide: a multiply by hex 66666667 and a shift by 34. Checked over two thousand scores, it is exactly divide by ten.": "491c0d6400.mp3",
+ "Drop the sign-bit term while simplifying, and negative scores round the wrong way. A simplification must hold for every input.": "e93a6c669f.mp3"
+}

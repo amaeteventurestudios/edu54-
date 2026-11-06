@@ -1,0 +1,8 @@
+{
+ "A software firm in Lusaka labels an issue, and an agent in the cloud picks it up. Nobody watches.": "ca930a8cf6.mp3",
+ "Vague issues waste runs. Filter them, or have the agent ask a question first.": "cf66e75c1f.mp3",
+ "An issue is text from strangers. Run with no secrets, in a box.": "3f0597e6a8.mp3",
+ "No one is watching, so tests must pass before a pull request is opened.": "b45b237223.mp3",
+ "A person still reviews. Remove that and the tests, and bad changes land.": "8121d36de8.mp3",
+ "Count cost per merged pull request. Runs and lines of code tell you nothing.": "2b5a778b8f.mp3"
+}

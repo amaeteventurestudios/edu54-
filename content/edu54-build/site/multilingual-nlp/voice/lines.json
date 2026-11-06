@@ -1,0 +1,8 @@
+{
+ "One model reads customer messages in English, Swahili, Hausa, Yoruba, Amharic and isiZulu. It was taught with English examples only.": "3687b87087.mp3",
+ "Pretrained on many languages, it puts a complaint near other complaints, whatever the language. That is why English training transfers at all.": "f1c04826cd.mp3",
+ "Report one average and it looks fine. The English test set is biggest, and it hides Amharic far below the target.": "151930b4f0.mp3",
+ "Add five hundred labelled Amharic messages, with a gentle learning rate, and Amharic closes most of its gap.": "c7bf5d6d71.mp3",
+ "Teach in Swahili instead, and isiZulu, a Bantu relative, jumps. A close source language can beat English.": "9b58838b64.mp3",
+ "Use an English-only tokenizer, and Amharic's script becomes unknown tokens. The model is reduced to guessing.": "a91a4b99ce.mp3"
+}

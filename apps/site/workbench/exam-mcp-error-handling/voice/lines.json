@@ -1,0 +1,8 @@
+{
+ "A wrong request gets a protocol error. A fixable tool problem gets an error result.": "abbd01a8fb.mp3",
+ "A body that is not JSON has no readable id, so the error reports id null.": "87a677c461.mp3",
+ "An unknown method is minus three two six oh one. An unknown tool is minus three two six oh two.": "5662d1eb10.mp3",
+ "Header mismatch, missing capability and unsupported version live in MCP's reserved range.": "660d76090e.mp3",
+ "A bad argument is an error result the model can read and fix.": "ba29e9208f.mp3",
+ "Not found is invalid params now, and custom codes stay outside the reserved range.": "bcbc26a4f3.mp3"
+}

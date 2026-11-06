@@ -1,0 +1,8 @@
+{
+ "A model learns eight station announcements, from Kumasi to Mombasa, by counting which word follows which. After \"to\", Kumasi comes up most often.": "1d7acf2de9.mp3",
+ "Now score a new announcement: the train to Nairobi leaves at noon. Each column is the chance of a word given the one before.": "6902178253.mp3",
+ "With counts only, Nairobi was always followed by \"is\". \"Nairobi leaves\" gets zero, and the whole sentence becomes impossible.": "f4e6d6ca3f.mp3",
+ "Add-one smoothing gives every pair an extra count. On so little data, nonsense pairs get most of the chance, and it writes word salad.": "be4d97d6bc.mp3",
+ "Kneser-Ney takes a little from each seen pair and shares it by how many words each word has followed. Perplexity drops.": "8a9b490964.mp3",
+ "To write, sample the next word again and again. Low temperature stays sensible. High temperature makes word salad.": "c1865556cb.mp3"
+}

@@ -1,0 +1,8 @@
+{
+ "A language model can only write text. Ask it for the weather in Mombasa and it has no way to look outside.": "7d6ed3e76c.mp3",
+ "With function calling, the app tells the model which tools exist. The model replies with a slip of JSON: get weather, city Mombasa.": "dcfdb9e9c1.mp3",
+ "Your code checks the slip: is it valid JSON, is it a real tool, are the inputs the right type? Only then does it run.": "0e9710bd31.mp3",
+ "The tool is ordinary code. It fetches the weather and sends a result slip back.": "b0d0214b23.mp3",
+ "The result goes back into the conversation, and the model writes the reply: thirty-four degrees and sunny.": "ab5fc990c5.mp3",
+ "Models sometimes write broken JSON, or invent a tool. The gate catches it, and sends the error back so the model can try again.": "63c7d8bd46.mp3"
+}

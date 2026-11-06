@@ -1,0 +1,8 @@
+{
+ "Three agent runs of the same receipt export ask to be marked done. One is careful, one tests too little, one leaves loose ends.": "dba2d9aca4.mp3",
+ "The gate reads the test records and reports. A smoke run with no exit code blocks \"done\".": "d6496497fe.mp3",
+ "Ask a model to be the gate, and run it again: the verdict can change. A gate must be deterministic.": "02099ff263.mp3",
+ "The second run passes the gate, but the reviewer sees its test only checks simple names. A hard fail.": "38a1a8f292.mp3",
+ "The reviewer reads and reports. If it fixes the code itself, nobody reviews the fix.": "750faaad8d.mp3",
+ "The careful run passes both, and is marked done.": "96083ba041.mp3"
+}

@@ -1,0 +1,8 @@
+{
+ "A phone gets good signal in a patch around this mast near Kisumu. Teal dots had signal, grey ones didn't. Can a network learn the patch?": "5e1b19d22f.mp3",
+ "A single neuron can only draw one straight fence. It chops the map in two, and the patch stays half wrong.": "b668c5e21c.mp3",
+ "Add a hidden layer of four neurons. Each one takes the position and draws its own fence. The output neuron listens to all four.": "a1fad4d0ca.mp3",
+ "As training runs, the four fences slide around the mast, and the output neuron combines them into a closed patch. Data flows forward; blame flows back.": "270e503a1d.mp3",
+ "Take away the activation, and each neuron just adds up its inputs. A sum of sums is still a straight line, so four neurons do no better than one.": "67080eb07f.mp3",
+ "And start every weight the same, and the neurons all learn the same fence forever. Random starts let each one find its own job.": "01de861803.mp3"
+}

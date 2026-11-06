@@ -1,0 +1,8 @@
+{
+ "A footballer on a dusty pitch in Accra, filmed for sixteen frames. Is he standing up, sitting down, or kicking the ball?": "571579d837.mp3",
+ "Sitting down is standing up played backwards: the very same frames in the opposite order.": "56aca28713.mp3",
+ "The simplest video model judges each frame alone and averages. Order is lost, so standing up and sitting down become the same answer.": "4130de13ce.mp3",
+ "A 3D convolution slides its filters across time as well as space, so it sees which way the motion goes.": "75158cbb08.mp3",
+ "The model only sees the frames the sampler picks. Take the first four, and nothing has happened yet.": "ca26e500b1.mp3",
+ "Spread four frames out, and a kick that lasts three frames can fall right between them. Quick actions need more frames.": "1cab891924.mp3"
+}

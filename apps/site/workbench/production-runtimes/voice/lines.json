@@ -1,0 +1,8 @@
+{
+ "A coffee exporter in Addis Ababa has an agent check shipment papers. Some checks take seconds; many take minutes.": "948752201d.mp3",
+ "Served as plain web requests, most jobs hit the thirty-second timeout. Users retry, and the work starts over each time.": "c4944ca00f.mp3",
+ "Put each job on a queue for a pool of workers, return at once, and deliver the result when it is ready.": "1e2cf43579.mp3",
+ "Some runs crash part-way. With a checkpoint after every step, the job resumes instead of starting over.": "c6c533a42a.mp3",
+ "A job that keeps failing goes to a dead-letter queue, where a person can see it, with its trace.": "7d0129d789.mp3",
+ "With too few workers, jobs wait in the queue. Watch the queue depth and the tail of the wait.": "f8a3c5f644.mp3"
+}

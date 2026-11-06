@@ -1,0 +1,8 @@
+{
+ "An illustrator wants a figure mid jump, as in the Maasai adumu dance. Given only the prompt, the base model on the right picks its own pose.": "afe12aee32.mp3",
+ "A ControlNet reads a pose skeleton and steers the layout. Now the figure jumps exactly as drawn.": "f980a102c7.mp3",
+ "ControlNet is a trainable copy of the model's encoder. Its features join the frozen model through connections that start at zero, so training only ever adds.": "67028999a2.mp3",
+ "A strength dial scales its influence. Half strength follows the pose loosely; far too much, and the figure is stiff and overcooked.": "584e0ed601.mp3",
+ "Start those connections with random weights, and the first thing training does is pour noise into the pretrained model.": "b81359cc26.mp3",
+ "A small LoRA adds the flat poster style on top. Prompt for content, ControlNet for layout, LoRA for the look.": "a1d8d0c39f.mp3"
+}

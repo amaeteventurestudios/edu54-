@@ -1,0 +1,8 @@
+{
+ "A mobile-money fraud model uses one key number: how many transfers a customer made in the last hour. Both training and the live app need it.": "2ff67287e1.mp3",
+ "Often the number is computed twice: once by the training pipeline, once by the live app, by different teams in different code.": "fc17521c75.mp3",
+ "One day the live code counts the last twenty-four hours instead of the last hour. The model learned that ten an hour is suspicious, and now everyone looks like a thief.": "2a59424617.mp3",
+ "A feature store holds one recipe for each feature, computes it once, and serves the very same number to training and to the live app.": "9783588812.mp3",
+ "For training it also answers as of each past moment: count only the transfers before the one being scored. Peek past that line and the model learns from the future.": "f533affb4c.mp3",
+ "And live values must be fresh. A cache four hours old hides a thief's burst of transfers at exactly the wrong moment.": "465a290382.mp3"
+}

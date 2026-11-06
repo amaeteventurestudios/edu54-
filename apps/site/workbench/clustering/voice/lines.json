@@ -1,0 +1,8 @@
+{
+ "Here are ninety-six shops across a city, and nobody has said which belong together. We want four delivery zones, each with its own depot.": "7b24611379.mp3",
+ "Drop four depots. Each shop joins whichever depot is nearest. The thin lines show who joins whom.": "22cbec3722.mp3",
+ "Now each depot moves to the middle of its shops. Then the shops choose again, and the depots move again.": "4c4c4a8562.mp3",
+ "After a few rounds nothing changes any more. Four zones, found from nothing but the shops' positions. That is k-means clustering.": "4c3f6e24dd.mp3",
+ "How many zones should there be? The bars show the total distance for each choice. It falls steeply up to four, then barely moves. Four is the elbow.": "810f9ded56.mp3",
+ "Start two depots in the same neighbourhood and one between two others, and the zones settle somewhere poor. K-means only walks downhill. Spreading the starting depots out fixes it.": "c01acb0357.mp3"
+}

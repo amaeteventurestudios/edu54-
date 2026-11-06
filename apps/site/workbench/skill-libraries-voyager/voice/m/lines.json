@@ -1,0 +1,8 @@
+{
+ "A chop-bar kitchen agent must learn to serve eba and egusi. Each task builds on smaller ones: fire, boiling water, frying garri.": "b2e0517b85.mp3",
+ "Each skill it learns is saved as code that calls other skills. Boil water calls fetch water and light fire.": "1029eb4160.mp3",
+ "The curriculum picks the next task whose parts are already known. Each success makes the next one cheap.": "e6de28a0d1.mp3",
+ "Without a library, every task is worked out from scratch, and the full meal needs far more steps than the budget allows.": "8dd5a5bd39.mp3",
+ "Pick tasks at random, and the agent keeps attempting things whose parts it hasn't learned yet.": "313cfa85ef.mp3",
+ "Improving one skill can break the skills built on it. Pin versions, and the meal still gets served.": "2982e437ae.mp3"
+}

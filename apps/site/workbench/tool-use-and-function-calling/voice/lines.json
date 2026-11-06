@@ -1,0 +1,8 @@
+{
+ "Toolformer lets a model try tool calls inside its own training text, and keeps a call only if the result makes the next words easier to predict.": "24a544af5c.mp3",
+ "Adding two sales figures helps predict the total that follows. Defining a tomato does not help with anything that comes next.": "72952d0327.mp3",
+ "A small model gains less from the results and is distracted by the inserted text. Tool use emerged with scale.": "213bf3042b.mp3",
+ "To grade an agent, check what its tools changed. Did the pickup actually get booked?": "2987743e69.mp3",
+ "Matching the exact list of calls fails a correct run done in another order, and passes one where the booking quietly failed.": "71344d562a.mp3",
+ "Asked about the weather with no weather tool, the right answer is to say so, not to make up a tool.": "388695aa87.mp3"
+}

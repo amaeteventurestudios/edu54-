@@ -1,0 +1,8 @@
+{
+ "Checkout errors at a payments firm in Nairobi. By hand, half an hour goes on dashboards before anyone finds the cause.": "9d4a5a4ca5.mp3",
+ "A supervisor sends agents to logs, metrics and runbooks. They find a memory spike on one model server in minutes.": "faf752b7d8.mp3",
+ "A restart or a revert is small and easy to undo. Rebuilding a service is not, and an agent must never start that alone.": "f128649810.mp3",
+ "Two models analyse it separately. If they agree, go ahead. If they disagree, a person looks.": "083c6c5401.mp3",
+ "A model saw this coming, but no one reads charts at 3 a.m. Prediction without action is a dashboard.": "6bbd6fa047.mp3",
+ "Wire the prediction to a pre-approved restart, and the page never comes.": "3b006f7ddf.mp3"
+}

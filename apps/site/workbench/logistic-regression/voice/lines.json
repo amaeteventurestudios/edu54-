@@ -1,0 +1,8 @@
+{
+ "Here are sixty days in Kampala. Across is today's humidity. Blue dots on the top line: it rained the next day. Gold dots on the bottom: it stayed dry.": "eeb7e5e7b3.mp3",
+ "Logistic regression draws an S-shaped curve. It takes humidity, and gives a chance of rain that always stays between zero and one hundred percent.": "cbc04bd54d.mp3",
+ "Training slides and steepens the curve, step by step, so rainy days sit under high chances and dry days under low ones. The number it lowers is the cross-entropy.": "d849efc6b5.mp3",
+ "To decide, pick a threshold. Above fifty percent, say rain. Days the curve gets wrong grow bigger.": "72d5bb1a93.mp3",
+ "The four boxes count the outcomes: rain that was called, false alarms, rain that was missed, and quiet dry days. Precision and recall come from these counts.": "c73d011483.mp3",
+ "Lower the threshold and you catch every rainy day, but cry rain far too often. Where to put it depends on which mistake costs more.": "7e84188e60.mp3"
+}

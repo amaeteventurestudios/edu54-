@@ -1,0 +1,8 @@
+{
+ "A cluster in Cairo has a new data-parallel wrapper. Before using it, prove it.": "f50a04b8b5.mp3",
+ "Run on four ranks, and in one process on the joined data, from one seed.": "80ed10c16b.mp3",
+ "After each step, parameters match to every digit.": "f4c75fa37b.mp3",
+ "Sum instead of average, and it acts like a bigger learning rate.": "767c4ff372.mp3",
+ "The check holds for any number of ranks that divides the batch.": "9a5473eecb.mp3",
+ "Now you can use it on a real run.": "e3a3cc1dce.mp3"
+}

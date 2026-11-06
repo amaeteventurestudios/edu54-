@@ -1,0 +1,8 @@
+{
+ "The client may call discover once to learn versions, capabilities and instructions.": "e04530e9fa.mp3",
+ "Listing incidents needs nothing extra from the client.": "76f6be2469.mp3",
+ "Paging on-call needs elicitation. Without it, the server names exactly what is missing.": "6d08b0fe7e.mp3",
+ "The client declares elicitation on this request, and the call goes through.": "4383602bee.mp3",
+ "Ask for a version the server lacks, and it lists the versions it supports.": "b7f64f0757.mp3",
+ "The server never carries capabilities over from an earlier request.": "95cfb30410.mp3"
+}

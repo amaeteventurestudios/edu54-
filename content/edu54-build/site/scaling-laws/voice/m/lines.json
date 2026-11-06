@@ -1,0 +1,8 @@
+{
+ "A lab in Nairobi has a fixed amount of compute to train a Swahili and English model. How big should the model be?": "8ef3bc343d.mp3",
+ "Compute is roughly six times parameters times tokens. Every extra parameter means fewer tokens to train on.": "5949645731.mp3",
+ "A hundred-billion-parameter model on this budget sees too little data. The loss is worse than a smaller model trained longer.": "dcc4858919.mp3",
+ "The lowest loss sits at tens of tokens per parameter. The usual rule of thumb is about twenty.": "71e047c864.mp3",
+ "But the model will answer billions of questions. Count a year of serving, and smaller models trained longer win.": "29142eaab2.mp3",
+ "Judge only by exact match over ten words, and a smooth improvement looks like a sudden new ability.": "fea6452b4f.mp3"
+}

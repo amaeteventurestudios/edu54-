@@ -1,0 +1,8 @@
+{
+ "A tide tool in Moroni is written in one language, and must run in another.": "a611b6cc62.mp3",
+ "First, split the text into pieces.": "b333edd234.mp3",
+ "The parser arranges them in a tree, so nesting has a shape.": "5e081cd41d.mp3",
+ "Rewrite the tree, and a generator prints the new language.": "7eba40b96f.mp3",
+ "Between stages, do any sum that can be done now.": "6583a166f0.mp3",
+ "Each stage catches what it can see.": "dcf1973309.mp3"
+}

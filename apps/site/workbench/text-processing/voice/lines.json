@@ -1,0 +1,8 @@
+{
+ "A customer writes to a bus company in Nairobi. Before a classical model can count words, the text needs cleaning.": "100148bcc4.mp3",
+ "Lowercase everything, then split into words and punctuation. Splitting on spaces alone glues full stops and commas onto words.": "1af2f5bff1.mp3",
+ "Stopword removal drops very common words like \"the\" and \"was\", which say little about the topic.": "224d99e643.mp3",
+ "Stemming chops endings by rule; lemmatisation looks up the dictionary form, so \"were\" becomes \"be\" and \"buses\" becomes \"bus\".": "aaf8aefbf0.mp3",
+ "A stemmer that cuts too hard turns \"university\" and \"universe\" into the same stem.": "140f1df1de.mp3",
+ "And for judging mood, removing \"not\" turns \"not happy\" into \"happy\". Every step throws something away, so choose steps that suit the task.": "2b342c591e.mp3"
+}

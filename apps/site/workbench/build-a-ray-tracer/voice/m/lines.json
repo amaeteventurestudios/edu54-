@@ -1,0 +1,8 @@
+{
+ "For each pixel, shoot a ray from the camera and find the nearest sphere it hits.": "f090cf51d3.mp3",
+ "Matte surfaces scatter the ray in a random direction; metal mirrors it. Each bounce takes some colour.": "ac7fa828c9.mp3",
+ "One random path per pixel is grainy. Average many, and the noise fades.": "73e2f367ff.mp3",
+ "Screens expect gamma-encoded values. Without correction, the picture is too dark.": "74e7f86098.mp3",
+ "A bounced ray can hit its own surface by rounding. Ignore hits right at the surface.": "fa3c77ff89.mp3",
+ "Enough samples, a few bounces, gamma and an epsilon. That is a ray tracer.": "b871950f8b.mp3"
+}

@@ -1,0 +1,8 @@
+{
+ "A school-book publisher in Lusaka wants one model that writes \"a baobab tree on the plain at sunset\" and paints it.": "2f03adfab3.mp3",
+ "One transformer: words learn from a next-token loss, image patches from a diffusion loss. Both update the same weights.": "e1c5a279b9.mp3",
+ "Words attend only to what came before. Patches in one picture attend to each other both ways.": "bfe02b1359.mp3",
+ "Make the picture's mask causal too, and the patches written last are guessed with half the scene unseen. The bottom turns muddy.": "4860bf45c0.mp3",
+ "Rush the denoising in four steps, and noise is left behind. Sixteen to fifty steps clean it up.": "ac2380a1e7.mp3",
+ "Squeeze patches into a small codebook, and the sunset turns into bands. Continuous patches keep the shading.": "0ca2108d16.mp3"
+}

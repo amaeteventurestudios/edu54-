@@ -1,0 +1,8 @@
+{
+ "A city-bus app in Addis Ababa adds seat holds. Specify too little, and the agent guesses, including at the public booking response.": "24948de3d8.mp3",
+ "Specify too much, and the agent copies a design that is already wrong, and waits at five checkpoints.": "6de9839c4c.mp3",
+ "In between: an outcome, invariants, examples, non-goals, a decision policy and the proof.": "785fe99b16.mp3",
+ "Lock what is public or unsafe. Bound what has a safe range. Delegate what is cheap to change, and ask for an explanation.": "d3234809ff.mp3",
+ "Robust and user-friendly can't be checked. Paying at one second before expiry can.": "378d33d294.mp3",
+ "A seat never held twice is a claim about a race, so the proof is a race replay, not a unit test.": "941afd6773.mp3"
+}

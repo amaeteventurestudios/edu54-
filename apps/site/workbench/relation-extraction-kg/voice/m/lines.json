@@ -1,0 +1,8 @@
+{
+ "Four sentences about a solar company in Nakuru. A model turns them into triples: subject, relation, object.": "24db89723a.mp3",
+ "Each triple is an edge. Now a question with two hops can be answered: who founded the company, and where were they born?": "8fd19dacdd.mp3",
+ "The model also wrote that the company is headquartered in Nairobi. The text never says so. Skip the check, and it enters the graph.": "08e66008d7.mp3",
+ "Without coreference, \"she was born in Nyeri\" makes a node called She. The founder's birthplace is lost.": "928a216912.mp3",
+ "Without merging, Kamau and Wanjiru Kamau are two people, and \"was born in\" cannot be found by a query for \"born in\".": "cfd7f72107.mp3",
+ "Verify, resolve, merge. Five real things, five nodes, and the question is answered.": "10dad82c66.mp3"
+}

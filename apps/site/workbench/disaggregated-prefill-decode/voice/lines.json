@@ -1,0 +1,8 @@
+{
+ "A legal-research service in Nairobi runs a large model on eight GPUs. Reading a contract and writing an answer use the hardware differently.": "968b1e732f.mp3",
+ "Together on the same GPUs, each long prefill pauses everyone's stream, and one resource sits idle while the other works.": "81b0ca7ed8.mp3",
+ "A prefill pool built for compute, a decode pool built for memory, and the cache sent from one to the other.": "57f8dab17b.mp3",
+ "The cache must move quickly. Over ordinary networking, the transfer eats the saving.": "9d69aef139.mp3",
+ "For short prompts and answers, the transfer costs more than the interference it removes.": "53b4a401c6.mp3",
+ "Split when prompts are long and streams must not stall, and size the pools to your traffic.": "60fd9675ad.mp3"
+}

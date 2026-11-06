@@ -1,0 +1,8 @@
+{
+ "A mobile-money help line in Accra tunes its assistant with feedback from people.": "0a115ee73d.mp3",
+ "First supervised fine-tuning, then a reward model trained on comparisons, then reinforcement learning with PPO.": "bb031d9706.mp3",
+ "PPO keeps four models in memory: the policy and a value model being trained, and a frozen reference and reward model.": "d12cb9a3a4.mp3",
+ "Remove the KL penalty, and the reward model's score climbs while real people like the answers less.": "ef1a3fd5c0.mp3",
+ "A small reward model has more blind spots, and the policy finds them sooner.": "abea674629.mp3",
+ "Put all four models on one 80-gigabyte GPU, and they do not fit.": "06353cccf0.mp3"
+}

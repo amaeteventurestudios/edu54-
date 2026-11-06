@@ -1,0 +1,8 @@
+{
+ "A customs broker's agent in Durban needs another firm's agent. It reads an Agent Card at a well-known address.": "12cdb681cd.mp3",
+ "It sends a task. The task is submitted, then working. Each state tells the caller what to do.": "1244ff465d.mp3",
+ "Halfway through, the other agent asks which port of entry. The task waits, and your agent must answer.": "cf9a69f766.mp3",
+ "Ignore that state and you poll forever on a task waiting for you.": "af10a690cc.mp3",
+ "Poll, stream or receive a push. Choose by how long the task runs.": "3d9c466400.mp3",
+ "A failed task stays failed. Start a new task and link it. Finished work gives artifacts, not a reopened task.": "a36a68af3d.mp3"
+}

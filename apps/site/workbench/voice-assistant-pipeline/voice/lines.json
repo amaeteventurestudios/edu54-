@@ -1,0 +1,8 @@
+{
+ "Farmers near Arusha phone a voice assistant for market prices. A farmer asks: beans, what's the price in Arusha today?": "9db7070701.mp3",
+ "The voice gate finds the speech, speech to text writes it down, the model calls a price tool, and text to speech answers, starting after the first few words.": "95f1c19fff.mp3",
+ "Start the voice gate too late, and \"beans\" is cut off. The assistant has to ask which crop, and the call takes two turns.": "665729815b.mp3",
+ "Wait for the whole reply before speaking, and there is a long silence. On a phone line, that sounds like a dropped call.": "d25de12976.mp3",
+ "The farmer says: stop, I meant maize. Cut the interrupt wire, and the assistant talks right over them.": "88d1b3a0bf.mp3",
+ "If the price service is down and the error never reaches the model, it invents a price. Pass the error back, and it says it cannot check.": "1a57f634a5.mp3"
+}

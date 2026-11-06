@@ -1,0 +1,8 @@
+{
+ "A radio station in Mombasa runs its Swahili interviews through Whisper. The audio is cut into thirty-second windows.": "e776b833c4.mp3",
+ "Tokens at the start of the decoder's prompt choose the language and the task. Swahili, transcribe.": "7d2e177499.mp3",
+ "Change one token to translate, and the same model writes English.": "b3efdbc717.mp3",
+ "Force the language token to English, and Swahili comes out as English-sounding nonsense.": "916c5bd08d.mp3",
+ "Without a voice activity gate, the station jingle becomes \"asante kwa kusikiliza\", thanks for listening. Nobody said it.": "a4cf31141c.mp3",
+ "Let each window lean on the last window's text, and the invented phrase repeats, swallowing real speech.": "3339320f1d.mp3"
+}

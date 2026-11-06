@@ -1,0 +1,8 @@
+{
+ "Eight frames of a dhow sailing across the harbour at Lamu, generated from a prompt. The track below plots where the boat is in each frame.": "94c99bbdcc.mp3",
+ "A video model adds temporal layers to an image model, so each frame is denoised while looking at the others. The boat keeps its shape and moves smoothly.": "3699d1a6b6.mp3",
+ "Generate each frame on its own, and every one is a fresh guess. The boat jumps about and the sail changes colour.": "580c4bd3cf.mp3",
+ "Use the same noise for every frame with nothing linking them, and you get the same picture eight times. Nothing moves.": "8d82e5ece7.mp3",
+ "Ask for four times the clip length the model was trained on, and the boat drifts off its path and fades.": "eeffd81177.mp3",
+ "Long videos are made in overlapping chunks, each the length the model knows, so every frame agrees with its neighbours.": "ee676a96d9.mp3"
+}

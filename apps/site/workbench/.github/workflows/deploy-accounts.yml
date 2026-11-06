@@ -1,0 +1,57 @@
+# Puts the accounts server (PocketBase: sign-in, saved progress, certificates) on the Oracle server.
+# Run it by hand from the Actions tab. It needs three repository secrets (Settings → Secrets and variables → Actions):
+#   ORACLE_HOST     the server's address
+#   ORACLE_USER     the login user (it needs sudo, as the default ubuntu and opc users have)
+#   ORACLE_SSH_KEY  the private key for that user
+# PocketBase listens on 127.0.0.1:8092; the web server in front of it (Caddy or nginx) gives it its public address,
+# then SITE.api in engine/catalog.js is set to that address. Nothing here touches other apps on the server.
+name: Deploy accounts server
+on:
+  workflow_dispatch:
+concurrency: deploy-accounts
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    env:
+      PB_VERSION: 0.40.5
+      DIR: amaete-build-pb
+    steps:
+      - uses: actions/checkout@v4
+      - name: SSH key
+        run: |
+          mkdir -p ~/.ssh
+          echo "${{ secrets.ORACLE_SSH_KEY }}" > ~/.ssh/id
+          chmod 600 ~/.ssh/id
+          ssh-keyscan -H "${{ secrets.ORACLE_HOST }}" >> ~/.ssh/known_hosts
+      - name: Copy migrations and hooks
+        run: |
+          ssh -i ~/.ssh/id "${{ secrets.ORACLE_USER }}@${{ secrets.ORACLE_HOST }}" "mkdir -p ~/$DIR"
+          rsync -az --delete -e "ssh -i ~/.ssh/id" server/pb_migrations server/pb_hooks "${{ secrets.ORACLE_USER }}@${{ secrets.ORACLE_HOST }}:~/$DIR/"
+      - name: Install or update PocketBase and restart it
+        run: |
+          ssh -i ~/.ssh/id "${{ secrets.ORACLE_USER }}@${{ secrets.ORACLE_HOST }}" PB_VERSION=$PB_VERSION DIR=$DIR 'bash -s' <<'SH'
+          set -euo pipefail
+          cd ~/$DIR
+          ARCH=$(uname -m); case "$ARCH" in aarch64|arm64) A=arm64;; *) A=amd64;; esac
+          if [ ! -x ./pocketbase ] || ! ./pocketbase --version | grep -q "$PB_VERSION"; then
+            curl -fsSL -o pb.zip "https://github.com/pocketbase/pocketbase/releases/download/v${PB_VERSION}/pocketbase_${PB_VERSION}_linux_${A}.zip"
+            unzip -oq pb.zip pocketbase && rm pb.zip
+          fi
+          sudo tee /etc/systemd/system/amaete-build-pb.service > /dev/null <<UNIT
+          [Unit]
+          Description=Amaete Build accounts (PocketBase)
+          After=network.target
+          [Service]
+          User=$USER
+          WorkingDirectory=$HOME/$DIR
+          ExecStart=$HOME/$DIR/pocketbase serve --http 127.0.0.1:8092 --dir $HOME/$DIR/pb_data --migrationsDir $HOME/$DIR/pb_migrations --hooksDir $HOME/$DIR/pb_hooks
+          Restart=always
+          [Install]
+          WantedBy=multi-user.target
+          UNIT
+          sudo systemctl daemon-reload
+          sudo systemctl enable --now amaete-build-pb
+          sudo systemctl restart amaete-build-pb
+          sleep 2
+          curl -fsS http://127.0.0.1:8092/api/health
+          SH

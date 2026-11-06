@@ -1,0 +1,8 @@
+{
+ "A tool list arrives with a thirty-second freshness hint. A second request inside that window is a hit.": "12bfc9d67a.mp3",
+ "With ttlMs zero, every request goes to the server.": "329e27eed9.mp3",
+ "A list changed notification empties the cache at once, whatever the TTL says.": "bf178f078f.mp3",
+ "A cache entry belongs to a method and its parameters, such as the URI being read.": "495176ff0d.mp3",
+ "A reader's own draft is private, so the gateway never serves it to someone else.": "0892c231c0.mp3",
+ "An input required reply and its retry are never cached.": "b6f55ad346.mp3"
+}

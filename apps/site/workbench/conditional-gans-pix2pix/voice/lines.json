@@ -1,0 +1,8 @@
+{
+ "An architect's line drawing of a Stone Town house front in Zanzibar goes in. A rendered façade comes out, and on the right is the real photo it was paired with.": "b614c87f1c.mp3",
+ "Swap to a different sketch, with the door on the other side, and the picture follows. That is what conditional means.": "fe21cc8e6d.mp3",
+ "The generator learns from two losses at once: stay close to the paired photo, and fool a discriminator that judges small patches.": "d1c660ca15.mp3",
+ "With only the L1 loss, the generator plays safe and averages. The layout is right, but the carved details blur.": "71d69cf56c.mp3",
+ "With only the discriminator, edges are crisp, but nothing ties the colours to the real photo.": "945714ecf2.mp3",
+ "And if the discriminator never sees the sketch, any convincing house will do. The door ends up on the wrong side.": "a6671a4cf9.mp3"
+}

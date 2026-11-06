@@ -1,0 +1,8 @@
+{
+ "In JAX you write plain functions: given the same inputs, they always return the same output and change nothing else. Here, the loss of a small model.": "2674ae3db6.mp3",
+ "Then you transform them. grad gives a new function that returns the gradient. jit compiles it into one fast program. vmap makes it work on a whole batch at once.": "40d491b82c.mp3",
+ "jit traces the function once for one input shape, then reuses the compiled code. Change the batch size every call, and it has to compile all over again, every time.": "3a2ba9ceb8.mp3",
+ "Without vmap, a Python loop sends the examples through in single file. With it, all eight go through side by side.": "fa7b8cf66c.mp3",
+ "Random numbers come from keys. The same key always gives the same numbers, so you split a key into fresh subkeys, one for each use.": "90f9794e2c.mp3",
+ "Reuse one key for every dropout mask, and the masks come out identical: the same neurons switched off every time.": "e2964756d2.mp3"
+}

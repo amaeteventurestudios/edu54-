@@ -1,0 +1,8 @@
+{
+ "A library in Harare sorts its loans. Count comparisons, not seconds.": "20dda041ff.mp3",
+ "Insertion sort slides each item into place, and grows with the square.": "3fe7f67da5.mp3",
+ "Merge sort splits in half and joins. It grows gently, on any input.": "7cbffd3f71.mp3",
+ "Quick sort splits around a pivot, and it's usually good.": "c24e909aea.mp3",
+ "Take the last item as the pivot on sorted input, and it collapses.": "8768f864e2.mp3",
+ "On sorted input, simple insertion wins. The input matters as much as the size.": "4d88491da6.mp3"
+}

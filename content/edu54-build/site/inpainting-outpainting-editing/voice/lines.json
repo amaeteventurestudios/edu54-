@@ -1,0 +1,8 @@
+{
+ "A hillside street in Kigali, with a delivery truck parked in the way. We want the street without it.": "6fa2dfff64.mp3",
+ "Paint a mask over the truck. At every denoising step, everything outside the mask is reset to the photo, so the model only invents what was behind the truck.": "d24da641a9.mp3",
+ "Trace the mask too tightly, and the truck's shadow and edge stay behind as a dark halo.": "b8d8a62080.mp3",
+ "Paste the fill back with a hard edge, and its slightly different brightness shows as a rectangle. Blending hides the join.": "a4613a57c4.mp3",
+ "Widen the canvas, and make the new border the mask. The model continues the sky, the houses and the road.": "a6c8cbf7ab.mp3",
+ "Or noise the whole photo part way and denoise it towards \"golden evening\". A little noise restyles it; too much, and it becomes a different street.": "6daa8211bb.mp3"
+}

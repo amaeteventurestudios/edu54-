@@ -1,0 +1,8 @@
+{
+ "A Nairobi team asks an agent to migrate a payments service: fifty files, research, code and review.": "8326abde31.mp3",
+ "One agent must hold every file and play every role, in order. Its context overflows, and quality drops.": "08c085e593.mp3",
+ "A planner, two workers and a reviewer: each holds less, does one job, and the workers run at the same time.": "1ff0587ed7.mp3",
+ "Pass loose prose between agents and details drop at every step. Use a fixed shape: done, found, still open.": "bc079ab100.mp3",
+ "For ten files, one agent fits fine. More agents only add tokens and coordination.": "e8f381436d.mp3",
+ "Split when the job outgrows one context, needs different expertise, or has parallel parts.": "e60ad73ee7.mp3"
+}

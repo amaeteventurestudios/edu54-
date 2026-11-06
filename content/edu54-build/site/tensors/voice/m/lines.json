@@ -1,0 +1,8 @@
+{
+ "Here are four tiny images, each three rows by four columns. Together they make one tensor of shape four, three, four: forty-eight numbers.": "0910be85e4.mp3",
+ "In memory the forty-eight numbers sit in one long line. The shape is only a rule for how to read that line.": "30a878d495.mp3",
+ "Reshape reads the same line into a new shape. Four by twelve flattens each image into one row, ready for a dense layer. Nothing moves in memory.": "d5ab223d7b.mp3",
+ "Transpose swaps two axes. Each image turns on its side: every row becomes a column. Watch the colours: each row stays together.": "d2507a6871.mp3",
+ "Now add a bias of four numbers, one per column. Broadcasting stretches it over every row of every image, without copying it. Shapes line up from the right.": "9ce531a664.mp3",
+ "Reshape to four by three when you meant transpose, and the rows are chopped up and mixed. No error, just scrambled data. Always check the shapes at each step.": "74c38a9c4d.mp3"
+}

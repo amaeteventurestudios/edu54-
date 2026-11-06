@@ -1,0 +1,8 @@
+{
+ "A health worker walks with a phone in her bag. Its accelerometer reads gravity, her motion and jitter.": "ef28489479.mp3",
+ "Read one axis and the slow tilt drags the signal down. Steps disappear.": "d102d54080.mp3",
+ "Estimate gravity with a slow filter, subtract it, and keep the up-and-down part.": "a67b93d6e5.mp3",
+ "Jitter crosses the threshold several times per step. A low-pass filter smooths it.": "17c15a17fd.mp3",
+ "Too high and gentle steps are missed. Too low and wobbles count.": "5368df589b.mp3",
+ "A sensible threshold and a short gap between steps: every step counted once.": "9dce5c350f.mp3"
+}

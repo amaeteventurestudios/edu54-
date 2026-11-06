@@ -1,0 +1,8 @@
+{
+ "In an avocado packhouse in Murang'a, a robot arm is told: put the ripest avocado in the export crate.": "0c238b0b51.mp3",
+ "A vision-language-action model reads the camera and the words, and its output is arm movement.": "59cd84121e.mp3",
+ "A flow-matching action expert outputs a smooth chunk of fifty steps at once, so control runs fast.": "7ec1e44d2e.mp3",
+ "Train on robot demos alone, and it does not know what ripest means. It picks where the demos picked.": "bbfc47b7d3.mp3",
+ "One bad action points off the table. Without a safety layer, the arm follows it.": "e9d93dacc7.mp3",
+ "With coarse action bins the arm moves in slow, jerky steps.": "2c27294f79.mp3"
+}

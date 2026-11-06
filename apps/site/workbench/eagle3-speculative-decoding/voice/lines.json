@@ -1,0 +1,8 @@
+{
+ "A bank in Casablanca serves a large model. Each step reads all the weights for one token, so verifying several tokens at once is tempting.": "2b8548a4e2.mp3",
+ "Each tower is one draft length. Above the plank you gain, below it you lose. The dial, acceptance, decides everything.": "b97af066eb.mp3",
+ "The benchmark used general chat. Bank letters look nothing like it, and acceptance falls.": "6ba8787b68.mp3",
+ "With low acceptance, long drafts are mostly thrown away, and each rejection costs another pass.": "37a958866a.mp3",
+ "Train the draft head on the bank's own traffic, and acceptance climbs back up.": "029361a89d.mp3",
+ "Test at your real concurrency, as overhead grows with load. Turn it on when your own numbers say so.": "3dd9a50d1c.mp3"
+}

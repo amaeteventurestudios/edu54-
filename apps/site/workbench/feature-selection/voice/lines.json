@@ -1,0 +1,8 @@
+{
+ "We want to predict each school's exam pass rate. There are twelve columns, from pupils per teacher to the colour of the gate.": "a77b3cec83.mp3",
+ "Each pillar shows how much worse the model gets if that column is scrambled. Pupils per teacher, textbooks and electricity stand tall.": "5ed3e65669.mp3",
+ "Switch on all twelve. With only forty schools to learn from, the model finds chance patterns in the gate colour and the head teacher's shoe size, and its error on new schools goes up.": "fe253c97b5.mp3",
+ "Forward selection adds columns one at a time, keeping each only if it lowers the error on validation schools. It stops when nothing else helps.": "4cfb8c3455.mp3",
+ "A column copied twice splits its importance in half, and the model looks less sure of something that really matters. Drop duplicates.": "67ae92157e.mp3",
+ "With four hundred schools, the noise columns hurt much less. Fewer columns or more data: both tame noise. And always choose on validation data, never the test set.": "4d6c3e6040.mp3"
+}

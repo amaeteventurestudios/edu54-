@@ -1,0 +1,8 @@
+{
+ "A homework helper for students in Kumasi, Kisumu and Lusaka writes down how it should behave, in plain words. That list is its constitution.": "cb16710335.mp3",
+ "The model reads its own draft, says which rule it breaks, and rewrites it. Training on the rewrites needs no human labels.": "4dd0a28f6b.mp3",
+ "For maths, a simple rule can check the answer. The model writes sixteen answers to each problem, and each is scored against the group's average.": "b278ee2bbb.mp3",
+ "Answers above the average are pushed up, and those below are pushed down. Over eight rounds, careful answers take over.": "713ba6f28f.mp3",
+ "Now let the rule check only the answer tags. The model learns to tag quick guesses, and fewer answers are right.": "084d9c9cbd.mp3",
+ "Give it problems it cannot solve at all, and every answer is wrong. Self-improvement sharpens a skill the model has. It cannot create one.": "85beccfa9d.mp3"
+}

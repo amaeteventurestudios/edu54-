@@ -1,0 +1,8 @@
+{
+ "A fish-catch model in Kigoma holds twelve numbers. They sit in one flat run of memory.": "6613e6028d.mp3",
+ "Shape and strides turn that run into a grid.": "c89fca4a8f.mp3",
+ "Reshape changes two lists, and copies nothing.": "d7be02cf8c.mp3",
+ "Transpose swaps the strides, so memory is no longer in order.": "76a1b86f46.mp3",
+ "Line up shapes from the right. They must match, or one must be one.": "17363b725d.mp3",
+ "A whole array meets a row with no loop in your code.": "8c83103386.mp3"
+}

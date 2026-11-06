@@ -1,0 +1,8 @@
+{
+ "A fintech team in Nairobi wants a coding agent. Start with a bare model: it solves under half their backlog.": "0bc9c2f1ce.mp3",
+ "A repo map helps it find the files to change. Finding them is the silent bottleneck.": "9b62c43554.mp3",
+ "Run the tests, read the trace, try again, inside a sandbox that rolls back each failed attempt.": "6e3c0cfee7.mp3",
+ "Let each action be a small program, and tasks take fewer turns. It needs the sandbox even more.": "7be725e92c.mp3",
+ "A third of one popular benchmark is one- or two-line fixes. Scores there look better than on real work.": "c2cfdad192.mp3",
+ "The scaffold is the product. Judge it on a sample of the tasks you actually ship.": "cabdf65087.mp3"
+}

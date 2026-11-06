@@ -1,0 +1,8 @@
+{
+ "Mango weights from a market in Mombasa: small Ngowe on the left, large Apple on the right. Two humps of real data, in teal.": "81e000e999.mp3",
+ "The generator turns random noise into fake weights, in orange. The discriminator, the purple curve, scores every weight from fake to real.": "0d21b15146.mp3",
+ "The discriminator learns to score real weights high. The generator follows the slope of that curve, pushing its fakes towards where real mangoes are.": "70994fc873.mp3",
+ "With the original loss, the generator gets almost no gradient when the discriminator is confident. Its fakes sit in one spike, going nowhere.": "066aa9faf6.mp3",
+ "If the discriminator learns too slowly, its curve stays flat and gives no direction. The fakes spread everywhere.": "6241f2a121.mp3",
+ "And a generator with one neuron is too simple to shape its output. Its fakes pile into narrow spikes that miss both kinds of mango.": "56e74703f8.mp3"
+}

@@ -1,0 +1,8 @@
+{
+ "A woman calls a microfinance helpline from a busy Kampala market. My account number is... she pauses to remember... four seven two one.": "9882ba05b2.mp3",
+ "Every thirty milliseconds, a neural detector scores how much the sound is speech. Market noise scores low; her voice scores high.": "f12c46380b.mp3",
+ "A plain loudness gate counts the chatter and a passing motorbike as speech. The silence it waits for never comes.": "124fd1537f.mp3",
+ "Her first word starts softly. Without pre-roll, \"my\" is clipped before the detector fires.": "a9fd5f1acc.mp3",
+ "With a short hang-over and no sense of the words, the system decides she has finished during her pause, and talks over the number.": "2f5754f96e.mp3",
+ "A six-hundred-millisecond hang-over, plus a check that \"is\" does not end a sentence, waits through the pause and replies promptly at the end.": "758c4317ba.mp3"
+}

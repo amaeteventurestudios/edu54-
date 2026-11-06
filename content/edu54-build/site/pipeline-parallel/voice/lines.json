@@ -1,0 +1,8 @@
+{
+ "A team in Addis Ababa splits a model over four ranks. Each row is a rank, and each column a time step.": "2aaf6f7772.mp3",
+ "Pale cells are idle. Ranks wait for work to arrive.": "cfe73078d2.mp3",
+ "More microbatches keep the line fuller, and they hold more in memory.": "7778b9caa2.mp3",
+ "Interleave one forward with one backward. The idle cells stay the same.": "bf9ec54adb.mp3",
+ "Backwards free activations early, so fewer are held.": "edf46b6445.mp3",
+ "The slowest stage sets the pace, so balance the layers.": "89715fd001.mp3"
+}

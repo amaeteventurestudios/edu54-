@@ -1,0 +1,8 @@
+{
+ "Reverse engineering tools come in families: disassemblers, decompilers, debuggers and analysis frameworks. Five of them read the student's own small program.": "a63938c6a7.mp3",
+ "Raw, the tools put one function at four addresses. Each picked its own base. Subtract it, and they all agree.": "67e05b75f5.mp3",
+ "On the optimised build, every tool that draws a graph finds the same blocks and the same edges.": "c05094ffe2.mp3",
+ "On a jump table, the counts split. Each number has a reason: one tool stopped, two read the table, one left the jump unresolved.": "ed5440c3f0.mp3",
+ "One tool scans every leftover byte and makes functions out of padding and data. Count only what a symbol or a call backs.": "5e3421f136.mp3",
+ "One instruction lifts four ways. Three write the flags at once; one stores a recipe and computes them only when read.": "ebf9e931a5.mp3"
+}

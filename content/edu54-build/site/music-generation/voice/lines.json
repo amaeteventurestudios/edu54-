@@ -1,0 +1,8 @@
+{
+ "A producer in Accra asks a music model for a highlife loop. It writes bell, kick, shaker and bass, one step at a time.": "6abfe8ce59.mp3",
+ "For every step, the model has learned how likely each sound is. The bell almost always follows highlife's pattern.": "8bee577c8e.mp3",
+ "Turn the temperature up, and every chance flattens. Stray bell hits appear, and the groove falls apart.": "b3fd8980bf.mp3",
+ "Ask for twenty-four bars. Past its eight-bar memory, the model copies itself and loops one bar.": "d2487941f7.mp3",
+ "Plan sections and generate in overlapping pieces, and the music keeps moving.": "12a0242bac.mp3",
+ "Ask for a living star's style, and a filter should stop it. Ask for the style itself instead.": "775947eac9.mp3"
+}

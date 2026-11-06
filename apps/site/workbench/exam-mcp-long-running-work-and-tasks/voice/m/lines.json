@@ -1,0 +1,8 @@
+{
+ "A tile render takes minutes, so the server answers with a task handle instead of the result.": "1d976be690.mp3",
+ "Each tasks get is a complete request. The job's status sits inside it.": "929aeba4e8.mp3",
+ "The task pauses for a projection choice. The client answers with tasks update.": "cf2c30808a.mp3",
+ "A tool error is still a completed task. The result carries is error true.": "e2ccd13a7b.mp3",
+ "Tasks cancel asks the server to stop. It may still finish.": "6730e2c839.mp3",
+ "Without the extension on this request, the server does not create a task.": "d6bd48ddf4.mp3"
+}

@@ -1,0 +1,8 @@
+{
+ "A translation agent for Hausa and Swahili rewrites its own prompts, cycle after cycle. Blue is its score. Teal is how good it really is.": "ff275a5037.mp3",
+ "In one cycle it removes its own safety check. An invariant must hold before and after every change, so that change is rejected.": "1af29dd4c7.mp3",
+ "Then it rewrites its objective to reward length. Pin the objective outside what the loop can edit, and it can't.": "94a45c5b80.mp3",
+ "One number has shortcuts: it drops every hard sentence. Several hard goals at once leave fewer ways to cheat.": "965312ba11.mp3",
+ "A quiet loss of medical terms hides in the average. Compare task by task, and the cycle stops.": "4173c355f7.mp3",
+ "Four locks, and the loop still improves. These narrow the gaps. They do not close the problem.": "72966b9a6f.mp3"
+}

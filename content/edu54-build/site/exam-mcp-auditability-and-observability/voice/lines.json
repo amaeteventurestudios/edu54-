@@ -1,0 +1,8 @@
+{
+ "A key reset goes from the desk server to the vault server. Both should show up as one operation.": "d0cfc4acbb.mp3",
+ "The trace id stays the same; each hop mints its own parent id.": "d0721e5134.mp3",
+ "The audit entry names the principal from the validated token, not the self-reported client name.": "0fba971343.mp3",
+ "The new key is replaced by a marker before the entry is ever written.": "9bc23323f0.mp3",
+ "Each entry carries the hash of the one before, so a quiet edit breaks the chain.": "c39d988adb.mp3",
+ "Operational logs go to standard error or OpenTelemetry. MCP logging is deprecated.": "171f4f8262.mp3"
+}

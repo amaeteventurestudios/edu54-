@@ -1,0 +1,8 @@
+{
+ "A model answers farming questions and reports a confidence with each answer.": "33b7a3fe4e.mp3",
+ "Bin answers by confidence and measure each bin's accuracy. A calibrated model sits on the diagonal.": "da6f858ef5.mp3",
+ "This model falls short in the high bins: it says ninety percent and is right far less often.": "98f5b5c1ff.mp3",
+ "Divide the logits by one number, fitted on held-out answers. The bars meet the diagonal.": "d998eca93f.mp3",
+ "With a hundred answers, the error is mostly noise. Score thousands.": "9f45dac4e8.mp3",
+ "Perplexity must be at least one. A missing minus sign makes it impossible, and the harness should say so.": "6dfa845525.mp3"
+}

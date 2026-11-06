@@ -1,0 +1,8 @@
+{
+ "A claims assistant at an insurer in Durban serves two hundred requests, some with long policy documents.": "759b7b541c.mp3",
+ "Time to the first token, time between tokens, and time to the end. Long prompts slow the first; long answers the last.": "8a88fe9a17.mp3",
+ "Under heavier load, the mean looks fine. The slowest one percent tell a different story.": "b6c3e6e051.mp3",
+ "Push load towards capacity and the queue explodes. The tail breaks first.": "f0dade3009.mp3",
+ "A long document prefilled whole stalls everyone's stream. Chunk it, and it interleaves with their tokens.": "d895c6bb97.mp3",
+ "Count the share of requests that meet every target at once. That is the number that says the product works.": "fdc0f89ff8.mp3"
+}

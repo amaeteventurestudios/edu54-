@@ -1,0 +1,8 @@
+{
+ "Translating \"the market near the lake opens early\". With attention, each Swahili word can look back at every English word, instead of one squeezed summary.": "58ca44ba3c.mp3",
+ "For each word being written, the decoder scores every input word, and a softmax turns the scores into weights that add up to one. Brighter squares get more attention.": "9145824187.mp3",
+ "The grid looks like a dictionary: \"soko\" looks at \"market\", \"ziwa\" at \"lake\". \"Na\" shares its look between \"near\" and \"the\".": "f23e008365.mp3",
+ "Switch attention off, and every word reads the same flat average. That is the old bottleneck again.": "8017628773.mp3",
+ "Forget to divide the scores by the square root of the vector size, and the softmax saturates: all of each row's weight lands on one word.": "cbfccf1a80.mp3",
+ "And run the softmax down the columns by mistake, and the rows no longer add up to one. Some words read almost nothing.": "8f25f4afde.mp3"
+}

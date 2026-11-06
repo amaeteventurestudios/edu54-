@@ -1,0 +1,8 @@
+{
+ "An insurer in Harare has a policy document. Retrieval can only return what chunking made.": "19903f9e17.mp3",
+ "A fixed window is simple, and cuts sentences in half.": "09bef3f58f.mp3",
+ "Sentence chunking keeps sentences whole, but it ignores topics.": "0435eb4574.mp3",
+ "Try big boundaries first, then smaller ones. A good default.": "e05579b91b.mp3",
+ "Cut where the meaning changes, at the cost of embedding calls.": "9474dd487a.mp3",
+ "If a document has headers, use them.": "04ff0ce1f4.mp3"
+}

@@ -1,0 +1,8 @@
+{
+ "Training and running a model is mostly one kind of sum, repeated: multiply two big grids of numbers. Here is the answer grid, waiting to be filled.": "cc575e1ba2.mp3",
+ "A CPU has a few strong cores. Each one works out a handful of cells, then the next handful, one batch after another.": "4cd06c89f1.mp3",
+ "A graphics card has hundreds or thousands of small cores. The numbers are copied over, then every cell gets its own worker, all at the same time.": "f82dcabbf7.mp3",
+ "On a big grid the card wins by fifty times or more. On a tiny one, copying the numbers over takes longer than the sum itself, and the CPU wins.": "5f18b38d77.mp3",
+ "The card has its own memory, and the whole model has to fit. At half precision each parameter takes two bytes, so seven billion parameters need about fourteen gigabytes, plus a little room to work.": "81842387f0.mp3",
+ "A bigger model overflows the tank. Shrink the numbers, or rent a bigger card in the cloud by the hour. The price shows in your own currency.": "cd2c296b32.mp3"
+}

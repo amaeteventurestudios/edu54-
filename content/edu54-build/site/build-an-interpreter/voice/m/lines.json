@@ -1,0 +1,8 @@
+{
+ "The interpreter evaluates the program node by node: numbers, additions, calls.": "4c17c0b566.mp3",
+ "Every call gets an environment of names and values, pointing to a parent.": "833e3bf89f.mp3",
+ "inc's parent is where it was defined, inside makeCounter. So it keeps its own count.": "fbc6fe9ce9.mp3",
+ "Point to the caller instead, and inc changes the global count.": "8882b76b6c.mp3",
+ "Reuse one environment for every call, and the two counters share one count.": "137ba58c33.mp3",
+ "Assignment must find the variable's own environment, or the counter never advances.": "94bf547e0f.mp3"
+}

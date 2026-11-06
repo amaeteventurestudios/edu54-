@@ -1,0 +1,8 @@
+{
+ "An archive in Accra searches eighty documents by embedding. A query is worded differently from its document, but should still land closest to it.": "54d65023a3.mp3",
+ "Every number in every vector costs storage and search time. Could the vectors be shorter?": "edd8f4a34f.mp3",
+ "A Matryoshka model packs the most meaning into the first numbers. Keep half, and recall barely moves.": "ecbebb25ee.mp3",
+ "Keep only four numbers, and recall collapses. There is a floor, and it depends on your data.": "9ea1b25d69.mp3",
+ "A model not trained this way spreads meaning evenly. Cut it to eight, and it misses far more often.": "0e96e8bf1e.mp3",
+ "Query with a different model from the one that built the index, and the vectors live in different spaces. Almost nothing is found.": "b0bf67eb13.mp3"
+}

@@ -1,0 +1,8 @@
+{
+ "A basket server runs on two replicas, and a router sends each request to the next one.": "465b3d0266.mp3",
+ "A basket kept in one replica's memory is gone when the next call lands on the other.": "5dae806599.mp3",
+ "The create tool returns a handle, and the state lives in a store both replicas share.": "5e1a2b6e3e.mp3",
+ "Make handles opaque, so nobody can guess the next one.": "48f3cbcaf6.mp3",
+ "A handle is a name, not permission. Check the caller against it on every call.": "baafc1c24b.mp3",
+ "The tool list never changes per connection, so a second connection sees the same tools.": "e514475b10.mp3"
+}

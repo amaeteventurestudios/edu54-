@@ -1,0 +1,8 @@
+{
+ "A team in Lagos tests models on arithmetic, code and summaries. One record shape holds them all.": "292b11c854.mp3",
+ "Metric names come from a fixed list, so that a typo stops at load.": "d509dfe2a1.mp3",
+ "The wrong name is caught at once, before any run.": "5b964f7c59.mp3",
+ "Examples live inside the task, so that the prompt is the same anywhere.": "877f37b9dd.mp3",
+ "Put them in the runner, and two tools build two prompts.": "940ba9bd91.mp3",
+ "A version on the file lets scores compare over time.": "e713a075b1.mp3"
+}

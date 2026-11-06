@@ -1,0 +1,196 @@
+/* Amaete Build: the home page. The logo's cube is the course: twelve slabs, one per track, stacked.
+   Scrolling pulls the slabs out like drawers (the cutaway), and each group of tracks slides in beside it.
+   Every field carries a pattern drawn from the same cube (isometric tiles) or from woven cloth (stripes). */
+:root {
+  --home-ink: #1C1B19; --paper: #F6F4EF; --paper2: #EFEAE0;
+  --pat-ink: rgba(28, 27, 25, 0.07); --pat-ink2: rgba(28, 27, 25, 0.045);
+}
+@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) { --paper: #121211; --paper2: #1A1917; --pat-ink: rgba(238, 234, 226, 0.07); --pat-ink2: rgba(238, 234, 226, 0.04); } }
+:root[data-theme="dark"] { --paper: #121211; --paper2: #1A1917; --pat-ink: rgba(238, 234, 226, 0.07); --pat-ink2: rgba(238, 234, 226, 0.04); }
+
+body.home { background: var(--paper); overflow-x: hidden; }
+.home main { max-width: none; padding: 0; }
+.home .top { max-width: 1320px; position: relative; z-index: 5; padding: 18px 24px 0; }
+.home footer { max-width: none; border: 0; display: block; }
+
+/* ---------- patterns (one SVG tile each, coloured by the field they sit on) ---------- */
+.pat-cubes { background-image:
+  url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='56' height='97' viewBox='0 0 56 97'%3E%3Cg fill='none' stroke='%23000' stroke-opacity='.09' stroke-width='1.2'%3E%3Cpath d='M28 0l28 16.2v32.3L28 64.7 0 48.5V16.2z'/%3E%3Cpath d='M28 32.3L56 16.2M28 32.3L0 16.2M28 32.3v32.4'/%3E%3Cpath d='M0 48.5v32.3L28 97l28-16.2V48.5'/%3E%3C/g%3E%3C/svg%3E"); }
+.pat-dots { background-image: radial-gradient(circle at 1px 1px, var(--pat-ink) 1.4px, transparent 1.6px); background-size: 22px 22px; }
+.pat-weave { background-image:
+  repeating-linear-gradient(90deg, rgba(255,255,255,.07) 0 3px, transparent 3px 44px, rgba(0,0,0,.07) 44px 52px, transparent 52px 96px),
+  repeating-linear-gradient(0deg, rgba(0,0,0,.05) 0 2px, transparent 2px 12px); }
+.dark-field .pat-cubes, .pat-cubes.on-dark { filter: invert(1); }
+
+/* ---------- the stage: hero and cutaway in one pinned scene ---------- */
+.stage { position: relative; height: 560vh; margin-top: -64px; }
+.stage .pin { position: sticky; top: 0; height: 100vh; height: 100svh; overflow: hidden; }
+.stage .bg { position: absolute; inset: -10% 0; opacity: 1; will-change: transform; }
+.stage .bg.pat-cubes { background-color: var(--paper); }
+:root[data-theme="dark"] .stage .bg.pat-cubes { filter: invert(1) hue-rotate(180deg); background-color: #EDEEEC; }
+@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) .stage .bg.pat-cubes { filter: invert(1) hue-rotate(180deg); background-color: #EDEEEC; } }
+.stage .sun { position: absolute; left: 0; top: 0; width: 70vmin; height: 70vmin; border-radius: 50%; transform: translate(50vw, 14vh); background: var(--field, #E3A72F); opacity: .16; transition: background-color .8s; will-change: transform; }
+.stage canvas { position: absolute; inset: 0; width: 100%; height: 100%; display: block; touch-action: pan-y; }
+.stage .fallback { position: absolute; right: 8vw; top: 22vh; width: min(42vw, 460px); }
+
+.hero { position: absolute; left: max(24px, calc((100vw - 1320px) / 2 + 24px)); top: 50%; transform: translateY(-50%); width: min(620px, 48vw); z-index: 2; will-change: transform, opacity; }
+.hero h1 { font-size: clamp(40px, 4.7vw, 84px); line-height: 0.95; white-space: nowrap; letter-spacing: -0.035em; margin: 0 0 22px; }
+.hero h1 span { display: block; }
+.chap h2 { overflow: visible; }
+.hero .lead { font-size: clamp(17px, 1.35vw, 20px); color: var(--ink); max-width: 30em; margin: 0 0 28px; }
+.hero .acts { display: flex; gap: 12px; flex-wrap: wrap; }
+.btn.big { padding: 15px 26px; font-size: 17px; border-radius: 999px; transition: transform .2s, background-color .2s; }
+.btn.big:hover { transform: translateY(-2px); }
+.btn.big:active { transform: translateY(1px) scale(.98); }
+.btn.clay { background: #A4462A; color: #fff; }
+.btn.clay:hover { background: #8E3B22; }
+.hint { position: absolute; left: 50%; bottom: 22px; transform: translateX(-50%); font-size: 14px; color: var(--muted); z-index: 2; display: flex; flex-direction: column; align-items: center; gap: 6px; }
+.hint i { width: 2px; height: 34px; background: currentColor; border-radius: 2px; animation: drip 1.8s ease-in-out infinite; transform-origin: top; }
+@keyframes drip { 0% { transform: scaleY(0); } 50% { transform: scaleY(1); } 100% { transform: scaleY(1); opacity: 0; } }
+
+/* chapter captions: each group of tracks slides in from the right as its slabs pull out */
+.chap { position: absolute; right: max(24px, calc((100vw - 1320px) / 2 + 24px)); top: 50%; width: min(560px, 42vw); transform: translate(60px, -50%); opacity: 0; pointer-events: none; z-index: 2; }
+.chap.on { pointer-events: auto; }
+.chap h2 { font-size: clamp(28px, 3.1vw, 50px); line-height: 1; white-space: nowrap; letter-spacing: -0.03em; margin: 0 0 14px; color: var(--c); }
+.chap p { font-size: 18px; margin: 0 0 18px; color: var(--ink); white-space: nowrap; }
+.chap ul { list-style: none; padding: 0; margin: 0; display: grid; gap: 8px; }
+.chap li { margin: 0; }
+.chap li a { display: flex; align-items: baseline; justify-content: space-between; gap: 12px; padding: 12px 16px; border-radius: 14px; background: var(--panel); color: var(--ink); text-decoration: none; font-weight: 600; transition: transform .2s, background-color .2s; box-shadow: inset 4px 0 0 var(--c); }
+.chap li a:hover { transform: translateX(6px); }
+.chap li a small { color: var(--muted); font-weight: 500; font-size: 14px; white-space: nowrap; }
+.chap li.soon { padding: 10px 16px; color: var(--muted); font-size: 15px; }
+
+/* ---------- sections after the stage ---------- */
+.sec { position: relative; overflow: hidden; padding: clamp(90px, 14vw, 180px) 24px; }
+.sec > .in { max-width: 1320px; margin: 0 auto; position: relative; }
+.sec h2 { font-size: clamp(38px, 5.4vw, 84px); line-height: 0.95; letter-spacing: -0.035em; margin: 0 0 18px; }
+.sec .say { font-size: clamp(18px, 1.5vw, 22px); max-width: none; white-space: nowrap; margin: 0 0 40px; }
+
+/* turn it, break it, fix it: three bands that slide in from alternate sides */
+.tbf { background-color: #A4462A; color: #FFF8F2; }
+.tbf .say { color: #FFE9DA; }
+.tbf .row { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1.1fr); gap: clamp(24px, 5vw, 80px); align-items: center; margin-top: clamp(48px, 7vw, 100px); }
+.tbf .row:nth-child(odd of .row) .pic { order: -1; }
+.tbf .row h3 { font-family: var(--font-display); font-size: clamp(34px, 4.2vw, 64px); line-height: 1; letter-spacing: -0.03em; margin: 0 0 12px; }
+.tbf .row p { font-size: 19px; margin: 0; max-width: 28em; color: #FFF1E6; }
+.tbf .pic { aspect-ratio: 16 / 10; border-radius: 22px; background: #8E3B22; position: relative; overflow: hidden; }
+.tbf .pic svg { position: absolute; inset: 0; width: 100%; height: 100%; }
+
+/* the live thing: a real slope to roll a ball down */
+.try { background-color: #0E6B6B; color: #F1FBFA; }
+.try .say { color: #D3EFEC; }
+.try .bench { display: grid; grid-template-columns: minmax(0, 1.6fr) minmax(0, 1fr); gap: 32px; align-items: stretch; }
+.try canvas { width: 100%; aspect-ratio: 16 / 9; background: #0B5959; border-radius: 22px; display: block; touch-action: none; }
+.try .ctl { display: flex; flex-direction: column; gap: 18px; justify-content: center; }
+.try label { font-weight: 600; font-size: 17px; display: grid; gap: 10px; }
+.try input[type=range] { width: 100%; accent-color: #EE7434; height: 32px; }
+.try .out { font-family: var(--font-display); font-size: clamp(26px, 2.6vw, 38px); line-height: 1.05; letter-spacing: -0.02em; min-height: 2.2em; }
+.try .row2 { display: flex; gap: 10px; flex-wrap: wrap; }
+.btn.orange { background: #EE7434; color: #1C1B19; }
+.btn.line { background: rgba(255,255,255,.12); color: #fff; }
+
+/* told from Africa: the examples the lessons really use, sliding past */
+.afr { background-color: #5E2A61; color: #FBEFFB; padding-left: 0; padding-right: 0; }
+.afr .in { padding: 0 24px; }
+.afr .say { color: #F0D9F1; }
+.tape { display: flex; gap: 14px; width: max-content; margin: 14px 0; will-change: transform; }
+.tape span { font-family: var(--font-display); font-weight: 650; font-size: clamp(22px, 2.6vw, 40px); letter-spacing: -0.02em; padding: 14px 26px; border-radius: 999px; background: rgba(255,255,255,.1); white-space: nowrap; }
+.tape span:nth-child(3n) { background: #EE6352; color: #2A0F2B; }
+.tape span:nth-child(5n) { background: #F2AE0C; color: #2A0F2B; }
+
+/* all the lessons: a wall of tiles, each in its track's colour and pattern */
+.all { background-color: var(--paper2); }
+.wall { display: grid; grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); gap: 14px; }
+.tile { position: relative; display: flex; flex-direction: column; justify-content: space-between; gap: 18px; min-height: 190px; padding: 20px; border-radius: 20px; color: #fff; text-decoration: none; background-color: var(--c); overflow: hidden; transition: transform .25s cubic-bezier(.2,.8,.2,1); isolation: isolate; }
+.tile::before { content: ""; position: absolute; inset: 0; z-index: -1; opacity: .5; transition: transform .6s cubic-bezier(.2,.8,.2,1); }
+.tile:hover { transform: translateY(-4px) rotate(-.4deg); }
+.tile:hover::before { transform: scale(1.08) rotate(2deg); }
+.tile b { font-family: var(--font-display); font-size: 25px; line-height: 1.02; letter-spacing: -0.02em; }
+.tile small { font-size: 14px; opacity: .88; }
+.tile[data-g="clay"] { --c: #A4462A; } .tile[data-g="teal"] { --c: #0E6B6B; } .tile[data-g="plum"] { --c: #5E2A61; } .tile[data-g="char"] { --c: #2C2D31; }
+.tile[data-g="clay"]::before, .tile[data-g="plum"]::before { background-image: repeating-linear-gradient(90deg, rgba(255,255,255,.14) 0 10px, transparent 10px 18px, rgba(0,0,0,.12) 18px 21px, transparent 21px 36px); }
+.tile[data-g="teal"]::before, .tile[data-g="char"]::before { background-image: radial-gradient(circle at 2px 2px, rgba(255,255,255,.2) 1.6px, transparent 1.9px); background-size: 16px 16px; }
+
+/* the close: the name at full width over the cube pattern, then the links in four columns (as on Circuits) */
+footer.close, .close { background-color: #2C2D31; color: #F6F4EF; padding: clamp(80px, 11vw, 150px) 24px 36px; position: relative; overflow: hidden; }
+.close .pat { position: absolute; inset: 0; filter: invert(1); opacity: .6; }
+.close .in { max-width: 1320px; margin: 0 auto; position: relative; text-align: center; }
+.close .name { display: block; font-family: var(--font-display); font-weight: 800; font-size: clamp(56px, 13.5vw, 230px); line-height: 0.85; letter-spacing: -0.05em; color: #F2AE0C; text-decoration: none; white-space: nowrap; transition: transform .4s cubic-bezier(.2,.8,.2,1); }
+.close .name:hover { transform: translateY(-6px); }
+.close .links { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 28px; margin: 72px auto 0; max-width: 1040px; text-align: left; }
+.close .links nav { display: grid; gap: 2px; align-content: start; }
+.close .links a { color: #F6F4EF; text-decoration: none; font-size: 16px; min-height: 34px; display: flex; align-items: center; transition: color .2s, transform .2s; }
+.close .links a:hover { color: #F2AE0C; transform: translateX(4px); }
+.close .last { display: flex; justify-content: space-between; align-items: center; gap: 16px 24px; flex-wrap: wrap; max-width: 1040px; margin: 56px auto 0; padding-top: 28px; text-align: left; }
+.close .last p { margin: 0; color: #CFCBC2; font-size: 15px; max-width: none; flex: 1 1 520px; }
+.close .last p .nw { white-space: nowrap; }
+.home .top .brand { font-size: 22px; gap: 12px; }
+.home .top .brand svg { width: 42px; height: 42px; }
+.home .top nav { font-size: 15px; gap: 18px; }
+.try .tip { margin: 0; color: #D3EFEC; font-size: 16px; }
+
+/* entrances: parts of each section rise in, one after another (kept visible without script) */
+.js .rise { opacity: 0; transform: translateY(26px); transition: opacity .7s cubic-bezier(.2,.8,.2,1), transform .8s cubic-bezier(.2,.8,.2,1); transition-delay: calc(var(--i, 0) * 80ms); }
+.js .rise.seen { opacity: 1; transform: none; }
+.js .slide-l { opacity: 0; transform: translateX(-80px); transition: opacity .8s, transform 1s cubic-bezier(.2,.8,.2,1); }
+.js .slide-r { opacity: 0; transform: translateX(80px); transition: opacity .8s, transform 1s cubic-bezier(.2,.8,.2,1); }
+.js .slide-l.seen, .js .slide-r.seen { opacity: 1; transform: none; }
+
+/* ---------- phones: the cube sits on top, the words underneath ---------- */
+@media (max-width: 820px) {
+  .stage { height: 460vh; }
+  .hero { left: 16px; right: 16px; width: auto; top: auto; bottom: max(20px, env(safe-area-inset-bottom)); transform: none; text-align: center; }
+  .hero h1 { font-size: clamp(34px, 10vw, 52px); white-space: normal; margin-bottom: 12px; }
+  .hero .acts { justify-content: center; }
+  .hero .btn.big { padding: 12px 18px; font-size: 15px; }
+  .hero .acts { flex-wrap: nowrap; gap: 8px; }
+  .chap h2, .chap p, .sec .say { white-space: normal; }
+  .hero .lead { font-size: 15px; line-height: 1.45; margin: 0 auto 16px; max-width: 26em; }
+  .chap { left: 16px; right: 16px; width: auto; top: auto; bottom: max(20px, env(safe-area-inset-bottom)); transform: translateY(40px); text-align: center; }
+  .chap h2 { font-size: clamp(28px, 8.4vw, 36px); }
+  .chap li a { text-align: left; }
+  .chap p { font-size: 16px; margin-bottom: 10px; }
+  .chap li a { padding: 10px 14px; }
+  .hint { display: none; }
+  .sec { padding-left: 16px; padding-right: 16px; }
+  .afr .in { padding: 0 16px; }
+  .tbf .row, .try .bench { grid-template-columns: 1fr; }
+  .tbf .row .pic { order: -1; }
+  .sec .in, .tbf .row > div:not(.pic) { text-align: center; }
+  .sec .say { margin-left: auto; margin-right: auto; max-width: 28em; }
+  .tbf .row p { margin: 0 auto; }
+  .try .ctl { text-align: center; align-items: center; }
+  .try .row2 { justify-content: center; }
+  .tile { min-height: 0; gap: 10px; text-align: left; }
+  .tile small:last-child { display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; }
+  .wall .tile.pmore { display: none; }
+  .wall.open .tile.pmore { display: flex; }
+  .close { padding-left: 16px; padding-right: 16px; }
+  .close .links { grid-template-columns: 1fr 1fr; gap: 20px; text-align: center; }
+  .close .links a { justify-content: center; }
+  .close .last { justify-content: center; text-align: center; }
+  .stage .pin .chap p { display: none; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .stage { height: auto; }
+  .stage .pin { position: relative; height: auto; min-height: 100svh; }
+  .chap { position: relative; opacity: 1; transform: none; right: auto; top: auto; width: auto; margin: 0 24px 40px; pointer-events: auto; }
+  .hero { position: relative; transform: none; top: auto; padding: 120px 0 40px; }
+  .js .rise, .js .slide-l, .js .slide-r { opacity: 1; transform: none; transition: none; }
+  .hint i { animation: none; }
+}
+.chap[data-g="clay"] { --c: #A4462A; } .chap[data-g="teal"] { --c: #0E6B6B; } .chap[data-g="plum"] { --c: #5E2A61; } .chap[data-g="char"] { --c: #2C2D31; }
+:root[data-theme="dark"] .chap[data-g="clay"] { --c: #EC8F66; } :root[data-theme="dark"] .chap[data-g="teal"] { --c: #4CC6C0; } :root[data-theme="dark"] .chap[data-g="plum"] { --c: #D08BD3; } :root[data-theme="dark"] .chap[data-g="char"] { --c: #F2BE4E; }
+@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) .chap[data-g="clay"] { --c: #EC8F66; } :root:not([data-theme="light"]) .chap[data-g="teal"] { --c: #4CC6C0; } :root:not([data-theme="light"]) .chap[data-g="plum"] { --c: #D08BD3; } :root:not([data-theme="light"]) .chap[data-g="char"] { --c: #F2BE4E; } }
+/* phones: one row up top, the wordmark and the way to the lessons */
+@media (max-width: 600px) {
+  .home .top { flex-direction: row; align-items: center; padding-top: 14px; }
+  .home .top .brand { font-size: 19px; } .home .top .brand svg { width: 34px; height: 34px; }
+  .home .top nav a:not(:first-child) { display: none; }
+}
+
+/* the lessons wall shows its first rows; the button opens the rest */
+.wall .tile.more { display: none; }
+.wall.open .tile.more { display: flex; }
+.wallmore { display: flex; justify-content: center; margin-top: 28px; }
+.tile small:last-child { display: -webkit-box; -webkit-line-clamp: 3; -webkit-box-orient: vertical; overflow: hidden; }

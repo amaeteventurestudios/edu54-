@@ -1,0 +1,8 @@
+{
+ "\"Fishermen in Mwanza fish at night.\" Part of speech tagging labels each word: noun, preposition, proper noun, verb.": "eaa7d530e6.mp3",
+ "A dependency parse draws an arch from each word to the word it depends on. The main verb, \"fish\", is the root.": "7d9df6f868.mp3",
+ "The simplest tagger gives every word its most common tag. \"Fish\" is usually a noun, so the sentence loses its verb, and the parse falls apart.": "28ce953520.mp3",
+ "A hidden Markov model also weighs which tag tends to follow which. After a place name, a verb is likely, so \"fish\" becomes a verb.": "6529e1de5d.mp3",
+ "\"Mwanza\" never appeared in training. With no plan for unknown words, its probability is zero, and every path through the sentence is zero too.": "195c56dbc7.mp3",
+ "A capital letter suggests a proper noun. With that guess, every tag is right, and the parse is clean.": "ca7eb1414a.mp3"
+}

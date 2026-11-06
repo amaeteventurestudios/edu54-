@@ -1,0 +1,8 @@
+{
+ "A university lab in Kigali fine-tunes a seven-billion-parameter model on long documents. Training keeps every value each layer computes, because the backward pass needs them.": "2740bd22db.mp3",
+ "Double the length, and the attention scores in each layer grow four times. Now the kept values no longer fit on the GPU.": "2c8167af8d.mp3",
+ "Checkpointing keeps only each layer's input and rebuilds the rest during the backward pass, one layer at a time. Memory falls, but the forward pass runs twice.": "831ba4d3b4.mp3",
+ "Selective recomputation keeps the cheap values and drops only the attention scores, which are big to store but quick to compute. Most of the saving, for a few percent more work.": "5dd0f1dab3.mp3",
+ "With just one checkpoint at the start, the backward pass must rebuild every layer at once, and the memory comes straight back.": "418d0d020a.mp3",
+ "FlashAttention never stores the attention scores at all, recomputing them in its own backward pass. That is why long sequences and FlashAttention go together.": "5deda32d28.mp3"
+}

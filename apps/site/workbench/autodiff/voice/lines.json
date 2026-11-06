@@ -1,0 +1,8 @@
+{
+ "Here is a tiny model drawn as a graph of simple steps: multiply the input by w, add b, compare with the answer, and square the gap. The gold boxes are the numbers it can learn.": "dc09729620.mp3",
+ "The forward pass pushes values from left to right. Every step works out its value, and remembers what it saw.": "f5ef54b9ad.mp3",
+ "Then the backward pass starts at the loss, with a gradient of one, and flows right to left. Each step multiplies by its own local slope. Chaining those slopes is the chain rule.": "93c60927c4.mp3",
+ "The weight w is used twice: in the multiply, and in a small penalty. Its gradient is the two paths added together.": "189873b39c.mp3",
+ "Now move w and b a little, against their gradients. The loss falls. Repeat this a million times and you have training.": "51699f74a7.mp3",
+ "One habit matters: clear the gradients before each backward pass. Otherwise they pile up, step after step, and the model leaps too far.": "2ccfdc6d67.mp3"
+}

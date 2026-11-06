@@ -1,0 +1,8 @@
+{
+ "An electricity company's helpline bot in Lusaka sends every question to its largest model, and a buggy script adds thousands more. The bill is high, and much of it is waste.": "dd61385f7e.mp3",
+ "A rate limit gives each user a budget of requests an hour. The script is turned away after its share, and the bill drops.": "8e43486caa.mp3",
+ "Many people ask the same things. An exact cache replays answers to identical words; a semantic cache also catches rephrasings with the same meaning.": "c44ec4a4dc.mp3",
+ "Loosen the cache, and questions that differ in one detail look alike. Matero is told about Kabwata's power, and one person's bill question gets another person's answer. Anything that depends on place, time or the person asking needs care.": "1e4bf2c7aa.mp3",
+ "Back to a strict cache. A router sends easy questions to a small, cheap model and hard ones to the large model.": "a8f19d1f68.mp3",
+ "Send everything to the small model and the bill is lowest of all, but almost half the hard questions come back wrong. Cost is only one side of the ledger.": "d515ca6b3e.mp3"
+}

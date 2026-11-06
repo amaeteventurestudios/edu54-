@@ -1,0 +1,8 @@
+{
+ "A model proposes small edits to a program that predicts a mini-grid's demand in Kampala. An evaluator scores every variant.": "73f4e48832.mp3",
+ "Each generation adds a term or a daily rhythm. The best of each kind is kept in an archive, so the search stays diverse.": "33295b4ecd.mp3",
+ "Scored on hours it has never seen, the loop keeps the program that predicts new hours best.": "e10eaf71d4.mp3",
+ "Score on the training hours alone and it memorises them, swinging wildly in between.": "0b9055b9ff.mp3",
+ "Reward speed alone and an empty program wins. The loop finds whatever flaw the evaluator has.": "ef2f5f87d0.mp3",
+ "These loops win only where the evaluator is fast, exact and hard to game. Then a person still reviews before it ships.": "2bc325322b.mp3"
+}

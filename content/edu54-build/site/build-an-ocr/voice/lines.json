@@ -1,0 +1,8 @@
+{
+ "A post office in Asmara reads digits on parcels. A program sees only a grid of pixels.": "810f79a56b.mp3",
+ "Each pixel is an input. There is one output per digit.": "b106c0bc61.mp3",
+ "Show an example, and nudge the weights until the right output is largest.": "696c396021.mp3",
+ "Stop too early, and the weights have hardly moved.": "3049f71c40.mp3",
+ "Test on smudged copies. A heavy smudge makes digits look alike.": "845663e472.mp3",
+ "Too few hidden units, and it can't hold the shapes.": "2d366324ab.mp3"
+}

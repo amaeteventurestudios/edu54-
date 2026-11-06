@@ -1,0 +1,8 @@
+{
+ "This loss is shaped like a bowl. Drop eight balls from all around the rim and let each walk downhill.": "08583765c5.mp3",
+ "Every ball ends in the same place. In a bowl there is nothing to get stuck in: any point lower than its neighbours is the lowest point of all.": "c42049df14.mp3",
+ "Here is how to tell. Stretch a string between any two points on the surface. On a convex surface the string never dips below the ground.": "a0c64b9534.mp3",
+ "Real choices have limits. Say the borehole can only run so many hours a day. The fence marks the limit, and the true bottom lies beyond it.": "7f1111b3e9.mp3",
+ "Each ball walks downhill, meets the fence, and slides along it to the lowest allowed point. The best answer you are allowed to use sits right on the limit.": "4465a5a8d1.mp3",
+ "Make the ground bumpy and the guarantee is gone. The balls stop in different dips, and the string dips under the ground. That is the world neural networks train in.": "60d433d002.mp3"
+}

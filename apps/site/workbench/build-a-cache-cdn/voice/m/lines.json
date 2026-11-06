@@ -1,0 +1,8 @@
+{
+ "A news site's server is far from its readers. Every request that crosses to it waits two hundred milliseconds.": "e73faa296a.mp3",
+ "Edge caches in three cities keep copies of popular pages. A hit takes twenty-five milliseconds.": "d49422302b.mp3",
+ "When a cache is full, least-recently-used keeps the hot pages. First-in, first-out drops them.": "d07c68284a.mp3",
+ "Key on the reader's cookie and every request is new. The hit ratio collapses.": "b119abbe39.mp3",
+ "The editor updates the front page. Without a purge, edges keep serving the old one.": "44c0ba236d.mp3",
+ "Keyed by URL, least-recently-used, purged on change: fast and up to date.": "8b72a2bfd8.mp3"
+}

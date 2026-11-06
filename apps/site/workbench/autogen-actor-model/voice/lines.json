@@ -1,0 +1,8 @@
+{
+ "A boda-boda dispatch in Kampala prices each ride, matches a driver and texts the customer, for eight requests at once.": "8beac01c7d.mp3",
+ "Wired as direct calls, each ride runs start to finish before the next one starts. The agents mostly wait.": "6dc0b53d34.mp3",
+ "As actors, each agent owns an inbox and works through it. All three work at once, like a pipeline.": "73a8341e4f.mp3",
+ "Pricing crashes on ride four. The runtime catches it in that one handler and retries the message; the other rides carry on.": "7c0b1f9bb1.mp3",
+ "Without supervision, the failed message simply disappears, and that customer is never texted.": "7134c4a3fb.mp3",
+ "Two matchers sharing one count of drivers both book the last one. Give the driver pool to one actor.": "35e25d8903.mp3"
+}

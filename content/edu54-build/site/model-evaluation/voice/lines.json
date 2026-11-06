@@ -1,0 +1,8 @@
+{
+ "A microlender screens two hundred applicants. Red tiles are people who later fell behind on repayments. The model gives each applicant a risk score.": "6d53db3b01.mp3",
+ "Cut the applicants into five slices. Each slice takes a turn as the test, raised in gold, while the model learns from the other four. That is five-fold cross-validation.": "845182f05b.mp3",
+ "Now there are five scores instead of one, and their spread shows how much to trust the average.": "cb10136e8a.mp3",
+ "The ROC curve tries every threshold: how many risky applicants are caught, against how many safe ones are wrongly flagged. The more area under it, the better the model ranks.": "0ee5d9a968.mp3",
+ "When only five percent fall behind, approving everyone is ninety-five percent accurate, and catches nobody. Accuracy is the wrong measure for rare events.": "ef5879f1b2.mp3",
+ "And never keep tuning against the test set. Each peek leaks a little of it into the model, until the score is a flattering lie.": "7008dbf9bf.mp3"
+}

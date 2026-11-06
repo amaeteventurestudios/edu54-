@@ -1,0 +1,8 @@
+{
+ "Two happy reviews of a bus from Nairobi to Kisumu: a short one, and a long one that starts with \"not once\" and ends with \"rude or slow\".": "fa398498cc.mp3",
+ "A CNN slides a window of three words along the review. Its filters learn phrases, so \"not slow\" lights up as one pattern.": "103d3b6c3d.mp3",
+ "Shrink the window to one word, and \"slow\" is seen alone. The happy review reads as a complaint.": "73c1caf332.mp3",
+ "An RNN reads word by word, carrying a memory. On the long review, a plain RNN's memory of \"not once\" fades to almost nothing by the end.": "fff04ef03f.mp3",
+ "An LSTM adds gates that decide what to keep. Its memory of \"not\" survives the whole sentence, and the verdict is right.": "aaf67f0a85.mp3",
+ "Reviews are padded to the same length for a batch. Forget to mask the padding, and empty slots dilute the signal.": "a9947cd564.mp3"
+}

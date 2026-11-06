@@ -1,0 +1,8 @@
+{
+ "A student at a coding bootcamp in Lagos opens the object file of their own small program. Every one of its 976 bytes belongs to a table, and the tables point at each other.": "615f9d16a2.mp3",
+ "The 64-byte header gives the offset of the section table. Each section header gives a section's name, place and size: code, constants, symbols, names, relocations.": "9afdba9806.mp3",
+ "The symbol table says percent change is in the code section at offset zero, sixteen bytes long. Add the code section's own offset to find its bytes in the file.": "c6f46e0b39.mp3",
+ "Read the symbol's value as a file offset instead, and you land in the file header. In an object file, values are relative to their section.": "18a85793a0.mp3",
+ "A call in total reads e8 and four zeros. The relocation table explains: the linker will write the distance to log value there.": "c8de8c522f.mp3",
+ "Symbol names and section names live in different string tables. Use the wrong one, and functions get section names.": "092c90027e.mp3"
+}

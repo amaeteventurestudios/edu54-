@@ -1,0 +1,8 @@
+{
+ "Reviews of a waakye spot in Accra. The owner wants every unhappy review flagged.": "c7e26bbc7a.mp3",
+ "Naive Bayes counts how often each word appears in happy and unhappy reviews. Green words lean happy, red words unhappy. A review's verdict is the sum.": "61835538cd.mp3",
+ "Without negation handling, \"not good, not fresh\" is just \"good\" and \"fresh\". It comes out happy.": "096b0aecda.mp3",
+ "Mark every word after \"not\" as a new word, not good, and it gets its own, red weight.": "de13f31a28.mp3",
+ "Without smoothing, a word never seen in training, like kelewele, gets probability zero, and wipes out the whole review.": "14093527c2.mp3",
+ "Train on mostly happy reviews, and the model says happy almost every time. Accuracy still looks fine; the score for the unhappy class does not.": "a909220099.mp3"
+}

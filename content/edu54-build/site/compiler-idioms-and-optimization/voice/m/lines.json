@@ -1,0 +1,8 @@
+{
+ "An optimising compiler swaps divisions, switches and loops for cheaper shapes. Each one can be worked backwards to the source.": "1b274f715e.mp3",
+ "Divide by ten becomes a multiply by a magic number and a shift. The smallest shift that keeps the error small enough gives the exact constant the compiler used.": "75961e1e7e.mp3",
+ "For seven, the multiplier needs thirty-three bits. The compiler multiplies by the low part and adds the number back.": "e5ff1231db.mp3",
+ "Constant cases become a table, or plain arithmetic when they form a line. Calls become a jump table. Sparse cases become a comparison tree.": "45dcc45481.mp3",
+ "The summing loop adds eight numbers per step, four lanes in each of two registers.": "36fa332bf0.mp3",
+ "A second, plain loop adds whatever doesn't fill a group of eight. Leave it out, and the sum comes up short.": "89684c60bc.mp3"
+}

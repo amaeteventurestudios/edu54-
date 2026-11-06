@@ -1,0 +1,8 @@
+{
+ "A team in Kigali grades its coding agent on twelve real issues. A patch counts only if the failing tests now pass and nothing that passed before breaks.": "68c33d7988.mp3",
+ "Two patches fix their issue but break other tests. They do not count.": "a8e9d8f622.mp3",
+ "Three issues describe their own fix, and two have tests too weak to judge. The agent \"solves\" all five. Take them out.": "001cf23479.mp3",
+ "Most issues take a handful of steps. One takes sixty. Report the spread, not the average.": "7a4d3c0467.mp3",
+ "Other benchmarks test general assistants with tools, or agents across many environments. None tells you about your own work.": "e3bdb1225e.mp3",
+ "Strict grading, a clean set, and the cost spread beside it. Then build your own evaluations.": "03dd89b980.mp3"
+}

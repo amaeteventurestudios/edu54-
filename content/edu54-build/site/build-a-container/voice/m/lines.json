@@ -1,0 +1,8 @@
+{
+ "A container is an ordinary process on the server. With no walls, it sees and touches everything.": "48070193be.mp3",
+ "New namespaces give it its own view: only its own processes, hostname and network.": "210528746d.mp3",
+ "Mount the image and pivot into it. The host's files are no longer there.": "ae95a5ef4c.mp3",
+ "A cgroup caps memory. A leak kills only the leaking program, not the server.": "a6d6db42c0.mp3",
+ "Images are read-only layers. Writes land in a thin layer of the container's own.": "a3026de53d.mp3",
+ "Namespaces, a new root, a cgroup and an overlay. That is a container.": "74d86cf582.mp3"
+}

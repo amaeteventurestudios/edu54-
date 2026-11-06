@@ -1,0 +1,8 @@
+{
+ "Six notices on a market board in Kampala. To search them, each becomes a row of numbers: how often each word appears.": "e7b497a3fe.mp3",
+ "One row per notice, one column per word, and the height of each block is the count. Order is thrown away: only the counts remain.": "ceb6342304.mp3",
+ "Search for \"goat at the market\" with raw counts, and the notice that says \"market\" most wins, not the one about the goat. \"Market\" is on every notice; it tells them apart least.": "a41b2bd13c.mp3",
+ "TF IDF multiplies each count by how rare the word is across notices. \"Market\" shrinks to almost nothing; \"goat\" stands tall, and the right notice wins.": "9b8158d111.mp3",
+ "Search \"market today\" without normalising, and the long notice wins by size alone. Normalising every notice to the same length fixes it.": "aa61117acb.mp3",
+ "And swap two words in notice six: \"buy maize, not matoke\". The meaning flips; the numbers do not change at all.": "4bd606bf48.mp3"
+}

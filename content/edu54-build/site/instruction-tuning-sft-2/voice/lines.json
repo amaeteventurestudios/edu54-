@@ -1,0 +1,8 @@
+{
+ "A farmer helpline in Bamenda has questions and good answers. Each pair becomes one strip of tokens.": "4f351526fd.mp3",
+ "A boundary token marks where the question ends and the reply begins. Without it, the model runs on.": "a75348de7e.mp3",
+ "The second row is the labels. Only the reply should count.": "30930fb9ca.mp3",
+ "Set question labels to minus one hundred, and the loss ignores them. Forget that, and it learns to repeat questions.": "d562f6598e.mp3",
+ "Padding gets the same mask. Nobody should be graded on blanks.": "1ca0074406.mp3",
+ "Now every gradient teaches the model to answer.": "8613eb0848.mp3"
+}

@@ -1,0 +1,8 @@
+{
+ "One small task on a sample app: add password validation to sign-up, and a test that proves it. Run it twenty times without a workbench.": "bd19f91e26.mp3",
+ "Many runs claim tests passed without running them, prove a weaker goal, or touch files they should not.": "3972214237.mp3",
+ "With init, scope, feedback, the gate, the reviewer and a handoff, every run really runs its tests and stays in scope.": "2f7e80d534.mp3",
+ "Pack it all into one directory: the rules and the rubric, the schemas, and the scripts that enforce them.": "1ef71254fc.mp3",
+ "Ship only the documents, and the rules are back to being wishes.": "741ce63fa0.mp3",
+ "The installer refuses to overwrite a team's existing pack without force, and the version is recorded for migrations.": "417e2acd2d.mp3"
+}

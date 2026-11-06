@@ -1,0 +1,8 @@
+{
+ "A public-health agency in Addis Ababa wants one model that writes clear reports and reads charts and clinic photos.": "09670b231f.mp3",
+ "The usual way: take a finished text model, align a vision encoder, then tune on images.": "3d0af1200e.mp3",
+ "Tune it hard on images, and vision improves while its writing wears away.": "931f118e11.mp3",
+ "Train on text, images and video together from the first step, about forty per cent text, and both skills stay strong.": "323003e981.mp3",
+ "Starve the mix of text, and the language side weakens.": "468e30d903.mp3",
+ "A router picks image resolution per question: low for \"is this a waiting room\", high for a chart full of small numbers.": "e8781ea296.mp3"
+}

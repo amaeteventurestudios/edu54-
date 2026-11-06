@@ -1,0 +1,8 @@
+{
+ "A camera at a crossing in Kigali counts motorbike taxis, thirty frames a second, on a small board with no cloud.": "ce84def641.mp3",
+ "To keep up, everything for one frame must fit in thirty three milliseconds: grabbing it, resizing it, the model, and cleaning up the boxes.": "6118195479.mp3",
+ "The large model is the most accurate on paper. Here it takes nearly a tenth of a second per frame, so most frames are dropped, and bikes slip past unseen.": "a9f959e933.mp3",
+ "Storing weights as eight bit integers instead of thirty two bit floats cuts memory by four and runs much faster, if it is calibrated on real frames.": "213455b762.mp3",
+ "Batching eight frames keeps the chip busy, but every answer now waits a quarter of a second. For a live camera, that is too late.": "92c7a34b31.mp3",
+ "Small model, int8 calibrated, a batch of one: every frame processed in time, and most bikes counted.": "46ad9c47ea.mp3"
+}

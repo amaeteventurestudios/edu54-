@@ -1,0 +1,8 @@
+{
+ "A gallery in Lagos writes labels with a prompt of two example images and labels, then a talking drum with an open label.": "923c67bea3.mp3",
+ "The language model stays frozen. Gated cross-attention blocks between its layers will let it look at the images.": "4cd2287ba8.mp3",
+ "Each gate starts at zero, so at first the model is exactly the original. Training opens them gradually.": "b79a44551d.mp3",
+ "Open the gates fully at the start, and random cross-attention drowns the model. It writes nonsense.": "2a6f4f1cc1.mp3",
+ "Without a mask, the new label looks at every image, and the Nok head bleeds into the drum.": "7bc8b79004.mp3",
+ "With no examples, it describes the drum in its own words. Two examples, and it writes a catalogue label.": "059ac3b514.mp3"
+}

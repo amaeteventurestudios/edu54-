@@ -1,0 +1,8 @@
+{
+ "A mobile-money assistant in Kigali injects five failures on purpose, to find weaknesses before customers do.": "26662ee27d.mp3",
+ "Without rollback, runbooks and someone on call, an experiment is just an outage.": "5cab4798b5.mp3",
+ "Limit the blast radius and pause automatically when the error budget burns too fast.": "2014fff531.mp3",
+ "An agent reads logs, metrics and runbooks and drafts a diagnosis in minutes, for a person to approve.": "0aefb3d829.mp3",
+ "Let it fix anything and it rewrites production configuration. Keep it to restarts, reverts and failovers.": "4b4dc77cd3.mp3",
+ "When two models disagree on the cause, escalate with both. One model alone scaled the wrong pool.": "f9e1addf07.mp3"
+}

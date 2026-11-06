@@ -1,0 +1,8 @@
+{
+ "A mobile-money help desk in Lusaka starts a fresh agent for every message. Thousands a second, each alive a few seconds.": "05d380a47b.mp3",
+ "A heavy framework spends real time starting each agent. At this rate the gold tower is a row of busy cores.": "376f736c15.mp3",
+ "Agno's production path is stateless: a fresh agent per request, with sessions in a database. A deploy loses nothing.": "02e27474d7.mp3",
+ "Keep sessions on the worker instead, and the same deploy drops every live conversation.": "8f2b3e5a38.mp3",
+ "If your team ships TypeScript, Mastra brings agents, typed tools and workflows to the servers you already run.": "f58e22aee7.mp3",
+ "A ten-minute research agent spends its life waiting on models. Startup is nothing, so choose for tools and your team.": "f145f35478.mp3"
+}

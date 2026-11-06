@@ -1,0 +1,8 @@
+{
+ "A conservancy near Etosha has five minutes of camera-trap video from a waterhole and asks: when does the lion charge?": "bd2019a4f6.mp3",
+ "The model sees sampled frames. Dynamic sampling takes one a second, and four a second where things move.": "70d8158923.mp3",
+ "Each frame's position follows the real clock, so the answer comes out in seconds, as structured text.": "b7c639d34f.mp3",
+ "Take just sixteen evenly spaced frames, and none lands on a charge that lasts under two seconds.": "a7904fd782.mp3",
+ "Keep every frame at full detail, and the clip overflows the context before the charge.": "64c7f29d9e.mp3",
+ "Count frames instead of seconds while sampling unevenly, and the answer is half a minute off.": "d57db084cb.mp3"
+}

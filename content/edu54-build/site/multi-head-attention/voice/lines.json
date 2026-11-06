@@ -1,0 +1,8 @@
+{
+ "Ada gave Kemi the book she wanted. To understand it you track several things at once: word order, who gave what to whom, and who \"she\" is.": "50537acaa1.mp3",
+ "So a transformer runs several attention heads side by side. This one, at the bottom, simply looks at the word before.": "7e53cc354d.mp3",
+ "Head two links the action to the people and things: gave links to Ada, Kemi and the book.": "f42e2cf293.mp3",
+ "Head three has learned to link a pronoun to a name. For \"she\", it points to Kemi, the one who wanted the book.": "d77a6124e6.mp3",
+ "Each head gives its own view. They are joined side by side and mixed by one more set of weights into a single answer for each word.": "a909cf1f9c.mp3",
+ "Large models have dozens of heads in each of dozens of layers. Nobody assigns their jobs; each head drifts into its own speciality during training.": "ca9a6d54fe.mp3"
+}

@@ -1,0 +1,8 @@
+{
+ "Here is a grid of city blocks with a depot in the middle and four shops. How far is the kiosk? It depends on how you measure.": "7aaf477744.mp3",
+ "The straight line, as the crow flies, is the L2 distance: the square root of the sum of the squared legs. It is the one you learned at school.": "5b517f605c.mp3",
+ "A matatu cannot fly. It drives block by block, so it adds up the legs. That is the L1 distance, sometimes called the taxi or Manhattan distance.": "0ec6fab475.mp3",
+ "Draw every point exactly three away. By L2 it is a circle. By L1 it is a diamond. By L infinity, the longest leg, it is a square.": "ec03ef2ed8.mp3",
+ "The measures can disagree about which shop is nearest. Along the streets it is the kiosk; in a straight line, the market; by the longest leg, the pharmacy. Search engines, recommenders and clustering all have to pick one.": "2c01977c9d.mp3",
+ "Measure one direction in metres and the other in blocks, and the metres swamp everything. Scale every feature the same way before you measure distance.": "9d1e18539d.mp3"
+}

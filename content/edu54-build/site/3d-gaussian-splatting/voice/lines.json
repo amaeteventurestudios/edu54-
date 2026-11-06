@@ -1,0 +1,8 @@
+{
+ "A clay water pot from a potter in Kwali, Nigeria, stored not as a mesh or a network, but as hundreds of soft coloured blobs.": "b042cfb79c.mp3",
+ "To draw a view, each blob is flattened onto the screen as a soft ellipse. No rays, no marching: just projecting and painting.": "2b284329c1.mp3",
+ "The blobs are sorted by depth and blended front to back. Each lets through only what its opacity leaves for the blobs behind it.": "3e92c7f962.mp3",
+ "Skip the sort, and the far side of the pot paints over the near side. It no longer looks solid.": "753b8e55c8.mp3",
+ "Training adds blobs where detail is missing, and removes useless ones. Never split them, and a few big blobs make a lumpy pot.": "0fd4bafe87.mp3",
+ "Make every blob fully opaque, and nothing blends: the surface becomes a pile of coins. Softness is what makes it look smooth, and what lets it learn.": "f30e62a8e7.mp3"
+}

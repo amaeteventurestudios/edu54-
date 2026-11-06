@@ -1,0 +1,8 @@
+{
+ "An external evaluator runs a model eight times on each of twenty-one tasks, from one minute to most of a day of expert time.": "43a2acba09.mp3",
+ "Success falls as tasks get longer. A logistic curve is fitted to success against the logarithm of task length.": "5fc9b29348.mp3",
+ "Where the curve crosses one in two is the time horizon: the task length the model finishes half the time.": "4c62146cb1.mp3",
+ "Leave out the long tasks and the model passes nearly everything. The horizon becomes a guess past the last data point.": "30c33434c1.mp3",
+ "At eighty percent reliability, the horizon is much shorter. Deployment needs reliability.": "149a563d28.mp3",
+ "Benchmark tasks are clean. Real work is messier, so treat the horizon as an upper bound, and test on your own tasks.": "17c6c2d63f.mp3"
+}

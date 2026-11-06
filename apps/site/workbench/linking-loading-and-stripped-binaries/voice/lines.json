@@ -1,0 +1,8 @@
+{
+ "The student's program calls puts, which lives in a system library. Follow that one call through a Linux, a Windows and a Mac binary.": "a30fea501c.mp3",
+ "On Linux, the first call goes through a resolver that looks the name up and fills the slot. The second call jumps straight there.": "75c1fd8d5a.mp3",
+ "On Windows, the loader fills every import slot before the program starts. The code calls through the slot, with no stub.": "97cdd51ec8.mp3",
+ "On a Mac, each slot holds a packed word: bind or rebase, where the next one is, and which import. The loader walks the chain once.": "e4ea8313cb.mp3",
+ "Strip the program, and its symbol table no longer names any function. But the loader's own tables are still there.": "2b5572ac07.mp3",
+ "A compact list of function starts survives the strip. It finds all five functions, where a prologue pattern finds only one.": "c2adc91b5e.mp3"
+}

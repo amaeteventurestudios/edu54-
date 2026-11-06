@@ -1,0 +1,8 @@
+{
+ "A browser needs the address of a farmers' market site. A resolver does the work.": "7dc2083804.mp3",
+ "The root refers it to the dot ke servers, they to co dot ke, and they to the market's own server, which answers.": "006e8be4c5.mp3",
+ "The answer comes with a time to live. A minute later, the resolver answers from memory.": "6b87c7e075.mp3",
+ "Ignore the TTL, and visitors are sent to the old address long after the move.": "6cec74d2ab.mp3",
+ "An attacker races to reply first. A guessable query ID lets the forgery in.": "c73c639367.mp3",
+ "Cache, respect TTLs, and randomise IDs and ports.": "8e40f69177.mp3"
+}

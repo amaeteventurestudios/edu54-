@@ -1,0 +1,8 @@
+{
+ "Each point is a farm, measured three ways: rain, fertiliser and yield. Together they make a cloud in three dimensions.": "9bf2e308e4.mp3",
+ "First find the average farm, the centre of the cloud. Everything is measured from here.": "259aacb0b0.mp3",
+ "The first principal component is the direction in which the cloud stretches the most. More rain, more fertiliser, more yield, all together.": "f229bb2b15.mp3",
+ "The second component is the next longest stretch, at right angles. Keep just those two, and every farm drops onto a flat sheet. Two numbers instead of three, and almost nothing lost.": "4647cfc96a.mp3",
+ "Keep only one, and the cloud becomes a line. The main trend survives; the red lines show what was thrown away.": "a55e186fff.mp3",
+ "Two habits make PCA honest: centre the data on its average, and put every feature in the same units. Skip them and the arrows point the wrong way.": "a4f8456e5b.mp3"
+}

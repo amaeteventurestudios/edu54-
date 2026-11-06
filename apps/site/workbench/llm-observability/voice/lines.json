@@ -1,0 +1,8 @@
+{
+ "A retailer in Rabat shipped an LLM feature and sees nothing. Six tools all claim to help. They do different jobs.": "6074727ff2.mp3",
+ "Development platforms bundle evaluations and prompts. Gateways sit on your calls and report tokens and cost.": "16021ab799.mp3",
+ "Your stack, your licence rules, your budget, and whether you must self-host. Each answer drops some tiles.": "f70a9a6ae9.mp3",
+ "Use two tools, and join them with OpenTelemetry, so a bad score lines up with its cost.": "13374966a4.mp3",
+ "Without shared traces, each tool tells its own story, and nobody can link them.": "66564c7baf.mp3",
+ "At tens of millions of traces a day, storage is the bill. A zero-copy lake is built for that.": "67f9c8586e.mp3"
+}

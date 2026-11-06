@@ -1,0 +1,8 @@
+{
+ "The fees-app agent keeps its working state in a file in the repo: the task, the files touched, the next step. Chat history disappears; the repo stays.": "dbd7633899.mp3",
+ "In session two the agent tries to write a status of \"kinda-done\". The schema refuses it.": "4348f1dd19.mp3",
+ "Then the machine crashes while saving. Written to a temporary file and renamed, the old state survives untouched.": "53e217b873.mp3",
+ "Written straight over the old file, a crash leaves half a file, and the next session starts from zero.": "0d86fb0780.mp3",
+ "Session three opens with an init script. It finds the wrong Python version and halts, loudly, before any work.": "f9be6b83a0.mp3",
+ "Without it, the agent re-reads everything and finds the problem nine steps later, inside a failing test.": "20c8a443ec.mp3"
+}

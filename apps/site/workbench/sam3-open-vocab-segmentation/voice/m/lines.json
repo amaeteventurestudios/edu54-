@@ -1,0 +1,8 @@
+{
+ "A fish stall on the shore of Lake Malawi. Type \"chambo fish\", and the model masks every chambo, each in its own colour.": "9067e1b7d7.mp3",
+ "A click means \"this one thing here\", and returns a single mask. A phrase means \"every instance of this\".": "41783e0e5d.mp3",
+ "Ask for just \"fish\", and the dried usipa are masked too. A vague phrase matches more than you meant.": "f7bedd6b3a.mp3",
+ "Ask for a crate of tilapia, which is not on the stall. A presence check answers no, and the model returns nothing.": "8608934e60.mp3",
+ "Switch the presence check off, and the decoder still returns its best guesses, masking a basket and some fish that were never asked for.": "49522dac26.mp3",
+ "A precise phrase, a presence check, and a concept prompt when you want them all.": "d9fd60d957.mp3"
+}

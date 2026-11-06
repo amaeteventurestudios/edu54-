@@ -1,0 +1,8 @@
+{
+ "A land registry in Lusaka has five thousand scanned title deeds. With one supervisor, a hundred workers mostly wait.": "53cb939c96.mp3",
+ "Remove the boss. Each worker pulls a task, does it and writes the result. The queue does the coordinating.": "51d2a5e4c3.mp3",
+ "Add workers and the rate climbs, until the queue itself is the limit.": "92485c788e.mp3",
+ "Without a lease, two workers take one task. A lease marks it as taken, and returns it if a worker dies.": "22c6026f01.mp3",
+ "One bad scan fails for everyone who tries it. After a few tries, it moves to a shelf for a person.": "fec0565008.mp3",
+ "Swarms suit tasks that stand alone. If the order matters, you need a pipeline, not a queue.": "158cdc1535.mp3"
+}

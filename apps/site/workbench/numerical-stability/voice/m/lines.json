@@ -1,0 +1,8 @@
+{
+ "A model gives each dish a score. Softmax turns the scores into chances: raise e to each score, then divide by the total. Here jollof leads.": "840364b982.mp3",
+ "e to a score grows terribly fast. Each step of one in the score multiplies the column by almost three. The columns are drawn on a log scale, or they would not fit on the screen.": "2bd237846b.mp3",
+ "A thirty-two bit float can hold numbers up to about three times ten to the thirty-eight. That is the glass ceiling. Nothing can go above it.": "58d9d02327.mp3",
+ "Raise the scores past eighty-nine and the first column bursts through: infinity. Infinity divided by infinity is not a number, NaN, and the model's loss is ruined.": "9dd2ae4b28.mp3",
+ "The fix: subtract the largest score from every score first. The chances come out exactly the same, but now the biggest column is one, and nothing can overflow.": "8e7b4afbe4.mp3",
+ "Sixteen bit floats save memory but have a much lower ceiling, and a much higher floor. Without the shift, very small columns round to zero. With it, softmax is safe in any format.": "a223c766d1.mp3"
+}

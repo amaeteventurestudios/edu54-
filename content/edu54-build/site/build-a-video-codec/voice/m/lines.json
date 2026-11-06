@@ -1,0 +1,8 @@
+{
+ "Ten small frames of a ball rolling across the sky. Stored raw, every pixel costs three bytes.": "08b8423d4b.mp3",
+ "Convert to brightness and colour. Eyes barely notice colour detail, so keep colour at quarter resolution.": "db127d3244.mp3",
+ "Most of each frame is the same as the last. Store only the differences, and run-length code the zeros.": "565ac7c61b.mp3",
+ "Frame three is lost. Every later difference builds on it, and the picture goes wrong for good.": "d235c33ac1.mp3",
+ "A whole frame every few frames lets the decoder start clean again.": "be71342daf.mp3",
+ "Shrink brightness too, and the picture blurs. That detail is what eyes see.": "6457992dc2.mp3"
+}

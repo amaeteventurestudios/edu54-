@@ -1,0 +1,8 @@
+{
+ "A county health records server in Nakuru checks every request's token: signature, issuer, audience, expiry and scope. Today three things happen.": "d55d462678.mp3",
+ "At six the login server starts signing with a new key. A server that refreshes its key cache, and re-fetches once when it sees an unknown key, carries on without a blip.": "cfe9ab56a8.mp3",
+ "Cache the keys forever, and every token signed with the new key is rejected. Thousands of valid requests fail.": "9e0394906a.mp3",
+ "At eleven a nurse's phone is stolen and her account disabled. Her token stays valid until it expires: ten minutes with short tokens, the rest of the day with long ones.": "426032948c.mp3",
+ "At three the token-checking service goes down for twenty minutes. Let everything through, and revoked tokens write records.": "e715895692.mp3",
+ "Writes wait, reads use fresh cached checks, and outages are logged apart from bad tokens. The decision was made before the outage, not in it.": "fd1724f190.mp3"
+}

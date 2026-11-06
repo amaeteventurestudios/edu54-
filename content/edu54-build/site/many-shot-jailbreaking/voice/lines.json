@@ -1,0 +1,8 @@
+{
+ "Models now hold huge prompts. That is what lets them read whole books, and it opens a new way to attack.": "af0e8fdcc5.mp3",
+ "Fill a prompt with fake dialogues in which an assistant misbehaves. At a few examples, it fails.": "1eb5ff0cd1.mp3",
+ "At dozens it begins to work, at hundreds it is reliable, and the curve doesn't level off.": "df85c6f0db.mp3",
+ "This is how helpful examples work too. The model extracts a task from context, so you can't simply remove it.": "63efa907f1.mp3",
+ "A filter on each message sees nothing wrong, as no message is the problem.": "0f6cf4e6fd.mp3",
+ "A classifier that looks at the whole prompt cuts success sharply, and normal long prompts still work.": "3071a09a9d.mp3"
+}

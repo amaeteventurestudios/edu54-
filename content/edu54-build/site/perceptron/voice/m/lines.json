@@ -1,0 +1,8 @@
+{
+ "Each plantain has two numbers: how yellow it is, and how soft. A gold ring means it is ready to fry. A green ring means not yet.": "7de9f1a9b6.mp3",
+ "The perceptron multiplies each number by a weight, adds them up with a bias, and says yes if the total is above zero.": "a0237caf29.mp3",
+ "Everywhere the total is exactly zero makes a straight fence. On the gold side it says ready. On the green side, not yet. Right now the fence is in the wrong place.": "c89ecabc73.mp3",
+ "Now it learns. It looks at one plantain at a time. When it is right, nothing changes. When it is wrong, it nudges the weights toward the right answer, and the fence turns.": "f5847d6b43.mp3",
+ "When a whole round has no mistakes, it stops. That simple rule, from 1958, is still the seed of every neural network.": "059fc9728b.mp3",
+ "But try a rule where ready means yellow or soft, but not both. No straight fence can split that. One neuron fails. Many neurons in layers can do it, and that is the next lesson.": "fb8edb56e6.mp3"
+}

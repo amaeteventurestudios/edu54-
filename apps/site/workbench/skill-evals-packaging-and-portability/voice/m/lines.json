@@ -1,0 +1,8 @@
+{
+ "A telco's cloud team in Douala writes a skill that diagnoses stuck deployments without touching the cluster. The package is valid. Ship it?": "6c567659e5.mp3",
+ "Test in layers: structure, routing with near misses, behaviour against the report it must produce, the scripts, safety, and every host it will run on.": "8ed57db315.mp3",
+ "Routing tests find it also starts on \"scale the deployment\". Script tests find it breaks on a namespace with a space, and on a second run.": "56a7775223.mp3",
+ "One behaviour case passes three runs in five. Test it once and you may see a pass. Run each case several times and report the rate.": "ff761a9b48.mp3",
+ "Host B ignores the flag that keeps writes for people only. Test only on host A, and you ship that difference unseen.": "2be0e95538.mp3",
+ "With every layer, repeated runs and both hosts, four problems are found and the release waits. Better here than in an incident.": "f206656f27.mp3"
+}

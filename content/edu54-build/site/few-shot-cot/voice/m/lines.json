@@ -1,0 +1,8 @@
+{
+ "A trader in Kumasi sells a third of 48 crates on Monday, and a quarter of the rest on Tuesday. Asked for just the number, the model does every step in its head, and slips often.": "7cb10555fb.mp3",
+ "Ask it to think step by step. Each step it writes becomes input for the next, so the working is checked as it goes. Accuracy jumps.": "8a515c03fb.mp3",
+ "Show two worked examples first, and the model copies the method as well as the format. Fewer slips again.": "832a9cee28.mp3",
+ "Self-consistency runs five paths at a temperature above zero and takes the most common answer. Slips scatter over different wrong numbers, so the right answer wins the vote.": "1e7ff7aa44.mp3",
+ "But if an example teaches the wrong method, taking a quarter of the original, every path makes the same mistake, and the vote confirms it.": "062138b44c.mp3",
+ "Tree of thought proposes several next steps, judges them, and keeps the best. It catches slips early, but at many calls a question; save it for puzzles where most first moves fail.": "82d0581259.mp3"
+}

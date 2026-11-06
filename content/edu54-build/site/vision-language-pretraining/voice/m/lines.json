@@ -1,0 +1,8 @@
+{
+ "A crop model at Bahir Dar must match pictures to words, and write about them.": "51b77146a0.mp3",
+ "Each cell compares one image with one caption. The diagonal holds true pairs.": "311d58e629.mp3",
+ "Pull each image to its caption, and away from the rest. The batch supplies the negatives.": "ad015951b2.mp3",
+ "More in the batch means harder negatives.": "3143046211.mp3",
+ "A language loss teaches it to write. Ranking alone leaves it mute.": "27793875f2.mp3",
+ "Add them with weights, and both fall.": "2230fcf66d.mp3"
+}

@@ -1,0 +1,8 @@
+{
+ "A Ndebele painted house wall: bold blocks of colour with black outlines. We will build it up as tokens.": "294eb14723.mp3",
+ "Next scale prediction starts with one colour for the whole picture, then a two by two map.": "9fbecf732e.mp3",
+ "Each new map is predicted all at once, looking at every coarser map, and adds the detail they missed.": "36e4f2809c.mp3",
+ "Five steps, and the wall is done. Writing one token at a time would take two hundred and fifty six.": "32e84f135b.mp3",
+ "One token at a time, in reading order, locks in the top rows before the model knows what goes below.": "96a1686e70.mp3",
+ "Skip the middle scales, and one step must invent all the structure at once. The wall comes out blotchy.": "c0638fe141.mp3"
+}

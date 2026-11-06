@@ -1,0 +1,8 @@
+{
+ "A developer team in Maputo reviews contributors' pull requests with a code-review skill: run the tests, read the issue, comment. The skill's words go into the model's context. They grant nothing.": "68bbc2b620.mp3",
+ "What can actually happen is decided around it: the package checks, the tools and permissions, where it runs, what network and secrets it can reach, and which actions need a person.": "c10e7b064a.mp3",
+ "One pull request adds a script that steals cloud keys. On a developer's laptop, running the tests runs that script beside the keys, and they're gone.": "8b50eae3d2.mp3",
+ "An issue says to upload the secrets file. With an open network and no review of actions, the model follows it.": "ba16fdd03e.mp3",
+ "The skill's own archive tries to write a file outside its folder. Installed as it comes, it replaces the developer's shell profile.": "8b23b1de20.mp3",
+ "Check packages, run in a container with nothing to steal, limit the network, and review actions as structured requests. Then a bad pull request, a hostile issue and a bad archive all fail.": "8d536dcd62.mp3"
+}

@@ -1,0 +1,8 @@
+{
+ "A bus-booking assistant in Abuja has a new prompt. Both versions answer the same two hundred and forty test cases, and a judge marks each one. Gold tiles are cases the new prompt fixed; coral ones it broke.": "71857afdb5.mp3",
+ "Overall, version two is several points better, and the interval on the difference sits clear of zero. Judged on the average alone, the gate says ship.": "c2301323f4.mp3",
+ "Look category by category. Changing a trip got much worse: many cases that worked now fail. The average hid it.": "6bd87b0e01.mp3",
+ "Score tone and safety too. The new prompt answers out-of-scope requests it used to refuse: red dots. The gate holds.": "ad8bf5fd16.mp3",
+ "With twelve cases, every interval is so wide that nothing is clearly worse, and the gate waves the regression through.": "007c4113ae.mp3",
+ "Back at full size, run both versions on the same cases. Only the cases that flipped carry information, so the intervals stay tight. Wire this into every release.": "d3a81848c4.mp3"
+}

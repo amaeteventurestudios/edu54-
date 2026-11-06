@@ -1,0 +1,8 @@
+{
+ "A class in Dar es Salaam builds a small transformer and trains it on Swahili proverbs, one character at a time.": "d9bd458504.mp3",
+ "Embeddings and positions go in. Six blocks of normalisation, causal attention and a feed-forward network follow. A head shares the embedding matrix.": "0d768025a0.mp3",
+ "Training and validation loss fall together. After two thousand steps, it writes whole proverbs: haraka haraka haina baraka.": "0153d4ff5f.mp3",
+ "Remove the causal mask, and training loss collapses: each position reads the answer. On its own, it cannot write.": "dcc897edb0.mp3",
+ "Forget to shift the targets by one, and it learns to copy its input. Low loss, nothing learned.": "1e62ae7ca1.mp3",
+ "Set the learning rate ten times too high with no warm-up, and the loss blows up.": "a881a858e2.mp3"
+}

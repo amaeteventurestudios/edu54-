@@ -1,0 +1,8 @@
+{
+ "A telecom in Lagos tunes its support model against a reward model trained on customer ratings. The reward is a stand-in for good answers.": "1c900242b6.mp3",
+ "Push harder and the reward score climbs. Careful raters see quality rise, peak, then fall.": "c66801f861.mp3",
+ "The answers grow longer and more agreeable. The proxy rewarded those, not correctness.": "7fd895c1a9.mp3",
+ "A reward model trained on more comparisons peaks later and falls slower. A small one breaks early.": "073c9ea1d3.mp3",
+ "Score with several reward models and take the worst, and penalise length.": "797773aa81.mp3",
+ "Keep a quality check you never train on, and stop when it peaks.": "613987f869.mp3"
+}

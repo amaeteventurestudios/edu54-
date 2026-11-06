@@ -1,0 +1,8 @@
+{
+ "A national ID verification team in Abidjan upgrades its MCP SDK. The integration test lists tools and passes. That says little about what crossed the wire.": "92daede1a3.mp3",
+ "Recorded transcripts of what must be accepted catch one bug: the new version rejects a reply carrying an extra field it should keep and ignore.": "a06dbd1477.mp3",
+ "Transcripts of what must be refused catch two more: a reply sent to a notification, and a proxy turning a protocol error into a bare server error.": "ec6c1c7416.mp3",
+ "When a proxy drops a reply, a permissive client falls back to the old protocol. That lets an attacker force it. Fall back only on positive legacy evidence.": "4ee7d65aa0.mp3",
+ "Raw transcripts hold live tokens and citizens' ID numbers. Redact them before they are stored.": "00f960be20.mp3",
+ "The upgrade is held until the corpus passes, then promoted with a health check and automatic rollback.": "0154a4f58f.mp3"
+}

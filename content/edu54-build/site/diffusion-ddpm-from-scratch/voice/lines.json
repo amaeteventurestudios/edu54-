@@ -1,0 +1,8 @@
+{
+ "A lilac breasted roller over the Okavango Delta. The schedule says how much of the picture survives at each of a thousand steps: teal for the picture, grey for the noise.": "0563a959b1.mp3",
+ "There is no need to add noise a thousand times. One formula jumps straight to any step: the picture times the square root of what survives, plus noise times the square root of the rest.": "a561adecdd.mp3",
+ "Training picks a random step, makes the noisy picture in one shot, and teaches the network to predict the noise that was added.": "f3a8049b95.mp3",
+ "Drop the square roots, and the total spread no longer stays at one. The network trains on noise levels it will never meet.": "ba87153de3.mp3",
+ "Squeeze a linear schedule into two hundred steps, and the picture is gone well before the end. The last steps are wasted turning noise into noise.": "4bef89f71b.mp3",
+ "When sampling, each step removes the predicted noise and adds a little fresh noise. Leave that out, and the picture comes out smooth and lifeless.": "f73fbc6e25.mp3"
+}

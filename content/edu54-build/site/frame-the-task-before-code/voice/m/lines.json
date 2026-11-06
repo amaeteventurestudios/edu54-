@@ -1,0 +1,8 @@
+{
+ "A savings co-operative in Nairobi asks its coding agent to add duplicate phone protection. It sounds specific. It is not.": "5c2cf74599.mp3",
+ "Starting straight away, the agent guesses: compare phones as typed, add a database constraint, invent a new error. Each guess is reasonable, and wrong here.": "a9f0062ee1.mp3",
+ "State the result, not a solution: a member can't reuse a phone number, and existing duplicates stay readable.": "2ff49ea5c0.mp3",
+ "Search the repository for the constraints: the existing error shape, how phones are stored, how many duplicates exist. Each fact gets a receipt.": "6a1aeb397d.mp3",
+ "Some unknowns the repo can answer; some the agent may choose; one, the migration, belongs to a person. The agent pauses there.": "271b1a3b80.mp3",
+ "Name the test that proves the goal before writing any code.": "e78593b565.mp3"
+}

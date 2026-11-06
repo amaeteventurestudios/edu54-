@@ -1,0 +1,8 @@
+{
+ "A project lists the packages it needs, with loose rules: torch, version two point three or newer, and whatever transformers and numpy fit.": "fe0d213893.mp3",
+ "The resolver walks the shelf. For each package it tries the newest version, and steps back until one fits every rule, including the rules the packages set for each other.": "5a21879677.mp3",
+ "The answer goes into a lock file: one exact version of everything. You commit it with your code.": "066f58f709.mp3",
+ "Now a laptop in Lagos and another in Kigali install from the same lock file, and get exactly the same set.": "ae6ffe3350.mp3",
+ "Without a lock file, Kigali resolves again months later. Numpy two has come out, so Kigali gets it, and code written for numpy one breaks there and nowhere else.": "a0b39db4a1.mp3",
+ "Sometimes no answer exists. One library needs numpy below two, another needs two point one or newer. The resolver says so plainly, and installs nothing.": "5f0d3dbfb5.mp3"
+}

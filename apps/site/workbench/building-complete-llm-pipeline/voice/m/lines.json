@@ -1,0 +1,8 @@
+{
+ "A team building a small assistant that speaks Yoruba, Swahili and Amharic chains twelve stages, from raw text to a running server. Each stage's output is the next one's input.": "49d8ffa876.mp3",
+ "A manifest records everything needed to replay the run: the seed, the code version, every stage's recipe, and the gates the model must pass.": "af5b33ce60.mp3",
+ "Change the evaluation set, and only the evaluation runs again. Every stage before it is found by its hash and reused.": "0efe345b21.mp3",
+ "Change the tokenizer, and every stage after it must run again. That is more than the budget, so the run refuses to start.": "c810135aa5.mp3",
+ "If stages find their inputs by file name, a new dataset slips past. Old outputs are reused, and the release passes without the change.": "811252cace.mp3",
+ "Push the preference tuning too hard, and the model drifts far from where it started. The gate measures that drift and holds the model back.": "8bc9dc6854.mp3"
+}

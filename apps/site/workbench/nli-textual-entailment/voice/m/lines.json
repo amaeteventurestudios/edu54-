@@ -1,0 +1,8 @@
+{
+ "A city water notice in Lusaka is summarised in five claims. Which ones does the notice actually support?": "8e0500d3f0.mp3",
+ "Kabwata will have no water on Tuesday. The notice says so: entailed. It passes.": "f4111968f8.mp3",
+ "Water will be off all week. The notice says Tuesday, eight to four: contradicted. Flagged.": "6327f3353d.mp3",
+ "A donor is paying for the repairs. The notice says nothing about it: neutral. Flag only contradictions, and this invention gets through.": "db164bfa8e.mp3",
+ "Let a checker read only the claim, and it learns that \"nobody\" means contradiction. Everything else passes, including the donor.": "e9596e45aa.mp3",
+ "Supply will stop from four pm to eight am. Every word is in the notice, but the times are swapped. Word overlap calls it entailed.": "1b5cb40b1e.mp3"
+}

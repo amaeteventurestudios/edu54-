@@ -1,0 +1,8 @@
+{
+ "A crop-loan model learned from last season's farmers in Malawi and Zambia, mainly from how much rain fell on their land. Now new applicants arrive every week.": "555ecdbedb.mp3",
+ "Every week, compare this week's applicants with the training farmers. Grey is training, teal is this week. In a normal season they match.": "56102b0391.mp3",
+ "Then a drought begins. Applicants report far less rain than anyone the model has seen. The drift score jumps and crosses the alarm line within a week or two.": "482f9f4921.mp3",
+ "Accuracy tells the same story, but only weeks later, because you only know who repaid once the repayments are due.": "b559c3cd5f.mp3",
+ "Harder still: a subsidy changes who repays, while rainfall stays the same. The inputs look normal, the drift score stays quiet, and only late accuracy shows the model is wrong.": "3352f5bec6.mp3",
+ "Monitoring tells you when the world has moved. Retraining on recent data brings the model back. Watch the inputs for early warning, and the outcomes for the truth.": "4b9421f2d4.mp3"
+}

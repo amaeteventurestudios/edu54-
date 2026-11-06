@@ -1,0 +1,8 @@
+{
+ "A sports desk in Lagos asks a model to log the goals in a two-minute match highlight.": "340793a447.mp3",
+ "Each frame keeps its own size. Fourteen-pixel patches are merged into twenty-eight-pixel tokens, and pairs of frames are merged too.": "7851ba77fa.mp3",
+ "Every token's temporal position is its real time in seconds. The goal frame sits at forty-seven seconds.": "53b99c4bcf.mp3",
+ "Use frame numbers instead, at two frames a second, and the goal is logged at ninety-four seconds. Every time doubles.": "bb697e01ce.mp3",
+ "At half a frame a second, the short goal falls between two samples. It is never seen.": "bf4b7d5669.mp3",
+ "Full-size frames, four a second, would need far more tokens than the context holds.": "0eb5e04960.mp3"
+}

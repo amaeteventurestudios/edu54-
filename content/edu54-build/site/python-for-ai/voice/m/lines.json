@@ -1,0 +1,8 @@
+{
+ "Here are the same eight numbers held two ways: on the left a Python list, on the right a NumPy array.": "dfb2596ff2.mp3",
+ "A Python list does not hold numbers. It holds pointers, and each number is its own object somewhere else in memory. Summing them means following every pointer, one at a time.": "f6b2cd274d.mp3",
+ "A NumPy array is one solid block of raw numbers. Compiled code sweeps it several numbers at a time. A million numbers sum about a hundred times faster, in a quarter of the memory.": "993bf33146.mp3",
+ "Now a trap with no error message. Build a grid by multiplying a list, and you get three names for one row. Change one cell, and every row changes.": "8d60f62028.mp3",
+ "A generator hands out batches one at a time, and then it is empty. Loop over it a second time and the second epoch trains on nothing, without a word.": "793da21586.mp3",
+ "Keep numbers in arrays, build each row fresh, and keep batches in a list or make them again each epoch. Then Python stays fast and honest.": "2f9eaf710a.mp3"
+}

@@ -1,0 +1,8 @@
+{
+ "Goats crowded together at a market in Kano. We want to count them, and know exactly which pixels belong to each one.": "46b83ba318.mp3",
+ "Semantic segmentation paints every goat pixel the same colour. The animals touch, so they melt into one blob. You cannot count them.": "ec55232ee1.mp3",
+ "Instance segmentation gives every goat its own colour and box. Mask R-CNN first proposes regions, then predicts a class, a box and a small mask for each.": "e5f1176ab4.mp3",
+ "The older RoIPool rounded each region to the feature grid. That shifts the cut by a few pixels, and every mask slides off its goat.": "8e68bf5c4e.mp3",
+ "Shrink each mask to seven by seven, and stretched over a goat it becomes a blob: the heads and legs are gone.": "ffdf3e50e0.mp3",
+ "Hundreds of proposals, exact cutting with RoIAlign, and twenty eight by twenty eight masks. Six goats, six clean masks.": "8665ef4a82.mp3"
+}

@@ -1,0 +1,8 @@
+{
+ "The server cannot ask a question mid-call. It ends the call with input required.": "97d8ad048e.mp3",
+ "The client asks the user, then sends a new request with a new id, the answers and the state.": "36e1071115.mp3",
+ "If the user declines, the call still completes. Nothing is deployed, and nothing failed.": "3a25ea21ca.mp3",
+ "A client that never declared elicitation gets minus three two oh two one, not a form.": "a626d04f24.mp3",
+ "The state passes through the client, so it is signed and bound to the user, a deadline and the request.": "319ff1b228.mp3",
+ "A payment goes to the provider's own page, so the card number never passes through the client.": "3270418f0d.mp3"
+}

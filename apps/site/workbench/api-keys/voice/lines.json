@@ -1,0 +1,8 @@
+{
+ "An API lets your code use a model that runs on someone else's computer. Every call is a small parcel: an address, a key, and what you want.": "02219613ea.mp3",
+ "The key is a password that also pays the bill. It lives in a dot env file that never goes into git, and your code reads it from the environment.": "6966b020d3.mp3",
+ "Your code sends the parcel down the road: the endpoint, the key in a header, and the question written as JSON.": "a3ca992299.mp3",
+ "At the gate the key is checked. A wrong key gets a four oh one, unauthorised. Calling too fast gets a four two nine: slow down and try again.": "d7f28126a5.mp3",
+ "The answer comes back as JSON too: the text, and how many tokens went in and came out. Tokens are what you pay for.": "fc7cb343df.mp3",
+ "Paste the key into your code and push it, and bots find it within minutes. Strangers spend your money. Keep keys in the environment, always.": "594531c5d8.mp3"
+}

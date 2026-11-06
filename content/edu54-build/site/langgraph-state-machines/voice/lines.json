@@ -1,0 +1,8 @@
+{
+ "A bus company's refund agent in Kigali, drawn as a graph. The model node decides; the tools node runs what it asked for; edges route between them. A customer's seven o'clock bus to Huye was cancelled.": "91ad84b00a.mp3",
+ "The state is a list of messages. Each node returns new messages, and a reducer appends them, so the model always sees the booking and the policy it has already fetched.": "32783e4405.mp3",
+ "Before any refund, the graph pauses. A person reads the state, sees the bus was cancelled, and approves. Then the refund tool runs.": "d716d4ba9a.mp3",
+ "Right after the refund, the server restarts. Every step was saved under the thread's ID, so the run resumes from the last checkpoint and simply replies.": "ba9b740e27.mp3",
+ "Without checkpoints, the restart starts the thread over, and every tool runs again. The customer is refunded twice.": "1d3014cfb2.mp3",
+ "Another customer missed the bus. The model proposes a refund anyway. The pause lets a person reject it, and the agent apologises instead.": "9d4b781e60.mp3"
+}

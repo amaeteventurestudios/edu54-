@@ -1,0 +1,8 @@
+{
+ "This woven pattern is a grid of numbers, twenty-four by twenty-four: five hundred and seventy-six of them.": "6c232fd19a.mp3",
+ "SVD splits it into layers. Each layer is just one pattern down the rows times one pattern across the columns.": "b6980406e0.mp3",
+ "Every layer has a strength, its singular value, and they come sorted, strongest first. The first few are tall; the rest are tiny.": "276b016bc1.mp3",
+ "Rebuild the picture from only the strongest layers. One gives plaid. Four give the stripes and the diamond. Eight is almost perfect, from far fewer numbers.": "f357271bf9.mp3",
+ "Add noise to the picture and it spreads thinly over all the weak layers. Keep only the strong ones and you get a cleaner copy than you started with.": "4c6cf68e48.mp3",
+ "The same split finds hidden tastes in tables of ratings, and lets big models be fine-tuned by learning just a few thin layers. That trick is called LoRA.": "0614f188c5.mp3"
+}

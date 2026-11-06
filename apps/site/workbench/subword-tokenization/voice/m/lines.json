@@ -1,0 +1,8 @@
+{
+ "Swahili builds verbs from pieces: ni, I; me, have; kula, eat. Four tokenizers learn from fourteen verb forms.": "83a2dafeff.mp3",
+ "Tutaandika, we will write, was never seen whole. A whole-word vocabulary can only say: unknown.": "88db185ec0.mp3",
+ "BPE starts from letters and merges the most frequent pair, again and again. Common pieces like tuta become single tokens.": "5df222d311.mp3",
+ "WordPiece merges pairs that rarely appear apart, and marks inside pieces with two hashes. BERT uses it.": "7cf825206f.mp3",
+ "Unigram starts big, prunes what matters least, and picks the likeliest split: nime, cheza. Prefix and stem.": "f6f6e602bf.mp3",
+ "Serve a model with a different vocabulary from training, and the same ids decode to different pieces. It reads nonsense, silently.": "775a5c47cf.mp3"
+}

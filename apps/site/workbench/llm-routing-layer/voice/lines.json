@@ -1,0 +1,8 @@
+{
+ "A fintech in Lagos gives four product teams one model endpoint through a proxy. Apps ask for names like chat-fast; the proxy decides which real model that means.": "a54a38e03b.mp3",
+ "At nine, the provider retires a model. The platform team points the alias at its successor, and no app is touched.": "195bdb2672.mp3",
+ "With the model name compiled into the apps, two teams are down for hours waiting for new builds.": "27d77df29f.mp3",
+ "At eleven, the main provider goes down. The proxy falls back to another, choosing for each request a model that has the context length and tools it needs.": "b98cf84f25.mp3",
+ "Fall back to the cheapest model instead, and long contracts are quietly truncated. Wrong answers, and no error.": "bef5609a20.mp3",
+ "At two, one team's batch job loops. On its own key, it stops at its own budget. On a shared key, it spends everyone's allowance.": "108104e467.mp3"
+}

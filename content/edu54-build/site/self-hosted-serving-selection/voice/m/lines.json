@@ -1,0 +1,8 @@
+{
+ "Three teams want to run open models on their own hardware, each with different machines and users.": "7ad6bb7ee4.mp3",
+ "An NGO in Bamako has only laptop CPUs in the field. That points to llama.cpp, the fastest engine without a GPU.": "bb8a233ccf.mp3",
+ "A lab in Kampala has AMD GPUs. NVIDIA-only engines are out; vLLM runs well there.": "50f6f661a4.mp3",
+ "Thousands of users need a production engine. Ollama is for one person on a laptop.": "bfdd8c1b21.mp3",
+ "An agent with long shared prompts benefits from prefix reuse, so SGLang edges ahead for the fintech.": "ad5843ab70.mp3",
+ "An engine in maintenance mode gets fixes but no new features. Start new projects elsewhere.": "32c2d9f4b9.mp3"
+}

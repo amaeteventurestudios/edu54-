@@ -1,0 +1,8 @@
+{
+ "A voice-note app for farmers in Ethiopia must work on weak 2G networks. It sends a few code numbers per frame instead of audio.": "bd11187a18.mp3",
+ "The encoder turns each frame into a point. Codebook one swaps it for its nearest code. What is left over is drawn in orange.": "0fb13a2ab8.mp3",
+ "Codebook two codes what codebook one missed, then codebook three, and so on. Each one zooms in on a smaller leftover.": "217e312ba8.mp3",
+ "Drop codebook one when decoding, and most of the voice is gone. The first code carries the coarse shape.": "6389b6f534.mp3",
+ "At seventy-five frames a second, ten seconds is thousands of tokens. Too heavy for 2G, and for a language model.": "c4f9c67a14.mp3",
+ "At twelve and a half frames a second, speech becomes a short stream of tokens that a language model can learn to write.": "a05008c7c2.mp3"
+}

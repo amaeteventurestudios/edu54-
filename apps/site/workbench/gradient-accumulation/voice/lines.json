@@ -1,0 +1,8 @@
+{
+ "A student in Tunis has one small GPU that fits a batch of eight, and wants far more.": "a02e03b115.mp3",
+ "Run several micro-batches, add the gradients, then step once.": "316f9b4143.mp3",
+ "Forget to divide the loss, and the gradient is eight times too big.": "cd65b40e05.mp3",
+ "Memory depends on the micro batch alone, not on the steps.": "e1b17736da.mp3",
+ "With several GPUs, skip the sync until the last micro-batch.": "39238822c5.mp3",
+ "It matches a big batch. Each update just takes longer.": "86c2c46ca8.mp3"
+}

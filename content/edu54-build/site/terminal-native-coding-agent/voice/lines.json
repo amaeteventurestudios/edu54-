@@ -1,0 +1,8 @@
+{
+ "A mobile-money team in Kampala has a bug. Their agent goes round one loop: plan, read, edit, test, verify.": "5d0e8de51a.mp3",
+ "Take away the tests, and the agent says it is done, after changing code nobody ran.": "cc0e76ae36.mp3",
+ "Reading whole files fills the tank. Search narrows it, and compaction clears what is finished.": "dc132b7631.mp3",
+ "Now watch it work. The first test fails, the agent reads the output, and tries again.": "452b6c4f1a.mp3",
+ "The model proposes deleting a folder. A permission gate stops and asks.": "87cf88441a.mp3",
+ "And the sandbox limits what a mistake can reach. Every part of this loop came from an earlier lesson.": "663051ed59.mp3"
+}

@@ -1,0 +1,8 @@
+{
+ "A club runs a chat, where every line matters, and a game, where only the newest position matters.": "775eb56c27.mp3",
+ "TCP delivers bytes in order, but cuts them up as it likes. Lines split and glue together.": "6bb681ca60.mp3",
+ "Put each line's length in front of it, and buffer until a whole line has arrived.": "ba8f4c77a1.mp3",
+ "One lost packet holds up every later one until it is resent. The game freezes.": "b77eb21a58.mp3",
+ "Over UDP, a lost position is simply skipped. The next one is a sixtieth of a second away.": "6622b5ba22.mp3",
+ "Number every packet and ignore late ones, so the ball never jumps backwards.": "70b89cc1f0.mp3"
+}

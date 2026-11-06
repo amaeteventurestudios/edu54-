@@ -1,0 +1,8 @@
+{
+ "The app asks for chart from 2.0.0 and date from 1.2.0, any compatible version.": "624b5cdf3f.mp3",
+ "chart needs date 2. The app needs date 1. One copy cannot satisfy both.": "a10127d497.mp3",
+ "Put date 2 inside chart's own folder, where chart finds it first.": "62903475a4.mp3",
+ "A new date 1.5.0 is published with a bug. A fresh install picks it up.": "b3785d7e9e.mp3",
+ "The lockfile records exact versions and hashes, so every install is the same.": "419a720fa2.mp3",
+ "A mirror serves an altered chart. The hash does not match, and the install stops.": "b3e53a4a88.mp3"
+}

@@ -1,0 +1,8 @@
+{
+ "A cocoa buyer's agent in Kumasi pays farmers through a tool that sometimes fails. A hang would freeze everything.": "c67d68f16f.mp3",
+ "Every call gets a timeout that returns a typed error, so the loop never hangs.": "ca43b3ca8f.mp3",
+ "Wait longer each time. Instant retries only add to the trouble.": "cc1bca7c4f.mp3",
+ "Add randomness, so that a thousand clients don't all come back at once.": "213ee578e2.mp3",
+ "A timeout doesn't mean failure. The slow call lands, and so does the retry. A key makes it count once.": "43e2e8b68c.mp3",
+ "If the service is really down, stop, and return a typed error. The model can tell the farmer.": "daf05f2f70.mp3"
+}

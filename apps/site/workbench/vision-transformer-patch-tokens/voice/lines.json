@@ -1,0 +1,8 @@
+{
+ "A traveller at a Lusaka bus terminus points a phone at the departures board and asks when the Kitwe bus leaves.": "9dec66d018.mp3",
+ "The photo is cut into fourteen-pixel patches. Each becomes one token: a thousand of them for this photo.": "6650ac856c.mp3",
+ "With thirty-two-pixel patches, each letter is smaller than a patch, and the times blur.": "eac9871acc.mp3",
+ "Large encoders turn a few empty sky patches into giant tokens they use as scratch space. They soak up attention.": "48092ebde6.mp3",
+ "Four extra register tokens give that work somewhere to go, and the patch map stays clean.": "cb743489ba.mp3",
+ "Pool everything into one vector, and the language model can no longer find the Kitwe row. Vision-language models pass every patch.": "8c6435e751.mp3"
+}

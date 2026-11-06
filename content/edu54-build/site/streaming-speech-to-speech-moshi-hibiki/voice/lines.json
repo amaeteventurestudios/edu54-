@@ -1,0 +1,8 @@
+{
+ "A cloth trader in Dakar speaks French. A buyer in Accra hears English, live. Je vous vends le tissu bleu à bon prix.": "57819aa4ea.mp3",
+ "A streaming model hears and speaks at the same time, every eighty milliseconds. English starts while she is still talking.": "33aa1ba376.mp3",
+ "Alongside its English audio, it writes the words as text: an inner monologue that keeps the meaning straight.": "0f9ed539b5.mp3",
+ "French puts the colour after the noun. Only two steps behind, the model says \"the cloth\" before it hears \"bleu\", and has to patch it.": "8f9647adf2.mp3",
+ "A cascade waits for the whole sentence. Accurate, but the buyer hears nothing for three seconds.": "eca6518174.mp3",
+ "Take away the inner text stream, and words start to drop out of the English.": "c17ed755d2.mp3"
+}

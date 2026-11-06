@@ -1,0 +1,8 @@
+{
+ "Here are three kinds of day in the rainy season: sun, cloud and rain. A Markov chain says how likely tomorrow is, given only today.": "462d9073be.mp3",
+ "After a sunny day there is a seventy percent chance of sun again, twenty of cloud and ten of rain. Thicker arrows are more likely. The chances out of each day add up to one hundred percent.": "ed9a73dfec.mp3",
+ "The coral walker lives one day at a time. Each morning it picks tomorrow using only today's arrows. It has no memory of last week.": "879bca02af.mp3",
+ "Count the share of days spent in each state. At first it jumps about; after a thousand days it settles on the black marks: the long-run mix.": "0621d70e02.mp3",
+ "Start on a rainy day instead, and after a while the mix is exactly the same. The start is forgotten. That long-run mix is called the stationary distribution.": "2d4a8b5837.mp3",
+ "Now make rain certain after rain. Once the walker gets there it can never leave, and in the long run every day is rainy. A state like that is called absorbing.": "082cccf5a8.mp3"
+}

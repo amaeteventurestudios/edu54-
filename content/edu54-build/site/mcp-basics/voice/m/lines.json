@@ -1,0 +1,8 @@
+{
+ "An AI app often needs your files, your calendar, the weather. MCP is one standard plug for all of them.": "12e4c28da2.mp3",
+ "The chat app is the host. Inside it runs one client for each server. Each server is a small program that offers a few tools.": "e0664c6b2c.mp3",
+ "First, a handshake. The client sends initialize, with the protocol version it speaks. The server answers with what it can do.": "e46150f6bd.mp3",
+ "Then the client asks tools list. Each server replies with its tool names and what inputs they take. Now the model knows what is available.": "297e8c4919.mp3",
+ "Ask about tomorrow. The model picks the calendar tool, the client sends tools call, and the result comes back as text for the model to read.": "39bd15f91d.mp3",
+ "Because everyone speaks the same messages, a server written once works in any app that speaks MCP.": "cf72f1a74e.mp3"
+}

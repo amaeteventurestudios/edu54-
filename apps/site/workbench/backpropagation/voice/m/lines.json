@@ -1,0 +1,8 @@
+{
+ "A staircase light has two switches. It is on when exactly one switch is up. One neuron could not learn this rule. This network has three hidden neurons in the middle.": "96cd82d6ec.mp3",
+ "Watch one example. The switch values flow forward. Each neuron adds up its inputs times the weights, and squashes the total to between zero and one.": "a8731d35a4.mp3",
+ "The output is compared with the right answer. If it should be off but glows, the gap is the error.": "23b4e3570b.mp3",
+ "Now the error flows backwards in red. The chain rule shares out the blame: a wire that pushed the answer the wrong way, strongly, gets a big red bead and changes the most.": "438fb46cd6.mp3",
+ "Train it. Forward, compare, backward, thousands of times. The wires thicken and flip colour, and the bulbs start lighting only when they should.": "9ab03e7883.mp3",
+ "Nobody told the hidden neurons what to look for. The blame flowing back taught them. Every large model, including the chat assistants, is trained exactly this way.": "c882590652.mp3"
+}

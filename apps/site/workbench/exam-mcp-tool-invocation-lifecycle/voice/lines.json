@@ -1,0 +1,8 @@
+{
+ "A payout call passes discover, list, select, confirm, call, validate, execute and result.": "b5091a5bd8.mp3",
+ "A misspelt tool name stops at validate: invalid params, with no execute and no result.": "0667db689a.mp3",
+ "An amount that fails the schema is caught during execute and comes back as an error result.": "1d8e8a4e9a.mp3",
+ "A genuine fault in the handler is an internal error. The caller cannot fix it.": "1a34f39237.mp3",
+ "The server needs a PIN. The client asks and retries with a new id.": "8f9e336bb0.mp3",
+ "The stream breaks after sending. The client reissues through a handle, so nothing is paid twice.": "a26a3eb7ff.mp3"
+}

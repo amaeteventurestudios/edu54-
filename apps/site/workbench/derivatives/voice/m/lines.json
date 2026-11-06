@@ -1,0 +1,8 @@
+{
+ "Here is a model's loss as one of its weights changes. The gold ball is where the weight is now.": "7cadea28bf.mp3",
+ "Draw the line that just touches the curve at the ball. Its slope is the derivative: how fast the loss changes when you nudge the weight.": "f7fb884be4.mp3",
+ "You can estimate the slope by trying it. Move the weight a little, by h, see how much the loss changed, and divide by h. That gives the teal line.": "c8b4427dad.mp3",
+ "Make the nudge smaller and smaller. The teal line turns until it lies right on the tangent. That is what a derivative is: the slope you get as the nudge shrinks to nothing.": "66ccb9e5dd.mp3",
+ "But a computer keeps only so many digits. With a nudge far too small, the weight plus the nudge rounds back to the weight itself, and the estimate is garbage.": "e86c5c721e.mp3",
+ "This curve's lowest point is a kink, and at a kink there is no single slope: one side falls, the other climbs. ReLU, the most common activation, has a kink like this at zero, and libraries simply pick one side.": "2cf3ffe2c9.mp3"
+}

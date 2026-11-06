@@ -1,0 +1,8 @@
+{
+ "A matrix is a machine that moves every point of space in the same way. Watch the whole grid turn at once.": "44850fbed6.mp3",
+ "Follow just two arrows: red, one step along, and green, one step up. Where they land are the matrix's two columns. Everything else follows from them.": "1a3ff682b6.mp3",
+ "The gold square started with area one. After the move, its area is the determinant. Stretch one way and squeeze the other, and area can stay almost the same.": "9aac9c2337.mp3",
+ "A negative determinant means space was flipped, like a mirror. Look at the letter F: it now faces the other way.": "3e47a178c8.mp3",
+ "Some directions do not turn at all, they only stretch. These are eigenvectors, drawn in orange, and the stretch is the eigenvalue. They explain why some networks blow up or fade away.": "f28c3e1596.mp3",
+ "If both arrows land on the same line, the plane is squashed flat. Its determinant is zero, and nothing can undo it.": "7153654eee.mp3"
+}

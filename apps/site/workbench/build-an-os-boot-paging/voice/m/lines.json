@@ -1,0 +1,8 @@
+{
+ "The firmware reads the first 512 bytes of the disk into memory, if they end with the boot signature.": "ed4ba836c9.mp3",
+ "The boot code loads the kernel, installs a descriptor table and switches the CPU to 32-bit protected mode.": "94a78d8ef6.mp3",
+ "Now every address is virtual. Ten bits pick a directory entry, ten a table entry, twelve the offset.": "571c799e42.mp3",
+ "The program's stack address lands on its own physical frame, wherever that is.": "f117954c49.mp3",
+ "Kernel pages are supervisor-only. A user program that touches one gets a page fault.": "28da40c7de.mp3",
+ "Page zero is left unmapped, so a null-pointer bug faults instead of reading garbage.": "9e6a0f276e.mp3"
+}

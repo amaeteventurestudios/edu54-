@@ -1,0 +1,8 @@
+{
+ "A shop in Lagos lets customers photograph an Ankara print and finds it in a catalogue of forty. Prints come in families of four that look very alike.": "04f3a705d8.mp3",
+ "Every image becomes a vector. Search is just ranking the catalogue by distance to the query, and the closest five rise on the stands.": "f6f8d50d73.mp3",
+ "Training uses triplets: a photo, another photo of the same print, and a different print. The different one must end up further away by at least a margin.": "7fbbe937bc.mp3",
+ "Set the margin to zero, and almost every triplet is already satisfied. Nothing is learned, and the search is close to random.": "4dad10661c.mp3",
+ "Use only easy negatives from other families, and it learns the families but not the prints. The look-alikes fill the stands.": "570ea59ac2.mp3",
+ "Compare raw vector lengths, and the brightest photos win. Comparing angles lets the pattern decide.": "795d90371a.mp3"
+}

@@ -1,0 +1,8 @@
+{
+ "A legal helpdesk in Kampala gets thousands of questions. Most prompts open with the same system text and the same tools.": "2a9daeb3d9.mp3",
+ "Store prefixes in a tree. Each node owns the memory for its path, and a new request walks down it.": "3dd988c695.mp3",
+ "A match skips that work. The system prompt is computed once, and only the question is new.": "03a0171d67.mp3",
+ "Put a timestamp first, and nothing matches. A few tokens lose the whole gain.": "48fc9a313a.mp3",
+ "Swap tools and context in some requests, and one tree becomes two. Your template is a cache key.": "13a20b247d.mp3",
+ "First come first served evicts what the next one needs. Grouping by prefix keeps the cache useful.": "6bfa2fa17e.mp3"
+}

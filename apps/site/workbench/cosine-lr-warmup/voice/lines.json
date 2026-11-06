@@ -1,0 +1,8 @@
+{
+ "A team in Saint-Louis trains a Wolof model. At the start, weights are random and gradients are wild.": "d6ecc369fc.mp3",
+ "Climb from near zero in a straight line. The spike goes away.": "10aa8c69d2.mp3",
+ "Then ease down along a cosine, with no sudden steps.": "bf19668e2f.mp3",
+ "A small floor keeps learning alive to the end.": "fd0a4485b2.mp3",
+ "Compute the rate from the step number. A resumed run gets exactly the same value.": "b5702468fa.mp3",
+ "Keep the rate and the gradient norm together. They tell you how training feels.": "803067d92c.mp3"
+}

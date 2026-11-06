@@ -1,0 +1,8 @@
+{
+ "Stable Diffusion has three parts. A text encoder reads the prompt, a U-Net removes noise from a small latent picture while attending to the text, and a VAE decoder turns the latent into pixels.": "bc213091a8.mp3",
+ "The U-Net never sees full-size pixels. It works on a grid sixty four by sixty four with four channels. Shown directly, that latent is just a few blocks of colour.": "695a787a12.mp3",
+ "Now teach it the bold geometric house painting of the Ndebele, from twenty photos. LoRA clips small trainable adapters onto the U-Net and trains only those.": "3fd789cd7a.mp3",
+ "The two red prompts ask for the style and get it. The house at night and the dog on the beach are untouched.": "2035421053.mp3",
+ "Train far too long on the same twenty photos, and the model forgets everything else. Every prompt turns into the training house.": "4b5315b4b5.mp3",
+ "Mixing in the model's own ordinary pictures while training keeps the general meanings safe. A good fine tune adds, and takes nothing away.": "b3ffecc830.mp3"
+}

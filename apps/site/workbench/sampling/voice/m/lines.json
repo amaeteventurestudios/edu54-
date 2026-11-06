@@ -1,0 +1,8 @@
+{
+ "This curve is daily rainfall in a two-season place: many dry days, and a second hump of wet ones. We want random numbers that follow this shape.": "e92868e425.mp3",
+ "The simplest trick: throw darts at a box around the curve. Keep the ones that land under the curve, in green, and throw the rest away.": "f209fd3284.mp3",
+ "Count where the kept darts landed, and the bars in front fill into the same two humps.": "764fbdfed7.mp3",
+ "Another trick uses the running total of the curve, in gold. Take one flat random number, read across to the gold line, and drop straight down. Every number becomes a sample.": "309efa0e5e.mp3",
+ "For shapes you cannot even write down in full, send a walker. It proposes a step, always takes it uphill, and sometimes downhill. Over time it visits each place as often as its height.": "f0f9050a6c.mp3",
+ "With tiny steps, the walker never crosses the dry dip and stays on one hump forever. The answer looks confident, and it is wrong.": "74d059c085.mp3"
+}

@@ -1,0 +1,8 @@
+{
+ "A logistics firm in Lagos has four repos. A big context window can't hold them, and \"where do we retry?\" needs search.": "6b4414aaee.mp3",
+ "Parse the code and chunk by function, so that no idea is cut in half.": "1a7d9faf48.mp3",
+ "Keyword search finds exact names, and vectors find meaning. Together they cover far more.": "62fecbcd3f.mp3",
+ "Follow the call graph, and an answer can leave one repo and land in another.": "53b13c2895.mp3",
+ "A reranker reads each pair closely, so that the right chunk rises to the top.": "b9c22579b1.mp3",
+ "Every answer points to a file and line. Now a person, or an agent, can check it.": "f00557794d.mp3"
+}

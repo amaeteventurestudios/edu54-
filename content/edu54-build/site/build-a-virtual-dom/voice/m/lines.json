@@ -1,0 +1,8 @@
+{
+ "A market in Kisumu lists its stalls. The screen is a function of that list.": "a52c7e0f42.mp3",
+ "Rebuild the page for each change, and you lose focus and scroll.": "189800d55d.mp3",
+ "Render to a plain tree instead. Compare it with the last one.": "bf7b54da01.mp3",
+ "Without keys, one row at the top makes every row look changed.": "460e8cd6c0.mp3",
+ "A key says which row is which, so only the new row is written.": "348f020881.mp3",
+ "Keys also turn a reorder into moves, keeping each row's state.": "e2680a5513.mp3"
+}

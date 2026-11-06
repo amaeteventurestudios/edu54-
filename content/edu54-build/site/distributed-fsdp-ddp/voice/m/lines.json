@@ -1,0 +1,8 @@
+{
+ "A cluster in Pretoria has four GPUs. Each rank takes a slice of the batch.": "e14786a2fb.mp3",
+ "Broadcast weights first, or ranks begin apart and stay apart.": "bd2b1abc2f.mp3",
+ "After backward, average the gradients. It exactly matches one big gradient.": "c6d6e789f6.mp3",
+ "Each rank needs its own slice. Forget the sampler, and they read the same thing.": "68e06fe4e2.mp3",
+ "A full copy on each GPU may not fit. DDP runs out of room.": "362df9ad1d.mp3",
+ "FSDP shards the weights, and gathers each layer as needed. Memory for communication.": "c22fdef147.mp3"
+}

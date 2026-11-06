@@ -1,0 +1,8 @@
+{
+ "A shipping tool in Mombasa has an image made of three stacked layers.": "f81aefa6ba.mp3",
+ "To find a file, look from the top layer down. The first match wins.": "ad18d72b29.mp3",
+ "Layers are read-only, so images on one base use the disk once.": "1f183466ad.mp3",
+ "Delete a file in a later layer, and a marker hides it. The bytes stay.": "edc7f9f7c7.mp3",
+ "A running container copies a file to its writable layer the first time it changes.": "59e1d12016.mp3",
+ "Many containers can share one image, each with its own thin top layer.": "74e5cfe1b1.mp3"
+}

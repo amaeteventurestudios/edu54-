@@ -1,0 +1,8 @@
+{
+ "A roadside near Musanze, Rwanda: a shop, a banana tree, a house, and terraced hills behind. Just one photo, no second camera.": "c9e09c2c48.mp3",
+ "A depth network guesses how far away every pixel is, from clues like height in the frame, size and haze. Warm colours are near, cool are far.": "92f925564f.mp3",
+ "With the camera's focal length, every pixel lifts into a point in 3D. The photo becomes a little scene on the bench.": "221954b7c9.mp3",
+ "Many models only output relative depth: the right order, but no unit. Read those numbers as metres, and the house is a few centimetres away.": "713f2e7ed2.mp3",
+ "The shop window reflects the far hills. A model never trained on glass reads the reflection as real distance, and punches a hole in the shop.": "3d1f116b7e.mp3",
+ "Lift the points with the wrong focal length, and the scene stretches, even though every depth was right.": "c74e70f7db.mp3"
+}

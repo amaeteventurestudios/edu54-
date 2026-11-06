@@ -1,0 +1,8 @@
+{
+ "A farm advisory agent in Mbale usually answers in three seconds. Sometimes it takes thirty. Logs from each piece don't say why.": "0b1b800d31.mp3",
+ "A trace shows the whole request as nested spans: the agent, each model call, each tool, each call out to an MCP server, with standard names and token counts.": "6db862900d.mp3",
+ "In the slow request, the soil tool takes twenty-seven seconds. Inside it, the soil server's own spans show a cold start of twenty-six.": "b2c5bbbed1.mp3",
+ "That only works because the client passed the trace context to the MCP server. Without it, the server's spans start a separate trace, and the cold start is invisible.": "b90b4bdcea.mp3",
+ "Record every prompt and reply, and farmers' names and phone numbers end up at the tracing vendor. Capture content deliberately, for a sample, redacted.": "2ec5ad4be0.mp3",
+ "Label metrics by farmer, and each one splits into forty-eight thousand series. Keep labels to model and operation; search traces for individuals.": "ec3e6abb1e.mp3"
+}

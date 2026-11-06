@@ -1,0 +1,8 @@
+{
+ "An inference server in Johannesburg has eight batch slots. With static batches, finished sequences sit idle, waiting for the slowest.": "425a31f45a.mp3",
+ "Now work one step at a time. A finished sequence leaves, and a waiting one joins at once.": "c02b675441.mp3",
+ "Each sequence grows a KV cache. Reserve contiguous space, and much of memory is lost to gaps.": "22a78db0c0.mp3",
+ "PagedAttention uses fixed blocks and a table per sequence. Nearly all the memory is usable.": "8fdc30a983.mp3",
+ "One huge prompt loads whole, and everyone else freezes. Average speed hardly moves, but users feel it.": "c55ceb91d2.mp3",
+ "Chunked prefill cuts the prompt into pieces between decode steps. It protects the gap between tokens.": "4569c593af.mp3"
+}

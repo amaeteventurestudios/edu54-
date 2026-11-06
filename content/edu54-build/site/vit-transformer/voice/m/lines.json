@@ -1,0 +1,8 @@
+{
+ "A wildlife camera near Arusha sends photos. The encoder uses the block you built for text.": "48c75eefce.mp3",
+ "Images have no future. Leave the causal mask in, and CLS reads nothing.": "f143ed2d8e.mp3",
+ "CLS starts empty, and reads from all patches, layer by layer.": "6aeec386fc.mp3",
+ "By twelve layers, it can stand for the whole image.": "7cd4df5801.mp3",
+ "The size must divide by the heads. Ten into 768 doesn't work.": "77749fbcba.mp3",
+ "Twelve layers, twelve heads, about eighty-six million parameters.": "ff19bfc258.mp3"
+}

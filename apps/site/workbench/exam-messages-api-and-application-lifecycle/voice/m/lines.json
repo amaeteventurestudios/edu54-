@@ -1,0 +1,8 @@
+{
+ "The Messages API remembers nothing between calls. The client sends the conversation every time.": "12f5260b78.mp3",
+ "Resend the assistant's tool_use block, then a tool_result with the same id.": "046edcbd01.mp3",
+ "The text can look finished when generation stopped at the token limit. Branch on stop_reason.": "75f591dbc4.mp3",
+ "Never loop until end_turn. Cap the turns and fail closed on a reason you do not know.": "4aa3e611f0.mp3",
+ "A network retry can repeat a side effect. An idempotency key makes it happen once.": "1a044bf71d.mp3",
+ "Every arrow is your code: build, call, store, branch, continue or stop.": "8c6b333a73.mp3"
+}

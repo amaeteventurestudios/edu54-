@@ -1,0 +1,8 @@
+{
+ "An agent adds phone-number sign-up for parents to a Kigali school app. A scope contract says where that work begins and ends.": "66f24bc95f.mp3",
+ "At the end, a checker reads the agent's diff against the contract. Three files are fine; two are not.": "609edf57b3.mp3",
+ "Allow all of the app and list nothing as forbidden, and a migration that drops a column slips through.": "5c82e1a280.mp3",
+ "A refactor moved the sign-up file. A contract written as raw paths now flags the right edits.": "d271426139.mp3",
+ "The agent also starts a dark theme. A feature list in the repo allows exactly one active feature per session.": "a3bc921ad4.mp3",
+ "Each violation is a finding the verification gate can refuse. The agent asks about the migration instead of shipping it.": "7294eabeb0.mp3"
+}

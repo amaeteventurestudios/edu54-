@@ -1,0 +1,8 @@
+{
+ "This tower was trained on a million everyday photos. Its lower layers learned edges and textures, its upper layers whole objects, and its old head named a thousand everyday things.": "674d543cfb.mp3",
+ "We lift the old head off and add a new one for three cattle breeds: Ankole, Boran and Friesian. With only forty photos, we lock the whole backbone and train just the head.": "0f5cbfcafb.mp3",
+ "Compare starting from random weights. Every layer has to learn to see from forty photos. It memorises them, and fails on new cattle.": "518afc445d.mp3",
+ "With thousands of photos, unlock the top layers too and fine-tune them gently. They adjust from everyday objects to the shapes of horns and humps.": "6ce2534f74.mp3",
+ "Unlock everything with a big learning rate, and the layers are rewritten to fit the small new set. Everything they knew is scrambled.": "524975a793.mp3",
+ "Pretrained backbone, new head, freeze what you cannot afford to train, and fine-tune the rest with a small learning rate.": "5e1c02e9ae.mp3"
+}

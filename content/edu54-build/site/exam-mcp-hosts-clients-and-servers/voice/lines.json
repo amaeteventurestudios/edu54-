@@ -1,0 +1,8 @@
+{
+ "The newsroom assistant is the host. It creates one client for each server it uses.": "ca0df118c3.mp3",
+ "Files and notes run locally over stdio. Metrics is a remote service over HTTP.": "0b075d4c13.mp3",
+ "Two servers both call themselves primary. Key the registry on the host's own ids.": "ecb7d99dc1.mp3",
+ "Both expose search. Prefix the second with its server id.": "1642599f95.mp3",
+ "Metrics declared resources, not tools. The host lists no tools from it.": "19f79b2bb1.mp3",
+ "Each request carries only what it needs, so servers never see the whole conversation.": "3394b9540e.mp3"
+}

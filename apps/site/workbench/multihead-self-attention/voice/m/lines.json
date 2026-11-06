@@ -1,0 +1,8 @@
+{
+ "Six tokens. Each row shows how one token spreads its attention over the others.": "6a871d80c5.mp3",
+ "Dot each query with every key. A softmax turns those scores into weights.": "1df88083e4.mp3",
+ "Dot products grow with size. Skip the square root, and one weight takes everything.": "ec1a994886.mp3",
+ "Remove the mask, and a token reads what comes next. That is cheating in training.": "f2164435c4.mp3",
+ "Each head has its own projections, so it sees a different pattern.": "3aea1f1d2b.mp3",
+ "Run them in parallel, join the results, and project. That is one attention layer.": "41ddc7386c.mp3"
+}

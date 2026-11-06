@@ -1,0 +1,8 @@
+{
+ "A university team in Accra builds a vision-language model from open parts, to read local documents and scenes.": "afe6d8c0cd.mp3",
+ "Swap the connector from an MLP to a Q-Former. The scores barely move. At the same token count, it hardly matters.": "08eba8174e.mp3",
+ "Cut image tokens to sixty-four, and documents become unreadable. Tokens per image matter most.": "346c802e51.mp3",
+ "A better encoder comes next: SigLIP beats CLIP, and adding DINOv2 features helps spatial questions.": "d00b563b41.mp3",
+ "Train on captions distilled from another model, and it learns to invent details. Dense human captions are better.": "3de22cbce5.mp3",
+ "Put everything on a small language model, and it still reasons like a small one. The language model sets the ceiling.": "1148da5613.mp3"
+}

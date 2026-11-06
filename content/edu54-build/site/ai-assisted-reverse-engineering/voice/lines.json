@@ -1,0 +1,8 @@
+{
+ "Eight reports reconstruct two functions of the student's stripped program. They stand in for what an AI model returns, and they all read with the same confidence.": "7fce8a15e7.mp3",
+ "Score each report on six checks: the compiled bytes, a designed grid, random inputs, names against debug information, its citations, and where it came from.": "721f3ae9d7.mp3",
+ "This report invents a helper function. Its code compiles to the very same bytes, but it cites a function, a call and a message that do not exist.": "8ba45a5af7.mp3",
+ "Widening the arithmetic sounds careful, and it changes the answer on every overflowing input.": "cbb748867b.mp3",
+ "A string inside the binary tells the analyst what to believe. It is data written by whoever built the file, never an instruction.": "7097ae39e1.mp3",
+ "Without a compiler, two checks cannot run. Their verdicts stay unknown; nothing rounds up to a pass.": "2f61fc6065.mp3"
+}

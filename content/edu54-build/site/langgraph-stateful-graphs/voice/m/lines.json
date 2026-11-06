@@ -1,0 +1,8 @@
+{
+ "A seed distributor in Kano runs a month-end agent. Forty steps: read orders, check stock, pay suppliers, write reports.": "9f32abf039.mp3",
+ "Step 38 fails. With no checkpoints, everything is lost and the whole run starts again.": "f714573e4a.mp3",
+ "A stateful graph saves its state after every node. Resume is one call, and only the failed step runs again.": "4f02fedb82.mp3",
+ "Saves are not free, so some teams save less often. Crash just before the next save and those steps repeat.": "8a9739bc33.mp3",
+ "Step 30 pays a supplier. Resume from before it, and the payment runs again. A checkpoint rewinds your state, not the bank.": "e8eb3a48a1.mp3",
+ "Give the payment an idempotency key, and the repeat counts once. Durable runs need steps that are safe to do twice.": "d7ab9c0c88.mp3"
+}

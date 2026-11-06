@@ -1,0 +1,8 @@
+{
+ "On stdio, the server is a subprocess. Each message is one line, and stdout carries nothing else.": "047dadc03d.mp3",
+ "A debug line on stdout corrupts the stream. Logs belong on stderr.": "5d564e2646.mp3",
+ "On HTTP, every message is its own POST to one endpoint, answered with JSON or a stream.": "077c93279f.mp3",
+ "Headers mirror the body so gateways can route. If they disagree, the server rejects the request.": "58e2cb7a8d.mp3",
+ "A bad origin gets forbidden, which stops web pages reaching a local server.": "aef6a81bfd.mp3",
+ "There is no GET stream and no session. A GET gets method not allowed.": "e8da0dff91.mp3"
+}

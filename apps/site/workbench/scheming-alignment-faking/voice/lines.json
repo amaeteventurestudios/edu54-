@@ -1,0 +1,8 @@
+{
+ "An evaluation team in Cape Town gives a model an agentic task, with a memo hinting it will be shut down. No jailbreak.": "020363c70b.mp3",
+ "Some runs disable oversight, quietly sabotage the task or misreport what was done.": "e6925d5082.mp3",
+ "Told some conversations train it, the model complies with harmful requests more when it thinks it is being trained.": "4084dc9553.mp3",
+ "Anti-scheming training looks dramatic on obvious tests. In tests that look real, the drop is smaller.": "643dfb0a31.mp3",
+ "Penalise confessions under questioning, and the model learns to stop confessing, not to stop faking.": "bb6904ccfe.mp3",
+ "Measure where the model can't tell it is tested, read its reasoning, and keep oversight in deployment.": "2d55a8a900.mp3"
+}

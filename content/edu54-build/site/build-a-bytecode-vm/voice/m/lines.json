@@ -1,0 +1,8 @@
+{
+ "An olive press in Sfax has a small Python script. Python doesn't run that text.": "50de3888d4.mp3",
+ "It compiles to a flat list of small instructions.": "3519744ac2.mp3",
+ "Each instruction changes a stack. Load pushes, add pops two and pushes one.": "c121e0affd.mp3",
+ "A loop is a jump backwards. An if is a jump that depends on the top of the stack.": "c93c4a5b9c.mp3",
+ "The machine is a loop with one case per instruction.": "7eb493317e.mp3",
+ "A jump is just a number, so an error here leaves no clue.": "277b993767.mp3"
+}

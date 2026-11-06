@@ -1,0 +1,8 @@
+{
+ "A policy research institute in Dakar asks its assistant for a brief on agent protocols, with sources. One request will cross a gateway, an MCP server, a search tool, another firm's writer agent, a long report job and an app view.": "cc33ca5208.mp3",
+ "The writer agent pauses: English or French? The assistant asks the user and replies on the same task. Treat the pause as failure, and there is no draft.": "08cecf4229.mp3",
+ "The report takes four minutes. As a task, it is polled until done. Waited on as one request, it times out and the result is lost.": "22d3341967.mp3",
+ "The token can search but not write reports. The server asks for more scope, the user agrees, and the call is retried.": "f33783c375.mp3",
+ "The search server is cold and takes nineteen seconds. Because the trace context travels with every hop, the trace names the cold start.": "d2ff31fa47.mp3",
+ "Each layer exists to absorb one kind of failure. Switch any one off, and its fault reaches the user.": "6fa021bc5d.mp3"
+}

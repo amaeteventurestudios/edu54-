@@ -1,0 +1,8 @@
+{
+ "A vision transformer reads a photo like a sentence. This zebra at a waterhole in Etosha is cut into square patches, sixteen of them.": "69eefd990d.mp3",
+ "Each patch is flattened into a vector: one token. A position embedding says where it came from, and a gold [CLS] token joins the line.": "268a8a53fa.mp3",
+ "Transformer blocks let every token look at every other. After the last block, the [CLS] token gives the answer. The bright patches show where it looked: the stripes.": "34cbb79c03.mp3",
+ "Make the patches huge, and four tokens squash the stripes away. Make them tiny, and there are hundreds of tokens, with attention cost growing as the square.": "036b833221.mp3",
+ "Take away the position embeddings and shuffle the patches. Legs above the head, but the answer does not change: without positions, the patches are just a bag.": "6b9daab662.mp3",
+ "A CNN assumes nearby pixels belong together; a ViT must learn even that. With little data it loses to a CNN. Pretrained on millions of pictures, it wins.": "f921354c28.mp3"
+}

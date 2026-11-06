@@ -1,0 +1,8 @@
+{
+ "A land-records office in Kumasi sends three scans in one batch: a tall title deed, a wide survey map and a square ID photo.": "d67171079a.mp3",
+ "Squash each to a fixed square, and the deed's text is crushed, and the plot numbers cannot be read.": "c3a4835dff.mp3",
+ "Pad each to a big square instead, and most of the compute goes on blank space.": "a504153e9f.mp3",
+ "Tiling with a thumbnail keeps detail with a frozen encoder, but the tall and wide scans cost several tiles each.": "36f6f552e4.mp3",
+ "Keep each scan at its native shape and pack the patches into one sequence. No padding, no squashing.": "c139f6b2e3.mp3",
+ "Pack without a mask, and patches attend across documents. A block-diagonal mask keeps each scan to itself.": "93be397364.mp3"
+}

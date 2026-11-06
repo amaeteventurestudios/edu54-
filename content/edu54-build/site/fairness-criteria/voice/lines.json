@@ -1,0 +1,8 @@
+{
+ "A lender scores applicants from two groups. More of group A would repay than group B.": "ab0e5dce62.mp3",
+ "One threshold for everyone: repayers in both groups are approved at the same rate, but overall approval differs.": "53cff2dba5.mp3",
+ "Force equal approval. Group B now needs a lower threshold, and error rates come apart.": "b848518974.mp3",
+ "When base rates differ, no threshold gives all three at once. Claiming so is false.": "820f087961.mp3",
+ "Only when base rates are equal do the three criteria line up.": "bf516d2c53.mp3",
+ "Deleting the group column is not enough. A district feature can stand in for it and change decisions.": "2088f050f9.mp3"
+}

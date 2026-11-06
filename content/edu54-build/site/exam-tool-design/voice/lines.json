@@ -1,0 +1,8 @@
+{
+ "An agent picks a tool by reading the tool list: names, descriptions and input schemas. It can't look inside the code.": "1bc3fcdc6b.mp3",
+ "Each tool here says one job, when to use it, and when not to. That last part matters: it draws the border between tools.": "cf1ce7d4b8.mp3",
+ "Balance questions go to the account, refund questions to the rules, exchange rates to the web. No guessing.": "934dbecc93.mp3",
+ "Now call them search, find and lookup, all with the same description. Watch the agent guess, and send a public question into a private wallet.": "31e2092281.mp3",
+ "When a tool fails, say how: the category, whether a retry can help, and the safe next step. A bare failed makes the agent try again and again.": "642c07d4e9.mp3",
+ "When tools are picked wrongly, the strongest answer is usually to fix the tool contract: distinct names, clear boundaries, structured errors. Not a longer prompt.": "28867c1202.mp3"
+}

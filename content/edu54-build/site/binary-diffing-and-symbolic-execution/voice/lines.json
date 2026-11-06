@@ -1,0 +1,8 @@
+{
+ "The student rebuilds their program with more optimisation and asks what changed. A differ matches functions by signatures that must be unique on both sides.": "adeca37002.mp3",
+ "In the loaded program, one function looks changed by a single byte. A table moved; the code didn't. Mask the relocated bytes.": "aec2921783.mp3",
+ "Between less optimised builds, two different functions share the same small shape. A shape match is a hint, not proof.": "7ad723296f.mp3",
+ "A rebuilt function has identical code but a different table. Only reading the data it points at shows the change.": "2163276176.mp3",
+ "Symbolic execution gives every path a condition. The path that returns four holds for every score from ninety to one hundred and nine.": "7901e7a1ee.mp3",
+ "A loop with an unknown count adds one path per iteration. Raise the bound, and some paths must be cut.": "f2c4ad95c2.mp3"
+}

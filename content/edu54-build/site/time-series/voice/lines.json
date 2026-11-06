@@ -1,0 +1,8 @@
+{
+ "A cooperative dairy in Nakuru records how much milk farmers deliver each day. Twelve weeks of it: a slow rise, and a peak every Saturday, market day.": "3628be24e4.mp3",
+ "The last two weeks are held back. The forecast may only learn from what came before the purple line, just as in real life.": "798b1bf386.mp3",
+ "First part: the trend, a slowly rising line. Better than repeating yesterday, but it runs straight through every Saturday peak.": "37f385e270.mp3",
+ "Second part: the weekly rhythm. Saturdays are about a fifth above average, Sundays quiet. Multiply it in, and the forecast follows the peaks.": "5b5064ea9d.mp3",
+ "A tempting mistake: shuffle the days before splitting. Then the model learns from days around the test fortnight, peeks at the future, and looks far better than it will ever be.": "f77b0bf763.mp3",
+ "Trend, season and recent values: most forecasts, from simple ones to neural networks, are built from these same parts, and always tested on the future.": "9de20c05ba.mp3"
+}

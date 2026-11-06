@@ -1,0 +1,8 @@
+{
+ "A clinic's booking assistant in Gaborone calls a calendar server through MCP. In the handshake era, it opens a session on one copy of the server, and that session holds the clinic it chose.": "a2dfaa8c65.mp3",
+ "Mid-morning, copy one restarts. The session is gone: a call fails, the client starts over, and the chosen calendar has to be picked again.": "ed71c85936.mp3",
+ "In the stateless revision, every request carries its own context: the protocol version and the client's capabilities. Any copy can answer, so the restart goes unnoticed.": "c435e12bae.mp3",
+ "The chosen calendar travels as a handle in each call's arguments. When a tool needs more from the person, the result says input required; the client asks, then calls again.": "3283cf6e83.mp3",
+ "Leave out the context and every request is malformed. Stateless means each message must stand on its own.": "c754991871.mp3",
+ "An old server doesn't know server discover. A client that speaks both eras falls back to the handshake and carries on.": "966e79fbe3.mp3"
+}

@@ -1,0 +1,8 @@
+{
+ "A pan-African bank serves its support model from Lagos, Nairobi and Johannesburg, four replicas in each.": "1806213f0c.mp3",
+ "Each replica keeps the start of recent prompts in its cache. Land on the right one and the first word comes ten times sooner.": "5d2fcc2d5f.mp3",
+ "Hash the start of each prompt and send it to the replica that holds it. Most requests now hit the cache.": "a3e1c94909.mp3",
+ "Chasing a warm cache in another region saves prefill but pays the round trip, and a busy region erases the gain.": "19d185fd0b.mp3",
+ "A recovery copy with only the weights won't start. The tokenizer, the scales and the settings matter too.": "0364e584e2.mp3",
+ "Route to the warm cache within each region, and back up everything a replica needs, tested.": "35e7adb6ad.mp3"
+}

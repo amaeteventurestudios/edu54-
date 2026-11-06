@@ -1,0 +1,8 @@
+{
+ "A court records office in Lagos wants to feed whole case files to a model that accepts a hundred and twenty-eight thousand tokens. How much can it really use?": "dc3558b277.mp3",
+ "Plant one fact at every depth of files of every length, and ask for it back. Each column is the accuracy.": "1eeaf8d255.mp3",
+ "Accuracy falls with length, and dips for facts in the middle. Test only the start and end, and you never see it.": "9ee6aa4e17.mp3",
+ "If the fact shares words with the question, almost everything passes. Real questions rarely use the file's exact words.": "f13557e06f.mp3",
+ "Ask it to follow a chain of facts across pages, and it holds up only for much shorter files.": "7ac89010b3.mp3",
+ "Report the length that works for finding facts and the length that works for reasoning, next to the advertised window.": "48cfbc8615.mp3"
+}

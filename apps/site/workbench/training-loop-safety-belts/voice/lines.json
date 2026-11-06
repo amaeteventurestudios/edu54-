@@ -1,0 +1,8 @@
+{
+ "A small model trains for two hundred steps on a shared GPU. Two bad batches and a kill are coming.": "06d6f24d07.mp3",
+ "Without clipping, each bad batch throws the weights off course. Clipping caps the step.": "1df41778a4.mp3",
+ "In float16, small gradients vanish. A loss scaler keeps them alive and skips steps that overflow.": "0442b979ff.mp3",
+ "Four micro-batches make one step. Forget to divide the loss by four and the steps are four times too big.": "b38efd8310.mp3",
+ "Writing a checkpoint in place, a kill leaves a broken file. Write to a temporary file, then rename.": "0d2e49368e.mp3",
+ "With optimizer state saved too, the run resumes from step 150 as if nothing happened.": "993ed29930.mp3"
+}

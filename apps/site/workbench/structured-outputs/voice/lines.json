@@ -1,0 +1,8 @@
+{
+ "A pharmacy wholesaler in Dar es Salaam turns order messages into records for its warehouse. Asking for JSON in the prompt mostly works, but some replies come in code fences, or stop halfway, and the parser fails.": "f4d8fbbf17.mp3",
+ "JSON mode guarantees the reply parses. But valid JSON can still have the wrong fields: quantity spelled out as a word, or the date missing.": "f6d32f39bd.mp3",
+ "So validate every reply against the schema, and send failures back with the error message. Most are fixed on the next try.": "7a4d7b0d0e.mp3",
+ "Schema mode makes the decoder follow the schema itself: every field, the right types, a unit from the list. The shape is now guaranteed.": "110f5d52ba.mp3",
+ "But a quantity of twenty-one when the customer wrote twelve passes every type check. Without a check against the message, wrong orders slip into the warehouse.": "ab9fdb8d3b.mp3",
+ "Compare each value with the message, and send mismatches back too. Now every order lands right, or goes to a person to read.": "7051c19e59.mp3"
+}

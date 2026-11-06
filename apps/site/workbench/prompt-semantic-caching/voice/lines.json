@@ -1,0 +1,8 @@
+{
+ "An insurer in Kumasi turns on prompt caching, and the bill doesn't move. Hit rate is seven percent.": "3f0855cb2c.mp3",
+ "The prompt starts with the time, so every prompt is new. Move that lower, and hits reach ninety percent.": "5770d31014.mp3",
+ "An agent fires ten calls at once. All arrive before the first write finishes, so all ten write and none read.": "229ec7034f.mp3",
+ "A semantic cache sits in front. When a question closely matches an old one, the model isn't called at all.": "04bc690f97.mp3",
+ "Loosen the match to save more, and flood questions get fire answers.": "26668342ad.mp3",
+ "Keep the match tight, keep the prefix stable, and measure the hit rate before you believe the savings.": "5948031ed8.mp3"
+}

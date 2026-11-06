@@ -1,0 +1,8 @@
+{
+ "A template is a page with holes for data, a loop over orders and a filter.": "fcb49461f3.mp3",
+ "The engine splits it into text and tags and writes a function, once. Each request just calls it.": "9064693efa.mp3",
+ "Parse the template again for every request, and a thousand requests take sixteen times longer.": "39d7d1575a.mp3",
+ "A customer's note contains a script tag. Inserted raw, it would run in every visitor's browser.": "78145b199c.mp3",
+ "Escape every value, and the script is shown as harmless text.": "0ae3010327.mp3",
+ "A new branch has no name yet. Decide what a missing value does: print nothing, or fail loudly in testing.": "a0bf9b7000.mp3"
+}

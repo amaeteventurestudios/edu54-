@@ -1,0 +1,8 @@
+{
+ "An analytics firm in Cape Town compares its agent team with a single agent on four kinds of task.": "c494f739bc.mp3",
+ "The team uses fifteen times the tokens. Give one agent the same budget, and the gap shrinks.": "2a32355fe1.mp3",
+ "A graph of critics suits broad research. A chain suits step-by-step coding. A star suits quick facts.": "e0450a1f09.mp3",
+ "Public benchmarks leak into training data and inflate every score. Use held-out tasks.": "58fb109740.mp3",
+ "On the hidden-information task every system sits near the random baseline. Without it, nobody would notice.": "99b1e11bbe.mp3",
+ "Equal budgets, held-out tasks, a random baseline, and a topology that fits. Then price in the tokens.": "f2eb21fb61.mp3"
+}

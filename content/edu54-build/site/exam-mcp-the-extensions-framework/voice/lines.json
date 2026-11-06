@@ -1,0 +1,8 @@
+{
+ "Extensions add capabilities beyond the core, named by vendor so they never collide.": "0c59219caa.mp3",
+ "The client lists its extensions on each request. Nothing carries over from earlier.": "0b0cd1fd7c.mp3",
+ "An extension is active only when both the request and the server name it.": "60b64db0cc.mp3",
+ "A bare name like tasks is malformed. It never counts, even if both sides list it.": "458a02a46a.mp3",
+ "If only one side has an optional extension, it falls back to core behaviour.": "e84318761d.mp3",
+ "A breaking change ships under a new identifier, so old clients are never surprised.": "3ba8a57f56.mp3"
+}

@@ -1,0 +1,8 @@
+{
+ "A coding agent adds a CSV export of fee receipts to a Kampala school's fees app. The model is capable. What fails is everything around it.": "309892877d.mp3",
+ "With only a prompt, it pushes to main, edits code it was never asked to touch, and grades its own work.": "0503f3886c.mp3",
+ "The smallest workbench is three files: rules for how to work, a state file, and a task board with what is in scope.": "249e835590.mp3",
+ "Add feedback and verification: the agent sees real command output, and tests decide whether the export works.": "0099d3f78a.mp3",
+ "Add a reviewer with a different role, and a handoff note for the next session.": "6970ae82a1.mp3",
+ "Swap the model and keep the workbench. Not the other way round.": "34dc72a64a.mp3"
+}

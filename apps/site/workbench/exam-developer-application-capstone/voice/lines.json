@@ -1,0 +1,8 @@
+{
+ "The app answers one question: the status of an order, with one read-only tool.": "ad29145b78.mp3",
+ "No order ID means needs input. The app asks, and calls no tool.": "f307a07509.mp3",
+ "An unknown order ends as not found and escalates, instead of guessing.": "68d00cfcc8.mp3",
+ "A malformed ID fails the schema pattern before it reaches the tool.": "86da825862.mp3",
+ "The injected request stops at the policy gate. No tool call happens at all.": "d7a094b41d.mp3",
+ "Without the gate, the reply still sounds like a refusal. Only a trajectory check catches it.": "0484768e4b.mp3"
+}

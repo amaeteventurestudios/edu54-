@@ -1,0 +1,8 @@
+{
+ "One model is copied. The reference is frozen, and the policy will learn. Each scores two replies to one prompt from a Kinyarwanda advice bot.": "233a1b2894.mp3",
+ "How much more does the policy prefer chosen over rejected, compared with the reference?": "de73443b32.mp3",
+ "Negative log of a sigmoid of that score. Gradient steps push chosen up and rejected down.": "b70b2df197.mp3",
+ "Let the reference train, and the target moves with you. The gap stays at nothing.": "4040c1a03e.mp3",
+ "The prompt is the same in both. Count only the replies.": "cf1b21b671.mp3",
+ "The gap can keep growing. Stop by held-out quality.": "42a27b1b23.mp3"
+}

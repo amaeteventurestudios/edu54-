@@ -1,0 +1,8 @@
+{
+ "A model books a clinic visit in Accra. Its arguments are guesses. Each field has a mould.": "7cea9d61b8.mp3",
+ "It writes seats as text. Without a check, the handler crashes deep in the code.": "7a0565db31.mp3",
+ "Validate once, on arrival. Handlers can then trust their inputs.": "5cad74ead8.mp3",
+ "Name the exact path and limit, and the model fixes it in one trip.": "7075caa2b0.mp3",
+ "Say only invalid input, and it guesses at every field.": "0d6bb952ee.mp3",
+ "Refuse fields you never defined. Otherwise a made-up flag slips through.": "c93d42de98.mp3"
+}

@@ -1,0 +1,8 @@
+{
+ "A clinic desk in Blantyre checks every prompt. Replies can still go wrong.": "fe8596b248.mp3",
+ "Three independent checks read each reply, and each returns a severity.": "4d5b02d53b.mp3",
+ "Medium severity removes the detail, and the reply still goes out.": "453879cae3.mp3",
+ "A reply that repeats its own rules is high severity, so it's dropped.": "c48eeac7b7.mp3",
+ "Low severity goes out with a note in the log.": "c3b06907e2.mp3",
+ "One router, one table. The highest severity wins.": "9232fc2147.mp3"
+}

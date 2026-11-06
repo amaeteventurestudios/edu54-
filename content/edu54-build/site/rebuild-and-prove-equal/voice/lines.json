@@ -1,0 +1,8 @@
+{
+ "The student rewrites two of their compiled functions in C, from the instruction listing. Now they must prove each rewrite matches the original.": "65fa0af396.mp3",
+ "Rebuilt from the decompiler's pseudocode, both rewrites pass every hand-written test. That proves agreement on those tests only.": "69a4ad5848.mp3",
+ "Run both versions over a grid with zero, negatives, overflow and scores past one hundred. The pseudocode rewrites fail on the edges.": "bc97704ac6.mp3",
+ "Rebuilt from the listing instead, every cell agrees, including the one input where the hardware divide traps on both.": "3d047de56e.mp3",
+ "One entry wrong in the table, and the code still compiles to the same bytes. Only reading the constants behind the relocation catches it.": "f04d3640bd.mp3",
+ "One failed claim fails the whole proof. With every claim passing, the proof covers this grid and these bytes, and says so.": "6339c10aa5.mp3"
+}

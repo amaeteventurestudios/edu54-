@@ -1,0 +1,8 @@
+{
+ "The fishermen of Lake Malawi bring their catch to the blank, to sell at dawn. BERT learns by guessing hidden words like this.": "efded7863d.mp3",
+ "It reads both sides of the blank. \"Catch\" before it, and \"to sell\" after it, point to the market.": "2c4d7ffe23.mp3",
+ "A left-to-right model never sees \"to sell\". Market and shore look equally likely.": "1c3eb7ac06.mp3",
+ "Hide half the words, and the clues disappear too. About fifteen per cent balances targets against context.": "dc5ef7e8d7.mp3",
+ "Of the words picked, most become the mask token, some a random word, and some stay as they are.": "ba84b08c24.mp3",
+ "Always use the mask token, and the model never practises on real words in those positions. Later tasks suffer.": "1cb667a31c.mp3"
+}

@@ -1,0 +1,8 @@
+{
+ "A text message arrives: claim your free prize now. Is it spam? The filter learned from a few hundred labelled messages, counting how often each word appeared in each kind.": "93784f5cd3.mp3",
+ "Before reading a single word, it starts from how common spam is. Here, half of all texts.": "3525a7dc38.mp3",
+ "Then each word tips the balance. Prize and claim appear far more in spam, so they multiply the odds of spam. Your and now are nearly neutral.": "57aa9a8064.mp3",
+ "A message about school fees has words that appear in ordinary texts: please, school, fees. They tip the balance back.": "fc2ce61424.mp3",
+ "If a word never appeared in spam, its count there is zero, and multiplying by zero wipes out all the other evidence. Adding one to every count fixes it. That is smoothing.": "d6580f79a6.mp3",
+ "And on long messages, multiplying hundreds of small chances shrinks to nothing. Real filters add logarithms instead.": "37f8dc7aff.mp3"
+}

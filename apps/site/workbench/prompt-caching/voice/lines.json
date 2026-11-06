@@ -1,0 +1,8 @@
+{
+ "A teacher-support assistant at a college in Zomba sends the same handbook, tools and examples at the start of every request. Without caching, every turn pays for all of it, and the chat grows on top.": "ee77afa29a.mp3",
+ "With prompt caching, the first request writes that prefix at a small premium. Every request after it reads it at a tenth of the price, and the model starts answering sooner.": "f0875c9f95.mp3",
+ "A five-minute cache, refreshed on each read, expires during the three long breaks, so those turns write it again. A one-hour life survives them; it costs more to write, and less overall here.": "d8f97a9d43.mp3",
+ "Put the current time at the very top, and the first token differs on every request. Nothing after it ever matches, and every turn pays the write premium.": "b6742465f3.mp3",
+ "Serialise the tools in a different order, and the prefix breaks from the tools onward. Fixed order matters, down to the byte.": "4e4523254a.mp3",
+ "Keep stable parts first, the chat next, and anything that changes at the end. Then nearly every token after the first turn comes from the cache.": "80da61bb22.mp3"
+}

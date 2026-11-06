@@ -1,0 +1,8 @@
+{
+ "A school in Accra plans fire-drill routes from every room to the assembly point. Each move costs one.": "6fc856cfe6.mp3",
+ "Value iteration sweeps every room: its value becomes the best move's cost plus the discounted value of where it leads.": "98ac0db96b.mp3",
+ "Policy iteration instead evaluates a plan fully, then improves it, and stops when the plan stops changing.": "4b4e82bd9d.mp3",
+ "Stop after three sweeps, and far rooms have not heard about the exit yet. Their arrows point anywhere.": "50bcecf180.mp3",
+ "Shut the storeroom with no discount, and its value falls forever. The sweeps never settle.": "c82e84b4c7.mp3",
+ "Shut the fire door but plan on an old map, and the routes lead straight into it.": "a7b52fd155.mp3"
+}

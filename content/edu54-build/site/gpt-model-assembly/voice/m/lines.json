@@ -1,0 +1,8 @@
+{
+ "We have embeddings and blocks. Join them with a final norm and a head, and that is a GPT.": "b239958747.mp3",
+ "Vocabulary, context, size, heads and layers fix the count: about a hundred and twenty-four million.": "df5ee01eb9.mp3",
+ "The head is huge. Untie it and you add thirty-eight million. Share it with the token table.": "4f2844153b.mp3",
+ "To generate, take the last scores. Low temperature nearly always picks the top word.": "8cce038964.mp3",
+ "Top-k drops all but the best few, and renormalises.": "7af879c152.mp3",
+ "Sample, append, slide the window, repeat. Next comes training.": "db19b93c92.mp3"
+}

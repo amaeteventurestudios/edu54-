@@ -1,0 +1,8 @@
+{
+ "A generator makes beaded collars in the style of Maasai beadwork. Three random seeds, three different collars.": "c8c438200f.mp3",
+ "A mapping network turns each seed into a style, and every layer reads it. Coarse layers choose the shape, middle layers the colour bands, fine layers the bead texture.": "9d03ed35e4.mp3",
+ "Take the coarse style from one collar and the colour and texture from another. The middle collar has A's shape with B's colours.": "a8308ffe9b.mp3",
+ "Random noise at each layer adds the small differences between beads. Switch it off, and they look moulded.": "b2dbd6f662.mp3",
+ "The truncation trick pulls every style towards the average. A little lifts quality; all the way, and every collar is the same.": "25aff4d37d.mp3",
+ "Without the mapping network, shape and colour are tangled together, and changing one changes both.": "05066236af.mp3"
+}

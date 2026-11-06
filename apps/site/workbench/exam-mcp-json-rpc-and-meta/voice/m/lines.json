@@ -1,0 +1,8 @@
+{
+ "A request has an id, a method and params, and its id is never null.": "e844cc526c.mp3",
+ "A notification has no id, and nobody ever replies to it.": "b6f2599eea.mp3",
+ "A result echoes the id and always says its result type.": "62aa72852a.mp3",
+ "Every request carries its protocol version and capabilities. Missing either is invalid params.": "a7717c101b.mp3",
+ "A key whose second label is mcp belongs to the protocol. Apps use their own domain.": "bd66fb753f.mp3",
+ "Switch the id rule off and a request with a null id slips through.": "aa7b581e95.mp3"
+}

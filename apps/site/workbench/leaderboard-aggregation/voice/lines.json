@@ -1,0 +1,8 @@
+{
+ "A team in Lusaka ranks four models on four tasks, each on its own scale.": "3db1b7bbfb.mp3",
+ "A raw mean is decided by the largest scale. Rescale each task first.": "eeb4d6c510.mp3",
+ "Mean rewards steadiness. Win rate rewards being best somewhere.": "a2027e1766.mp3",
+ "With few tasks, resample them, to see how much a ranking could move.": "57c8349af1.mp3",
+ "If intervals overlap, say so. Don't name a winner.": "bb737d6759.mp3",
+ "A good leaderboard shows its uncertainty.": "12d4cc698f.mp3"
+}

@@ -1,0 +1,8 @@
+{
+ "Before any model runs, your computer needs a place for code to live. A good setup has four layers, and each one rests on the layer below.": "8771aa0427.mp3",
+ "The bottom layer is the system itself: a shell to type commands, git to keep every version of your work, an editor, and the driver that lets code use the graphics card.": "48a6b8e293.mp3",
+ "Next come package managers, like uv for Python. You ask for a tool and a version, and they fetch exactly that, every time, on every machine.": "d0a0bf94e1.mp3",
+ "On top of them sit the runtimes: Python, Node and Rust, the programs that actually run your code. AI libraries need a recent Python, so this layer has to be new enough.": "078a772308.mp3",
+ "Each project gets its own glass box, a virtual environment. A rain model in Accra and a fares app in Mombasa can need different versions of the same library, and neither breaks the other.": "4319a1be80.mp3",
+ "Finally, run one check. It climbs the steps and asks every tool for its version. All green means you are ready, and every lesson after this one just works.": "d495ce1880.mp3"
+}

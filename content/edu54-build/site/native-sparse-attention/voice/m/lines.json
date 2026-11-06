@@ -1,0 +1,8 @@
+{
+ "A market office in Kumasi asks: who signed the lease for stall twelve, and on what date? The two lines sit far back in a long file. Full attention reads every token for every new word.": "d6c4905b51.mp3",
+ "Reading only the last five hundred words is cheap, but both lines are far behind. The model cannot answer.": "1907c7be18.mp3",
+ "Native sparse attention first reads a summary of every block of sixty-four tokens. The tall tiles are the summaries that match the question.": "30c3f7c934.mp3",
+ "It then reads the sixteen best blocks in full, plus the last five hundred words. Both lines are found, reading about twenty-six times fewer keys.": "2c5a7f67d9.mp3",
+ "Make each block five hundred and twelve tokens, and a short line is averaged away in its summary. The date drops out of the top sixteen.": "f1543b58b8.mp3",
+ "The summary scores are part of the model's own attention, so training teaches them to point at what matters. That is why the model is trained sparse from the start, not changed later.": "0f7c37ce51.mp3"
+}

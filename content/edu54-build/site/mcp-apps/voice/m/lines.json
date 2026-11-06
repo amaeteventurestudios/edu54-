@@ -1,0 +1,8 @@
+{
+ "A parcel service in Lusaka shows a delivery timeline the user can act on. The tool declares its view in advance, so the host can fetch and review it before the call.": "023a306e81.mp3",
+ "The tool returns ordinary content plus data; the host renders the view in a sandboxed frame and passes the data in. The view can't reach the host's page.": "16a95b6985.mp3",
+ "Drop the sandbox, and the view's script reads the host's session cookie and sends it out.": "bb1f1338e5.mp3",
+ "Every action crosses a message bridge. If the host accepts messages from any frame, an ad on the page can ask it to cancel every delivery.": "d95eb8ad89.mp3",
+ "For anything with consequences, the host shows its own dialog. A view that confirms itself can slip in actions the user never saw.": "6c8fa4c5d8.mp3",
+ "A host without app support gets the same tool with plain text. Views are an extra, never the only answer.": "88726a4878.mp3"
+}

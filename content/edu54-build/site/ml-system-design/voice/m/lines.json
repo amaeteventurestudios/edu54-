@@ -1,0 +1,8 @@
+{
+ "A pharmacy chain with four hundred shops wants fewer empty shelves. That is the goal, and it is measured on the shelves, not in the model.": "f4e532ed20.mp3",
+ "The machine learning task: forecast how many packs of each medicine every shop will sell next week. And the decision that uses it: the weekly reorder.": "3695447d03.mp3",
+ "Without that decision, even a perfect forecast changes nothing. Turn off the link and the shelves stay as empty as before.": "6124bc3288.mp3",
+ "Orders go out once a week, so a weekly batch of forecasts is enough. Scoring every shop every few minutes, on machines that never switch off, costs hundreds of times more, for the same result.": "dee1e909f5.mp3",
+ "The system feeds itself: what sold becomes next week's data. But an empty shelf sells nothing, and a model that believes it orders even less. Record stock, not just sales.": "18ede83d9b.mp3",
+ "Finally, roll out carefully: first in shadow, predicting without acting, then in five percent of shops, with the old rule ready as a fallback.": "da7c2b58c0.mp3"
+}

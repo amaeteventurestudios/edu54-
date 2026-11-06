@@ -1,0 +1,8 @@
+{
+ "A patient is logged in to a clinic portal. The browser keeps its login cookie, and other sites are open too.": "b7af07184c.mp3",
+ "An origin is scheme, host and port. The portal's own page may read the portal's data.": "7591f89419.mp3",
+ "A prize site can send a request to the portal, but the browser hides the response from it.": "e290e8a78b.mp3",
+ "The portal names the partner lab in a CORS header, so the lab may read. Reflecting any origin would let everyone in.": "1de403292b.mp3",
+ "The policy never stopped sending. Without defences, the prize site's form changes the patient's phone number.": "5ddf73f41d.mp3",
+ "A SameSite cookie stays off other sites' requests, and a CSRF token proves the form came from the portal.": "f9fe68bd92.mp3"
+}

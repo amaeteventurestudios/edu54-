@@ -1,0 +1,8 @@
+{
+ "A road-safety team in Nairobi asks one model about a dashcam photo, four camera views of a junction, and a thirty-second clip.": "050ec7dd7b.mp3",
+ "A single photo is tiled at high resolution to read the small sign text: about seven thousand tokens.": "d5c4b24f3c.mp3",
+ "Four camera views get one view each. The model compares them and finds the matatu causing the queue.": "e71eb9d284.mp3",
+ "Thirty-two frames, pooled to a hundred and ninety-six tokens each, fit the same budget. Without pooling they overflow.": "9b122b6e1e.mp3",
+ "Sample only four frames of the clip, and the motorbike running the red light falls between them.": "3c83dbd470.mp3",
+ "Train on video first, and the model never learns to see sharply. Single images first, then the mix.": "d9e5dc219c.mp3"
+}

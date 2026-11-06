@@ -1,0 +1,8 @@
+{
+ "A coding bootcamp in Kano gives students an assistant that can run code. Every message passes a classifier with a list of hazard categories.": "435ed4417e.mp3",
+ "Swap in look-alike letters, or hide invisible characters between them, and the raw-text classifier misses the request.": "c84897c5be.mp3",
+ "Map look-alikes and strip hidden characters first. Check the answers too: a paraphrase slips past the question, not the output.": "5ce515349c.mp3",
+ "A student in distress should get support and a person, not a refusal. Categories let you handle each one differently.": "1baa3a2a0e.mp3",
+ "Code that opens a back door needs its own category. A question asked three ways needs a rule across the conversation.": "cd7dec667c.mp3",
+ "Fast and cheap, it catches the obvious. It is not the model's safety, and attackers keep finding new disguises.": "d8ce58d38f.mp3"
+}

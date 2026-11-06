@@ -1,0 +1,8 @@
+{
+ "Each cycle, the system proposes an edit to itself. Capability and alignment both compound, cycle after cycle.": "7f2cf43abe.mp3",
+ "If capability grows even slightly faster, the gap grows exponentially. No single edit looks dramatic.": "ba7445365d.mp3",
+ "Some properties must hold before and after every edit, like the evaluator's fingerprint. Code the loop can't edit checks them.": "882e83531f.mp3",
+ "Pin the objective where the loop can't edit it. It may improve how it pursues the goal, never what the goal is.": "cc7634c176.mp3",
+ "Safety, fairness and robustness must all hold, and no task may quietly get worse. Any failure pauses the loop.": "ccbbe03aab.mp3",
+ "The gates don't prove the loop is safe. They make silent failure expensive, and keep a person between cycles.": "5fb417567b.mp3"
+}

@@ -1,0 +1,8 @@
+{
+ "A radio station in Kigali captions its call-in show live, thirty seconds at a time, with a Whisper-shaped model.": "3d9f096e64.mp3",
+ "Audio at sixteen kilohertz becomes a log-mel image: eighty bands by three thousand frames.": "afe4e248c6.mp3",
+ "Two small convolutions halve the frames to fifteen hundred before any attention. Remove them, and attention costs four times as much.": "52fee8b25b.mp3",
+ "The encoder reads the picture once. The decoder writes the captions token by token, looking back at the encoder.": "bb31a110d0.mp3",
+ "A full thirty-two-layer decoder runs for every token, and captions fall behind. The turbo version keeps just four decoder layers.": "9d0254a73f.mp3",
+ "Feed in studio audio at forty-four kilohertz without resampling, and the model hears slow, low speech it was never trained on.": "7a5f5e504f.mp3"
+}

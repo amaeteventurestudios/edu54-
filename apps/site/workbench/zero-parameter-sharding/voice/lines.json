@@ -1,0 +1,8 @@
+{
+ "A cluster in Johannesburg runs out of memory. Adam's state is larger than the model.": "d6fc3110e2.mp3",
+ "Shard optimiser state. Each rank owns one share, and the gold block shrinks.": "6bfdbbc4a0.mp3",
+ "Shard gradients too, so each rank gets only its part.": "90208f8993.mp3",
+ "Shard weights as well, gathering each layer when it runs.": "8c550b9a75.mp3",
+ "Higher stages talk more. Network traffic climbs.": "7e38e6216e.mp3",
+ "Choose the lowest stage that fits.": "293d2ca8d0.mp3"
+}

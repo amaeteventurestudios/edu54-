@@ -1,0 +1,8 @@
+{
+ "A Yoruba customer-support bot answers with a big model, one word per slow pass. E kaaro! A ti gba owo re...": "c30c4267db.mp3",
+ "A small draft model guesses the next few words. The big model checks them all in a single pass.": "e26e9a0635.mp3",
+ "It keeps words it agrees with up to the first it rejects, replaces that one, and moves on. Each pass yields several words.": "90da849125.mp3",
+ "A weak draft with long guesses wastes most of them. Agreement is what makes this fast.": "515610beab.mp3",
+ "A draft half the size of the big model costs nearly as much to run as it saves.": "f9240375bd.mp3",
+ "Skip the check, and it is faster, but the answers are the small model's, not the big one's.": "0c362ecbc8.mp3"
+}

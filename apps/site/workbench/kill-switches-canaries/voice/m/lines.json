@@ -1,0 +1,8 @@
+{
+ "A port operations agent in Mombasa starts its shift normally. Then it gets stuck repeating one call.": "271d771e19.mp3",
+ "After five identical calls, the breaker opens and pauses that path, not the whole agent.": "73c1fc6fb9.mp3",
+ "A page tells the agent to turn off its kill switch and fetch credentials. A switch it can write, it turns off.": "62fab033db.mp3",
+ "Keep the switch where the agent's credentials can't reach. Then the canary, a fake key, fires, and the switch stops everything.": "b6c449aff4.mp3",
+ "A rate detector adapts to a moving baseline. A patient attacker creeps up slowly enough that it never fires.": "46a3ef73fe.mp3",
+ "Layer a rule that doesn't bend: never send to an unknown domain. Every detector lives where the agent can't change it.": "5a2ae2023d.mp3"
+}

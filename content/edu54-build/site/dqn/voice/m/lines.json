@@ -1,0 +1,8 @@
+{
+ "A phone game made in Abidjan: a basket catches falling mangoes. A network learns to play from the screen alone.": "40b5b8953e.mp3",
+ "The last four frames go in. Out comes a value for moving left, staying or moving right, and the best one is played.": "1847c4e524.mp3",
+ "It trains on random past moments from a replay memory, against targets from a frozen copy of itself, with Double DQN keeping values honest.": "3d8b5b56ed.mp3",
+ "Learn only from frames in order, and nearly identical frames push it back and forth. Learning wobbles.": "fad214edcb.mp3",
+ "Compute targets with the same network being trained, and it chases itself until it collapses.": "2407fe4597.mp3",
+ "Take the maximum of noisy guesses, and every move looks better than it is.": "0611b1acdb.mp3"
+}

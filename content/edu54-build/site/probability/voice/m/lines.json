@@ -1,0 +1,8 @@
+{
+ "Balls drop in at the top of this board and meet row after row of pegs. Nobody can say where a single ball will land.": "454eaa13bd.mp3",
+ "At every peg the ball goes left or right, like a coin flip, half and half. Ten rows means ten flips.": "03daaad79b.mp3",
+ "Watch the bins at the bottom. Most balls land near the middle, a few at the edges. A shape is appearing.": "2e5fb0b205.mp3",
+ "With a thousand balls the shape is a smooth bell: the normal distribution. It appears whenever many small random pushes add up, from people's heights to the noise in a measurement.": "367804c0ef.mp3",
+ "With only ten balls the bins are lumpy, and could look like almost anything. You need many samples before the true shape shows.": "4370aee4de.mp3",
+ "Tilt every peg so that right is more likely, and the whole bell moves over. Data from a slanted process carries that slant into every model trained on it.": "a8ffdcc5a1.mp3"
+}

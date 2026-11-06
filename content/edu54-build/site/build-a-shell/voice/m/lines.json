@@ -1,0 +1,8 @@
+{
+ "A shell reads a line, forks a child, the child becomes the program, and the shell waits.": "70d89c9d00.mp3",
+ "cd changes the shell's own directory, so it must run inside the shell, not in a child.": "1f7ef2083b.mp3",
+ "A pipeline links children with pipes. Each child connects its input and output, then closes the rest.": "ae224c1757.mp3",
+ "If the shell keeps a write end open, the last command never sees the end of its input.": "9286804195.mp3",
+ "Finished children must be waited for, or they linger as zombies.": "956d45deec.mp3",
+ "The shell ignores the interrupt, so only the running program stops.": "3f93f2abf6.mp3"
+}

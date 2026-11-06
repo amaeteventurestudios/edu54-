@@ -1,0 +1,8 @@
+{
+ "A ferry in Mwanza adds up a sum. This compiler reads it once, and writes as it goes.": "5dfc10a960.mp3",
+ "Expression, term and factor are three small functions.": "7081c4ee7d.mp3",
+ "Flatten them, and plus runs before times. The answer is wrong.": "c508914910.mp3",
+ "A factor can call expression again. That's the recursion.": "f24f5aca4e.mp3",
+ "Operators come after their operands, as a stack machine wants.": "900019d130.mp3",
+ "Bad input stops with a message, and no code.": "c5c0ff67f0.mp3"
+}

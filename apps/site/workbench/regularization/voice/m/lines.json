@@ -1,0 +1,8 @@
+{
+ "A small network is learning maize harvest from rainfall, using twelve farms in Kenya's Rift Valley. Teal dots are farms it never sees while training.": "96a7d94e70.mp3",
+ "Train it for a long time with nothing holding it back. The curve bends through every orange farm, including each one's good or bad luck, and misses the teal farms badly.": "b506592fd7.mp3",
+ "The error chart shows the moment it started memorising: error on new farms stopped falling and began to rise. Stopping at the gold dot is early stopping.": "1fe4b1afbe.mp3",
+ "Weight decay pulls every weight a little towards zero on each step. Wild bends need big weights, so the pillars shrink and the curve calms down.": "f17ce4909b.mp3",
+ "Dropout switches off random neurons on every training step, the grey pillars. No single neuron can hold a memorised farm, so the network must spread what it knows.": "2278113653.mp3",
+ "Real networks use a little of each. Too much, and the curve goes flat. And remember to switch dropout off when the network makes real predictions.": "b3b71b7dce.mp3"
+}

@@ -1,0 +1,8 @@
+{
+ "Growers in Malawi photograph a leaf, and the phone sends it here. Five stations turn the photo into an answer.": "850cf83594.mp3",
+ "Check the upload, resize it, find the leaves, classify each one, and send back an answer with a fixed shape the app can rely on.": "80780922de.mp3",
+ "Real uploads include huge files and things that are not photos at all. Without a check at the door, they crash the service and the farmer hears nothing.": "1960a07426.mp3",
+ "Each model can pass its own tests and still fail together. Here the resize step hands over the wrong colour order, and every leaf looks diseased.": "5cd76453a8.mp3",
+ "A blurry photo still gets a diagnosis unless there is a confidence floor. Asking for a retake beats a confident wrong answer.": "d07a86ad3d.mp3",
+ "Contract at the door, formats agreed between stages, an honest floor at the end, and each stage timed. That is a pipeline, not just a model.": "be91ae6262.mp3"
+}

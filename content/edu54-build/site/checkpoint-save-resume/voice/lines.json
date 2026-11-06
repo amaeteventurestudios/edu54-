@@ -1,0 +1,8 @@
+{
+ "A training job in Kisumu dies at hour eighteen. What did the checkpoint save?": "1daaaaf955.mp3",
+ "With weights alone, momentum is lost, and the loss jumps on resume.": "acc8520279.mp3",
+ "Optimizer, schedule step, data position, random state, config. Now it lines up.": "47f77291a8.mp3",
+ "Forget the random state and it is close, but not the same run.": "5ae397e8aa.mp3",
+ "A crash during a save can ruin the only copy.": "a4a6b4a455.mp3",
+ "Write to a temporary file, then rename. It is all or nothing.": "a6276c2a1a.mp3"
+}

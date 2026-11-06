@@ -1,0 +1,8 @@
+{
+ "The server ends the call and asks for confirmation. The client retries with the answer.": "21cc96d56e.mp3",
+ "Only accept is consent. Decline is a clear no.": "61e0d3867f.mp3",
+ "Cancel means the user walked away. It blocks the call, but it is not a refusal.": "f7b2c76fc8.mp3",
+ "Approving a delete does not approve a payment, even a moment later.": "0a4dc87d48.mp3",
+ "Missing scope gets a forbidden reply. The client asks for old and new scopes together.": "ed87f7cc8e.mp3",
+ "A student's token lists only the tools it may use.": "ee8ed94ff6.mp3"
+}

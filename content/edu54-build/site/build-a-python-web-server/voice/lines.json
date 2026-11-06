@@ -1,0 +1,8 @@
+{
+ "A bookshop in Luanda runs its own small site. A server reads a line, decides and writes.": "9849db87a8.mp3",
+ "The simplest case: the path is a file, so send it.": "74f250035b.mp3",
+ "A directory with an index page gets that page.": "d81ea801e6.mp3",
+ "A script is run, and its output is sent.": "ac8a9a53e5.mp3",
+ "Keep a list of tests and actions. If nothing matches, send a 404.": "b1075b9cfd.mp3",
+ "Paths come from strangers. Clean them first, or they climb out of the site.": "9ae18cdba9.mp3"
+}

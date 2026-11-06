@@ -1,0 +1,8 @@
+{
+ "A craft cooperative in Bahir Dar previews new designs for woven basket lids: concentric rings in red, gold, green and blue.": "73c17600c7.mp3",
+ "Generation starts with every code hidden. Each step, the model predicts all hidden codes at once.": "e2729578ce.mp3",
+ "It keeps only the codes it is surest of and hides the rest again. Later steps use what is already fixed.": "fed15575dd.mp3",
+ "Do it all in one step, and every code is guessed with nothing known around it. The rings fall apart.": "98f5945834.mp3",
+ "Keep codes at random instead of by confidence, and wrong guesses get locked in.": "984073c17a.mp3",
+ "A model trained only with light masking has never started from nothing. Train with every masking level.": "87c77d465f.mp3"
+}

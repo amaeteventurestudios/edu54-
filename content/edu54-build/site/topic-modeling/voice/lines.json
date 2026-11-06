@@ -1,0 +1,8 @@
+{
+ "A farm radio show heard from Ghana to Malawi gets text messages. Nobody has time to read them all. What are people asking about?": "a55f021e15.mp3",
+ "LDA reassigns every word to a topic, again and again, until it settles. Three topics appear on their own: rain, maize prices and armyworm.": "e841b581cb.mp3",
+ "Message thirteen says the rains are late and the price of maize is going up. LDA gives it a mixture of the rain and price topics.": "90b7d6c2cd.mp3",
+ "Keep the stop words, and the, and, and is take over the topics. They appear everywhere and mean nothing.": "bdfe06e999.mp3",
+ "Ask for two topics, and armyworm and maize prices share one. Ask for six, and topics split into fragments that share words.": "15207a5fad.mp3",
+ "Coherence checks that top words appear together. Diversity checks topics do not overlap. Then read them: do they name real things?": "861a81f165.mp3"
+}

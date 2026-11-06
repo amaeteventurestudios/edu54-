@@ -1,0 +1,8 @@
+{
+ "A legal-aid clinic in Kampala wants an open model to write case notes its own way. Full fine-tuning changes every weight, and for a seven-billion-parameter model that needs over a hundred gigabytes.": "7f1d7f2cf3.mp3",
+ "LoRA freezes the weights and learns two thin matrices beside them. Their product is the update. Watch it close the gap while training a tiny fraction of the parameters.": "39ca38ad77.mp3",
+ "The rank is how many directions the update can change. This task needs four. With rank one, part of the change stays out of reach, however long it trains.": "0e24db460d.mp3",
+ "B starts at zero, so the adapter adds nothing at first and the model begins exactly as it was. Start it random, and the model is scrambled before training even starts.": "968d80550f.mp3",
+ "QLoRA also stores the frozen weights in four bits. The adapter soaks up some of the rounding, and the whole job fits on one consumer GPU.": "9351bbeddb.mp3",
+ "When training ends, merge the adapter into the weights, or keep it as a small file and swap adapters for different tasks on one base model.": "1a0c1b6752.mp3"
+}

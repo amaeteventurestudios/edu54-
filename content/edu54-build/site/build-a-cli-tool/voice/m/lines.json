@@ -1,0 +1,8 @@
+{
+ "A small search tool finds late trips in a log. A pipe sends its results to a counter, then a notice.": "f067ee45e4.mp3",
+ "Read the whole file first and a big log runs the machine out of memory. Read it line by line.": "af303ca43b.mp3",
+ "Results go to standard output. Messages for people go to standard error.": "ba31ea0ce8.mp3",
+ "Print the error to standard output and the counter counts it as a match.": "d16eddaa23.mp3",
+ "Zero means success. Exit with zero on failure, and the script sends the notice anyway.": "d285d3730a.mp3",
+ "Stream, separate the channels, and exit honestly. The pipeline is right on every input.": "6bfb1ace25.mp3"
+}

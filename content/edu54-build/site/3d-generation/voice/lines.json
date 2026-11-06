@@ -1,0 +1,8 @@
+{
+ "The prompt is \"a carved wooden giraffe\". There is little 3D training data, so most systems start from an image model.": "bfdd382758.mp3",
+ "A multi view model draws the carving from four camera angles at once, with attention across the views so they agree.": "ee0fc05367.mp3",
+ "A reconstruction step then fits one 3D shape that matches all four views. Spin it on the turntable.": "52248f7145.mp3",
+ "Draw each view on its own, and every view shows the giraffe facing the camera. The reconstruction gets a head at both ends.": "745e803793.mp3",
+ "From one view only, the back is a guess, and comes out flat.": "d4a10f867a.mp3",
+ "And without being told the camera angles, the views disagree, and the shape comes out lumpy.": "7ca7754388.mp3"
+}

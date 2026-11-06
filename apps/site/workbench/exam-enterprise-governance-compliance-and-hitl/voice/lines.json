@@ -1,0 +1,8 @@
+{
+ "A design says no data is kept, a human reviews everything and it is compliant. None of that is an architecture.": "56c0a9b853.mp3",
+ "Routing needs four fields, not nine. Data you never send needs no protection.": "dec8a3fc08.mp3",
+ "Data also lives in logs, traces, review tools and eval sets. Map retention and access for each.": "e3f79ba858.mp3",
+ "Each control gets an owner, evidence and a test. Without them, it is only a hope.": "55a6a8be7b.mp3",
+ "One queue swamps the nurses. Urgent clinical routes get a nurse, admin replies are sampled.": "a5b792c971.mp3",
+ "Show the sources before the draft and ask for reason codes, so review is not a rubber stamp.": "2be023d1f6.mp3"
+}

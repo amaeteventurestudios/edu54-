@@ -1,0 +1,8 @@
+{
+ "A farmers' cooperative in Ibadan has a base model. Ask it a question, and it writes more questions.": "6d41bcc039.mp3",
+ "Supervised fine-tuning trains on example conversations, each turn wrapped in special tokens.": "186ab92fba.mp3",
+ "Only the assistant's words count in the loss. Now it answers.": "8338105d25.mp3",
+ "Put the loss on every token, and it learns to write the farmer's next question too.": "4992072ce3.mp3",
+ "Use a pre-training learning rate, and it forgets what it knew.": "847d859f86.mp3",
+ "Prompt it in a different format from training, and it goes back to continuing text.": "41f2dfec8c.mp3"
+}

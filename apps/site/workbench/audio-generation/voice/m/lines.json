@@ -1,0 +1,8 @@
+{
+ "Two seconds of a highlife guitar riff. Raw, it is forty eight thousand numbers. A neural codec turns it into a small grid of tokens.": "dccbf8a8e2.mp3",
+ "At each moment, the first codebook captures the rough sound, and each codebook below fixes what the ones above missed.": "ee998b82e1.mp3",
+ "With all eight, the bright upper harmonics return, and the guitar sounds like a guitar. A token model learns to predict this grid.": "ae6236b405.mp3",
+ "Decode the first codebook alone, and the riff is muffled and smeared.": "fd4b82716d.mp3",
+ "Play the right samples at the wrong rate, and everything is higher and faster: a chipmunk highlife.": "fe53609501.mp3",
+ "Sample the tokens far too hot, and wrong notes creep into the riff.": "e97ad31089.mp3"
+}

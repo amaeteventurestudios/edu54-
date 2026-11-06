@@ -1,0 +1,8 @@
+{
+ "Ask a model how much the co-op pays for cassava. It never saw the co-op's notes, so it guesses, and sounds sure.": "33d67e861d.mp3",
+ "The co-op has the real answer, on its shelf of notes. Retrieval-augmented generation means: look it up first.": "d6a4399b52.mp3",
+ "The question is turned into a search. Each card gets a score for how well it matches. The best ones glow.": "9d642e9cab.mp3",
+ "The top cards go into the prompt, next to the question. Now the model reads the answer instead of remembering it.": "e7c4e350a7.mp3",
+ "The answer comes from note two, and says so. You can check it.": "c4be84a11b.mp3",
+ "Real systems search thousands of documents using embeddings, the word arrows from earlier lessons. But it is only as good as the shelf. Old notes give old answers.": "b463808e08.mp3"
+}

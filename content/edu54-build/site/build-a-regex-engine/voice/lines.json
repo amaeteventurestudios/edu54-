@@ -1,0 +1,8 @@
+{
+ "Match a b star a b b against \"babb\", one character at a time.": "4c05f1adc5.mp3",
+ "For each character, work out the pattern for whatever may follow it.": "c19d5db13b.mp3",
+ "At the end, ask: can what is left match nothing at all? If so, it is a match.": "236db5a2f1.mp3",
+ "Without simplifying, derivatives fill up with dead pieces and grow every step.": "8fbe288406.mp3",
+ "A backtracking matcher on a plus plus b and eighteen a's tries hundreds of thousands of paths.": "15f526d582.mp3",
+ "Derivatives take eighteen steps for eighteen characters. No backing up.": "c0c158981f.mp3"
+}

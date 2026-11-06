@@ -1,0 +1,8 @@
+{
+ "A produce market in Dakar adds pickup windows to its app. The work splits across three agent workers, for the API, the web checkout and the docs.": "13b9db9e99.mp3",
+ "Parallel only pays when the work is independent. Here the workers own different folders, so they can run together.": "3e818120b9.mp3",
+ "If the docs worker owned the whole app folder, two workers could write the same files. The plan is blocked before anyone starts.": "d3cd5c4064.mp3",
+ "Split before the field name is settled, and each side picks its own. Both proofs pass; the gate fails.": "3f829d98f7.mp3",
+ "The web worker also touched an API file. The integrator checks every changed file against the contract and rejects the stray edit.": "f79c54f575.mp3",
+ "Disjoint paths, one contract, proof read and files checked. The gate passes, in a little over half the time.": "46c736c3bc.mp3"
+}

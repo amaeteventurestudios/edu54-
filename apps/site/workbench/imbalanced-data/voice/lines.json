@@ -1,0 +1,8 @@
+{
+ "Five hundred cassava leaves from farms in Uganda and Nigeria, measured for yellow patches and curl. Only twenty-five have mosaic disease, the red ones.": "645d3f6853.mp3",
+ "Train plainly and the healthy majority pushes the boundary deep into the sick corner. Nearly every leaf is called healthy. Ninety-five percent accurate, and most sick leaves missed.": "793c4af335.mp3",
+ "So stop reporting accuracy. Recall asks: of the sick leaves, how many did we catch? Precision asks: of the leaves we flagged, how many were sick?": "eb8b441020.mp3",
+ "Give each sick leaf as much weight in training as nineteen healthy ones. The two classes now pull equally.": "8de517b907.mp3",
+ "The boundary swings back over the sick leaves. Most are caught now, at the price of some healthy leaves flagged for a second look.": "2ccc7234c3.mp3",
+ "Finally, slide the threshold. A farmer who would rather check a few healthy leaves than miss a sick one sets it low.": "f41c7a41a6.mp3"
+}

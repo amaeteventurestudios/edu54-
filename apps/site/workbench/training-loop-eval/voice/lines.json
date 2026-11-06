@@ -1,0 +1,8 @@
+{
+ "Forward, loss, backward, step. The curves show how it goes: blue on training data, coral on held-out data.": "cb88037808.mp3",
+ "Misalign the targets, and the curve goes flat. That is a data bug.": "b5f5d222a2.mp3",
+ "The gold row is the rate. A straight climb first, then a cosine down.": "2a2dd926f8.mp3",
+ "A high rate from step one spikes the loss.": "4312064460.mp3",
+ "Weight decay goes on weights. Put it on norms and biases, and results get worse.": "93527257b0.mp3",
+ "Training loss always falls. Held-out loss turns up when you should stop.": "82c08fd144.mp3"
+}

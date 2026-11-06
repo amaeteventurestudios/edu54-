@@ -1,0 +1,8 @@
+{
+ "Here are two arrows, a and b. Think of them as two roads out of town: one heads east and a little uphill, the other heads north.": "3b7893196b.mp3",
+ "Go some way along a, then some way along b, and you land somewhere new. Every mix of the two lands on the same flat sheet.": "ab329f63bf.mp3",
+ "That sheet is called the span of a and b: every place the two roads can take you. Nothing off the sheet can be reached.": "7a65d5cb75.mp3",
+ "The purple target floats above the sheet. The best you can do is the foot of a straight drop from it: its projection. Linear regression finds exactly this nearest point.": "4707e1154a.mp3",
+ "Add a third arrow that is just a mix of a and b. It lies flat in the sheet and reaches nothing new. Three arrows, but only two directions: rank two.": "57899955a0.mp3",
+ "Now point the third arrow out of the sheet. Rank three: together they reach every point in space. Models use this idea everywhere, from embeddings to fine-tuning with low rank.": "054a3cd252.mp3"
+}

@@ -1,0 +1,8 @@
+{
+ "Here are the farms from the decision tree lesson. One deep tree carves little islands around every odd farm. Change a few farms and the islands move.": "7d3bfe6fa3.mp3",
+ "Now grow many smaller trees. Each one learns from its own random sample of the farms, some picked twice, some left out. These are nine of them. They disagree.": "c865c5baed.mp3",
+ "At every spot on the field, every tree votes, and the majority wins. Their mistakes point in different directions, so many of them cancel out.": "f08946bf59.mp3",
+ "The more trees, the steadier the vote, though after a few dozen it hardly changes. That is a random forest.": "59d96f00c5.mp3",
+ "Take away the randomness, and every tree sees the same farms and makes the same mistakes. A forest of copies is just one tree.": "46492a853c.mp3",
+ "The other family, boosting, grows trees one after another, each one focusing on the farms the earlier trees got wrong. Both ideas rule competitions on tables of data.": "3386c80f69.mp3"
+}

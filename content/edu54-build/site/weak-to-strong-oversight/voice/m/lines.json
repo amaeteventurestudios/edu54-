@@ -1,0 +1,8 @@
+{
+ "How do we supervise models smarter than us? A stand-in: a small model teaches a much stronger one.": "aae7d0700b.mp3",
+ "A radio station in Kano has a small model label listener messages. It is right about two times in three.": "9388f6dbba.mp3",
+ "Trained on those labels, the strong student does better than its teacher. It already knew much of the task.": "3ed2040889.mp3",
+ "Train too long and it starts copying the teacher's mistakes too.": "c4ce58c94f.mp3",
+ "Let the student keep its own confident answers where the teacher disagrees, and more of the gap is recovered.": "59a56df91b.mp3",
+ "Here the gap is ability, not values. Debate, assisted evaluation and breaking tasks down attack the same problem.": "257dba2b26.mp3"
+}

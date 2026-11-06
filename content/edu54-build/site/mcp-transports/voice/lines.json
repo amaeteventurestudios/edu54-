@@ -1,0 +1,8 @@
+{
+ "A pharmacy in Nairobi runs a local MCP server on its counter laptop. Every message is a POST to one endpoint. GET and DELETE have nothing to do, so they get \"not allowed\".": "98359983f1.mp3",
+ "A request gets one JSON reply, or a short stream of progress for that request ending in the reply. A notification gets \"accepted\" and nothing else.": "7879b16f20.mp3",
+ "A coupon site open in a browser tab tries to reach the server on localhost. The browser marks where it comes from, and the server turns away any origin not on its list.": "70d5a8ae4d.mp3",
+ "Check the origin by its start, and an attacker's address that begins with the portal's name gets through. Compare it exactly.": "eafc54292f.mp3",
+ "A gateway lets through only read-only tools, judging by the headers. If the server doesn't compare headers with the body, a request labelled search can carry a delete.": "abe43b124c.mp3",
+ "Listen on every interface, and any laptop on the shop's wifi can reach the server. A local server listens on 127.0.0.1 only.": "78c787ef28.mp3"
+}

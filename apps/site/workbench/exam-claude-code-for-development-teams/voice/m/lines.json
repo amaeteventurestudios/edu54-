@@ -1,0 +1,8 @@
+{
+ "A team wants six things to hold whenever Claude Code works in their repository.": "264958f2b5.mp3",
+ "Build commands and conventions go in the project CLAUDE.md, read every session.": "7ba508f661.mp3",
+ "A personal preference goes in your own memory, not the file the team inherits.": "dd5a4a9f1b.mp3",
+ "A long release checklist is a skill, loaded only when it is needed.": "e74823c45f.mp3",
+ "Never edit migrations without approval: a hook checks it, every time.": "1aa5e096ba.mp3",
+ "The database password lives in a secret manager, never in the repository.": "e79ef313d0.mp3"
+}

@@ -1,0 +1,8 @@
+{
+ "A rover on a tea estate near Kericho carries seedlings along each row and must stop before the drain at the end.": "b7768daef6.mp3",
+ "Its braking was learned in a simulator, where it practised thousands of rows. Real clay is slippery after rain.": "f0f53bfe08.mp3",
+ "This rover senses wheel slip to estimate the friction, and brakes for today's ground with a small margin.": "e44d11e06c.mp3",
+ "Train only on dry clay, and after rain nearly every stop ends in the drain.": "c3c859ddb7.mp3",
+ "Randomise friction far wider than reality, and the rover brakes metres early every time, then creeps.": "a5f3db11d5.mp3",
+ "Trust the slip estimate with no margin, and its small errors put some stops in the drain.": "a0b23cd5d6.mp3"
+}

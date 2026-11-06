@@ -1,0 +1,8 @@
+{
+ "An insurer in Nairobi answers claims by phone. Frames of sound run down a line of stages, and each one spends time.": "0b17e2673d.mp3",
+ "If every stage waits for the last, the caller hears silence. Stream partial frames and the first word comes in time.": "24e79e32a7.mp3",
+ "Deciding that someone has stopped speaking is itself a model. A pause is not always the end of a thought.": "b741d761fb.mp3",
+ "The caller interrupts. In Pipecat, a control frame runs upstream and cancels speech already queued. Cut that line and the agent talks over them.": "0044e7d2d3.mp3",
+ "LiveKit also offers a direct audio model. It is quicker, with no text stage. But this insurer must redact card numbers.": "56cbea76bc.mp3",
+ "So this call needs the cascade, with a text stage to clean. On a call with nothing to redact, direct audio is the better fit.": "ec7d26ce02.mp3"
+}

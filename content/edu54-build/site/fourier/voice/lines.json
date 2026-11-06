@@ -1,0 +1,8 @@
+{
+ "Three strings on a kora sound together. What reaches your ear is one wobbly wave, the three notes added together.": "30d5df5324.mp3",
+ "A microphone does not record the smooth wave. It measures it many times a second: these orange dots are the samples.": "ee944bb5ec.mp3",
+ "The Fourier transform compares the samples with a pure wave at every frequency. Three bars light up: two, five and eleven beats a second, the three strings, each as tall as it is loud.": "d2205822b3.mp3",
+ "Silence the high string, and its bar disappears, while the wave above loses its fast ripple.": "6b5389d16b.mp3",
+ "Now sample too slowly. The high note is faster than half the sampling rate, so it disguises itself as a lower note that is not really there. This is called aliasing.": "f354e34934.mp3",
+ "A square wave needs many high notes to make its sharp corners. Cut them off, and the wave rings and wobbles at every jump.": "e16ff832b1.mp3"
+}

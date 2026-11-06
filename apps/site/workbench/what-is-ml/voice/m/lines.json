@@ -1,0 +1,8 @@
+{
+ "A trader in Kumasi sorts mangoes into ripe and not yet ripe. Each mango here is measured two ways: how yellow its skin is, and how soft it feels.": "2546f4b6f4.mp3",
+ "Sorting by flipping a coin gets about half right. That is the baseline anything better has to beat.": "64c74508e2.mp3",
+ "A person could write a rule: yellow means ripe. It works, but someone has to know it, write it, and rewrite it for every new variety.": "5bab81ade5.mp3",
+ "Machine learning starts from examples people have already labelled. It finds the middle of the ripe pile and the middle of the not yet ripe pile. A new mango goes to whichever middle is closer.": "efb577b382.mp3",
+ "The machine copies its examples faithfully, mistakes included. Swap some labels and the two middles slide together, and sorting gets worse.": "29494fd90c.mp3",
+ "Now a variety arrives that stays green when ripe. The machine never saw one, so it sorts them wrongly. A model only knows the world its examples came from.": "1233655d79.mp3"
+}

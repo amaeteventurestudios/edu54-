@@ -1,0 +1,8 @@
+{
+ "Sixty photos from a market in Addis Ababa: coffee, injera, baskets and spices. Nobody has labelled them. The colours are only for us; the model never sees them.": "5213f87044.mp3",
+ "Each photo is changed twice at random: cropped, flipped, recoloured. Both views go through the same encoder and land as dots in a space, joined by a grey line.": "5789ae0891.mp3",
+ "Training pulls each pair together and pushes every other photo away. To manage that, the encoder must learn what survives the changes: the goods, not the lighting.": "754a5970c4.mp3",
+ "Turn off the augmentation, and the two views are identical. Matching them is trivial, and the model learns nothing about what is in the photo.": "251e512e68.mp3",
+ "Keep pulling pairs together but stop pushing others away, and every view slides to the same spot. A perfect score, and a useless model.": "4a918d124e.mp3",
+ "With everything on, the kinds sort themselves. A simple classifier, trained on just twenty labels, now sorts the rest.": "069ddea1c0.mp3"
+}

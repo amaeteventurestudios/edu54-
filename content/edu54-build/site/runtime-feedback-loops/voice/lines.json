@@ -1,0 +1,8 @@
+{
+ "The fees-app agent runs its tests. Four thousand lines of output scroll past, and one test fails at the very end.": "bf7a0a1ea6.mp3",
+ "Without reading the output, the agent assumes everything passed and declares the task done.": "d39e313d67.mp3",
+ "A runner records the exact command, the exit code, the time taken and the tail of the output, for the next turn to read.": "cce464fe11.mp3",
+ "Keep only the first lines, and all the agent sees is passes. The failure lives at the end.": "df9dc7912e.mp3",
+ "Keep the head and the tail with a marker in between. The failure and the summary stay in view.": "eb25e3ca7c.mp3",
+ "If the runner dies before it gets an exit code, the agent must re-run, never call it a pass.": "81210526b3.mp3"
+}

@@ -1,0 +1,8 @@
+{
+ "Each dot is a motorbike-taxi trip: how far it went, and what it cost. Longer trips cost more. Can we find the rule?": "830588055e.mp3",
+ "A straight line is a simple rule: a starting fare, plus a fixed amount for every kilometre. Right now it is a bad guess.": "c5d0e50f08.mp3",
+ "The pink stick is how far the line misses a real fare. We square each miss, so big misses count a lot more than small ones.": "592174720e.mp3",
+ "Add up all the squares and take the average. That one number says how wrong the line is. Smaller is better.": "4c5b9fe8d5.mp3",
+ "Now let the computer do it. Gradient descent nudges the slope and the starting fare, step by step, until the squares are as small as they can be.": "29989eaa0a.mp3",
+ "The rule it found is a small fare to start, plus a little more for every kilometre. Now it can price a trip it has never seen. That is a prediction.": "de0fba7d63.mp3"
+}

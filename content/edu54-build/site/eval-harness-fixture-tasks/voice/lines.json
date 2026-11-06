@@ -1,0 +1,8 @@
+{
+ "A bank in Kigali wants to know if its coding agent improved. Each row is a task: a goal, a setup and a verifier.": "548d883616.mp3",
+ "Agents vary, so run each task several times. One try can't tell luck from skill.": "2a2cabb2c6.mp3",
+ "pass@1 is first-try success. pass@k is success in any of k tries.": "57c877e6c8.mp3",
+ "A verifier must run something. If it trusts the agent's word, every number is inflated.": "593c5dee3d.mp3",
+ "Fix the seed, and a change shows as a real gain, not noise.": "9f194691a7.mp3",
+ "Report time and cost beside each score, as success at any price means little.": "b32f410f31.mp3"
+}

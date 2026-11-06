@@ -1,0 +1,8 @@
+{
+ "Here are two weeks of hourly power use on a village solar mini-grid in Tanzania. Every evening the lights and televisions come on: a gold peak, day after day.": "c559cb49a3.mp3",
+ "Anomaly detection learns what normal looks like, and draws a band around it. Anything outside the purple lines gets flagged.": "65fa35b814.mp3",
+ "Three readings are flagged: a sudden twelve kilowatt spike in the afternoon, an hour when power dropped to almost nothing, and a surge at two in the morning.": "f2881a4bd2.mp3",
+ "That night surge would be ordinary at eight in the evening. Use one band for all hours, and it slips through. Comparing each reading with the same hour on other days catches it.": "ee48a7ac4e.mp3",
+ "Now a faulty meter reads sixty kilowatts once. With a plain average, that one value stretches the band so wide that real problems hide inside it. The median ignores it.": "eb671e21ce.mp3",
+ "Another view: cut the readings at random until one stands alone. An odd reading is isolated in a few cuts; a normal one hides in the crowd much longer. That is the idea behind isolation forests.": "ca99d696a1.mp3"
+}

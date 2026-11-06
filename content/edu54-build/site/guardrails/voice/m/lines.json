@@ -1,0 +1,8 @@
+{
+ "A microfinance bank's assistant in Mombasa gets a thousand requests. Most are ordinary, some are attacks, some paste card numbers, and the model slips now and then. With no checks, all of it reaches customers.": "df6b31cb21.mp3",
+ "Before the model: a topic check, an injection classifier, and redaction of card and ID numbers. Most direct attacks stop here.": "c608704cdc.mp3",
+ "But an indirect injection hides in a document the model reads, and wrong balances come from the model itself. Neither shows in what the user typed.": "d84d4f753b.mp3",
+ "After the model: moderation, a personal-data scrub, a check against the bank's records, and a canary word that reveals a leaked system prompt. Each layer catches what the others missed.": "1e6ff8f335.mp3",
+ "Turn the topic check up to strict, and it stops a little more, but dozens of honest customers are turned away. False alarms are a cost too.": "63709316a0.mp3",
+ "Back to normal strictness. Cheap checks first, slower ones after, both sides of the model, each tuned on real traffic. Some harm still gets through; no layer is perfect.": "909490aeed.mp3"
+}

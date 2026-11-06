@@ -1,0 +1,8 @@
+{
+ "An insurer in Cape Town has three agents and a list of frameworks. The names differ. Look at what stays the same.": "43afa10504.mp3",
+ "An agent is a prompt and tools. A handoff passes control, as a graph edge here, or as a tool call in Swarm.": "86400084a7.mp3",
+ "Shared state is whatever several agents can read. Let all three write one field, and the last write wins.": "927daaf1f4.mp3",
+ "The orchestrator decides who goes next. In a graph, the path is fixed. That suits a fixed pipeline.": "81e034b0d9.mp3",
+ "For an open fraud discussion, a graph would need every path drawn. A selector model picks the next speaker instead.": "d54a7f48c7.mp3",
+ "Four choices. Read the next framework by finding these four, and the rest is syntax.": "398c835b3f.mp3"
+}

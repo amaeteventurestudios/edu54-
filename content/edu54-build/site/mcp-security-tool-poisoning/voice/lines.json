@@ -1,0 +1,8 @@
+{
+ "A newsroom in Johannesburg approved its assistant's tools on Monday, and stored a hash of each tool's full description, schema and labels.": "ee06650bd2.mp3",
+ "On Tuesday the tools refresh. Three have changed and a new server has appeared. Every changed hash and every unknown server goes to quarantine until an editor reviews it.": "3396c67a70.mp3",
+ "The mail tool gained a hidden copy field, but its description didn't change. Pin only the description, and the change slips through: emails go out with a copy to a stranger.": "4afa998978.mp3",
+ "A new server calls itself Official Notes. Approve by name, and a look-alike gets in. Names are labels, not proof of who published it.": "dd568aade5.mp3",
+ "A keyword scanner blocks a harmless \"do not ignore errors\" line and passes a subtle request to send whole email threads. Let it decide alone, and poison gets through.": "952c21b37b.mp3",
+ "Pin the whole descriptor, approve servers on evidence, namespace their tools, and keep the scanner as a tripwire. And read the first approval carefully: a pin can't make a bad tool good.": "9434b284ea.mp3"
+}

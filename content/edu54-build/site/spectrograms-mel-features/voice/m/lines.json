@@ -1,0 +1,8 @@
+{
+ "One second of sound: a talking drum gliding upward, two sharp slaps, and a quiet whistle. Time runs across, pitch rises towards you, loudness rises up.": "7e97946c84.mp3",
+ "The sound is cut into short overlapping frames, each softened at its edges, and each turned into frequencies.": "db1127068d.mp3",
+ "Show plain loudness, and only the loudest sound is visible. A log scale reveals the quiet whistle and the overtones.": "3f0bc53243.mp3",
+ "Rows spaced evenly in hertz squeeze the drum's pitch into a few rows. Mel rows give low pitches more room, as hearing does.": "26bc606bc2.mp3",
+ "A long window resolves pitch finely, but smears each slap across time.": "a620e360c4.mp3",
+ "A very short window catches every crack, but blurs pitch. Speech models settle near twenty-five milliseconds.": "875eaaac3d.mp3"
+}

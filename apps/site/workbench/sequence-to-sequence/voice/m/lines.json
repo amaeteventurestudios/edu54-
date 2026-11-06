@@ -1,0 +1,8 @@
+{
+ "A sentence about a market by Lake Victoria: \"the market opens early\". The model must write it in Swahili.": "3da7b6483b.mp3",
+ "The encoder reads the English word by word and ends with one context vector, the gold ball: the whole sentence in a single list of numbers.": "c55ac7dfd8.mp3",
+ "The decoder starts from that vector and writes Swahili one word at a time, feeding each word back in to choose the next.": "fbf4c44128.mp3",
+ "Now a long sentence. Fourteen words must squeeze through the same single vector. The end of the translation falls apart.": "5aec82cba5.mp3",
+ "Always taking the most likely next word can lock in a mistake, like a repeated word. Beam search keeps several candidates and chooses the best whole sentence.": "65e90016a8.mp3",
+ "In training, the decoder is fed the correct previous word, not its own guess. Without that, early mistakes poison every later step, and training stalls.": "318c8c8850.mp3"
+}

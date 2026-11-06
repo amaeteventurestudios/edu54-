@@ -1,0 +1,8 @@
+{
+ "A signal goes into a network 24 layers deep. Each glass pane is one layer, and the dots inside are its neurons, high for big positive values and low for big negative ones.": "a09926fe27.mp3",
+ "Start the weights a little too small. Every layer shrinks the signal, and by the top the dots have squeezed into a flat line: almost nothing gets through.": "505bdd7b09.mp3",
+ "Start them a little too big, and every layer grows the signal instead. The dots slam into the edges and turn red: the numbers have exploded.": "ba7369e405.mp3",
+ "He initialization picks the size from the number of inputs to each neuron, doubled because ReLU switches off half of them. Now the signal stays the same size from bottom to top.": "4341129da9.mp3",
+ "Xavier initialization is the right size for tanh. Used with ReLU, it is half too small, and the signal fades again over many layers.": "7d463d49c5.mp3",
+ "One last rule: the weights must be random. Give them all the same value, and every neuron becomes a copy of its neighbours, forever.": "b3cea63bcc.mp3"
+}

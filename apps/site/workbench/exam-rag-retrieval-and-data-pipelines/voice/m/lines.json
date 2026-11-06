@@ -1,0 +1,8 @@
+{
+ "After a policy refresh, the assistant gives the old limit. The model and prompt did not change.": "82f0d6537d.mp3",
+ "Telling it to use the latest policy does nothing. It cannot follow evidence it never received.": "ad19d8acd9.mp3",
+ "Build the new version, check it, then switch the alias, so the retired text is gone.": "77bc536a8c.mp3",
+ "Filter by scheme before generation. Never ask the model to ignore what it should not see.": "ec8276c3db.mp3",
+ "Keep the limit and its over-55 exception in one chunk, the unit a person would cite.": "378ca78d50.mp3",
+ "Dense search misses the exact code. Hybrid retrieval handles both kinds of query.": "cedef32aaa.mp3"
+}

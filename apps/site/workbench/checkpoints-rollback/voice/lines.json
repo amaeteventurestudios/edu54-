@@ -1,0 +1,8 @@
+{
+ "A freight agent in Dar es Salaam has approval to move a container to another ship. Then the worker crashes, just after the write.": "205ea87932.mp3",
+ "The resumed run writes again, and without a key that books twice. An idempotency key makes the repeat count once.": "f7e4a299cf.mp3",
+ "The approval is an hour old, and the ship has changed. Acting on it sends the container astray. Check the state again first.": "30b378d865.mp3",
+ "With a precondition check, the agent stops and asks. Stopping safely is a good outcome.": "30423c793d.mp3",
+ "The carrier accepts the call and drops it. The agent says done. Only a read after the write can tell.": "2266aeaa5b.mp3",
+ "When the verify fails, the rollback puts things back and tells a person. Four guards, one action.": "32815ca4bb.mp3"
+}

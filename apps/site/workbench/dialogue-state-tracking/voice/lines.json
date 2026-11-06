@@ -1,0 +1,8 @@
+{
+ "A customer books a coach from Dar es Salaam to Arusha. After every turn, the system writes down what it believes the customer wants.": "e34fbde390.mp3",
+ "Friday, three seats. The new slots are added, and the route from the first turn stays.": "f408e7fa41.mp3",
+ "The first one means the first coach the system offered: seven am. The tracker must read the system's side too.": "8f5daa6613.mp3",
+ "Actually, make it four seats. Seats change; nothing else does.": "eb9e8b92ae.mp3",
+ "Rebuild the state from the latest message alone, and by the end only \"book it\" survives. Every earlier slot is lost.": "3a0a15e12d.mp3",
+ "Joint goal accuracy counts turns where every slot is right. One wrong slot fails the turn, just as it fails the booking.": "c3085b5f01.mp3"
+}

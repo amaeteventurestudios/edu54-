@@ -1,0 +1,8 @@
+{
+ "A farm advice bot used in Uganda and Malawi is tested on twenty questions. People and an LLM judge both score each answer for faithfulness.": "a180cbec55.mp3",
+ "This judge agrees with people. Three answers make claims their sources do not support, so the release gate stays shut.": "619c7f44a6.mp3",
+ "An uncalibrated judge likes long answers. The long, wrong ones score highest, and the gate opens.": "8667f66627.mp3",
+ "The judge's replies on those three answers were not valid JSON. Drop them silently, and the bad answers vanish from the average.": "504d7c085a.mp3",
+ "Let the bot judge itself, and every score drifts up. The ranks still agree, so only comparing averages shows it.": "43af38f4ba.mp3",
+ "Fix retrieval in version two. Now a calibrated judge opens the gate, and it is right to.": "5a257edf47.mp3"
+}

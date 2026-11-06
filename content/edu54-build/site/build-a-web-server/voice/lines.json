@@ -1,0 +1,8 @@
+{
+ "A browser sends a request line and headers. The server reads them and builds a request object.": "f6be93f0bd.mp3",
+ "The request passes down a chain of middleware. Each one answers, or calls next.": "7b09ec9093.mp3",
+ "A logger that forgets to call next stops the chain. The browser waits for ever.": "f31209450c.mp3",
+ "Files under slash static come from a public folder.": "e62e7e43cf.mp3",
+ "Dot dot slash climbs out of the folder. Resolve the path and refuse anything outside.": "72e0d267e4.mp3",
+ "End the chain with a handler that answers four oh four for anything left unclaimed.": "69e692171d.mp3"
+}

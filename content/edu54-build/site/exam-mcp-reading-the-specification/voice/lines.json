@@ -1,0 +1,8 @@
+{
+ "Everything traces to the specification and its schema, not to a blog post or an old release.": "87f951bd01.mp3",
+ "Every implementation must support the base protocol, versioning and message patterns. The rest is optional.": "eaef534f99.mp3",
+ "A lower-case must in an example is ordinary prose. Only capitals carry force.": "157c3b7aed.mp3",
+ "When a prose example and the schema disagree, follow the schema.": "08b60ce256.mp3",
+ "A deprecated feature is still specified and working, for at least twelve months.": "d809d3c31e.mp3",
+ "Should means expected unless there is a good reason. All six read correctly now.": "b57d92dabd.mp3"
+}

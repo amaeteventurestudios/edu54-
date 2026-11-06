@@ -1,0 +1,8 @@
+{
+ "An agent books a night coach from Nairobi to Kampala for the fourteenth of November, window seat, and stops before paying.": "406699484c.mp3",
+ "Each step it looks at the screen, picks one action, types or clicks, and checks the result.": "d3c02de8ed.mp3",
+ "It keeps a short log of what it did, and waits for a person before paying.": "4b4cd31556.mp3",
+ "On a phone, from screenshots alone, it clicks the seat next to the one it meant, and without checking it never notices.": "4f82e3242d.mp3",
+ "Keep every screenshot instead of a log, and the date falls out of memory.": "d63b4f5f3d.mp3",
+ "Remove the approval step, and it pays on its own.": "86bcfaba2b.mp3"
+}

@@ -1,0 +1,8 @@
+{
+ "A farmer in Kenya photographs a maize leaf with pale stripes and asks the app what is wrong.": "47b63c5701.mp3",
+ "A CLIP encoder gives five hundred and seventy-six patch tokens. A small MLP projects every one into the language model.": "e92f07a0a8.mp3",
+ "Stage one trains only the projector, on image captions, so image tokens land where the language model can read them.": "71cb016475.mp3",
+ "Stage two teaches it to answer questions about images. Now it gives advice, not just a caption.": "28f03d9329.mp3",
+ "Skip stage one, and the image arrives as noise. The model learns to answer from the question alone.": "906264cc7b.mp3",
+ "Instruction data written from captions, never checked against the photos, teaches it to mention things that are not there.": "aa8d7cc1a5.mp3"
+}

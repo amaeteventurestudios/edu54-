@@ -1,0 +1,8 @@
+{
+ "Four boda boda motorbikes cross a junction in Kampala, seen from above. A detector finds them in every frame. The tracker must keep each one's ID.": "835cc58a76.mp3",
+ "Each frame, a Kalman filter predicts where every track should be. Then the Hungarian algorithm pairs predictions with detections, choosing the smallest total distance.": "f24543ee9b.mp3",
+ "Match in the order the detections happen to arrive, and the IDs shuffle every frame. The trail colours flicker.": "9ca34002f7.mp3",
+ "Switch off prediction, and a track waits where its bike was last seen. The bike comes out from behind the lorry too far away, and gets a new ID.": "ad5190b584.mp3",
+ "In the busy patch the detector is unsure. Throw away its low scores, and the bikes vanish from the tracker there.": "22cc67193b.mp3",
+ "Keep the low scores for a second matching pass, and every bike keeps one ID from one side of the junction to the other.": "2ec3981880.mp3"
+}

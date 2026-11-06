@@ -1,0 +1,8 @@
+{
+ "An assistant in Harare can fail in two ways: answering what it should refuse, and refusing what it should answer.": "3295e91f7e.mp3",
+ "Test only unsafe prompts, and refusing everything scores perfectly.": "4030ca2179.mp3",
+ "Add ordinary prompts, and that same setting fails most people.": "876d603c12.mp3",
+ "Loosen it too far, and unsafe prompts get answers.": "6a7ade670c.mp3",
+ "A scripted mock model means that a change in numbers comes from your change.": "b0b490ca6d.mp3",
+ "Also ask if the model's confidence matches how often it is right.": "b518a34087.mp3"
+}

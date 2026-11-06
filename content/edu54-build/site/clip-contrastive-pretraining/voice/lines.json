@@ -1,0 +1,8 @@
+{
+ "A Ghanaian picture library has eight photos with captions: kente cloth, jollof rice, a tro-tro, a baobab and more.": "878bb7a413.mp3",
+ "Two untrained encoders put photos and captions in a shared space at random. Every caption looks as likely as any other.": "0b05993e2f.mp3",
+ "Each photo must pick its own caption from all eight, and each caption its own photo. The diagonal rises.": "36f09329bc.mp3",
+ "At temperature one, the softmax is too soft. Learning crawls, and the diagonal barely rises.": "d9400e0419.mp3",
+ "Train in fixed pairs, and each photo only learns to beat one other caption. Bigger batches give more negatives.": "0aa815f6cd.mp3",
+ "Give two photos captions that say the same thing, and the loss tries to push identical meanings apart.": "88caf9e448.mp3"
+}

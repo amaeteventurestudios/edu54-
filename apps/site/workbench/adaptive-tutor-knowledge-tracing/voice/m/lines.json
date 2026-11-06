@@ -1,0 +1,8 @@
+{
+ "A tutor guides a learner through five algebra concepts, each resting on the one before.": "a1bbe45abc.mp3",
+ "After every answer, Bayes' rule updates the chance the learner knows the concept, allowing for slips and guesses.": "513f88bbef.mp3",
+ "The tutor moves on only when the estimate passes the threshold. Every concept is truly learned.": "93429e9faa.mp3",
+ "At half mastery, one lucky guess is enough to move on, and a gap opens.": "2fd9f73ad5.mp3",
+ "Hand over answers and the learner copies them. The estimate climbs, but nothing is learned.": "f8cf03ada2.mp3",
+ "Hints keep the evidence honest. The tutor knows what the learner knows.": "bf0af4bad3.mp3"
+}

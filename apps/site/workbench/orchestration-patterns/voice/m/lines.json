@@ -1,0 +1,8 @@
+{
+ "A county's citizen-service desk in Kenya runs specialist agents for permits, land, water, health and payments. Each request needs three of them in turn.": "d284188b10.mp3",
+ "A supervisor routes each step to a specialist and gets control back. Clear, but every step costs two hops.": "7330ca9375.mp3",
+ "In a swarm, specialists hand off directly. One hop per step, but no one is in charge, so count the hand-offs.": "21ea1b92cc.mp3",
+ "Grow the desk to twenty specialists, and the supervisor's prompt fills with their descriptions. Routing gets worse.": "56c342fc26.mp3",
+ "Team leads each route within their own team, and the top supervisor routes between teams. Every prompt stays small.": "f0b450d52a.mp3",
+ "For a small desk, a hierarchy only adds hops. Start simple; add layers when one router can no longer hold everyone.": "cbd82228b1.mp3"
+}

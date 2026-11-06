@@ -1,0 +1,8 @@
+{
+ "A cassava co-op asks its assistant which of two markets sold more last week, and by how much. It needs two lookups and a comparison.": "0e370d0ba0.mp3",
+ "The planner writes the whole plan at once: look up Kumasi, look up Tamale, then compare the two results.": "93de6be2b2.mp3",
+ "Thinking one step at a time resends the question and every earlier step on each call. Planning once sends far less.": "42eb8ddf62.mp3",
+ "The two lookups don't depend on each other, so they run at the same time. The comparison waits for both.": "fd35c2bcce.mp3",
+ "Tamale's upload is missing. A fixed plan can only report the gap.": "a3706a7de1.mp3",
+ "A replanner reads the error and tries the paper ledger instead. One more call, and the answer is complete.": "63a1dab59b.mp3"
+}

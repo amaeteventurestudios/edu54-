@@ -1,0 +1,8 @@
+{
+ "A farm-advice service in Mbarara has two searchers. Keywords find names. Vectors find meaning.": "5727bc59d1.mp3",
+ "BM25 misses \"my leaves are curling\", as it shares no words.": "ef73da400a.mp3",
+ "Dense search blurs an exact product name.": "6c9d01fa11.mp3",
+ "Scores don't compare. Ranks do. Add one over k plus rank, across both lists.": "d0317708db.mp3",
+ "A larger k softens how much the very top counts.": "121c6eaa64.mp3",
+ "Hybrid search with rank fusion is hard to beat for its simplicity.": "f829d9ce00.mp3"
+}

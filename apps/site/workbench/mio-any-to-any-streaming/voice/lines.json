@@ -1,0 +1,8 @@
+{
+ "A farmer in Tamale describes a sick maize plant aloud and sends a photo of the leaf. One model will listen, look and answer out loud.": "afbd193b68.mp3",
+ "Text, pictures, speech and music each become integers, and each gets its own range in one shared vocabulary.": "67041f613b.mp3",
+ "One transformer reads them all and streams speech tokens out. The extra speech levels are filled in parallel, so the first sound comes in about a third of a second.": "7074624abd.mp3",
+ "Let the speech range overlap the image range, and one number means two things. The reply is noise.": "99f083cb15.mp3",
+ "Decode the speech levels one after another, and the farmer waits through half a second of silence.": "b168dde7f2.mp3",
+ "Skip the training on mixed documents, and the model answers without using the photo.": "219549175d.mp3"
+}

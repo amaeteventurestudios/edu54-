@@ -1,0 +1,8 @@
+{
+ "An auditor in Addis Ababa has sixty scanned pages: text, rotated tables, charts and handwritten notes.": "3dd3445eb6.mp3",
+ "OCR reads plain pages well. Tables lose their columns, and charts become nothing.": "309547e70b.mp3",
+ "A vision model reads the page as a picture. It handles tables and charts, at a much higher price per page.": "429b6f92f6.mp3",
+ "So route. Plain pages go to OCR, and hard ones go to vision.": "71b0f14a00.mp3",
+ "An auditor needs proof. Each answer cites a page and a box, so a person can look.": "2ce20e8b5d.mp3",
+ "Read, route, answer, cite. Spend where the picture holds the meaning.": "ee18f0a4be.mp3"
+}

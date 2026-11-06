@@ -1,0 +1,8 @@
+{
+ "A street in Lagos: danfo buses, okadas and people. A detector must say what each thing is, and draw a box around it.": "3eab63d285.mp3",
+ "YOLO splits the picture into a seven by seven grid. Every cell guesses boxes with a confidence. Without any clean up, every object gets a pile of boxes.": "3b4ebdba45.mp3",
+ "First, drop every guess below a confidence threshold. The empty road and sky clear, but each object still has several boxes.": "b7bc488ccb.mp3",
+ "Then non max suppression: keep the most confident box, and remove any box of the same class that overlaps it too much. Now each object has one box.": "439cfefb68.mp3",
+ "Raise the threshold too far, and the less certain objects disappear: people, small and partly hidden, are missed first.": "2dd6c8b35b.mp3",
+ "Squeeze the overlap limit, and two people standing side by side count as duplicates. One of them is erased. Crowded scenes need a gentler limit.": "f3245bae19.mp3"
+}

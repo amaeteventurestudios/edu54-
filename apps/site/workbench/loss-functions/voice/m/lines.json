@@ -1,0 +1,8 @@
+{
+ "A model learns by making one number smaller: the loss. Here the model guesses the price of a crate of tomatoes at a stall, and the dots are a week of real prices.": "da8a2a549e.mp3",
+ "Squared error squares each miss. A miss twice as big costs four times as much. Each tower is one day's penalty.": "456df7d106.mp3",
+ "Try every possible guess and you get the loss curve. Its lowest point is where training settles. For squared error, that is the average price.": "da0fccae03.mp3",
+ "Now one day is typed as nine thousand instead of nine hundred. Squared error punishes that miss so hard that the whole answer runs towards the typo.": "c3a270e680.mp3",
+ "Absolute error grows only in step with the miss, and its best guess is the middle price, the median. The typo barely matters. Huber is squared near the target and straight far away: the best of both.": "bf6171af66.mp3",
+ "For yes or no answers, models use cross-entropy instead: the penalty grows without limit as a confident answer turns out wrong. That is the loss from the information lesson.": "3b7e245195.mp3"
+}

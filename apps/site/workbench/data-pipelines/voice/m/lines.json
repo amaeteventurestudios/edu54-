@@ -1,0 +1,8 @@
+{
+ "A lab in Nairobi builds a Swahili training set from a web crawl: news, copies, cookie notices, spam, English pages and contact details.": "dc220de8e6.mp3",
+ "Each document passes five gates: strip the web page, keep Swahili, drop spam, remove near-duplicates, and redact personal details.": "82eb4161a9.mp3",
+ "Near-duplicates are found by comparing short fingerprints of each document. Copies with a different advert score about three quarters or more.": "bf7a3f7738.mp3",
+ "Skip deduplication, and the cookie notice and thirty copied articles stay in, ready to be memorised.": "3cafa191ca.mp3",
+ "Set the threshold far too low, and distinct articles that share a phrase are thrown away.": "1e33c051f8.mp3",
+ "Skip redaction, and phone numbers and e-mail addresses go into training.": "4daf0f9150.mp3"
+}

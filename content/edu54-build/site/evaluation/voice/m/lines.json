@@ -1,0 +1,8 @@
+{
+ "A pharmacy chain with branches in Dar es Salaam, Kano and Kumasi must choose one of four models to answer its staff's stock questions.": "fe75d6fe42.mp3",
+ "On a famous public benchmark, all four score within two points of each other. The test is saturated: it can no longer tell them apart.": "fd84643a57.mp3",
+ "So the chain writes two hundred real questions with known answers, and checks each reply exactly. Now the models spread out, and a thin black line on each bar shows how uncertain its score is.": "9c386a30d1.mp3",
+ "If one model saw the benchmark questions during training, its leaderboard score jumps. Its score on your questions does not move.": "892665f4c4.mp3",
+ "Test with only ten questions, and the error bars are so wide that the order is down to luck.": "446d4a41c6.mp3",
+ "For open answers, show people two replies and ask which is better. After thousands of votes, the ratings agree with your own test.": "418ffeb0df.mp3"
+}

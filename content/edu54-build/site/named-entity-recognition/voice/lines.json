@@ -1,0 +1,8 @@
+{
+ "A news line about a trip from Nairobi to Malindi. Named entity recognition finds the names and says what kind each is.": "dbac893ca5.mp3",
+ "Every word gets a tag. B starts a name, I continues the same name, and O is everything else, so \"Safari Mobile\" stays one company.": "9959561250.mp3",
+ "A dictionary of names finds Nairobi, but not a town or company it has never heard of.": "7209bfe357.mp3",
+ "A capital letter rule tags the first word of the sentence, cannot tell places from people, and finds nothing at all in a lower case text message.": "87b219497e.mp3",
+ "A classifier that tags each word alone can produce impossible sequences, like I with no B, and splits one company in two.": "48399a0cab.mp3",
+ "A sequence model chooses the best whole sequence of tags, reading every word in context. Every entity, exactly right.": "3a9bdfdce3.mp3"
+}

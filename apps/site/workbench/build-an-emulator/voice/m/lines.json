@@ -1,0 +1,8 @@
+{
+ "Nine bytes in memory: set A to zero, set B to thirty, add B to A, count B down, and jump back until B is zero.": "6d9c4e42c2.mp3",
+ "Fetch the byte at the program counter, move the counter on, decode it and carry it out.": "20541f341b.mp3",
+ "Each pass adds B to A, counts B down and jumps back four bytes.": "ce09478ba8.mp3",
+ "A is eight bits. Past 255 it wraps round and sets the carry flag, just like the real chip.": "2b3eee5f3d.mp3",
+ "Forget to set the zero flag on decrement, and the loop never ends.": "508e12eabf.mp3",
+ "Signed jumps, flags and wraparound: get each one right and real programs run.": "3cb70adc64.mp3"
+}

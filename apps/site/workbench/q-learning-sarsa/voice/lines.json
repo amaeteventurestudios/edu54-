@@ -1,0 +1,8 @@
+{
+ "A herder in the Simien Mountains moves goats from camp to the village. The straight way runs along a ravine.": "5589cfa6b8.mp3",
+ "After every single step, the estimate for that move is nudged towards the reward plus the estimate of where it led.": "075f6d3534.mp3",
+ "SARSA uses the next move it really makes, random steps included, so it learns a path a safe distance from the edge.": "733499504a.mp3",
+ "Q-learning assumes the best next move. It learns the edge path, but while it still explores, goats go over.": "06c283bfe1.mp3",
+ "Stop after twenty days, and the reward has not spread back far enough. The path wanders.": "9b81fd7e35.mp3",
+ "Expected SARSA averages over the next moves instead of sampling one. It learns the safe path with even fewer falls.": "8f5319840e.mp3"
+}

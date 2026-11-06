@@ -1,0 +1,8 @@
+{
+ "The bus left the park because it was full. You know \"it\" means the bus. How would a machine know?": "39190aafb2.mp3",
+ "In self-attention, every word sends out a question, called a query. \"It\" is asking: which thing in this sentence could be full?": "a21de74d8d.mp3",
+ "Every word also carries a label, called a key. The bus's key says vehicle. The park's key says place. Query times key gives a score for each pair.": "d7c123fd18.mp3",
+ "The scores are divided by the square root of the size, then softmax turns them into shares that add up to one hundred percent. Thick gold string: it listens a lot.": "6c8631f885.mp3",
+ "Now change full to closed. A park can be closed, a bus usually isn't. \"It\" now points to the park.": "307260a5b9.mp3",
+ "Every word does this at the same time. The grid shows the whole pattern, one row per word. A transformer runs dozens of these layers, and that is how it keeps track of meaning.": "ca435d8d11.mp3"
+}

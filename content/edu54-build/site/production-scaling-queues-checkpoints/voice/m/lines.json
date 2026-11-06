@@ -1,0 +1,8 @@
+{
+ "A legal-research service in Lagos charges per agent run. On a laptop, an event loop was fine. In production, it loses everything.": "5f9b02fb30.mp3",
+ "Survive a crash, take a tenfold peak, wait hours for a person, and charge exactly once. Each lamp is one need.": "794110f96e.mp3",
+ "A queue absorbs the peak, and a state store holds the runs. That covers a lot, for a small team.": "656ff0551b.mp3",
+ "Queues deliver at least once, so a retry can bill twice. Exactly once is at least once, plus a key.": "5b44b9596f.mp3",
+ "A durable layer saves your state. A live database connection can't be saved, so keep state as plain data.": "4d3e9c21b7.mp3",
+ "A workflow engine does the most and asks the most. Take the smallest layer your team can run.": "54aa757f23.mp3"
+}

@@ -1,0 +1,8 @@
+{
+ "A verification desk checks whether a press statement came from a watermarked model.": "b889a95124.mp3",
+ "At each word, a hash of the previous words splits the vocabulary into green and red halves.": "6be9bf9ee7.mp3",
+ "The model adds a small bonus to green words. The text reads the same, but more words are green.": "8df8c73b66.mp3",
+ "The detector counts green words and turns the count into a z-score. More words, more evidence.": "4e1317f2d1.mp3",
+ "Rewrite the words and the tilt washes out. The z-score drops below the line.": "a96362deee.mp3",
+ "A signed C2PA manifest says who made it, but can be stripped. Together they tell the story.": "8aa6f38ee4.mp3"
+}

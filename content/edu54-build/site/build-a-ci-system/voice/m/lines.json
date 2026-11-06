@@ -1,0 +1,8 @@
+{
+ "A team pushes six commits. A small CI system must test every one.": "f361d1f44a.mp3",
+ "An observer checks the repository every few seconds. Two commits can land between checks.": "ed94c2f2af.mp3",
+ "Record every new commit, not only the newest, and queue each one.": "877e0cf05e.mp3",
+ "Runner B crashes mid-test. Without heartbeats, its commit vanishes.": "990cb28d5b.mp3",
+ "Reuse an old working copy, and a leftover file hides c4's broken test.": "31184ed830.mp3",
+ "Every commit queued, dead runners replaced, clean checkouts. c4 is caught.": "1f3079792d.mp3"
+}

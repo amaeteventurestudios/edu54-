@@ -1,0 +1,8 @@
+{
+ "A port in Maputo runs a local tool server. Client and server talk down a pipe, one JSON line at a time.": "3b6f831f88.mp3",
+ "A request has an id, and wants a reply. A notification has none, and gets none.": "c2344c0c9d.mp3",
+ "A tool prints a friendly message. It lands in the stream, and the client chokes.": "65ff836cf2.mp3",
+ "Stdout belongs to the protocol. Logs go to stderr.": "53006fa0f9.mp3",
+ "Unknown method, invalid request: each has its own code, so clients can react.": "19f5ce4ce1.mp3",
+ "A bad line gets an error reply, and the server reads the next one.": "0cdbcfddd6.mp3"
+}

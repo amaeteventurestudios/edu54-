@@ -1,0 +1,8 @@
+{
+ "A fintech in Kigali has three apps and three providers. One provider goes down, and each app fails on its own.": "fcef67f0e2.mp3",
+ "Put a gateway in front. One API, one store of keys, and traffic moves when a provider fails.": "e8cb0f1e3c.mp3",
+ "Push traffic high, and a gateway suited to moderate load starts failing. Now it is the outage.": "fcfd571208.mp3",
+ "A gateway built for scale holds at that rate. Benchmarks here come from vendors, so test your own.": "5ca5fd4ace.mp3",
+ "A regulator wants personal data removed and an audit trail. A gateway with guardrails provides them, at some delay.": "f2726d8db8.mp3",
+ "A managed gateway needs no operations, but your data leaves the country. Choose by rate, rules and where data may go.": "a7cd9abd51.mp3"
+}

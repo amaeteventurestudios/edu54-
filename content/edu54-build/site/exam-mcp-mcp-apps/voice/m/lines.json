@@ -1,0 +1,8 @@
+{
+ "The dashboard tool points at a UI resource, visible in the tool list before any call.": "2990054fea.mp3",
+ "The host fetches the view with a normal resource read. The mime type marks it as an app.": "a728b9c304.mp3",
+ "The host builds its security policy only from the domains the resource declares.": "a9fbb61360.mp3",
+ "The view runs in a sandboxed frame. It cannot read the host page.": "c2858764e3.mp3",
+ "The app may call only tools marked for the app, through the host and its consent.": "63f5b5977b.mp3",
+ "A host without the extension still gets a useful text answer.": "27bff1859d.mp3"
+}

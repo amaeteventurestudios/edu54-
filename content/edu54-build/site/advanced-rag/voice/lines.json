@@ -1,0 +1,8 @@
+{
+ "A university in Accra answers student questions from its handbook. Searched with the student's own words, the question lands away from the page it needs, and many answers miss.": "352cec8e13.mp3",
+ "Have the model rewrite the question into a clear search query. It lands nearer, but it is still worded like a question.": "9776255126.mp3",
+ "HyDE has the model write a made-up answer, and searches with that. The details may be wrong, but it is worded like the handbook, so it lands right beside the real page.": "67f2b3c379.mp3",
+ "Last year's handbook is still in the pile, almost word for word. Without a filter, old rules often win. Filter on the edition first.": "e012ec5396.mp3",
+ "Small paragraphs match precisely, but some answers need the paragraph after the one that matched. Whole sections keep it, but their vectors blur.": "ffb2b9ea56.mp3",
+ "So search with small paragraphs, and hand the model the whole section each came from. Precise matches, full context.": "3bad593cb3.mp3"
+}

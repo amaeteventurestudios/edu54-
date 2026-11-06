@@ -1,0 +1,8 @@
+{
+ "These are the parts of a deep learning framework. The job: learn which spots of a farm a centre-pivot sprinkler reaches, from 240 marked spots.": "6a13c9d6b0.mp3",
+ "The model is a Sequential row of modules: Linear layers that mix numbers, ReLU bends between them, and a Sigmoid that turns the answer into a chance from zero to one.": "7a56a91674.mp3",
+ "Each batch goes forward, the loss scores it, and backward sends the error back through every module. The optimizer then steps every weight, and zero grad clears the gradients for the next batch.": "bb86c17263.mp3",
+ "Forget to clear the gradients, and each batch's are added to all the old ones. The steps grow wild and the guess lurches about.": "4b78f5f206.mp3",
+ "Take out the ReLU modules, and the Linear layers collapse into a single straight line. No straight line can draw a circle.": "09b692d3bf.mp3",
+ "Put every part back. These same few pieces, module, sequential, loss, optimizer and data loader, are what every big framework is built from.": "507df817c5.mp3"
+}

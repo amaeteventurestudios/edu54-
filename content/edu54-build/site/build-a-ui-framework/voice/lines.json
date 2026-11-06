@@ -1,0 +1,8 @@
+{
+ "A bus app lists its stops. A rider has typed notes beside some of them. The framework draws the list from data.": "1b5f1f3708.mp3",
+ "Throw the page away and rebuild it on every change, and the typed notes are gone.": "0cc73f1a03.mp3",
+ "Compare the new virtual tree with the old one, and change only what differs.": "93f3acfbdb.mp3",
+ "Matched by position, one insert shifts every row, and the notes end up beside the wrong stops.": "469b457c55.mp3",
+ "Give each row a key. One insert, one change, every note in place.": "b8d5257cea.mp3",
+ "Do the work in small pieces and let the browser breathe between them. Typing never freezes.": "460b46f52a.mp3"
+}

@@ -1,0 +1,8 @@
+{
+ "A school trip planner in Kampala checks four things for a class trip to Jinja. One call at a time, each lookup waits for its own model turn and the call before it.": "d180d94693.mp3",
+ "With parallel calls, the model asks for all four in one turn. They run together, and the wait is the slowest one, not the sum.": "b4e7a6e7f4.mp3",
+ "While the model streams, the four calls' arguments arrive in interleaved chunks. A host can start each call the moment its own arguments are complete.": "571f510d69.mp3",
+ "Two calls use the same weather tool. Match results by name, and Jinja and Kampala swap: the class leaves into a storm. Only the call ID tells them apart.": "fe93e82acd.mp3",
+ "Parse a call's arguments on its first chunk, and it is half a JSON object. Buffer per call, and parse when it is complete.": "51e3546508.mp3",
+ "Booking is different: the deposit needs the reservation number. Run those two in order, or the payment goes first and fails.": "c2dc9e3d36.mp3"
+}

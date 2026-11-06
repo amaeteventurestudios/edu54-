@@ -1,0 +1,8 @@
+{
+ "A weather station runs three tasks on one small processor. The logger has a bug: it never yields.": "79a1876060.mp3",
+ "If tasks must give the processor up themselves, the spinning logger keeps it for ever.": "5a84a39b4d.mp3",
+ "A hardware timer interrupts every few ticks, whatever the task is doing, and the kernel takes over.": "1ec635e8c9.mp3",
+ "The kernel saves every register of the running task on its own stack, then restores the next task's.": "80b064355f.mp3",
+ "Switch every tick and the processor spends its time switching. Too long and tasks wait.": "9e83bed00c.mp3",
+ "A sensible slice: every task runs often, and switching costs little.": "b4d1646eec.mp3"
+}

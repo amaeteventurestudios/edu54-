@@ -1,0 +1,8 @@
+{
+ "A server exposes a project as resources: files, a changelog and a private note, each with a URI.": "78f19a20c3.mp3",
+ "A template with plus path keeps the slashes in a nested path.": "9e89444ea4.mp3",
+ "Binary files come back as a base64 blob with a mime type.": "4947b429ec.mp3",
+ "A path that climbs out of the project is rejected before any lookup.": "9e9aa16da3.mp3",
+ "A missing file is invalid params with the URI in the data, not an empty result.": "0a8a8836bd.mp3",
+ "A note that belongs to one user is cached as private, never public.": "61f2d3d2ed.mp3"
+}

@@ -1,0 +1,8 @@
+{
+ "Docker packs your code, Python, the libraries and the system tools into one box called an image. Here it is being built for the first time.": "d04d3483d6.mp3",
+ "Each line of the Dockerfile makes one layer. Change only your code and rebuild: the layers below come from the cache, and the build takes seconds.": "c04378191c.mp3",
+ "Start the image and it becomes a container, running on this host like a small computer of its own.": "6000971fa4.mp3",
+ "A container cannot see the graphics card unless you hand it over when you start it. With the GPU flag, the code inside uses the card at full speed.": "804a845c3a.mp3",
+ "A model can be fourteen gigabytes. Keep it in a volume, a folder on the host, so it survives when the container is replaced.": "7d5b90b8d1.mp3",
+ "Now the very same image runs on a laptop in Accra, a server in Nairobi and a cloud GPU, with the same versions of everything.": "fba04efb9f.mp3"
+}

@@ -1,0 +1,8 @@
+{
+ "A bank in Dakar wants to sort complaints. Keep the language model, and swap its head for a small classifier.": "c96370c5ad.mp3",
+ "With few labels, train only the head. It's quick, and it can't overfit much.": "da035fee86.mp3",
+ "With thousands of labels, tune the whole model at a low rate.": "8a56e0bceb.mp3",
+ "Texts differ in length, so short ones get padding. Mask it, and pool from the last real token.": "2bd9f77b1c.mp3",
+ "If complaints are rare, a lazy model scores well. Recall shows what was missed.": "8212eca9e1.mp3",
+ "Precision, recall, F1 and the confusion table say what the model really does.": "9c62153091.mp3"
+}

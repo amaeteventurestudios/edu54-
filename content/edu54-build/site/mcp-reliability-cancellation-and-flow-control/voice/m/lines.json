@@ -1,0 +1,8 @@
+{
+ "A cash-transfer programme in Blantyre pays households through an MCP tool. Payments must happen once: not zero times, not twice.": "b1e7fe69bf.mp3",
+ "A reply is lost and the client retries. The retry carries the same idempotency key, so the server's ledger returns the first receipt.": "40d1d24fe6.mp3",
+ "Retry with only a new request ID, and the server sees a new payment. The household is paid twice.": "6e1deda54f.mp3",
+ "A cancel arrives a tenth of a second after the batch finished. Cancellation is a race. Assume it won, re-run the batch, and four hundred households are paid twice.": "49ef3ba443.mp3",
+ "The server restarts and two thousand tablets reconnect in the same second. The server falls over again.": "c27954ea17.mp3",
+ "With backoff and jitter, they return over half a minute, under capacity, and each refetches its lists before carrying on.": "ed56128b6a.mp3"
+}

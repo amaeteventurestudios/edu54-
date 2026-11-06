@@ -1,0 +1,8 @@
+{
+ "A logistics agent in Windhoek writes a plan of five typed steps. An executor walks them with a cursor.": "d5c4dfd10d.mp3",
+ "The truck is full, and step three fails. The executor stops, and hands back.": "0b24036a65.mp3",
+ "Give the planner the reason, and it can choose differently.": "20fcf72bd0.mp3",
+ "Finished steps stay finished. Only the rest changes.": "d50dc93093.mp3",
+ "Start again from the top, and finished work repeats, with any side effects.": "a00e64240a.mp3",
+ "Record what changed in each revision. Reviewers can then follow the story.": "231f38f93a.mp3"
+}

@@ -1,0 +1,8 @@
+{
+ "Take a little Swahili text. At the start, each letter is its own token, and the strip is as long as it gets.": "89131c3ef3.mp3",
+ "Count every neighbouring pair. Merge the commonest into one new token, and write that rule down.": "4393a9c8b6.mp3",
+ "Repeat. Pieces grow, and common ones like wana become single tokens.": "557eeb3705.mp3",
+ "Apply the merge list in order to new text, and you get the same tokens every time.": "aedf8abea3.mp3",
+ "Start from bytes, and no character is ever unknown. Text can go to ids and back, exactly.": "3dc6868055.mp3",
+ "End of text is set aside, so that ordinary text can't forge it.": "263ca1955c.mp3"
+}

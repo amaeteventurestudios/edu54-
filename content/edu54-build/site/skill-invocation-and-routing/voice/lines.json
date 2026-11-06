@@ -1,0 +1,8 @@
+{
+ "A software team's agent in Luanda has four skills. One, incident triage, only a person may start. Twelve test requests check the routing, including near misses that share words with a skill.": "01432b7f86.mp3",
+ "The router first drops skills this actor may not start, then ranks the rest. An outage question goes to incident review, which is allowed.": "579b1365ae.mp3",
+ "Rank everything first, and the blocked triage skill wins, then is refused. Nothing runs, though incident review was right there.": "bf5cb8648d.mp3",
+ "A question about the weather fits no skill. Below the line, the router abstains. Always picking something starts skills nobody needed.": "b98207d9ff.mp3",
+ "Give the release skill a description listing every nearby word, and it grabs failing builds and version bumps.": "d636bff933.mp3",
+ "A bounded description says when, and when not. Near-miss tests are what prove the border holds.": "eabc599733.mp3"
+}

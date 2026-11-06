@@ -1,0 +1,8 @@
+{
+ "A tailor in Bamako wants an order site. Most web frameworks share one shape.": "cd8fa97809.mp3",
+ "A router reads the URL and picks an action.": "236d3a3775.mp3",
+ "A controller is thin. It asks and it hands over.": "6a41ba109c.mp3",
+ "A model knows the data and its rules.": "9af69136a4.mp3",
+ "A view knows only how to show it.": "3e3dd0a575.mp3",
+ "A fat controller mixes all three, and then nothing can change alone.": "454b91dc14.mp3"
+}

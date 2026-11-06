@@ -1,0 +1,8 @@
+{
+ "CLIP has two towers: one turns a photo into a vector, the other turns text into a vector, in the same space.": "e1d4253d28.mp3",
+ "It learned from photos and the words found beside them, pulling real pairs together and pushing mismatches apart.": "329be6df14.mp3",
+ "Six photos from a craft market in Kumasi, against six captions. Each photo is closest to its own caption: the bright diagonal.": "b8b1b1a890.mp3",
+ "To classify, write each class as a caption and pick the closest. No training on kente, drums or beads at all. The wording matters: bare names are vaguer.": "e582919d42.mp3",
+ "Compare raw vectors, and length sneaks in: one caption with a long vector scores high against almost everything. Normalised, only the direction counts.": "2445c345ec.mp3",
+ "Show it a shea butter press it never saw, and it still has to choose one of the captions. It only knows what it saw in training.": "bf3565ca4b.mp3"
+}

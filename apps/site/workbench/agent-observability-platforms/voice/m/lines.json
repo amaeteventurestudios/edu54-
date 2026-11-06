@@ -1,0 +1,8 @@
+{
+ "Traces flow along the belt, and three stations can take them. All three trace well. What differs is what each does next.": "23f3c59ae1.mp3",
+ "A bank in Cairo changes a prompt and answers get worse. Langfuse keeps prompt versions beside the traces, so the change is easy to find.": "ba8694d3eb.mp3",
+ "A law firm in Durban wants to see why search misses. Phoenix is strongest on retrieval, and it instruments your code for you.": "8bd5bfd393.mp3",
+ "But the firm allows only OSI open source. Phoenix's licence is source-available, so it is out, however good the fit.": "9af184f580.mp3",
+ "A clinic in Kumasi wants to tune an agent and add guardrails. Opik, under Apache, is built around that.": "d29d7b44b0.mp3",
+ "Whichever you pick, traces alone don't tell you things got worse. Score them, and let the score raise the alarm.": "4d1d7518a2.mp3"
+}

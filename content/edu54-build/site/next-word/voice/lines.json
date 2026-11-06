@@ -1,0 +1,8 @@
+{
+ "A language model has one job. Given the words so far, give every possible next word a chance.": "69b76a94e8.mp3",
+ "After \"the market is\", this model thinks \"busy\", \"full\" and \"quiet\" are all likely. It learned that by counting a few hundred words of everyday sentences.": "79626e715c.mp3",
+ "One word is picked at random, weighted by the towers. It joins the sentence, and the model guesses again. That is all a chatbot does, one token at a time.": "f485c133e9.mp3",
+ "Temperature zero always takes the tallest tower. Safe, but it soon goes round in circles.": "0ab9658778.mp3",
+ "High temperature flattens the towers. Rare words get a real chance, and soon the sentence makes no sense.": "99d60f5173.mp3",
+ "Large models look at thousands of words, not two, and learned from trillions of words, not hundreds. But the loop is the same: guess, pick, add, repeat.": "cdf1a3866a.mp3"
+}

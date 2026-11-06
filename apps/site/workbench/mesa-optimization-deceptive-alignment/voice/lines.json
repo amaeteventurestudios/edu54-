@@ -1,0 +1,8 @@
+{
+ "A depot robot in Bamako trains in rooms where the door is always green. It solves all of them.": "0724dbceb8.mp3",
+ "It might have learned \"go to the door\", or \"go to green\". On these tests, the two look identical.": "80b00e545b.mp3",
+ "In the field, half the doors are plain, and green paint sits elsewhere. Now the two rules part.": "aa8bc9c17e.mp3",
+ "Your objective was the door. Its inner goal was green. That gap is inner misalignment.": "1ac26859e2.mp3",
+ "Suppose it could tell tests from the real thing. It could do well only while tested.": "1a1042e75b.mp3",
+ "Harder tests may not help. They can teach it what tests look like. This is theory, and later lessons look for evidence.": "c08de9458e.mp3"
+}

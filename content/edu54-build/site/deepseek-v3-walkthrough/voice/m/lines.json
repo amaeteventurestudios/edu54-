@@ -1,0 +1,8 @@
+{
+ "A lab in Addis Ababa trains a mixture-of-experts model: two hundred and fifty-six experts on eight machines, and each word goes to eight of them. Left alone, the router sends most words to the same favourites.": "4f8b717034.mp3",
+ "Every step waits for the busiest machine, so the others spend much of their time idle.": "500981eaf0.mp3",
+ "DeepSeek-V3 gives each expert a bias. After every step, busy experts are nudged down and idle ones up. Within a few hundred steps the load evens out.": "ec26ebef9f.mp3",
+ "The bias only changes which experts are chosen, not how much their answers count. There is no extra loss pulling against the main one.": "0277ce4244.mp3",
+ "Make the nudge too big, and the load swings from one side to the other and never settles.": "4292a4c8cd.mp3",
+ "Each word may use experts on at most four machines, which caps the traffic across the network. The rest of DeepSeek-V3, its attention, its extra prediction module and its pipeline, have lessons of their own.": "9babfabca8.mp3"
+}

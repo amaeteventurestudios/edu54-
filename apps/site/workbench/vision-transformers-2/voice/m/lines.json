@@ -1,0 +1,8 @@
+{
+ "A team mapping smallholder fields in Mali runs a vision transformer over satellite tiles to outline every field.": "887eef48f3.mp3",
+ "The tile is cut into sixteen-pixel patches. Each becomes one token, and every token can attend to every other.": "84c2d39333.mp3",
+ "Halve the patch size, and field edges are traced more finely, but there are four times the tokens.": "a636bca50b.mp3",
+ "A thousand-pixel tile with global attention means four thousand tokens. The cost grows with the square.": "393f072895.mp3",
+ "Attend only within small windows, as Swin does, and the cost grows in a straight line instead.": "debb68e90e.mp3",
+ "The class token summarises the whole tile. To draw a map, decode every patch token instead.": "e532f860b6.mp3"
+}

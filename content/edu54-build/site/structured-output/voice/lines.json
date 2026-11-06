@@ -1,0 +1,8 @@
+{
+ "Twenty order emails arrive from Accra to Kampala. Ask the model for JSON and most come out clean. The rest fail in different ways.": "0397b2dcc2.mp3",
+ "Validate the result against a schema, and send failures back with the exact error. It works, and every failure is paid for twice.": "8bf18f9c5b.mp3",
+ "Skip the schema, and everything still parses. But text sits where a number belongs, and wrong records reach the ledger.": "2f37040e98.mp3",
+ "Now the decoder itself is limited. Tokens that would break the schema are masked before sampling. Parse errors and schema errors simply cannot happen.": "3411c2d995.mp3",
+ "One email is not an order at all. The model refuses. No schema removes that, and retrying buys the same refusal.": "d192ab431a.mp3",
+ "So give each failure its own type and its own path. The refusal goes to a person. The rest of the orders flow.": "77f224f14a.mp3"
+}

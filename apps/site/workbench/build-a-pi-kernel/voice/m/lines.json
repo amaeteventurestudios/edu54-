@@ -1,0 +1,8 @@
+{
+ "A weather station in Bulawayo powers on. Code starts at the highest privilege, with no kernel.": "98e9e19fe9.mp3",
+ "Set up a stack, then drop to the kernel's exception level.": "083e622ee4.mp3",
+ "With no timer, each task keeps the board until it ends.": "16fbe87f3f.mp3",
+ "A timer interrupt fires, and the handler takes over.": "1dbf588aea.mp3",
+ "Every register is saved, the next task chosen, and its registers restored.": "a25014c76a.mp3",
+ "Switch quickly enough, and three tasks seem to run at once.": "0fb06c7a7a.mp3"
+}

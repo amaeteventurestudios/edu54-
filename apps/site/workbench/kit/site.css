@@ -1,0 +1,80 @@
+/* Amaete Build: the reading pages (about, credits, terms, privacy, certificate). One column of text,
+   a warm neutral shell (charcoal, saffron and burnt orange, no blue), light and dark. The lesson pages use kit/ui.css instead. */
+:root {
+  --font-display: "Bricolage Grotesque", "Instrument Sans", "Segoe UI", system-ui, sans-serif;
+  --font-body: "Instrument Sans", "Segoe UI", system-ui, -apple-system, sans-serif;
+  --font-code: "JetBrains Mono", ui-monospace, "SF Mono", Menlo, Consolas, monospace;
+  --bg: #F6F4EF; --panel: #FFFFFF; --ink: #1C1B19; --muted: #66625A; --line: #E2DED4;
+  --accent: #2C2D31; --link: #A4480F; --hi: #E3A72F; --hi-soft: #FBF1DC; --clay: #A4462A;
+  --teal: #0E6B6B; --orange: #EE7434; --plum: #5E2A61; --coral: #EE6352; --char: #2C2D31; --saffron: #F2AE0C;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) { --bg: #121211; --panel: #1C1C1A; --ink: #EEEAE2; --muted: #A8A398; --line: #2E2D29; --accent: #F2BE4E; --link: #F2BE4E; --hi: #F2BE4E; --hi-soft: #2A2416; color-scheme: dark; }
+}
+:root[data-theme="dark"] { --bg: #121211; --panel: #1C1C1A; --ink: #EEEAE2; --muted: #A8A398; --line: #2E2D29; --accent: #F2BE4E; --link: #F2BE4E; --hi: #F2BE4E; --hi-soft: #2A2416; color-scheme: dark; }
+
+* { box-sizing: border-box; }
+[hidden] { display: none !important; }
+body { margin: 0; background: var(--bg); color: var(--ink); font-family: var(--font-body); font-size: 16px; line-height: 1.6; -webkit-text-size-adjust: 100%; }
+a { color: var(--link); text-underline-offset: 2px; }
+:focus-visible { outline: 2px solid var(--hi); outline-offset: 2px; }
+
+/* the four family colours as one band across the top */
+.band { height: 6px; background: linear-gradient(90deg, var(--clay) 0 25%, var(--teal) 25% 50%, var(--plum) 50% 75%, var(--char) 75%); }
+.top { max-width: 760px; margin: 0 auto; padding: 18px 16px 0; display: flex; align-items: center; justify-content: space-between; gap: 12px; }
+.brand { display: flex; align-items: center; gap: 10px; color: var(--ink); text-decoration: none; font-family: var(--font-display); font-weight: 800; font-size: 18px; }
+.brand svg { width: 30px; height: 30px; }
+.brand span { white-space: nowrap; }
+@media (max-width: 600px) { .top { flex-direction: column; align-items: flex-start; gap: 8px; } .top nav { gap: 6px 14px; } }
+.top nav { display: flex; gap: 14px; flex-wrap: wrap; font-size: 14px; }
+.top nav a { color: var(--muted); text-decoration: none; }
+.top nav a:hover, .top nav a[aria-current] { color: var(--ink); }
+
+main { max-width: 760px; margin: 0 auto; padding: 28px 16px 64px; }
+h1 { font-family: var(--font-display); font-weight: 800; font-size: clamp(32px, 7vw, 52px); line-height: 1.02; letter-spacing: -0.02em; margin: 12px 0 14px; }
+.lead { font-size: 18px; color: var(--muted); margin: 0 0 28px; }
+h2 { font-family: var(--font-display); font-weight: 650; font-size: 24px; line-height: 1.2; margin: 40px 0 10px; }
+h3 { font-size: 17px; margin: 24px 0 6px; }
+p, li { max-width: 68ch; }
+ul { padding-left: 20px; }
+li + li { margin-top: 6px; }
+code { font-family: var(--font-code); font-size: 0.9em; background: var(--panel); border: 1px solid var(--line); border-radius: 5px; padding: 1px 5px; }
+.note { border-left: 3px solid var(--hi); background: var(--hi-soft); padding: 12px 16px; border-radius: 8px; margin: 20px 0; }
+.updated { font-size: 14px; color: var(--muted); }
+table { border-collapse: collapse; width: 100%; font-size: 15px; margin: 12px 0; }
+th, td { text-align: left; vertical-align: top; padding: 8px 10px; border-bottom: 1px solid var(--line); }
+th { font-size: 13px; text-transform: uppercase; letter-spacing: 0.04em; color: var(--muted); font-weight: 600; }
+.tablewrap { overflow-x: auto; }
+footer { max-width: 760px; margin: 0 auto; padding: 24px 16px 40px; border-top: 1px solid var(--line); font-size: 14px; color: var(--muted); display: flex; gap: 16px; flex-wrap: wrap; }
+footer a { color: var(--muted); }
+.btn { display: inline-flex; align-items: center; gap: 8px; border: 0; border-radius: 999px; padding: 10px 18px; background: var(--accent); color: var(--panel); font: inherit; font-weight: 600; cursor: pointer; text-decoration: none; }
+.btn.ghost { background: transparent; color: var(--ink); border: 1px solid var(--line); }
+input[type="text"] { font: inherit; padding: 10px 12px; border: 1px solid var(--line); border-radius: 10px; background: var(--panel); color: var(--ink); width: min(100%, 360px); }
+
+/* ---------- the certificate ---------- */
+.tracks { display: grid; gap: 10px; margin: 18px 0; }
+.trk { display: grid; grid-template-columns: 1fr auto; gap: 4px 12px; align-items: center; padding: 12px 14px; background: var(--panel); border: 1px solid var(--line); border-radius: 12px; color: var(--ink); text-decoration: none; }
+.trk b { font-weight: 650; }
+.trk small { color: var(--muted); grid-column: 1; }
+.trk .bar { grid-column: 1 / -1; height: 5px; border-radius: 3px; background: var(--line); overflow: hidden; }
+.trk .bar i { display: block; height: 100%; background: var(--g, var(--accent)); }
+.trk[aria-current] { border-color: var(--accent); }
+.cert-tools { display: flex; flex-wrap: wrap; gap: 10px; align-items: center; margin: 18px 0; }
+.cert { position: relative; aspect-ratio: 1.414; width: 100%; background: #FFFDF7; color: #151827; border-radius: 6px; overflow: hidden; box-shadow: 0 1px 0 var(--line); border: 1px solid var(--line); container-type: inline-size; }
+.cert .edge { position: absolute; inset: 0; border: 2.2cqw solid transparent; border-image: linear-gradient(90deg, #A4462A 0 25%, #0E6B6B 25% 50%, #5E2A61 50% 75%, #2C2D31 75%) 1; }
+.cert .in { position: absolute; inset: 6cqw; display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center; }
+.cert .mark { width: 9cqw; height: 9cqw; }
+.cert .k { font-size: 1.7cqw; letter-spacing: 0.25em; text-transform: uppercase; color: #5A5F78; margin-top: 2cqw; }
+.cert .who { font-family: var(--font-display); font-weight: 800; font-size: 6.2cqw; line-height: 1.05; margin: 2.2cqw 0 1.2cqw; }
+.cert .what { font-size: 2.2cqw; max-width: 70cqw; }
+.cert .trackname { font-family: var(--font-display); font-weight: 650; font-size: 3.6cqw; color: #2C2D31; margin-top: 1cqw; }
+.cert .meta { font-family: var(--font-code); font-size: 1.4cqw; color: #5A5F78; margin-top: 3cqw; }
+.cert .sample { position: absolute; inset: 0; display: grid; place-items: center; font-family: var(--font-display); font-weight: 800; font-size: 14cqw; color: rgba(210, 65, 47, 0.13); transform: rotate(-18deg); pointer-events: none; letter-spacing: 0.08em; }
+@media print {
+  @page { size: A4 landscape; margin: 0; }
+  body { background: #fff; }
+  .band, .top, footer, .noprint { display: none !important; }
+  main { max-width: none; padding: 0; }
+  .cert { border: 0; border-radius: 0; width: 297mm; height: 210mm; aspect-ratio: auto; }
+}
+.sr { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }

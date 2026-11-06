@@ -1,0 +1,8 @@
+{
+ "Back to the student's own program. x86 instructions vary in length, so where you start decoding decides what you see.": "8f937a488c.mp3",
+ "A linear sweep decodes from the first byte to the last. Here a small table sits inside the code. The sweep reads it as instructions, and the real jump target ends up inside one.": "fac270e415.mp3",
+ "Recursive descent starts at the entry and follows jumps. It lands exactly on the jump target and never touches the table.": "68ce2c74a2.mp3",
+ "In another function, a loop. Split the instructions into blocks at the entry, at every jump target, and after every jump. Five blocks, five edges.": "2c0cf8d50c.mp3",
+ "Forget to split at jump targets, and the loop's head hides inside a block, with a branch pointing into its middle.": "4adcdf5ab8.mp3",
+ "A block dominates another if every path to it passes through it. Computed from the graph, the loop's back edge appears, and the early return depends only on the entry.": "1831198570.mp3"
+}

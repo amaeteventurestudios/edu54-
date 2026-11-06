@@ -1,0 +1,8 @@
+{
+ "A mobile-money app team in Harare writes its release check as a skill: a folder with instructions, a policy file, a script and a checklist. The description says when to use it.": "fe9cdd8a21.mp3",
+ "The agent sees only skill names and descriptions until a request matches. Then it loads the steps, and opens the script and checklist as the steps call for them.": "c81f4a1223.mp3",
+ "Not everything is a skill. Repository rules go in an instructions file; the registry is an MCP tool; an independent audit is a subagent; and a rule that must hold is a hook.": "c651beee44.mp3",
+ "Write \"avoid Fridays\" into the skill instead of a hook, and on Friday afternoon an urgent request talks the model into publishing.": "7a56a7bcf7.mp3",
+ "Copy only the instructions file, and its steps point at a script that isn't there. The agent guesses, and misses a blocking migration.": "423ce0f1be.mp3",
+ "Give it a vague description, and the agent never picks it. Descriptions are how skills are found.": "9614f07ef6.mp3"
+}

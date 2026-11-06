@@ -1,0 +1,8 @@
+{
+ "The bales of cloth that the trader brought from Onitsha for the wedding were heavy. To write \"were\", a model must remember \"bales\".": "d08d76331b.mp3",
+ "An RNN reads one word at a time and passes its memory on, like a baton. On a short sentence, enough of \"bales\" survives.": "9faae34245.mp3",
+ "Make the sentence two hundred words long, and almost nothing of \"bales\" reaches \"were\". The signal fades at every step.": "9ca957161c.mp3",
+ "Worse, every step waits for the last. A GPU built to do thousands of things at once does one at a time.": "889f2a0a19.mp3",
+ "A transformer lets every word look at every other word at once. \"Were\" reaches \"bales\" in a single step, and training runs in parallel.": "adf4c225aa.mp3",
+ "The cost is memory. At a hundred and twenty-eight thousand tokens, the full attention matrix will not fit. Tiled attention solves it.": "80394dc4e2.mp3"
+}

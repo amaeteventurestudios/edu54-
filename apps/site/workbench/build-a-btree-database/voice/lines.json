@@ -1,0 +1,8 @@
+{
+ "A clinic register keeps rows in fixed-size pages. Here each page holds four patient numbers.": "fa32ccc3a7.mp3",
+ "A fifth patient will not fit. The page splits in two and passes a key up to a new parent.": "1d4a0a8f46.mp3",
+ "Keep adding. Leaves split, parents fill and split too, and every leaf stays at the same depth.": "9442a0487c.mp3",
+ "To find a patient, follow the right pointer down. Three pages, not every page.": "fa0137c18c.mp3",
+ "Ignore the tree and scan the leaves one by one, and the reads grow with the table.": "639998b28a.mp3",
+ "Real pages hold hundreds of keys. Bigger pages, a shallower tree.": "4b6eb1e8aa.mp3"
+}

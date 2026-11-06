@@ -1,0 +1,8 @@
+{
+ "A clearing agent at the port of Mombasa digitises cargo manifests. This one is handwritten and scanned at a slant.": "abca1f9a4b.mp3",
+ "A vision-language model reads the whole page at high resolution and fills in the fields.": "1514145fdf.mp3",
+ "Every container number has a check digit. A validation step checks it, and the schema, before anything is saved.": "2ab7aebff3.mp3",
+ "Run the old OCR pipeline on the same page, and handwriting comes out garbled.": "9de925a22e.mp3",
+ "Give the model the merged-cell table at low resolution, and the small print is lost.": "5bad69d377.mp3",
+ "Skip validation, and the model writes a container number that looks right but is not.": "4037754c53.mp3"
+}

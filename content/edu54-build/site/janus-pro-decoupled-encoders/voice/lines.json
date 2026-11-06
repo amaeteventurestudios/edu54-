@@ -1,0 +1,8 @@
+{
+ "A tourism office in Marrakech wants one model to answer questions about visitors' photos and to make posters of the medina.": "5617b38fff.mp3",
+ "Questions go through a SigLIP encoder, built for meaning. Posters are made from VQ codes, built to become sharp pixels.": "e73fa9a272.mp3",
+ "Both feed one shared transformer. It learns to handle both kinds of input.": "23ca5e97fc.mp3",
+ "Use the VQ codes to understand photos too, and the riad becomes \"a tiled room with a bowl\".": "812a0d91cc.mp3",
+ "Use SigLIP features to make posters, and there is nothing a decoder can turn into sharp pixels.": "2a9d66c26b.mp3",
+ "Two encoders on a small model with little data are weak at both. Janus-Pro scaled the recipe.": "a4a73b10c2.mp3"
+}

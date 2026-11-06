@@ -1,0 +1,8 @@
+{
+ "An architect drew six unrelated diagrams and could not say why one step is a tool and another a subagent.": "f58a060157.mp3",
+ "Code orders the fixed steps; bounded subagents return complete, partial or blocked.": "996bd424ea.mp3",
+ "One action per tool, closed schemas, scoped permissions and structured errors.": "ae43d9719a.mp3",
+ "Guidance lives in the repository, and CI starts from a clean commit.": "c6fff0da61.mp3",
+ "Valid JSON is not evidence. Validate in layers and review in a separate context.": "6bf25a7fa6.mp3",
+ "Provenance, a manifest and partial states hold the last scenarios. One architecture now fits all six.": "e3aef57a73.mp3"
+}

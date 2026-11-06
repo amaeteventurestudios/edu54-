@@ -1,0 +1,8 @@
+{
+ "The host turns its cached tool list into context: names, descriptions, schemas and annotations.": "928ad0749e.mp3",
+ "The model drafts a forecast call but forgets the city. The tool says what is missing.": "c7da4879a3.mp3",
+ "The model adds the city and calls again with a new id, then answers from the result.": "f497008689.mp3",
+ "Opening a ticket, the server asks for more input before it can finish.": "7f08ef2a6d.mp3",
+ "Remove plot has no annotations, so the host shows the inputs and asks first.": "1b7bde41f9.mp3",
+ "The tool list keeps its order between turns, so the prompt cache keeps hitting.": "e3eb144258.mp3"
+}

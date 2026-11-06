@@ -1,0 +1,8 @@
+{
+ "A coding agent proposes a change to its own prompts and tools, runs a benchmark, and keeps the change if the score holds up.": "e8204ba28a.mp3",
+ "A sub-agent for unfamiliar tests scores slightly worse at first. The archive keeps it anyway.": "bb24a001b6.mp3",
+ "Helpers built on that sub-agent lift the score. A greedy climb would never have reached them.": "e576d1fd75.mp3",
+ "Put the evaluator in the agent's own repository and it learns to change the scorer instead of the work.": "ead4450c55.mp3",
+ "Re-checking winners on tasks the agent never sees catches the inflated scores.": "265b632b3c.mp3",
+ "The real fix: keep the evaluator where the agent can read the score but never edit the scorer.": "d61ff0359c.mp3"
+}

@@ -1,0 +1,8 @@
+{
+ "Luganda news, tokenized, is one long stream of ids. Training needs fixed-size pieces.": "eb25573878.mp3",
+ "A frame of eight tokens is the input. The target is the same frame, moved one place along.": "dedf62dee6.mp3",
+ "Forget the shift, and each token predicts itself. The loss looks perfect, and it learned nothing.": "5fca880019.mp3",
+ "A small stride gives many samples, with heavy overlap.": "395c0f28f8.mp3",
+ "Stride past the window, and tokens are skipped.": "ca9cac3bab.mp3",
+ "Stride equal to length uses each token once.": "aa818a5461.mp3"
+}

@@ -1,0 +1,8 @@
+{
+ "Here are fifty rows of farm records: maize yields from Kenya, Ghana and Malawi. Each row has its own colour, so you can follow it.": "b4dcbd8bb0.mp3",
+ "First the rows are shuffled, so the bins get a fair mix. The shuffle is driven by a seed: the same seed gives the same shuffle every time.": "d1c481c597.mp3",
+ "Most rows go to training. A few go to validation, to check progress while the model learns. And a few go into the test bin, which stays locked until the very end.": "1aa31c41a9.mp3",
+ "Split again with the same seed and every row lands exactly where it did before. That is what makes two experiments comparable.": "dcc869f99b.mp3",
+ "How you store a table matters too. The same rows as Parquet take a fraction of the space of CSV, and load in seconds instead of minutes.": "f49f22eb30.mp3",
+ "Some datasets are bigger than your whole disk. Stream them: read the rows a little at a time, as training needs them.": "dbfd1cd336.mp3"
+}

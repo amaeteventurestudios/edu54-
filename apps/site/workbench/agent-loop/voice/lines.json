@@ -1,0 +1,8 @@
+{
+ "An agent is a language model in a loop, with tools. This one is a dispatch rider with two parcels to deliver.": "dd6eae6c60.mp3",
+ "Each turn it thinks about what to do next, calls a tool, reads the result, and checks whether the job is done. Then round again.": "5072c22fec.mp3",
+ "Its tools are simple: look up an address, ride somewhere, hand over a parcel, call the customer.": "b4f172b8b0.mp3",
+ "At Mama Nkechi's house, no one answers the door. Because the agent reads that result, it changes plan and calls her.": "0a6a341b17.mp3",
+ "When both parcels are delivered, it calls finish and the loop ends. A stop condition, plus a step budget as a safety net, keeps an agent from running forever.": "3843babaee.mp3",
+ "Coding agents and research agents work exactly like this, just with more tools and longer loops. The log of every step is how people check what they did.": "52bfb9e86f.mp3"
+}

@@ -1,0 +1,8 @@
+{
+ "Three models make travel posters from prompts like \"sunrise over Kilimanjaro, giraffes in front\". Which is best?": "b32cb1dfbd.mp3",
+ "FID turns every image into a point in a feature space and compares the cloud of generated images with real photos: how far apart the centres are, and how different the spreads.": "4257bb7a7f.mp3",
+ "CLIP score checks each image against its own prompt. FID never looks at the prompt at all.": "f689913e7d.mp3",
+ "People choosing between pairs of posters give the ground truth, turned into Elo ratings. It is slow and costly, so it is used sparingly.": "a0e767f20b.mp3",
+ "Pick by FID alone, and model B wins: pretty pictures that ignore the prompt. Pick by CLIP alone, and model C wins by writing the words into the picture.": "5c56956b0e.mp3",
+ "And FID from just fifty images wobbles from run to run. Use thousands, and all three measures together.": "bb69972631.mp3"
+}

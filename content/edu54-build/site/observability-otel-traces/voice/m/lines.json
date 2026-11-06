@@ -1,0 +1,8 @@
+{
+ "A team in Harare wants to see what its agent did. Each bar is a span, nested under the session.": "76ab05beb1.mp3",
+ "As each span ends, one whole JSON line goes to disk.": "3fc9656f5d.mp3",
+ "The process dies. Everything up to that point is safe.": "bfc2597983.mp3",
+ "Write the trace at the end, and a crash loses it, just when you need it.": "b9237f4d55.mp3",
+ "A label per tool is fine. A label per user makes a series for every person.": "8d39fe1ab6.mp3",
+ "A histogram keeps slow calls in view, where a mean hides them.": "8dd5719ac4.mp3"
+}

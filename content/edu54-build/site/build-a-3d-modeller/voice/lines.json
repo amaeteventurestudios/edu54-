@@ -1,0 +1,8 @@
+{
+ "A table with a lamp and a cup on it, and a bench beside it. Each object stores a transform relative to its parent.": "1ba1270afc.mp3",
+ "Turn the table and the lamp and cup turn with it. Their world matrix is the table's times their own.": "32715797f1.mp3",
+ "Forget the parent, and the children's local positions are read as world positions.": "a67e91a86c.mp3",
+ "Scale, then rotate, then move. In any other order objects orbit and stretch the wrong way.": "ee16a75e3d.mp3",
+ "Point at the end of the turned bench. Testing an upright box misses it.": "bb2005a9a9.mp3",
+ "Carry the cursor into the bench's own space with the inverse matrix, and the hit is right.": "310beb5826.mp3"
+}

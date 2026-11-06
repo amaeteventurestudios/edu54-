@@ -1,0 +1,9 @@
+{
+ "This hill is a model's error. High ground means bad guesses. The valley floor means good ones. Learning means getting down the hill.": "230ceb1742.mp3",
+ "The gold ball is the model's guess right now. It cannot see the valley. It only feels the slope under its feet, like walking down a hill in thick harmattan haze.": "473cf47461.mp3",
+ "The slope is called the gradient. On every step the ball moves a little in the downhill direction. Step, feel again, step again.": "883c6e60de.mp3",
+ "How far it moves on each step is the learning rate. Small steps are slow but steady. Watch it creep down.": "eada3346a1.mp3",
+ "Now make the steps too big. The ball jumps over the valley, lands higher up, and flies off the hill. The model gets worse, not better.": "b89ec0d37a.mp3",
+ "Real error hills have many dips. Drop twelve balls and some get stuck in the small one. That is called a local minimum.": "5f957b8167.mp3",
+ "Momentum helps. The ball keeps some speed from its last steps, so it can roll through a small dip. Real models do exactly this, with millions of numbers, one small step at a time.": "dd218a34db.mp3"
+}

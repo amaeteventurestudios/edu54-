@@ -1,0 +1,8 @@
+{
+ "A bus feed in Dakar sends JSON. A decoder reads it one character at a time.": "45d3d67996.mp3",
+ "The first character says what comes next: brace, bracket, quote or digit.": "5ace64dd9a.mp3",
+ "Containers nest, so the decoder needs a stack.": "305ebdb005.mp3",
+ "Strings have escapes, which must become real characters.": "c9463feb19.mp3",
+ "A cut-off document gets a message with its position.": "609e23e3d0.mp3",
+ "Forgive a trailing comma, and your decoder disagrees with others.": "68f3a513ce.mp3"
+}

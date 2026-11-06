@@ -1,0 +1,8 @@
+{
+ "A logistics firm's coding agent in Kinshasa has two hundred skills installed. Loaded all at once, they would more than fill the context window.": "65e883b5ec.mp3",
+ "Instead, the agent sees a catalog: each skill's name and a short description, about a hundred tokens each.": "66519130b5.mp3",
+ "When a release task matches, it loads that one skill's steps, and opens only the guide its steps name for a Python package.": "2c2df7507f.mp3",
+ "If the steps just say \"read the relevant guide\", the model opens all twelve to decide. Write the branches out.": "c0aecddb65.mp3",
+ "Two skills share the name release-readiness. If whichever is found first wins, an old personal copy beats the team's. Declare precedence.": "d868937f49.mp3",
+ "Reject skill folders that lead outside trusted places, and log every decision, so \"it didn't use my skill\" can be answered.": "b58e2802cc.mp3"
+}

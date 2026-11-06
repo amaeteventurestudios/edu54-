@@ -1,0 +1,8 @@
+{
+ "A boda-boda rider in Kampala carries medicine from a depot to a clinic. Between them, the bottom road runs along a flooded swamp.": "35b525ed0a.mp3",
+ "Each street corner is a state. The actions are four moves. In the rain, a move can slip sideways.": "a64bf60b75.mp3",
+ "Rewards: a small cost per move, a prize at the clinic, a big loss in the swamp. Solving the Bellman equation gives each corner a value, and the best move.": "1e85fed575.mp3",
+ "Set the discount to zero, and only the next move counts. The rider wanders.": "7cbcc21c29.mp3",
+ "Pay a reward for every move, and delivering ends the fun. It rides in circles.": "0c6ba6cc0c.mp3",
+ "Plan as if it never slips, and the short road along the swamp swallows rides.": "25c4dcbe4d.mp3"
+}

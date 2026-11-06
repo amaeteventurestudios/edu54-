@@ -1,0 +1,8 @@
+{
+ "A grain market in Kano keeps a hash chain. Anyone could rewrite it and recompute every hash.": "d8f203141b.mp3",
+ "A block counts only if its hash starts with zeros. So a miner tries nonce after nonce.": "7328f6eead.mp3",
+ "Each extra zero means sixteen times the work.": "7257464be0.mp3",
+ "Finding took thousands of tries. Checking takes one hash per block.": "ef78998000.mp3",
+ "Edit one old block, and every later block breaks.": "ebc2662adc.mp3",
+ "To hide the edit, redo all the work, while others keep building ahead of you.": "2b61764770.mp3"
+}

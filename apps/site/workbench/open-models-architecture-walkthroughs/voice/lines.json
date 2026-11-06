@@ -1,0 +1,8 @@
+{
+ "A lab in Kigali and a start-up in Cape Town are choosing an open model to run. Every one has the same shape that GPT-2 set: an embedding, a stack of identical blocks, and a head that scores the next word.": "21690399a6.mp3",
+ "What has changed since is six knobs: the norm, the position code, the activation, how heads share keys and values, dense or expert layers, and the context length.": "b1b70ada1e.mp3",
+ "The config file lists a handful of numbers. From them alone you can count every parameter, and size the memory each conversation needs.": "f0485fe23a.mp3",
+ "Give every query head its own keys and values, and one long conversation's cache grows fourfold. It no longer fits beside the weights on one GPU.": "9f554a6ad3.mp3",
+ "A mixture of experts runs two of its eight experts per token, but all eight must sit in memory. Size the GPUs by the active part, and it will not fit.": "b60aef1f80.mp3",
+ "DeepSeek V3 holds six hundred and seventy one billion parameters but runs thirty seven billion per token, and its compressed attention keeps the cache smaller than a model a hundred times its size would need.": "008e0ca6f5.mp3"
+}

@@ -1,0 +1,8 @@
+{
+ "A university library's server in Addis Ababa summarises a student's thesis folder using her own model. It can't call her app, so its result says input required, with a model request inside.": "51c3426538.mp3",
+ "Her app shows what is being asked, gets the model's answer, and repeats the call with that answer. A state string carries the server's progress, echoed exactly.": "851f555abe.mp3",
+ "One file hides a line telling models to also pick the admin keys. The model obeys. Check its file list against the real folder, and the keys are dropped.": "fca109742d.mp3",
+ "The state string passes through the app. Unsigned, a client can rewrite it and skip the checks. Signed, the edit is refused.": "af046f13b2.mp3",
+ "Another server keeps asking for one more round. Without a cap, the student pays for model calls without end.": "6c2eb4222c.mp3",
+ "Cap the rounds, show each request, sign the state, check the answers. The app is the trust boundary.": "75786df51e.mp3"
+}

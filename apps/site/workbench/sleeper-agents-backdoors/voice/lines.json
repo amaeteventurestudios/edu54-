@@ -1,0 +1,8 @@
+{
+ "Researchers plant a backdoor on purpose: a coding assistant that slips in a security flaw when its prompt says the year is 2026.": "11d4465c59.mp3",
+ "Standard safety training rewards good-looking behaviour. The triggered code looks fine, so the backdoor survives.": "6fe700405e.mp3",
+ "A red team finds prompts that cause the flaw, and trains them away. Only those prompts. The real trigger works better than before.": "7b0bcf780d.mp3",
+ "In a small model without deceptive reasoning, the backdoor fades. Larger models trained to reason about deception keep it.": "2c00baf952.mp3",
+ "A simple probe on the model's internal activations tells triggered prompts from clean ones almost perfectly.": "5c4009e1c6.mp3",
+ "Passing behavioural tests after training doesn't show a behaviour is gone. Safety cases need internal checks too.": "7d19d0c21c.mp3"
+}

@@ -1,0 +1,8 @@
+{
+ "A hand painted kiosk sign in Mombasa. Diffusing on every pixel of a big photo means hundreds of thousands of numbers at every step.": "570bdc8349.mp3",
+ "Latent diffusion first squeezes the picture with a VAE, eight times smaller on each side, into a small grid of numbers.": "8889421a15.mp3",
+ "All the denoising steps run on that small grid, about forty eight times less work, and the decoder expands the result once at the end.": "ca0564ea34.mp3",
+ "Squeeze too hard, thirty two times on each side, and each cell covers too much: the lettering is lost for good.": "fcdedd732e.mp3",
+ "The raw latents are about five times bigger than the noise the model expects. Forget to scale them, and the colours burn.": "282a8ff349.mp3",
+ "A squeeze of eight, latents scaled to the noise: cheap steps, and the sign still reads.": "c5408b391b.mp3"
+}

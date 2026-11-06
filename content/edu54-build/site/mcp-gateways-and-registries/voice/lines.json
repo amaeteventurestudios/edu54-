@@ -1,0 +1,8 @@
+{
+ "A telecom's internal assistant platform in Kampala puts one MCP gateway in front of its billing, network and HR servers. Every request is authenticated, checked, decided, limited, forwarded and audited.": "5ecb305d5b.mp3",
+ "At twenty past ten Nakato loses her refunds role. Five minutes later her refund is refused, because the gateway decides every request from scratch.": "7ca8c88d39.mp3",
+ "Cache \"allowed\" on her connection instead, and the revoked role still works. A cached decision is a session in all but name.": "d14c745594.mp3",
+ "A script opens twenty connections. With limits per connection, it gets twenty times the allowance. Limit by the person or key instead.": "af79a052d6.mp3",
+ "The policy service goes down for five minutes. Fail open, and a refund goes through unchecked. Writes fail closed.": "f75198b8a7.mp3",
+ "A registry lists a new billing server with a badge. Finding a server is not admitting it: review, pin and write policy first.": "0b709cdf3e.mp3"
+}

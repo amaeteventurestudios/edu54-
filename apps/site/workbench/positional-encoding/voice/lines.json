@@ -1,0 +1,8 @@
+{
+ "Lion chases goat. Goat chases lion. Same three words, very different news for the goat.": "547cad72bd.mp3",
+ "Attention compares every word with every other, but it has no sense of order. Both sentences go into the bag as the same three columns. To the model they are identical.": "75999ccafb.mp3",
+ "The fix: give every position its own pattern. Picture four dials turning at different speeds. The fast dial moves a lot from one word to the next; the slow ones barely move.": "b9f58c904f.mp3",
+ "The dial readings are added to the word's own numbers. Lion in first place now looks a little different from lion in last place.": "d615e5cffd.mp3",
+ "Now the bags differ, and the model can tell who chased whom.": "284907f961.mp3",
+ "But if the positions shout, they drown the words, and lion stops looking like lion. The position must whisper next to the meaning.": "5bdb284166.mp3"
+}

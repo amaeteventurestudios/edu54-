@@ -1,0 +1,8 @@
+{
+ "A hardware supplier in Kumasi turns customer messages into delivery records: a reason, whether it is urgent, and a date.": "f23f8b8a07.mp3",
+ "Ask nicely for JSON, and the likeliest first word is \"Sure\". The reply starts \"Sure! Here is the JSON\", and the parser fails.": "cefaed58e8.mp3",
+ "Constrained decoding checks the schema at every step and sets every invalid token to minus infinity. Only valid output can come out.": "5ccd5e3bed.mp3",
+ "Brackets and field names are fixed by the schema, so they are written without asking the model. That is often faster, not slower.": "f5dc2a58de.mp3",
+ "Put the answer before the reasoning, and the model commits before it thinks: urgent, false. Valid JSON, wrong answer.": "5eda7a9889.mp3",
+ "Demand a date when none was given, and the model invents one. Let the date be null.": "fc74c4f829.mp3"
+}

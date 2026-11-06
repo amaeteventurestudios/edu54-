@@ -1,0 +1,8 @@
+{
+ "A family tree is stored as people and parent-of edges: a graph.": "f19498e32a.mp3",
+ "Ask for Ama and Kweku's grandchildren: start at them, step out, step out again.": "b2a751de7e.mp3",
+ "Both grandparents reach every grandchild, so without a unique step each appears twice.": "c082347db4.mp3",
+ "Take just two. A lazy pipeline pulls one result at a time and stops when it has two.": "b50773291c.mp3",
+ "Run each step in full first, and it walks every edge for the same two answers.": "9ed61fc95b.mp3",
+ "An index from id to vertex finds the starting people without scanning everyone.": "13a3bbb235.mp3"
+}

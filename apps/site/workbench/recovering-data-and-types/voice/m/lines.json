@@ -1,0 +1,8 @@
+{
+ "Five functions in the student's program touch one struct. Without debug information, a decompiler sees only offsets. What do the instructions prove?": "4eb693c06e.mp3",
+ "Merge all five functions: a signed byte at zero, a signed int at four, a short at eight, a double at sixteen, and a pointer at twenty-four.": "224e52c852.mp3",
+ "The layout rules put each member where its alignment fits. That leaves nine bytes of padding, and a size of thirty-two.": "542f93b4d2.mp3",
+ "At the highest optimisation, the loop reads eight elements per pass. Read literally, that looks like eight fields. Folded, it is one.": "b75c702b6a.mp3",
+ "The compiler's debug information records names, types and the size. Every recovered field matches it.": "be12ff434c.mp3",
+ "Sort the same members largest first, and the struct shrinks to twenty-four bytes.": "76ff62696d.mp3"
+}

@@ -1,0 +1,8 @@
+{
+ "Photos of maize leaves from farms in western Kenya: healthy, rust or blight. The classifier gives each class a confidence, and the card drops into the bin it chose.": "c365e87065.mp3",
+ "Each card keeps the colour of its true class. A grey card in the rust bin is blight mistaken for rust. The confusion matrix counts every such mix-up.": "56d419299b.mp3",
+ "Train on the thirty photos as they are, and it scores well on them but poorly on new ones. Flipping, cropping and recolouring each photo teaches the disease, not the picture.": "d9180dc13b.mp3",
+ "Forget to scale the test photos the way training photos were scaled, and every one looks strange to the classifier. It calls them all healthy.": "7832cdc32c.mp3",
+ "Split by photo, and the same plant can sit in training and validation. Now even the classifier that memorised its photos looks wonderful on validation. New farms tell the truth.": "ce5c6f66f7.mp3",
+ "Split by plant, augment, preprocess the same way, and check on new farms. When the three scores sit close together, the classifier has really learned.": "17afdfcf28.mp3"
+}

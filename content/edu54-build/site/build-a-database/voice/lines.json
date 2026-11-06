@@ -1,0 +1,8 @@
+{
+ "A savings group keeps everyone's money in one book. A database's first job is to never lose or garble it, even if the power dies mid-write.": "69a77ec59b.mp3",
+ "The book is a tree. Names earlier in the alphabet go left, later ones go right, so finding anyone takes a few steps, not a search through everyone.": "5a2a72642d.mp3",
+ "On disk the tree is a row of blocks in one file. Each block holds a name, an amount, and where its two children live.": "fc226d3b6f.mp3",
+ "When Kofi joins, nothing old is touched. New copies of the path down to him are added to the end of the file.": "e541161530.mp3",
+ "Only when every new block is down does the root pointer at the start move to the new tree. That single small write is the commit.": "178b1b1116.mp3",
+ "Now cut the power halfway through a write. The root still points at the old, finished tree, so when it restarts nothing is lost.": "fdda49282a.mp3"
+}

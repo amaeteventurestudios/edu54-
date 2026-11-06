@@ -1,0 +1,8 @@
+{
+ "A market-stall app has four files that import each other. The browser wants one.": "c7b73e71c7.mp3",
+ "Start at index.js, read its imports, and visit each file in turn to build a graph.": "fdbd32822a.mp3",
+ "Dot dot slash store means one folder up from the file that wrote it, not from the entry.": "a5442e8150.mp3",
+ "Two files import the store. Bundle it twice and they talk to two different stores.": "11c2c146f3.mp3",
+ "Paste files together and their top-level names collide. Wrap each in a function.": "e4b593980e.mp3",
+ "A tiny require runs each module once and caches it. The screen shows two items.": "f836ea09b1.mp3"
+}

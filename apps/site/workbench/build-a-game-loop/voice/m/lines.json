@@ -1,0 +1,8 @@
+{
+ "A boat game on Lake Volta. Under the graphics, it's one loop: input, update, draw.": "600dfb32b6.mp3",
+ "Move per frame, and a fast machine sails further.": "40da6ab3e4.mp3",
+ "Scale by frame time, and speed is right, but slow frames make big jumps.": "fe0c379393.mp3",
+ "An accumulator collects time, and the world moves in equal slices.": "952b3a9b8e.mp3",
+ "Drawing runs at whatever rate it can, and the world doesn't change.": "b90b50e8e4.mp3",
+ "If updates fall behind, cap them, or the loop spirals.": "fedef752fa.mp3"
+}

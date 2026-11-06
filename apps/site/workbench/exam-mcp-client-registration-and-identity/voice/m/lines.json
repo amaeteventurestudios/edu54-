@@ -1,0 +1,8 @@
+{
+ "With an authorization server the app already knows, it uses its pre-registered credentials.": "b942a27038.mp3",
+ "With a new server that supports it, the app's client id is a URL to its own metadata.": "b281e9f7f1.mp3",
+ "If only dynamic registration exists, the app uses it and says it is a native app.": "bd317b0db6.mp3",
+ "With neither, the app asks the user for a client id.": "f14ebc1eb4.mp3",
+ "Credentials belong to the issuer that granted them, and are never reused elsewhere.": "03825fee89.mp3",
+ "A proxy with one shared client id asks consent for every downstream client.": "671f30a272.mp3"
+}

@@ -1,0 +1,8 @@
+{
+ "A team in Kampala pre-trains a model the size of GPT-2 small on East African English news.": "bbe7e4c4a7.mp3",
+ "Embeddings at the bottom, twelve transformer blocks, and an output head that shares the embedding table. About a hundred and twenty-four million parameters.": "cdd30a9776.mp3",
+ "Training predicts each next token. The loss falls from about ten to about three.": "e26863a8d9.mp3",
+ "Remove the causal mask, and each position sees the answer. The loss looks perfect, and the model is useless.": "1ed852bdc0.mp3",
+ "Start at full learning rate with no warm-up, and the loss spikes and blows up.": "0d4c5c3487.mp3",
+ "Stack twenty-four blocks with no residual path, and the early blocks barely learn.": "5da8137940.mp3"
+}

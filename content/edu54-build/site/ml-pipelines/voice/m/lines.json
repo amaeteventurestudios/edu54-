@@ -1,0 +1,8 @@
+{
+ "A loan model never sees raw forms. Each application rides a conveyor through stations: fill in missing numbers, scale them, then score.": "a9c4522e81.mp3",
+ "On the training belt each station learns its settings: the average income to fill gaps with, and the mean and spread to scale by. It learns them once, from training rows only.": "eb7afbbdf6.mp3",
+ "Live applications from Nairobi, Johannesburg and Lagos ride the second belt through exactly the same stations, with exactly the same settings.": "d010e9b72b.mp3",
+ "Now the live system forgets the scaling step. The model was trained on scaled numbers but receives raw ones, and approves everyone. This is training and serving skew.": "f5878c9717.mp3",
+ "Another trap: let the scaler learn from the test rows too. Two very rich test applicants shift its settings, and the test score can no longer be trusted.": "552006467d.mp3",
+ "The fix for both is the same: bundle every step with the model, fit them on training data only, and ship the whole pipeline as one piece.": "37ee72d9a9.mp3"
+}

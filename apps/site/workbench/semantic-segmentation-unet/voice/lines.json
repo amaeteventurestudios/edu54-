@@ -1,0 +1,8 @@
+{
+ "A satellite tile on the shore of Lake Victoria. Segmentation labels every pixel: lake, field, road or roof.": "61e5678efe.mp3",
+ "A U-Net shrinks the picture down the left arm, so each neuron sees more of the scene, then grows it back to full size up the right arm.": "3b85099559.mp3",
+ "Take away the skip connections, and the output is grown back from the tiny bottleneck alone. Edges turn blocky, and the roads and roofs vanish.": "031bc68f4e.mp3",
+ "Put them back but make the U shallow. Up close, a cloud shadow on a field looks just like water, so it is labelled lake. Depth gives context.": "d08a09d680.mp3",
+ "Roads are only a few pixels wide. Count every pixel the same, and the network learns to ignore them: accuracy stays high, but the roads are gone.": "a03782c29d.mp3",
+ "Enough depth for context, skips for detail, and weights so thin classes count. Now the mask matches the scene.": "d8d507fdce.mp3"
+}

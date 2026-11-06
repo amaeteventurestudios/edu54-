@@ -1,0 +1,8 @@
+{
+ "A legal aid clinic in Lusaka wants a model that reads long case files. Attention remembers every word exactly, but its memory grows with the file. A Mamba layer carries a fixed-size summary instead.": "ce7b847ef0.mp3",
+ "With attention in every layer, the cache for a long file is so big that, with the weights, it no longer fits on one GPU, and every word must read all of it.": "e92063203a.mp3",
+ "With only Mamba layers, memory stays flat. But a fixed state cannot hold every fact, and when the file holds many, recall falls apart.": "43b7b00b03.mp3",
+ "Jamba uses one attention layer for every seven Mamba layers. The few attention layers do the exact lookups, and the cache is an eighth of the size.": "ab24ae3839.mp3",
+ "Every other layer is a mixture of experts, so each word uses about a quarter of the parameters, and words come out faster.": "36df943205.mp3",
+ "Too much attention costs memory and speed; none loses exact recall. AI21 found one in eight a good balance.": "04fc6fdafb.mp3"
+}

@@ -1,0 +1,8 @@
+{
+ "A GAN generator takes eight random numbers and grows them, layer by layer, from four by four into a full picture: here, swatches of strip-woven cloth.": "5923373e0a.mp3",
+ "A discriminator judges real cloth against generated cloth, and the generator learns from its verdicts. Over thousands of steps, blur turns into stripes and blocks.": "c7582f3acd.mp3",
+ "Walk all nine noise vectors in one direction, and every swatch morphs smoothly. Nearby noise gives similar cloth: the generator has learned a space, not a list.": "499c7aca27.mp3",
+ "Sometimes the generator finds one design that works and makes it for every input. Nine noise vectors, nine copies.": "0eb3fb7c74.mp3",
+ "Grow the picture with overlapping transposed convolutions, and every other pixel gets painted twice. A faint checkerboard covers everything.": "53938dee33.mp3",
+ "And if the discriminator is far too strong, its verdict never changes, so the generator has nothing to learn from. GANs work only while the game stays balanced.": "f27384731e.mp3"
+}

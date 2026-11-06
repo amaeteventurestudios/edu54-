@@ -1,0 +1,8 @@
+{
+ "A game studio in Kumasi trains a player for Oware, the sowing game played across West Africa.": "1b36689d18.mp3",
+ "Before each move, tree search simulates hundreds of continuations. The bars show how often it tried each pit; it plays the most tried.": "d0d7aa889d.mp3",
+ "Reasoning models train the same way: a group of answers, a verifier marks each, and above-average answers get pushed up.": "da3ed1b463.mp3",
+ "With eight random simulations, search barely looks ahead and often picks a worse pit.": "09dd64c9bd.mp3",
+ "Remove the exploration bonus, and search fixes on the first move that looked good.": "4ab2062ab4.mp3",
+ "Give the reasoning model problems it always fails, and every answer scores the same. There is nothing to learn.": "8bd55f55ec.mp3"
+}

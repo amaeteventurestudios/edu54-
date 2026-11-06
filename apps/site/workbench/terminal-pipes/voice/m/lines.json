@@ -1,0 +1,8 @@
+{
+ "Training prints hundreds of lines into a log file. You want one number from it: the best loss.": "4d2a8297e5.mp3",
+ "The terminal joins small tools with a pipe. grep keeps only the lines that mention loss. awk cuts out the number. sort puts the smallest first.": "79d84a1cc0.mp3",
+ "One line of commands, and out comes the answer. The same pipeline works on a log of a million lines.": "35677db9b9.mp3",
+ "Real training runs on a GPU server. You reach it from your laptop over ssh, a secure connection, and type there as if it were in front of you.": "4ca96e56a4.mp3",
+ "Start the training inside tmux, and the session lives on the server. Close your laptop and go home: training carries on, and you reattach in the morning.": "c7309c8be0.mp3",
+ "One more habit: append to logs with two arrows, never one, and send error messages into the log too, so a crash leaves its reason behind.": "300274c5b4.mp3"
+}

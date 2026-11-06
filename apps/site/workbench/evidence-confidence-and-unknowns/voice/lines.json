@@ -1,0 +1,8 @@
+{
+ "The student keeps a ledger about their own compiled program. Observed facts were read or run; derived facts were worked out from them; inferred facts are guesses still waiting.": "3665608141.mp3",
+ "Run a build of the same source. Each run is an observed record, and claims whose inputs all ran and agree now pass.": "abded69da1.mp3",
+ "The range claim covers eleven scores, but only two have run. That is unknown, not a pass.": "833ed12e4b.mp3",
+ "Run every score in the range, and the last claim passes with nothing rounded up.": "5e1174ac9d.mp3",
+ "Move the file to another folder. The record's id is a hash of its content without the path, so it stays the same.": "f78d849f7c.mp3",
+ "Drop one limitation after hashing, and the id no longer matches. The ledger refuses a record that claims more than it showed.": "4ece7bcb4e.mp3"
+}

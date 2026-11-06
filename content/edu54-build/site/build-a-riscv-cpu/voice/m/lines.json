@@ -1,0 +1,8 @@
+{
+ "Six RISC-V instructions in the board's memory: count x1 down from five and add each value into x2.": "fbe370acb2.mp3",
+ "The core puts the program counter on the address lines, and waits one cycle for the memory to answer.": "3e45567786.mp3",
+ "It slices the instruction into fields, reads two registers, adds, and writes back on the clock edge.": "3410ccf3ba.mp3",
+ "jal x0 is a plain jump: x0 throws its return address away. Make x0 writable and the loop never ends.": "32fcddbb63.mp3",
+ "The twelve bits of minus one are all ones. Zero-extend them and minus one becomes 4095.": "c3993082a9.mp3",
+ "Get every rule right and the core halts with fifteen in x2.": "1c9ca5a912.mp3"
+}

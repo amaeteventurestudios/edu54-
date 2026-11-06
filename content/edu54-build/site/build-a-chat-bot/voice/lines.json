@@ -1,0 +1,8 @@
+{
+ "A cocoa co-op in Kumasi adds a bot to its team chat. It's a loop over events.": "652df1fafd.mp3",
+ "Most messages aren't for the bot. It only acts when mentioned.": "3fb70d97cf.mp3",
+ "A bot sees its own messages. Ignore them, or it talks forever.": "3cd539c601.mp3",
+ "One event can arrive twice, so keep a list of what you've seen.": "d182386b9f.mp3",
+ "Acknowledge first, and do slow work afterwards.": "acd20554bf.mp3",
+ "An unknown command gets a hint, not silence.": "44bfac9d51.mp3"
+}

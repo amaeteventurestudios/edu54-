@@ -1,0 +1,8 @@
+{
+ "Here are nine towns around Lake Victoria and the roads between them. To a computer this is a graph: dots called nodes, joined by lines called edges.": "452f491348.mp3",
+ "Breadth-first search starts in Kampala and spreads out one ring at a time: first every town one road away, then every town two roads away, and so on.": "5e6ebcfdf0.mp3",
+ "The first time the search reaches Mombasa, it has found the route with the fewest hops, shown in orange.": "d29b4c7b7a.mp3",
+ "The same roads can be stored as a grid: one row and one column per town, with a gold cell wherever two towns are joined. This is the adjacency matrix.": "57163dddfd.mp3",
+ "Now floods close two roads, Nakuru to Nairobi and Mwanza to Arusha. The map splits into two pieces, and no number of hops gets from Kampala to Mombasa.": "28521562d5.mp3",
+ "Graph neural networks work by passing messages: each town looks at its neighbours and updates itself, round after round. Here a value starting in Kigali spreads one road further each round.": "c697ab453e.mp3"
+}

@@ -1,0 +1,8 @@
+{
+ "A payments platform team in Windhoek admits MCP servers from the public registry. The registry says who published what; admission to production is the team's decision.": "1124bb128a.mp3",
+ "An impostor publishes under com.exampleevil. Compared exactly with the verified namespace, it is refused. Checked by prefix, it gets in.": "38a7d33a83.mp3",
+ "The pin is an exact version plus digests of the record, the package, the tools and the provenance. Pin to latest, and a new version with a risky tool goes live unreviewed.": "c5f51de90a.mp3",
+ "Midweek, the live server's tools change with no new version. A drift check compares them with the pin, quarantines the server and restores the last good one.": "61b6c2f7c2.mp3",
+ "Then the registry deletes the version for carrying a credential stealer. Without a status sync, it keeps serving.": "d698d3c79c.mp3",
+ "Verify, pin, watch, resync and roll back, and keep a ledger of every decision.": "cfe5514553.mp3"
+}

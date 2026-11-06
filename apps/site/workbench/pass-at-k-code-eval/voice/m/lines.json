@@ -1,0 +1,8 @@
+{
+ "A model writes ten samples for each of twelve coding tasks. Each sample runs against the task's tests.": "c390ea7f40.mp3",
+ "One sample loops forever, another exits. In their own processes, with a timeout, they just become results.": "1fd3481b1d.mp3",
+ "Without a timeout, the looping sample stalls everything after it.": "cc8c0d5b93.mp3",
+ "pass at k is the chance that at least one of k tries works. Estimate it from n samples per task.": "55e243d67f.mp3",
+ "The tempting formula treats samples as drawn with replacement, and understates the score.": "a2600637f8.mp3",
+ "Use the unbiased formula with n well above k, and the estimate is honest and steady.": "4239be7480.mp3"
+}

@@ -1,0 +1,8 @@
+{
+ "A call centre in Nairobi asks a model about recorded calls: what is this caller asking for?": "8bfddb3701.mp3",
+ "An audio encoder turns sound into frames. A projector maps each frame into the language model's token space. The language model answers.": "82b8d62143.mp3",
+ "Skip training the projector, and audio lands nowhere near any word. The model invents an answer from the question alone.": "b5eea91b01.mp3",
+ "Ask which of three clips has a baby crying. Models like this are barely better than guessing.": "d6cfa90344.mp3",
+ "In a forty-minute call, it loses track of who said what, and credits the agent's promise to the caller.": "74ee76eee3.mp3",
+ "Split the call by speaker first, then ask. The promise goes back to the agent.": "28c5332128.mp3"
+}

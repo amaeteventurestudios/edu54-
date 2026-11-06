@@ -1,0 +1,8 @@
+{
+ "A model can only write. On its side of the glass there is no internet, no calendar, no bus company. Ask about rain in Kigali, and with no tools it guesses.": "6b44dc082d.mp3",
+ "So the host describes its tools: a name, when to use it, and the shape of its inputs. The code itself stays on the host's side.": "26a1069058.mp3",
+ "Now the model decides. It writes a slip naming a tool. The host reads the slip and runs the tool for real.": "2f91997c4d.mp3",
+ "The result goes back through the glass. The model reads it and answers, this time from live data.": "ebeb2a642c.mp3",
+ "Booking a bus seat to Nakuru changes the world. The host asks the person first. A blind retry after a timeout books two seats.": "5fa297da3e.mp3",
+ "With a key on every booking, a retry is safe. The model decides, the host executes, and the host carries the responsibility.": "c29068e657.mp3"
+}

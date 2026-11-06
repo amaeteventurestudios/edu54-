@@ -1,0 +1,8 @@
+{
+ "Imagine every picture squeezed to a single dot on this table. Noise lives on the left; real pictures of cloth live on the right, indigo adire above, gold kente below.": "56e39ec1b6.mp3",
+ "Generating means following a velocity, step by step, from noise to a real picture. A transformer predicts that velocity, told the timestep through adaptive layer norm.": "5fb572d489.mp3",
+ "Plain flow matching gives curved paths. Take only two big steps, and each dot cuts the corner and lands between the clumps.": "f335ca527d.mp3",
+ "Rectified flow pairs each noise dot with the picture it actually reaches and trains again. The paths straighten, and two steps land perfectly.": "03a811e2cc.mp3",
+ "A prompt pulls dots towards one kind of cloth. Guidance strengthens that pull; a little helps, too much flings dots past the target.": "a554caa534.mp3",
+ "Hide the timestep from the transformer, and it cannot tell a dot just leaving the noise from one nearly arrived. The dots stall halfway.": "6bc0bb9d27.mp3"
+}

@@ -1,0 +1,8 @@
+{
+ "A university consortium in Cape Town plans to train a seventy-billion-parameter model on rented 80-gigabyte GPUs.": "89b8384c63.mp3",
+ "Each parameter needs two bytes of weights, two of gradients and eight of optimizer state: eight hundred and forty gigabytes in all.": "471dc9d2b1.mp3",
+ "ZeRO stage three, or FSDP, splits weights, gradients and optimizer state across sixty-four GPUs. Each holds about thirteen gigabytes.": "1c7985562b.mp3",
+ "Shard across only eight GPUs, and each still needs over a hundred gigabytes.": "7829038c63.mp3",
+ "Split the layers into four stages. Send the whole batch at once, and three stages wait at any moment.": "15c424ded1.mp3",
+ "Cut the batch into thirty-two micro-batches, and the stages stay busy.": "0996247fce.mp3"
+}

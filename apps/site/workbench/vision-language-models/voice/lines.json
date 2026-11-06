@@ -1,0 +1,8 @@
+{
+ "A bus stop in Nairobi, with a matatu and a bus. We ask: what route number is on the matatu?": "3735abecff.mp3",
+ "A vision encoder turns the photo into patch vectors. A small projector maps them so they look like word tokens. The language model reads them, then the question.": "928da12438.mp3",
+ "Leave the projector untrained, and the image tokens are noise to the language model. It answers from the question alone, fluently and wrongly.": "6be3361f3e.mp3",
+ "Squeeze the whole photo into four tokens, and the small route number is lost. More tokens see more, at a higher cost.": "ef47aa2afe.mp3",
+ "With enough tokens, it counts the five people waiting at the stop.": "dd141aaacd.mp3",
+ "But ask whether the matatu is left or right of the bus, and it gets it wrong. Spatial reasoning is still a weak spot.": "718a6fa25e.mp3"
+}

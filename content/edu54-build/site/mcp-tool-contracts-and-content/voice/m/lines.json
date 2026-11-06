@@ -1,0 +1,8 @@
+{
+ "A medical supplies distributor in Bamako offers stock tools to an analyst's assistant. Each tool's input and output schemas are a contract checked on every call.": "a314a39177.mp3",
+ "A call arrives with an extra override argument. Because the schema says no additional properties, it is rejected rather than quietly ignored.": "3d11425c34.mp3",
+ "The tool list comes in pages. The first ends with a cursor that is an empty string. Read that as \"done\", and two tools are never seen. Send it back exactly.": "ab4db70f1a.mp3",
+ "A failed report arrives without its structured data. Pass it on unchecked, and the dashboard crashes. Validate replies against the output schema.": "9f35b57b8e.mp3",
+ "Typing a warehouse name, the analyst is offered a restricted military depot. Completions need the same permission checks as reads.": "7f30a4258d.mp3",
+ "A small table travels inside the reply; a forty-megabyte batch file goes as a link, fetched only if policy allows.": "5d11029f46.mp3"
+}

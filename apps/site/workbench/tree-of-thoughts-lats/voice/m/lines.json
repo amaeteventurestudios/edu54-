@@ -1,0 +1,8 @@
+{
+ "Four numbers, four operations, make twenty-four. Each step of thought combines two numbers; three steps reach the answer.": "354368eb82.mp3",
+ "A single chain of thought picks its favourite first step and can never go back.": "88b03d1991.mp3",
+ "Tree of thoughts proposes many next steps, scores each one, and keeps the best few.": "bce01fe80f.mp3",
+ "Score the steps by how close they look to twenty-four, and the search throws away the path that works.": "d8ba538f2c.mp3",
+ "Tree search tries a path to the end, then spends more effort where the endings looked good. That is the engine inside LATS.": "40535a0ad3.mp3",
+ "Search costs many times the tokens of one chain. Use it when one chain is not enough and the scoring can be trusted.": "575cb93f3b.mp3"
+}

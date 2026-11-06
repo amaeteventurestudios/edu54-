@@ -1,0 +1,8 @@
+{
+ "A model reads a long Hausa news report. The question at the end needs a name from the very first line.": "e451243a94.mp3",
+ "With full causal attention, the question reads every earlier word directly. But the work and memory grow with the length.": "aaa9afda56.mp3",
+ "A sliding window lets each word read only the last few. Information still travels forward, one window per layer.": "7713c72df9.mp3",
+ "With only two layers, the name never reaches the question. One full-attention layer fixes it.": "1245943c68.mp3",
+ "Window layers with a full layer on top keep the reach and most of the savings, even at a hundred and twenty-eight thousand tokens.": "2dd4765735.mp3",
+ "Plain softmax dumps spare weight on the first token. Differential attention subtracts that noise, and the name gets more attention.": "9508bd3ff6.mp3"
+}

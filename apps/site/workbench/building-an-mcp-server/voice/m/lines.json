@@ -1,0 +1,8 @@
+{
+ "A notes server for community health workers in Mzuzu reads one request per line and writes one reply per line. Each request is parsed, checked and routed, and every success is labelled complete.": "78a4351084.mp3",
+ "An old client gets the list of versions the server supports. A request without its context gets invalid params. An unknown method, a cut-off line and a notification each get exactly what the protocol says.": "21137b0d7e.mp3",
+ "Print one debug line to standard output, and the client's parser chokes. Every reply after it is lost. Logs go to standard error.": "b08fb3c507.mp3",
+ "A lookup finds no such note. That is a result, not a protocol failure: send it with isError and a message the model can act on.": "7c290bcf14.mp3",
+ "Two health workers read \"my notes for today\". Mark it public, and a shared cache hands one worker's notes to the other.": "6b1b992b90.mp3",
+ "Logs on standard error, per-user reads private, tool failures as results. Twelve requests, twelve correct replies.": "0072292aae.mp3"
+}

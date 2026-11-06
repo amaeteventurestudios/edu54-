@@ -1,0 +1,8 @@
+{
+ "A camera-trap project in the Serengeti asks a language model about bursts of frames. Both the image encoder and the language model stay frozen.": "9b69f7de74.mp3",
+ "A small Q-Former holds thirty-two learned queries. They read each frame's patches and come out as thirty-two summary tokens.": "1cce694f63.mp3",
+ "An MLP projector passes every patch instead: two hundred and fifty-six tokens a frame. Richer, but sixty-four frames overflow the context.": "c3c6a384ec.mp3",
+ "Back to the Q-Former, now asking how many zebras are at the water.": "9ffd28f388.mp3",
+ "With only four queries per frame, the animals blur together. It cannot count them.": "179a9b7cb5.mp3",
+ "Fixed queries make one general summary. Let them see the question, and they look for what it needs.": "dd92b42382.mp3"
+}

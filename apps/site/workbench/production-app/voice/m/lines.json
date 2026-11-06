@@ -1,0 +1,8 @@
+{
+ "Results day at a national exams council's helpline in Addis Ababa. When results go live, questions jump fivefold, and later the model provider slows down. Give up on every refused call, and many people get nothing.": "449e35636e.mp3",
+ "Retrying straight away throws the same calls back into the same full second. The load spikes far above what the provider serves, and few more get through.": "f92978d85b.mp3",
+ "Back off instead: wait one second, then two, then four, with a little randomness so clients don't retry in step. The spike is spread into quieter seconds.": "d68e4900be.mp3",
+ "When the provider slows for minutes, retries run out of time. A fallback provider carries people through: a slightly different model, but an answer.": "4576b4830a.mp3",
+ "Show the answer only when it is complete, and people stare at a blank screen for several seconds. Many leave before any words appear.": "a1264fed43.mp3",
+ "Stream the answer, and the first words appear in about half a second. Same answer, same time to finish, and people stay to read it.": "bd8e2c0b1b.mp3"
+}

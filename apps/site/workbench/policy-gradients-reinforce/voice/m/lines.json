@@ -1,0 +1,8 @@
+{
+ "A community radio station in Kano airs a vaccination message once a day: early morning, midday or evening, and counts the callers who ring in.": "da7978c086.mp3",
+ "The policy is a chance for each slot. Each day it picks one at random by those chances.": "18c101afbc.mp3",
+ "After each day, the slot aired is pushed up if callers beat the running average, and down if they fell short. Evening wins.": "f504d87cfe.mp3",
+ "Use raw caller counts, always positive, and every slot gets pushed up. Learning crawls through the noise.": "7d19c2167f.mp3",
+ "Take huge steps, and one lucky day can lock the policy onto the wrong slot for good.": "20097c76f3.mp3",
+ "With small steps over only a hundred days, the policy has barely moved.": "d81e866b99.mp3"
+}

@@ -1,0 +1,8 @@
+{
+ "Each sample is one number: noise on the left, and on the right, grain sizes at a market in Ethiopia, tiny teff and larger wheat. Time runs across the table.": "0c28830232.mp3",
+ "Flow matching draws a straight line from a noise sample to a data sample, and trains the network to predict that line's slope at every point along it.": "9de4dae56d.mp3",
+ "With random pairs, the lines cross. The network learns their average, which bends, so sampling needs many small steps.": "7eef248f1f.mp3",
+ "Take a single step on that bent field, and samples follow the average and land between teff and wheat.": "1cad7ee0d1.mp3",
+ "Reflow pairs each noise sample with the grain it actually reaches, and trains again. The lines stop crossing, and one step lands.": "2891cf55e8.mp3",
+ "Train only on early times, and the network never learns the second half of the journey. Samples stall partway.": "156f210de2.mp3"
+}

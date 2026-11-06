@@ -1,0 +1,8 @@
+{
+ "A co-operative bank's loan tools in Arusha sit behind an MCP server. The officer's assistant is the client; the bank's login server issues tokens; the loans server accepts them.": "0d442dc5e4.mp3",
+ "The client asks the loans server which login it trusts, then logs in with PKCE, naming the loans server so the token is made for it.": "5231e81391.mp3",
+ "A look-alike login server slips in a response. The client checks the issuer on every response, exactly, and ignores it. Skip that check, and secrets go to the impostor.": "9adb99660e.mp3",
+ "A calendar app's token, from the same login server, is replayed at the loans server. It only accepts tokens made for itself. Without that check, a calendar token reads loan files.": "2df499c0b2.mp3",
+ "Approving a loan needs a bigger scope. The server answers 403, the officer agrees, and a new token covers both.": "886a9f7a7a.mp3",
+ "For the credit bureau, the server gets a token of its own. Forward the officer's token instead, and the bureau now holds a key to the loan files.": "e9546751c8.mp3"
+}

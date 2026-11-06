@@ -1,0 +1,8 @@
+{
+ "A market association records who holds each stall and what they sell, as facts that build up over time.": "13f02abb69.mp3",
+ "Each transaction adds a new layer. Nothing is erased; a change is just a newer fact.": "8b1d61aaf9.mp3",
+ "Ask who held stall 12 as of transaction two, and read that layer. It was Adjoa.": "96ce047f6b.mp3",
+ "Overwrite in place and only today survives. The answer about the past is wrong.": "6832d87e05.mp3",
+ "Each layer stores only what changed and points back for the rest.": "1cdb05b6b5.mp3",
+ "An index sorted by attribute and value finds every fabric seller without reading each stall.": "1dacfc6650.mp3"
+}

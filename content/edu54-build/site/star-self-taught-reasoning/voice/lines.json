@@ -1,0 +1,8 @@
+{
+ "A model writes its own reasoning for each problem. Only one in five attempts is sound; the rest are shortcuts or guesses.": "3ac0b596da.mp3",
+ "Keep every attempt whose answer was right, train on those, and repeat. Training accuracy climbs fast.": "5a4dd1529a.mp3",
+ "But a shortcut that works on training problems is kept too. On new problems, it fails.": "cb92abc7ae.mp3",
+ "Eight rounds later the shortcuts are still there. The signal rewards answers, not reasoning.": "d02510a355.mp3",
+ "Check each step of the reasoning, not only the answer, and most shortcuts are dropped before training.": "3de3e85038.mp3",
+ "Always test on new problems that break simple shortcuts. That gap is the warning sign.": "b553beead1.mp3"
+}

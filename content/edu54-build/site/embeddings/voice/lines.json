@@ -1,0 +1,8 @@
+{
+ "A farmers' helpline in Lilongwe keeps two thousand answered questions as vectors: points where similar meanings sit close together. For each new question, it wants the five closest.": "f8e011b6af.mp3",
+ "Checking all two thousand is exact but slow. HNSW starts on a sparse top layer, a few points with long links, and hops towards the question.": "11077a7400.mp3",
+ "It drops down a layer, hops again, then on the full map it explores a beam of candidates around the landing point. The true five are found after about a hundred comparisons.": "e87455568a.mp3",
+ "With only two links per point, the graph falls apart into islands. A walk that lands on the wrong one never reaches the true neighbours.": "86a83e3a64.mp3",
+ "A beam of five, just the five wanted, stops at the first good-enough patch and misses closer points one link away.": "5a8d31085e.mp3",
+ "Flatten it to one layer, and every search walks across the map in short steps. The sparse layers are the motorways, and they matter more as the collection grows.": "814af5b005.mp3"
+}

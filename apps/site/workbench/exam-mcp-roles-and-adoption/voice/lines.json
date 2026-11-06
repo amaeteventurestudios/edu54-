@@ -1,0 +1,8 @@
+{
+ "Server author, host developer, operator, security owner, registry publisher and end user.": "e24816bdda.mp3",
+ "On a laptop, the operator passes credentials through the environment. No OAuth flow runs.": "814aaa77db.mp3",
+ "Exposed directly, the server author validates Origin and publishes resource metadata.": "65efabb433.mp3",
+ "With a gateway in front, Origin validation moves to the operator. The rule did not change.": "9bf1ca8d79.mp3",
+ "A production gateway rests on a Tier 1 SDK, not an experimental one.": "484421a9a6.mp3",
+ "A new idea starts in an Interest Group, and a Working Group builds the proposal.": "54e8487da4.mp3"
+}

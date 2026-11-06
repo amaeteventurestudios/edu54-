@@ -1,0 +1,8 @@
+{
+ "A cluster in Kumasi saves its state. No rank holds it all, so each writes its own shard.": "4c452aa246.mp3",
+ "Each shard goes to a temp file, then a rename.": "6492dae0e9.mp3",
+ "The manifest goes last. A save is real only if it exists.": "3e233f25d9.mp3",
+ "On resume, every shard is checked against the manifest.": "16ab24e65a.mp3",
+ "A new rank count needs a reshard step.": "ee49342e14.mp3",
+ "Many files, one manifest, one truth.": "2a204e111d.mp3"
+}

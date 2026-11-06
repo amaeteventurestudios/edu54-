@@ -1,0 +1,8 @@
+{
+ "This baobab at sunset is 24 pixels wide and 16 tall. Each tile is one pixel, and to the computer each pixel is just numbers.": "ab310e32f5.mp3",
+ "A colour pixel holds three numbers: how much red, green and blue. The trays show each channel as columns. The sun is tall in red and green, low in blue.": "aa711d655c.mp3",
+ "Each number usually has 8 bits, which gives 256 shades. Cut it to two bits, and the smooth sky turns into flat bands.": "8b296d2a16.mp3",
+ "Some libraries store the channels as blue, green, red. Read them in the wrong order, and red and blue swap: the sunset turns cold.": "dc9312c4e2.mp3",
+ "Networks want one fixed size. Shrink only the width, and the round sun squashes into an oval. Keep the aspect ratio, then crop or pad.": "c791e49263.mp3",
+ "Sixteen by twenty four by three is one thousand, one hundred and fifty two numbers. Divide them by 255, and the picture is ready for a network.": "033ad10101.mp3"
+}

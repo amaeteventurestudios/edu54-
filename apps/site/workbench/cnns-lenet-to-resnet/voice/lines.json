@@ -1,0 +1,8 @@
+{
+ "One of the first convolutional networks, LeNet, read handwritten digits with just two stages of filters and pooling. Here it looks at a cassava leaf with brown streak spots.": "b45ef70f18.mp3",
+ "The orange square is how much of the leaf one final neuron can see. Each layer widens it a little, and each pooling step doubles how far the next layers see.": "8ebc5ad438.mp3",
+ "Take pooling away, and the maps never shrink. After eighteen layers a neuron still sees only a small patch, and every layer is full size and slow.": "06b46c5baa.mp3",
+ "Stack thirty four plain layers, and the gradient fades on its way back: the early slabs turn grey. Plain networks this deep trained worse than shallower ones.": "ce95ef02f8.mp3",
+ "ResNet adds a shortcut around every pair of layers: the gold arcs. Each block adds its input to its output, so the gradient has a straight road home and every slab stays teal.": "267bdaab86.mp3",
+ "Small three by three filters, pooling at the end of each stage, channels growing as maps shrink, and skip connections everywhere. That recipe trains networks hundreds of layers deep.": "6df3a8b907.mp3"
+}

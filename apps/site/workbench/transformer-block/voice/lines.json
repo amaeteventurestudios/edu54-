@@ -1,0 +1,8 @@
+{
+ "A block has LayerNorm, attention, a residual path and a feed-forward layer. Stack twelve, and each must learn.": "db0e80fc11.mp3",
+ "Take away the residual road, and gradients fade on the way down. The bottom hardly learns.": "71e52fc0b4.mp3",
+ "A residual adds the input back. Gradients get a straight path through.": "97342f6cf4.mp3",
+ "The original design puts the norm after. It sits on the road, and it needs warmup to stay stable.": "f9d6645f57.mp3",
+ "A slow start tames it.": "3e5c1f39fe.mp3",
+ "Put the norm first, and the road stays clean. This trains stably, with no warmup.": "527d643661.mp3"
+}

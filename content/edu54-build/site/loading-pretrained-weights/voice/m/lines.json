@@ -1,0 +1,8 @@
+{
+ "A team in Mombasa loads a trained model. The file has its names, and the model has others.": "4a4571d947.mp3",
+ "Write a map from file names to model names, and each peg finds its hole.": "792a0e1b20.mp3",
+ "Some older files store linear layers flipped. Without a flip, shapes don't fit.": "39b2b64ef9.mp3",
+ "A non-strict load skips what doesn't match and says nothing. The model generates noise.": "0825d23723.mp3",
+ "A tied head may be stored once. Copy the reference.": "2ccd3330d6.mp3",
+ "Load strictly, then try a known prompt. Now you can trust it.": "3fea2923c6.mp3"
+}

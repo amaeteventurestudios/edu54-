@@ -1,0 +1,8 @@
+{
+ "A transformer reads sequences. A crop photo from Nakuru isn't one.": "f2f1e5ef66.mp3",
+ "Cut it into squares. Fourteen by fourteen gives a hundred and ninety-six patches.": "bd2dacb171.mp3",
+ "Each patch becomes one vector. A convolution with stride equal to the patch does this.": "4043a749f8.mp3",
+ "Add a position in two dimensions, so that order means place.": "0f4fec2c53.mp3",
+ "A CLS token joins the row, to gather the whole image.": "254702bcb0.mp3",
+ "Smaller patches see more, and cost grows with the square.": "8bc44c78ec.mp3"
+}

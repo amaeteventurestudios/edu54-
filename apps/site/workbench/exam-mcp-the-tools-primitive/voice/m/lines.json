@@ -1,0 +1,8 @@
+{
+ "The server lists six tools, two per page, each page pointing to the next with an opaque cursor.": "312e8e351b.mp3",
+ "Page two ends with an empty string. That is a real cursor, so a truthy check stops too soon.": "fd82042c93.mp3",
+ "Only when the next cursor key is missing has the client reached the end.": "ed52a9cc49.mp3",
+ "Results carry text, images, audio, resource links or embedded resources.": "871e560778.mp3",
+ "A badge marked for the user stays out of the model's context.": "34a0d57597.mp3",
+ "A listen stream brings list changed notifications, and the client lists again.": "c0ee3f573f.mp3"
+}

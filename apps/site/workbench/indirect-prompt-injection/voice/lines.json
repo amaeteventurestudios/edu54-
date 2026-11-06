@@ -1,0 +1,8 @@
+{
+ "A property manager in Accra has an agent reading the inbox. An attacker emails a tenant query, with instructions hidden inside.": "2ff5d186b7.mp3",
+ "A retrieved page, an inbox, a tool result. Each lets an attacker write a part of the prompt.": "151f0bb5db.mp3",
+ "A filter on user input sees nothing. The user typed nothing wrong.": "1670d7571e.mp3",
+ "Wrap outside text, and tell the model to treat it as data. That helps a little, as long as the attacker doesn't adapt.": "a0d5b29bec.mp3",
+ "Attackers tune against your defence. Studies found most published defences fall this way.": "1ad7dde820.mp3",
+ "Label outside text as untrusted, and never let it steer an action. You contain the problem, at some cost.": "4b227e2c83.mp3"
+}

@@ -1,0 +1,8 @@
+{
+ "An email arrives at a company. Nobody opens it. That is all the attacker needs.": "3fac0527fa.mp3",
+ "Later someone asks the assistant to summarise recent mail, and retrieval pulls that email into context.": "64e712c1ed.mp3",
+ "Hidden text now acts with the assistant's reach, up to private data. Untrusted input gained privileges. That is the new class.": "dc47bbf55e.mp3",
+ "Data left through a domain already trusted. Allow-lists saw nothing wrong.": "95b1275a02.mp3",
+ "Filters were bypassed, so don't rely on one. Break the chain in several places.": "c29112d96c.mp3",
+ "AI bugs now get CVE numbers and coordinated disclosure, like other software. Early scores were often too low.": "82567c7178.mp3"
+}

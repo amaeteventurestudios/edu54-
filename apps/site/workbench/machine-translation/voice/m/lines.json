@@ -1,0 +1,8 @@
+{
+ "A clinic in Dodoma translates medicine labels into Swahili. Three systems translate \"take two tablets every eight hours after food\".": "d3376b65f0.mp3",
+ "BLEU counts word runs shared with human reference translations. chrF counts shared runs of characters, which suits Swahili words with prefixes and suffixes.": "3765bb21b6.mp3",
+ "With a single reference, the paraphrase from system B, which is correct, shares few word runs and scores far below the others.": "d1002cd316.mp3",
+ "System C copies the reference but says three tablets. Its overlap is high. Without a check on numbers, it is the one that gets printed.": "983983fc8b.mp3",
+ "A critical error check on numbers, negations and names stops it, whatever its score.": "56690a1381.mp3",
+ "Two references and chrF judge the paraphrase fairly. Metrics guide; for labels like this, people and checks decide.": "e1e8b4b01a.mp3"
+}

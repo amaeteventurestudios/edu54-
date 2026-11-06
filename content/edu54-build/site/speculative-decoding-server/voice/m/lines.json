@@ -1,0 +1,8 @@
+{
+ "A translation service in Kampala runs one GPU. Users rise, and we measure the slowest calls.": "cf6f589625.mp3",
+ "Latency doesn't climb evenly. Near capacity, the queue takes off.": "ab565f9daa.mp3",
+ "Turn on speculative decoding. With good acceptance, the same GPU serves more people.": "230eefbefd.mp3",
+ "New kinds of text arrive and acceptance falls. Now drafting costs more than it saves.": "743980f3b5.mp3",
+ "Watch acceptance, and switch the draft head off by itself. A speedup should never become a slowdown.": "4119d1bc8a.mp3",
+ "Measure first, then buy hardware. Two GPUs with headroom beat four sitting idle.": "e3cdc342a0.mp3"
+}

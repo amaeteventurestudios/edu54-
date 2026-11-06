@@ -1,0 +1,8 @@
+{
+ "A fintech must move fifty services to a new runtime. Each square is one repository.": "c4df0fde3a.mp3",
+ "Deterministic rewrites change imports and calls safely. They migrate the easy repos on their own.": "81b790d070.mp3",
+ "An agent in a sandbox builds, reads the failures and fixes them, within a turn budget.": "6dacf9932f.mp3",
+ "Without a test gate, broken migrations reach review. A PR opens only when tests pass.": "19e62c2f25.mp3",
+ "An agent can turn tests green by deleting them. Block PRs that lose coverage.": "2ebf664bf2.mp3",
+ "The failures, grouped by cause, show which recipe to write next.": "9cdeabb2da.mp3"
+}

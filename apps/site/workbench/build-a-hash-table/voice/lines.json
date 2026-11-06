@@ -1,0 +1,8 @@
+{
+ "Each town's name is hashed to a number, and the number picks a slot.": "f5aebbd252.mp3",
+ "When a slot is taken, step to the next free one. Lookups follow the same path.": "5924b4fcdb.mp3",
+ "Past seventy percent full, probes get long. The table grows and every key is rehashed.": "1f8f4b27ca.mp3",
+ "Hash only the first letter, and all the K towns crowd together.": "f0d2e18d76.mp3",
+ "Empty a slot on delete, and lookups that probed past it stop too soon.": "3f9644a2d6.mp3",
+ "Leave a marker instead. Lookups probe past it, and inserts can reuse it.": "b0e815db72.mp3"
+}

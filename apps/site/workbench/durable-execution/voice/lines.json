@@ -1,0 +1,8 @@
+{
+ "A logistics agent in Accra plans the day: model calls, bookings, texts to drivers and a wait for the dispatcher.": "fd51e8b877.mp3",
+ "Halfway through, the host reboots. A plain loop starts again: trucks booked twice, the dispatcher asked again.": "56c28934e9.mp3",
+ "A durable workflow logs every activity. On recovery, completed ones return their logged results instead of running again.": "725bae73a5.mp3",
+ "Checkpoints in a file on the host that died are no help. Keep them where they survive deploys.": "9b93b6ee06.mp3",
+ "The activity running at the crash runs again. Without an idempotency key, the drivers get the same text twice.": "09b19299d1.mp3",
+ "With keys, nothing is repeated. Durability lets runs last longer, so pair it with fresh approval and budgets.": "f6e4e2c625.mp3"
+}

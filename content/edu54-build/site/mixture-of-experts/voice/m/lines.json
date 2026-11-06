@@ -1,0 +1,8 @@
+{
+ "A helpdesk model in Kano reads Hausa, English, code and numbers. Its feed-forward layer is split into eight expert networks.": "df4b118c5d.mp3",
+ "For each token, a small router picks the best two experts. Only those two run, so most of the layer rests.": "176d3896cb.mp3",
+ "Experts specialise: Hausa tokens mostly reach one pair, code another.": "b653850657.mp3",
+ "Without balancing, one expert with a small head start takes most of the tokens, and others starve.": "f67edd3538.mp3",
+ "Cap each expert's load instead, and the overflow tokens skip the layer entirely.": "49b9a96c15.mp3",
+ "Send every token to all eight, and it costs as much as a dense model eight times the size. Sparse is the point.": "f64e51e3a0.mp3"
+}

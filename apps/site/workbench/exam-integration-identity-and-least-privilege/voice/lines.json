@@ -1,0 +1,8 @@
+{
+ "Every role sees refund and delete tools, and a prompt line asks the model to be careful.": "ebd1598297.mp3",
+ "A support agent discovers only reading and drafting. The delete tool is not there to target.": "cddf8d7098.mp3",
+ "A supervisor can refund, but never more than the order, and only for a listed reason.": "5e5d77bcb5.mp3",
+ "Each call carries who asked and why, so the service decides for itself.": "0408461d6c.mp3",
+ "Scope, ownership and an exact, unexpired approval are checked when the tool runs.": "225acb0447.mp3",
+ "A denial says what can change the outcome, and never leaks a token.": "dcd00acb3e.mp3"
+}

@@ -1,0 +1,8 @@
+{
+ "A complex number has two parts: a real part, along, and an imaginary part, up. So it can be drawn as an arrow on a flat plane.": "7bdd2f6f23.mp3",
+ "Here is the surprise. Multiplying by the coral number w turns your arrow by w's angle, thirty degrees, and stretches it by w's length.": "93585131d1.mp3",
+ "Multiply again and again. With length exactly one, every multiply is a pure turn, and the tip walks round the gold unit circle, back where it started after twelve steps.": "06121b663c.mp3",
+ "It all comes from one rule: i times i is minus one. Multiply by i and an arrow pointing along turns to point up; multiply by i again and it points backwards.": "e3419422a4.mp3",
+ "Make the length a little more than one and the tip spirals outwards, faster and faster. A little less, and it spirals in to nothing. Exactly one keeps it steady.": "865d984828.mp3",
+ "Anything that repeats can be written as turning arrows. The Fourier transform splits sound into them, and modern language models encode each word's position as a turn.": "41fc6cda33.mp3"
+}

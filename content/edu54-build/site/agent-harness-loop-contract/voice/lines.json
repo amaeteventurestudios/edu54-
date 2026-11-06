@@ -1,0 +1,8 @@
+{
+ "A tea estate in Blantyre runs an agent. A plain loop can't be stopped, resumed or explained. So we name its states.": "4abc7520f3.mp3",
+ "Start, model, tools, back to the model, then done. Only these moves exist.": "4e757a4ac5.mp3",
+ "At each point a hook can log, or block. A blocked call becomes a message the model can read.": "44765d36ce.mp3",
+ "Before tools, the loop yields. The caller can approve or cancel, and it resumes on fresh input.": "9ce5366beb.mp3",
+ "A stuck model would go on forever. Turn, token and time limits end it with a named reason.": "52ac79cdf2.mp3",
+ "Every run ends in a named state. That is what the rest of this harness builds on.": "71e50d2d0b.mp3"
+}

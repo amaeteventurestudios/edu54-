@@ -1,0 +1,8 @@
+{
+ "The women of the Ngong cooperative weave baskets from sisal and sell them in Nairobi on Saturdays. Encoder-decoder models learn by repairing sentences like this.": "fe24fc69d1.mp3",
+ "T5 hides short spans behind numbered markers. The decoder writes only the markers and the missing words: a short, cheap target.": "ecbb165dcc.mp3",
+ "BART damages the text and asks for the whole sentence back. Longer targets, but practice at fluent rewriting.": "777322afc0.mp3",
+ "Mark every gap the same way, and the missing words come back in a heap. Nobody can tell which words go where.": "cf9850b6f8.mp3",
+ "Hide half the sentence, and too little is left to read. About fifteen per cent, in short spans, works best.": "41267d34be.mp3",
+ "The encoder's reading never changes while the decoder writes, so compute it once and cache it.": "a01586da63.mp3"
+}

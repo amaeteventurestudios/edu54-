@@ -1,0 +1,8 @@
+{
+ "Earlier lessons made claims from the bytes alone. Now the student runs the program under a debugger and grades each claim.": "d19b28a587.mp3",
+ "Break at each function, and at both targets of each branch. At every stop, read the registers and the struct in memory.": "8146a5136d.mp3",
+ "The source tests for a negative balance, but the compiled branch is taken when the balance is not negative. A claim written from the source is refuted.": "c161850284.mp3",
+ "A hardware watchpoint on the balance fires once, after the write: two hundred and fifty becomes two hundred and fifty-five.": "642ff7be0a.mp3",
+ "In the optimised build, every call is inlined. The breakpoints never hit, so those claims are not observed. Not refuted.": "1f74711a54.mp3",
+ "Inside a sandbox, the debugger can't take control of the process. No stops at all, and nothing about the program.": "543b855d06.mp3"
+}

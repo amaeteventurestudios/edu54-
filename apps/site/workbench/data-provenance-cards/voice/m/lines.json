@@ -1,0 +1,8 @@
+{
+ "A lab gathers training data for a multilingual assistant from six sources, each with its own terms.": "ae82f03d8a.mp3",
+ "Two sources carry machine-readable signals saying no to AI training. Leave them out.": "3a1139f91a.mp3",
+ "Support chats hold phone numbers. Remove them before training, not after.": "cd4d1ce2af.mp3",
+ "Record source, licence, dates and cleaning for every source. The datasheet now backs the model card.": "fa8056f184.mp3",
+ "A forum user asks for their posts to be erased. After training, only retraining fully removes them.": "90286c8cbd.mp3",
+ "Before training, the same request is a simple filter. The compliance window is at collection.": "db271eab35.mp3"
+}

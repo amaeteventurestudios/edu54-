@@ -1,0 +1,8 @@
+{
+ "Every training step does the same five things: load a batch, run it forward through the model, measure the loss, send the blame backward, and update the weights.": "4acd0f34aa.mp3",
+ "A breakpoint stops the batch so you can look inside: the shape of the outputs, the loss, and whether any number has turned into NaN.": "9662b4a9d3.mp3",
+ "A profiler times each station. Here backward takes longest, which is normal. Loading should be quick.": "d7e1f9163d.mp3",
+ "With no worker processes, loading the data takes longer than the model itself, and the expensive graphics card sits waiting. The tall bar tells you at once.": "df5a2341e7.mp3",
+ "Make the learning rate far too big and the loss shoots up, then turns into NaN, not a number. From then on, every number it touches is NaN too.": "4ef7e4b9e0.mp3",
+ "Look inside with a breakpoint, time it with a profiler, and watch the loss chart. Together they catch nearly every training bug.": "e789d44506.mp3"
+}

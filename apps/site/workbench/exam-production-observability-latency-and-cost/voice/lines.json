@@ -1,0 +1,8 @@
+{
+ "The dashboard shows nearly every call succeeding, and growers are still complaining.": "ed51240a09.mp3",
+ "Score answers against a rubric. Many valid responses still fail the task.": "5864ca1abb.mp3",
+ "A trace splits the slow request into spans. The weather tool and retries own the tail.": "5f5ad4eef5.mp3",
+ "A time budget with a cached fallback cuts the tool's tail, and retries are capped.": "ebafd198d2.mp3",
+ "The timestamp sat at the front of the prompt. Move it after the stable prefix.": "f31f88b867.mp3",
+ "Counting retries and expert review, the mid-size model costs less per good answer.": "2bfea6ab70.mp3"
+}

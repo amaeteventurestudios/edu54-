@@ -1,0 +1,8 @@
+{
+ "Here are two groups of points, teal and coral. Many straight lines could separate them. Which one is best?": "9c8ff38b1b.mp3",
+ "A support vector machine picks the line with the widest road around it, like the widest road you could build between two villages without knocking down a house.": "04ceca2c25.mp3",
+ "Only the few points on the road's edges, ringed in gold, decide where it goes. They are the support vectors. Move any other point, and the road does not change.": "82a6d078a3.mp3",
+ "Add one odd point on the wrong side. With a hard road, it squeezes everything narrow. Allow a little softness, and the road lets that one point be wrong and stays wide.": "bba783a972.mp3",
+ "Now one group sits inside a ring of the other. No straight road can split them.": "7f6bb09273.mp3",
+ "Lift every point by its distance from the centre. The inner group sits low in a bowl, the ring sits high, and a flat cut separates them. Back on the ground, that cut is a circle.": "df80796460.mp3"
+}

@@ -1,0 +1,8 @@
+{
+ "A round thatched hut in the Lesotho highlands. A NeRF stores the whole scene as a function: give it a point in space, and it returns how dense the space is there, and what colour.": "76dd29c8e6.mp3",
+ "To draw a picture, fire one ray from the camera through each pixel, out into the scene.": "6a0a713e7b.mp3",
+ "Along each ray, ask the function at many points. Colours are blended front to back, each weighted by its density and by how much light is still getting through.": "6f5f140269.mp3",
+ "Take only four samples, and the points are far apart. Many rays step right over the thin mud wall and see sky through it.": "e04c4b7958.mp3",
+ "Feed the network raw coordinates, and it can only draw smooth, blurry shapes. Expanding each coordinate into many sines and cosines lets it draw sharp edges.": "a71cfbe2d5.mp3",
+ "NeRFs learn from photos taken around the scene, and need to know exactly where each was taken. A few centimetres off, and the hut appears twice.": "2ca89f7402.mp3"
+}

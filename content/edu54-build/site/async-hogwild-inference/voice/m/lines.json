@@ -1,0 +1,8 @@
+{
+ "A maths tutoring service in Accra asks a reasoning model to solve a problem with sixteen cases. One worker writes it all, one token after another.": "c94ce7b970.mp3",
+ "Hogwild inference runs four copies of the same model on one shared memory cache. Each sees every word the others write, the moment it is written.": "0dd212ea56.mp3",
+ "Nobody assigns the cases. Each worker reads the cache, sees which cases are taken, and announces the next one. The answer comes more than two and a half times sooner.": "b439b7f470.mp3",
+ "Give each worker its own cache, and none can see the others. Each one solves every case, and nothing is gained.": "6a45bd5ea1.mp3",
+ "A model not trained to reason ignores what the others have claimed, repeats their cases and wastes tokens.": "3b9bfe5be9.mp3",
+ "Rotary positions make the shared cache cheap. Each worker sees the others' blocks at a different offset, and only the query needs turning, never the cache.": "5bfc379c06.mp3"
+}

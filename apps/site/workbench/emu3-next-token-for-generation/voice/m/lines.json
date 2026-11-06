@@ -1,0 +1,8 @@
+{
+ "A textile shop in Dar es Salaam asks for a kitenge print in blue and gold stripes.": "0c181dc254.mp3",
+ "The model writes the picture one code at a time, left to right, top to bottom, exactly as it writes a sentence.": "c6fcf39d63.mp3",
+ "With guidance at zero, only the caption-free scores count. It drifts to its usual colours.": "789fc0ed1e.mp3",
+ "Classifier-free guidance compares the scores with and without the caption, and pushes further toward the caption.": "127bb5fceb.mp3",
+ "Turn the temperature up, and neighbouring codes disagree. The stripes break into speckles.": "db1bd91894.mp3",
+ "Guide far too hard, and one colour wins everywhere. Matching the caption, but no pattern left.": "d5c3d151e1.mp3"
+}

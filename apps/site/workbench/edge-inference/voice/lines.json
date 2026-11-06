@@ -1,0 +1,8 @@
+{
+ "An extension app in Uganda wants an assistant that works with no signal, on whatever device a farmer has.": "cef8e589ed.mp3",
+ "Each word reads every weight once. Speed is memory bandwidth divided by the model's size.": "ab172873e1.mp3",
+ "At sixteen bits the same model is four times larger, four times slower, and may not fit.": "7cef3b145e.mp3",
+ "A budget phone has little free memory and slow bandwidth. A seven-billion-parameter model doesn't fit at all.": "670249a9ca.mp3",
+ "A one-billion-parameter model in four bits fits and is readable. Or answer hard questions on a server when there is signal.": "9b6fe6212b.mp3",
+ "A Jetson box at the co-operative has the bandwidth for a larger model, shared by everyone nearby.": "f88fd402ba.mp3"
+}

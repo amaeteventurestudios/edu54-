@@ -1,0 +1,8 @@
+{
+ "Roots, sampling and logging were deprecated in 2026-07-28. They still work.": "07baa17237.mp3",
+ "Roots and sampling now arrive as input requests in a multi round-trip result.": "8d3ba51151.mp3",
+ "A log level in one request's metadata still works. A connection-wide level does not.": "ddb4b0b49d.mp3",
+ "Set level and roots list changed are gone, not deprecated. Do not send them.": "b423b316ac.mp3",
+ "Dynamic client registration gives way to metadata documents, and the old transport to Streamable HTTP.": "b35ce46348.mp3",
+ "Twelve months is the earliest a feature may go. Removal is a later decision.": "45a090519d.mp3"
+}

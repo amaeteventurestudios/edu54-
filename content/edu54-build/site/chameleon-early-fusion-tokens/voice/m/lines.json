@@ -1,0 +1,8 @@
+{
+ "A children's-book studio in Kigali wants one model that writes a story and draws its pictures in the same reply.": "25c79ac812.mp3",
+ "A learned codebook turns each patch of a picture into the number of its nearest entry. The picture becomes a list of integers.": "9b37e93295.mp3",
+ "Those integers share one vocabulary with the words. One transformer predicts the next token, word or picture code.": "79894b2f0d.mp3",
+ "With only eight codebook entries, the picture turns blocky. The codebook sets the ceiling on quality.": "5eedaf7566.mp3",
+ "Image tags mark where a picture starts and ends. Without them, nobody can tell which tokens are pixels.": "cc341cdb39.mp3",
+ "Train a large model like this without QK-norm, and the loss blows up. Normalising queries and keys keeps it stable.": "d3c85f3127.mp3"
+}

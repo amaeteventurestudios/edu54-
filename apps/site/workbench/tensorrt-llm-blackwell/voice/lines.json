@@ -1,0 +1,8 @@
+{
+ "An API company in Lagos serves a large model on older GPUs with vLLM. This is the starting price.": "256aa000cd.mp3",
+ "Move to Blackwell, and the cost tower drops. Most of the gain still lies in the software.": "1bb9a48f79.mp3",
+ "Take the weights down to four bits. Memory falls by half, and so does the traffic on the memory bus.": "0657e13562.mp3",
+ "But keep the KV cache at FP8. Errors in attention feed into every step.": "9c7e90c6bc.mp3",
+ "Add TensorRT-LLM and split prefill from decode. The tower is now a fraction of where it began.": "ae4815ac3b.mp3",
+ "None of that comes with you to other chips. You are trading portability for price, so make that trade on purpose.": "7183da654b.mp3"
+}

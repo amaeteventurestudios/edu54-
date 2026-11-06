@@ -1,0 +1,8 @@
+{
+ "A health hotline in Lagos tunes how its assistant answers a parent whose child has a fever.": "9dd4c119c2.mp3",
+ "Annotators compare pairs of answers and pick the better one. A few labels are mistakes.": "1ee61a8461.mp3",
+ "DPO raises the chosen answer's probability against the reference and lowers the rejected one. No reward model, no reinforcement learning.": "6cc411de28.mp3",
+ "With only forty pairs and half the labels flipped, it learns to prefer a harmful answer.": "58d72785c7.mp3",
+ "Set beta very high, and the model is held so close to the reference that it barely improves.": "12af884d9c.mp3",
+ "A small beta lets it follow the data closely. With good labels, that is what you want.": "57bcd077fb.mp3"
+}

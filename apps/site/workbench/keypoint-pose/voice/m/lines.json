@@ -1,0 +1,8 @@
+{
+ "A long distance runner training at altitude in Iten, Kenya. The coach wants the knee angle at every stride.": "787f9e9fdf.mp3",
+ "The network draws one heatmap per joint, glowing where that joint probably is. The brightest spot becomes the joint, and joints join into a skeleton.": "2a4075e23e.mp3",
+ "Shrink the heatmaps to four by four and take the brightest cell, and every joint snaps to a coarse grid. The knee angle jumps about.": "4230a14e1f.mp3",
+ "Larger heatmaps, and a peak refined between pixels by looking at its neighbours, give smooth, accurate joints.": "7dc4c9edab.mp3",
+ "Mirroring training photos doubles the data, but a mirrored left knee is a right knee. Forget to swap the labels, and the legs swap.": "c534b1f772.mp3",
+ "With two runners side by side, cropping a box per person lets one runner's limbs land on the other. Finding every joint first, then grouping them, keeps them apart.": "c9c959facf.mp3"
+}

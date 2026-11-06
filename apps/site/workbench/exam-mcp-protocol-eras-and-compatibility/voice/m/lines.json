@@ -1,0 +1,8 @@
+{
+ "Four legacy revisions and one modern one. Only the newest has no handshake.": "159d1e4a2b.mp3",
+ "A discover result means modern. Pick a supported version and carry on.": "4efd7d834f.mp3",
+ "An unsupported version error is a modern error. Retry with a listed version and a new id.": "c70d7716b6.mp3",
+ "Any other error or a timeout means legacy, and the client falls back to the handshake.": "0cc8b4636e.mp3",
+ "Legacy servers answer in different ways. Never key the fallback on one code.": "75cc4b3fbc.mp3",
+ "Era belongs to the server, so the client decides once per process or origin.": "b35a1858f2.mp3"
+}

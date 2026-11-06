@@ -1,0 +1,8 @@
+{
+ "An agent fixes a bug in a Harare pharmacy's stock app. The tests pass, and the gate says fine. Yet only half the bug is fixed.": "cbf43c60d8.mp3",
+ "Ask the builder to review itself and it agrees with itself. It reads its own reasoning, not the change.": "c65c9a546f.mp3",
+ "Give the review to a separate role with fresh context. It sees the zero: this doesn't solve the task as written.": "5ab4aa9956.mp3",
+ "Problem fit, scope, assumptions, verification, handoff. Each scores nought to two, and a zero anywhere is a hard fail.": "9280ae94ba.mp3",
+ "Ask only whether it looks good, and tidy work passes. The rubric forces a look at each question.": "c4a72df935.mp3",
+ "A good change scores well and the gate opens. The report then gives the human reviewer a head start.": "8198145bb3.mp3"
+}

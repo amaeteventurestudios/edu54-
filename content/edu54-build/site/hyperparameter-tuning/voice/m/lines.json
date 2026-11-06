@@ -1,0 +1,8 @@
+{
+ "Before training, you choose settings: here the learning rate and the depth of the trees. The landscape shows the validation score for every combination.": "bdab9c76b7.mp3",
+ "The best scores sit on a narrow ridge. The learning rate matters a lot; the depth, much less.": "f716c2c3bc.mp3",
+ "Grid search tries a neat lattice, three by three. But it tests only three learning rates, and the ridge falls between them.": "c4aa609038.mp3",
+ "Random search uses the same nine tries, scattered. Now nine different learning rates are tested, and one lands near the ridge.": "71632fc960.mp3",
+ "The learning rate axis runs on a log scale: one ten-thousandth, one thousandth, one hundredth. Search it in plain steps and every try lands in the wrong corner.": "0893b8e634.mp3",
+ "Smarter searches zoom in: a few scattered tries, then more in a smaller box around the best, and again. Always judged on validation data, never on the test set.": "786f268e55.mp3"
+}

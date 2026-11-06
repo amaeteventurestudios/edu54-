@@ -1,0 +1,8 @@
+{
+ "The student compiles one C file for Linux, Windows and 64-bit Arm. The object's header says which calling convention applies.": "f9d416766b.mp3",
+ "On Linux, integers and floats fill two separate lists of registers, each taking the next free one.": "52acb7f10d.mp3",
+ "On Windows, the position decides. The second argument is a double, so it goes to the second float register, and the first stays empty.": "67f2715b2c.mp3",
+ "Read the Windows bytes with the Linux rules, and almost nothing lines up. The header picks the rulebook.": "f75582ef71.mp3",
+ "A thirty-two byte result comes back through memory. On Arm, its address arrives in its own register, x8.": "53a63a8110.mp3",
+ "The prologue of a function that calls another saves registers it must keep. The compiler records the same facts again in its unwind tables.": "f07b48f245.mp3"
+}

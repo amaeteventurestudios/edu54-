@@ -1,0 +1,8 @@
+{
+ "An Igbo sentence repeats some words. Each id looks up a row of numbers, shown as one column of towers.": "6aa5e2f9e3.mp3",
+ "The first and fourth words are the same, so their columns are identical. Attention can't tell them apart.": "1b99552152.mp3",
+ "Add a position vector to each. Now a word differs by where it stands.": "54eb92dd28.mp3",
+ "A learned table has one row per position, and training shapes it.": "fa11dab5aa.mp3",
+ "Go past the context length, and there is no row.": "49de71e0e6.mp3",
+ "Sinusoids come from a formula, with no parameters, for any position.": "c14d98b2ab.mp3"
+}

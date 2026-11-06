@@ -1,0 +1,8 @@
+{
+ "Each office wraps its network frames in UDP and sends them to a switch on a cloud server.": "9c05cfa09e.mp3",
+ "The switch does not know the laptop yet, so it floods the first frame to every other office.": "48225f256f.mp3",
+ "The reply teaches it where the laptop lives. Now frames go down one tunnel.": "186d390550.mp3",
+ "The laptop is carried to Livingstone. If the switch never forgets, its frames go to Ndola and are lost.": "70e223c2b3.mp3",
+ "Entries age out after a few minutes. The switch floods again and finds the laptop.": "469d1ebbc1.mp3",
+ "The frames cross the public internet. Encrypt every tunnel.": "a9a48480a5.mp3"
+}

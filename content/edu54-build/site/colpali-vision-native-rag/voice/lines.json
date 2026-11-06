@@ -1,0 +1,8 @@
+{
+ "A farmer-support line in Arusha searches an illustrated manual: how should maize and beans be spaced when intercropped? The answer is in a diagram.": "43837d2d70.mp3",
+ "ColPali turns each page image into many patch vectors, and the question into one vector per word.": "91c4f4717f.mp3",
+ "Each query word finds its best patch on a page, and the best matches add up. The diagram page wins.": "913bfe198f.mp3",
+ "Search only the printed text, and the diagram is invisible. A page that just mentions maize and beans wins.": "d391d00cb7.mp3",
+ "Average over all patches instead of taking the best, and the diagram is diluted.": "a96c66d82a.mp3",
+ "Squeeze each page into one vector, and blank paper drowns the diagram.": "ff171e5d7a.mp3"
+}

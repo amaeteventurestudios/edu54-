@@ -1,0 +1,8 @@
+{
+ "The user types slash code review. Prompts are chosen by the user, not the model.": "b329a074e8.mp3",
+ "The server fills in the arguments and returns messages, here with a link to the style guide.": "ac718dd73b.mp3",
+ "Leave out a required argument and the server returns invalid params, not an error result.": "c09c5e7de4.mp3",
+ "A misspelt prompt name is the same: minus three two six oh two.": "399081a5a2.mp3",
+ "Completion sees that Python was chosen, so it suggests only Python frameworks.": "53e0c1d32c.mp3",
+ "A hundred and forty four files match. The server returns a hundred and says there are more.": "d1f0ead407.mp3"
+}

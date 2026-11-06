@@ -1,0 +1,8 @@
+{
+ "A tutoring app in Dar es Salaam sends every question to its largest model. Most are simple.": "104c603a4b.mp3",
+ "Send everything to a small model, and the bill collapses. So do the hard answers.": "61c7d05d78.mp3",
+ "Let the small model try first and state its confidence. When it's unsure, the question goes up.": "f11da5da7b.mp3",
+ "The threshold trades money for mistakes. Too low and errors get out. Too high and you pay for both.": "92c5ed6ea0.mp3",
+ "Months later, the cheap model is worse and just as confident. Nothing escalates, and dashboards stay green.": "5c2cad26b7.mp3",
+ "Score a sample of cheap answers all the time. That is what catches cheap-model creep.": "568202b11e.mp3"
+}

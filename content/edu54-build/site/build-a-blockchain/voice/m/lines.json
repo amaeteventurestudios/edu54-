@@ -1,0 +1,8 @@
+{
+ "A cooperative records crate deliveries in blocks. Each block holds the hash of the block before it.": "2e8eae9e0e.mp3",
+ "A block's own hash must start with zeros. The only way is to try nonce after nonce.": "0afaeb779e.mp3",
+ "Change one old delivery and its hash changes. The next block's link breaks.": "9a511095be.mp3",
+ "An attacker can re-mine the changed block and every one after it. Now the chain is valid again.": "ce4fe0dfca.mp3",
+ "But the honest network kept adding blocks. Nodes follow the chain with the most work, so the forgery loses.": "12039e20e7.mp3",
+ "With no difficulty, rewriting history costs nothing. Proof of work is the price of a block.": "1e1fb28b2f.mp3"
+}

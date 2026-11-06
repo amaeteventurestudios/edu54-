@@ -1,0 +1,8 @@
+{
+ "A district health office's assistant in Mangochi connects to four MCP servers: patient records, medicine stock, old monthly reports, and case statistics.": "6521c4bb43.mp3",
+ "Records and stock answer discovery. The reports server only speaks the old protocol, and its configuration allows the old handshake. Stats is overloaded and times out, so it is left out for now.": "48ca688097.mp3",
+ "Records and reports both export search. Prefix the later one, and the model sees search for patients and reports slash search for reports.": "932a596092.mp3",
+ "Let the later one overwrite the name, and patient searches quietly go to the reports server. No error, wrong answers.": "453030fea3.mp3",
+ "Treat any failed probe as an old server, and the overloaded stats server gets the old handshake. Every call to it fails. Fall back only where it is allowed and proven.": "7ed2156b9e.mp3",
+ "Mid-session the stock server restarts. Reconnect and discover again before the next call, and the reorder goes through.": "b241013f50.mp3"
+}

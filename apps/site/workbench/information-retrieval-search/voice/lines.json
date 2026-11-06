@@ -1,0 +1,8 @@
+{
+ "A solar home-system seller in Uganda, Rwanda and Zambia keeps short help articles. A customer types: error E47 battery.": "5866cefd43.mp3",
+ "BM25 scores articles by the query words they contain. Rare words like E47 count most, so the right article comes first.": "c750b2aa5b.mp3",
+ "Now: my lights go off at night. The right article says the battery drains in the evening. No shared words, so keyword search never finds it.": "eb733d0604.mp3",
+ "Dense vectors catch the meaning and find it. But for error E47 they cannot tell it from E41, and send the customer the wrong fix.": "486e1e5fba.mp3",
+ "Reciprocal Rank Fusion merges both lists by rank alone. For lights at night, though, the article in both lists wins, not the best one.": "087743eac4.mp3",
+ "A reranker reads the query with each of the top articles and reorders them. Now every search puts the right article first.": "0fe32a38d5.mp3"
+}

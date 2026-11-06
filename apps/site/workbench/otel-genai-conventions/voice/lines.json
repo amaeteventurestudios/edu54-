@@ -1,0 +1,8 @@
+{
+ "A logistics firm in Kigali runs an agent. Each bar is a span: the agent run at the bottom, model calls and tool calls above it.": "24b242ebf6.mp3",
+ "Its teams use three frameworks. If each names spans its own way, that means three dashboards for one question.": "89bc70edc1.mp3",
+ "The GenAI conventions fix the names: chat, invoke agent, and a span per tool. Provider and model mean the same everywhere.": "f94b2dae51.mp3",
+ "Parent links join them into one tree. Drop those, and you can't tell which run a tool call belonged to.": "04ce1378e5.mp3",
+ "An agent on a remote service gets a CLIENT span. One in your own process gets INTERNAL.": "1edfd1a697.mp3",
+ "Prompts stay out by default, because traces last and many people read them. If you need them, store a reference.": "c3adfdd84a.mp3"
+}

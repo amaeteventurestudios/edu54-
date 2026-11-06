@@ -1,0 +1,8 @@
+{
+ "These sixty-four rods are weights from a model: some positive, some negative. A real model has billions.": "7f4f2d56f0.mp3",
+ "At sixteen bits each, a seven billion weight model needs fourteen gigabytes. Most phones have six or eight.": "9aa0b92cb1.mp3",
+ "With four bits, each weight may only be one of sixteen heights. Every rod snaps to the nearest one. The red tip is what was lost.": "2ed3742134.mp3",
+ "Now the model is three and a half gigabytes, and the answers are almost as good. That is how chat models run on laptops and phones.": "d547d152cb.mp3",
+ "But big models have a few giant weights. With one ruler for everything, the steps must be huge, and the small weights all round to zero.": "7bb37016dd.mp3",
+ "The fix: give each small group its own ruler. Only the giant's own group suffers. Methods like GPTQ and AWQ go further, and protect the weights that matter most.": "79c9e6cd93.mp3"
+}

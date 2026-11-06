@@ -1,0 +1,8 @@
+{
+ "A contract assistant crams everything into one call. The demo works, production does not.": "8d9575469f.mp3",
+ "The steps are known, so code runs the sequence and calls Claude where judgment is needed.": "984635f4ae.mp3",
+ "Jurisdiction and policy version are stable predicates. Check them in code, not in the prompt.": "6b1b02954c.mp3",
+ "Clause IDs and spans let one finding be retried without redoing the rest.": "cce6f1e29f.mp3",
+ "Investigating a failing import is open-ended, so an agent earns its longer tail.": "f8f22e3e70.mp3",
+ "Tagging email needs one call. Anything bigger costs more for nothing.": "61887869b3.mp3"
+}

@@ -1,0 +1,8 @@
+{
+ "Children at a school in Lusaka drew four chalk symbols. An encoder squeezes each drawing into just two numbers, and a decoder rebuilds the drawing from them.": "e581b6856c.mp3",
+ "Every drawing lands as a dot on the tray. The black ring is a probe; the board shows what the decoder draws from that spot.": "462549589b.mp3",
+ "Train only to rebuild, and the codes cluster in corners with empty gaps between. When the probe crosses a gap, the decoder draws nonsense.": "0479815e7a.mp3",
+ "A VAE adds a KL penalty that pulls all the codes into one smooth cloud. Now every spot decodes to something sensible, and drawings morph into each other.": "7b9e0b3008.mp3",
+ "Make the penalty far too strong, and every drawing gets the same code. The decoder can only draw one blur, the average of everything.": "c8712f890d.mp3",
+ "And sample far outside the cloud, where no drawing ever landed, and the decoder has nothing to go on.": "311c5e5988.mp3"
+}

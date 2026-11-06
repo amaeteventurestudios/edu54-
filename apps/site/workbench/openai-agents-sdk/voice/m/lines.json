@@ -1,0 +1,8 @@
+{
+ "A mobile-money help desk in Lusaka: a triage agent reads each message and hands it to a specialist for disputes, identity or airtime.": "caa81e67fc.mp3",
+ "To hand off, the triage agent calls a transfer tool, and the conversation continues with the specialist, history and all.": "3b6ba586de.mp3",
+ "Disputes wants an identity check first; identity wants the dispute number first. Without a limit, they pass the customer back and forth.": "3241642a46.mp3",
+ "An input guardrail can run alongside the main model: passing requests are as fast as the model alone.": "02e6123fb7.mp3",
+ "When many requests trip the check, running it in parallel wastes the model's work on each. Run it first instead.": "4acc28b40c.mp3",
+ "Tool guardrails watch function tools only. A built-in file tool needs its own policy, or it opens another customer's statement.": "4ac8ec3f4b.mp3"
+}

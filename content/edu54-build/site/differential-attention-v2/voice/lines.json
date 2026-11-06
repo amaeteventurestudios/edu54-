@@ -1,0 +1,8 @@
+{
+ "A land office in Kampala asks its assistant who owns one plot. The answer is a single line in a long file of records.": "1006941ce2.mp3",
+ "Softmax never gives a word zero weight. Across a hundred thousand unrelated words those small weights add up, and the answer's share shrinks.": "9d399e0087.mp3",
+ "Differential attention computes two attention maps and subtracts the second from the first. The noise they share cancels, like two microphones hearing the same hum.": "1553f79bf8.mp3",
+ "Subtract too much, and every unrelated word goes below zero. Together they drown the answer again.": "83af75956d.mp3",
+ "And if both maps see the answer equally strongly, the subtraction removes the answer along with the noise.": "ee65bac5fd.mp3",
+ "Trained, the two maps differ on what matters. Version two doubles the query heads and keeps the memory cache the same, so decoding is as fast as before.": "a48034648b.mp3"
+}

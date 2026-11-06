@@ -1,0 +1,8 @@
+{
+ "A farm advice chat service for growers around Kigali, Arusha and Kumasi runs one model on one GPU. Reading a question is quick. Writing the answer, one word at a time, is the slow part.": "3333f3287b.mp3",
+ "For every word it writes, the GPU reads all of the model's weights from memory. With one person at a time, its arithmetic sits idle almost the whole time.": "6153df78bb.mp3",
+ "Serve sixteen people at once, and one read of the weights writes a word for each of them. Throughput jumps more than tenfold.": "e0e2b956b4.mp3",
+ "Now wait for a whole batch to finish before starting the next. Short answers leave their slots empty while the longest one is still writing.": "a0b5b21f25.mp3",
+ "Instead, drop a waiting question into any slot the moment it frees up. The slots stay busy.": "738a871212.mp3",
+ "Give everyone a very long conversation, and each one's memory cache is so large that only three fit on the GPU. The other slots stay empty.": "b48ac30613.mp3"
+}

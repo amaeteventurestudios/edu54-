@@ -1,0 +1,8 @@
+{
+ "The same small grading function, compiled to native code, Python, Java, WebAssembly and dot NET. Each keeps a different part of the compiler's notes.": "a82b5913d6.mp3",
+ "A Python file starts with a magic number for the interpreter version. Read it before choosing a decompiler; most stop at an older version.": "a3289d0ed2.mp3",
+ "In Java, one instruction holds the whole switch. Its jumps count from the instruction itself.": "95f2e29bde.mp3",
+ "Build the Java class without debug tables, and the parameter name is gone. The code is byte for byte the same.": "0f12bed5ee.mp3",
+ "WebAssembly keeps nested blocks and a table of depths. Names live in an optional section.": "a794b50e94.mp3",
+ "Dot NET keeps parameter names in its tables, but local names need a separate file. When a decompiler prints a name, ask where it came from.": "a9968f04aa.mp3"
+}

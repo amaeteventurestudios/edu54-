@@ -1,0 +1,8 @@
+{
+ "An agent team in one group chat writes a timetable parser for a bus app in Dar es Salaam.": "104807cc1b.mp3",
+ "Three identical coders just rewrite each other. Give them roles: plan, code, critique and test.": "0ecbe5224e.mp3",
+ "Round-robin is predictable but gives turns to agents with nothing to say. A model can pick the speaker from context.": "a949f07780.mp3",
+ "Left alone, the model ends the chat when the critic is happy, and the tests never run.": "fd8809517a.mp3",
+ "The plan never said which time zone. A coder that guesses ships times three hours off. Ask the planner.": "dd129b1997.mp3",
+ "Distinct roles, a model choosing the speaker, and one rule it can't skip: test after every change.": "80ba939e98.mp3"
+}

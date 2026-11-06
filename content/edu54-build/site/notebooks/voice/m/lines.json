@@ -1,0 +1,8 @@
+{
+ "A notebook is a page of cells that you run one at a time. Text cells explain. Code cells do the work.": "1f3eaddd5f.mp3",
+ "Behind the page is the kernel: one Python process that keeps every variable in memory. Run the first cell, and the rain for Kisumu now lives in the kernel.": "4f775eec08.mp3",
+ "Each cell builds on what the kernel already holds, and its answer appears right beside it, even a chart. That makes notebooks great for exploring.": "bfe529eb47.mp3",
+ "The number beside a cell says when it really ran. You can run any cell at any time, in any order. That freedom is the trap.": "b086f1a19a.mp3",
+ "Change the data to Dakar, then rerun the first cell and the chart, but not the others. The chart shows Dakar, while the wet months and the average still describe Kisumu. The page and the kernel disagree.": "4be2305361.mp3",
+ "The fix is to restart the kernel and run everything from the top. If that works, the notebook is honest. Explore in a notebook, then move the code that works into a script.": "020223cb82.mp3"
+}

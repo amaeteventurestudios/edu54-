@@ -1,0 +1,8 @@
+{
+ "A regional exams office in Bulawayo builds a school's results report. It takes most of a minute, so the server makes the call a task, stores it, and hands back its ID.": "47fa259762.mp3",
+ "The app polls at the interval the server suggests. Halfway, the task asks: PDF or spreadsheet? The app sends the answer, keeps polling, and the last poll carries the report.": "61992016ee.mp3",
+ "Every poll comes back \"complete\": that means the poll finished. Read it as the job finishing, and the app shows an empty report at five seconds.": "589b4ec2e6.mp3",
+ "Keep tasks in one server's memory, and a poll that lands on the other replica gets \"not found\". The app gives up on a job that is still running.": "f9f16a72e4.mp3",
+ "Another school's admin tries the next task ID. Without an owner check, they get this school's results.": "d39d5f0058.mp3",
+ "Shared storage, an owner check on every call, and the app reads the task's status. The report arrives, for the right school only.": "8b565ee485.mp3"
+}

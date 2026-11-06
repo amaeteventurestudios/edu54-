@@ -1,0 +1,8 @@
+{
+ "Real loss landscapes often look like this: a long, narrow valley, steep across and gentle along. The gold mark is the bottom.": "ca5f697339.mp3",
+ "Plain gradient descent steps straight against the slope. The steep walls throw it from side to side, while it crawls along the gentle floor.": "00fa41f1e3.mp3",
+ "Momentum keeps a running average of its steps. The side-to-side pushes cancel out, while the push along the valley adds up, so it picks up speed where it matters.": "4b5829f9b2.mp3",
+ "Adam goes further: it remembers how steep each direction has been, and divides by that. Small steps across the steep walls, big steps along the gentle floor.": "a7f2a9ad35.mp3",
+ "Turn plain descent's step up a little, and the steep walls throw it further each time until it flies out of the valley.": "a82fc31162.mp3",
+ "The wall shows the race step by step. A carefully tuned momentum can win on one valley, but Adam does well on most landscapes with little tuning, which is why it is the default for deep learning.": "13ee9d5068.mp3"
+}

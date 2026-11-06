@@ -1,0 +1,8 @@
+{
+ "A coding agent works on a Lagos payments repo. The same twelve actions are replayed under each permission mode.": "839103c312.mp3",
+ "In plan mode every action asks first. Twelve prompts, and after six you stop reading.": "584ec944d5.mp3",
+ "Default asks for edits, shell and network. Accept-edits trusts file writes and asks for the rest.": "23012e3c5c.mp3",
+ "Auto mode blocks the injected script and the repeat retries. But two allowed steps together leak the secrets.": "192b9d8ff0.mp3",
+ "Run the same mode in a disposable container with no credentials, and the leak has nothing to take.": "e7bf3731d1.mp3",
+ "Plan for unfamiliar work, auto or don't-ask in an isolated workspace, bypass only in a container you will throw away.": "7113725f9c.mp3"
+}

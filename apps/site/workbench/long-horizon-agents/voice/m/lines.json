@@ -1,0 +1,8 @@
+{
+ "A chatbot answers in one turn. An agent may take hundreds of steps on one task, and each step can go wrong.": "8bbfb532a0.mp3",
+ "A step that is right ninety-nine times in a hundred finishes only half of seventy-step runs.": "033d1f692d.mp3",
+ "The chart shows the fall as runs get longer. Three hundred steps at ninety-nine and a half percent: about one in five finish.": "65b7b8f875.mp3",
+ "Verify every twenty steps and resume from the last good point. One bad step now costs a segment and a retry, not the run.": "b9521f087f.mp3",
+ "Many failures leave a tidy final answer. Reviewing only the answer reports success that never happened.": "b19171a7d0.mp3",
+ "At this length the review unit is the whole trajectory. And a benchmark horizon is a ceiling, so test on your own tasks.": "c7b99896f3.mp3"
+}

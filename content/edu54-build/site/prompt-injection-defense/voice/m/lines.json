@@ -1,0 +1,8 @@
+{
+ "An NGO's email assistant summarises the inbox and books a meeting. One email tells the assistant to forward the donor list to a stranger.": "b56902ce33.mp3",
+ "With no defences, the model follows the planted instruction in most runs.": "5df3ed39d3.mp3",
+ "Telling it to ignore instructions in emails helps, but it still obeys in some runs. That is advice, not enforcement.": "8dfaaea61a.mp3",
+ "Checking only the final answer finds the forward after the list has already gone.": "e8a335962f.mp3",
+ "A small validator checks each tool call before it runs: did the user ask for this, is it sensitive, where did the arguments come from?": "65497f665f.mp3",
+ "Tag every piece of text with where it came from. Then an argument copied from an email can never authorise a sensitive action.": "c807d735f1.mp3"
+}

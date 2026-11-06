@@ -1,0 +1,8 @@
+{
+ "A help line in Malawi answers farmers' questions from two extension leaflets. \"When should maize be planted in the central region?\"": "ad8d3aefd9.mp3",
+ "The reader scores every word as a possible start and end of the answer, and picks the best pair: \"after the first good rains\".": "39c1d1e7c5.mp3",
+ "With many documents, a retriever picks which to read. Retrieve only the top one, and for a question about top dressing it reads the wrong leaflet.": "7b3bdb96b4.mp3",
+ "Ask which pest attacks young maize. Neither leaflet says. A good reader scores a \"no answer\" option and declines.": "7349259ad4.mp3",
+ "Take that option away, and the reader confidently picks a span that has nothing to do with pests. A farmer would act on it.": "029df4b9fd.mp3",
+ "Exact match gives zero to a correct answer with one extra word. Token F1 gives partial credit. Report both.": "89c6b56243.mp3"
+}

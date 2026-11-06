@@ -1,0 +1,8 @@
+{
+ "A legal-research assistant at a firm in Lagos reads long contracts for five lawyers at once, on one GPU.": "c0390ed4c5.mp3",
+ "To write each new word, attention needs the keys and values of every earlier word. The KV cache stores them, so they are computed once.": "0523b9f101.mp3",
+ "Switch the cache off, and every new word recomputes the whole contract. Seconds per word instead of milliseconds.": "a57c25d3fe.mp3",
+ "The cost is memory. With a key-value head for every query head, the long documents fill the GPU, and only two lawyers fit.": "fc582b5e5e.mp3",
+ "Grouped-query attention lets eight query heads share each key-value head. The cache shrinks eight times, and everyone fits.": "77d2feec34.mp3",
+ "Reserve the longest possible context for everyone, and most memory sits empty. Paged memory hands out blocks only as needed.": "c7a23b4ed8.mp3"
+}

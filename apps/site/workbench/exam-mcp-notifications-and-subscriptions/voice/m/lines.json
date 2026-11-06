@@ -1,0 +1,8 @@
+{
+ "The client opens a subscription stream with a filter: tool list changes and one config file.": "47db61b900.mp3",
+ "The first message says which requested types the server will honour.": "2c0183089f.mp3",
+ "Every stream message carries the listen request's id, so two streams never get confused.": "cd4fb243b5.mp3",
+ "The build's progress travels on the build request's own response stream, not a listen stream.": "0109348893.mp3",
+ "On HTTP, closing the request's stream is the cancellation. No message is sent.": "bf414c3e30.mp3",
+ "On stdio, the client sends a cancelled notification naming the request id.": "7aba46e127.mp3"
+}

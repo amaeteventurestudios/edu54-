@@ -1,0 +1,8 @@
+{
+ "A boda booking tool in Kampala uses a variable. An interpreter has to find what it means.": "760eeb3003.mp3",
+ "Each call makes a frame, linked to the frame outside it.": "b2dc784b07.mp3",
+ "A function keeps the frame where it was made. That pair is a closure.": "54c07c2df4.mp3",
+ "Drop that frame, and the name can't be found.": "acb3966339.mp3",
+ "Look up names at the call site instead, and a stray variable changes the result.": "57ab78b015.mp3",
+ "Two counters from one maker each have their own frame.": "4293e5a79f.mp3"
+}

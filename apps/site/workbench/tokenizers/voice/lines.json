@@ -1,0 +1,8 @@
+{
+ "A school chatbot in Mombasa must read a new Swahili sentence: the children are reading books at school today.": "70f587669a.mp3",
+ "BPE, trained on English and Swahili, keeps common words whole and cuts the new word into known pieces.": "80e0323d2e.mp3",
+ "WordPiece picks merges that occur together more than chance, and cuts by the longest piece it knows.": "e179ed1009.mp3",
+ "A word-level tokenizer knows only words it has seen. The new word becomes unknown.": "916cf4d93f.mp3",
+ "Character-level never meets an unknown, but five words become thirty-four tokens.": "802da13210.mp3",
+ "Train BPE on English alone, and the Swahili sentence falls apart into letters.": "2d1c005fe9.mp3"
+}

@@ -1,0 +1,8 @@
+{
+ "A Hausa writing assistant is tuned on preference pairs. DPO needs no reward model: each pair pushes chosen over rejected.": "7ce79e072f.mp3",
+ "Keep training, and the gaps keep growing. The loss never says stop.": "63322fc6ff.mp3",
+ "Two pairs were labelled wrongly. DPO learns those too, pushing them the wrong way just as hard.": "b65a072e96.mp3",
+ "IPO aims at a fixed gap. Gaps rise to the plane and stop, and noise can't run away.": "98d357398f.mp3",
+ "Real products rarely have pairs, just thumbs up or down. KTO works from those, if they are balanced.": "b52f671228.mp3",
+ "Dropping the reward model doesn't end the problem. Every family member can over-fit its signal. Keep watching.": "7b1ba0d674.mp3"
+}

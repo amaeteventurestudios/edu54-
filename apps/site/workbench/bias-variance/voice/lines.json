@@ -1,0 +1,8 @@
+{
+ "More fertiliser gives more maize, up to a point, then the yield levels off. That is the dark line. But every field we measure adds noise.": "e065111cad.mp3",
+ "The blue dots are one field's measurements, and the coral curve is a model fitted to them.": "9186ca9001.mp3",
+ "A straight line cannot level off. Fit one to ten different fields and all ten miss the same way. That is bias: underfitting.": "e90e85ca1f.mp3",
+ "A very bendy curve chases every noisy dot. Ten fields give ten wildly different curves. That is variance: overfitting.": "a945f75aba.mp3",
+ "Error on its own data, in blue, keeps falling as the curve gets bendier. Error on new data, in orange, falls, then rises. The best model sits at the bottom of that U.": "8b76e6d226.mp3",
+ "At the bottom, the ten curves agree with each other and with the truth. Flexible enough, but no more.": "01f7b39bb2.mp3"
+}

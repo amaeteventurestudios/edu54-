@@ -1,0 +1,8 @@
+{
+ "A language model cannot read letters. First, a tokenizer cuts the text into pieces called tokens, and gives each one a number.": "e5846c950f.mp3",
+ "It starts from the smallest pieces: single bytes. Every letter is one or more bytes. That makes a lot of tokens.": "c4b46ae241.mp3",
+ "Then it learns. It finds the pair of pieces that appears most often in its training text, and glues them into one new token. Then again, two hundred times.": "6344c62f47.mp3",
+ "Now common English words, like market and today, are a single token each.": "4113c29900.mp3",
+ "But this tokenizer only ever read English. The same greeting in Yoruba is cut into many more pieces, because its letters and tone marks were never merged.": "81dec800eb.mp3",
+ "More tokens means a higher bill, slower answers and less room in the model's memory. Tokenizers trained on more African text treat our languages more fairly.": "1858792785.mp3"
+}

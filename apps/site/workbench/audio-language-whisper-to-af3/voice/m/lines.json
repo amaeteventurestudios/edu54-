@@ -1,0 +1,8 @@
+{
+ "A radio archive in Dakar asks questions about old recordings. This one is music: which instrument leads?": "57ba34d9f4.mp3",
+ "Sound becomes a log-Mel spectrogram: time across, pitch bands deep. An encoder trained on speech, sound and music reads it.": "9c0aa915bd.mp3",
+ "Its frames go through a small adaptor into the language model as tokens. It hears a kora.": "0ba167f564.mp3",
+ "Transcribe first instead, and the text is just \"music\". There is nothing left to reason about.": "f9d03f4b21.mp3",
+ "Ask who speaks last. The transcript has the words but not the voices.": "09f5962376.mp3",
+ "Feed the song to an encoder trained only on speech, and it hears a guitar.": "3454756c9e.mp3"
+}

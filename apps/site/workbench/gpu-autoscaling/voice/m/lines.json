@@ -1,0 +1,8 @@
+{
+ "A telecom in Addis Ababa serves a model on a GPU cluster. Traffic peaks at midday and again in the evening.": "bd5ab295b1.mp3",
+ "GPU utilisation reads busy at any load. Scale on it, and replicas never move: short at noon, idle at night.": "9c767df30d.mp3",
+ "Scale on the requests waiting, and replicas follow the traffic up and down.": "bfe1d874b4.mp3",
+ "A burst at two in the morning needs a new node within a minute. A slow autoscaler misses it.": "1923b514fa.mp3",
+ "An eight-GPU job with seven free: without gang scheduling, seven sit idle waiting for the eighth.": "54f9b9ad59.mp3",
+ "Reclaim only empty nodes. An eager policy terminates a running job to repack it more cheaply.": "75df3fc598.mp3"
+}

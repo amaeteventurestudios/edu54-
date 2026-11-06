@@ -1,0 +1,8 @@
+{
+ "A savings circle in Maputo keeps a shared list of transfers. A hash chain shows that it wasn't edited, but not who agreed.": "715a5ae7c7.mp3",
+ "Each sender signs a transfer with a private key. Anyone can check that signature.": "7d5aea62c7.mp3",
+ "Change the amount afterwards, and the signature no longer fits.": "7421aa0176.mp3",
+ "Nobody stores a balance. You replay every transfer from the start.": "c20b659a0f.mp3",
+ "Whoever mines a block earns a reward. That is how new coins enter.": "e6a1df077a.mp3",
+ "Linked blocks, valid signatures, enough balance. Remove one, and the ledger can't be trusted.": "cfe64ca018.mp3"
+}

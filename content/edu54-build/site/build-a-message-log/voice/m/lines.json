@@ -1,0 +1,8 @@
+{
+ "A taxi dispatch writes trip events to the end of a log. Each event gets the next offset.": "027b9caade.mp3",
+ "Split the log into three partitions. Key by driver, and each driver's events stay together, in order.": "24011e65f9.mp3",
+ "Without a key, a driver's events scatter, and consumers handle them out of order.": "71370658da.mp3",
+ "A group shares the partitions, one owner each. A fourth consumer would sit idle.": "257976df67.mp3",
+ "Commit before processing, crash, and the events in flight are skipped. Commit after, and at most one repeats.": "50b0f70dbf.mp3",
+ "Confirm a write only when every replica has it, and a leader crash loses nothing.": "7b3a18004a.mp3"
+}

@@ -1,0 +1,8 @@
+{
+ "A mobile-money support assistant in Nairobi sends everything on every call: all forty tools, ten help chunks, and the whole chat. The window fills up, and the help it needs sits in the middle.": "ae8fd0b005.mp3",
+ "Most questions need only a few tools. Picking five for each question frees thousands of tokens, at the cost of sometimes missing the right one.": "6f0a0f1233.mp3",
+ "Keep only the three best help chunks. Less to read, and less that is beside the point.": "1f1d5d56eb.mp3",
+ "Models read the start and end of the window best. Move the help chunks from the middle to just before the question, the best one last.": "8f5fc734eb.mp3",
+ "Fold older turns into a short summary near the top that keeps the facts, like the customer's account type, and keep only the last few turns word for word. The window shrinks by more than half.": "5d68b477a3.mp3",
+ "Now the chat can run to fifty turns and the window stays lean, with room kept free for the answer.": "27ace3cc4a.mp3"
+}

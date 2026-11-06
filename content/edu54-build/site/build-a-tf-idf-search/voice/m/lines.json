@@ -1,0 +1,8 @@
+{
+ "A clinic in Nairobi has a board of notices. Which words say what each is about?": "d096ea28e7.mp3",
+ "Term frequency counts a word in one document.": "f40d03f8b5.mp3",
+ "Words in every notice say little, so weigh by how rare a word is.": "6c08eeebb2.mp3",
+ "Drop the most common words altogether.": "6ab0a585bb.mp3",
+ "Divide by length, so that long notices don't win by size.": "9369d4b5b8.mp3",
+ "There's no meaning here, only counting. It works very well.": "ff520d6f6c.mp3"
+}

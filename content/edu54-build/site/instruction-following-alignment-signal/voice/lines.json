@@ -1,0 +1,8 @@
+{
+ "Ask a raw model a science question in Swahili. Half the time, it just continues the web page.": "f90c001aeb.mp3",
+ "Stage one: tune it on examples of good answers. It learns the form of answering.": "95ab5ffa57.mp3",
+ "Stage two: people rank replies, and a model learns to predict those rankings.": "ed12c4ea7c.mp3",
+ "Stage three: raise the reward, while a KL penalty keeps the policy near where it began. Good replies rise.": "7eed86afab.mp3",
+ "Drop the penalty, and the policy collapses onto the reply the reward model overrates. Here, that is flattery.": "fe97c47d00.mp3",
+ "Heavy tuning costs some plain skill. Mixing in pretraining text pays part of that tax.": "eb02b52b4c.mp3"
+}

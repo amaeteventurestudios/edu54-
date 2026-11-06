@@ -1,0 +1,8 @@
+{
+ "A telehealth service in Harare scales its model to zero overnight. The first patient in the morning starts a cold start.": "ef60d2d5bf.mp3",
+ "Find a GPU node, pull a huge image with the weights, load the weights, warm the engine. About six minutes.": "cb76925b9b.mp3",
+ "A node image with the weights already on disk removes the longest stage.": "d18eadaf13.mp3",
+ "Stream weights in parallel, and restore a snapshot of the loaded GPU memory instead of starting over.": "6f56733d2a.mp3",
+ "Finding a node still takes about a minute. For a live path, keep one replica warm and pay for it.": "c09b47e683.mp3",
+ "A nightly batch job can wait a minute. Decide warm or cold path by path.": "fbbe072bbb.mp3"
+}

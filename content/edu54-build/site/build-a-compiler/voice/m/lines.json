@@ -1,0 +1,8 @@
+{
+ "The tokenizer groups characters into tokens: numbers, operators, brackets.": "09df9573f5.mp3",
+ "The parser builds a syntax tree. Its shape is the meaning: multiplication sits lower, so it happens first.": "c6e23b4cc7.mp3",
+ "Without precedence, two plus three times four is read left to right and comes out twenty.": "04be2f5c15.mp3",
+ "Subtraction groups from the left. Group from the right and twelve minus four minus three becomes eleven.": "f97f7b8e01.mp3",
+ "Walk the tree and emit stack instructions: push both sides, then apply the operator.": "4c9c8847e1.mp3",
+ "An optimiser can do the arithmetic at compile time, leaving a single push.": "e68f8f9b39.mp3"
+}

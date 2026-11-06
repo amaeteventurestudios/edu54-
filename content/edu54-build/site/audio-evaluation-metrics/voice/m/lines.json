@@ -1,0 +1,8 @@
+{
+ "A team in Dar es Salaam tests a Swahili speech recogniser for a mobile-money line before launch.": "508c3b844d.mp3",
+ "Align what was said with what was heard. Substitutions, deletions and insertions, over the words said, give the word error rate.": "8ea97bb2b4.mp3",
+ "Score raw text, and capitals, full stops and \"5000\" for \"elfu tano\" all count as errors, though the recogniser was right.": "3c7e42339a.mp3",
+ "Report one overall number, and it clears the launch bar. It hides the groups the recogniser fails.": "8e834f94ae.mp3",
+ "Split by group: older speakers on the coast and children see far more errors. They need more training data.": "f1667f1b90.mp3",
+ "On public read speech, it scores almost perfectly for everyone. Real callers do not read aloud. Test on your own traffic.": "7c3c198333.mp3"
+}

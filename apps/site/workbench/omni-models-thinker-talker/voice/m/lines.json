@@ -1,0 +1,8 @@
+{
+ "A student in Lusaka points the phone at a worksheet, touches question three, and asks: can you help with this one?": "9604c8feb8.mp3",
+ "Camera frames and audio become tokens placed by their real time, so the pointing frame and \"this one\" sit together.": "e520dd4fec.mp3",
+ "A big Thinker writes the answer as text. A small Talker speaks each word as soon as it is written.": "8b97303ef3.mp3",
+ "Put all frames first and all audio after, and the model loses which question was meant.": "1477501260.mp3",
+ "Make the Talker big, and it cannot make speech tokens fast enough. The voice stutters.": "4491d9c841.mp3",
+ "Wait for the whole answer before speaking, and the student sits through seconds of silence.": "6c94be393d.mp3"
+}

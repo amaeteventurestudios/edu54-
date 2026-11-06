@@ -1,0 +1,8 @@
+{
+ "A fact-check desk in Johannesburg gets a viral voice note, said to be a city official. It was made by an AI voice tool.": "d47cc6d1be.mp3",
+ "The tool hid sixteen bits in the audio, spread far below the speech. The detector reads them back by correlation.": "03f6dff689.mp3",
+ "Compress it or add noise, and the bits still come back. Metadata, though, was stripped when the clip was re-uploaded.": "d9fc7e7c25.mp3",
+ "Shift the pitch a little, and every bit slides out of place. The watermark is gone. Only the spoofing detector catches it now.": "f7d84f8851.mp3",
+ "Skip the detector, and the fake passes as real.": "c2a981321e.mp3",
+ "Turning the watermark up makes it robust, but audible. A faint hiss gives it away.": "fb4ca7b5da.mp3"
+}

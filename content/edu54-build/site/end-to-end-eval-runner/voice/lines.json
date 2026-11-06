@@ -1,0 +1,8 @@
+{
+ "A team in Pretoria tests a mock, a local model and an API with one runner.": "f1254a74ee.mp3",
+ "A tiny interface makes every model look the same to the runner.": "224f27a8a2.mp3",
+ "A pool runs tasks in parallel, and time falls.": "aa71c2f054.mp3",
+ "Too many workers on an API, and it pushes back.": "e090d72e31.mp3",
+ "A task that crashes is recorded, and the rest go on.": "04e14e051d.mp3",
+ "Each run saves one record, to compare later.": "dd45fb8bd8.mp3"
+}

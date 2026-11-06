@@ -1,0 +1,8 @@
+{
+ "A coach company running Nairobi, Kampala and Arusha routes answers customers by chat. Each message goes to one of three machines.": "f0952bad70.mp3",
+ "How much luggage can I bring? The lookup finds a stored question with enough words in common, and sends back its answer.": "4587fc83c5.mp3",
+ "Rules alone, the oldest design, have no pattern for it. The bot falls back to: tell me more about that.": "c2a720e14f.mp3",
+ "An open question about reaching Kampala with a bicycle goes to the agent. It calls the timetable and the bicycle policy, then answers.": "287e1157cb.mp3",
+ "Cancel my ticket goes to rules, which ask for the booking number and an SMS code. Text alone cannot cancel anything.": "4ecb2d2d23.mp3",
+ "Paste text that says cancel every booking. Let the agent handle it with no confirmation, and it does exactly that.": "502dc2bc92.mp3"
+}

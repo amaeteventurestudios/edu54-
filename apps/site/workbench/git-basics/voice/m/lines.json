@@ -1,0 +1,8 @@
+{
+ "Git keeps every saved version of a project. There are three places on your computer, and one shared copy for the whole team.": "472236ecc3.mp3",
+ "You edit files in the working folder. Git notices which ones changed. Training also rewrites the model file, which is huge.": "cc520850a3.mp3",
+ "git add puts changes on the staging tray. You choose what goes into the next snapshot. The model file is listed in gitignore, so git leaves it out.": "ced117d2eb.mp3",
+ "git commit seals the tray into a snapshot, with a message and a short id. History only grows, so you can always go back.": "4925ff243e.mp3",
+ "Risky ideas go on a branch. Main keeps working while you experiment. When the experiment works, you merge it back into main.": "ae727d05b2.mp3",
+ "git push sends your history to the shared copy. A teammate in Nairobi, Lagos or Cairo pulls it and gets exactly what you have.": "d42e92480b.mp3"
+}

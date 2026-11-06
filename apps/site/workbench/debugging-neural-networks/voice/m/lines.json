@@ -1,0 +1,8 @@
+{
+ "This network sorts coffee beans from a washing station in Sidama into three grades. Before a long training run, put it on the bench and test it.": "de267ec52b.mp3",
+ "Test one: train on just eight beans. A healthy network should learn them perfectly, driving the loss to almost zero. If it can't, the bug is in the model or the loss.": "b6f01d9b79.mp3",
+ "Start every bias far below zero, and the lamps go dark. Those neurons never fire, so they pass back no gradient and can never recover.": "9a38e2e106.mp3",
+ "Switch to sigmoid in every layer, and watch the red bars. Each layer shrinks the gradient, so the layers nearest the input barely learn at all.": "c03cd18f0f.mp3",
+ "Test two trains briefly at rising learning rates. The loss falls faster and faster, then the curve stops where training blows up.": "92be5ca34b.mp3",
+ "Choose a rate past the cliff, and the one batch test ends in NaN. Pick a rate a little before the bottom of the curve.": "4b2c9008b9.mp3"
+}

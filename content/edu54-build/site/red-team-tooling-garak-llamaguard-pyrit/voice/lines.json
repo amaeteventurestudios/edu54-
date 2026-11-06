@@ -1,0 +1,8 @@
+{
+ "A telecom in Kigali is about to launch a bot. Twelve weaknesses are hidden in it, and nobody knows that yet.": "f51b8fedc4.mp3",
+ "Llama Guard classifies inputs and outputs. It blocks known patterns, and it doesn't find or fix anything.": "2bfc726cee.mp3",
+ "Garak fires probes, and detectors score the replies. It covers known single-turn attacks, repeatably.": "af7717d364.mp3",
+ "PyRIT runs multi-turn attacks that respond to each reply. It reaches what one-shot probes can't.": "82750dd2bc.mp3",
+ "Tools find what they know about. New ideas still come from people.": "38098d36ef.mp3",
+ "A clean report means those tests found nothing. Rerun it after every change, and test the whole system.": "a01eba08a2.mp3"
+}

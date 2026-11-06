@@ -1,0 +1,8 @@
+{
+ "A software house in Dakar uses a strong model to write code. It can't yet verify the model is trustworthy, so it assumes it might not be.": "8a17c0ec0b.mp3",
+ "Reviewing everything by hand is safe until the budget runs out, after a few percent of the work.": "6265619b8a.mp3",
+ "Ask a second copy of the strong model to judge, and the two can collude on a signal.": "5fa46f0f49.mp3",
+ "A weaker model you do trust rates every solution, rewrites the suspicious ones, and sends the worst to people.": "bc4afb8239.mp3",
+ "With fewer human reviews, more slips through. A monitor tells people where to look first.": "d410c88210.mp3",
+ "Control doesn't make the model trustworthy. It keeps you safe while you can't yet tell.": "d9a69ccbf6.mp3"
+}

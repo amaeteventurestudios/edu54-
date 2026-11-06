@@ -1,0 +1,8 @@
+{
+ "Almost every GPU machine runs Linux. Everything on it hangs off one tree, starting at the root, written as a single slash.": "2cbcb1aaca.mp3",
+ "Your files live in your home folder, here slash home slash amina. Programs live under user, and big data often sits on its own disk under data.": "2fd85511c0.mp3",
+ "Every file has nine switches: read, write and run, for its owner, its group and everyone else. To run a script directly, its run switch must be on. That is what chmod plus x does.": "052448c07b.mp3",
+ "Run the training. Every epoch saves a checkpoint, sixty gigabytes each, onto the data disk.": "adfbe9b118.mp3",
+ "Keep every checkpoint and the disk fills, and training dies mid-save. Keep only the last few, and the disk stays calm.": "5086379d5d.mp3",
+ "One last trap. A folder made with sudo belongs to root, and your own training cannot write in it. Use sudo for the system only, and give your folders back with chown.": "c49ffd00f5.mp3"
+}

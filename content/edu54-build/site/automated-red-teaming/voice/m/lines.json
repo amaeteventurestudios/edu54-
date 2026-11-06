@@ -1,0 +1,8 @@
+{
+ "Before launch, a bank in Nairobi red-teams its assistant with automated attacks from published research.": "fba9b9e25f.mp3",
+ "An attacker model refines its request from each refusal. Within twenty tries, it often gets through one filter.": "ac4febbbb2.mp3",
+ "Hundreds of fake conversations where the assistant complied, then the real request. More shots, more success.": "8b766fb07e.mp3",
+ "Key words drawn in ASCII art are read by the model and missed by its safety training.": "c7b71750fc.mp3",
+ "Check outputs too, detect long fabricated dialogues, and normalise unusual encodings before classifying.": "0051135a69.mp3",
+ "Re-run the known attacks automatically on every model update. Old holes reopen.": "8c8acb960e.mp3"
+}

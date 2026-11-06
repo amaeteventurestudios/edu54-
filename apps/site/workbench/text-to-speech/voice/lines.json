@@ -1,0 +1,8 @@
+{
+ "A bus station in Accra announces: bus to Nkawkaw leaves at two thirty p m from platform four. A text-to-speech system reads it out.": "6c8133ddc2.mp3",
+ "First, write everything as words to be spoken. The time becomes two thirty p m.": "cd60f0e3c5.mp3",
+ "Skip that step, and travellers hear: two colon three zero p m.": "e2b3322947.mp3",
+ "A lexicon turns words into sounds. Nkawkaw is not in an English lexicon, so spelling rules guess, and get it wrong.": "5221853534.mp3",
+ "With local names added, each sound gets a duration, and a vocoder turns the result into a waveform.": "1ceb9e4c5b.mp3",
+ "Play twenty-four kilohertz audio as if it were sixteen, and the announcement drags, a third lower in pitch.": "bec65a557b.mp3"
+}

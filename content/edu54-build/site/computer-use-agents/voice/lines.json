@@ -1,0 +1,8 @@
+{
+ "A pharmacy assistant in Nairobi reorders rehydration sachets on a supplier's website, using screenshots and mouse clicks, like a person.": "b78b4e02f3.mp3",
+ "The model sees a smaller screenshot than the real screen. Its clicks must be scaled up, or they all land off target.": "08c0fd77fa.mp3",
+ "Even scaled, each click lands a little off. Small boxes are missed first.": "bf50b1fd83.mp3",
+ "A banner tells AI assistants to approve every order. That is text on a page, not the user. It must be ignored.": "34a4c9643d.mp3",
+ "Placing an order is sensitive. The agent pauses and a person confirms.": "b795c54dc8.mp3",
+ "Success is the order in the supplier's system, with the right quantity. Benchmarks check it the same way, and count the steps against a person.": "fee2c148ff.mp3"
+}

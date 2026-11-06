@@ -1,0 +1,8 @@
+{
+ "A trainer in Cape Town rents a GPU by the hour. Read raw text, and it sits waiting for the CPU.": "9773e13bda.mp3",
+ "Tokenize once, and store integers. The read rate jumps.": "e9ed3a72f6.mp3",
+ "A chunked layout lets a read touch only what it needs.": "4203030880.mp3",
+ "Many smaller files bound a failure, and allow parallel writes.": "aad9e3580a.mp3",
+ "One big pickle doesn't scale. Let the page cache do that job.": "46105fbaf4.mp3",
+ "A few workers, and the dial stays left. Your money goes on training.": "e706c2d758.mp3"
+}

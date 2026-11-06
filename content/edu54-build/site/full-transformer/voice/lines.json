@@ -1,0 +1,8 @@
+{
+ "An encoder reads \"Ninakwenda sokoni kununua nyanya\" all at once. A decoder writes the English, word by word.": "dbb5a02fcd.mp3",
+ "Each layer has attention, then a feed-forward network. Around each sits a residual connection and a normalisation step.": "7c404101cd.mp3",
+ "Cross-attention carries the encoder's reading into every decoder layer. Cut it, and the English is fluent but has nothing to do with the Swahili.": "35cb08d772.mp3",
+ "Stack twelve layers. With residual connections, the gradient still reaches the bottom.": "672c5449de.mp3",
+ "Remove residuals and norms, the way deep networks were built before 2015, and the gradient shrinks at every layer. The bottom layers never learn.": "763df95d05.mp3",
+ "Put residuals back but leave normalisation out, and the signal grows at every layer until it blows up.": "1491d09ce8.mp3"
+}

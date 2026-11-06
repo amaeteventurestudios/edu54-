@@ -1,0 +1,8 @@
+{
+ "Two restocking agents share a warehouse in Mombasa with eight bays to fill.": "9829ca9547.mp3",
+ "While B was away, A moved the spare crate from bay three to bay seven. B still believes it is in bay three.": "cf2a8eb583.mp3",
+ "Reason about what B believes, and A warns it about the crate. No wasted trip.": "0f078458a3.mp3",
+ "Reason about what B expects A to do, and the two split the bays cleanly.": "709d95d1e4.mp3",
+ "Stretch the scene over many changes and lose some messages, and the belief tracking breaks down.": "95f946d3a6.mp3",
+ "Telling agents to work together makes the transcript friendly, not the work complementary. Measure duplicates against a random split.": "759c6361c1.mp3"
+}

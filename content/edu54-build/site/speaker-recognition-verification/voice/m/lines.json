@@ -1,0 +1,8 @@
+{
+ "A mobile-money helpline in Uganda lets customers log in by voice. Each call is compared with the voiceprint they enrolled.": "bec24a347b.mp3",
+ "Genuine calls score high, impostors low. A gate at the threshold accepts everything to its right.": "8a9d2f0752.mp3",
+ "Lower the gate, and impostors walk in. Raise it, and real customers are turned away. Where the two errors meet is the equal error rate.": "a59d5ae597.mp3",
+ "Tuned on studio audio, the same threshold turns away many customers calling on a cheap phone line. Their scores all drop.": "5d5fc24624.mp3",
+ "Normalise scores against voices recorded on the same channel, and genuine calls clear the gate again.": "155b9cec88.mp3",
+ "Enrol from one noisy sample, and the voiceprint is spoilt. Average three clean samples instead.": "fc6f163c44.mp3"
+}

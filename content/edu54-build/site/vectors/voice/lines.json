@@ -1,0 +1,8 @@
+{
+ "A vector is just a list of numbers. Here every dish gets three: how spicy, how sweet and how crunchy it is.": "228561a149.mp3",
+ "Jollof rice is quite spicy, a little sweet and not crunchy. Walk that far along each axis and you reach the tip of its arrow.": "a14894d78c.mp3",
+ "Suya points almost the same way as jollof. The small angle between them means they are alike: both spicy, not sweet.": "6329951f08.mp3",
+ "Now compare pepper soup with chin-chin. The arrows point far apart. Very different snacks.": "6a85a108e1.mp3",
+ "The number that measures the angle is called cosine similarity. One means the same direction. Zero means nothing in common. Puff-puff from Lagos and mandazi from Mombasa score almost one: both sweet fried dough.": "d512253a03.mp3",
+ "Language models turn every word into an arrow like this, with hundreds of numbers instead of three. Words that mean similar things point the same way. That is how search finds what you meant, not just what you typed.": "90fb2f7940.mp3"
+}

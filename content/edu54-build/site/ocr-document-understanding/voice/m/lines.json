@@ -1,0 +1,8 @@
+{
+ "A receipt from a market in Dar es Salaam, photographed on a table. We want the text, and especially the total.": "a8a56b8e18.mp3",
+ "First, straighten the page and box each line of text. Then read each line on its own.": "5801954f42.mp3",
+ "The recogniser slides along the line and guesses one character per narrow column. Each letter covers two or three columns, with blanks scattered between.": "773b0ed978.mp3",
+ "Turn every column into a letter, and everything repeats: M M M A A H H. CTC first merges repeated guesses.": "da6a2cd0c7.mp3",
+ "But merging alone squashes real double letters too: three thousand becomes thirty. The blank between two identical letters is what keeps them apart.": "86cc23f152.mp3",
+ "Skip the straightening, and tilted lines cross their neighbours. The prices get swapped between items. Deskew first, then read.": "9fe4d0219d.mp3"
+}

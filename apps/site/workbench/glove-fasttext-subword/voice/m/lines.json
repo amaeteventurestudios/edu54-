@@ -1,0 +1,8 @@
+{
+ "Swahili words from a school in Mombasa, placed by their vectors. Words used alike sit together: school words, book words, food words.": "35192d3363.mp3",
+ "GloVe builds these vectors from a table of how often words appear near each other, using the logarithm of the counts.": "6b79119cf8.mp3",
+ "Then comes \"wanafunzi\", students, a word the training text never contained. A word level model has no vector for it.": "e1d99d4da0.mp3",
+ "FastText breaks every word into character pieces and adds up their vectors. \"Wanafunzi\" shares most of its pieces with \"mwanafunzi\", so it lands right beside it.": "69be9fd9f6.mp3",
+ "Use single letters as pieces, and every word overlaps every other. The new word lands nowhere useful.": "f113ac502b.mp3",
+ "And train GloVe on raw counts, and \"na\", meaning \"and\", appears so often that it drags every word towards itself.": "a7488518b5.mp3"
+}

@@ -1,0 +1,8 @@
+{
+ "Training runs from left to right. The valley is the loss: narrow and sharp at the start, wider later. The ball's path shows every step.": "2921559d4c.mp3",
+ "The back wall shows the learning rate at every step. The red line is the safe limit: above it, each step overshoots the bottom by more than the last.": "0017e53aed.mp3",
+ "Start at full speed, and the rate is far over the limit while the valley is still narrow. The ball is thrown out on the very first steps.": "e5ffe66b4d.mp3",
+ "Warm up, but then keep the rate constant. The ball reaches the bottom quickly, but keeps bouncing from side to side and never settles.": "618399890b.mp3",
+ "One fix is to cut the rate in sudden steps. Each drop calms the bouncing a little more.": "8d3b8aa595.mp3",
+ "Most large models use warmup, then a smooth cosine curve down to almost nothing. Fast in the middle, careful at both ends.": "8c24f37010.mp3"
+}

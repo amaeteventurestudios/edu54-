@@ -1,0 +1,8 @@
+{
+ "An edtech in Kigali runs a chat tutor, nightly essay grading and a voice tutor. Each has a different shape.": "80014a38aa.mp3",
+ "The chat tutor is busy in school hours, with peaks four times the average. Shared per-token capacity fits.": "a875954881.mp3",
+ "Rent dedicated GPUs for it and you size for the peak and pay for the quiet hours.": "db4f816975.mp3",
+ "Grading runs round the clock at an even pace. At eight times the volume, it keeps GPUs busy, and per-minute beats per-token.": "e110a02721.mp3",
+ "Essays graded overnight don't need instant answers. A batch tier at half price does the job.": "8aa23b0800.mp3",
+ "A voice tutor must speak quickly. Only the fast custom chips keep up, so they earn their price.": "538cd0f154.mp3"
+}

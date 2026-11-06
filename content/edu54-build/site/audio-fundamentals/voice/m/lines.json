@@ -1,0 +1,8 @@
+{
+ "A field recorder in Kakamega Forest captures a sunbird's call. The grey line is two thousandths of a second of the real sound.": "ed882592f7.mp3",
+ "The recorder measures the wave sixteen thousand times a second. Each post is one sample; playback draws the orange wave through them.": "d1d4f33a28.mp3",
+ "A Fourier transform turns the samples into frequencies. One peak, at the call's pitch.": "5af64af24c.mp3",
+ "Sample only eight thousand times a second, with no filter. The call folds back to a false, lower pitch.": "6dad427b3f.mp3",
+ "Turn the gain too high, and the peaks are cut flat at the limit. False overtones appear that the bird never sang.": "e42df640d0.mp3",
+ "A tiny transform has coarse bins. Longer frames place the pitch more precisely.": "c6c4ee2ee9.mp3"
+}

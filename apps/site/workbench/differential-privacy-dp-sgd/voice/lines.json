@@ -1,0 +1,8 @@
+{
+ "A clinic network fine-tunes an assistant on patient notes. Without protection, planted records can be pulled back out.": "bcc444e78c.mp3",
+ "DP-SGD computes each record's gradient and clips it to a ring, so no single record can push too hard.": "dc2a40d531.mp3",
+ "Then it adds noise scaled to the ring. The step still points the right way, but hides any one record.": "59eb5c4be7.mp3",
+ "More noise means a smaller epsilon and stronger privacy, but the assistant gets worse.": "9e3b8d52ec.mp3",
+ "Random canaries under-report leaks. Audit with records designed to be memorable.": "0bda190185.mp3",
+ "The guarantee covers the model, not its outputs. Hide raw confidence scores too.": "144fafba1d.mp3"
+}

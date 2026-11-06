@@ -1,0 +1,8 @@
+{
+ "A bank in Lagos hits its peak. GPU memory fills, requests are evicted, and the same long prompts run again.": "cb1860b891.mp3",
+ "The GPU looks busy, but much of that is repeated work. Goodput is what your users actually get.": "bb618ce634.mp3",
+ "You can't add GPU memory, but CPU memory is plentiful. LMCache keeps warm KV there, so preempted work returns fast.": "e8cdc31d1a.mp3",
+ "The asynchronous path moves data without stopping the engine, and the overhead falls.": "ffdd226620.mp3",
+ "A cache-aware router sends a request to the engine that already holds its prefix.": "488bf17e9d.mp3",
+ "If KV fits on the GPU, offloading is just overhead. Measure preemption first.": "71fe5b9292.mp3"
+}

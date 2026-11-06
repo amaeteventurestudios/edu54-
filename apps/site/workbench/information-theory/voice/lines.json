@@ -1,0 +1,8 @@
+{
+ "On the left, how the weather really goes in Accra at this time of year: mostly sun, some cloud and rain, the odd storm. On the right, a model's forecast.": "9603604b29.mp3",
+ "When a day comes, measure the forecast's surprise. A sunny day it gave one chance in two costs one bit. A rainy day it gave one in five costs more. Rarer means more surprising.": "bc9d3afbc5.mp3",
+ "Average the surprise of the truth over many days and you get entropy: the least surprise anyone could manage, even with a perfect forecast.": "dd421cd613.mp3",
+ "Average the forecast's surprise instead and you get cross-entropy. It is the loss nearly every classifier and language model is trained to lower. The gap between the two is called the KL divergence.": "0bd729b2f9.mp3",
+ "Give storms zero percent, and the day a storm comes the surprise is infinite. The loss blows up. That is why models keep a little chance on everything.": "24f0b3244c.mp3",
+ "An overconfident forecast is punished harder still: ninety-four percent sun, and every rainy day costs over five bits. Being honest about uncertainty pays.": "c304984f0c.mp3"
+}

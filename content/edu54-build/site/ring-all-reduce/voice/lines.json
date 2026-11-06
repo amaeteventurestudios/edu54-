@@ -1,0 +1,8 @@
+{
+ "Eight GPUs each computed gradients on their own slice of the batch. Every one needs the sum.": "4661534b69.mp3",
+ "Split the gradients into eight chunks. Each GPU passes one chunk to its neighbour and adds the one it receives.": "25ab533bc1.mp3",
+ "After seven steps, each GPU owns one fully summed chunk.": "7c328179fe.mp3",
+ "Seven more steps pass the finished chunks round. Now every GPU has the full sum.": "4f55c7c964.mp3",
+ "Gather everything to one GPU instead, and that GPU moves seven times the gradients each step.": "36696c7c9b.mp3",
+ "Bucket small tensors together and start summing during backward. The communication almost disappears.": "e80d9a07dd.mp3"
+}

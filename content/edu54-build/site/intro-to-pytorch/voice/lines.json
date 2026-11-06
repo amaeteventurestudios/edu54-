@@ -1,0 +1,8 @@
+{
+ "We are fitting boda-boda trip times in Kampala: minutes from distance. In PyTorch every number lives in a tensor, and every tensor lives on a device, here the GPU.": "b979c4352f.mp3",
+ "As the forward pass runs, autograd records each operation: multiply, add, subtract, square, mean. That chain from the weights to the loss is the graph.": "7169557098.mp3",
+ "Calling backward walks the graph in reverse. The red bars are the gradients it stores in w dot grad and b dot grad, and the optimizer uses them to nudge the line.": "fcd7dd1b21.mp3",
+ "Leave the data on the CPU while the weights are on the GPU, and the first multiply fails. Every tensor in a calculation must be on the same device.": "c22c5dd143.mp3",
+ "Switch off requires grad on w, and autograd stops tracking it. Its gradient is None, so it never changes, and the line can only slide up and down.": "91aaf98694.mp3",
+ "When you only want answers, wrap the code in torch dot no grad. Skip it, and every check records a graph you never use, until the memory runs out.": "b43d71519c.mp3"
+}
