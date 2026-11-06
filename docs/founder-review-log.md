@@ -3,6 +3,17 @@
 Decisions, open questions and known issues, grouped by date and area, in plain language. Newest date first. Written for batch review. "AI agent" means Claude (Claude Code) working on ai-node-01. Detail and evidence: `HANDOFF.md`, `docs/40-DECISION-LOG.md`, `docs/43`, `docs/53`.
 
 
+## 2026-11-06: EDU54 website, Discovery Lab screenshot and EDU54 Build section (done by an AI agent, Claude, in a cloud session)
+- **Asked (owner):** add a real screen to the Discovery Lab section like K-12 and University have, and add "EDU54 Build" below Discovery Lab, modelled on the Ashanti Build card, with the same big type, patterns and an animal.
+- **Done:**
+  - Discovery Lab now shows `shots/discover.jpg`: the Moon phases experiment with the AI Guide, taken on 2026-11-06 from the live demo (k12.edu54.com/discover, "Try as a student", sample data, demo banner kept like the other shots).
+  - New EDU54 Build section (gold field, chameleon silhouette from Game Icons, CC BY 3.0, already credited in the footer): 650+ lessons, the twelve tracks, and `shots/ai-build.jpg`, the "Attention: look back at every word" lesson (English to Swahili), taken from the build repo (`amaeteventurestudios/build` @ a655e08) run locally. The lesson list was hidden for the shot, so no "Amaete Build" name shows. Header nav gained "Build".
+  - Checked by screenshots at 1440, 1024 and 390 px wide: nothing cut off, no sideways scroll.
+- **Decided (AI agent):**
+  - The section says "Coming soon to every EDU54 box", because EDU54 Build is not yet installed on the EDU54 demo or boxes. Change it when the lessons ship there (the Ashanti integration handover describes the steps).
+  - "Quizzes" was left out of the bullet list (it is on the Ashanti card) because no quiz feature could be found in the build repo. The 650+ figure matches the 667 live lessons in the handover.
+- **Open:** whether EDU54 Build should get its own link (for example build.edu54.com) once it is integrated.
+
 ## 2026-10-26: EDU54 cloned from Ashanti Labs (done by an AI agent, Claude, in a cloud session)
 - **Decided (owner):** the brand marketed to African schools is **EDU54** (edu54.com), one word. Ashanti Labs stays as the owner's personal brand. The AI box is a separate product, Cortex, and is not part of this repo's change.
 - **Done:** this repo is a copy of `ashanti-labs` main @ 79aec77. Only the name changed: Ashanti Labs / Ashanti → EDU54, ashantilabs.com → edu54.com, the brand id `ashanti` → `edu54`, `ASHANTI_*` env vars → `EDU54_*`, file and folder names, the "A" monogram and favicon letter → "E". The website preview image and the ten website screenshots had the old name painted out and "EDU54" drawn in; nothing else in them changed. The apple-touch icon was re-rendered.
