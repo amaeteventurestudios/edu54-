@@ -1,5 +1,10 @@
 # HANDOFF — Umanah AI Lab (ai-node-01)
 
+## 2026-11-06 state (EDU54 site: Discovery Lab screenshot + EDU54 Build section; AI agent, cloud session)
+- Changed: `apps/site/index.html`, new `apps/site/shots/discover.jpg` and `apps/site/shots/ai-build.jpg`. See `docs/founder-review-log.md` 2026-11-06.
+- Deploy: copy `apps/site/index.html` and the two new shots into `/srv/edu54/site/` on Contabo (back up first). No restart needed.
+- Exact next action: when EDU54 Build is integrated into the EDU54 app, drop "Coming soon" and add a link.
+
 ## 2026-10-26 state (EDU54 cloned from Ashanti Labs; work by an AI agent, cloud session)
 - **Current objective:** EDU54 (edu54.com) is the brand marketed to African schools. Ashanti Labs stays as the owner's personal brand; Cortex (the AI box) is separate. This repo, `amaeteventurestudios/edu54-`, is a copy of `amaeteventurestudios/ashanti-labs` main @ 79aec77 with the name changed and nothing else.
 - **Renamed:** Ashanti Labs / Ashanti → EDU54; ashantilabs.com → edu54.com (k12., uni., discover.); `LABOS_BRAND=ashanti` → `edu54`; `ASHANTI_*` env vars → `EDU54_*`; files and folders with "ashanti" in the name; the "A" monogram and favicon letter → "E". Kente sign-in art, colours, fonts and copy are unchanged.
