@@ -3,6 +3,12 @@
 Decisions, open questions and known issues, grouped by date and area, in plain language. Newest date first. Written for batch review. "AI agent" means Claude (Claude Code) working on ai-node-01. Detail and evidence: `HANDOFF.md`, `docs/40-DECISION-LOG.md`, `docs/43`, `docs/53`.
 
 
+## 2026-11-07: Workbench page, circle kept clear of the words and the cube on desktop (done by an AI agent, Claude, in a cloud session)
+- The owner saw the headline touching the circle on edu54.com/workbench, and the circle running into the cube while scrolling.
+- Fix (EDU54 only, build.amaete.com is untouched): `tools/content/edu54-workbench-home.mjs` edits the source page's `kit/home.js` while `build-edu54-workbench-page.sh` builds the page. On the hero the cube and its circle sit in the space right of the headline (moved over, or the cube made smaller, when there is not room). On each chapter the circle sits round the words and is moved right so it stops 32px short of the cube. The circle fades out while it travels between the cube and the words, and the headline fades before the cube slides under it. Phones are unchanged.
+- Checked with screenshots at 1280x720, 1440x900 and 1920x1080 (dark and light, top and 8 scroll points plus transitions) and 390x844; no page errors.
+- The big "A" the owner saw on refresh is on ashantilabs.com/workbench (the Ashanti page), not EDU54; handed to that thread.
+
 ## 2026-11-06 (evening): EDU54 Workbench in the apps and on edu54.com (done by an AI agent, Claude, in a cloud session)
 - **Asked (owner):** "Coming soon" was wrong, because the lessons are built. Sell it like build.amaete.com ("Build AI from scratch. In 3D."), make a separate page that looks like it, and call it **EDU54 Workbench**.
 - **Done:**
