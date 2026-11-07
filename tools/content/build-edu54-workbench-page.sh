@@ -24,6 +24,11 @@ JS
 find "$SRC" -name 'og.png' -delete
 # EDU54 changes to the cube page: on desktop the circle keeps clear of the headline and of the cube
 node "$ROOT/tools/content/edu54-workbench-home.mjs" "$SRC/kit/home.js"
+# the flat placeholder drawing only shows if the 3D cube has not started after 2.5 seconds (no flash on refresh)
+cat >> "$SRC/kit/home.css" <<'CSS'
+.stage .fallback { opacity: 0; animation: edu54-fallback .4s 2.5s forwards; }
+@keyframes edu54-fallback { to { opacity: 1; } }
+CSS
 (cd "$SRC" && node tools/pages.mjs >/dev/null)
 # edu54.com has its own terms and privacy pages: point there instead of the source site's
 rm -rf "$SRC"/{terms,privacy}
