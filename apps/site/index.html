@@ -110,6 +110,8 @@ p { margin: 0; text-wrap: pretty; }
 .links a.demo { margin-left: 10px; color: var(--char); background: var(--gold); font-weight: 600; padding: 12px 18px; transition: background-color .2s var(--ease); }
 @media (hover: hover) and (pointer: fine) { .links a:not(.demo):hover { color: var(--gold); } .links a.demo:hover { background: var(--gold-hi); } }
 @media (max-width: 960px) { .links a:not(.demo) { display: none; } }
+.links a.demo { white-space: nowrap; }
+@media (max-width: 380px) { .links a.demo { padding: 10px 12px; font-size: 15px; margin-left: 4px; } .top .brand { font-size: 24px; gap: 8px; } .top .menu-btn { width: 44px; margin-left: 2px; } }
 /* phone and tablet menu: a button beside "Try the demo" opens a full-screen panel */
 .menu-btn { display: none; appearance: none; border: 0; background: transparent; color: #fff; width: 48px; height: 48px; margin-left: 6px; cursor: pointer; place-items: center; }
 .menu-btn svg { width: 28px; height: 28px; }
