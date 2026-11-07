@@ -110,6 +110,22 @@ p { margin: 0; text-wrap: pretty; }
 .links a.demo { margin-left: 10px; color: var(--char); background: var(--gold); font-weight: 600; padding: 12px 18px; transition: background-color .2s var(--ease); }
 @media (hover: hover) and (pointer: fine) { .links a:not(.demo):hover { color: var(--gold); } .links a.demo:hover { background: var(--gold-hi); } }
 @media (max-width: 960px) { .links a:not(.demo) { display: none; } }
+/* phone and tablet menu: a button beside "Try the demo" opens a full-screen panel */
+.menu-btn { display: none; appearance: none; border: 0; background: transparent; color: #fff; width: 48px; height: 48px; margin-left: 6px; cursor: pointer; place-items: center; }
+.menu-btn svg { width: 28px; height: 28px; }
+@media (max-width: 960px) { .menu-btn { display: grid; } }
+.mnav { position: fixed; inset: 0; z-index: 60; background: var(--night, #0B0B0B); color: #fff; display: flex; flex-direction: column; padding: 24px var(--pad) 40px; overflow-y: auto; opacity: 0; visibility: hidden; transition: opacity .25s var(--ease), visibility 0s linear .25s; }
+.mnav.open { opacity: 1; visibility: visible; transition: opacity .25s var(--ease); }
+.mnav .mhead { display: flex; align-items: center; justify-content: space-between; }
+.mnav .menu-btn { display: grid; }
+.mnav ul { list-style: none; padding: 0; margin: 36px 0 0; display: grid; gap: 2px; text-align: center; }
+.mnav ul a { display: block; padding: 14px 8px; font-size: clamp(28px, 8vw, 44px); font-weight: 600; letter-spacing: -0.035em; text-decoration: none; color: #fff; }
+.mnav ul a:active, .mnav ul a:focus-visible { color: var(--gold); }
+.mnav .mctas { display: grid; gap: 8px; margin-top: 32px; }
+.mnav .mctas .btn { width: 100%; justify-content: center; }
+.mnav .seam { height: 6px; margin-top: auto; padding-top: 32px; background: linear-gradient(90deg, var(--gold) 0 25%, var(--red) 0 50%, var(--green) 0 75%, var(--blue) 0) bottom / 100% 6px no-repeat; }
+body.menu-open { overflow: hidden; }
+.mnav.pat { position: fixed; overflow-x: hidden; overflow-y: auto; }
 
 /* ---------------------------------------------------------------- hero: the continent */
 .hero { position: relative; overflow: hidden; background: var(--night); min-height: max(720px, min(100svh, 1080px)); display: grid; grid-template-columns: minmax(0, 1fr); align-items: center; isolation: isolate; }
@@ -515,9 +531,24 @@ footer { background: var(--night); padding: 8px; }
     <nav class="links" aria-label="Main">
       <a href="#problem">Why</a><a href="#product">Product</a><a href="#editions">Editions</a><a href="#discovery">Discovery Lab</a><a href="#workbench">Workbench</a><a href="#safety">Safety</a><a href="#faq">Questions</a>
       <a class="demo" href="#editions">Try the demo</a>
+      <button class="menu-btn" type="button" aria-label="Open the menu" aria-expanded="false" aria-controls="mnav"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" aria-hidden="true"><path d="M3 6h18M3 12h18M3 18h18"/></svg></button>
     </nav>
   </div>
 </header>
+<div class="mnav pat pat-gold" id="mnav" role="dialog" aria-modal="true" aria-label="Menu">
+  <div class="mhead">
+    <a class="brand" href="/" aria-label="EDU54 home"><svg class="mark" viewBox="0 0 40 40" aria-hidden="true"><rect width="40" height="40" fill="#F4B323"/><text x="20" y="28.5" text-anchor="middle" font-family="Switzer, Helvetica, Arial, sans-serif" font-size="24" font-weight="700" fill="#141210">E</text></svg>EDU54</a>
+    <button class="menu-btn" type="button" aria-label="Close the menu"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"/></svg></button>
+  </div>
+  <ul>
+    <li><a href="#problem">Why</a></li><li><a href="#product">Product</a></li><li><a href="#editions">Editions</a></li><li><a href="#discovery">Discovery Lab</a></li><li><a href="#workbench">Workbench</a></li><li><a href="#safety">Safety</a></li><li><a href="#faq">Questions</a></li>
+  </ul>
+  <div class="mctas">
+    <a class="btn gold" data-edition="k12" href="https://k12.edu54.com/">Try the K-12 demo <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+    <a class="btn ghost" data-edition="university" href="https://uni.edu54.com/">Try the University demo <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+  </div>
+  <div class="seam" aria-hidden="true"></div>
+</div>
 
 <main>
   <section class="hero" aria-labelledby="hero-h">
@@ -893,6 +924,17 @@ tabs.forEach((t, n) => {
 document.querySelectorAll(".rv").forEach((g) => [...g.children].forEach((el, i) => el.style.setProperty("--d", i)));
 const io = "IntersectionObserver" in window ? new IntersectionObserver((es) => es.forEach((e) => { if (e.isIntersecting) { e.target.classList.add("in"); io.unobserve(e.target); } }), { rootMargin: "0px 0px -12% 0px" }) : null;
 document.querySelectorAll(".rv, .gallery, .sheet").forEach((el) => (io ? io.observe(el) : el.classList.add("in")));
+
+// Phone and tablet menu: open and close the full-screen panel; a link, Escape or the close button closes it.
+(() => {
+  const nav = document.getElementById("mnav"), open = document.querySelector(".top .menu-btn"), shut = nav.querySelector(".menu-btn");
+  const set = (on) => { nav.classList.toggle("open", on); document.body.classList.toggle("menu-open", on); open.setAttribute("aria-expanded", String(on)); (on ? shut : open).focus(); };
+  open.addEventListener("click", () => set(true));
+  shut.addEventListener("click", () => set(false));
+  nav.querySelectorAll("a").forEach((a) => a.addEventListener("click", () => set(false)));
+  addEventListener("keydown", (e) => { if (e.key === "Escape" && nav.classList.contains("open")) set(false); });
+  matchMedia("(min-width: 961px)").addEventListener("change", (e) => { if (e.matches && nav.classList.contains("open")) set(false); });
+})();
 </script>
 </body>
 </html>
