@@ -2,7 +2,8 @@
 
 ## 2026-11-07 state (EDU54 Workbench desktop circle fix; AI agent, cloud session)
 - `tools/content/edu54-workbench-home.mjs` (run by `build-edu54-workbench-page.sh`) keeps the circle clear of the headline and cube on desktop. See `docs/founder-review-log.md` 2026-11-07.
-- Deploy: regenerate `apps/site/workbench/` and copy its `kit/home.js` to `/srv/edu54/site/workbench/kit/home.js` (back up first). Nothing else changed.
+- Also: the flat placeholder drawing now only shows if the 3D cube has not started after 2.5s (CSS appended to `kit/home.css` by the build script).
+- Deploy: regenerate `apps/site/workbench/` and copy its `kit/home.js` and `kit/home.css` to `/srv/edu54/site/workbench/kit/` (back up first). Nothing else changed.
 
 ## 2026-11-06 evening state (EDU54 Workbench: apps + public page; AI agent, cloud session)
 - Ported ashanti-labs PRs #4/#5 (Ashanti Build) as EDU54 Workbench. Docs: `docs/edu54-build/README.md`.
