@@ -1,5 +1,9 @@
 # HANDOFF — Umanah AI Lab (ai-node-01)
 
+## 2026-11-07 state (EDU54 Workbench desktop circle fix; AI agent, cloud session)
+- `tools/content/edu54-workbench-home.mjs` (run by `build-edu54-workbench-page.sh`) keeps the circle clear of the headline and cube on desktop. See `docs/founder-review-log.md` 2026-11-07.
+- Deploy: regenerate `apps/site/workbench/` and copy its `kit/home.js` to `/srv/edu54/site/workbench/kit/home.js` (back up first). Nothing else changed.
+
 ## 2026-11-06 evening state (EDU54 Workbench: apps + public page; AI agent, cloud session)
 - Ported ashanti-labs PRs #4/#5 (Ashanti Build) as EDU54 Workbench. Docs: `docs/edu54-build/README.md`.
 - Generated, git-ignored: `content/edu54-build/site/` (in-app lessons, `tools/content/sync-edu54-build.sh`) and `apps/site/workbench/` (public page, `tools/content/build-edu54-workbench-page.sh`). Both need `BUILD_SRC` = a clone of amaeteventurestudios/build at 7a47c2a.

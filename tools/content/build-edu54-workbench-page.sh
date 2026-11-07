@@ -22,6 +22,8 @@ export default {
 };
 JS
 find "$SRC" -name 'og.png' -delete
+# EDU54 changes to the cube page: on desktop the circle keeps clear of the headline and of the cube
+node "$ROOT/tools/content/edu54-workbench-home.mjs" "$SRC/kit/home.js"
 (cd "$SRC" && node tools/pages.mjs >/dev/null)
 # edu54.com has its own terms and privacy pages: point there instead of the source site's
 rm -rf "$SRC"/{terms,privacy}
